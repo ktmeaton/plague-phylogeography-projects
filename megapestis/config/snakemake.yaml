@@ -4,32 +4,13 @@
 results_dir: "results"
 
 # SQLITE Parameters
-sqlite_db : "test.sqlite"
-sqlite_select_command_asm : SELECT
-                              AssemblyFTPGenbank
-                            FROM
-                              BioSample
-                            LEFT JOIN
-                              Assembly ON AssemblyBioSampleAccession = BioSampleAccession
-                            WHERE
-                              (BioSampleComment LIKE '%KEEP%Assembly%Modern%' AND
-                               length(AssemblyFTPGenbank) > 0)
-sqlite_select_command_sra : SELECT
-                              BioSampleAccession,
-                              SRARunAccession
-                            FROM
-                              BioSample
-                            LEFT JOIN SRA
-                              ON SRABioSampleAccession = BioSampleAccession
-                            WHERE
-                              (SRARunAccession = 'SRR1048902' OR
-                               SRARunAccession = 'SRR1048905')
+sqlite_db : "megapestis.sqlite"
 sqlite_select_command_local : SELECT
                               BioSampleAccession
                             FROM
                               BioSample
                             WHERE
-                              (BioSampleComment LIKE '%Local%Test%')
+                              (BioSampleComment LIKE '%Local%Megapestis%')
 sqlite_select_command_ref : SELECT
                               AssemblyFTPGenbank
                             FROM
@@ -40,11 +21,9 @@ sqlite_select_command_ref : SELECT
                               (BioSampleComment LIKE '%Assembly%Modern%Reference%')
 
 # Dataset size
-max_datasets_assembly : 3
-max_datasets_sra : 2
+max_datasets_assembly : 1000
+max_datasets_sra : 1000
 reads_origin :
-  - "assembly"
-  - "sra"
   - "local"
 
 # misc filtering
@@ -56,7 +35,7 @@ reference_locus_name : "chromosome"
 reference_locus_start : "0"
 reference_locus_end : "4653728"
 
-# nf-core/eager parameters
+# Eager param
 eager_rev: "2.2.1"
 eager_clip_readlength : 35
 eager_bwaalnn : 0.01
@@ -66,16 +45,6 @@ organism : "Yersinia pestis"
 # Adapter Removal Defaults
 eager_forward_adapter : 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG'
 eager_reverse_adapter : 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT'
-
-# snippy parameters
-snippy_ctg_depth : 10
-snippy_bam_depth : 3
-snippy_base_qual : 20
-snippy_map_qual : 30
-snippy_min_frac : 0.9
-snippy_mask_char : "X"
-snippy_missing_data : 50
-snippy_snp_density : 10
 
 # Make this an empty string if removing singletons
 # snippy_keep_singleton: ""
