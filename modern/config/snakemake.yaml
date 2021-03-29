@@ -16,7 +16,8 @@ sqlite_select_command_asm : SELECT
                               (BioSampleComment LIKE '%KEEP%') AND
                               (BioSampleBranch NOT LIKE '%0.PE%') AND
                               (CAST(BioSampleCollectionDate as date) >= 1776) AND
-                              (CAST(BioSampleCollectionDate as date) < 2008)
+                              (CAST(BioSampleCollectionDate as date) < 2008)  AND
+                              (length(AssemblyFTPGenbank) > 0))
 
 sqlite_select_command_sra : SELECT
                               BioSampleAccession,
