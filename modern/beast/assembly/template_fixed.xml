@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.4">
+        <!--  July 29, 2017, Elizabeth Murray, Cornell
+        This is a simple dataset with just 10 taxa and two genes (18S and COII). I culled the data from the Murray et al 2013 Proc B paper on Eucharitidae (ant parasitoid wasps).
+        If you run this example file in BEAST, you should get a tree that hits stationarity very quickly.
+
+        The two sections that need to be edited are found at line 60 (user-specified starting tree) and at line 177 (turn off tree proposal operators).
+        Alternatively, you can choose to only put in a starting tree and then allow that tree to vary by not removing the operators.
+        -->
+
+        <data id="template-data">
+            <sequence id="seq_Chalcura.nr.ramosa.D0646a"      taxon="Chalcura.nr.ramosa.D0646a"      totalcount="4" value="???????????????????????????????????TCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTTGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCTATCTCTTCGGAGTTAGAGGCGGTCCAGCTAATATCCCATCGCGGTGCTTTTCATCGAGTGTCGAGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATCCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCTTTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTT-AAGGAATTGACGGAAGG-CACCACCAGGAGTGGAGCCTGCGGCTTATTT-GACTCTCTTATGAATATAGAGAATTTAAAAATTTAATATTTGATTCTTTTATAATTAATAAT---AATAATCAATTTCGATTATTAGAAGTAGATAATCGATTAATTTTACCTAATAAATTAAATTTACGTATATTAATTAATTCTATAGATGTAATTCATTCTTTTACTATCCCTACCTTAGGAATTAAAGTAGATGCTATTCCTGGTCGAATTAATCAAATTCATTCTTTAATTTATCGATCTGGCTTATAT"/>
+            <sequence id="seq_Austeucharis.implexa.D0164"     taxon="Austeucharis.implexa.D0164"     totalcount="4" value="?????????????????????TAACGATACGGGACTCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTTGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCTATCTCTTCGGAGTTAGAGGCGGTCCAGCTAATATCCCATCGCGGTGCTTTTCATCGAGTGTCGAGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATTCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCTTTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCTCTTATGAATATAGAGATTTTAAAAATTTATCATTTGATTCATTTATAATTAATGAA---ATCAATCAATTTCGATTATTAGAAGTAGATAATCGATTAATTATTATTAAAAATTTAAATTTACGTATATTAATTAATTCAATAGATGTAATTCATTCTTTTTCTATTCCTTCATTAGGAATTAAAGCTGATGCAATTCCAGGACGAATTAATCAAATTAATTTATCTGTTATTCGATCAGGATTATAT"/>
+            <sequence id="seq_Ancylotropus.carniscutis.D0407" taxon="Ancylotropus.carniscutis.D0407" totalcount="4" value="?????????????????????TAACGATACGGGACTCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTCGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCTATATCTTCGGATTTAGAGGCGGTCCAGCTAATATCCCATCCTGGTGCTTTTCATCGAGTGTCGCGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATCCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCTTTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCTCTTATGAATATAGAGATTTTAATAATTTAAGATTTGATTCTTTTATAATTAATAAT---AGAAATTATTTTCGATTATTAGAAGTTGACAATCGAATAATTTTACCTATTAAAATAAATATTCGAATGTTAATTAATTCAATGGATGTAATTCATTCTTTTACTATCCCATCATTAGGAATTAAAGTAGATGCTATTCCTGGACGAATTAATCAAATTAATTGTTTAGTAAATTATTCAGGAATTTTT"/>
+            <sequence id="seq_Schizaspidia.aenea.D0168"       taxon="Schizaspidia.aenea.D0168"       totalcount="4" value="?????????????????????TAACGATACGGGACTCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTCGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCTATTTCTTCGGATTTAGAGGCGGTCCAGCTAATATCCCATCCTGGTGCTTTTCATCGAGTGTCGAGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATCCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCATTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCTCTTATGAATATAGGGATTTTAAAAATTTAATATTTGATTCTTTTATAATTAATAAT---TTTAATGAATTTCGATTGTTAGATGTTGATAATCGATTAATTGTTCCCAATAATATAAATATTCGTATATTAATTAATTCTATAGATGTAATTCATTCTTTTAGAATTTCTTCTTTAGGTTTAAAAATTGATGCTATTCCTGGACGAATTAATCAAATAAGATTTTTATCTAATCGTTCAGGTTTATTT"/>
+            <sequence id="seq_Colocharis.sp.D3843"            taxon="Colocharis.sp.D3843"            totalcount="4" value="CGGGGAGGTAGTGACGAAAAATAACGATACGGGACTCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTCGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCTATATCTTCGGATTTAGGGGCGGTCCAGCTAATATCCCATCGCGGTGCTTTTCATCGAGTGTCGAGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATCCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCTTTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCTCTTATGAATATAGGGATTTTAAAAATTTAATATTTGATTCTTTTATAATTAATAAT---TTAAATGAATTTCGATTATTAGATGTAGATAATCGAATAATTTTACCCAATCAATTAAATATTCGTATATTAGTAAGTTCTTTAGATGTAATTCATTCTTTTACTATTCCATCTTTAGGAATTAAAGTTGATGCAATTCCTGGACGAATTAATCAAATATCTATTTTAATTTATCGTTCTGGTTTATAT"/>
+            <sequence id="seq_Lasiokapala.sp.D3598"           taxon="Lasiokapala.sp.D3598"           totalcount="4" value="CGGGGAGGTAGTGACGAAAAATAACGATACGGGACTCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTCGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCTATCTCTTTGGATTTAGAGGCGGTCCAGCTAATATCCCATCGCGGTGCTTTTCATCGAGTGTCGAGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATTCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCTTTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCTCATATGAATATAGAGACTTTAAAGATTTAATATTTGATTCATTTATAATTAATAAT---ATAAATGAATTTCGATTATTAGATGTAGATAATCGATTAGTATTGCCCAATAAATTAAATATTCGAATATTAGTAAATTCAATAGATGTAATTCATTCATTTACTATTCCTTCATTAGGTGTTAAAGTTGATGCAATTCCTGGACGAATTAATCAAATATCAACATTAATTTATCGTTCTGGATTATAT"/>
+            <sequence id="seq_Neolirata.alta.D3601"           taxon="Neolirata.alta.D3601"           totalcount="4" value="CGGGGAGGTAGTGACGAAAAATAACGATACGGGACTCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTCGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCTATCTCTTCGGATTTAGGGGCGGTCCAGCTAATATCCCATCGCGGTGCTTTTCATCGAGTGTCGAGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATTCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCTTTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCTCTTATGAATATAGAGATTTTAAAAATTTAAATTTTGATTCATTTATAATTAATAAT---ATAAATGAATTTCGGTTATTAGATGTAGATAATCGATTAGTATTACCCAATCAATTAAATATTCGCATATTAATTAATTCTATAGATGTTATTCATTCATTTACTATTCCTTCATTAGGAATTAAAGTAGATGCAATTCCTGGACGAATTAATCAAATAACTACATTAATTTATCGTTCAGGATTATAT"/>
+            <sequence id="seq_Galearia.sp.D3922"              taxon="Galearia.sp.D3922"              totalcount="4" value="CGGGGAGGTAGTGACGAAAAATAACGATACGGGACTCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTCGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCTATCTCTTCGGATTTAGGGGCGGTCCAGCTAATATCCCATCGCGGTGCTTTTCATCGAGTGTCGAGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATCCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCTTTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCTCTTATGAATATAGAGATTTTAAAAATTTAATATTTGATTCTTTTATAGTTAATAAT---TTAGATGAATTTCGTTTATTAGAAGTAGATAATCGATTAATTTTACCTAATCAATTAAATATTCGTTTATTAGTAAATTCTTTAGACGTTATTCATTCTTTTACAATTCCTTCATTAGGGATTAAAATTGATGCAATTCCCGGTCGAATCAATCAAATATCTTTATTAACTTATCGTTCAGGTTTATAT"/>
+            <sequence id="seq_Kapala.sp.D3920"                taxon="Kapala.sp.D3920"                totalcount="4" value="CGGGGAGGTAGTGACGAAAAATAACGATACGGGACTCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTCGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCCATCTCTTCGGATTTAGGGGCGGTCCAGCTAATATCCCATCGCGGTGCTTTTCATCGAGTGTCGAGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATCCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCATTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCTCTTATGAATATAGAGATTTTAAAAATTTAANATTTGATTCTTTTATAATTAATAAT---ATAAATAATTTTCGATTATTAGATGTAGATAATCGAATAATTTTACCTAATCAATTAAATATTCGAATATTAGTGAATTCTTTAGATGTTATTCATTCATTTGCTGTTCCTTCTTTAGGAATTAAAGTAGATGCTATTCCTGGACGAATTAATCAAATATCTKTATTAATTTATCGATCAGGATTATAT"/>
+            <sequence id="seq_Kapala.ivorensis.D2746"         taxon="Kapala.ivorensis.D2746"         totalcount="4" value="CGGGGAGGTAGTGACGAAAAATAACGATACGGGACTCATCCGAGGCCCCGTAATCGGAATGAGTACACTTTAAATCCTTTAACGAGGATCCATTGGAGGGCAAGTCTGGTGCCAGCAGCCGCGGTAATTCCAGCTCCAATAGCGTATATTAAAGTTGTTGCGGTTAAAAAGCTCGTAGTTGAATCTGTGTGCCACGCTGTCGGTTCATCGCTCGCGATGTTTAACTGACATGATTGTGGGACGTCCTACCGGTGGACTTAGCCTCTATCTCTTCGGATTTAGGGGCGGTCCAGCTAATATCCCATCGCGGTGCTTTTCATCGAGTGTCGAGGTGGGCCGGTACGTTTACTTTGAACAAATTAGAGTGCTCAAAGCAGGCCATTCTCGCCTGAATACTGTGTGCATGGAATAATGGAATAGGACCTCGGTTCTATTTTGTTGGTTTTCGGAACCCCGAGGTAATGATTAATAGGGACAGATGGGGGCATTCGTATTGCGACGTTAGAGGTGAAATTCTTGGATCGTCGCAAGACGGACAGAAGCGAAAGCATTTGCCAAAAATGTTTTCATTAATCAAGAACGAAAGTTAGAGGTTCGAAGGCGATCAGATACCGCCCTAGTTCTAACCATAAACGATGCCAGCTAGCGATCCGCCGAAGTTCCTTTGATGACTCGGCGGGCAGCTTCCGGGAAACCAAAGCTTTTGGGTTCCGGGGGAAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCTCTTATGAATATAGGGATTTTAAAAATTTAATGTTTGATTCTTTTATAATTAATAAC---ATAAATGAATTTCGATTATTAGATGTAGATAATCGAATAATCTTACCTAATCAATTAAATATTCGAATATTAGTAAATTCTTTAGATGTTATTCATTCATTTACTATTCCTTCTTTAGGTTTAAAGGTAGATGCAATTCCTGGTCGAATTAATCAGATATCTGTAATAATTTATCGTTCAGGTTTATAT"/>
+        </data>
+
+        <!-- Maps -->
+        <map name="Uniform" >beast.math.distributions.Uniform</map>
+        <map name="Exponential" >beast.math.distributions.Exponential</map>
+        <map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+        <map name="Normal" >beast.math.distributions.Normal</map>
+        <map name="Beta" >beast.math.distributions.Beta</map>
+        <map name="Gamma" >beast.math.distributions.Gamma</map>
+        <map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+        <map name="prior" >beast.math.distributions.Prior</map>
+        <map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+        <map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+        <!-- MCMC Parameters -->
+        <run id="mcmc" spec="MCMC" chainLength="100000">
+            <state id="state" storeEvery="1000">
+                <tree id="Tree.t:template-tree" name="stateNode">
+                    <taxonset id="TaxonSet.18S" spec="TaxonSet">
+                        <!--
+                        <alignment id="18S" spec="FilteredAlignment" filter="1-798">
+                            <data idref="template-data"/>
+                        </alignment>
+                        -->
+                        <alignment id="18S" spec="Alignment">
+                            <data idref="template-data"/>
+                        </alignment>
+                    </taxonset>
+                </tree>
+                <parameter id="birthRate.t:tree" name="stateNode">1.0</parameter>
+                <parameter id="gammaShape.s:18S" name="stateNode">1.0</parameter>
+                <parameter id="mutationRate.s:18S" name="stateNode">1.0</parameter>
+                <parameter id="gammaShape.s:COII" name="stateNode">1.0</parameter>
+                <parameter id="mutationRate.s:COII" name="stateNode">1.0</parameter>
+                <parameter id="ucldStdev.c:clock" lower="0.0" name="stateNode">0.1</parameter>
+                <stateNode id="rateCategories.c:clock" spec="parameter.IntegerParameter" dimension="18">1</stateNode>
+                <parameter id="proportionInvariant.s:18S" lower="0.0" name="stateNode" upper="1.0">0.9</parameter>
+                <parameter id="kappa1.s:COII" lower="0.0" name="stateNode">2.0</parameter>
+                <parameter id="kappa2.s:COII" lower="0.0" name="stateNode">2.0</parameter>
+                <parameter id="ucldMean.c:clock" name="stateNode">1.0</parameter>
+                <parameter id="freqParameter.s:COII" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+            </state>
+
+            <!-- remove/replace this section, which is in the default output of BEAUti:
+            <init id="RandomTree.t:template" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:template" taxa="@18S">
+                <populationModel id="ConstantPopulation0.t:tree" spec="ConstantPopulation">
+                    <parameter id="randomPopSize.t:tree" name="popSize">1.0</parameter>
+                </populationModel>
+            </init>
+
+            As for the tree itself, use newick format. A few notes about the tree:
+            BEAST can't initialize on a tree with no branch lengths.
+            The tree does not have to be ultrametric, but I've found that in some cases, I've gotten an error initializing on a non-ultrametric tree.
+            You must put in a plausible starting tree. I sometimes have made mine ultrametric in R, using the chronos function in the ape package.
+            However, the example below is from a preliminary maximum likelihood analysis (additive tree).
+            add in this part below, which gives it your own starting tree by replacing the random tree
+            -->
+
+            <init spec="beast.util.TreeParser" id="NewickTree.t:template-tree" initial="@Tree.t:template-tree"
+            taxa="@18S" IsLabelledNewick="true" adjustTipHeights="false "
+            newick="
+            ((Chalcura.nr.ramosa.D0646a:0.012228617100000005,Austeucharis.implexa.D0164:0.045541898):0.0094925,((Ancylotropus.carniscutis.D0407:0.054325412200000006,Schizaspidia.aenea.D0168:0.031160194900000007):0.011190999999999993,(Colocharis.sp.D3843:0.006298619999999998,(Galearia.sp.D3922:0.0216226366,(Kapala.sp.D3920:0.014521344999999998,(Kapala.ivorensis.D2746:0.015087709800000002,(Lasiokapala.sp.D3598:0.019005459000000002,Neolirata.alta.D3601:0.008152275299999998):0.010289):0.0013740000000000002):0.0036419999999999994):0.0022049999999999986):0.014363):0.009492500000000003);">
+            </init>
+
+            <!-- you'll want to fill in the attributes for 'taxa', 'tree', and 'newick' with your own data
+            It's easy to just use the alignment id ("@18S") as the "attribute value" for taxa, as given for the random tree element (but it does also run if you use the data id, as in using "@template" from line 9 of this text file).
+            -->
+
+            <distribution id="posterior" spec="util.CompoundDistribution">
+                <distribution id="prior" spec="util.CompoundDistribution">
+                    <distribution id="YuleModel.t:tree" spec="beast.evolution.speciation.YuleModel" birthDiffRate="@birthRate.t:tree" tree="@Tree.t:template-tree"/>
+                    <prior id="YuleBirthRatePrior.t:tree" name="distribution" x="@birthRate.t:tree">
+                        <Gamma id="Gamma.0" name="distr">
+                            <parameter id="RealParameter.0" estimate="false" name="alpha">0.001</parameter>
+                            <parameter id="RealParameter.01" estimate="false" name="beta">1000.0</parameter>
+                        </Gamma>
+                    </prior>
+                    <prior id="GammaShapePrior.s:18S" name="distribution" x="@gammaShape.s:18S">
+                        <Exponential id="Exponential.0" name="distr">
+                            <parameter id="RealParameter.02" lower="0.0" name="mean" upper="0.0">1.0</parameter>
+                        </Exponential>
+                    </prior>
+                    <prior id="GammaShapePrior.s:COII" distr="@Exponential.0" name="distribution" x="@gammaShape.s:COII"/>
+                    <prior id="kappa1Prior.s:COII" name="distribution" x="@kappa1.s:COII">
+                        <LogNormal id="LogNormalDistributionModel.5" name="distr">
+                            <parameter id="RealParameter.35" estimate="false" name="M">1.0</parameter>
+                            <parameter id="RealParameter.36" estimate="false" name="S">1.25</parameter>
+                        </LogNormal>
+                    </prior>
+                    <prior id="kappa2Prior.s:COII" name="distribution" x="@kappa2.s:COII">
+                        <LogNormal id="LogNormalDistributionModel.6" name="distr">
+                            <parameter id="RealParameter.37" estimate="false" name="M">1.0</parameter>
+                            <parameter id="RealParameter.38" estimate="false" name="S">1.25</parameter>
+                        </LogNormal>
+                    </prior>
+                    <prior id="PropInvariantPrior.s:18S" name="distribution" x="@proportionInvariant.s:18S">
+                        <Uniform id="Uniform.1" name="distr"/>
+                    </prior>
+                    <prior id="MeanRatePrior.c:clock" name="distribution" x="@ucldMean.c:clock">
+                        <Uniform id="Uniform.3" name="distr" upper="Infinity"/>
+                    </prior>
+                    <prior id="ucldStdevPrior.c:clock" name="distribution" x="@ucldStdev.c:clock">
+                        <Gamma id="Gamma.06" name="distr">
+                            <parameter id="RealParameter.013" estimate="false" name="alpha">0.5396</parameter>
+                            <parameter id="RealParameter.014" estimate="false" name="beta">0.3819</parameter>
+                        </Gamma>
+                    </prior>
+                    <!-- I've used a normally-distributed prior age on a node, based on a previous analysis. This is just for the sake of the example -->
+                    <distribution id="KapalaClade.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:template-tree">
+                        <taxonset id="KapalaClade" spec="TaxonSet">
+                            <taxon id="Colocharis.sp.D3843" spec="Taxon"/>
+                            <taxon id="Galearia.sp.D3922" spec="Taxon"/>
+                            <taxon id="Kapala.ivorensis.D2746" spec="Taxon"/>
+                            <taxon id="Kapala.sp.D3920" spec="Taxon"/>
+                            <taxon id="Lasiokapala.sp.D3598" spec="Taxon"/>
+                            <taxon id="Neolirata.alta.D3601" spec="Taxon"/>
+                        </taxonset>
+                        <Normal id="Normal.2" name="distr" offset="23.0">
+                            <parameter id="RealParameter.55" estimate="false" name="mean">0.0</parameter>
+                            <parameter id="RealParameter.56" estimate="false" name="sigma">2.0</parameter>
+                        </Normal>
+                    </distribution>
+                </distribution>
+                <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+                    <distribution id="treeLikelihood.18S" spec="ThreadedTreeLikelihood" data="@18S" tree="@Tree.t:template-tree">
+                        <siteModel id="SiteModel.s:18S" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:18S" proportionInvariant="@proportionInvariant.s:18S" shape="@gammaShape.s:18S">
+                            <substModel id="JC69.s:18S" spec="JukesCantor"/>
+                        </siteModel>
+                        <branchRateModel id="RelaxedClock.c:clock" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:clock" rateCategories="@rateCategories.c:clock" tree="@Tree.t:template-tree">
+                            <LogNormal id="LogNormalDistributionModel.c:clock" S="@ucldStdev.c:clock" meanInRealSpace="true" name="distr">
+                                <parameter id="RealParameter.015" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                            </LogNormal>
+                        </branchRateModel>
+                    </distribution>
+                    <distribution id="treeLikelihood.COII" spec="ThreadedTreeLikelihood" branchRateModel="@RelaxedClock.c:clock" tree="@Tree.t:template-tree">
+                        <data id="COII" spec="FilteredAlignment" data="@template-data" filter="799-1047"/>
+                        <siteModel id="SiteModel.s:COII" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:COII" shape="@gammaShape.s:COII">
+                            <parameter id="proportionInvariant.s:COII" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                            <substModel id="tn93.s:COII" spec="TN93" kappa1="@kappa1.s:COII" kappa2="@kappa2.s:COII">
+                                <frequencies id="estimatedFreqs.s:COII" spec="Frequencies" frequencies="@freqParameter.s:COII"/>
+                            </substModel>
+                        </siteModel>
+                    </distribution>
+                </distribution>
+            </distribution>
+
+            <!--
+            Try to keep the tree constant
+            <operator id="YuleBirthRateScaler.t:tree" spec="ScaleOperator" parameter="@birthRate.t:tree" scaleFactor="0.75" weight="3.0"/>
+            <operator id="YuleModelTreeScaler.t:tree" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:template-tree" weight="3.0"/>
+            <operator id="YuleModelTreeRootScaler.t:tree" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:template-tree" weight="3.0"/>
+            <operator id="YuleModelUniformOperator.t:tree" spec="Uniform" tree="@Tree.t:template-tree" weight="30.0"/>
+            -->
+            <!--
+            we remove the four operators for tree proposal moves: Subtree-Slide, Narrow Exchange, Wide Exchange, and Wilson-Balding
+
+            [[ see this paper for info on each one of these proposal moves: https://nzcsrsc08.canterbury.ac.nz/site/proceedings/Individual_Papers/pg041_Evaluation_of_Proposal_Distributions_on_Clock-Constrained_Trees.pdf ]]
+            also thanks to http://www.northernbotanist.com/?page_id=732 for recommending the deletion
+
+            <operator id="YuleModelSubtreeSlide.t:tree" spec="SubtreeSlide" tree="@Tree.t:template-tree" weight="15.0"/>
+            <operator id="YuleModelNarrow.t:tree" spec="Exchange" tree="@Tree.t:template-tree" weight="15.0"/>
+            <operator id="YuleModelWide.t:tree" spec="Exchange" isNarrow="false" tree="@Tree.t:template-tree" weight="3.0"/>
+            <operator id="YuleModelWilsonBalding.t:tree" spec="WilsonBalding" tree="@Tree.t:template-tree" weight="3.0"/>
+            -->
+            <operator id="gammaShapeScaler.s:18S" spec="ScaleOperator" parameter="@gammaShape.s:18S" scaleFactor="0.5" weight="0.1"/>
+            <operator id="FixMeanMutationRatesOperator" spec="DeltaExchangeOperator" delta="0.75" weight="2.0">
+                <parameter idref="mutationRate.s:18S"/>
+                <parameter idref="mutationRate.s:COII"/>
+                <weightvector id="weightparameter" spec="parameter.IntegerParameter" dimension="2" estimate="false" lower="0" upper="0">798 249</weightvector>
+            </operator>
+            <operator id="gammaShapeScaler.s:COII" spec="ScaleOperator" parameter="@gammaShape.s:COII" scaleFactor="0.5" weight="0.1"/>
+            <operator id="ucldStdevScaler.c:clock" spec="ScaleOperator" parameter="@ucldStdev.c:clock" scaleFactor="0.5" weight="3.0"/>
+            <operator id="CategoriesRandomWalk.c:clock" spec="IntRandomWalkOperator" parameter="@rateCategories.c:clock" weight="10.0" windowSize="1"/>
+            <operator id="CategoriesSwapOperator.c:clock" spec="SwapOperator" intparameter="@rateCategories.c:clock" weight="10.0"/>
+            <operator id="CategoriesUniform.c:clock" spec="UniformOperator" parameter="@rateCategories.c:clock" weight="10.0"/>
+            <operator id="proportionInvariantScaler.s:18S" spec="ScaleOperator" parameter="@proportionInvariant.s:18S" scaleFactor="0.5" weight="0.1"/>
+            <operator id="kappa1Scaler.s:COII" spec="ScaleOperator" parameter="@kappa1.s:COII" scaleFactor="0.5" weight="0.1"/>
+            <operator id="kappa2Scaler.s:COII" spec="ScaleOperator" parameter="@kappa2.s:COII" scaleFactor="0.5" weight="0.1"/>
+            <operator id="ucldMeanScaler.c:clock" spec="ScaleOperator" parameter="@ucldMean.c:clock" scaleFactor="0.5" weight="1.0"/>
+            <!--
+            Try to keep the tree constant
+            <operator id="relaxedUpDownOperator.c:clock" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+                <up idref="ucldMean.c:clock"/>
+                <down idref="Tree.t:template-tree"/>
+            </operator>
+            -->
+            <operator id="FrequenciesExchanger.s:COII" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+                <parameter idref="freqParameter.s:COII"/>
+            </operator>
+
+            <!-- Trace Log -->
+            <logger id="tracelog" fileName="template_fixed.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+                <log idref="posterior"/>
+                <log idref="likelihood"/>
+                <log idref="prior"/>
+                <log idref="treeLikelihood.18S"/>
+                <log id="TreeHeight.t:tree" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:template-tree"/>
+                <log idref="YuleModel.t:tree"/>
+                <log idref="birthRate.t:tree"/>
+                <log idref="treeLikelihood.COII"/>
+                <log idref="gammaShape.s:18S"/>
+                <log idref="mutationRate.s:18S"/>
+                <log idref="gammaShape.s:COII"/>
+                <log idref="mutationRate.s:COII"/>
+                <log idref="ucldStdev.c:clock"/>
+                <log id="rate.c:clock" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:clock" tree="@Tree.t:template-tree"/>
+                <log idref="proportionInvariant.s:18S"/>
+                <log idref="kappa1.s:COII"/>
+                <log idref="kappa2.s:COII"/>
+                <log idref="KapalaClade.prior"/>
+                <log idref="ucldMean.c:clock"/>
+                <log idref="freqParameter.s:COII"/>
+            </logger>
+
+            <!-- Screen Log -->
+            <logger id="screenlog" logEvery="1000">
+                <log idref="posterior"/>
+                <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+                <log idref="likelihood"/>
+                <log idref="prior"/>
+            </logger>
+
+            <!-- Tree Log -->
+            <logger id="treelog.t:tree" fileName="template_fixed.trees" logEvery="1000" mode="tree">
+                <log id="TreeWithMetaDataLogger.t:tree" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:clock" tree="@Tree.t:template-tree"/>
+            </logger>
+            <!-- if you're only estimating one tree and not using unlinked trees from each subset,
+            you can easily rename the tree (right here, or in BEAUti) by replacing the "filename=$(tree).trees" with something more descriptive. For example, fileName="euch_fixed_r1.trees"   -->
+
+        </run>
+
+    </beast>
