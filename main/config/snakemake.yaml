@@ -1,5 +1,7 @@
 # Snakemake Configuration File
 
+# Directories
+results_dir: results
 # SQLITE Parameters
 sqlite_db : "yersinia_pestis_db.sqlite"
 sqlite_select_command_asm : SELECT
@@ -42,7 +44,7 @@ max_datasets_sra : 1000
 reads_origin :
   - "assembly"
   - "sra"
-  - "local"
+#  - "local"
 
 # misc filtering
 detect_repeats_threshold : 90
