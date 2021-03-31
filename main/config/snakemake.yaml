@@ -11,8 +11,11 @@ sqlite_select_command_asm : SELECT
                             LEFT JOIN Assembly
                               ON AssemblyBioSampleAccession = BioSampleAccession
                             WHERE
-                              (BioSampleComment LIKE '%KEEP%Assembly%Modern%' AND
-                               length(AssemblyFTPGenbank) > 0)
+                              BioSampleComment LIKE '%KEEP%Assembly%Modern%'
+                              AND length(AssemblyFTPGenbank) > 0
+                              AND length(BioSampleCollectionDate) > 0
+                              AND length(BioSampleGeographicLocation) > 0
+
 sqlite_select_command_sra : SELECT
                               BioSampleAccession,
                               SRARunAccession
@@ -23,12 +26,16 @@ sqlite_select_command_sra : SELECT
                             WHERE
                               (BioSampleComment LIKE '%KEEP%SRA%Ancient%' AND
                                SRAComment NOT LIKE "%REMOVE%")
+                              AND length(BioSampleCollectionDate) > 0
+                              AND length(BioSampleGeographicLocation) > 0
+
 sqlite_select_command_local : SELECT
                               BioSampleAccession
                             FROM
                               BioSample
                             WHERE
                               (BioSampleComment LIKE '%Local%Modern%')
+
 sqlite_select_command_ref : SELECT
                               AssemblyFTPGenbank
                             FROM
@@ -44,7 +51,6 @@ max_datasets_sra : 1000
 reads_origin :
   - "assembly"
   - "sra"
-#  - "local"
 
 # misc filtering
 detect_repeats_threshold : 90
