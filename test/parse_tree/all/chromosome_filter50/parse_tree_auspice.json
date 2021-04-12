@@ -26,11 +26,11 @@
         "key": "branch_major",
         "scale": [
           [
-            "2.MED",
+            "1.ORI",
             "#8000ff"
           ],
           [
-            "1.ORI",
+            "2.MED",
             "#80ffb4"
           ],
           [
@@ -45,11 +45,11 @@
         "key": "branch_minor",
         "scale": [
           [
-            "2.MED1",
+            "1.ORI1",
             "#8000ff"
           ],
           [
-            "1.ORI1",
+            "2.MED1",
             "#2adddd"
           ],
           [
@@ -68,11 +68,11 @@
         "key": "branch_number",
         "scale": [
           [
-            "2",
+            "1",
             "#8000ff"
           ],
           [
-            "1",
+            "2",
             "#80ffb4"
           ],
           [
@@ -87,11 +87,11 @@
         "key": "country",
         "scale": [
           [
-            "Russia",
+            "United States of America",
             "#8000ff"
           ],
           [
-            "United States of America",
+            "Russia",
             "#2adddd"
           ],
           [
@@ -115,11 +115,11 @@
         "key": "province",
         "scale": [
           [
-            "Rostov Oblast",
+            "Colorado",
             "#8000ff"
           ],
           [
-            "Colorado",
+            "Rostov Oblast",
             "#2adddd"
           ],
           [
@@ -145,14 +145,52 @@
         "type": "continuous"
       },
       {
-        "key": "country",
+        "key": "biovar",
+        "title": "Biovar",
+        "type": "categorical"
+      },
+      {
+        "key": "datebp",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
         "scale": [
           [
-            "Russia",
+            "1.ORI1",
             "#8000ff"
           ],
           [
+            "2.MED1",
+            "#2adddd"
+          ],
+          [
+            "0.ANT1",
+            "#d4dd80"
+          ],
+          [
+            "0.ANT4",
+            "#ff0000"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
             "United States of America",
+            "#8000ff"
+          ],
+          [
+            "Russia",
             "#2adddd"
           ],
           [
@@ -173,14 +211,33 @@
         "type": "categorical"
       },
       {
-        "key": "province",
+        "key": "branch_major",
         "scale": [
           [
-            "Rostov Oblast",
+            "1.ORI",
             "#8000ff"
           ],
           [
+            "2.MED",
+            "#80ffb4"
+          ],
+          [
+            "0.ANT",
+            "#ff0000"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
             "Colorado",
+            "#8000ff"
+          ],
+          [
+            "Rostov Oblast",
             "#2adddd"
           ],
           [
@@ -196,39 +253,19 @@
         "type": "categorical"
       },
       {
-        "key": "datebp",
-        "title": "Collection Date (BP)",
-        "type": "continuous"
-      },
-      {
         "key": "scf",
         "title": "sCF",
         "type": "continuous"
       },
       {
-        "key": "biosamplecomment",
-        "title": "Data Comment",
-        "type": "categorical"
-      },
-      {
-        "key": "ufboot",
-        "title": "Ultrafast Bootstrap",
-        "type": "continuous"
-      },
-      {
-        "key": "biovar",
-        "title": "Biovar",
-        "type": "categorical"
-      },
-      {
         "key": "branch_number",
         "scale": [
           [
-            "2",
+            "1",
             "#8000ff"
           ],
           [
-            "1",
+            "2",
             "#80ffb4"
           ],
           [
@@ -240,51 +277,14 @@
         "type": "categorical"
       },
       {
-        "key": "branch_minor",
-        "scale": [
-          [
-            "2.MED1",
-            "#8000ff"
-          ],
-          [
-            "1.ORI1",
-            "#2adddd"
-          ],
-          [
-            "0.ANT1",
-            "#d4dd80"
-          ],
-          [
-            "0.ANT4",
-            "#ff0000"
-          ]
-        ],
-        "title": "Branch Minor",
+        "key": "biosamplecomment",
+        "title": "Data Comment",
         "type": "categorical"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "2.MED",
-            "#8000ff"
-          ],
-          [
-            "1.ORI",
-            "#80ffb4"
-          ],
-          [
-            "0.ANT",
-            "#ff0000"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
+        "key": "ufboot",
+        "title": "Ultrafast Bootstrap",
+        "type": "continuous"
       }
     ],
     "display_defaults": {
@@ -358,48 +358,11 @@
       "map"
     ],
     "title": "Plague Phylogeography",
-    "updated": "2021-03-17"
+    "updated": "2021-04-12"
   },
   "tree": {
     "branch_attrs": {},
     "children": [
-      {
-        "branch_attrs": {},
-        "name": "GCA_009909635.1_ASM990963v1_genomic",
-        "node_attrs": {
-          "biosample": {
-            "value": "SAMN13632815"
-          },
-          "biosamplecomment": {
-            "value": "KEEP: Assembly Modern"
-          },
-          "biovar": {
-            "value": "Medievalis"
-          },
-          "branch_major": {
-            "value": "2.MED"
-          },
-          "branch_minor": {
-            "value": "2.MED1"
-          },
-          "branch_number": {
-            "value": "2"
-          },
-          "country": {
-            "value": "Russia"
-          },
-          "datebp": {
-            "value": "-98"
-          },
-          "div": 2.44708e-05,
-          "province": {
-            "value": "Rostov Oblast"
-          },
-          "strain": {
-            "value": "9_10"
-          }
-        }
-      },
       {
         "branch_attrs": {},
         "name": "Reference",
@@ -425,7 +388,7 @@
           "datebp": {
             "value": -29.0
           },
-          "div": 2.3073e-05,
+          "div": 1.15365e-05,
           "province": {
             "value": "Colorado"
           }
@@ -436,90 +399,38 @@
         "children": [
           {
             "branch_attrs": {},
-            "children": [
-              {
-                "branch_attrs": {},
-                "name": "GCA_009669545.1_ASM966954v1_genomic",
-                "node_attrs": {
-                  "biosample": {
-                    "value": "SAMN07722925"
-                  },
-                  "biosamplecomment": {
-                    "value": "KEEP: Assembly Modern"
-                  },
-                  "biovar": {
-                    "value": "Antiqua"
-                  },
-                  "branch_major": {
-                    "value": "0.ANT"
-                  },
-                  "branch_minor": {
-                    "value": "0.ANT1"
-                  },
-                  "branch_number": {
-                    "value": "0"
-                  },
-                  "country": {
-                    "value": "China"
-                  },
-                  "datebp": {
-                    "value": "-15"
-                  },
-                  "div": 2.72917e-05,
-                  "province": {
-                    "value": "Xinjiang"
-                  },
-                  "strain": {
-                    "value": "42126"
-                  }
-                }
-              },
-              {
-                "branch_attrs": {},
-                "name": "GCA_009669555.1_ASM966955v1_genomic",
-                "node_attrs": {
-                  "biosample": {
-                    "value": "SAMN07722924"
-                  },
-                  "biosamplecomment": {
-                    "value": "KEEP: Assembly Modern"
-                  },
-                  "biovar": {
-                    "value": "Antiqua"
-                  },
-                  "branch_major": {
-                    "value": "0.ANT"
-                  },
-                  "branch_minor": {
-                    "value": "0.ANT1"
-                  },
-                  "branch_number": {
-                    "value": "0"
-                  },
-                  "country": {
-                    "value": "China"
-                  },
-                  "datebp": {
-                    "value": "-16"
-                  },
-                  "div": 2.75015e-05,
-                  "province": {
-                    "value": "Xinjiang"
-                  },
-                  "strain": {
-                    "value": "42123"
-                  }
-                }
-              }
-            ],
-            "name": "NODE2",
+            "name": "GCA_009909635.1_ASM990963v1_genomic",
             "node_attrs": {
-              "div": 2.72684e-05,
-              "scf": {
-                "value": 0.0
+              "biosample": {
+                "value": "SAMN13632815"
               },
-              "ufboot": {
-                "value": 57.0
+              "biosamplecomment": {
+                "value": "KEEP: Assembly Modern"
+              },
+              "biovar": {
+                "value": "Medievalis"
+              },
+              "branch_major": {
+                "value": "2.MED"
+              },
+              "branch_minor": {
+                "value": "2.MED1"
+              },
+              "branch_number": {
+                "value": "2"
+              },
+              "country": {
+                "value": "Russia"
+              },
+              "datebp": {
+                "value": "-98"
+              },
+              "div": 3.60073e-05,
+              "province": {
+                "value": "Rostov Oblast"
+              },
+              "strain": {
+                "value": "9_10"
               }
             }
           },
@@ -531,58 +442,82 @@
                 "children": [
                   {
                     "branch_attrs": {},
-                    "name": "SAMN02442718",
+                    "name": "GCA_009669545.1_ASM966954v1_genomic",
                     "node_attrs": {
                       "biosample": {
-                        "value": "SAMN02442718"
+                        "value": "SAMN07722925"
                       },
                       "biosamplecomment": {
-                        "value": "KEEP: Ancient SRA"
+                        "value": "KEEP: Assembly Modern"
                       },
                       "biovar": {
-                        "value": "Orientalis"
+                        "value": "Antiqua"
                       },
                       "branch_major": {
                         "value": "0.ANT"
                       },
                       "branch_minor": {
-                        "value": "0.ANT4"
+                        "value": "0.ANT1"
                       },
                       "branch_number": {
                         "value": "0"
                       },
                       "country": {
-                        "value": "Germany"
+                        "value": "China"
                       },
                       "datebp": {
-                        "value": "[-1521:-1221]"
+                        "value": "-15"
                       },
-                      "div": 3.18884e-05,
+                      "div": 3.88282e-05,
                       "province": {
-                        "value": "Bavaria"
+                        "value": "Xinjiang"
                       },
                       "strain": {
-                        "value": "Justinian"
+                        "value": "42126"
                       }
                     }
                   },
                   {
                     "branch_attrs": {},
-                    "name": "testlocal1",
+                    "name": "GCA_009669555.1_ASM966955v1_genomic",
                     "node_attrs": {
-                      "div": 3.18884e-05
+                      "biosample": {
+                        "value": "SAMN07722924"
+                      },
+                      "biosamplecomment": {
+                        "value": "KEEP: Assembly Modern"
+                      },
+                      "biovar": {
+                        "value": "Antiqua"
+                      },
+                      "branch_major": {
+                        "value": "0.ANT"
+                      },
+                      "branch_minor": {
+                        "value": "0.ANT1"
+                      },
+                      "branch_number": {
+                        "value": "0"
+                      },
+                      "country": {
+                        "value": "China"
+                      },
+                      "datebp": {
+                        "value": "-16"
+                      },
+                      "div": 3.9038e-05,
+                      "province": {
+                        "value": "Xinjiang"
+                      },
+                      "strain": {
+                        "value": "42123"
+                      }
                     }
                   }
                 ],
-                "name": "NODE4",
+                "name": "NODE3",
                 "node_attrs": {
-                  "div": 3.18651e-05,
-                  "scf": {
-                    "value": 100.0
-                  },
-                  "ufboot": {
-                    "value": 81.0
-                  }
+                  "div": 3.8804900000000005e-05
                 }
               },
               {
@@ -590,82 +525,126 @@
                 "children": [
                   {
                     "branch_attrs": {},
-                    "name": "SAMN02442721",
-                    "node_attrs": {
-                      "biosample": {
-                        "value": "SAMN02442721"
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMN02442718",
+                        "node_attrs": {
+                          "biosample": {
+                            "value": "SAMN02442718"
+                          },
+                          "biosamplecomment": {
+                            "value": "KEEP: Ancient SRA"
+                          },
+                          "biovar": {
+                            "value": "Orientalis"
+                          },
+                          "branch_major": {
+                            "value": "0.ANT"
+                          },
+                          "branch_minor": {
+                            "value": "0.ANT4"
+                          },
+                          "branch_number": {
+                            "value": "0"
+                          },
+                          "country": {
+                            "value": "Germany"
+                          },
+                          "datebp": {
+                            "value": "[-1521:-1221]"
+                          },
+                          "div": 4.34249e-05,
+                          "province": {
+                            "value": "Bavaria"
+                          },
+                          "strain": {
+                            "value": "Justinian"
+                          }
+                        }
                       },
-                      "biosamplecomment": {
-                        "value": "KEEP: Ancient SRA"
-                      },
-                      "biovar": {
-                        "value": "Orientalis"
-                      },
-                      "branch_major": {
-                        "value": "0.ANT"
-                      },
-                      "branch_minor": {
-                        "value": "0.ANT4"
-                      },
-                      "branch_number": {
-                        "value": "0"
-                      },
-                      "country": {
-                        "value": "Germany"
-                      },
-                      "datebp": {
-                        "value": "[-1521:-1221]"
-                      },
-                      "div": 3.20808e-05,
-                      "province": {
-                        "value": "Bavaria"
-                      },
-                      "strain": {
-                        "value": "Justinian"
+                      {
+                        "branch_attrs": {},
+                        "name": "testlocal1",
+                        "node_attrs": {
+                          "div": 4.34249e-05
+                        }
                       }
+                    ],
+                    "name": "NODE5",
+                    "node_attrs": {
+                      "div": 4.34016e-05
                     }
                   },
                   {
                     "branch_attrs": {},
-                    "name": "testlocal2",
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMN02442721",
+                        "node_attrs": {
+                          "biosample": {
+                            "value": "SAMN02442721"
+                          },
+                          "biosamplecomment": {
+                            "value": "KEEP: Ancient SRA"
+                          },
+                          "biovar": {
+                            "value": "Orientalis"
+                          },
+                          "branch_major": {
+                            "value": "0.ANT"
+                          },
+                          "branch_minor": {
+                            "value": "0.ANT4"
+                          },
+                          "branch_number": {
+                            "value": "0"
+                          },
+                          "country": {
+                            "value": "Germany"
+                          },
+                          "datebp": {
+                            "value": "[-1521:-1221]"
+                          },
+                          "div": 4.36173e-05,
+                          "province": {
+                            "value": "Bavaria"
+                          },
+                          "strain": {
+                            "value": "Justinian"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {},
+                        "name": "testlocal2",
+                        "node_attrs": {
+                          "div": 4.36173e-05
+                        }
+                      }
+                    ],
+                    "name": "NODE6",
                     "node_attrs": {
-                      "div": 3.20808e-05
+                      "div": 4.3594e-05
                     }
                   }
                 ],
-                "name": "NODE5",
+                "name": "NODE4",
                 "node_attrs": {
-                  "div": 3.20575e-05,
-                  "scf": {
-                    "value": 100.0
-                  },
-                  "ufboot": {
-                    "value": 94.0
-                  }
+                  "div": 4.28888e-05
                 }
               }
             ],
-            "name": "NODE3",
+            "name": "NODE2",
             "node_attrs": {
-              "div": 3.13523e-05,
-              "scf": {
-                "value": 100.0
-              },
-              "ufboot": {
-                "value": 99.0
-              }
+              "div": 3.8748600000000004e-05
             }
           }
         ],
         "name": "NODE1",
         "node_attrs": {
-          "div": 2.72121e-05,
-          "scf": {
-            "value": 0.0
-          },
-          "ufboot": {
-            "value": 91.0
-          }
+          "div": 1.15365e-05
         }
       }
     ],
