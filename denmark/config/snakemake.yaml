@@ -1,9 +1,7 @@
 # Snakemake Configuration File
 
 # Directories
-
-results_dir: "results"
-
+results_dir: results
 # SQLITE Parameters
 sqlite_db : "yersinia_pestis_db.sqlite"
 sqlite_select_command_asm : SELECT
@@ -13,8 +11,11 @@ sqlite_select_command_asm : SELECT
                             LEFT JOIN Assembly
                               ON AssemblyBioSampleAccession = BioSampleAccession
                             WHERE
-                              (BioSampleComment LIKE '%KEEP%Assembly%Modern%' AND
-                               length(AssemblyFTPGenbank) > 0)
+                              BioSampleComment LIKE '%KEEP%Assembly%Modern%'
+                              AND length(AssemblyFTPGenbank) > 0
+                              AND length(BioSampleCollectionDate) > 0
+                              AND length(BioSampleGeographicLocation) > 0
+
 sqlite_select_command_sra : SELECT
                               BioSampleAccession,
                               SRARunAccession
@@ -25,12 +26,16 @@ sqlite_select_command_sra : SELECT
                             WHERE
                               (BioSampleComment LIKE '%KEEP%SRA%Ancient%' AND
                                SRAComment NOT LIKE "%REMOVE%")
+                              AND length(BioSampleCollectionDate) > 0
+                              AND length(BioSampleGeographicLocation) > 0
+
 sqlite_select_command_local : SELECT
                               BioSampleAccession
                             FROM
                               BioSample
                             WHERE
                               (BioSampleComment LIKE '%Local%Denmark%')
+
 sqlite_select_command_ref : SELECT
                               AssemblyFTPGenbank
                             FROM
@@ -75,11 +80,11 @@ snippy_base_qual : 20
 snippy_map_qual : 30
 snippy_min_frac : 0.9
 snippy_mask_char : "X"
-snippy_missing_data : 5
+snippy_missing_data : 1
 snippy_snp_density : 10
 # Make this an empty string if removing singletons
-snippy_keep_singleton: ""
-#snippy_keep_singleton : "--keep-singleton"
+#snippy_keep_singleton: ""
+snippy_keep_singleton : "--keep-singleton"
 snippy_multi_plot_missing_data:
   - 0
   - 1
@@ -87,11 +92,11 @@ snippy_multi_plot_missing_data:
   - 3
   - 4
   - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
+#  - 6
+#  - 7
+#  - 8
+#  - 9
+#  - 10
 
 # IQTREE
 #iqtree_model: "-m MFP"
@@ -103,5 +108,5 @@ iqtree_seed : "47321424" # keeping it consistent in a config file allows for che
 #iqtree_outgroup : "GCA_000323485.1_ASM32348v1_genomic,GCA_000323845.1_ASM32384v1_genomic"
 # Outgroup Option #3: Basal ancient clade
 iqtree_outgroup : "SAMEA3541826,SAMEA3541827"
-iqtree_other : "--ufboot 1000"
+iqtree_other : "--ufboot 1000 --polytomy"
 iqtree_runs : 10
