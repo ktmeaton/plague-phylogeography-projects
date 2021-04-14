@@ -1,0 +1,819 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Apr 26 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    info113 (SSE3, 252 GB RAM)
+Command: iqtree -s /2/scratch/keaton/plague-phylogeography/results/snippy_multi/all/snippy-core_chromosome.snps.filter1.aln -m K3Pu+F+I --threads-max 10 -nt 10 -o SAMEA3541826,SAMEA3541827 -seed 47321424 --runs 1 -fconst 1119301,1007255,1018404,1116012 --polytomy -pre /2/scratch/keaton/plague-phylogeography/results/iqtree/all/iqtree-core_chromosome.filter1
+Seed:    47321424 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Apr 14 15:31:54 2021
+Kernel:  SSE2 - 10 threads (48 CPU cores detected)
+
+Reading alignment file /2/scratch/keaton/plague-phylogeography/results/snippy_multi/all/snippy-core_chromosome.snps.filter1.aln ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 601 sequences with 2279 columns, 2246 distinct patterns
+2279 parsimony-informative, 0 singleton sites, 0 constant sites
+                                                         Gap/Ambiguity  Composition  p-value
+   1  GCA_000006645.1_ASM664v1_genomic                           0.00%    passed     80.92%
+   2  GCA_000007885.1_ASM788v1_genomic                           0.00%    passed     96.70%
+   3  GCA_000013825.1_ASM1382v1_genomic                          0.13%    passed     62.48%
+   4  GCA_000022805.1_ASM2280v1_genomic                          0.00%    passed     95.51%
+   5  GCA_000022825.1_ASM2282v1_genomic                          0.00%    passed     97.24%
+   6  GCA_000022845.1_ASM2284v1_genomic                          0.70%    passed     97.82%
+   7  GCA_000168235.2_ASM16823v2_genomic                         0.18%    passed     99.04%
+   8  GCA_000169615.1_ASM16961v1_genomic                         0.66%    passed     64.01%
+   9  GCA_000169635.1_ASM16963v1_genomic                         0.04%    passed     98.76%
+  10  GCA_000169655.1_ASM16965v1_genomic                         0.00%    passed     98.92%
+  11  GCA_000169675.1_ASM16967v1_genomic                         0.04%    passed     95.58%
+  12  GCA_000170275.1_ASM17027v1_genomic                         0.09%    passed     99.63%
+  13  GCA_000181455.2_ASM18145v2_genomic                         0.04%    passed     98.39%
+  14  GCA_000182485.1_ASM18248v1_genomic                         0.00%    passed     97.79%
+  15  GCA_000182505.1_ASM18250v1_genomic                         0.00%    passed     96.44%
+  16  GCA_000182525.1_ASM18252v1_genomic                         0.09%    passed     97.27%
+  17  GCA_000182705.1_ASM18270v1_genomic                         0.00%    passed     80.92%
+  18  GCA_000255735.1_ASM25573v1_genomic                         0.00%    passed     98.94%
+  19  GCA_000255755.1_ASM25575v1_genomic                         0.04%    passed     99.39%
+  20  GCA_000255775.1_ASM25577v1_genomic                         0.00%    passed     99.11%
+  21  GCA_000255795.1_ASM25579v1_genomic                         0.13%    passed     98.87%
+  22  GCA_000255815.1_ASM25581v1_genomic                         0.00%    passed     99.43%
+  23  GCA_000255835.1_ASM25583v1_genomic                         0.00%    passed     99.62%
+  24  GCA_000255855.1_ASM25585v1_genomic                         0.04%    passed     99.80%
+  25  GCA_000255875.1_ASM25587v1_genomic                         0.04%    passed     99.70%
+  26  GCA_000255895.1_ASM25589v1_genomic                         0.09%    passed     99.78%
+  27  GCA_000268325.1_ASM26832v1_genomic                         0.09%    passed     99.64%
+  28  GCA_000268345.1_ASM26834v1_genomic                         0.04%    passed     99.35%
+  29  GCA_000268365.1_ASM26836v1_genomic                         0.00%    passed     99.60%
+  30  GCA_000268385.1_ASM26838v1_genomic                         0.00%    passed     99.30%
+  31  GCA_000268405.1_ASM26840v1_genomic                         0.13%    passed     99.61%
+  32  GCA_000268425.1_ASM26842v1_genomic                         0.09%    passed     99.45%
+  33  GCA_000268445.1_ASM26844v1_genomic                         0.09%    passed     99.64%
+  34  GCA_000268465.1_ASM26846v1_genomic                         0.09%    passed     99.64%
+  35  GCA_000268485.1_ASM26848v1_genomic                         0.00%    passed     99.51%
+  36  GCA_000268485.2_ASM26848v2_genomic                         0.00%    passed     99.51%
+  37  GCA_000268505.1_ASM26850v1_genomic                         0.00%    passed     99.52%
+  38  GCA_000268525.1_ASM26852v1_genomic                         0.04%    passed     98.34%
+  39  GCA_000268545.1_ASM26854v1_genomic                         0.00%    passed     99.49%
+  40  GCA_000268565.1_ASM26856v1_genomic                         0.53%    passed     99.38%
+  41  GCA_000268585.1_ASM26858v1_genomic                         0.00%    passed     99.62%
+  42  GCA_000268605.1_ASM26860v1_genomic                         0.31%    passed     99.65%
+  43  GCA_000268625.1_ASM26862v1_genomic                         0.00%    passed     99.49%
+  44  GCA_000268645.1_ASM26864v1_genomic                         0.00%    passed     99.59%
+  45  GCA_000268665.1_ASM26866v1_genomic                         0.04%    passed     99.63%
+  46  GCA_000268685.1_ASM26868v1_genomic                         0.00%    passed     99.51%
+  47  GCA_000268705.1_ASM26870v1_genomic                         0.35%    passed     99.56%
+  48  GCA_000268725.1_ASM26872v1_genomic                         0.00%    passed     99.35%
+  49  GCA_000268725.2_ASM26872v2_genomic                         0.00%    passed     99.35%
+  50  GCA_000268745.1_ASM26874v1_genomic                         0.00%    passed     99.47%
+  51  GCA_000268765.1_ASM26876v1_genomic                         0.04%    passed     99.67%
+  52  GCA_000268785.1_ASM26878v1_genomic                         0.09%    passed     99.81%
+  53  GCA_000268805.1_ASM26880v1_genomic                         0.57%    passed     99.57%
+  54  GCA_000268805.2_ASM26880v2_genomic                         0.57%    passed     99.57%
+  55  GCA_000268825.1_ASM26882v1_genomic                         0.00%    passed     99.73%
+  56  GCA_000268845.1_ASM26884v1_genomic                         0.04%    passed     99.34%
+  57  GCA_000268865.1_ASM26886v1_genomic                         0.04%    passed     99.65%
+  58  GCA_000268865.2_ASM26886v2_genomic                         0.04%    passed     99.65%
+  59  GCA_000268885.1_ASM26888v1_genomic                         0.00%    passed     99.49%
+  60  GCA_000268905.1_ASM26890v1_genomic                         0.04%    passed     99.42%
+  61  GCA_000268925.1_ASM26892v1_genomic                         0.09%    passed     99.58%
+  62  GCA_000268945.1_ASM26894v1_genomic                         0.66%    passed     99.98%
+  63  GCA_000268965.1_ASM26896v1_genomic                         0.00%    passed     99.73%
+  64  GCA_000268985.1_ASM26898v1_genomic                         0.04%    passed     99.20%
+  65  GCA_000269005.1_ASM26900v1_genomic                         0.18%    passed     99.24%
+  66  GCA_000269025.1_ASM26902v1_genomic                         0.04%    passed     98.42%
+  67  GCA_000269045.1_ASM26904v1_genomic                         0.35%    passed     98.51%
+  68  GCA_000269065.1_ASM26906v1_genomic                         0.00%    passed     99.79%
+  69  GCA_000269085.1_ASM26908v1_genomic                         0.04%    passed     99.65%
+  70  GCA_000269105.1_ASM26910v1_genomic                         0.04%    passed     99.42%
+  71  GCA_000269125.1_ASM26912v1_genomic                         0.04%    passed     99.34%
+  72  GCA_000269145.1_ASM26914v1_genomic                         0.09%    passed     99.51%
+  73  GCA_000269165.1_ASM26916v1_genomic                         0.04%    passed     99.85%
+  74  GCA_000269185.1_ASM26918v1_genomic                         0.00%    passed     99.73%
+  75  GCA_000269205.1_ASM26920v1_genomic                         0.00%    passed     99.59%
+  76  GCA_000269225.1_ASM26922v1_genomic                         0.04%    passed     99.53%
+  77  GCA_000269245.1_ASM26924v1_genomic                         0.00%    passed     99.51%
+  78  GCA_000269265.1_ASM26926v1_genomic                         0.13%    passed     99.53%
+  79  GCA_000269285.1_ASM26928v1_genomic                         0.18%    passed     99.63%
+  80  GCA_000269285.2_ASM26928v2_genomic                         0.18%    passed     99.63%
+  81  GCA_000269305.1_ASM26930v1_genomic                         0.00%    passed     99.73%
+  82  GCA_000269325.1_ASM26932v1_genomic                         0.09%    passed     99.56%
+  83  GCA_000269345.1_ASM26934v1_genomic                         0.35%    passed     99.30%
+  84  GCA_000269365.1_ASM26936v1_genomic                         0.00%    passed     99.59%
+  85  GCA_000269385.1_ASM26938v1_genomic                         0.31%    passed     99.25%
+  86  GCA_000269405.1_ASM26940v1_genomic                         0.35%    passed     99.95%
+  87  GCA_000269425.1_ASM26942v1_genomic                         0.18%    passed     99.88%
+  88  GCA_000269445.1_ASM26944v1_genomic                         0.04%    passed     99.67%
+  89  GCA_000269465.1_ASM26946v1_genomic                         0.13%    passed     99.21%
+  90  GCA_000269485.1_ASM26948v1_genomic                         0.09%    passed     99.69%
+  91  GCA_000275685.1_ASM27568v1_genomic                         0.00%    passed     91.18%
+  92  GCA_000311885.1_ASM31188v1_genomic                         0.00%    passed     99.51%
+  93  GCA_000320425.1_ASM32042v1_genomic                         0.44%    passed     86.84%
+  94  GCA_000320445.1_ASM32044v1_genomic                         0.09%    passed     99.90%
+  95  GCA_000320465.1_ASM32046v1_genomic                         0.00%    passed     95.98%
+  96  GCA_000323185.1_ASM32318v1_genomic                         0.22%    passed     97.62%
+  97  GCA_000323205.1_ASM32320v1_genomic                         0.61%    passed     91.04%
+  98  GCA_000323225.1_ASM32322v1_genomic                         0.00%    passed     90.08%
+  99  GCA_000323245.1_ASM32324v1_genomic                         5.79%    passed     93.61%
+ 100  GCA_000323285.1_ASM32328v1_genomic                         0.04%    passed     98.06%
+ 101  GCA_000323305.1_ASM32330v1_genomic                         0.04%    passed     99.84%
+ 102  GCA_000323325.1_ASM32332v1_genomic                         0.26%    passed     99.83%
+ 103  GCA_000323345.1_ASM32334v1_genomic                         0.26%    passed     99.90%
+ 104  GCA_000323365.1_ASM32336v1_genomic                         0.35%    passed     95.71%
+ 105  GCA_000323385.1_ASM32338v1_genomic                         2.85%    passed     95.43%
+ 106  GCA_000323405.1_ASM32340v1_genomic                         0.35%    passed     96.51%
+ 107  GCA_000323425.1_ASM32342v1_genomic                         0.66%    passed     95.66%
+ 108  GCA_000323445.1_ASM32344v1_genomic                         0.66%    passed     94.71%
+ 109  GCA_000323465.1_ASM32346v1_genomic                         0.18%    passed     99.34%
+ 110  GCA_000323485.1_ASM32348v1_genomic                         1.32%    passed     11.65%
+ 111  GCA_000323505.1_ASM32350v1_genomic                         0.09%    passed     95.57%
+ 112  GCA_000323525.1_ASM32352v1_genomic                         0.44%    passed     91.42%
+ 113  GCA_000323545.1_ASM32354v1_genomic                         0.48%    passed     98.40%
+ 114  GCA_000323565.1_ASM32356v1_genomic                         0.70%    passed     94.65%
+ 115  GCA_000323585.1_ASM32358v1_genomic                         0.35%    passed     99.85%
+ 116  GCA_000323605.1_ASM32360v1_genomic                         0.00%    passed     96.13%
+ 117  GCA_000323625.1_ASM32362v1_genomic                         0.75%    passed     89.69%
+ 118  GCA_000323645.1_ASM32364v1_genomic                         0.04%    passed     98.66%
+ 119  GCA_000323665.1_ASM32366v1_genomic                         0.35%    passed     91.51%
+ 120  GCA_000323685.1_ASM32368v1_genomic                         0.00%    passed     96.41%
+ 121  GCA_000323705.1_ASM32370v1_genomic                         0.04%    passed     97.18%
+ 122  GCA_000323725.1_ASM32372v1_genomic                         2.06%    passed     98.97%
+ 123  GCA_000323745.1_ASM32374v1_genomic                         1.32%    passed     87.55%
+ 124  GCA_000323765.1_ASM32376v1_genomic                         0.57%    passed     95.81%
+ 125  GCA_000323785.1_ASM32378v1_genomic                         0.70%    passed     97.43%
+ 126  GCA_000323805.1_ASM32380v1_genomic                         0.22%    passed     96.32%
+ 127  GCA_000323825.1_ASM32382v1_genomic                         0.22%    passed     97.73%
+ 128  GCA_000323845.1_ASM32384v1_genomic                         1.27%    passed     12.29%
+ 129  GCA_000323865.1_ASM32386v1_genomic                         0.26%    passed     97.20%
+ 130  GCA_000323885.1_ASM32388v1_genomic                         0.04%    passed     96.57%
+ 131  GCA_000323905.1_ASM32390v1_genomic                         0.09%    passed     95.58%
+ 132  GCA_000323925.1_ASM32392v1_genomic                         0.04%    passed     95.27%
+ 133  GCA_000323945.1_ASM32394v1_genomic                        10.14%    passed     84.45%
+ 134  GCA_000323965.1_ASM32396v1_genomic                         0.13%    passed     96.49%
+ 135  GCA_000323985.1_ASM32398v1_genomic                         1.10%    passed     96.30%
+ 136  GCA_000324005.1_ASM32400v1_genomic                         0.09%    passed     93.08%
+ 137  GCA_000324025.1_ASM32402v1_genomic                         0.09%    passed     96.97%
+ 138  GCA_000324045.1_ASM32404v1_genomic                         1.97%    passed     97.36%
+ 139  GCA_000324065.1_ASM32406v1_genomic                         0.57%    passed     92.91%
+ 140  GCA_000324085.1_ASM32408v1_genomic                         0.66%    passed     95.79%
+ 141  GCA_000324105.1_ASM32410v1_genomic                         0.18%    passed     96.46%
+ 142  GCA_000324125.1_ASM32412v1_genomic                         0.39%    passed     99.77%
+ 143  GCA_000324145.1_ASM32414v1_genomic                         0.13%    passed     99.28%
+ 144  GCA_000324165.1_ASM32416v1_genomic                         0.13%    passed     94.45%
+ 145  GCA_000324185.1_ASM32418v1_genomic                         0.04%    passed     96.77%
+ 146  GCA_000324205.1_ASM32420v1_genomic                         0.48%    passed     98.27%
+ 147  GCA_000324225.1_ASM32422v1_genomic                         0.09%    passed     87.16%
+ 148  GCA_000324245.1_ASM32424v1_genomic                         0.13%    passed     96.59%
+ 149  GCA_000324265.1_ASM32426v1_genomic                         0.13%    passed     95.30%
+ 150  GCA_000324285.1_ASM32428v1_genomic                         0.83%    passed     93.91%
+ 151  GCA_000324305.1_ASM32430v1_genomic                         0.13%    passed     98.91%
+ 152  GCA_000324325.1_ASM32432v1_genomic                         1.23%    passed     93.81%
+ 153  GCA_000324345.1_ASM32434v1_genomic                         0.09%    passed     96.68%
+ 154  GCA_000324365.1_ASM32436v1_genomic                         0.48%    passed     97.86%
+ 155  GCA_000324385.1_ASM32438v1_genomic                         5.88%    passed     96.24%
+ 156  GCA_000324405.1_ASM32440v1_genomic                         2.19%    passed     86.61%
+ 157  GCA_000324425.1_ASM32442v1_genomic                         0.00%    passed     99.59%
+ 158  GCA_000324445.1_ASM32444v1_genomic                         0.18%    passed     98.03%
+ 159  GCA_000324465.1_ASM32446v1_genomic                         0.39%    passed     91.40%
+ 160  GCA_000324485.1_ASM32448v1_genomic                         0.26%    passed     97.57%
+ 161  GCA_000324505.1_ASM32450v1_genomic                         0.18%    passed     95.98%
+ 162  GCA_000324525.1_ASM32452v1_genomic                         0.61%    passed     90.67%
+ 163  GCA_000324545.1_ASM32454v1_genomic                         0.61%    passed     96.89%
+ 164  GCA_000324565.1_ASM32456v1_genomic                         0.22%    passed     99.61%
+ 165  GCA_000324585.1_ASM32458v1_genomic                         0.83%    passed     99.83%
+ 166  GCA_000324605.1_ASM32460v1_genomic                         0.35%    passed     98.44%
+ 167  GCA_000324625.1_ASM32462v1_genomic                         1.84%    passed     96.41%
+ 168  GCA_000324645.1_ASM32464v1_genomic                         0.31%    passed     99.74%
+ 169  GCA_000324665.1_ASM32466v1_genomic                         0.09%    passed     96.52%
+ 170  GCA_000324685.1_ASM32468v1_genomic                         0.39%    passed     97.51%
+ 171  GCA_000324705.1_ASM32470v1_genomic                         1.80%    passed     93.47%
+ 172  GCA_000324725.1_ASM32472v1_genomic                         0.44%    passed     95.52%
+ 173  GCA_000324745.1_ASM32474v1_genomic                         1.32%    passed     95.55%
+ 174  GCA_000324765.1_ASM32476v1_genomic                         0.35%    passed     97.12%
+ 175  GCA_000324785.1_ASM32478v1_genomic                         0.53%    passed     97.92%
+ 176  GCA_000324805.2_EV76-CN_genomic                            0.00%    passed     98.87%
+ 177  GCA_000324825.1_ASM32482v1_genomic                         0.83%    passed     94.55%
+ 178  GCA_000324845.1_ASM32484v1_genomic                         0.57%    passed     97.72%
+ 179  GCA_000324865.1_ASM32486v1_genomic                         0.44%    passed     99.79%
+ 180  GCA_000324885.1_ASM32488v1_genomic                         0.09%    passed     99.76%
+ 181  GCA_000324905.1_ASM32490v1_genomic                         0.09%    passed     99.22%
+ 182  GCA_000324925.1_ASM32492v1_genomic                         1.01%    passed     88.33%
+ 183  GCA_000324945.1_ASM32494v1_genomic                         0.75%    passed     99.14%
+ 184  GCA_000324965.1_ASM32496v1_genomic                         0.00%    passed     99.12%
+ 185  GCA_000324985.1_ASM32498v1_genomic                         0.26%    passed     96.45%
+ 186  GCA_000325005.1_ASM32500v1_genomic                         0.31%    passed     96.05%
+ 187  GCA_000325025.1_ASM32502v1_genomic                         0.22%    passed     97.71%
+ 188  GCA_000325045.1_ASM32504v1_genomic                         0.31%    passed     96.51%
+ 189  GCA_000325065.1_ASM32506v1_genomic                         0.26%    passed     96.96%
+ 190  GCA_000325085.1_ASM32508v1_genomic                         3.73%    passed     98.73%
+ 191  GCA_000325105.1_ASM32510v1_genomic                         0.18%    passed     97.64%
+ 192  GCA_000325125.1_ASM32512v1_genomic                         1.32%    passed     92.77%
+ 193  GCA_000325165.1_ASM32516v1_genomic                         0.09%    passed     96.44%
+ 194  GCA_000325185.1_ASM32518v1_genomic                         0.13%    passed     97.49%
+ 195  GCA_000325205.1_ASM32520v1_genomic                         0.31%    passed     99.74%
+ 196  GCA_000325225.1_ASM32522v1_genomic                         0.18%    passed     99.48%
+ 197  GCA_000325245.1_ASM32524v1_genomic                         1.36%    passed     98.37%
+ 198  GCA_000325265.1_ASM32526v1_genomic                         0.04%    passed     98.25%
+ 199  GCA_000325285.1_ASM32528v1_genomic                         0.53%    passed     97.99%
+ 200  GCA_000325305.1_ASM32530v1_genomic                         0.22%    passed     99.37%
+ 201  GCA_000325325.1_ASM32532v1_genomic                         0.13%    passed     94.97%
+ 202  GCA_000325345.1_ASM32534v1_genomic                         0.22%    passed     95.59%
+ 203  GCA_000325365.1_ASM32536v1_genomic                         0.31%    passed     97.84%
+ 204  GCA_000325385.1_ASM32538v1_genomic                         2.46%    passed     96.66%
+ 205  GCA_000325405.1_ASM32540v1_genomic                         1.14%    passed     99.70%
+ 206  GCA_000325425.1_ASM32542v1_genomic                         0.00%    passed     99.72%
+ 207  GCA_000325445.1_ASM32544v1_genomic                         0.31%    passed     99.45%
+ 208  GCA_000325465.1_ASM32546v1_genomic                         1.14%    passed     90.97%
+ 209  GCA_000325485.1_ASM32548v1_genomic                         0.75%    passed     97.98%
+ 210  GCA_000382505.1_Yersinia_pestis_G1670E_assembly_genomic    0.09%    passed     76.13%
+ 211  GCA_000382525.1_Yersinia_pestis_G3768_assembly_genomic     0.18%    passed     82.25%
+ 212  GCA_000382545.1_Yersinia_pestis_assembly_genomic           0.04%    passed     84.20%
+ 213  GCA_000475095.2_YP009_v2_genomic                           0.04%    passed     99.31%
+ 214  GCA_000475115.2_YP113_v2_genomic                           0.00%    passed     99.16%
+ 215  GCA_000475135.2_YPS03_v2_genomic                           0.00%    passed     99.47%
+ 216  GCA_000475155.2_YP24H_v2_genomic                           0.00%    passed     99.35%
+ 217  GCA_000590535.1_EV_NIIEG_genomic                           0.26%    passed     99.33%
+ 218  GCA_000590535.2_ASM59053v2_genomic                         0.00%    passed     99.31%
+ 219  GCA_000705315.1_EDB10_058v1_genomic                        1.14%    passed     99.37%
+ 220  GCA_000734805.1_ASM73480v1_genomic                         0.09%    passed     96.67%
+ 221  GCA_000834275.1_ASM83427v1_genomic                         0.00%    passed     52.79%
+ 222  GCA_000834335.1_ASM83433v1_genomic                         0.04%    passed     98.79%
+ 223  GCA_000834495.1_ASM83449v1_genomic                         0.04%    passed     99.61%
+ 224  GCA_000834755.1_ASM83475v1_genomic                         0.00%    passed     98.98%
+ 225  GCA_000834775.1_ASM83477v1_genomic                         0.00%    passed     98.94%
+ 226  GCA_000834885.1_ASM83488v1_genomic                         0.04%    passed     57.32%
+ 227  GCA_000834905.1_ASM83490v1_genomic                         0.00%    passed     97.39%
+ 228  GCA_000835005.1_ASM83500v1_genomic                         3.64%    passed     99.31%
+ 229  GCA_000950945.1_ASM95094v1_genomic                         0.13%    passed     72.38%
+ 230  GCA_000970105.1_ASM97010v1_genomic                         0.04%    passed     80.45%
+ 231  GCA_000986995.1_YPES001-SEQ-2-ASM-1_genomic                1.80%    passed     99.22%
+ 232  GCA_001188325.1_YPY_1_genomic                              0.00%    passed     85.73%
+ 233  GCA_001188335.1_DYA_1_genomic                              0.00%    passed     84.35%
+ 234  GCA_001188675.1_ASM118867v1_genomic                        0.04%    passed     97.19%
+ 235  GCA_001188695.1_ASM118869v1_genomic                        0.00%    passed     84.49%
+ 236  GCA_001188715.1_ASM118871v1_genomic                        0.00%    passed     85.73%
+ 237  GCA_001188735.1_ASM118873v1_genomic                        0.00%    passed     82.94%
+ 238  GCA_001188755.1_ASM118875v1_genomic                        1.18%    passed     78.42%
+ 239  GCA_001188775.1_ASM118877v1_genomic                        0.00%    passed     85.22%
+ 240  GCA_001188795.1_ASM118879v1_genomic                        0.00%    passed     83.47%
+ 241  GCA_001188815.1_ASM118881v1_genomic                        0.00%    passed     82.94%
+ 242  GCA_001188935.1_ASM118893v1_genomic                        0.00%    passed     84.49%
+ 243  GCA_001261975.1_YPW_8_IHQD_genomic                         0.79%    passed     75.19%
+ 244  GCA_001261985.1_YPW_3_IHQD_genomic                         0.00%    passed     99.31%
+ 245  GCA_001294805.1_ASM129480v1_genomic                        0.00%    passed     96.51%
+ 246  GCA_001294815.1_ASM129481v1_genomic                        0.04%    passed     83.78%
+ 247  GCA_001294825.1_ASM129482v1_genomic                        0.00%    passed     99.05%
+ 248  GCA_001294885.1_ASM129488v1_genomic                        0.04%    passed     94.56%
+ 249  GCA_001294905.1_ASM129490v1_genomic                        0.00%    passed     90.63%
+ 250  GCA_001294915.1_ASM129491v1_genomic                        0.00%    passed     86.07%
+ 251  GCA_001294965.1_ASM129496v1_genomic                        0.00%    passed     99.11%
+ 252  GCA_001294975.1_ASM129497v1_genomic                        0.09%    passed     92.28%
+ 253  GCA_001294985.1_ASM129498v1_genomic                        0.00%    passed     91.70%
+ 254  GCA_001295025.1_ASM129502v1_genomic                        0.00%    passed     63.99%
+ 255  GCA_001295045.1_ASM129504v1_genomic                        0.00%    passed     86.07%
+ 256  GCA_001295055.1_ASM129505v1_genomic                        0.00%    passed     93.38%
+ 257  GCA_001295065.1_ASM129506v1_genomic                        0.09%    passed     93.04%
+ 258  GCA_001295105.1_ASM129510v1_genomic                        0.00%    passed     89.17%
+ 259  GCA_001295115.1_ASM129511v1_genomic                        0.00%    passed     99.53%
+ 260  GCA_001295145.1_ASM129514v1_genomic                        0.09%    passed     88.73%
+ 261  GCA_001295185.1_ASM129518v1_genomic                        0.00%    passed     91.92%
+ 262  GCA_001487065.1_Yersinia_pestis_genomic                    0.00%    passed     96.86%
+ 263  GCA_001509855.1_ASM150985v1_genomic                        0.00%    passed     98.94%
+ 264  GCA_001509865.1_ASM150986v1_genomic                        0.04%    passed     98.79%
+ 265  GCA_001559935.1_ASM155993v1_genomic                        0.61%    passed     81.27%
+ 266  GCA_001595585.1_ASM159558v1_genomic                        0.09%    passed     76.62%
+ 267  GCA_001601285.1_ASM160128v1_genomic                        0.04%    passed     98.94%
+ 268  GCA_001601675.1_ASM160167v1_genomic                        0.26%    passed     86.59%
+ 269  GCA_001601735.1_ASM160173v1_genomic                        0.31%    passed     87.75%
+ 270  GCA_001613865.1_ASM161386v1_genomic                        0.44%    passed     95.97%
+ 271  GCA_001613885.1_ASM161388v1_genomic                        0.18%    passed     76.08%
+ 272  GCA_001613895.1_ASM161389v1_genomic                        0.18%    passed     84.23%
+ 273  GCA_001617705.1_Yersinia_pestis_C-791_genomic              0.00%    passed     81.07%
+ 274  GCA_001617715.1_Yersinia_pestis_M-519_genomic              0.18%    passed     78.59%
+ 275  GCA_001617725.1_Yersinia_pestis_M-1484_genomic             0.18%    passed     76.85%
+ 276  GCA_001617735.1_Yersinia_pestis_M-1763_genomic             0.04%    passed     86.06%
+ 277  GCA_001617785.1_Yersinia_pestis_M-549_genomic              0.00%    passed     82.94%
+ 278  GCA_001617805.1_Yersinia_pestis_173_genomic                0.26%    passed     80.51%
+ 279  GCA_001617815.1_Yersinia_pestis_M-1453_genomic             0.39%    passed     82.91%
+ 280  GCA_001693595.1_ASM169359v1_genomic                        0.00%    passed     98.72%
+ 281  GCA_001972385.1_ASM197238v1_genomic                        0.00%    passed     74.99%
+ 282  GCA_001972395.1_ASM197239v1_genomic                        0.00%    passed     90.74%
+ 283  GCA_001972405.1_ASM197240v1_genomic                        0.00%    passed     96.10%
+ 284  GCA_001972465.1_ASM197246v1_genomic                        0.00%    passed     85.16%
+ 285  GCA_001972475.1_ASM197247v1_genomic                        0.00%    passed     68.55%
+ 286  GCA_001972515.1_ASM197251v1_genomic                        0.00%    passed     96.03%
+ 287  GCA_002005285.1_ASM200528v1_genomic                        0.00%    passed     97.79%
+ 288  GCA_002127355.1_ASM212735v1_genomic                        0.00%    passed     95.08%
+ 289  GCA_002127365.1_ASM212736v1_genomic                        0.00%    passed     77.60%
+ 290  GCA_002127375.1_ASM212737v1_genomic                        0.00%    passed     98.78%
+ 291  GCA_002165475.1_ASM216547v1_genomic                        0.00%    passed     83.93%
+ 292  GCA_002173795.1_ASM217379v1_genomic                        0.00%    passed     93.65%
+ 293  GCA_002173805.1_ASM217380v1_genomic                        0.00%    passed     94.13%
+ 294  GCA_002173815.1_ASM217381v1_genomic                        0.00%    passed     98.48%
+ 295  GCA_002188685.1_ASM218868v1_genomic                        0.04%    passed     95.34%
+ 296  GCA_002188725.1_ASM218872v1_genomic                        0.00%    passed     84.40%
+ 297  GCA_002188765.1_ASM218876v1_genomic                        0.00%    passed     71.74%
+ 298  GCA_002188775.1_ASM218877v1_genomic                        0.00%    passed     99.11%
+ 299  GCA_002412225.1_Y.pestis_A-1486_genomic                    0.26%    passed     96.59%
+ 300  GCA_002412235.1_Y.pestis_A-1249_genomic                    0.13%    passed     93.95%
+ 301  GCA_002412245.1_Y.pestis_A-1691_genomic                    0.66%    passed     85.35%
+ 302  GCA_002412255.1_Y.pestis_A-1836_genomic                    0.09%    passed     60.47%
+ 303  GCA_002412305.1_Y.pestis_A-1809_genomic                    0.26%    passed     95.84%
+ 304  GCA_002981895.1_ASM298189v1_genomic                        0.04%    passed     62.75%
+ 305  GCA_002981915.1_ASM298191v1_genomic                        0.00%    passed     69.96%
+ 306  GCA_002981925.1_ASM298192v1_genomic                        0.00%    passed     63.99%
+ 307  GCA_002981955.1_ASM298195v1_genomic                        0.00%    passed     63.99%
+ 308  GCA_002981995.1_ASM298199v1_genomic                        0.00%    passed     65.77%
+ 309  GCA_002993145.1_ASM299314v1_genomic                        0.00%    passed     83.47%
+ 310  GCA_003074155.1_ASM307415v1_genomic                        0.00%    passed     99.73%
+ 311  GCA_003074175.1_ASM307417v1_genomic                        0.26%    passed     96.03%
+ 312  GCA_003074195.1_ASM307419v1_genomic                        0.13%    passed     99.56%
+ 313  GCA_003074215.1_ASM307421v1_genomic                        0.04%    passed     99.70%
+ 314  GCA_003074235.1_ASM307423v1_genomic                        0.39%    passed     99.34%
+ 315  GCA_003074255.1_ASM307425v1_genomic                        0.00%    passed     99.73%
+ 316  GCA_003074275.1_ASM307427v1_genomic                        0.88%    passed     79.40%
+ 317  GCA_003074295.1_ASM307429v1_genomic                        0.35%    passed     86.56%
+ 318  GCA_003074315.1_ASM307431v1_genomic                        0.61%    passed     98.59%
+ 319  GCA_003074335.1_ASM307433v1_genomic                        0.04%    passed     84.31%
+ 320  GCA_003074355.1_ASM307435v1_genomic                        0.09%    passed     85.23%
+ 321  GCA_003074375.1_ASM307437v1_genomic                        0.04%    passed     84.31%
+ 322  GCA_003074395.1_ASM307439v1_genomic                        0.48%    passed     93.34%
+ 323  GCA_003074415.1_ASM307441v1_genomic                        0.09%    passed     92.49%
+ 324  GCA_003074435.1_ASM307443v1_genomic                        0.00%    passed     92.11%
+ 325  GCA_003074535.1_ASM307453v1_genomic                        0.00%    passed     90.18%
+ 326  GCA_003074595.1_ASM307459v1_genomic                        0.00%    passed     91.25%
+ 327  GCA_003085855.1_ASM308585v1_genomic                        0.09%    passed     78.29%
+ 328  GCA_003085875.1_ASM308587v1_genomic                        0.00%    passed     89.88%
+ 329  GCA_003085895.1_ASM308589v1_genomic                        0.09%    passed     99.28%
+ 330  GCA_003085915.1_ASM308591v1_genomic                        0.00%    passed     99.73%
+ 331  GCA_003085935.1_ASM308593v1_genomic                        0.13%    passed     86.66%
+ 332  GCA_003085955.1_ASM308595v1_genomic                        0.00%    passed     98.86%
+ 333  GCA_003085975.1_ASM308597v1_genomic                        0.18%    passed     83.32%
+ 334  GCA_003085995.1_ASM308599v1_genomic                        0.22%    passed     82.78%
+ 335  GCA_003086015.1_ASM308601v1_genomic                        0.26%    passed     99.87%
+ 336  GCA_003086035.1_ASM308603v1_genomic                        0.00%    passed     98.30%
+ 337  GCA_003086055.1_ASM308605v1_genomic                        0.22%    passed     76.06%
+ 338  GCA_003086075.1_ASM308607v1_genomic                        0.75%    passed     98.53%
+ 339  GCA_003086095.1_ASM308609v1_genomic                        0.22%    passed     89.22%
+ 340  GCA_003086115.1_ASM308611v1_genomic                        0.22%    passed     93.59%
+ 341  GCA_003086155.1_ASM308615v1_genomic                        0.18%    passed     81.99%
+ 342  GCA_003122795.1_Y.pestis_I-2422_genomic                    0.09%    passed     67.98%
+ 343  GCA_003797205.1_ASM379720v1_genomic                        0.04%    passed     97.11%
+ 344  GCA_003798085.1_ASM379808v1_genomic                        0.00%    passed     97.39%
+ 345  GCA_003798225.1_ASM379822v1_genomic                        0.13%    passed     62.48%
+ 346  GCA_004023585.1_ASM402358v1_genomic                        0.09%    passed     90.16%
+ 347  GCA_004023595.1_ASM402359v1_genomic                        0.18%    passed     90.70%
+ 348  GCA_006376415.1_ASM637641v1_genomic                        0.22%    passed     74.22%
+ 349  GCA_006376435.1_ASM637643v1_genomic                        0.09%    passed     85.23%
+ 350  GCA_006376475.1_ASM637647v1_genomic                        0.09%    passed     82.29%
+ 351  GCA_006376495.1_ASM637649v1_genomic                        0.00%    passed     69.95%
+ 352  GCA_006376505.1_ASM637650v1_genomic                        0.00%    passed     90.61%
+ 353  GCA_006376535.1_ASM637653v1_genomic                        1.18%    passed     83.92%
+ 354  GCA_006376535.2_ASM637653v2_genomic                        0.13%    passed     72.15%
+ 355  GCA_006376545.1_ASM637654v1_genomic                        0.09%    passed     89.08%
+ 356  GCA_006376575.1_ASM637657v1_genomic                        0.61%    passed     74.99%
+ 357  GCA_006376585.1_ASM637658v1_genomic                        0.04%    passed     99.19%
+ 358  GCA_006517425.1_ASM651742v1_genomic                        0.04%    passed     64.05%
+ 359  GCA_006546665.1_ASM654666v1_genomic                        0.00%    passed     67.88%
+ 360  GCA_006546725.1_ASM654672v1_genomic                        0.00%    passed     67.42%
+ 361  GCA_006546745.1_ASM654674v1_genomic                        0.04%    passed     66.88%
+ 362  GCA_008630375.1_ASM863037v1_genomic                        0.57%    passed     77.28%
+ 363  GCA_008630375.2_ASM863037v2_genomic                        0.57%    passed     84.40%
+ 364  GCA_008630395.1_ASM863039v1_genomic                        0.09%    passed     85.23%
+ 365  GCA_008630415.1_ASM863041v1_genomic                        0.09%    passed     99.16%
+ 366  GCA_008630435.1_ASM863043v1_genomic                        0.66%    passed     88.72%
+ 367  GCA_008630455.1_ASM863045v1_genomic                        0.00%    passed     99.60%
+ 368  GCA_008630485.1_ASM863048v1_genomic                        0.00%    passed     81.64%
+ 369  GCA_008630575.1_ASM863057v1_genomic                        0.35%    passed     86.32%
+ 370  GCA_009295945.1_ASM929594v1_genomic                        0.00%    passed     98.80%
+ 371  GCA_009296005.1_ASM929600v1_genomic                        0.00%    passed     84.70%
+ 372  GCA_009363195.1_ASM936319v1_genomic                        0.18%    passed     99.94%
+ 373  GCA_009667885.1_ASM966788v1_genomic                        0.00%    passed     96.07%
+ 374  GCA_009667895.1_ASM966789v1_genomic                        0.00%    passed     96.60%
+ 375  GCA_009667925.1_ASM966792v1_genomic                        0.09%    passed     97.57%
+ 376  GCA_009667935.1_ASM966793v1_genomic                        0.04%    passed     95.20%
+ 377  GCA_009667945.1_ASM966794v1_genomic                        0.00%    passed     96.07%
+ 378  GCA_009667985.1_ASM966798v1_genomic                        0.00%    passed     96.07%
+ 379  GCA_009669545.1_ASM966954v1_genomic                        0.00%    passed     96.07%
+ 380  GCA_009669555.1_ASM966955v1_genomic                        0.00%    passed     96.07%
+ 381  GCA_009669565.1_ASM966956v1_genomic                        0.00%    passed     96.07%
+ 382  GCA_009669605.1_ASM966960v1_genomic                        0.00%    passed     96.07%
+ 383  GCA_009669625.1_ASM966962v1_genomic                        0.00%    passed     97.00%
+ 384  GCA_009669635.1_ASM966963v1_genomic                        0.00%    passed     98.21%
+ 385  GCA_009669665.1_ASM966966v1_genomic                        0.00%    passed     96.07%
+ 386  GCA_009669675.1_ASM966967v1_genomic                        0.00%    passed     97.41%
+ 387  GCA_009669705.1_ASM966970v1_genomic                        0.35%    passed     95.74%
+ 388  GCA_009669715.1_ASM966971v1_genomic                        0.00%    passed     95.47%
+ 389  GCA_009669725.1_ASM966972v1_genomic                        0.00%    passed     97.89%
+ 390  GCA_009669765.1_ASM966976v1_genomic                        0.00%    passed     94.80%
+ 391  GCA_009669775.1_ASM966977v1_genomic                        0.00%    passed     96.60%
+ 392  GCA_009669805.1_ASM966980v1_genomic                        0.00%    passed     96.07%
+ 393  GCA_009669825.1_ASM966982v1_genomic                        0.00%    passed     97.41%
+ 394  GCA_009669835.1_ASM966983v1_genomic                        0.00%    passed     96.07%
+ 395  GCA_009669845.1_ASM966984v1_genomic                        0.00%    passed     96.07%
+ 396  GCA_009669875.1_ASM966987v1_genomic                        0.00%    passed     96.07%
+ 397  GCA_009669905.1_ASM966990v1_genomic                        0.00%    passed     96.07%
+ 398  GCA_009669925.1_ASM966992v1_genomic                        0.00%    passed     96.07%
+ 399  GCA_009669935.1_ASM966993v1_genomic                        0.00%    passed     97.00%
+ 400  GCA_009669955.1_ASM966995v1_genomic                        0.04%    passed     96.39%
+ 401  GCA_009669975.1_ASM966997v1_genomic                        0.00%    passed     96.60%
+ 402  GCA_009670005.1_ASM967000v1_genomic                        0.00%    passed     93.92%
+ 403  GCA_009670015.1_ASM967001v1_genomic                        0.00%    passed     96.60%
+ 404  GCA_009670045.1_ASM967004v1_genomic                        0.00%    passed     97.00%
+ 405  GCA_009670055.1_ASM967005v1_genomic                        0.00%    passed     96.07%
+ 406  GCA_009670075.1_ASM967007v1_genomic                        0.00%    passed     96.60%
+ 407  GCA_009670105.1_ASM967010v1_genomic                        0.00%    passed     96.07%
+ 408  GCA_009670115.1_ASM967011v1_genomic                        0.00%    passed     96.07%
+ 409  GCA_009670135.1_ASM967013v1_genomic                        0.13%    passed     96.51%
+ 410  GCA_009670155.1_ASM967015v1_genomic                        0.00%    passed     96.60%
+ 411  GCA_009670185.1_ASM967018v1_genomic                        0.00%    passed     97.89%
+ 412  GCA_009670205.1_ASM967020v1_genomic                        0.00%    passed     96.07%
+ 413  GCA_009670225.1_ASM967022v1_genomic                        0.00%    passed     97.89%
+ 414  GCA_009670235.1_ASM967023v1_genomic                        0.00%    passed     97.41%
+ 415  GCA_009670245.1_ASM967024v1_genomic                        0.00%    passed     97.89%
+ 416  GCA_009670285.1_ASM967028v1_genomic                        0.00%    passed     97.89%
+ 417  GCA_009670305.1_ASM967030v1_genomic                        0.00%    passed     97.89%
+ 418  GCA_009670325.1_ASM967032v1_genomic                        0.00%    passed     96.07%
+ 419  GCA_009670345.1_ASM967034v1_genomic                        0.00%    passed     96.07%
+ 420  GCA_009670355.1_ASM967035v1_genomic                        0.00%    passed     96.07%
+ 421  GCA_009670385.1_ASM967038v1_genomic                        0.00%    passed     96.60%
+ 422  GCA_009670395.1_ASM967039v1_genomic                        0.00%    passed     94.80%
+ 423  GCA_009670415.1_ASM967041v1_genomic                        0.09%    passed     95.56%
+ 424  GCA_009670445.1_ASM967044v1_genomic                        0.00%    passed     97.89%
+ 425  GCA_009670465.1_ASM967046v1_genomic                        0.00%    passed     94.80%
+ 426  GCA_009670475.1_ASM967047v1_genomic                        0.00%    passed     96.60%
+ 427  GCA_009670485.1_ASM967048v1_genomic                        0.00%    passed     96.07%
+ 428  GCA_009670515.1_ASM967051v1_genomic                        0.00%    passed     96.60%
+ 429  GCA_009670545.1_ASM967054v1_genomic                        0.00%    passed     96.07%
+ 430  GCA_009670565.1_ASM967056v1_genomic                        0.00%    passed     96.60%
+ 431  GCA_009670575.1_ASM967057v1_genomic                        0.00%    passed     96.07%
+ 432  GCA_009670585.1_ASM967058v1_genomic                        0.00%    passed     96.07%
+ 433  GCA_009670605.1_ASM967060v1_genomic                        0.00%    passed     96.07%
+ 434  GCA_009670625.1_ASM967062v1_genomic                        0.00%    passed     96.07%
+ 435  GCA_009670665.1_ASM967066v1_genomic                        0.22%    passed     96.42%
+ 436  GCA_009670675.1_ASM967067v1_genomic                        0.04%    passed     96.28%
+ 437  GCA_009670705.1_ASM967070v1_genomic                        0.00%    passed     94.80%
+ 438  GCA_009670715.1_ASM967071v1_genomic                        1.10%    passed     94.64%
+ 439  GCA_009670725.1_ASM967072v1_genomic                        0.00%    passed     97.00%
+ 440  GCA_009670765.1_ASM967076v1_genomic                        0.00%    passed     96.07%
+ 441  GCA_009670775.1_ASM967077v1_genomic                        0.00%    passed     96.07%
+ 442  GCA_009670785.1_ASM967078v1_genomic                        0.00%    passed     96.07%
+ 443  GCA_009670815.1_ASM967081v1_genomic                        0.00%    passed     97.00%
+ 444  GCA_009670835.1_ASM967083v1_genomic                        0.00%    passed     96.07%
+ 445  GCA_009670865.1_ASM967086v1_genomic                        0.00%    passed     96.07%
+ 446  GCA_009670875.1_ASM967087v1_genomic                        0.00%    passed     96.60%
+ 447  GCA_009670895.1_ASM967089v1_genomic                        0.00%    passed     96.60%
+ 448  GCA_009670905.1_ASM967090v1_genomic                        0.00%    passed     96.60%
+ 449  GCA_009670935.1_ASM967093v1_genomic                        0.00%    passed     97.11%
+ 450  GCA_009670995.1_ASM967099v1_genomic                        0.00%    passed     95.47%
+ 451  GCA_009909635.1_ASM990963v1_genomic                        0.00%    passed     81.79%
+ 452  GCA_009909645.1_ASM990964v1_genomic                        0.00%    passed     81.79%
+ 453  GCA_009909655.1_ASM990965v1_genomic                        0.00%    passed     79.30%
+ 454  GCA_010974835.1_ASM1097483v1_genomic                       0.04%    passed     83.72%
+ 455  GCA_010974845.1_ASM1097484v1_genomic                       0.00%    passed     82.69%
+ 456  GCA_010974855.1_ASM1097485v1_genomic                       1.23%    passed     94.89%
+ 457  GCA_013391945.1_ASM1339194v1_genomic                       0.04%    passed     98.39%
+ 458  GCA_013391965.1_ASM1339196v1_genomic                       0.00%    passed     97.36%
+ 459  GCA_013392045.1_ASM1339204v1_genomic                       0.00%    passed     95.27%
+ 460  GCA_013392055.1_ASM1339205v1_genomic                       0.00%    passed     95.27%
+ 461  GCA_013392075.1_ASM1339207v1_genomic                       0.00%    passed     95.27%
+ 462  GCA_013392085.1_ASM1339208v1_genomic                       0.00%    passed     95.27%
+ 463  GCA_013392105.1_ASM1339210v1_genomic                       0.00%    passed     95.27%
+ 464  GCA_013392145.1_ASM1339214v1_genomic                       0.00%    passed     95.27%
+ 465  GCA_013421455.1_ASM1342145v1_genomic                       0.04%    passed     98.57%
+ 466  GCA_013421465.1_ASM1342146v1_genomic                       0.00%    passed     98.68%
+ 467  GCA_013421535.1_ASM1342153v1_genomic                       1.45%    passed     96.28%
+ 468  GCA_013421545.1_ASM1342154v1_genomic                       0.13%    passed     98.99%
+ 469  GCA_013421555.1_ASM1342155v1_genomic                       0.00%    passed     98.80%
+ 470  GCA_014734355.1_ASM1473435v1_genomic                       0.00%    passed     95.27%
+ 471  GCA_014734395.1_ASM1473439v1_genomic                       0.00%    passed     95.27%
+ 472  GCA_014734405.1_ASM1473440v1_genomic                       0.00%    passed     95.27%
+ 473  GCA_015158475.1_ASM1515847v1_genomic                       0.70%    passed     97.76%
+ 474  GCA_015158485.1_ASM1515848v1_genomic                       0.00%    passed     96.74%
+ 475  GCA_015158575.1_ASM1515857v1_genomic                       0.00%    passed     98.30%
+ 476  GCA_015158585.1_ASM1515858v1_genomic                       0.00%    passed     98.81%
+ 477  GCA_015158615.1_ASM1515861v1_genomic                       0.09%    passed     98.04%
+ 478  GCA_015158625.1_ASM1515862v1_genomic                       0.70%    passed     97.76%
+ 479  GCA_015158635.1_ASM1515863v1_genomic                       0.00%    passed     98.30%
+ 480  GCA_015158675.1_ASM1515867v1_genomic                       0.00%    passed     99.72%
+ 481  GCA_015158695.1_ASM1515869v1_genomic                       0.97%    passed     99.79%
+ 482  GCA_015158705.1_ASM1515870v1_genomic                       0.04%    passed     99.88%
+ 483  GCA_015158715.1_ASM1515871v1_genomic                       0.00%    passed     99.89%
+ 484  GCA_015158755.1_ASM1515875v1_genomic                       0.00%    passed     99.66%
+ 485  GCA_015158765.1_ASM1515876v1_genomic                       0.00%    passed     99.76%
+ 486  GCA_015158795.1_ASM1515879v1_genomic                       0.00%    passed     99.66%
+ 487  GCA_015158805.1_ASM1515880v1_genomic                       0.00%    passed     99.72%
+ 488  GCA_015158815.1_ASM1515881v1_genomic                       0.00%    passed     99.89%
+ 489  GCA_015158845.1_ASM1515884v1_genomic                       0.00%    passed     99.76%
+ 490  GCA_015158875.1_ASM1515887v1_genomic                       0.00%    passed     99.66%
+ 491  GCA_015158895.1_ASM1515889v1_genomic                       0.00%    passed     99.76%
+ 492  GCA_015158905.1_ASM1515890v1_genomic                       0.00%    passed     99.51%
+ 493  GCA_015158935.1_ASM1515893v1_genomic                       0.00%    passed     99.89%
+ 494  GCA_015158945.1_ASM1515894v1_genomic                       0.00%    passed     99.66%
+ 495  GCA_015158955.1_ASM1515895v1_genomic                       0.09%    passed     99.66%
+ 496  GCA_015158995.1_ASM1515899v1_genomic                       0.00%    passed     99.00%
+ 497  GCA_015159005.1_ASM1515900v1_genomic                       0.00%    passed     99.51%
+ 498  GCA_015159035.1_ASM1515903v1_genomic                       0.00%    passed     99.66%
+ 499  GCA_015159045.1_ASM1515904v1_genomic                       0.00%    passed     99.77%
+ 500  GCA_015159075.1_ASM1515907v1_genomic                       0.00%    passed     99.53%
+ 501  GCA_015159085.1_ASM1515908v1_genomic                       0.00%    passed     99.66%
+ 502  GCA_015159105.1_ASM1515910v1_genomic                       0.00%    passed     99.53%
+ 503  GCA_015159135.1_ASM1515913v1_genomic                       0.00%    passed     99.53%
+ 504  GCA_015159145.1_ASM1515914v1_genomic                       0.00%    passed     99.53%
+ 505  GCA_015159175.1_ASM1515917v1_genomic                       0.00%    passed     99.00%
+ 506  GCA_015159195.1_ASM1515919v1_genomic                       0.00%    passed     99.66%
+ 507  GCA_015159615.1_ASM1515961v1_genomic                       0.00%    passed     72.38%
+ 508  GCA_015190655.1_ASM1519065v1_genomic                       0.00%    passed     99.66%
+ 509  GCA_015274685.1_ASM1527468v1_genomic                       0.00%    passed     91.24%
+ 510  GCA_015274715.1_ASM1527471v1_genomic                       0.22%    passed     91.53%
+ 511  GCA_015274745.1_ASM1527474v1_genomic                       0.00%    passed     91.24%
+ 512  GCA_015350425.1_ASM1535042v1_genomic                       0.13%    passed     81.88%
+ 513  GCA_015350435.1_ASM1535043v1_genomic                       0.00%    passed     82.36%
+ 514  GCA_015350455.1_ASM1535045v1_genomic                       0.00%    passed     82.36%
+ 515  GCA_016102545.1_ASM1610254v1_genomic                       0.13%    passed     92.57%
+ 516  GCA_016102555.1_ASM1610255v1_genomic                       1.89%    passed     81.04%
+ 517  GCA_016102565.1_ASM1610256v1_genomic                       1.23%    passed     80.06%
+ 518  GCA_016102575.1_ASM1610257v1_genomic                       0.22%    passed     93.77%
+ 519  GCA_016102585.1_ASM1610258v1_genomic                       0.00%    passed     79.82%
+ 520  GCA_016102645.1_ASM1610264v1_genomic                       0.44%    passed     88.50%
+ 521  GCA_016102655.1_ASM1610265v1_genomic                       0.26%    passed     87.02%
+ 522  GCA_016102665.1_ASM1610266v1_genomic                       0.83%    passed     87.62%
+ 523  GCA_016102675.1_ASM1610267v1_genomic                       0.00%    passed     79.82%
+ 524  GCA_016102685.1_ASM1610268v1_genomic                       0.04%    passed     79.87%
+ 525  GCA_016102745.1_ASM1610274v1_genomic                       0.00%    passed     81.79%
+ 526  GCA_016102755.1_ASM1610275v1_genomic                       0.00%    passed     91.01%
+ 527  GCA_016102765.1_ASM1610276v1_genomic                       0.00%    passed     82.36%
+ 528  GCA_016102775.1_ASM1610277v1_genomic                       0.04%    passed     84.31%
+ 529  GCA_016102785.1_ASM1610278v1_genomic                       0.04%    passed     81.30%
+ 530  GCA_016102845.1_ASM1610284v1_genomic                       0.00%    passed     79.82%
+ 531  GCA_016102855.1_ASM1610285v1_genomic                       0.00%    passed     81.79%
+ 532  GCA_016102875.1_ASM1610287v1_genomic                       0.04%    passed     82.59%
+ 533  GCA_016102905.1_ASM1610290v1_genomic                       0.04%    passed     82.55%
+ 534  GCA_016102915.1_ASM1610291v1_genomic                       0.00%    passed     81.64%
+ 535  GCA_016102945.1_ASM1610294v1_genomic                       0.00%    passed     82.36%
+ 536  GCA_016102965.1_ASM1610296v1_genomic                       0.00%    passed     79.14%
+ 537  GCA_016102975.1_ASM1610297v1_genomic                       0.09%    passed     82.20%
+ 538  GCA_016103005.1_ASM1610300v1_genomic                       0.04%    passed     84.96%
+ 539  GCA_900460465.1_57940_B01_genomic                          0.18%    passed     96.83%
+ 540  Reference                                                  0.00%    passed     98.96%
+ 541  SAMEA104233046                                            12.37%    passed     23.33%
+ 542  SAMEA104233047                                            16.32%    passed     14.60%
+ 543  SAMEA104233048                                            14.87%    passed     83.30%
+ 544  SAMEA104233049                                             0.44%    passed     83.01%
+ 545  SAMEA104488961                                             0.04%    passed     25.72%
+ 546  SAMEA1061800                                               1.32%    passed     80.60%
+ 547  SAMEA3541826                                               4.70%    passed     80.02%
+ 548  SAMEA3541827                                               5.22%    passed     39.97%
+ 549  SAMEA3713711                                               1.18%    passed     95.63%
+ 550  SAMEA3713712                                               0.26%    passed     91.38%
+ 551  SAMEA3713713                                               0.26%    passed     90.48%
+ 552  SAMEA3713714                                               0.35%    passed     90.32%
+ 553  SAMEA3713715                                               0.13%    passed     90.59%
+ 554  SAMEA3937653                                               2.19%    passed     93.27%
+ 555  SAMEA3937654                                               0.92%    passed     91.58%
+ 556  SAMEA4354665                                               0.92%    passed     96.19%
+ 557  SAMEA5054089                                               3.73%    passed     90.78%
+ 558  SAMEA5054090                                               3.42%    passed     89.86%
+ 559  SAMEA5054092                                               2.59%    passed     99.87%
+ 560  SAMEA5054093                                              17.68%    passed     96.62%
+ 561  SAMEA5661360                                               2.59%    passed     97.59%
+ 562  SAMEA5661363                                               0.04%    passed     95.87%
+ 563  SAMEA5661364                                              12.94%    passed     67.20%
+ 564  SAMEA5661365                                               4.08%    passed     92.51%
+ 565  SAMEA5661367                                               0.35%    passed     99.09%
+ 566  SAMEA5661372                                               2.28%    passed     97.92%
+ 567  SAMEA5661384                                               2.24%    passed     92.35%
+ 568  SAMEA5661385                                               6.14%    passed     99.86%
+ 569  SAMEA5661389                                               2.72%    passed     92.73%
+ 570  SAMEA5661390                                              14.79%    passed     91.75%
+ 571  SAMEA5818798                                               0.48%    passed     97.92%
+ 572  SAMEA5818799                                               0.04%    passed     95.38%
+ 573  SAMEA5818800                                               0.00%    passed     95.74%
+ 574  SAMEA5818801                                               0.04%    passed     96.29%
+ 575  SAMEA5818803                                               0.00%    passed     99.79%
+ 576  SAMEA5818805                                               0.09%    passed     99.07%
+ 577  SAMEA5818806                                               0.09%    passed     91.54%
+ 578  SAMEA5818808                                               6.49%    passed     93.43%
+ 579  SAMEA5818809                                               0.13%    passed     85.83%
+ 580  SAMEA5818811                                               3.25%    passed     79.14%
+ 581  SAMEA5818815                                               0.04%    passed     99.31%
+ 582  SAMEA5818817                                               1.45%    passed     87.96%
+ 583  SAMEA5818818                                               0.53%    passed     99.54%
+ 584  SAMEA5818821                                               0.13%    passed     99.68%
+ 585  SAMEA5818822                                               1.62%    passed     98.36%
+ 586  SAMEA5818825                                               2.11%    passed     98.04%
+ 587  SAMEA5818826                                               0.00%    passed     99.62%
+ 588  SAMEA5818828                                               0.00%    passed     99.62%
+ 589  SAMEA5818829                                               0.04%    passed     99.54%
+ 590  SAMEA5818830                                               0.04%    passed     99.15%
+ 591  SAMEA6637002                                               0.09%    passed     99.47%
+ 592  SAMEA6637004                                               0.22%    passed     99.55%
+ 593  SAMEA6651390                                               0.04%    passed     99.31%
+ 594  SAMEA6812876                                               4.12%    passed     31.66%
+ 595  SAMEA6812877                                               0.26%    passed     36.35%
+ 596  SAMEA7293135                                               0.57%    passed     95.75%
+ 597  SAMEA7293136                                               7.15%    passed     99.04%
+ 598  SAMEA7313236_38                                            2.15%    passed     64.44%
+ 599  SAMEA7313243_45                                           13.51%    passed     97.56%
+ 600  SAMEA7313246_49                                            0.00%    passed     99.30%
+ 601  SAMN00715800                                               0.83%    passed     73.69%
+****  TOTAL                                                      0.52%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+INFO: 4260972 const sites added into alignment
+NOTE: minimal branch length is reduced to 0.000000023456 for long alignment
+NOTE: GCA_000182705.1_ASM18270v1_genomic is identical to GCA_000006645.1_ASM664v1_genomic but kept for subsequent analysis
+NOTE: GCA_003798225.1_ASM379822v1_genomic is identical to GCA_000013825.1_ASM1382v1_genomic but kept for subsequent analysis
+NOTE: GCA_002005285.1_ASM200528v1_genomic is identical to GCA_000182485.1_ASM18248v1_genomic but kept for subsequent analysis
+NOTE: GCA_000834775.1_ASM83477v1_genomic is identical to GCA_000255735.1_ASM25573v1_genomic but kept for subsequent analysis
+NOTE: GCA_000268485.2_ASM26848v2_genomic is identical to GCA_000268485.1_ASM26848v1_genomic but kept for subsequent analysis
+NOTE: GCA_000268725.2_ASM26872v2_genomic is identical to GCA_000268725.1_ASM26872v1_genomic but kept for subsequent analysis
+NOTE: GCA_000268805.2_ASM26880v2_genomic is identical to GCA_000268805.1_ASM26880v1_genomic but kept for subsequent analysis
+NOTE: GCA_000268865.2_ASM26886v2_genomic is identical to GCA_000268865.1_ASM26886v1_genomic but kept for subsequent analysis
+NOTE: GCA_000269305.1_ASM26930v1_genomic is identical to GCA_000268965.1_ASM26896v1_genomic but kept for subsequent analysis
+NOTE: GCA_000269285.2_ASM26928v2_genomic is identical to GCA_000269285.1_ASM26928v1_genomic but kept for subsequent analysis
+NOTE: GCA_001261985.1_YPW_3_IHQD_genomic is identical to GCA_000590535.2_ASM59053v2_genomic but kept for subsequent analysis
+NOTE: GCA_003798085.1_ASM379808v1_genomic is identical to GCA_000834905.1_ASM83490v1_genomic but kept for subsequent analysis
+NOTE: GCA_001188715.1_ASM118871v1_genomic is identical to GCA_001188325.1_YPY_1_genomic but kept for subsequent analysis
+NOTE: GCA_001188935.1_ASM118893v1_genomic is identical to GCA_001188695.1_ASM118869v1_genomic but kept for subsequent analysis
+NOTE: GCA_001188815.1_ASM118881v1_genomic is identical to GCA_001188735.1_ASM118873v1_genomic but kept for subsequent analysis
+NOTE: GCA_002993145.1_ASM299314v1_genomic is identical to GCA_001188795.1_ASM118879v1_genomic but kept for subsequent analysis
+NOTE: GCA_001295045.1_ASM129504v1_genomic is identical to GCA_001294915.1_ASM129491v1_genomic but kept for subsequent analysis
+NOTE: GCA_002981925.1_ASM298192v1_genomic is identical to GCA_001295025.1_ASM129502v1_genomic but kept for subsequent analysis
+NOTE: GCA_003074255.1_ASM307425v1_genomic is identical to GCA_003074155.1_ASM307415v1_genomic but kept for subsequent analysis
+NOTE: GCA_016102915.1_ASM1610291v1_genomic is identical to GCA_008630485.1_ASM863048v1_genomic but kept for subsequent analysis
+NOTE: GCA_009667945.1_ASM966794v1_genomic is identical to GCA_009667885.1_ASM966788v1_genomic but kept for subsequent analysis
+NOTE: GCA_009669775.1_ASM966977v1_genomic is identical to GCA_009667895.1_ASM966789v1_genomic but kept for subsequent analysis
+NOTE: GCA_009669935.1_ASM966993v1_genomic is identical to GCA_009669625.1_ASM966962v1_genomic but kept for subsequent analysis
+NOTE: GCA_009669825.1_ASM966982v1_genomic is identical to GCA_009669675.1_ASM966967v1_genomic but kept for subsequent analysis
+NOTE: GCA_009670185.1_ASM967018v1_genomic is identical to GCA_009669725.1_ASM966972v1_genomic but kept for subsequent analysis
+NOTE: GCA_009670465.1_ASM967046v1_genomic is identical to GCA_009669765.1_ASM966976v1_genomic but kept for subsequent analysis
+NOTE: GCA_009670115.1_ASM967011v1_genomic is identical to GCA_009670055.1_ASM967005v1_genomic but kept for subsequent analysis
+NOTE: GCA_009670445.1_ASM967044v1_genomic is identical to GCA_009670245.1_ASM967024v1_genomic but kept for subsequent analysis
+NOTE: GCA_009670815.1_ASM967081v1_genomic is identical to GCA_009670725.1_ASM967072v1_genomic but kept for subsequent analysis
+NOTE: GCA_016102745.1_ASM1610274v1_genomic is identical to GCA_009909645.1_ASM990964v1_genomic but kept for subsequent analysis
+NOTE: GCA_013392055.1_ASM1339205v1_genomic is identical to GCA_013392045.1_ASM1339204v1_genomic but kept for subsequent analysis
+NOTE: GCA_015158625.1_ASM1515862v1_genomic is identical to GCA_015158475.1_ASM1515847v1_genomic but kept for subsequent analysis
+NOTE: GCA_015158635.1_ASM1515863v1_genomic is identical to GCA_015158575.1_ASM1515857v1_genomic but kept for subsequent analysis
+NOTE: GCA_015158805.1_ASM1515880v1_genomic is identical to GCA_015158675.1_ASM1515867v1_genomic but kept for subsequent analysis
+NOTE: GCA_015158815.1_ASM1515881v1_genomic is identical to GCA_015158715.1_ASM1515871v1_genomic but kept for subsequent analysis
+NOTE: GCA_015158795.1_ASM1515879v1_genomic is identical to GCA_015158755.1_ASM1515875v1_genomic but kept for subsequent analysis
+NOTE: GCA_015158845.1_ASM1515884v1_genomic is identical to GCA_015158765.1_ASM1515876v1_genomic but kept for subsequent analysis
+NOTE: GCA_015159005.1_ASM1515900v1_genomic is identical to GCA_015158905.1_ASM1515890v1_genomic but kept for subsequent analysis
+NOTE: GCA_015159175.1_ASM1515917v1_genomic is identical to GCA_015158995.1_ASM1515899v1_genomic but kept for subsequent analysis
+NOTE: GCA_015159105.1_ASM1515910v1_genomic is identical to GCA_015159075.1_ASM1515907v1_genomic but kept for subsequent analysis
+NOTE: GCA_015159145.1_ASM1515914v1_genomic is identical to GCA_015159135.1_ASM1515913v1_genomic but kept for subsequent analysis
+NOTE: GCA_015274745.1_ASM1527474v1_genomic is identical to GCA_015274685.1_ASM1527468v1_genomic but kept for subsequent analysis
+NOTE: GCA_015350455.1_ASM1535045v1_genomic is identical to GCA_015350435.1_ASM1535043v1_genomic but kept for subsequent analysis
+NOTE: GCA_016102845.1_ASM1610284v1_genomic is identical to GCA_016102585.1_ASM1610258v1_genomic but kept for subsequent analysis
+NOTE: SAMEA5818828 is identical to SAMEA5818826 but kept for subsequent analysis
+NOTE: 68 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: GCA_001509855.1_ASM150985v1_genomic (identical to GCA_000255735.1_ASM25573v1_genomic) is ignored but added at the end
+NOTE: GCA_000268685.1_ASM26868v1_genomic (identical to GCA_000268485.1_ASM26848v1_genomic) is ignored but added at the end
+NOTE: GCA_000269245.1_ASM26924v1_genomic (identical to GCA_000268485.1_ASM26848v1_genomic) is ignored but added at the end
+NOTE: GCA_000311885.1_ASM31188v1_genomic (identical to GCA_000268485.1_ASM26848v1_genomic) is ignored but added at the end
+NOTE: GCA_001617785.1_Yersinia_pestis_M-549_genomic (identical to GCA_001188735.1_ASM118873v1_genomic) is ignored but added at the end
+NOTE: GCA_002981955.1_ASM298195v1_genomic (identical to GCA_001295025.1_ASM129502v1_genomic) is ignored but added at the end
+NOTE: GCA_003085915.1_ASM308591v1_genomic (identical to GCA_003074155.1_ASM307415v1_genomic) is ignored but added at the end
+NOTE: GCA_009667985.1_ASM966798v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669545.1_ASM966954v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669555.1_ASM966955v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669565.1_ASM966956v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669605.1_ASM966960v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669665.1_ASM966966v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669805.1_ASM966980v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669835.1_ASM966983v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669845.1_ASM966984v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669875.1_ASM966987v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669905.1_ASM966990v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669925.1_ASM966992v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670105.1_ASM967010v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670205.1_ASM967020v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670325.1_ASM967032v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670345.1_ASM967034v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670355.1_ASM967035v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670485.1_ASM967048v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670545.1_ASM967054v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670575.1_ASM967057v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670585.1_ASM967058v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670605.1_ASM967060v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670625.1_ASM967062v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670765.1_ASM967076v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670775.1_ASM967077v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670785.1_ASM967078v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670835.1_ASM967083v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009670865.1_ASM967086v1_genomic (identical to GCA_009667885.1_ASM966788v1_genomic) is ignored but added at the end
+NOTE: GCA_009669975.1_ASM966997v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670015.1_ASM967001v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670075.1_ASM967007v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670155.1_ASM967015v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670385.1_ASM967038v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670515.1_ASM967051v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670565.1_ASM967056v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670875.1_ASM967087v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670895.1_ASM967089v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670905.1_ASM967090v1_genomic (identical to GCA_009667895.1_ASM966789v1_genomic) is ignored but added at the end
+NOTE: GCA_009670045.1_ASM967004v1_genomic (identical to GCA_009669625.1_ASM966962v1_genomic) is ignored but added at the end
+NOTE: GCA_009670225.1_ASM967022v1_genomic (identical to GCA_009669725.1_ASM966972v1_genomic) is ignored but added at the end
+NOTE: GCA_009670285.1_ASM967028v1_genomic (identical to GCA_009669725.1_ASM966972v1_genomic) is ignored but added at the end
+NOTE: GCA_009670305.1_ASM967030v1_genomic (identical to GCA_009669725.1_ASM966972v1_genomic) is ignored but added at the end
+NOTE: GCA_009670705.1_ASM967070v1_genomic (identical to GCA_009669765.1_ASM966976v1_genomic) is ignored but added at the end
+NOTE: GCA_016102855.1_ASM1610285v1_genomic (identical to GCA_009909645.1_ASM990964v1_genomic) is ignored but added at the end
+NOTE: GCA_013392075.1_ASM1339207v1_genomic (identical to GCA_013392045.1_ASM1339204v1_genomic) is ignored but added at the end
+NOTE: GCA_013392085.1_ASM1339208v1_genomic (identical to GCA_013392045.1_ASM1339204v1_genomic) is ignored but added at the end
+NOTE: GCA_013392105.1_ASM1339210v1_genomic (identical to GCA_013392045.1_ASM1339204v1_genomic) is ignored but added at the end
+NOTE: GCA_013392145.1_ASM1339214v1_genomic (identical to GCA_013392045.1_ASM1339204v1_genomic) is ignored but added at the end
+NOTE: GCA_014734355.1_ASM1473435v1_genomic (identical to GCA_013392045.1_ASM1339204v1_genomic) is ignored but added at the end
+NOTE: GCA_014734395.1_ASM1473439v1_genomic (identical to GCA_013392045.1_ASM1339204v1_genomic) is ignored but added at the end
+NOTE: GCA_014734405.1_ASM1473440v1_genomic (identical to GCA_013392045.1_ASM1339204v1_genomic) is ignored but added at the end
+NOTE: GCA_015158935.1_ASM1515893v1_genomic (identical to GCA_015158715.1_ASM1515871v1_genomic) is ignored but added at the end
+NOTE: GCA_015158875.1_ASM1515887v1_genomic (identical to GCA_015158755.1_ASM1515875v1_genomic) is ignored but added at the end
+NOTE: GCA_015158945.1_ASM1515894v1_genomic (identical to GCA_015158755.1_ASM1515875v1_genomic) is ignored but added at the end
+NOTE: GCA_015159035.1_ASM1515903v1_genomic (identical to GCA_015158755.1_ASM1515875v1_genomic) is ignored but added at the end
+NOTE: GCA_015159085.1_ASM1515908v1_genomic (identical to GCA_015158755.1_ASM1515875v1_genomic) is ignored but added at the end
+NOTE: GCA_015159195.1_ASM1515919v1_genomic (identical to GCA_015158755.1_ASM1515875v1_genomic) is ignored but added at the end
+NOTE: GCA_015190655.1_ASM1519065v1_genomic (identical to GCA_015158755.1_ASM1515875v1_genomic) is ignored but added at the end
+NOTE: GCA_015158895.1_ASM1515889v1_genomic (identical to GCA_015158765.1_ASM1515876v1_genomic) is ignored but added at the end
+NOTE: GCA_016102765.1_ASM1610276v1_genomic (identical to GCA_015350435.1_ASM1535043v1_genomic) is ignored but added at the end
+NOTE: GCA_016102945.1_ASM1610294v1_genomic (identical to GCA_015350435.1_ASM1535043v1_genomic) is ignored but added at the end
+Alignment was printed to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/iqtree-core_chromosome.filter1.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/iqtree-core_chromosome.filter1.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.677 seconds
+
+NOTE: 38 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946618.717
+2. Current log-likelihood: -5943131.440
+3. Current log-likelihood: -5943130.594
+4. Current log-likelihood: -5943111.595
+5. Current log-likelihood: -5943106.788
+6. Current log-likelihood: -5943103.656
+7. Current log-likelihood: -5943101.840
+8. Current log-likelihood: -5943100.690
+9. Current log-likelihood: -5943099.729
+10. Current log-likelihood: -5943099.214
+11. Current log-likelihood: -5943098.847
+12. Current log-likelihood: -5943098.691
+13. Current log-likelihood: -5943098.520
+Optimal log-likelihood: -5943098.451
+Rate parameters:  A-C: 1.00000  A-G: 1.39116  A-T: 0.32441  C-G: 0.32441  C-T: 1.39116  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.999
+Parameters optimization took 13 rounds (4.667 sec)
+Computing ML distances based on estimated model parameters... 27.429 sec
+Computing BIONJ tree...
+1.242 seconds
+Log-likelihood of BIONJ tree: -5943663.349
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 75.905 second
+Computing log-likelihood of 98 initial trees ... 10.483 seconds
+Current best score: -5943063.251
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5943057.675
+Iteration 10 / LogL: -5943067.064 / Time: 0h:1m:52s
+Iteration 20 / LogL: -5943070.421 / Time: 0h:2m:5s
+Finish initializing candidate tree set (20)
+Current best tree score: -5943057.675 / CPU time: 114.530
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5943077.158 / Time: 0h:2m:34s (0h:6m:16s left)
+Iteration 40 / LogL: -5943078.637 / Time: 0h:3m:3s (0h:4m:45s left)
+Iteration 50 / LogL: -5943090.224 / Time: 0h:3m:31s (0h:3m:39s left)
+Iteration 60 / LogL: -5943089.086 / Time: 0h:4m:0s (0h:2m:46s left)
+Iteration 70 / LogL: -5943153.552 / Time: 0h:4m:28s (0h:2m:0s left)
+Iteration 80 / LogL: -5943092.706 / Time: 0h:4m:58s (0h:1m:19s left)
+Iteration 90 / LogL: -5943089.939 / Time: 0h:5m:28s (0h:0m:40s left)
+Iteration 100 / LogL: -5943107.135 / Time: 0h:5m:55s (0h:0m:3s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:6m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5943057.675
+Optimal log-likelihood: -5943057.671
+Rate parameters:  A-C: 1.00000  A-G: 1.38746  A-T: 0.32304  C-G: 0.32304  C-T: 1.38746  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.999
+Parameters optimization took 1 rounds (0.406 sec)
+BEST SCORE FOUND : -5943057.671
+Collapsing near-zero internal branches... 243 collapsed
+Total tree length: 0.001
+
+Total number of iterations: 102
+CPU time used for tree search: 2697.870 sec (0h:44m:57s)
+Wall-clock time used for tree search: 350.462 sec (0h:5m:50s)
+Total CPU time used: 2789.166 sec (0h:46m:29s)
+Total wall-clock time used: 362.055 sec (0h:6m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                /2/scratch/keaton/plague-phylogeography/results/iqtree/all/iqtree-core_chromosome.filter1.iqtree
+  Maximum-likelihood tree:       /2/scratch/keaton/plague-phylogeography/results/iqtree/all/iqtree-core_chromosome.filter1.treefile
+  Likelihood distances:          /2/scratch/keaton/plague-phylogeography/results/iqtree/all/iqtree-core_chromosome.filter1.mldist
+  Screen log file:               /2/scratch/keaton/plague-phylogeography/results/iqtree/all/iqtree-core_chromosome.filter1.log
+
+Date and Time: Wed Apr 14 15:48:37 2021
