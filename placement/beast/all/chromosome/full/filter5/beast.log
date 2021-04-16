@@ -1,0 +1,97 @@
+#
+#model:
+#
+#<?xml version="1.0" encoding="UTF-8" standalone="no"?><input id="posterior" spec="beast.core.util.CompoundDistribution">
+#    <distribution id="prior" spec="beast.core.util.CompoundDistribution">
+#        <prior id="ucldStdevPrior.c:beast.timetree" name="distribution">
+#            <parameter id="ucldStdev.c:beast.timetree" lower="0.0" name="x" spec="beast.core.parameter.RealParameter">0.1</parameter>
+#            <Gamma id="Gamma.0" name="distr">
+#                <parameter estimate="false" id="RealParameter.1" name="alpha" spec="beast.core.parameter.RealParameter">0.5396</parameter>
+#                <parameter estimate="false" id="RealParameter.2" name="beta" spec="beast.core.parameter.RealParameter">0.3819</parameter>
+#            </Gamma>
+#        </prior>
+#    </distribution>
+#    <distribution id="likelihood" spec="beast.core.util.CompoundDistribution" useThreads="true">
+#        <distribution id="slocationtreeLikelihood.beast.timetree" spec="sphericalGeo.ApproxMultivariateTraitLikelihood">
+#            <data id="beast.timetree" spec="sphericalGeo.AlignmentFromTraitMap">
+#                <traitMap id="traitmap.s:beast.timetree" initByMean="true" randomizelower="-90 -180" randomizeupper="90 180" spec="sphericalGeo.TreeTraitMap" traitName="location">
+#                    <tree IsLabelledNewick="true" adjustTipHeights="false" estimate="false" id="Tree.t:beast.timetree" newick="((GCA_000323485.1_ASM32348v1_genomic:117.08600000000024,GCA_000323845.1_ASM32384v1_genomic:116.08600000000024):5603.7,((((((((((((GCA_000169635.1_ASM16963v1_genomic:467.27099999999973,(GCA_000170275.1_ASM17027v1_genomic:453.27099999999973,GCA_000269145.1_ASM26914v1_genomic:472.27099999999973):0.0):0.0,Reference:454.27099999999973):8.265830000000278,GCA_000325365.1_ASM32536v1_genomic:424.53600000000006):0.0,GCA_000324725.1_ASM32472v1_genomic:452.53600000000006):0.0,GCA_000323965.1_ASM32396v1_genomic:424.53600000000006):474.46900000000005,GCA_000835005.1_ASM83500v1_genomic:930.0060000000003):27.81800000000021,(((GCA_000323505.1_ASM32350v1_genomic:603.4870000000001,GCA_000325305.1_ASM32530v1_genomic:597.4870000000001):373.33600000000024,GCA_003074235.1_ASM307423v1_genomic:960.8239999999996):0.0,((((GCA_000323565.1_ASM32356v1_genomic:588.2979999999998,GCA_016102905.1_ASM1610290v1_genomic:601.2979999999998):145.0050000000001,GCA_000323945.1_ASM32394v1_genomic:763.3029999999999):169.26500000000033,GCA_008630435.1_ASM863043v1_genomic:925.5680000000002):43.25579999999991,(GCA_000324565.1_ASM32456v1_genomic:612.8400000000001,(GCA_002005285.1_ASM200528v1_genomic:458.46200000000044,GCA_015158755.1_ASM1515875v1_genomic:516.4620000000004):147.3779999999997):316.9840000000004):0.0):0.0):0.0,GCA_000324065.1_ASM32406v1_genomic:973.8239999999996):0.0,(GCA_000320465.1_ASM32046v1_genomic:975.8239999999996,GCA_003074535.1_ASM307453v1_genomic:924.8239999999996):0.0):776.5500000000002,GCA_009670865.1_ASM967086v1_genomic:1720.37):1444.8199999999997,GCA_002981895.1_ASM298189v1_genomic:3166.1899999999996):325.11500000000024,GCA_001294975.1_ASM129497v1_genomic:3499.31):2239.48):0.0" spec="beast.util.TreeParser">
+#                        <taxonset id="TaxonSet.0" spec="beast.evolution.alignment.TaxonSet">
+#                            <taxon id="GCA_000169635.1_ASM16963v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000170275.1_ASM17027v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000269145.1_ASM26914v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000320465.1_ASM32046v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000323485.1_ASM32348v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000323505.1_ASM32350v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000323565.1_ASM32356v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000323845.1_ASM32384v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000323945.1_ASM32394v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000323965.1_ASM32396v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000324065.1_ASM32406v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000324565.1_ASM32456v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000324725.1_ASM32472v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000325305.1_ASM32530v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000325365.1_ASM32536v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_000835005.1_ASM83500v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_001294975.1_ASM129497v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_002005285.1_ASM200528v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_002981895.1_ASM298189v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_003074235.1_ASM307423v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_003074535.1_ASM307453v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_008630435.1_ASM863043v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_009670865.1_ASM967086v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_015158755.1_ASM1515875v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="GCA_016102905.1_ASM1610290v1_genomic" spec="beast.evolution.alignment.Taxon"/>
+#                            <taxon id="Reference" spec="beast.evolution.alignment.Taxon"/>
+#                        </taxonset>
+#                    </tree>
+#                    <parameter dimension="102" id="location.s:beast.timetree" minordimension="2" spec="sphericalGeo.LocationParameter">0.0 0.0</parameter>
+#                        GCA_000169635.1_ASM16963v1_genomic=-18.9249604 46.4416422,
+#GCA_000170275.1_ASM17027v1_genomic=25.0 102.0,
+#GCA_000269145.1_ASM26914v1_genomic=-8.0 -78.5,
+#GCA_000320465.1_ASM32046v1_genomic=42.4804953 85.4633464,
+#GCA_000323485.1_ASM32348v1_genomic=35.40709525 95.95211573241954,
+#GCA_000323505.1_ASM32350v1_genomic=35.40709525 95.95211573241954,
+#GCA_000323565.1_ASM32356v1_genomic=42.4804953 85.4633464,
+#GCA_000323845.1_ASM32384v1_genomic=35.40709525 95.95211573241954,
+#GCA_000323945.1_ASM32394v1_genomic=43.2443242 114.3251664,
+#GCA_000323965.1_ASM32396v1_genomic=35.40709525 95.95211573241954,
+#GCA_000324065.1_ASM32406v1_genomic=42.4804953 85.4633464,
+#GCA_000324565.1_ASM32456v1_genomic=43.2443242 114.3251664,
+#GCA_000324725.1_ASM32472v1_genomic=38.0000001 101.9999999,
+#GCA_000325305.1_ASM32530v1_genomic=45.3463139 95.9325806,
+#GCA_000325365.1_ASM32536v1_genomic=25.0 102.0,
+#GCA_000835005.1_ASM83500v1_genomic=-1.3031689499999999 36.826061224105075,
+#GCA_001294975.1_ASM129497v1_genomic=42.445186899999996 72.14310491939636,
+#GCA_002005285.1_ASM200528v1_genomic=18.9068356 75.6741579,
+#GCA_002981895.1_ASM298189v1_genomic=48.5470083 89.8549358,
+#GCA_003074235.1_ASM307423v1_genomic=48.5470083 89.8549358,
+#GCA_003074535.1_ASM307453v1_genomic=42.06103415 78.1707323234642,
+#GCA_008630435.1_ASM863043v1_genomic=43.7368326 41.7267991,
+#GCA_009670865.1_ASM967086v1_genomic=42.4804953 85.4633464,
+#GCA_015158755.1_ASM1515875v1_genomic=29.8556443 90.8749807,
+#GCA_016102905.1_ASM1610290v1_genomic=46.2313018 45.3275745,
+#Reference=38.7251776 -105.607716                                    </traitMap>
+#                <userDataType id="LocationDataType.0" spec="sphericalGeo.LocationDataType"/>
+#            </data>
+#            <tree idref="Tree.t:beast.timetree"/>
+#            <siteModel id="geoContSiteModel.s:beast.timetree" spec="beast.evolution.sitemodel.SiteModel">
+#                <substModel fast="true" id="sdiffusionModel.s:beast.timetree" spec="sphericalGeo.SphericalDiffusionModel">
+#                    <parameter id="sprecision.s:beast.timetree" lower="0.0" name="precision" spec="beast.core.parameter.RealParameter">100.0</parameter>
+#                </substModel>
+#            </siteModel>
+#            <branchRateModel id="RelaxedClock.c:beast.timetree" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" tree="@Tree.t:beast.timetree">
+#                <LogNormal S="@ucldStdev.c:beast.timetree" id="LogNormalDistributionModel.c:beast.timetree" meanInRealSpace="true" name="distr">
+#                    <parameter estimate="false" id="RealParameter.0" lower="0.0" name="M" spec="beast.core.parameter.RealParameter" upper="1.0">1.0</parameter>
+#                </LogNormal>
+#                <rateCategories dimension="50" id="rateCategories.c:beast.timetree" spec="beast.core.parameter.IntegerParameter">1</rateCategories>
+#                <parameter estimate="false" id="ucldMean.c:beast.timetree" name="clock.rate" spec="beast.core.parameter.RealParameter">1.0E-100</parameter>
+#            </branchRateModel>
+#        </distribution>
+#    </distribution>
+#</input>
+#
+Sample	posterior	likelihood	prior	ucldStdev	rate.mean	rate.variance	rate.coefficientOfVariation
+0	-5.000000000000001E100	-5.000000000000001E100	0.819364145120802	0.1	1.01534086000505E-100	1.2461664561932771E-202	0.11013599580072876
+1000	-5.000000000000001E100	-5.000000000000001E100	-189.5786310193825	71.65702548762016	0.0	0.0	NaN
+2000	-5.000000000000001E100	-5.000000000000001E100	-449.28150240705537	170.68494706022315	0.0	0.0	NaN
