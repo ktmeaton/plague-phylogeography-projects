@@ -1,0 +1,168 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Mar 30 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    DESKTOP-36M8DA7 (SSE4.2, 12 GB RAM)
+Command: iqtree -s /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/snippy_multi/all/chromosome/prune/filter5/snippy-multi.snps.aln -m MFP --threads-max 2 -nt 2 -o GCA_000323485.1_ASM32348v1_genomic -seed 674947425 --runs 1 -fconst 1126283,1013395,1024525,1123137 -redo -pre /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/prune/filter5/iqtree
+Seed:    674947425 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Apr 16 16:52:43 2021
+Kernel:  SSE2 - 2 threads (4 CPU cores detected)
+
+Reading alignment file /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/snippy_multi/all/chromosome/prune/filter5/snippy-multi.snps.aln ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 27 sequences with 1933 columns, 679 distinct patterns
+303 parsimony-informative, 1625 singleton sites, 5 constant sites
+                                      Gap/Ambiguity  Composition  p-value
+   1  GCA_000169635.1_ASM16963v1_genomic      0.00%    passed     78.99%
+   2  GCA_000170275.1_ASM17027v1_genomic      0.21%    passed     78.92%
+   3  GCA_000269145.1_ASM26914v1_genomic      1.24%    passed     71.92%
+   4  GCA_000320465.1_ASM32046v1_genomic      0.00%    passed     80.61%
+   5  GCA_000323485.1_ASM32348v1_genomic      0.78%    failed      0.00%
+   6  GCA_000323505.1_ASM32350v1_genomic      0.10%    passed     98.50%
+   7  GCA_000323565.1_ASM32356v1_genomic      1.66%    passed     95.81%
+   8  GCA_000323625.1_ASM32362v1_genomic      1.55%    passed     50.22%
+   9  GCA_000323945.1_ASM32394v1_genomic      9.78%    passed     99.79%
+  10  GCA_000323965.1_ASM32396v1_genomic      0.57%    passed     92.34%
+  11  GCA_000324065.1_ASM32406v1_genomic      2.64%    passed     77.58%
+  12  GCA_000324565.1_ASM32456v1_genomic      0.05%    passed     97.65%
+  13  GCA_000324725.1_ASM32472v1_genomic      0.41%    passed     89.74%
+  14  GCA_000325305.1_ASM32530v1_genomic      0.36%    passed     99.70%
+  15  GCA_000325365.1_ASM32536v1_genomic      0.31%    passed     92.40%
+  16  GCA_000835005.1_ASM83500v1_genomic      3.05%    passed     10.56%
+  17  GCA_001188795.1_ASM118879v1_genomic     1.03%    passed     19.17%
+  18  GCA_001294975.1_ASM129497v1_genomic     0.05%    passed     63.60%
+  19  GCA_002005285.1_ASM200528v1_genomic     0.00%    passed     92.29%
+  20  GCA_002981895.1_ASM298189v1_genomic     0.10%    passed     78.53%
+  21  GCA_003074235.1_ASM307423v1_genomic     0.31%    passed     98.76%
+  22  GCA_003074535.1_ASM307453v1_genomic     0.00%    passed     91.80%
+  23  GCA_008630435.1_ASM863043v1_genomic     0.67%    passed     69.32%
+  24  GCA_009670865.1_ASM967086v1_genomic     0.00%    passed     67.93%
+  25  GCA_015158755.1_ASM1515875v1_genomic    0.00%    passed     99.12%
+  26  GCA_016102905.1_ASM1610290v1_genomic    0.00%    passed     39.26%
+  27  Reference                               0.00%    passed     74.75%
+****  TOTAL                                   0.92%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+INFO: 4287340 const sites added into alignment
+NOTE: minimal branch length is reduced to 0.000000023314 for long alignment
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.006 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -5965715.491
+Optimal log-likelihood: -5965714.634
+Rate parameters:  A-C: 0.90220  A-G: 1.68403  A-T: 0.36346  C-G: 0.21027  C-T: 1.84841  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.134 sec)
+Time for fast ML tree search: 0.481 seconds
+
+NOTE: ModelFinder requires 6 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 4289273) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         5965734.343  59  11931586.686 11931586.688 11932369.712
+  2  GTR+F+I       5965700.643  60  11931521.287 11931521.289 11932317.585
+  3  GTR+F+G4      5965716.757  60  11931553.513 11931553.515 11932349.811
+  4  GTR+F+I+G4    5965709.314  61  11931540.629 11931540.631 11932350.198
+  5  GTR+F+R2      5965728.476  61  11931578.952 11931578.953 11932388.521
+  6  GTR+F+R3      5965724.235  63  11931574.470 11931574.472 11932410.582
+ 15  SYM+I         5970954.681  57  11942023.363 11942023.364 11942779.845
+ 28  TVM+F+I       5965702.208  59  11931522.416 11931522.418 11932305.442
+ 41  TVMe+I        5970956.039  56  11942024.078 11942024.079 11942767.289
+ 54  TIM3+F+I      5965807.038  58  11931730.076 11931730.077 11932499.830
+ 67  TIM3e+I       5971062.426  55  11942234.853 11942234.854 11942964.792
+ 80  TIM2+F+I      5965805.546  58  11931727.091 11931727.093 11932496.845
+ 93  TIM2e+I       5971059.695  55  11942229.391 11942229.392 11942959.330
+106  TIM+F+I       5965709.298  58  11931534.597 11931534.598 11932304.351
+119  TIMe+I        5970966.247  55  11942042.494 11942042.495 11942772.434
+132  TPM3u+F+I     5965808.541  57  11931731.081 11931731.083 11932487.564
+145  TPM3+F+I      5965808.541  57  11931731.081 11931731.083 11932487.564
+158  TPM2u+F+I     5965806.707  57  11931727.415 11931727.416 11932483.898
+171  TPM2+F+I      5965806.707  57  11931727.415 11931727.416 11932483.898
+184  K3Pu+F+I      5965710.746  57  11931535.491 11931535.493 11932291.974
+197  K3P+I         5970967.555  54  11942043.110 11942043.112 11942759.778
+210  TN+F+I        5965807.146  57  11931728.292 11931728.294 11932484.775
+223  TNe+I         5971063.355  54  11942234.710 11942234.712 11942951.378
+236  HKY+F+I       5965808.750  56  11931729.499 11931729.501 11932472.710
+249  K2P+I         5971064.751  53  11942235.502 11942235.503 11942938.898
+262  F81+F+I       5966126.483  55  11932362.965 11932362.967 11933092.905
+275  JC+I          5971381.299  52  11942866.597 11942866.599 11943556.722
+Akaike Information Criterion:           GTR+F+I
+Corrected Akaike Information Criterion: GTR+F+I
+Bayesian Information Criterion:         K3Pu+F+I
+Best-fit model: K3Pu+F+I chosen according to BIC
+
+All model information printed to /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/prune/filter5/iqtree.model.gz
+CPU time for ModelFinder: 13.778 seconds (0h:0m:13s)
+Wall-clock time for ModelFinder: 11.666 seconds (0h:0m:11s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5965710.746
+Optimal log-likelihood: -5965710.737
+Rate parameters:  A-C: 1.00000  A-G: 2.08822  A-T: 0.32819  C-G: 0.32819  C-T: 2.08822  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.969
+Parameters optimization took 1 rounds (0.018 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.005273 sec (of wall-clock time) 0.005695 sec(of CPU time)
+Computing RapidNJ tree took 0.007419 sec (of wall-clock time) 0.007528 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5967817.758
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.531 second
+Computing log-likelihood of 98 initial trees ... 0.275 seconds
+Current best score: -5965710.737
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5965710.729
+Iteration 10 / LogL: -5965710.729 / Time: 0h:0m:1s
+Iteration 20 / LogL: -5965710.729 / Time: 0h:0m:1s
+Finish initializing candidate tree set (1)
+Current best tree score: -5965710.729 / CPU time: 1.095
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -5965710.728
+Iteration 30 / LogL: -5965710.730 / Time: 0h:0m:1s (0h:0m:4s left)
+Iteration 40 / LogL: -5965712.387 / Time: 0h:0m:2s (0h:0m:3s left)
+Iteration 50 / LogL: -5965710.729 / Time: 0h:0m:2s (0h:0m:2s left)
+Iteration 60 / LogL: -5965722.245 / Time: 0h:0m:2s (0h:0m:2s left)
+Iteration 70 / LogL: -5965712.383 / Time: 0h:0m:3s (0h:0m:1s left)
+Iteration 80 / LogL: -5965710.729 / Time: 0h:0m:3s (0h:0m:0s left)
+Iteration 90 / LogL: -5965711.024 / Time: 0h:0m:4s (0h:0m:0s left)
+Iteration 100 / LogL: -5965710.732 / Time: 0h:0m:4s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:4s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5965710.728
+Optimal log-likelihood: -5965710.722
+Rate parameters:  A-C: 1.00000  A-G: 2.09374  A-T: 0.32927  C-G: 0.32927  C-T: 2.09374  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.969
+Parameters optimization took 1 rounds (0.014 sec)
+BEST SCORE FOUND : -5965710.722
+Total tree length: 0.000
+
+Total number of iterations: 102
+CPU time used for tree search: 8.602 sec (0h:0m:8s)
+Wall-clock time used for tree search: 4.726 sec (0h:0m:4s)
+Total CPU time used: 8.741 sec (0h:0m:8s)
+Total wall-clock time used: 4.851 sec (0h:0m:4s)
+
+Analysis results written to:
+  IQ-TREE report:                /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/prune/filter5/iqtree.iqtree
+  Maximum-likelihood tree:       /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/prune/filter5/iqtree.treefile
+  Likelihood distances:          /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/prune/filter5/iqtree.mldist
+  Screen log file:               /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/prune/filter5/iqtree.log
+
+Date and Time: Fri Apr 16 16:53:08 2021
