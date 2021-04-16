@@ -1,0 +1,51 @@
+
+LEAST-SQUARE METHODS TO ESTIMATE RATES AND DATES - v.1.9.7
+
+
+Input files:
+  i                                               Input tree file : /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/filter5/lsd.timetree.subst
+  d                                               Input date file : /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/filter5/lsd.timetree.date
+  p                                                Partition file : No
+  g                                               Given outgroups : No
+Output file:
+  o                                                  Output file  : /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/filter5/lsd.timetree
+Parameters:
+  a                                                     Root date : No
+  z                                                     Tips date : No
+  c                                              With constraints : Yes
+  t                                      Lower bound for the rate : 1e-10
+  v                                                With variances : Yes, use variances based on input branch lengths
+  b                              Adjusted parameter for variances : To estimate
+  r                                             Estimate the root : Use fast method to search on all branches
+  w                                       Given substitution rate : No
+  n                                             Multiple data set : No
+  f                                  Compute confidence intervals : Yes, sampling 100 times
+  q                  Standard deviation of lognormal relaxed clock: 0.2 (for computing confidence intervals)
+  s                                               Sequence length : 4287868
+  e                                          Exclude outlier tips : Yes, detect and exclude outliers from the analysis
+  m                   Number of sampling nodes to detect outliers : 10
+  e                       The Zscore threshold to detect outliers : 3
+  u                Min internal branch length of time scaled tree : 0
+  U                Min external branch length of time scaled tree : 0
+  l                        Collapsed internal branch length limit : 1.16608e-07
+  D                                            Output date format : Based on input date format
+  E  Estimate rates for external and internal branches separately : No
+
+  h to print Help
+  y to accept or type a letter to change an option (x = Exit)
+Tree 1
+Parameter to adjust variances was set to 2.33216e-06 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+*WARNINGS:
+- 11.5385% internal branches were collapsed.
+- The estimated rate reaches the given lower bound. To change the lower bound, use option -t.
+*RESULTS:
+- There is not any outlier date.
+- Dating results:
+ rate 1e-10, tMRCA -293974 , objective function 4.4489e-05
+- Results with confidence intervals:
+ rate 1e-10 [1e-10; 1.84079e-09], tMRCA -293974 [-370353; -14649.2], objective function 4.4489e-05
+
+*********************************************************
+
+TOTAL ELAPSED TIME: 0.030956 seconds
