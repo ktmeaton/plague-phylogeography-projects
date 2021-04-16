@@ -25,7 +25,7 @@
 
 <run id="mcmc" spec="MCMC" chainLength="10000000">
     <state id="state" spec="State" storeEvery="5000">
-        <parameter id="ucldStdev.c:beast.timetree" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="50.0">0.1</parameter>
+        <parameter id="ucldStdev.c:beast.timetree" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="25.0">0.1</parameter>
         <stateNode id="rateCategories.c:beast.timetree" spec="parameter.IntegerParameter" dimension="50">1</stateNode>
     </state>
 
@@ -113,7 +113,7 @@ Reference=38.7251776 -105.607716                    </traitMap>
                     <LogNormal id="LogNormalDistributionModel.c:beast.timetree" S="@ucldStdev.c:beast.timetree" meanInRealSpace="true" name="distr">
                         <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
                     </LogNormal>
-                    <parameter id="ucldMean.c:beast.timetree" spec="parameter.RealParameter" estimate="false" name="clock.rate">1.0E-100</parameter>
+                    <parameter id="ucldMean.c:beast.timetree" spec="parameter.RealParameter" estimate="false" lower="1.0E-299" name="clock.rate" upper="0.0">1.0E-40</parameter>
                 </branchRateModel>
             </distribution>
         </distribution>
@@ -135,7 +135,7 @@ Reference=38.7251776 -105.607716                    </traitMap>
         <log id="rate.c:beast.timetree" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:beast.timetree" tree="@Tree.t:beast.timetree"/>
     </logger>
 
-    <logger id="screenlog" spec="Logger" logEvery="1000">
+    <logger id="screenlog" spec="Logger" logEvery="10000">
         <log idref="posterior"/>
         <log idref="likelihood"/>
         <log idref="prior"/>
