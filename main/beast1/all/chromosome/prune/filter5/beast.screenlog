@@ -1,0 +1,457 @@
+
+                  BEAST v1.10.4, 2002-2018
+       Bayesian Evolutionary Analysis Sampling Trees
+                 Designed and developed by
+   Alexei J. Drummond, Andrew Rambaut and Marc A. Suchard
+                              
+               Department of Computer Science
+                   University of Auckland
+                  alexei@cs.auckland.ac.nz
+                              
+             Institute of Evolutionary Biology
+                  University of Edinburgh
+                     a.rambaut@ed.ac.uk
+                              
+              David Geffen School of Medicine
+           University of California, Los Angeles
+                     msuchard@ucla.edu
+                              
+                Downloads, Help & Resources:
+                  	http://beast.community
+                              
+Source code distributed under the GNU Lesser General Public License:
+          	http://github.com/beast-dev/beast-mcmc
+                              
+                     BEAST developers:
+	Alex Alekseyenko, Guy Baele, Trevor Bedford, Filip Bielejec, Erik Bloomquist, Matthew Hall,
+	Joseph Heled, Sebastian Hoehna, Denise Kuehnert, Philippe Lemey, Wai Lok Sibon Li,
+	Gerton Lunter, Sidney Markowitz, Vladimir Minin, Michael Defoin Platel,
+          	Oliver Pybus, Chieh-Hsi Wu, Walter Xie
+                              
+                         Thanks to:
+    	Roald Forsberg, Beth Shapiro and Korbinian Strimmer
+
+Using BEAGLE library v3.1.2 for accelerated, parallel likelihood evaluation
+2009-, BEAGLE Working Group - https://beagle-dev.github.io/
+Citation: Ayres et al (2012) Systematic Biology 61: 170-173 | doi:10.1093/sysbio/syr100
+
+
+Random number seed: 1618682003171
+
+
+Parsing XML file: beast.xml
+  File encoding: UTF8
+Looking for plugins in /mnt/c/Users/ktmea/Projects/plague-phylogeography-projects/main/beast1/all/chromosome/prune/filter5/plugins
+
+Read alignment: alignment
+  Sequences = 197
+      Sites = 9206
+   Datatype = nucleotide
+Site patterns 'patterns' created from positions 1-9206 of alignment 'alignment'
+  unique pattern count = 8065
+Tree is assumed to be ultrametric
+  Changing height of leaf node SAMEA104233048 from 4026.0039999999995 to 0.0
+  Changing height of leaf node SAMEA3541826 from 3645.0039999999995 to 0.0
+  Changing height of leaf node SAMEA104233049 from 4415.003999999999 to 0.0
+  Changing height of leaf node GCA_000169675.1_ASM16967v1_genomic from 15.998999999999796 to 0.0
+  Changing height of leaf node GCA_002412245.1_Y.pestis_A-1691_genomic from 48.0 to 0.0
+  Changing height of leaf node GCA_003074535.1_ASM307453v1_genomic from 66.9997000000003 to 0.0
+  Changing height of leaf node SAMEA5818806 from 718.9993999999997 to 0.0
+  Changing height of leaf node GCA_000323505.1_ASM32350v1_genomic from 14.998999999999796 to 0.0
+  Changing height of leaf node GCA_000323765.1_ASM32376v1_genomic from 42.998999999999796 to 0.0
+  Changing height of leaf node GCA_000325205.1_ASM32520v1_genomic from 19.000029999999242 to 0.0
+  Changing height of leaf node GCA_000325305.1_ASM32530v1_genomic from 21.000029999999242 to 0.0
+  Changing height of leaf node GCA_000325285.1_ASM32528v1_genomic from 21.99919999999929 to 0.0
+  Changing height of leaf node GCA_013391945.1_ASM1339194v1_genomic from 1.9991999999992913 to 0.0
+  Changing height of leaf node GCA_013391965.1_ASM1339196v1_genomic from 2.9991999999992913 to 0.0
+  Changing height of leaf node GCA_000325225.1_ASM32522v1_genomic from 16.9992000000002 to 0.0
+  Changing height of leaf node GCA_003074255.1_ASM307425v1_genomic from 6.999200000000201 to 0.0
+  Changing height of leaf node GCA_003086015.1_ASM308601v1_genomic from 6.999200000000201 to 0.0
+  Changing height of leaf node GCA_009295945.1_ASM929594v1_genomic from 34.99919999999929 to 0.0
+  Changing height of leaf node GCA_000320445.1_ASM32044v1_genomic from 14.999800000000505 to 0.0
+  Changing height of leaf node GCA_000324905.1_ASM32490v1_genomic from 22.999800000000505 to 0.0
+  Changing height of leaf node GCA_000182485.1_ASM18248v1_genomic from 52.0007999999998 to 0.0
+  Changing height of leaf node GCA_002005285.1_ASM200528v1_genomic from 115.4348 to 0.0
+  Changing height of leaf node GCA_000475135.2_YPS03_v2_genomic from 16.999800000000505 to 0.0
+  Changing height of leaf node GCA_015158675.1_ASM1515867v1_genomic from 11.999800000000505 to 0.0
+  Changing height of leaf node GCA_000323585.1_ASM32358v1_genomic from 53.9993000000004 to 0.0
+  Changing height of leaf node GCA_000834275.1_ASM83427v1_genomic from 78.9993000000004 to 0.0
+  Changing height of leaf node GCA_000834885.1_ASM83488v1_genomic from 10.999300000000403 to 0.0
+  Changing height of leaf node GCA_001601285.1_ASM160128v1_genomic from 48.9993000000004 to 0.0
+  Changing height of leaf node GCA_000323925.1_ASM32392v1_genomic from 22.999300000000403 to 0.0
+  Changing height of leaf node GCA_000324245.1_ASM32424v1_genomic from 64.9993000000004 to 0.0
+  Changing height of leaf node GCA_000323905.1_ASM32390v1_genomic from 29.999300000000403 to 0.0
+  Changing height of leaf node GCA_000324505.1_ASM32450v1_genomic from 47.9994999999999 to 0.0
+  Changing height of leaf node GCA_016102665.1_ASM1610266v1_genomic from 88.9980999999998 to 0.0
+  Changing height of leaf node GCA_001617815.1_Yersinia_pestis_M-1453_genomic from 27.998199999999997 to 0.0
+  Changing height of leaf node GCA_016102765.1_ASM1610276v1_genomic from 63.99829999999929 to 0.0
+  Changing height of leaf node GCA_016102945.1_ASM1610294v1_genomic from 63.99829999999929 to 0.0
+  Changing height of leaf node GCA_015350455.1_ASM1535045v1_genomic from 69.99829999999929 to 0.0
+  Changing height of leaf node GCA_003085975.1_ASM308597v1_genomic from 4.99829999999929 to 0.0
+  Changing height of leaf node GCA_003086155.1_ASM308615v1_genomic from 28.99829999999929 to 0.0
+  Changing height of leaf node GCA_016102855.1_ASM1610285v1_genomic from 52.99829999999929 to 0.0
+  Changing height of leaf node GCA_009909645.1_ASM990964v1_genomic from 47.99829999999929 to 0.0
+  Changing height of leaf node GCA_008630575.1_ASM863057v1_genomic from 34.9983000000002 to 0.0
+  Changing height of leaf node GCA_003086055.1_ASM308605v1_genomic from 4.998300000000199 to 0.0
+  Changing height of leaf node GCA_016102675.1_ASM1610267v1_genomic from 3.9983000000001994 to 0.0
+  Changing height of leaf node GCA_001617705.1_Yersinia_pestis_C-791_genomic from 15.9983000000002 to 0.0
+  Changing height of leaf node GCA_016102905.1_ASM1610290v1_genomic from 32.9983000000002 to 0.0
+  Changing height of leaf node GCA_010974845.1_ASM1097484v1_genomic from 73.9980999999998 to 0.0
+  Changing height of leaf node GCA_009296005.1_ASM929600v1_genomic from 65.9980999999998 to 0.0
+  Changing height of leaf node GCA_001617805.1_Yersinia_pestis_173_genomic from 40.9983000000002 to 0.0
+  Changing height of leaf node GCA_001617785.1_Yersinia_pestis_M-549_genomic from 41.9983000000002 to 0.0
+  Changing height of leaf node GCA_001188815.1_ASM118881v1_genomic from 43.9983000000002 to 0.0
+  Changing height of leaf node GCA_016102645.1_ASM1610264v1_genomic from 86.9980999999998 to 0.0
+  Changing height of leaf node GCA_009909635.1_ASM990963v1_genomic from 95.9980999999998 to 0.0
+  Changing height of leaf node GCA_016102555.1_ASM1610255v1_genomic from 106.9980999999998 to 0.0
+  Changing height of leaf node GCA_000182705.1_ASM18270v1_genomic from 20.998200000000907 to 0.0
+  Changing height of leaf node GCA_000970105.1_ASM97010v1_genomic from 11.998200000000907 to 0.0
+  Changing height of leaf node GCA_003074355.1_ASM307435v1_genomic from 51.9982 to 0.0
+  Changing height of leaf node GCA_003074375.1_ASM307437v1_genomic from 63.9982 to 0.0
+  Changing height of leaf node GCA_003074335.1_ASM307433v1_genomic from 52.9982 to 0.0
+  Changing height of leaf node GCA_006376415.1_ASM637641v1_genomic from 68.99852999999985 to 0.0
+  Changing height of leaf node GCA_015159615.1_ASM1515961v1_genomic from 48.998529999999846 to 0.0
+  Changing height of leaf node GCA_006376435.1_ASM637643v1_genomic from 59.998029999999744 to 0.0
+  Changing height of leaf node GCA_003074295.1_ASM307429v1_genomic from 51.9991 to 0.0
+  Changing height of leaf node GCA_003086095.1_ASM308609v1_genomic from 25.9991 to 0.0
+  Changing height of leaf node GCA_002412305.1_Y.pestis_A-1809_genomic from 38.9991 to 0.0
+  Changing height of leaf node GCA_003086075.1_ASM308607v1_genomic from 35.9991 to 0.0
+  Changing height of leaf node GCA_003086115.1_ASM308611v1_genomic from 30.9991 to 0.0
+  Changing height of leaf node GCA_004023595.1_ASM402359v1_genomic from 13.999099999999999 to 0.0
+  Changing height of leaf node GCA_016102545.1_ASM1610254v1_genomic from 87.9985999999999 to 0.0
+  Changing height of leaf node GCA_000324985.1_ASM32498v1_genomic from 31.998599999999897 to 0.0
+  Changing height of leaf node GCA_000324005.1_ASM32400v1_genomic from 57.99839999999949 to 0.0
+  Changing height of leaf node GCA_013392085.1_ASM1339208v1_genomic from 0.9984400000003006 to 0.0
+  Changing height of leaf node GCA_014734395.1_ASM1473439v1_genomic from 0.9984400000003006 to 0.0
+  Changing height of leaf node GCA_000325325.1_ASM32532v1_genomic from 12.998489999999947 to 0.0
+  Changing height of leaf node GCA_000325045.1_ASM32504v1_genomic from 27.998489999999947 to 0.0
+  Changing height of leaf node GCA_000325065.1_ASM32506v1_genomic from 24.998389999999745 to 0.0
+  Changing height of leaf node GCA_000324485.1_ASM32448v1_genomic from 61.9991 to 0.0
+  Changing height of leaf node GCA_000324945.1_ASM32494v1_genomic from 60.9982 to 0.0
+  Changing height of leaf node GCA_000325005.1_ASM32500v1_genomic from 49.99859999999899 to 0.0
+  Changing height of leaf node GCA_000325105.1_ASM32510v1_genomic from 55.99859999999899 to 0.0
+  Changing height of leaf node GCA_006376575.1_ASM637657v1_genomic from 47.9988000000003 to 0.0
+  Changing height of leaf node GCA_008630435.1_ASM863043v1_genomic from 22.9988000000003 to 0.0
+  Changing height of leaf node GCA_003074275.1_ASM307427v1_genomic from 32.9988000000003 to 0.0
+  Changing height of leaf node SAMN00715800 from 670.9993999999997 to 0.0
+  Changing height of leaf node SAMEA6637002 from 555.9993499999991 to 0.0
+  Changing height of leaf node SAMEA6651390 from 583.9993499999991 to 0.0
+  Changing height of leaf node SAMEA7313246_49 from 595.8171499999999 to 0.0
+  Changing height of leaf node SAMEA6637004 from 539.7490499999994 to 0.0
+  Changing height of leaf node SAMEA5818805 from 533.9993499999991 to 0.0
+  Changing height of leaf node SAMEA5818803 from 370.99924999999894 to 0.0
+  Changing height of leaf node SAMEA5818818 from 492.69524999999885 to 0.0
+  Changing height of leaf node SAMEA5818808 from 448.00144999999884 to 0.0
+  Changing height of leaf node SAMEA3713711 from 298.99974999999995 to 0.0
+  Changing height of leaf node SAMEA7293135 from 218.99974999999995 to 0.0
+  Changing height of leaf node SAMEA7313236_38 from 245.99974999999995 to 0.0
+  Changing height of leaf node SAMEA5818798 from 383.99934999999914 to 0.0
+  Changing height of leaf node SAMEA7313243_45 from 381.3549499999999 to 0.0
+  Changing height of leaf node SAMEA5818815 from 482.9996999999994 to 0.0
+  Changing height of leaf node SAMEA5818817 from 566.6857999999993 to 0.0
+  Changing height of leaf node SAMEA5818809 from 628.9992000000002 to 0.0
+  Changing height of leaf node SAMEA7293136 from 638.0680999999995 to 0.0
+  Changing height of leaf node SAMEA5054093 from 629.9992000000002 to 0.0
+  Changing height of leaf node SAMEA5054092 from 675.5 to 0.0
+  Changing height of leaf node SAMEA3937653 from 718.9993999999997 to 0.0
+  Changing height of leaf node SAMEA5818811 from 726.9993599999998 to 0.0
+  Changing height of leaf node GCA_000325165.1_ASM32516v1_genomic from 33.999799999999595 to 0.0
+  Changing height of leaf node GCA_000323965.1_ASM32396v1_genomic from 64.9997999999996 to 0.0
+  Changing height of leaf node GCA_000323445.1_ASM32344v1_genomic from 14.999799999999595 to 0.0
+  Changing height of leaf node GCA_000324705.1_ASM32470v1_genomic from 54.999399999999696 to 0.0
+  Changing height of leaf node GCA_000324725.1_ASM32472v1_genomic from 36.999399999999696 to 0.0
+  Changing height of leaf node GCA_000323805.1_ASM32380v1_genomic from 53.999399999999696 to 0.0
+  Changing height of leaf node GCA_015158475.1_ASM1515847v1_genomic from 10.999699999999393 to 0.0
+  Changing height of leaf node GCA_015158625.1_ASM1515862v1_genomic from 24.999699999999393 to 0.0
+  Changing height of leaf node GCA_000325405.1_ASM32540v1_genomic from 23.999699999999393 to 0.0
+  Changing height of leaf node GCA_000325445.1_ASM32544v1_genomic from 18.999699999999393 to 0.0
+  Changing height of leaf node GCA_000325485.1_ASM32548v1_genomic from 36.99969999999939 to 0.0
+  Changing height of leaf node GCA_013421555.1_ASM1342155v1_genomic from 32.999299999999494 to 0.0
+  Changing height of leaf node GCA_013421465.1_ASM1342146v1_genomic from 56.999299999999494 to 0.0
+  Changing height of leaf node GCA_013421535.1_ASM1342153v1_genomic from 30.999299999999494 to 0.0
+  Changing height of leaf node GCA_013421455.1_ASM1342145v1_genomic from 51.999299999999494 to 0.0
+  Changing height of leaf node GCA_000181455.2_ASM18145v2_genomic from 30.999799999999595 to 0.0
+  Changing height of leaf node GCA_000834335.1_ASM83433v1_genomic from 65.0001999999995 to 0.0
+  Changing height of leaf node GCA_001509855.1_ASM150985v1_genomic from 8.000199999999495 to 0.0
+  Changing height of leaf node GCA_000834775.1_ASM83477v1_genomic from 52.0005000000001 to 0.0
+  Changing height of leaf node Reference from 27.000500000000102 to 0.0
+  Changing height of leaf node GCA_000705315.1_EDB10_058v1_genomic from 9.000199999999495 to 0.0
+  Changing height of leaf node GCA_000255755.1_ASM25575v1_genomic from 9.999679999998989 to 0.0
+  Changing height of leaf node GCA_000255895.1_ASM25589v1_genomic from 9.999679999998989 to 0.0
+  Changing height of leaf node GCA_001509865.1_ASM150986v1_genomic from 9.99999999999909 to 0.0
+  Changing height of leaf node GCA_000475155.2_YP24H_v2_genomic from 20.999799999999595 to 0.0
+  Changing height of leaf node GCA_000323985.1_ASM32398v1_genomic from 66.9997999999996 to 0.0
+  Changing height of leaf node GCA_000182505.1_ASM18250v1_genomic from 118.58479999999963 to 0.0
+  Changing height of leaf node GCA_000268625.1_ASM26862v1_genomic from 10.999700000000303 to 0.0
+  Changing height of leaf node GCA_000268865.1_ASM26886v1_genomic from 8.999700000000303 to 0.0
+  Changing height of leaf node GCA_003797205.1_ASM379720v1_genomic from 49.99969999999939 to 0.0
+  Changing height of leaf node GCA_001487065.1_Yersinia_pestis_genomic from 2.9997999999995955 to 0.0
+  Changing height of leaf node GCA_000986995.1_YPES001-SEQ-2-ASM-1_genomic from 24.999799999999595 to 0.0
+  Changing height of leaf node GCA_000182525.1_ASM18252v1_genomic from 52.999799999999595 to 0.0
+  Changing height of leaf node GCA_003798085.1_ASM379808v1_genomic from 61.999799999999595 to 0.0
+  Changing height of leaf node GCA_000169635.1_ASM16963v1_genomic from 13.999799999999595 to 0.0
+  Changing height of leaf node GCA_000475115.2_YP113_v2_genomic from 24.999509999998736 to 0.0
+  Changing height of leaf node GCA_000590535.2_ASM59053v2_genomic from 77.99950999999874 to 0.0
+  Changing height of leaf node GCA_000324805.2_EV76-CN_genomic from 92.99970999999914 to 0.0
+  Changing height of leaf node GCA_001261985.1_YPW_3_IHQD_genomic from 92.99969999999848 to 0.0
+  Changing height of leaf node GCA_000168235.2_ASM16823v2_genomic from 23.999799999999595 to 0.0
+  Changing height of leaf node GCA_000324385.1_ASM32438v1_genomic from 36.999799999999595 to 0.0
+  Changing height of leaf node GCA_000325385.1_ASM32538v1_genomic from 41.999799999999595 to 0.0
+  Changing height of leaf node GCA_000169615.1_ASM16961v1_genomic from 14.999799999999595 to 0.0
+  Changing height of leaf node GCA_003798225.1_ASM379822v1_genomic from 64.9998399999995 to 0.0
+  Changing height of leaf node GCA_000835005.1_ASM83500v1_genomic from 33.999799999999595 to 0.0
+  Changing height of leaf node SAMEA5054089 from 638.0680999999995 to 0.0
+  Changing height of leaf node SAMEA3937654 from 656.9993999999997 to 0.0
+  Changing height of leaf node GCA_000323705.1_ASM32370v1_genomic from 62.99919999999929 to 0.0
+  Changing height of leaf node GCA_001188675.1_ASM118867v1_genomic from 57.9991 to 0.0
+  Changing height of leaf node GCA_002412225.1_Y.pestis_A-1486_genomic from 52.9991 to 0.0
+  Changing height of leaf node GCA_000324065.1_ASM32406v1_genomic from 17.99919999999929 to 0.0
+  Changing height of leaf node GCA_000734805.1_ASM73480v1_genomic from 71.99919999999929 to 0.0
+  Changing height of leaf node SAMEA1061800 from 1757.9989999999998 to 0.0
+  Changing height of leaf node SAMEA5661363 from 1544.9993599999998 to 0.0
+  Changing height of leaf node SAMEA5661364 from 1386.1954 to 0.0
+  Changing height of leaf node SAMEA5661384 from 1484.7559999999999 to 0.0
+  Changing height of leaf node SAMEA5661367 from 1138.9989999999998 to 0.0
+  Changing height of leaf node SAMEA5661385 from 1418.9989999999998 to 0.0
+  Changing height of leaf node SAMEA5661390 from 1481.9989999999998 to 0.0
+  Changing height of leaf node SAMEA5661389 from 1585.9993 to 0.0
+  Changing height of leaf node SAMEA5661360 from 1540.8323 to 0.0
+  Changing height of leaf node SAMEA4354665 from 1592.99933 to 0.0
+  Changing height of leaf node GCA_009669545.1_ASM966954v1_genomic from 13.000499999999192 to 0.0
+  Changing height of leaf node GCA_009669805.1_ASM966980v1_genomic from 39.00049999999919 to 0.0
+  Changing height of leaf node GCA_001295025.1_ASM129502v1_genomic from 47.000999999999294 to 0.0
+  Changing height of leaf node GCA_006546665.1_ASM654666v1_genomic from 32.000999999999294 to 0.0
+  Changing height of leaf node GCA_002981915.1_ASM298191v1_genomic from 33.000700000000506 to 0.0
+  Changing height of leaf node GCA_006517425.1_ASM651742v1_genomic from 37.000700000000506 to 0.0
+  Changing height of leaf node GCA_006546725.1_ASM654672v1_genomic from 33.001000000000204 to 0.0
+  Changing height of leaf node GCA_000324525.1_ASM32452v1_genomic from 48.997699999999895 to 0.0
+  Changing height of leaf node GCA_001294805.1_ASM129480v1_genomic from 34.997699999999895 to 0.0
+  Changing height of leaf node GCA_000324665.1_ASM32466v1_genomic from 18.99699999999939 to 0.0
+  Changing height of leaf node GCA_000325185.1_ASM32518v1_genomic from 17.99699999999939 to 0.0
+  Changing height of leaf node GCA_001294885.1_ASM129488v1_genomic from 39.997299999999086 to 0.0
+  Changing height of leaf node GCA_001294975.1_ASM129497v1_genomic from 38.997299999999086 to 0.0
+  Changing height of leaf node GCA_001295115.1_ASM129511v1_genomic from 57.99689999999919 to 0.0
+  Changing height of leaf node GCA_003085895.1_ASM308589v1_genomic from 36.99689999999919 to 0.0
+  Changing height of leaf node GCA_003086035.1_ASM308603v1_genomic from 6.9966999999996915 to 0.0
+  Changing height of leaf node GCA_000382545.1_Yersinia_pestis_assembly_genomic from 19.0029999999997 to 0.0
+  Changing height of leaf node GCA_001188935.1_ASM118893v1_genomic from 48.78599999999915 to 0.0
+  Changing height of leaf node GCA_001294915.1_ASM129491v1_genomic from 43.0029999999997 to 0.0
+  Changing height of leaf node GCA_001294905.1_ASM129490v1_genomic from 48.002699999999095 to 0.0
+  Changing height of leaf node GCA_006376505.1_ASM637650v1_genomic from 51.002699999999095 to 0.0
+  Changing height of leaf node GCA_003085875.1_ASM308587v1_genomic from 44.00219999999899 to 0.0
+  Changing height of leaf node GCA_003074415.1_ASM307441v1_genomic from 40.0029999999997 to 0.0
+  Changing height of leaf node GCA_006376585.1_ASM637658v1_genomic from 41.002299999999195 to 0.0
+  Changing height of leaf node GCA_008630455.1_ASM863045v1_genomic from 8.002299999999195 to 0.0
+  Changing height of leaf node SAMEA104233046 from 4491.003999999999 to 0.0
+  Changing height of leaf node SAMEA104233047 from 4593.003999999999 to 0.0
+  Changing height of leaf node SAMEA6812876 from 4632.9349999999995 to 0.0
+  Changing height of leaf node SAMEA6812877 from 4588.004199999999 to 0.0
+
+Creating the tree model, 'treeModel'
+  taxon count = 197
+  tree height = 496.0
+
+Using discretized relaxed clock model.
+  over sampling = 1
+  parametric model = logNormalDistributionModel
+   rate categories = 1
+
+Creating state frequencies model 'frequencies': Initial frequencies = {0.25, 0.25, 0.25, 0.25}
+
+Creating HKY substitution model. Initial kappa = 2.0
+
+Creating site rate model.
+
+Using BEAGLE DataLikelihood Delegate
+  Using BEAGLE resource 0: CPU
+    with instance flags:  PRECISION_DOUBLE COMPUTATION_SYNCH EIGEN_REAL SCALING_MANUAL SCALERS_RAW VECTOR_SSE THREADING_CPP PROCESSOR_CPU FRAMEWORK_CPU
+  Ignoring ambiguities in tree likelihood.
+  With 8065 unique site patterns.
+  Using rescaling scheme : dynamic (rescaling every 100 evaluations, delay rescaling until first overflow)
+
+Using TreeDataLikelihood
+  Branch rate model used: discretizedBranchRates
+
+Using an scaled mixture of normals model.
+  rates = 392
+  NB: Make sure you have a prior on location.diffusion.rates and do not use this model in a treeLikelihood for sequence data
+  reciprocal = false
+Creating multivariate diffusion model:
+	Trait: location
+	Diffusion process: location.diffusionModel
+	Heterogenity model: location.diffusion.branchRates
+	Tree normalization: length
+	Using reciprocal (precision) rates: true
+	Initial tree length: 24382.0
+	Sample internal node traits: false
+	Please cite:
+		Lemey P, Rambaut A, Welch JJ, Suchard MA (2010) Phylogeography takes a relaxed random walk in continous space and time. Molecular Biology and Evolution. 27, 1877-1885
+		Pybus OG, Suchard MA, Lemey P, Bernadin F, Rambaut A, Crawford FW, Gray RR, Arinaminpathy N, Stramer S, Busch MP, Delwart E (2012) Unifying the spatial epidemiology and evolution of emerging epidemics. Proceedings of the National Academy of Sciences. 109, 15066-15071
+
+	Diffusion dimension   : 2
+	Number of observations: 1
+
+  Replacing trait #1  Old: 48.9467562 11.4038717 New:  48.951223760821314 11.401768532259851
+  Replacing trait #3  Old: 48.9467562 11.4038717 New:  48.949490473434494 11.40707730942459
+  Replacing trait #4  Old: 42.4804953 85.4633464 New:  42.47950803149957 85.45858877976443
+  Replacing trait #5  Old: 42.06103415 78.17073232346421 New:  42.0603521387532 78.16710485309132
+  Replacing trait #6  Old: 42.06103415 78.17073232346421 New:  42.060452662951576 78.17520745912985
+  Replacing trait #7  Old: 41.5089324 74.724091 New:  41.51300337126671 74.72130549307539
+  Replacing trait #8  Old: 55.44821700000001 50.4763591 New:  55.44471647139324 50.48033038962119
+  Replacing trait #9  Old: 35.40709525 95.95211573241954 New:  35.40477957986291 95.95153611973939
+  Replacing trait #10  Old: 38.0000001 101.9999999 New:  38.00406962216804 102.00383973630825
+  Replacing trait #11  Old: 48.5470083 89.8549358 New:  48.54339924943941 89.850464439318
+  Replacing trait #12  Old: 45.3463139 95.9325806 New:  45.347331318062814 95.92998745204302
+  Replacing trait #13  Old: 44.4179637 109.77837530000001 New:  44.421677935756925 109.78154201367394
+  Replacing trait #16  Old: 48.5470083 89.8549358 New:  48.55131682569374 89.85120837310761
+  Replacing trait #17  Old: 50.7114101 86.8572186 New:  50.709730229921256 86.86079766800688
+  Replacing trait #18  Old: 51.401714899999995 93.8582593 New:  51.40654642634883 93.85774660206098
+  Replacing trait #19  Old: 51.401714899999995 93.8582593 New:  51.397257783098965 93.8629170741555
+  Replacing trait #20  Old: 35.40709525 95.95211573241954 New:  35.4036406791145 95.95166340017364
+  Replacing trait #21  Old: 29.8556443 90.87498070000001 New:  29.853366875044937 90.87323308933716
+  Replacing trait #23  Old: 18.906835600000004 75.6741579 New:  18.90902059179125 75.677590855161
+  Replacing trait #25  Old: 29.8556443 90.87498070000001 New:  29.852980490924665 90.87266201948091
+  Replacing trait #27  Old: 48.000004700000005 127.99999199999999 New:  47.998498788208124 127.9988654292753
+  Replacing trait #28  Old: 48.000004700000005 127.99999199999999 New:  48.00148185721055 128.00055797021
+  Replacing trait #30  Old: 43.2443242 114.32516640000001 New:  43.24450883436848 114.32340594485211
+  Replacing trait #31  Old: 42.9995032 125.9816054 New:  42.99926591858011 125.9786522213745
+  Replacing trait #32  Old: 43.2443242 114.32516640000001 New:  43.24403736431224 114.32564587936236
+  Replacing trait #33  Old: 43.2443242 114.32516640000001 New:  43.248078264319766 114.32468512508899
+  Replacing trait #34  Old: 47.1878186 47.608851 New:  47.18862344596771 47.606267930284986
+  Replacing trait #35  Old: 47.660582700000006 50.806203000000004 New:  47.65736856996518 50.811040622293234
+  Replacing trait #39  Old: 50.7114101 86.8572186 New:  50.71140906273145 86.85234139031814
+  Replacing trait #40  Old: 49.5568479 50.2227409 New:  49.55200045482206 50.21949035043189
+  Replacing trait #41  Old: 47.660582700000006 50.806203000000004 New:  47.657185488352916 50.8098426486727
+  Replacing trait #42  Old: 47.1878186 47.608851 New:  47.185021801507744 47.61009358303668
+  Replacing trait #44  Old: 47.1878186 47.608851 New:  47.19264523728632 47.606888116436174
+  Replacing trait #45  Old: 46.2313018 45.3275745 New:  46.23399682267529 45.32942451335482
+  Replacing trait #46  Old: 43.0883099 47.149880179442285 New:  43.084170724953246 47.14880318306793
+  Replacing trait #47  Old: 46.2313018 45.3275745 New:  46.22870370095335 45.32705461944705
+  Replacing trait #49  Old: 43.397614700000005 45.6985005 New:  43.396518095653924 45.70328444895211
+  Replacing trait #52  Old: 43.442828600000006 43.4204809 New:  43.447317754905505 43.421393620270266
+  Replacing trait #53  Old: 49.5568479 50.2227409 New:  49.55697038606759 50.22426907760629
+  Replacing trait #54  Old: 47.6222451 40.7957942 New:  47.62016709584868 40.79780259703987
+  Replacing trait #55  Old: 49.5568479 50.2227409 New:  49.558158834299114 50.22290311704903
+  Replacing trait #56  Old: 35.672803 47.0124376 New:  35.66836136500944 47.01048391196232
+  Replacing trait #57  Old: 35.672803 47.0124376 New:  35.67650890647326 47.00857377963412
+  Replacing trait #60  Old: 40.6065534 46.70500981655712 New:  40.60846069797199 46.70365804433933
+  Replacing trait #66  Old: 42.4451869 72.14310491939636 New:  42.44058857885584 72.14700317331408
+  Replacing trait #69  Old: 42.4804953 85.4633464 New:  42.47686406347463 85.4666735651013
+  Replacing trait #71  Old: 42.4804953 85.4633464 New:  42.48373253125169 85.46158667473016
+  Replacing trait #72  Old: 35.40709525 95.95211573241954 New:  35.407423278439694 95.95379094625419
+  Replacing trait #73  Old: 44.4179637 109.77837530000001 New:  44.41942761602946 109.77991995077275
+  Replacing trait #74  Old: 43.2443242 114.32516640000001 New:  43.24369771675513 114.32866185606409
+  Replacing trait #76  Old: 43.2443242 114.32516640000001 New:  43.24228562202205 114.32464139120644
+  Replacing trait #78  Old: 43.2443242 114.32516640000001 New:  43.246639762080235 114.32777493662313
+  Replacing trait #79  Old: 42.9995032 125.9816054 New:  43.0038268527122 125.98186110620357
+  Replacing trait #81  Old: 38.0000001 101.9999999 New:  37.996327168423015 101.99612393424978
+  Replacing trait #82  Old: 43.7368326 41.7267991 New:  43.735364537137826 41.72793758197828
+  Replacing trait #83  Old: 43.7368326 41.7267991 New:  43.740857357546005 41.721804230093824
+  Replacing trait #84  Old: 43.442828600000006 43.4204809 New:  43.44257606816149 43.4212187529835
+  Replacing trait #85  Old: 51.4893335 -0.14405508452768728 New:  51.4933736663847 -0.1409436737788634
+  Replacing trait #86  Old: 54.82269205 25.249534001679518 New:  54.81781832810574 25.248051775203024
+  Replacing trait #87  Old: 54.82269205 25.249534001679518 New:  54.82495840943384 25.248256019704073
+  Replacing trait #89  Old: 54.82269205 25.249534001679518 New:  54.82087414002416 25.246973731642562
+  Replacing trait #93  Old: 48.9467562 11.4038717 New:  48.94369581138595 11.405328892283102
+  Replacing trait #95  Old: 43.397614700000005 45.6985005 New:  43.39400408411141 45.70136210891791
+  Replacing trait #96  Old: 47.6222451 40.7957942 New:  47.62082606049295 40.79176639956878
+  Replacing trait #97  Old: 51.4893335 -0.14405508452768728 New:  51.49034567681867 -0.14154863277858928
+  Replacing trait #98  Old: 47.6222451 40.7957942 New:  47.62403810081229 40.79749617856435
+  Replacing trait #99  Old: 52.2199774 0.4875777469166293 New:  52.21702301592488 0.4903196731326042
+  Replacing trait #100  Old: 48.9467562 11.4038717 New:  48.941859320025074 11.404446159599651
+  Replacing trait #101  Old: 48.9467562 11.4038717 New:  48.95011368039915 11.407008456166759
+  Replacing trait #106  Old: 48.9467562 11.4038717 New:  48.942098983820244 11.401535352168294
+  Replacing trait #107  Old: 42.4804953 85.4633464 New:  42.47588322200333 85.46558415971512
+  Replacing trait #108  Old: 35.40709525 95.95211573241954 New:  35.41200151192522 95.94905390135193
+  Replacing trait #109  Old: 35.40709525 95.95211573241954 New:  35.40859263634307 95.94789666178457
+  Replacing trait #110  Old: 35.40709525 95.95211573241954 New:  35.410970405236924 95.9493433061509
+  Replacing trait #111  Old: 38.0000001 101.9999999 New:  38.003229232456526 102.00065750849085
+  Replacing trait #112  Old: 35.40709525 95.95211573241954 New:  35.40332731476063 95.94850276681238
+  Replacing trait #113  Old: 29.8556443 90.87498070000001 New:  29.85234841101442 90.87240248821165
+  Replacing trait #114  Old: 29.8556443 90.87498070000001 New:  29.85628170214088 90.8752675450231
+  Replacing trait #117  Old: 25.0 102.0 New:  24.996545116287365 101.99626048150904
+  Replacing trait #122  Old: 36.7014631 -118.755997 New:  36.70545937501826 -118.75674590480757
+  Replacing trait #123  Old: 36.7014631 -118.755997 New:  36.70625736837346 -118.75425563271143
+  Replacing trait #124  Old: 34.395342 -111.763275 New:  34.39737753914878 -111.75965510747007
+  Replacing trait #125  Old: 34.395342 -111.763275 New:  34.39456817122914 -111.75884201019898
+  Replacing trait #133  Old: 18.906835600000004 75.6741579 New:  18.90688684091221 75.67389680077412
+  Replacing trait #141  Old: -18.9249604 46.441642200000004 New:  -18.92742652207912 46.44587834767794
+  Replacing trait #144  Old: 38.0000001 101.9999999 New:  38.00152758243109 102.00094214375021
+  Replacing trait #145  Old: -18.9249604 46.441642200000004 New:  -18.92195727769646 46.44314338138396
+  Replacing trait #147  Old: 25.0 102.0 New:  25.00227703712248 102.00187905340988
+  Replacing trait #148  Old: 25.0 102.0 New:  25.004265934526863 101.99956003073217
+  Replacing trait #153  Old: 55.44821700000001 50.4763591 New:  55.44522371395494 50.47168288995702
+  Replacing trait #154  Old: 42.4804953 85.4633464 New:  42.47971420990861 85.46279067626425
+  Replacing trait #155  Old: 41.5089324 74.724091 New:  41.5064924701014 74.72761423688792
+  Replacing trait #157  Old: 42.4804953 85.4633464 New:  42.48386546651542 85.46099347874048
+  Replacing trait #159  Old: 42.06103415 78.17073232346421 New:  42.05798174123401 78.17363241366645
+  Replacing trait #160  Old: 52.2199774 0.4875777469166293 New:  52.21732244600235 0.48460776999408295
+  Replacing trait #161  Old: 52.2199774 0.4875777469166293 New:  52.22475616102691 0.4905195797162467
+  Replacing trait #164  Old: 48.9467562 11.4038717 New:  48.9516695085918 11.404638263674006
+  Replacing trait #165  Old: 48.9467562 11.4038717 New:  48.94565397525782 11.402350064807875
+  Replacing trait #166  Old: 48.9467562 11.4038717 New:  48.944745839632915 11.404039342228819
+  Replacing trait #167  Old: 48.9467562 11.4038717 New:  48.949879865024556 11.405731600586
+  Replacing trait #168  Old: 48.9467562 11.4038717 New:  48.945272314550785 11.40470951442773
+  Replacing trait #169  Old: 42.4804953 85.4633464 New:  42.477642875791965 85.4600057967225
+  Replacing trait #170  Old: 42.4804953 85.4633464 New:  42.48174899294312 85.45848367124097
+  Replacing trait #171  Old: 48.5470083 89.8549358 New:  48.548961414048506 89.85542048808746
+  Replacing trait #175  Old: 45.3463139 95.9325806 New:  45.347773586405225 95.9366792338873
+  Replacing trait #176  Old: 43.2443242 114.32516640000001 New:  43.24834179680482 114.32095796097718
+  Replacing trait #179  Old: 35.40709525 95.95211573241954 New:  35.40542175280461 95.95351056250422
+  Replacing trait #181  Old: 42.4451869 72.14310491939636 New:  42.44321419165227 72.14099630954246
+  Replacing trait #182  Old: 50.7114101 86.8572186 New:  50.71000582337181 86.85999825413762
+  Replacing trait #183  Old: 50.7114101 86.8572186 New:  50.71496978833828 86.85457601755948
+  Replacing trait #184  Old: 50.7114101 86.8572186 New:  50.71156181065677 86.85673919791795
+  Replacing trait #188  Old: 40.6065534 46.70500981655712 New:  40.61098697996574 46.70130197519215
+  Replacing trait #192  Old: 43.0883099 47.149880179442285 New:  43.088586473978815 47.1530618965764
+  Replacing trait #193  Old: 43.0883099 47.149880179442285 New:  43.0881542278921 47.151593712620205
+  Replacing trait #196  Old: 56.6370122 104.71922099999999 New:  56.63520500238457 104.72400181729812
+  Replacing trait #197  Old: 56.6370122 104.71922099999999 New:  56.64055480503779 104.7159501092698
+Creating swap operator for parameter branchRates.categories (weight=10.0)
+Optimization Schedule: log
+
+Likelihood computation is using an auto sizing thread pool.
+
+Creating the MCMC chain:
+  chainLength=10000000
+  autoOptimize=true
+  autoOptimize delayed for 100000 steps
+
+Citations for this analysis: 
+
+FRAMEWORK
+BEAST primary citation:
+	Suchard MA, Lemey P, Baele G, Ayres DL, Drummond AJ, Rambaut A (2018) Bayesian phylogenetic and phylodynamic data integration using BEAST 1.10. Virus Evolution. vey016. DOI:10.1093/ve/vey016
+
+MOLECULAR CLOCK MODELS
+Uncorrelated relaxed clock:
+	Drummond AJ, Ho SYW, Phillips MJ, Rambaut A (2006) Relaxed Phylogenetics and Dating with Confidence. PLoS Biology. 4: e88. DOI:10.1371/journal.pbio.0040088
+
+SUBSTITUTION MODELS
+HKY nucleotide substitution model:
+	Hasegawa M, Kishino H, Yano T (1985) Dating the human-ape splitting by a molecular clock of mitochondrial DNA. J. Mol. Evol.. 22, 160-174
+
+TRAIT MODELS
+Multivariate Diffusion model (first citation) with efficiently integrated internal traits (second citation):
+	Lemey P, Rambaut A, Welch JJ, Suchard MA (2010) Phylogeography takes a relaxed random walk in continous space and time. Molecular Biology and Evolution. 27, 1877-1885
+	Pybus OG, Suchard MA, Lemey P, Bernadin F, Rambaut A, Crawford FW, Gray RR, Arinaminpathy N, Stramer S, Busch MP, Delwart E (2012) Unifying the spatial epidemiology and evolution of emerging epidemics. Proceedings of the National Academy of Sciences. 109, 15066-15071
+
+
+# BEAST v1.10.4
+# Generated Sat Apr 17 13:53:25 EDT 2021 [seed=1618682003171]
+# -overwrite beast.xml
+# keywords: discretized_branch_rates
+state	Joint       	Prior       	Likelihood  	rootHeight  
+0	-4779776.5513	-1033745.5180	-3746031.0333	496.000     	-
+1000	-2142142.8756	-36748.7547 	-2105394.1209	496.000     	-
+2000	-545132.6886	-8474.8648  	-536657.8238	496.000     	-
+3000	-258457.1358	-54909.5964 	-203547.5394	496.000     	-
+4000	-196737.4365	-40398.5732 	-156338.8633	496.000     	-
+5000	-156816.0762	-32342.8533 	-124473.2229	496.000     	-
+6000	-115481.8060	-23214.8816 	-92266.9244 	496.000     	-
+7000	-105419.6236	-20673.5908 	-84746.0328 	496.000     	-
+8000	-88708.5009 	-16670.7511 	-72037.7498 	496.000     	-
+9000	-83326.6086 	-15213.8474 	-68112.7612 	496.000     	-
+10000	-77188.0733 	-13937.4041 	-63250.6692 	496.000     	-
+11000	-75287.1271 	-13139.7510 	-62147.3760 	496.000     	0.57 hours/million states
+12000	-74382.6366 	-12792.5631 	-61590.0735 	496.000     	0.56 hours/million states
