@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <parameter id="ucldStdev.c:beast.timetree" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="25.0">0.1</parameter>
+        <stateNode id="rateCategories.c:beast.timetree" spec="parameter.IntegerParameter" dimension="50">1</stateNode>
+    </state>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <prior id="ucldStdevPrior.c:beast.timetree" name="distribution" x="@ucldStdev.c:beast.timetree">
+                <Gamma id="Gamma.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="slocationtreeLikelihood.beast.timetree" spec="sphericalGeo.ApproxMultivariateTraitLikelihood">
+                <data
+id="beast.timetree"
+spec="sphericalGeo.AlignmentFromTraitMap">
+                    <traitMap id="traitmap.s:beast.timetree" spec="sphericalGeo.TreeTraitMap" initByMean="true" randomizelower="-90 -180" randomizeupper="90 180" traitName="location">
+                        <tree id="Tree.t:beast.timetree" spec="beast.util.TreeParser" IsLabelledNewick="true" adjustTipHeights="false" estimate="false" newick="((GCA_000323485.1_ASM32348v1_genomic:117.08600000000024,GCA_000323845.1_ASM32384v1_genomic:116.08600000000024):5603.7,((((((((((((GCA_000169635.1_ASM16963v1_genomic:467.27099999999973,(GCA_000170275.1_ASM17027v1_genomic:453.27099999999973,GCA_000269145.1_ASM26914v1_genomic:472.27099999999973):0.0):0.0,Reference:454.27099999999973):8.265830000000278,GCA_000325365.1_ASM32536v1_genomic:424.53600000000006):0.0,GCA_000324725.1_ASM32472v1_genomic:452.53600000000006):0.0,GCA_000323965.1_ASM32396v1_genomic:424.53600000000006):474.46900000000005,GCA_000835005.1_ASM83500v1_genomic:930.0060000000003):27.81800000000021,(((GCA_000323505.1_ASM32350v1_genomic:603.4870000000001,GCA_000325305.1_ASM32530v1_genomic:597.4870000000001):373.33600000000024,GCA_003074235.1_ASM307423v1_genomic:960.8239999999996):0.0,((((GCA_000323565.1_ASM32356v1_genomic:588.2979999999998,GCA_016102905.1_ASM1610290v1_genomic:601.2979999999998):145.0050000000001,GCA_000323945.1_ASM32394v1_genomic:763.3029999999999):169.26500000000033,GCA_008630435.1_ASM863043v1_genomic:925.5680000000002):43.25579999999991,(GCA_000324565.1_ASM32456v1_genomic:612.8400000000001,(GCA_002005285.1_ASM200528v1_genomic:458.46200000000044,GCA_015158755.1_ASM1515875v1_genomic:516.4620000000004):147.3779999999997):316.9840000000004):0.0):0.0):0.0,GCA_000324065.1_ASM32406v1_genomic:973.8239999999996):0.0,(GCA_000320465.1_ASM32046v1_genomic:975.8239999999996,GCA_003074535.1_ASM307453v1_genomic:924.8239999999996):0.0):776.5500000000002,GCA_009670865.1_ASM967086v1_genomic:1720.37):1444.8199999999997,GCA_002981895.1_ASM298189v1_genomic:3166.1899999999996):325.11500000000024,GCA_001294975.1_ASM129497v1_genomic:3499.31):2239.48):0.0">
+                            <taxonset id="TaxonSet.0" spec="TaxonSet">
+                                <taxon id="GCA_000169635.1_ASM16963v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000170275.1_ASM17027v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000269145.1_ASM26914v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000320465.1_ASM32046v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000323485.1_ASM32348v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000323505.1_ASM32350v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000323565.1_ASM32356v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000323845.1_ASM32384v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000323945.1_ASM32394v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000323965.1_ASM32396v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000324065.1_ASM32406v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000324565.1_ASM32456v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000324725.1_ASM32472v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000325305.1_ASM32530v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000325365.1_ASM32536v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_000835005.1_ASM83500v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_001294975.1_ASM129497v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_002005285.1_ASM200528v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_002981895.1_ASM298189v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_003074235.1_ASM307423v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_003074535.1_ASM307453v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_008630435.1_ASM863043v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_009670865.1_ASM967086v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_015158755.1_ASM1515875v1_genomic" spec="Taxon"/>
+                                <taxon id="GCA_016102905.1_ASM1610290v1_genomic" spec="Taxon"/>
+                                <taxon id="Reference" spec="Taxon"/>
+                            </taxonset>
+                        </tree>
+                        <parameter id="location.s:beast.timetree" spec="sphericalGeo.LocationParameter" dimension="102" minordimension="2">0.0 0.0</parameter>
+                        GCA_000169635.1_ASM16963v1_genomic=-18.9249604 46.4416422,
+GCA_000170275.1_ASM17027v1_genomic=25.0 102.0,
+GCA_000269145.1_ASM26914v1_genomic=-8.0 -78.5,
+GCA_000320465.1_ASM32046v1_genomic=42.4804953 85.4633464,
+GCA_000323485.1_ASM32348v1_genomic=35.40709525 95.95211573241954,
+GCA_000323505.1_ASM32350v1_genomic=35.40709525 95.95211573241954,
+GCA_000323565.1_ASM32356v1_genomic=42.4804953 85.4633464,
+GCA_000323845.1_ASM32384v1_genomic=35.40709525 95.95211573241954,
+GCA_000323945.1_ASM32394v1_genomic=43.2443242 114.3251664,
+GCA_000323965.1_ASM32396v1_genomic=35.40709525 95.95211573241954,
+GCA_000324065.1_ASM32406v1_genomic=42.4804953 85.4633464,
+GCA_000324565.1_ASM32456v1_genomic=43.2443242 114.3251664,
+GCA_000324725.1_ASM32472v1_genomic=38.0000001 101.9999999,
+GCA_000325305.1_ASM32530v1_genomic=45.3463139 95.9325806,
+GCA_000325365.1_ASM32536v1_genomic=25.0 102.0,
+GCA_000835005.1_ASM83500v1_genomic=-1.3031689499999999 36.826061224105075,
+GCA_001294975.1_ASM129497v1_genomic=42.445186899999996 72.14310491939636,
+GCA_002005285.1_ASM200528v1_genomic=18.9068356 75.6741579,
+GCA_002981895.1_ASM298189v1_genomic=48.5470083 89.8549358,
+GCA_003074235.1_ASM307423v1_genomic=48.5470083 89.8549358,
+GCA_003074535.1_ASM307453v1_genomic=42.06103415 78.1707323234642,
+GCA_008630435.1_ASM863043v1_genomic=43.7368326 41.7267991,
+GCA_009670865.1_ASM967086v1_genomic=42.4804953 85.4633464,
+GCA_015158755.1_ASM1515875v1_genomic=29.8556443 90.8749807,
+GCA_016102905.1_ASM1610290v1_genomic=46.2313018 45.3275745,
+Reference=38.7251776 -105.607716                    </traitMap>
+                    <userDataType id="LocationDataType.0" spec="sphericalGeo.LocationDataType"/>
+                </data>
+                <tree idref="Tree.t:beast.timetree"/>
+                <siteModel id="geoContSiteModel.s:beast.timetree" spec="SiteModel">
+                    <substModel id="sdiffusionModel.s:beast.timetree" spec="sphericalGeo.SphericalDiffusionModel" fast="true">
+                        <parameter id="sprecision.s:beast.timetree" spec="parameter.RealParameter" lower="0.0" name="precision">100.0</parameter>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="RelaxedClock.c:beast.timetree" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" rateCategories="@rateCategories.c:beast.timetree" tree="@Tree.t:beast.timetree">
+                    <LogNormal id="LogNormalDistributionModel.c:beast.timetree" S="@ucldStdev.c:beast.timetree" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                    <parameter id="ucldMean.c:beast.timetree" spec="parameter.RealParameter" estimate="false" lower="1.0E-299" name="clock.rate">1.0E-30</parameter>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+    </distribution>
+
+    <operator id="ucldStdevScaler.c:beast.timetree" spec="ScaleOperator" parameter="@ucldStdev.c:beast.timetree" scaleFactor="0.5" weight="3.0"/>
+
+    <operator id="CategoriesRandomWalk.c:beast.timetree" spec="IntRandomWalkOperator" parameter="@rateCategories.c:beast.timetree" weight="10.0" windowSize="1"/>
+
+    <operator id="CategoriesSwapOperator.c:beast.timetree" spec="SwapOperator" intparameter="@rateCategories.c:beast.timetree" weight="10.0"/>
+
+    <operator id="CategoriesUniform.c:beast.timetree" spec="UniformOperator" parameter="@rateCategories.c:beast.timetree" weight="10.0"/>
+
+    <logger id="tracelog" spec="Logger" fileName="beast.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="ucldStdev.c:beast.timetree"/>
+        <log id="rate.c:beast.timetree" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:beast.timetree" tree="@Tree.t:beast.timetree"/>
+    </logger>
+
+    <logger id="screenlog" spec="Logger" logEvery="10000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="TreeLogger" spec="Logger" fileName="beast.timetree.trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:beast.timetree">
+            <metadata id="location" spec="sphericalGeo.TraitFunction" likelihood="@slocationtreeLikelihood.beast.timetree">0.0</metadata>
+        </log>
+    </logger>
+
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+
+</run>
+
+</beast>

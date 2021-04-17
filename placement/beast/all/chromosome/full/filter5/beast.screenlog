@@ -1,0 +1,199 @@
+
+                  BEAST v1.10.4, 2002-2018
+       Bayesian Evolutionary Analysis Sampling Trees
+                 Designed and developed by
+   Alexei J. Drummond, Andrew Rambaut and Marc A. Suchard
+                              
+               Department of Computer Science
+                   University of Auckland
+                  alexei@cs.auckland.ac.nz
+                              
+             Institute of Evolutionary Biology
+                  University of Edinburgh
+                     a.rambaut@ed.ac.uk
+                              
+              David Geffen School of Medicine
+           University of California, Los Angeles
+                     msuchard@ucla.edu
+                              
+                Downloads, Help & Resources:
+                  	http://beast.community
+                              
+Source code distributed under the GNU Lesser General Public License:
+          	http://github.com/beast-dev/beast-mcmc
+                              
+                     BEAST developers:
+	Alex Alekseyenko, Guy Baele, Trevor Bedford, Filip Bielejec, Erik Bloomquist, Matthew Hall,
+	Joseph Heled, Sebastian Hoehna, Denise Kuehnert, Philippe Lemey, Wai Lok Sibon Li,
+	Gerton Lunter, Sidney Markowitz, Vladimir Minin, Michael Defoin Platel,
+          	Oliver Pybus, Chieh-Hsi Wu, Walter Xie
+                              
+                         Thanks to:
+    	Roald Forsberg, Beth Shapiro and Korbinian Strimmer
+
+Using BEAGLE library v3.1.2 for accelerated, parallel likelihood evaluation
+2009-, BEAGLE Working Group - https://beagle-dev.github.io/
+Citation: Ayres et al (2012) Systematic Biology 61: 170-173 | doi:10.1093/sysbio/syr100
+
+
+Random number seed: 1618698186797
+
+
+Parsing XML file: beast.xml
+  File encoding: UTF8
+Looking for plugins in /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/beast/all/chromosome/full/filter5/plugins
+
+Read alignment: alignment
+  Sequences = 26
+      Sites = 17929
+   Datatype = nucleotide
+Site patterns 'patterns' created from positions 1-17929 of alignment 'alignment'
+  unique pattern count = 708
+  Changing height of node GCA_000323485.1_ASM32348v1_genomic from 47.99846000000025 to 48.0
+  Changing height of node GCA_000320465.1_ASM32046v1_genomic from 7.000060000000303 to 7.0
+  Changing height of node GCA_003074535.1_ASM307453v1_genomic from 58.0000600000003 to 58.0
+  Changing height of node GCA_003074235.1_ASM307423v1_genomic from 22.000060000000303 to 22.0
+  Changing height of node GCA_000323505.1_ASM32350v1_genomic from 6.000060000000303 to 6.0
+  Changing height of node GCA_000325305.1_ASM32530v1_genomic from 12.000060000000303 to 12.0
+  Changing height of node GCA_000323565.1_ASM32356v1_genomic from 37.000059999999394 to 37.0
+  Changing height of node GCA_016102905.1_ASM1610290v1_genomic from 24.000059999999394 to 24.0
+  Changing height of node GCA_000323945.1_ASM32394v1_genomic from 7.000059999999394 to 7.0
+  Changing height of node GCA_008630435.1_ASM863043v1_genomic from 14.000059999999849 to 14.0
+  Changing height of node GCA_000324565.1_ASM32456v1_genomic from 53.00106000000005 to 53.0
+  Changing height of node GCA_002005285.1_ASM200528v1_genomic from 60.0000600000003 to 85.0
+  Changing height of node GCA_015158755.1_ASM1515875v1_genomic from 2.0000600000003033 to 2.0
+  Changing height of node GCA_000169635.1_ASM16963v1_genomic from 5.0 to 4.0
+  Changing height of node GCA_000325365.1_ASM32536v1_genomic from 56.00030000000015 to 56.0
+  Changing height of node GCA_000324725.1_ASM32472v1_genomic from 28.000300000000152 to 28.0
+  Changing height of node GCA_000323965.1_ASM32396v1_genomic from 56.00030000000015 to 56.0
+  Changing height of node GCA_000835005.1_ASM83500v1_genomic from 25.000300000000152 to 25.0
+  Changing height of node GCA_000324065.1_ASM32406v1_genomic from 9.000060000000303 to 9.0
+  Changing height of node GCA_009670865.1_ASM967086v1_genomic from 38.9990600000001 to 39.0
+  Changing height of node GCA_002981895.1_ASM298189v1_genomic from 37.9990600000001 to 38.0
+  Changing height of node GCA_001294975.1_ASM129497v1_genomic from 30.000060000000303 to 30.0
+
+Creating the tree model, 'treeModel'
+  taxon count = 26
+  tree height = 151.0
+
+Using discretized relaxed clock model.
+  over sampling = 1
+  parametric model = logNormalDistributionModel
+   rate categories = 1
+
+Creating state frequencies model 'frequencies': Initial frequencies = {0.25, 0.25, 0.25, 0.25}
+
+Creating HKY substitution model. Initial kappa = 2.0
+
+Creating site rate model.
+
+Using BEAGLE DataLikelihood Delegate
+  Using BEAGLE resource 0: CPU
+    with instance flags:  PRECISION_DOUBLE COMPUTATION_SYNCH EIGEN_REAL SCALING_MANUAL SCALERS_RAW VECTOR_SSE THREADING_CPP PROCESSOR_CPU FRAMEWORK_CPU
+  Ignoring ambiguities in tree likelihood.
+  With 708 unique site patterns.
+  Using rescaling scheme : dynamic (rescaling every 100 evaluations, delay rescaling until first overflow)
+
+Using TreeDataLikelihood
+  Branch rate model used: discretizedBranchRates
+
+Using an scaled mixture of normals model.
+  rates = 50
+  NB: Make sure you have a prior on location.diffusion.rates and do not use this model in a treeLikelihood for sequence data
+  reciprocal = false
+Creating multivariate diffusion model:
+	Trait: location
+	Diffusion process: location.diffusionModel
+	Heterogenity model: location.diffusion.branchRates
+	Tree normalization: length
+	Using reciprocal (precision) rates: true
+	Initial tree length: 1655.0
+	Sample internal node traits: false
+	Please cite:
+		Lemey P, Rambaut A, Welch JJ, Suchard MA (2010) Phylogeography takes a relaxed random walk in continous space and time. Molecular Biology and Evolution. 27, 1877-1885
+		Pybus OG, Suchard MA, Lemey P, Bernadin F, Rambaut A, Crawford FW, Gray RR, Arinaminpathy N, Stramer S, Busch MP, Delwart E (2012) Unifying the spatial epidemiology and evolution of emerging epidemics. Proceedings of the National Academy of Sciences. 109, 15066-15071
+
+	Diffusion dimension   : 2
+	Number of observations: 1
+
+  Replacing trait #1  Old: 35.40709525 95.95211573241954 New:  35.40773902642794 95.953808627304
+  Replacing trait #2  Old: 35.40709525 95.95211573241954 New:  35.41021353842424 95.94975619290278
+  Replacing trait #3  Old: 42.4804953 85.4633464 New:  42.48371634964571 85.46286949758967
+  Replacing trait #5  Old: 48.5470083 89.8549358 New:  48.543295058199895 89.85939336225611
+  Replacing trait #6  Old: 35.40709525 95.95211573241954 New:  35.40449590721214 95.9551459108408
+  Replacing trait #8  Old: 42.4804953 85.4633464 New:  42.48108468604838 85.46722697948697
+  Replacing trait #10  Old: 43.2443242 114.3251664 New:  43.24903375712121 114.32826856134366
+  Replacing trait #12  Old: 43.2443242 114.3251664 New:  43.2403374857202 114.3253202031922
+  Replacing trait #17  Old: 25.0 102.0 New:  25.003589256929246 102.00218876766125
+  Replacing trait #19  Old: 25.0 102.0 New:  25.004266196530665 102.00484665494338
+  Replacing trait #21  Old: 35.40709525 95.95211573241954 New:  35.406892846104725 95.94758922178099
+  Replacing trait #23  Old: 42.4804953 85.4633464 New:  42.48409966548087 85.46518066102114
+  Replacing trait #24  Old: 42.4804953 85.4633464 New:  42.48409524676428 85.46724720830169
+  Replacing trait #25  Old: 48.5470083 89.8549358 New:  48.54993671061857 89.85982909989652
+Creating swap operator for parameter branchRates.categories (weight=10.0)
+Optimization Schedule: log
+Creating CTMC Scale Reference Prior model.
+Acting on subtree of size 26
+
+Likelihood computation is using an auto sizing thread pool.
+
+Creating the MCMC chain:
+  chainLength=100000
+  autoOptimize=true
+  autoOptimize delayed for 1000 steps
+
+Citations for this analysis: 
+
+FRAMEWORK
+BEAST primary citation:
+	Suchard MA, Lemey P, Baele G, Ayres DL, Drummond AJ, Rambaut A (2018) Bayesian phylogenetic and phylodynamic data integration using BEAST 1.10. Virus Evolution. vey016. DOI:10.1093/ve/vey016
+
+MOLECULAR CLOCK MODELS
+Uncorrelated relaxed clock:
+	Drummond AJ, Ho SYW, Phillips MJ, Rambaut A (2006) Relaxed Phylogenetics and Dating with Confidence. PLoS Biology. 4: e88. DOI:10.1371/journal.pbio.0040088
+
+SUBSTITUTION MODELS
+HKY nucleotide substitution model:
+	Hasegawa M, Kishino H, Yano T (1985) Dating the human-ape splitting by a molecular clock of mitochondrial DNA. J. Mol. Evol.. 22, 160-174
+
+TRAIT MODELS
+Multivariate Diffusion model (first citation) with efficiently integrated internal traits (second citation):
+	Lemey P, Rambaut A, Welch JJ, Suchard MA (2010) Phylogeography takes a relaxed random walk in continous space and time. Molecular Biology and Evolution. 27, 1877-1885
+	Pybus OG, Suchard MA, Lemey P, Bernadin F, Rambaut A, Crawford FW, Gray RR, Arinaminpathy N, Stramer S, Busch MP, Delwart E (2012) Unifying the spatial epidemiology and evolution of emerging epidemics. Proceedings of the National Academy of Sciences. 109, 15066-15071
+
+PRIOR MODELS
+CTMC Scale Reference Prior model:
+	Ferreira MAR, Suchard MA (2008) Bayesian analysis of elapsed times in continuous-time Markov chains. Canadian Journal of Statistics. 36, 355-368
+
+
+# BEAST v1.10.4
+# Generated Sat Apr 17 18:23:07 EDT 2021 [seed=1618698186797]
+# -overwrite beast.xml
+# keywords: discretized_branch_rates
+state	Joint       	Prior       	Likelihood  	age(root)   	ucld.mean   
+0	-707833.7505	-11453.9757 	-696379.7748	139.000     	1.00000     	-
+1000	-38704.1837 	-618.9217   	-38085.2621 	139.164     	6.80781E-2  	-
+2000	-37430.7443 	-558.4418   	-36872.3025 	140.931     	4.63809E-2  	-
+3000	-37230.3709 	-535.1276   	-36695.2433 	141.230     	3.96461E-2  	-
+4000	-37190.6859 	-522.3773   	-36668.3086 	140.950     	3.68005E-2  	-
+5000	-37151.2785 	-488.6273   	-36662.6512 	141.926     	3.03835E-2  	-
+6000	-37112.5644 	-472.9137   	-36639.6507 	142.218     	2.70717E-2  	-
+7000	-37092.6598 	-464.9434   	-36627.7164 	142.429     	2.72969E-2  	-
+8000	-37089.8764 	-468.3602   	-36621.5162 	141.942     	2.50204E-2  	-
+9000	-37078.6104 	-453.4573   	-36625.1531 	142.275     	2.29808E-2  	-
+10000	-37067.9827 	-454.9421   	-36613.0406 	142.808     	1.99846E-2  	-
+11000	-37058.2142 	-449.8152   	-36608.3991 	143.282     	1.83486E-2  	3.77 minutes/million states
+12000	-37049.7955 	-437.8266   	-36611.9689 	142.976     	1.66123E-2  	3.61 minutes/million states
+13000	-37034.7612 	-428.3822   	-36606.3790 	143.538     	1.5069E-2   	3.57 minutes/million states
+14000	-37042.3398 	-421.1146   	-36621.2252 	143.254     	1.49381E-2  	3.54 minutes/million states
+15000	-37021.2765 	-407.5713   	-36613.7052 	143.759     	1.51791E-2  	3.53 minutes/million states
+16000	-37032.2306 	-418.9932   	-36613.2374 	142.944     	1.42456E-2  	3.51 minutes/million states
+17000	-37036.4730 	-431.0205   	-36605.4524 	143.235     	1.33198E-2  	3.5 minutes/million states
+18000	-37033.1167 	-422.9177   	-36610.1990 	142.238     	1.32448E-2  	3.49 minutes/million states
+19000	-37034.7666 	-417.5851   	-36617.1815 	143.090     	1.24247E-2  	3.5 minutes/million states
+20000	-37045.9533 	-425.9056   	-36620.0477 	143.207     	1.2655E-2   	3.52 minutes/million states
+21000	-37041.6974 	-422.2765   	-36619.4209 	143.599     	1.25531E-2  	3.51 minutes/million states
+22000	-37036.2934 	-417.1229   	-36619.1706 	143.135     	1.29179E-2  	3.5 minutes/million states
+23000	-37034.9840 	-417.5884   	-36617.3956 	143.177     	1.22177E-2  	3.5 minutes/million states
+24000	-37036.5081 	-414.5396   	-36621.9685 	143.295     	1.16873E-2  	3.49 minutes/million states
+25000	-37037.8752 	-419.6438   	-36618.2313 	144.215     	1.18692E-2  	3.5 minutes/million states
