@@ -744,7 +744,7 @@ SAMN00715800=51.4893335 -0.14405508452768728                    </traitMap>
 
     <operator id="PopSizeScaler.t:dna" spec="ScaleOperator" parameter="@popSize.t:dna" scaleFactor="0.75" weight="1.0"/>
 
-    <logger id="tracelog" spec="Logger" fileName="beast.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+    <logger id="tracelog" spec="Logger" fileName="beast1.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
         <log idref="posterior"/>
         <log idref="likelihood"/>
         <log idref="prior"/>
@@ -768,7 +768,7 @@ SAMN00715800=51.4893335 -0.14405508452768728                    </traitMap>
         <log idref="prior"/>
     </logger>
 
-    <logger id="treelog.t:dna" spec="Logger" fileName="beast.trees" logEvery="1000" mode="tree">
+    <logger id="treelog.t:dna" spec="Logger" fileName="beast1.trees" logEvery="1000" mode="tree">
         <log id="TreeWithMetaDataLogger.t:dna" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:latlon" tree="@Tree.t:dna">
             <metadata id="locationslocation" spec="sphericalGeo.TraitFunction" likelihood="@slocationtreeLikelihood.latlon">0.0</metadata>
         </log>
