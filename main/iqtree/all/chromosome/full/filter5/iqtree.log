@@ -1,0 +1,1712 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Mar 30 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    info2020 (AVX512, FMA3, 376 GB RAM)
+Command: iqtree -s /2/scratch/keaton/plague-phylogeography/results/snippy_multi/all/chromosome/full/filter5/snippy-multi.snps.aln -m K3Pu+F+I --threads-max 10 -nt 10 -o GCA_900637475.1_51108_B01_genomic,GCA_000834295.1_ASM83429v1_genomic -seed 47321424 --runs 10 -fconst 1108245,997240,1008295,1105069 --ufboot 1000 -redo -pre /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree
+Seed:    47321424 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 20 17:03:16 2021
+Kernel:  AVX+FMA - 10 threads (64 CPU cores detected)
+
+Reading alignment file /2/scratch/keaton/plague-phylogeography/results/snippy_multi/all/chromosome/full/filter5/snippy-multi.snps.aln ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 603 sequences with 26282 columns, 24423 distinct patterns
+13826 parsimony-informative, 12456 singleton sites, 0 constant sites
+                                                         Gap/Ambiguity  Composition  p-value
+   1  GCA_000006645.1_ASM664v1_genomic                           0.02%    passed     98.51%
+   2  GCA_000007885.1_ASM788v1_genomic                           0.18%    passed     98.93%
+   3  GCA_000013825.1_ASM1382v1_genomic                          0.58%    passed     97.71%
+   4  GCA_000022805.1_ASM2280v1_genomic                          0.00%    passed     99.66%
+   5  GCA_000022825.1_ASM2282v1_genomic                          0.02%    passed     99.03%
+   6  GCA_000022845.1_ASM2284v1_genomic                          0.68%    passed     99.16%
+   7  GCA_000168235.2_ASM16823v2_genomic                         0.32%    passed     99.95%
+   8  GCA_000169615.1_ASM16961v1_genomic                         1.56%    passed     95.92%
+   9  GCA_000169635.1_ASM16963v1_genomic                         0.06%    passed     99.72%
+  10  GCA_000169655.1_ASM16965v1_genomic                         0.07%    passed     99.88%
+  11  GCA_000169675.1_ASM16967v1_genomic                         0.11%    passed     99.61%
+  12  GCA_000170275.1_ASM17027v1_genomic                         0.11%    passed     99.45%
+  13  GCA_000181455.2_ASM18145v2_genomic                         0.10%    passed     99.87%
+  14  GCA_000182485.1_ASM18248v1_genomic                         0.19%    passed     99.99%
+  15  GCA_000182505.1_ASM18250v1_genomic                         0.06%    passed     99.76%
+  16  GCA_000182525.1_ASM18252v1_genomic                         0.14%    passed     97.71%
+  17  GCA_000182705.1_ASM18270v1_genomic                         0.00%    passed     98.90%
+  18  GCA_000255735.1_ASM25573v1_genomic                         0.06%    passed     99.61%
+  19  GCA_000255755.1_ASM25575v1_genomic                         0.10%    passed     99.59%
+  20  GCA_000255775.1_ASM25577v1_genomic                         0.05%    passed     99.54%
+  21  GCA_000255795.1_ASM25579v1_genomic                         0.24%    passed     99.53%
+  22  GCA_000255815.1_ASM25581v1_genomic                         0.08%    passed     99.30%
+  23  GCA_000255835.1_ASM25583v1_genomic                         0.13%    passed     99.31%
+  24  GCA_000255855.1_ASM25585v1_genomic                         0.08%    passed     99.82%
+  25  GCA_000255875.1_ASM25587v1_genomic                         0.12%    passed     99.82%
+  26  GCA_000255895.1_ASM25589v1_genomic                         0.07%    passed     99.74%
+  27  GCA_000268325.1_ASM26832v1_genomic                         0.97%    passed     97.29%
+  28  GCA_000268345.1_ASM26834v1_genomic                         0.32%    passed     99.55%
+  29  GCA_000268365.1_ASM26836v1_genomic                         0.61%    passed     98.11%
+  30  GCA_000268385.1_ASM26838v1_genomic                         0.33%    passed     99.40%
+  31  GCA_000268405.1_ASM26840v1_genomic                         0.76%    passed     99.50%
+  32  GCA_000268425.1_ASM26842v1_genomic                         0.66%    passed     98.39%
+  33  GCA_000268445.1_ASM26844v1_genomic                         0.72%    passed     99.45%
+  34  GCA_000268465.1_ASM26846v1_genomic                         0.92%    passed     97.65%
+  35  GCA_000268485.1_ASM26848v1_genomic                         0.51%    passed     98.71%
+  36  GCA_000268485.2_ASM26848v2_genomic                         0.51%    passed     98.71%
+  37  GCA_000268505.1_ASM26850v1_genomic                         0.45%    passed     97.70%
+  38  GCA_000268525.1_ASM26852v1_genomic                         0.68%    passed     96.43%
+  39  GCA_000268545.1_ASM26854v1_genomic                         0.81%    passed     99.51%
+  40  GCA_000268565.1_ASM26856v1_genomic                         1.53%    passed     98.52%
+  41  GCA_000268585.1_ASM26858v1_genomic                         0.69%    passed     97.64%
+  42  GCA_000268605.1_ASM26860v1_genomic                         1.35%    passed     93.21%
+  43  GCA_000268625.1_ASM26862v1_genomic                         0.50%    passed     97.85%
+  44  GCA_000268645.1_ASM26864v1_genomic                         0.45%    passed     99.74%
+  45  GCA_000268665.1_ASM26866v1_genomic                         0.87%    passed     99.32%
+  46  GCA_000268685.1_ASM26868v1_genomic                         0.29%    passed     99.71%
+  47  GCA_000268705.1_ASM26870v1_genomic                         1.01%    passed     99.37%
+  48  GCA_000268725.1_ASM26872v1_genomic                         0.30%    passed     99.31%
+  49  GCA_000268725.2_ASM26872v2_genomic                         0.30%    passed     99.31%
+  50  GCA_000268745.1_ASM26874v1_genomic                         0.34%    passed     99.25%
+  51  GCA_000268765.1_ASM26876v1_genomic                         0.61%    passed     99.21%
+  52  GCA_000268785.1_ASM26878v1_genomic                         0.46%    passed     99.03%
+  53  GCA_000268805.1_ASM26880v1_genomic                         2.94%    passed     98.11%
+  54  GCA_000268805.2_ASM26880v2_genomic                         2.94%    passed     98.11%
+  55  GCA_000268825.1_ASM26882v1_genomic                         0.30%    passed     99.40%
+  56  GCA_000268845.1_ASM26884v1_genomic                         0.84%    passed     98.79%
+  57  GCA_000268865.1_ASM26886v1_genomic                         0.45%    passed     99.70%
+  58  GCA_000268865.2_ASM26886v2_genomic                         0.45%    passed     99.70%
+  59  GCA_000268885.1_ASM26888v1_genomic                         0.49%    passed     98.94%
+  60  GCA_000268905.1_ASM26890v1_genomic                         0.58%    passed     98.90%
+  61  GCA_000268925.1_ASM26892v1_genomic                         0.25%    passed     99.17%
+  62  GCA_000268945.1_ASM26894v1_genomic                         2.35%    passed     98.87%
+  63  GCA_000268965.1_ASM26896v1_genomic                         0.53%    passed     99.03%
+  64  GCA_000268985.1_ASM26898v1_genomic                         0.76%    passed     99.50%
+  65  GCA_000269005.1_ASM26900v1_genomic                         1.24%    passed     97.29%
+  66  GCA_000269025.1_ASM26902v1_genomic                         0.60%    passed     98.96%
+  67  GCA_000269045.1_ASM26904v1_genomic                         0.74%    passed     99.43%
+  68  GCA_000269065.1_ASM26906v1_genomic                         0.34%    passed     99.74%
+  69  GCA_000269085.1_ASM26908v1_genomic                         0.45%    passed     99.76%
+  70  GCA_000269105.1_ASM26910v1_genomic                         0.72%    passed     99.22%
+  71  GCA_000269125.1_ASM26912v1_genomic                         0.48%    passed     97.40%
+  72  GCA_000269145.1_ASM26914v1_genomic                         0.85%    passed     99.12%
+  73  GCA_000269165.1_ASM26916v1_genomic                         0.58%    passed     99.32%
+  74  GCA_000269185.1_ASM26918v1_genomic                         0.65%    passed     99.01%
+  75  GCA_000269205.1_ASM26920v1_genomic                         0.28%    passed     99.55%
+  76  GCA_000269225.1_ASM26922v1_genomic                         0.69%    passed     97.55%
+  77  GCA_000269245.1_ASM26924v1_genomic                         0.44%    passed     99.26%
+  78  GCA_000269265.1_ASM26926v1_genomic                         1.16%    passed     98.09%
+  79  GCA_000269285.1_ASM26928v1_genomic                         0.49%    passed     98.06%
+  80  GCA_000269285.2_ASM26928v2_genomic                         0.49%    passed     98.06%
+  81  GCA_000269305.1_ASM26930v1_genomic                         0.51%    passed     98.75%
+  82  GCA_000269325.1_ASM26932v1_genomic                         0.67%    passed     99.43%
+  83  GCA_000269345.1_ASM26934v1_genomic                         1.04%    passed     98.85%
+  84  GCA_000269365.1_ASM26936v1_genomic                         0.48%    passed     99.08%
+  85  GCA_000269385.1_ASM26938v1_genomic                         2.85%    passed     92.05%
+  86  GCA_000269405.1_ASM26940v1_genomic                         1.44%    passed     96.30%
+  87  GCA_000269425.1_ASM26942v1_genomic                         1.24%    passed     98.63%
+  88  GCA_000269445.1_ASM26944v1_genomic                         0.27%    passed     99.28%
+  89  GCA_000269465.1_ASM26946v1_genomic                         0.55%    passed     98.54%
+  90  GCA_000269485.1_ASM26948v1_genomic                         1.10%    passed     98.42%
+  91  GCA_000275685.1_ASM27568v1_genomic                         0.01%    passed     99.32%
+  92  GCA_000311885.1_ASM31188v1_genomic                         0.00%    passed     99.41%
+  93  GCA_000320425.1_ASM32042v1_genomic                         2.32%    passed     97.90%
+  94  GCA_000320445.1_ASM32044v1_genomic                         0.67%    passed     99.75%
+  95  GCA_000320465.1_ASM32046v1_genomic                         0.07%    passed     99.52%
+  96  GCA_000323185.1_ASM32318v1_genomic                         0.88%    passed     99.94%
+  97  GCA_000323205.1_ASM32320v1_genomic                         1.24%    passed     99.83%
+  98  GCA_000323225.1_ASM32322v1_genomic                         0.13%    passed     99.72%
+  99  GCA_000323245.1_ASM32324v1_genomic                         9.24%    passed     91.24%
+ 100  GCA_000323285.1_ASM32328v1_genomic                         0.19%    passed     99.75%
+ 101  GCA_000323305.1_ASM32330v1_genomic                         1.43%    passed     99.99%
+ 102  GCA_000323325.1_ASM32332v1_genomic                         1.45%    passed     99.31%
+ 103  GCA_000323345.1_ASM32334v1_genomic                         1.69%    passed     99.83%
+ 104  GCA_000323365.1_ASM32336v1_genomic                         0.50%    passed     99.19%
+ 105  GCA_000323385.1_ASM32338v1_genomic                         5.52%    passed     82.66%
+ 106  GCA_000323405.1_ASM32340v1_genomic                         0.57%    passed     99.28%
+ 107  GCA_000323425.1_ASM32342v1_genomic                         1.45%    passed     99.58%
+ 108  GCA_000323445.1_ASM32344v1_genomic                         1.02%    passed     99.06%
+ 109  GCA_000323465.1_ASM32346v1_genomic                         0.45%    passed     99.97%
+ 110  GCA_000323485.1_ASM32348v1_genomic                         2.42%    passed     50.79%
+ 111  GCA_000323505.1_ASM32350v1_genomic                         0.38%    passed     99.97%
+ 112  GCA_000323525.1_ASM32352v1_genomic                         2.07%    passed     97.92%
+ 113  GCA_000323545.1_ASM32354v1_genomic                         1.07%    passed     99.16%
+ 114  GCA_000323565.1_ASM32356v1_genomic                         3.42%    passed     94.30%
+ 115  GCA_000323585.1_ASM32358v1_genomic                         1.10%    passed     99.98%
+ 116  GCA_000323605.1_ASM32360v1_genomic                         0.07%    passed     99.54%
+ 117  GCA_000323625.1_ASM32362v1_genomic                         3.39%    passed     95.33%
+ 118  GCA_000323645.1_ASM32364v1_genomic                         0.37%    passed     99.99%
+ 119  GCA_000323665.1_ASM32366v1_genomic                         3.22%    passed     99.97%
+ 120  GCA_000323685.1_ASM32368v1_genomic                         1.54%    passed     99.20%
+ 121  GCA_000323705.1_ASM32370v1_genomic                         0.14%    passed     99.74%
+ 122  GCA_000323725.1_ASM32372v1_genomic                         4.31%    passed     99.11%
+ 123  GCA_000323745.1_ASM32374v1_genomic                         3.90%    passed     95.97%
+ 124  GCA_000323765.1_ASM32376v1_genomic                         1.40%    passed     99.71%
+ 125  GCA_000323785.1_ASM32378v1_genomic                         1.07%    passed     99.82%
+ 126  GCA_000323805.1_ASM32380v1_genomic                         1.85%    passed     97.55%
+ 127  GCA_000323825.1_ASM32382v1_genomic                         0.76%    passed     97.98%
+ 128  GCA_000323845.1_ASM32384v1_genomic                         3.02%    passed     60.53%
+ 129  GCA_000323865.1_ASM32386v1_genomic                         1.43%    passed     98.39%
+ 130  GCA_000323885.1_ASM32388v1_genomic                         0.40%    passed     99.33%
+ 131  GCA_000323905.1_ASM32390v1_genomic                         1.58%    passed     99.81%
+ 132  GCA_000323925.1_ASM32392v1_genomic                         0.37%    passed     99.87%
+ 133  GCA_000323945.1_ASM32394v1_genomic                        11.70%    passed     97.59%
+ 134  GCA_000323965.1_ASM32396v1_genomic                         0.84%    passed     99.79%
+ 135  GCA_000323985.1_ASM32398v1_genomic                         4.70%    passed     99.62%
+ 136  GCA_000324005.1_ASM32400v1_genomic                         0.84%    passed     99.72%
+ 137  GCA_000324025.1_ASM32402v1_genomic                         0.32%    passed     99.84%
+ 138  GCA_000324045.1_ASM32404v1_genomic                         2.91%    passed     99.03%
+ 139  GCA_000324065.1_ASM32406v1_genomic                         3.00%    passed     96.55%
+ 140  GCA_000324085.1_ASM32408v1_genomic                         4.20%    passed     98.15%
+ 141  GCA_000324105.1_ASM32410v1_genomic                         2.21%    passed     99.95%
+ 142  GCA_000324125.1_ASM32412v1_genomic                         1.10%    passed     99.60%
+ 143  GCA_000324145.1_ASM32414v1_genomic                         0.23%    passed     99.99%
+ 144  GCA_000324165.1_ASM32416v1_genomic                         0.39%    passed     99.19%
+ 145  GCA_000324185.1_ASM32418v1_genomic                         0.43%    passed     99.81%
+ 146  GCA_000324205.1_ASM32420v1_genomic                         1.38%    passed     98.91%
+ 147  GCA_000324225.1_ASM32422v1_genomic                         0.20%    passed     98.20%
+ 148  GCA_000324245.1_ASM32424v1_genomic                         0.77%    passed     99.92%
+ 149  GCA_000324265.1_ASM32426v1_genomic                         0.29%    passed     99.72%
+ 150  GCA_000324285.1_ASM32428v1_genomic                         3.94%    passed     99.44%
+ 151  GCA_000324305.1_ASM32430v1_genomic                         0.58%    passed     98.50%
+ 152  GCA_000324325.1_ASM32432v1_genomic                         4.78%    passed     98.02%
+ 153  GCA_000324345.1_ASM32434v1_genomic                         0.25%    passed     99.87%
+ 154  GCA_000324365.1_ASM32436v1_genomic                         0.97%    passed     98.39%
+ 155  GCA_000324385.1_ASM32438v1_genomic                         8.36%    passed     98.49%
+ 156  GCA_000324405.1_ASM32440v1_genomic                         2.45%    passed     96.79%
+ 157  GCA_000324425.1_ASM32442v1_genomic                         0.22%    passed     99.16%
+ 158  GCA_000324445.1_ASM32444v1_genomic                         0.69%    passed     99.70%
+ 159  GCA_000324465.1_ASM32446v1_genomic                         2.15%    passed     90.49%
+ 160  GCA_000324485.1_ASM32448v1_genomic                         2.03%    passed     97.92%
+ 161  GCA_000324505.1_ASM32450v1_genomic                         1.80%    passed     99.75%
+ 162  GCA_000324525.1_ASM32452v1_genomic                         1.51%    passed     98.63%
+ 163  GCA_000324545.1_ASM32454v1_genomic                         2.65%    passed     99.72%
+ 164  GCA_000324565.1_ASM32456v1_genomic                         0.18%    passed     99.89%
+ 165  GCA_000324585.1_ASM32458v1_genomic                         4.25%    passed     93.49%
+ 166  GCA_000324605.1_ASM32460v1_genomic                         1.61%    passed     99.71%
+ 167  GCA_000324625.1_ASM32462v1_genomic                         3.32%    passed     99.06%
+ 168  GCA_000324645.1_ASM32464v1_genomic                         3.36%    passed     99.98%
+ 169  GCA_000324665.1_ASM32466v1_genomic                         0.75%    passed     99.67%
+ 170  GCA_000324685.1_ASM32468v1_genomic                         0.97%    passed     98.72%
+ 171  GCA_000324705.1_ASM32470v1_genomic                         3.47%    passed     99.53%
+ 172  GCA_000324725.1_ASM32472v1_genomic                         0.86%    passed     99.95%
+ 173  GCA_000324745.1_ASM32474v1_genomic                         2.86%    passed     93.39%
+ 174  GCA_000324765.1_ASM32476v1_genomic                         1.22%    passed     97.13%
+ 175  GCA_000324785.1_ASM32478v1_genomic                         0.72%    passed     99.81%
+ 176  GCA_000324805.2_EV76-CN_genomic                            0.57%    passed     99.75%
+ 177  GCA_000324825.1_ASM32482v1_genomic                         2.05%    passed     98.62%
+ 178  GCA_000324845.1_ASM32484v1_genomic                         1.67%    passed     95.96%
+ 179  GCA_000324865.1_ASM32486v1_genomic                         3.64%    passed     99.48%
+ 180  GCA_000324885.1_ASM32488v1_genomic                         0.12%    passed    100.00%
+ 181  GCA_000324905.1_ASM32490v1_genomic                         0.13%    passed     99.99%
+ 182  GCA_000324925.1_ASM32492v1_genomic                         1.38%    passed     77.70%
+ 183  GCA_000324945.1_ASM32494v1_genomic                         2.91%    passed     99.40%
+ 184  GCA_000324965.1_ASM32496v1_genomic                         0.39%    passed     99.97%
+ 185  GCA_000324985.1_ASM32498v1_genomic                         1.52%    passed     99.44%
+ 186  GCA_000325005.1_ASM32500v1_genomic                         1.75%    passed     98.56%
+ 187  GCA_000325025.1_ASM32502v1_genomic                         1.16%    passed     99.66%
+ 188  GCA_000325045.1_ASM32504v1_genomic                         2.55%    passed     99.95%
+ 189  GCA_000325065.1_ASM32506v1_genomic                         1.54%    passed     99.37%
+ 190  GCA_000325085.1_ASM32508v1_genomic                         4.55%    passed     95.24%
+ 191  GCA_000325105.1_ASM32510v1_genomic                         0.82%    passed     99.83%
+ 192  GCA_000325125.1_ASM32512v1_genomic                         1.89%    passed     99.97%
+ 193  GCA_000325165.1_ASM32516v1_genomic                         1.52%    passed     98.96%
+ 194  GCA_000325185.1_ASM32518v1_genomic                         1.00%    passed     99.10%
+ 195  GCA_000325205.1_ASM32520v1_genomic                         0.58%    passed     99.57%
+ 196  GCA_000325225.1_ASM32522v1_genomic                         0.62%    passed     99.38%
+ 197  GCA_000325245.1_ASM32524v1_genomic                         2.16%    passed     83.33%
+ 198  GCA_000325265.1_ASM32526v1_genomic                         0.66%    passed     99.81%
+ 199  GCA_000325285.1_ASM32528v1_genomic                         1.99%    passed     99.06%
+ 200  GCA_000325305.1_ASM32530v1_genomic                         0.93%    passed     99.81%
+ 201  GCA_000325325.1_ASM32532v1_genomic                         0.90%    passed     99.88%
+ 202  GCA_000325345.1_ASM32534v1_genomic                         1.86%    passed     98.76%
+ 203  GCA_000325365.1_ASM32536v1_genomic                         1.57%    passed     97.54%
+ 204  GCA_000325385.1_ASM32538v1_genomic                         4.46%    passed     99.85%
+ 205  GCA_000325405.1_ASM32540v1_genomic                         4.94%    passed     96.80%
+ 206  GCA_000325425.1_ASM32542v1_genomic                         0.31%    passed     99.72%
+ 207  GCA_000325445.1_ASM32544v1_genomic                         2.66%    passed     99.60%
+ 208  GCA_000325465.1_ASM32546v1_genomic                         1.86%    passed     99.43%
+ 209  GCA_000325485.1_ASM32548v1_genomic                         3.02%    passed     99.63%
+ 210  GCA_000382505.1_Yersinia_pestis_G1670E_assembly_genomic    0.22%    passed     97.90%
+ 211  GCA_000382525.1_Yersinia_pestis_G3768_assembly_genomic     0.32%    passed     96.68%
+ 212  GCA_000382545.1_Yersinia_pestis_assembly_genomic           0.10%    passed     96.11%
+ 213  GCA_000475095.2_YP009_v2_genomic                           0.07%    passed     98.76%
+ 214  GCA_000475115.2_YP113_v2_genomic                           0.03%    passed     99.82%
+ 215  GCA_000475135.2_YPS03_v2_genomic                           0.00%    passed     98.82%
+ 216  GCA_000475155.2_YP24H_v2_genomic                           0.02%    passed     99.59%
+ 217  GCA_000590535.1_EV_NIIEG_genomic                           0.35%    passed     99.57%
+ 218  GCA_000590535.2_ASM59053v2_genomic                         0.20%    passed     99.52%
+ 219  GCA_000705315.1_EDB10_058v1_genomic                        1.61%    passed     99.81%
+ 220  GCA_000734805.1_ASM73480v1_genomic                         0.16%    passed     99.78%
+ 221  GCA_000834275.1_ASM83427v1_genomic                         0.13%    passed     82.06%
+ 222  GCA_000834295.1_ASM83429v1_genomic                         0.94%    failed      0.00%
+ 223  GCA_000834335.1_ASM83433v1_genomic                         0.01%    passed     99.56%
+ 224  GCA_000834495.1_ASM83449v1_genomic                         0.05%    passed     99.86%
+ 225  GCA_000834755.1_ASM83475v1_genomic                         0.04%    passed     99.39%
+ 226  GCA_000834775.1_ASM83477v1_genomic                         0.01%    passed     99.79%
+ 227  GCA_000834885.1_ASM83488v1_genomic                         0.33%    passed     87.48%
+ 228  GCA_000834905.1_ASM83490v1_genomic                         0.03%    passed     99.45%
+ 229  GCA_000835005.1_ASM83500v1_genomic                         5.94%    passed     95.99%
+ 230  GCA_000950945.1_ASM95094v1_genomic                         0.49%    passed     99.61%
+ 231  GCA_000970105.1_ASM97010v1_genomic                         0.02%    passed     98.46%
+ 232  GCA_000986995.1_YPES001-SEQ-2-ASM-1_genomic                2.04%    passed     90.21%
+ 233  GCA_001188325.1_YPY_1_genomic                              0.04%    passed     97.36%
+ 234  GCA_001188335.1_DYA_1_genomic                              0.09%    passed     97.14%
+ 235  GCA_001188675.1_ASM118867v1_genomic                        0.04%    passed     99.82%
+ 236  GCA_001188695.1_ASM118869v1_genomic                        0.12%    passed     97.59%
+ 237  GCA_001188715.1_ASM118871v1_genomic                        0.04%    passed     97.29%
+ 238  GCA_001188735.1_ASM118873v1_genomic                        0.02%    passed     98.31%
+ 239  GCA_001188755.1_ASM118875v1_genomic                        1.17%    passed     98.70%
+ 240  GCA_001188775.1_ASM118877v1_genomic                        0.11%    passed     97.25%
+ 241  GCA_001188795.1_ASM118879v1_genomic                        0.08%    passed     97.29%
+ 242  GCA_001188815.1_ASM118881v1_genomic                        0.02%    passed     98.44%
+ 243  GCA_001188935.1_ASM118893v1_genomic                        0.12%    passed     97.95%
+ 244  GCA_001261975.1_YPW_8_IHQD_genomic                         0.79%    passed     98.14%
+ 245  GCA_001261985.1_YPW_3_IHQD_genomic                         0.06%    passed     99.61%
+ 246  GCA_001294805.1_ASM129480v1_genomic                        0.15%    passed     99.50%
+ 247  GCA_001294815.1_ASM129481v1_genomic                        0.07%    passed     97.74%
+ 248  GCA_001294825.1_ASM129482v1_genomic                        1.09%    passed     99.62%
+ 249  GCA_001294885.1_ASM129488v1_genomic                        0.06%    passed     99.55%
+ 250  GCA_001294905.1_ASM129490v1_genomic                        0.04%    passed     98.31%
+ 251  GCA_001294915.1_ASM129491v1_genomic                        0.12%    passed     97.37%
+ 252  GCA_001294965.1_ASM129496v1_genomic                        0.05%    passed     99.11%
+ 253  GCA_001294975.1_ASM129497v1_genomic                        0.19%    passed     99.56%
+ 254  GCA_001294985.1_ASM129498v1_genomic                        0.04%    passed     98.30%
+ 255  GCA_001295025.1_ASM129502v1_genomic                        0.25%    passed     99.16%
+ 256  GCA_001295045.1_ASM129504v1_genomic                        0.06%    passed     97.77%
+ 257  GCA_001295055.1_ASM129505v1_genomic                        0.04%    passed     98.21%
+ 258  GCA_001295065.1_ASM129506v1_genomic                        0.08%    passed     98.84%
+ 259  GCA_001295105.1_ASM129510v1_genomic                        0.03%    passed     98.14%
+ 260  GCA_001295115.1_ASM129511v1_genomic                        0.03%    passed     99.30%
+ 261  GCA_001295145.1_ASM129514v1_genomic                        0.10%    passed     98.87%
+ 262  GCA_001295185.1_ASM129518v1_genomic                        0.18%    passed     99.20%
+ 263  GCA_001487065.1_Yersinia_pestis_genomic                    0.11%    passed     96.93%
+ 264  GCA_001509855.1_ASM150985v1_genomic                        0.00%    passed     99.51%
+ 265  GCA_001509865.1_ASM150986v1_genomic                        0.02%    passed     99.58%
+ 266  GCA_001559935.1_ASM155993v1_genomic                        0.58%    passed     99.68%
+ 267  GCA_001595585.1_ASM159558v1_genomic                        0.11%    passed     97.61%
+ 268  GCA_001601285.1_ASM160128v1_genomic                        0.05%    passed     99.89%
+ 269  GCA_001601675.1_ASM160167v1_genomic                        1.69%    passed     95.59%
+ 270  GCA_001601735.1_ASM160173v1_genomic                        0.55%    passed     93.35%
+ 271  GCA_001613865.1_ASM161386v1_genomic                        0.57%    passed     98.30%
+ 272  GCA_001613885.1_ASM161388v1_genomic                        0.21%    passed     97.87%
+ 273  GCA_001613895.1_ASM161389v1_genomic                        0.07%    passed     98.46%
+ 274  GCA_001617705.1_Yersinia_pestis_C-791_genomic              0.08%    passed     97.96%
+ 275  GCA_001617715.1_Yersinia_pestis_M-519_genomic              0.13%    passed     92.30%
+ 276  GCA_001617725.1_Yersinia_pestis_M-1484_genomic             0.20%    passed     98.13%
+ 277  GCA_001617735.1_Yersinia_pestis_M-1763_genomic             0.16%    passed     96.84%
+ 278  GCA_001617785.1_Yersinia_pestis_M-549_genomic              0.08%    passed     98.38%
+ 279  GCA_001617805.1_Yersinia_pestis_173_genomic                0.45%    passed     98.83%
+ 280  GCA_001617815.1_Yersinia_pestis_M-1453_genomic             0.48%    passed     96.49%
+ 281  GCA_001693595.1_ASM169359v1_genomic                        0.03%    passed     99.42%
+ 282  GCA_001972385.1_ASM197238v1_genomic                        1.10%    passed     40.27%
+ 283  GCA_001972395.1_ASM197239v1_genomic                        1.08%    passed     73.95%
+ 284  GCA_001972405.1_ASM197240v1_genomic                        1.08%    passed     82.63%
+ 285  GCA_001972465.1_ASM197246v1_genomic                        1.08%    passed     63.33%
+ 286  GCA_001972475.1_ASM197247v1_genomic                        0.04%    passed     76.67%
+ 287  GCA_001972515.1_ASM197251v1_genomic                        0.04%    passed     94.31%
+ 288  GCA_002005285.1_ASM200528v1_genomic                        0.18%    passed     99.99%
+ 289  GCA_002127355.1_ASM212735v1_genomic                        1.08%    passed     98.38%
+ 290  GCA_002127365.1_ASM212736v1_genomic                        1.08%    passed     93.33%
+ 291  GCA_002127375.1_ASM212737v1_genomic                        1.07%    passed     99.62%
+ 292  GCA_002165475.1_ASM216547v1_genomic                        1.11%    passed     87.10%
+ 293  GCA_002173795.1_ASM217379v1_genomic                        0.03%    passed     94.68%
+ 294  GCA_002173805.1_ASM217380v1_genomic                        0.03%    passed     72.85%
+ 295  GCA_002173815.1_ASM217381v1_genomic                        0.03%    passed     91.58%
+ 296  GCA_002188685.1_ASM218868v1_genomic                        0.06%    passed     91.40%
+ 297  GCA_002188725.1_ASM218872v1_genomic                        0.05%    passed     68.21%
+ 298  GCA_002188765.1_ASM218876v1_genomic                        0.04%    passed     64.75%
+ 299  GCA_002188775.1_ASM218877v1_genomic                        0.03%    passed     91.64%
+ 300  GCA_002412225.1_Y.pestis_A-1486_genomic                    0.40%    passed     99.77%
+ 301  GCA_002412235.1_Y.pestis_A-1249_genomic                    0.28%    passed     99.86%
+ 302  GCA_002412245.1_Y.pestis_A-1691_genomic                    0.57%    passed     99.17%
+ 303  GCA_002412255.1_Y.pestis_A-1836_genomic                    0.44%    passed     81.81%
+ 304  GCA_002412305.1_Y.pestis_A-1809_genomic                    0.60%    passed     99.73%
+ 305  GCA_002981895.1_ASM298189v1_genomic                        0.29%    passed     98.75%
+ 306  GCA_002981915.1_ASM298191v1_genomic                        0.28%    passed     99.34%
+ 307  GCA_002981925.1_ASM298192v1_genomic                        0.24%    passed     99.09%
+ 308  GCA_002981955.1_ASM298195v1_genomic                        0.28%    passed     97.77%
+ 309  GCA_002981995.1_ASM298199v1_genomic                        0.42%    passed     99.17%
+ 310  GCA_002993145.1_ASM299314v1_genomic                        0.07%    passed     97.78%
+ 311  GCA_003074155.1_ASM307415v1_genomic                        0.10%    passed     99.93%
+ 312  GCA_003074175.1_ASM307417v1_genomic                        0.46%    passed     99.48%
+ 313  GCA_003074195.1_ASM307419v1_genomic                        0.16%    passed     99.98%
+ 314  GCA_003074215.1_ASM307421v1_genomic                        0.10%    passed     99.95%
+ 315  GCA_003074235.1_ASM307423v1_genomic                        0.35%    passed     99.77%
+ 316  GCA_003074255.1_ASM307425v1_genomic                        0.06%    passed     99.94%
+ 317  GCA_003074275.1_ASM307427v1_genomic                        2.86%    passed     82.50%
+ 318  GCA_003074295.1_ASM307429v1_genomic                        0.55%    passed     97.88%
+ 319  GCA_003074315.1_ASM307431v1_genomic                        0.51%    passed     99.95%
+ 320  GCA_003074335.1_ASM307433v1_genomic                        0.06%    passed     98.31%
+ 321  GCA_003074355.1_ASM307435v1_genomic                        0.14%    passed     98.47%
+ 322  GCA_003074375.1_ASM307437v1_genomic                        0.14%    passed     98.61%
+ 323  GCA_003074395.1_ASM307439v1_genomic                        0.27%    passed     97.93%
+ 324  GCA_003074415.1_ASM307441v1_genomic                        0.15%    passed     98.58%
+ 325  GCA_003074435.1_ASM307443v1_genomic                        0.04%    passed     98.43%
+ 326  GCA_003074535.1_ASM307453v1_genomic                        0.06%    passed     99.81%
+ 327  GCA_003074595.1_ASM307459v1_genomic                        0.07%    passed     99.59%
+ 328  GCA_003085855.1_ASM308585v1_genomic                        0.11%    passed     98.00%
+ 329  GCA_003085875.1_ASM308587v1_genomic                        0.07%    passed     97.90%
+ 330  GCA_003085895.1_ASM308589v1_genomic                        0.30%    passed     99.76%
+ 331  GCA_003085915.1_ASM308591v1_genomic                        0.11%    passed     99.92%
+ 332  GCA_003085935.1_ASM308593v1_genomic                        0.23%    passed     97.89%
+ 333  GCA_003085955.1_ASM308595v1_genomic                        0.13%    passed     99.49%
+ 334  GCA_003085975.1_ASM308597v1_genomic                        0.14%    passed     98.61%
+ 335  GCA_003085995.1_ASM308599v1_genomic                        0.25%    passed     98.84%
+ 336  GCA_003086015.1_ASM308601v1_genomic                        0.49%    passed     99.89%
+ 337  GCA_003086035.1_ASM308603v1_genomic                        0.13%    passed     99.54%
+ 338  GCA_003086055.1_ASM308605v1_genomic                        0.10%    passed     96.34%
+ 339  GCA_003086075.1_ASM308607v1_genomic                        1.74%    passed     97.25%
+ 340  GCA_003086095.1_ASM308609v1_genomic                        0.32%    passed     99.26%
+ 341  GCA_003086115.1_ASM308611v1_genomic                        0.73%    passed     95.39%
+ 342  GCA_003086155.1_ASM308615v1_genomic                        0.22%    passed     99.09%
+ 343  GCA_003122795.1_Y.pestis_I-2422_genomic                    0.63%    passed     99.43%
+ 344  GCA_003797205.1_ASM379720v1_genomic                        0.11%    passed     99.47%
+ 345  GCA_003798085.1_ASM379808v1_genomic                        0.07%    passed     99.47%
+ 346  GCA_003798225.1_ASM379822v1_genomic                        0.51%    passed     97.62%
+ 347  GCA_004023585.1_ASM402358v1_genomic                        0.16%    passed     98.89%
+ 348  GCA_004023595.1_ASM402359v1_genomic                        0.25%    passed     99.32%
+ 349  GCA_006376415.1_ASM637641v1_genomic                        0.17%    passed     98.54%
+ 350  GCA_006376435.1_ASM637643v1_genomic                        0.09%    passed     98.90%
+ 351  GCA_006376475.1_ASM637647v1_genomic                        0.06%    passed     97.90%
+ 352  GCA_006376495.1_ASM637649v1_genomic                        0.08%    passed     97.61%
+ 353  GCA_006376505.1_ASM637650v1_genomic                        0.19%    passed     97.23%
+ 354  GCA_006376535.1_ASM637653v1_genomic                        1.74%    passed     99.48%
+ 355  GCA_006376535.2_ASM637653v2_genomic                        0.21%    passed     97.28%
+ 356  GCA_006376545.1_ASM637654v1_genomic                        0.22%    passed     97.55%
+ 357  GCA_006376575.1_ASM637657v1_genomic                        1.96%    passed     89.01%
+ 358  GCA_006376585.1_ASM637658v1_genomic                        1.13%    passed     99.84%
+ 359  GCA_006517425.1_ASM651742v1_genomic                        0.27%    passed     99.06%
+ 360  GCA_006546665.1_ASM654666v1_genomic                        0.26%    passed     99.51%
+ 361  GCA_006546725.1_ASM654672v1_genomic                        0.28%    passed     99.52%
+ 362  GCA_006546745.1_ASM654674v1_genomic                        0.37%    passed     98.74%
+ 363  GCA_008630375.1_ASM863037v1_genomic                        1.06%    passed     94.49%
+ 364  GCA_008630375.2_ASM863037v2_genomic                        1.21%    passed     97.14%
+ 365  GCA_008630395.1_ASM863039v1_genomic                        0.25%    passed     98.83%
+ 366  GCA_008630415.1_ASM863041v1_genomic                        1.16%    passed     99.81%
+ 367  GCA_008630435.1_ASM863043v1_genomic                        0.81%    passed     98.26%
+ 368  GCA_008630455.1_ASM863045v1_genomic                        1.07%    passed     99.71%
+ 369  GCA_008630485.1_ASM863048v1_genomic                        0.11%    passed     97.21%
+ 370  GCA_008630575.1_ASM863057v1_genomic                        0.17%    passed     98.41%
+ 371  GCA_009295945.1_ASM929594v1_genomic                        0.02%    passed     99.79%
+ 372  GCA_009296005.1_ASM929600v1_genomic                        0.00%    passed     99.12%
+ 373  GCA_009363195.1_ASM936319v1_genomic                        0.11%    passed     99.94%
+ 374  GCA_009667885.1_ASM966788v1_genomic                        0.08%    passed     98.98%
+ 375  GCA_009667895.1_ASM966789v1_genomic                        0.07%    passed     98.53%
+ 376  GCA_009667925.1_ASM966792v1_genomic                        0.02%    passed     98.74%
+ 377  GCA_009667935.1_ASM966793v1_genomic                        0.02%    passed     98.38%
+ 378  GCA_009667945.1_ASM966794v1_genomic                        0.00%    passed     98.41%
+ 379  GCA_009667985.1_ASM966798v1_genomic                        0.06%    passed     98.43%
+ 380  GCA_009669545.1_ASM966954v1_genomic                        0.00%    passed     98.37%
+ 381  GCA_009669555.1_ASM966955v1_genomic                        0.02%    passed     98.45%
+ 382  GCA_009669565.1_ASM966956v1_genomic                        0.01%    passed     98.42%
+ 383  GCA_009669605.1_ASM966960v1_genomic                        0.02%    passed     98.44%
+ 384  GCA_009669625.1_ASM966962v1_genomic                        0.02%    passed     98.30%
+ 385  GCA_009669635.1_ASM966963v1_genomic                        0.02%    passed     98.60%
+ 386  GCA_009669665.1_ASM966966v1_genomic                        0.01%    passed     98.45%
+ 387  GCA_009669675.1_ASM966967v1_genomic                        0.01%    passed     98.77%
+ 388  GCA_009669705.1_ASM966970v1_genomic                        0.71%    passed     99.51%
+ 389  GCA_009669715.1_ASM966971v1_genomic                        0.03%    passed     98.59%
+ 390  GCA_009669725.1_ASM966972v1_genomic                        0.00%    passed     98.61%
+ 391  GCA_009669765.1_ASM966976v1_genomic                        0.08%    passed     98.38%
+ 392  GCA_009669775.1_ASM966977v1_genomic                        0.00%    passed     98.24%
+ 393  GCA_009669805.1_ASM966980v1_genomic                        0.00%    passed     98.37%
+ 394  GCA_009669825.1_ASM966982v1_genomic                        0.00%    passed     98.46%
+ 395  GCA_009669835.1_ASM966983v1_genomic                        0.00%    passed     98.37%
+ 396  GCA_009669845.1_ASM966984v1_genomic                        0.01%    passed     98.25%
+ 397  GCA_009669875.1_ASM966987v1_genomic                        0.01%    passed     98.45%
+ 398  GCA_009669905.1_ASM966990v1_genomic                        0.01%    passed     98.43%
+ 399  GCA_009669925.1_ASM966992v1_genomic                        0.00%    passed     98.37%
+ 400  GCA_009669935.1_ASM966993v1_genomic                        0.02%    passed     98.35%
+ 401  GCA_009669955.1_ASM966995v1_genomic                        0.02%    passed     98.66%
+ 402  GCA_009669975.1_ASM966997v1_genomic                        0.02%    passed     98.28%
+ 403  GCA_009670005.1_ASM967000v1_genomic                        0.01%    passed     98.15%
+ 404  GCA_009670015.1_ASM967001v1_genomic                        0.02%    passed     97.93%
+ 405  GCA_009670045.1_ASM967004v1_genomic                        0.01%    passed     98.33%
+ 406  GCA_009670055.1_ASM967005v1_genomic                        0.00%    passed     98.17%
+ 407  GCA_009670075.1_ASM967007v1_genomic                        0.02%    passed     98.17%
+ 408  GCA_009670105.1_ASM967010v1_genomic                        0.00%    passed     98.37%
+ 409  GCA_009670115.1_ASM967011v1_genomic                        0.68%    passed     96.73%
+ 410  GCA_009670135.1_ASM967013v1_genomic                        0.09%    passed     98.48%
+ 411  GCA_009670155.1_ASM967015v1_genomic                        0.03%    passed     98.13%
+ 412  GCA_009670185.1_ASM967018v1_genomic                        0.03%    passed     98.61%
+ 413  GCA_009670205.1_ASM967020v1_genomic                        0.00%    passed     98.29%
+ 414  GCA_009670225.1_ASM967022v1_genomic                        0.00%    passed     98.87%
+ 415  GCA_009670235.1_ASM967023v1_genomic                        0.02%    passed     98.60%
+ 416  GCA_009670245.1_ASM967024v1_genomic                        0.75%    passed     97.17%
+ 417  GCA_009670285.1_ASM967028v1_genomic                        0.00%    passed     98.78%
+ 418  GCA_009670305.1_ASM967030v1_genomic                        0.00%    passed     98.63%
+ 419  GCA_009670325.1_ASM967032v1_genomic                        0.06%    passed     98.29%
+ 420  GCA_009670345.1_ASM967034v1_genomic                        0.00%    passed     98.37%
+ 421  GCA_009670355.1_ASM967035v1_genomic                        0.33%    passed     97.64%
+ 422  GCA_009670385.1_ASM967038v1_genomic                        0.03%    passed     98.12%
+ 423  GCA_009670395.1_ASM967039v1_genomic                        0.02%    passed     98.52%
+ 424  GCA_009670415.1_ASM967041v1_genomic                        0.03%    passed     98.12%
+ 425  GCA_009670445.1_ASM967044v1_genomic                        0.02%    passed     98.56%
+ 426  GCA_009670465.1_ASM967046v1_genomic                        0.81%    passed     96.68%
+ 427  GCA_009670475.1_ASM967047v1_genomic                        0.02%    passed     98.16%
+ 428  GCA_009670485.1_ASM967048v1_genomic                        0.01%    passed     98.38%
+ 429  GCA_009670515.1_ASM967051v1_genomic                        0.00%    passed     98.45%
+ 430  GCA_009670545.1_ASM967054v1_genomic                        0.00%    passed     98.37%
+ 431  GCA_009670565.1_ASM967056v1_genomic                        0.00%    passed     98.24%
+ 432  GCA_009670575.1_ASM967057v1_genomic                        0.02%    passed     98.21%
+ 433  GCA_009670585.1_ASM967058v1_genomic                        0.00%    passed     98.12%
+ 434  GCA_009670605.1_ASM967060v1_genomic                        0.04%    passed     98.42%
+ 435  GCA_009670625.1_ASM967062v1_genomic                        0.00%    passed     98.37%
+ 436  GCA_009670665.1_ASM967066v1_genomic                        0.54%    passed     99.06%
+ 437  GCA_009670675.1_ASM967067v1_genomic                        0.01%    passed     98.38%
+ 438  GCA_009670705.1_ASM967070v1_genomic                        0.00%    passed     98.07%
+ 439  GCA_009670715.1_ASM967071v1_genomic                        0.93%    passed     99.01%
+ 440  GCA_009670725.1_ASM967072v1_genomic                        0.03%    passed     98.66%
+ 441  GCA_009670765.1_ASM967076v1_genomic                        0.02%    passed     98.23%
+ 442  GCA_009670775.1_ASM967077v1_genomic                        0.03%    passed     98.52%
+ 443  GCA_009670785.1_ASM967078v1_genomic                        0.01%    passed     98.25%
+ 444  GCA_009670815.1_ASM967081v1_genomic                        0.00%    passed     98.46%
+ 445  GCA_009670835.1_ASM967083v1_genomic                        0.01%    passed     98.50%
+ 446  GCA_009670865.1_ASM967086v1_genomic                        0.01%    passed     98.14%
+ 447  GCA_009670875.1_ASM967087v1_genomic                        0.73%    passed     97.41%
+ 448  GCA_009670895.1_ASM967089v1_genomic                        0.01%    passed     98.55%
+ 449  GCA_009670905.1_ASM967090v1_genomic                        0.01%    passed     98.21%
+ 450  GCA_009670935.1_ASM967093v1_genomic                        0.02%    passed     98.35%
+ 451  GCA_009670995.1_ASM967099v1_genomic                        0.00%    passed     98.37%
+ 452  GCA_009909635.1_ASM990963v1_genomic                        0.22%    passed     98.11%
+ 453  GCA_009909645.1_ASM990964v1_genomic                        0.00%    passed     97.93%
+ 454  GCA_009909655.1_ASM990965v1_genomic                        0.01%    passed     98.17%
+ 455  GCA_010974835.1_ASM1097483v1_genomic                       0.04%    passed     97.70%
+ 456  GCA_010974845.1_ASM1097484v1_genomic                       0.08%    passed     98.55%
+ 457  GCA_010974855.1_ASM1097485v1_genomic                       1.57%    passed     99.73%
+ 458  GCA_013391945.1_ASM1339194v1_genomic                       0.10%    passed     99.99%
+ 459  GCA_013391965.1_ASM1339196v1_genomic                       0.05%    passed     99.90%
+ 460  GCA_013392045.1_ASM1339204v1_genomic                       0.13%    passed     99.79%
+ 461  GCA_013392055.1_ASM1339205v1_genomic                       0.12%    passed     99.81%
+ 462  GCA_013392075.1_ASM1339207v1_genomic                       0.13%    passed     99.79%
+ 463  GCA_013392085.1_ASM1339208v1_genomic                       0.13%    passed     99.79%
+ 464  GCA_013392105.1_ASM1339210v1_genomic                       0.11%    passed     99.84%
+ 465  GCA_013392145.1_ASM1339214v1_genomic                       0.12%    passed     99.78%
+ 466  GCA_013421455.1_ASM1342145v1_genomic                       0.11%    passed     99.13%
+ 467  GCA_013421465.1_ASM1342146v1_genomic                       0.13%    passed     99.57%
+ 468  GCA_013421535.1_ASM1342153v1_genomic                       1.53%    passed     99.10%
+ 469  GCA_013421545.1_ASM1342154v1_genomic                       0.14%    passed     99.06%
+ 470  GCA_013421555.1_ASM1342155v1_genomic                       0.08%    passed     99.14%
+ 471  GCA_014734355.1_ASM1473435v1_genomic                       0.10%    passed     99.85%
+ 472  GCA_014734395.1_ASM1473439v1_genomic                       0.10%    passed     99.86%
+ 473  GCA_014734405.1_ASM1473440v1_genomic                       0.10%    passed     99.85%
+ 474  GCA_015158475.1_ASM1515847v1_genomic                       0.68%    passed     99.23%
+ 475  GCA_015158485.1_ASM1515848v1_genomic                       0.02%    passed     99.65%
+ 476  GCA_015158575.1_ASM1515857v1_genomic                       0.03%    passed     99.86%
+ 477  GCA_015158585.1_ASM1515858v1_genomic                       0.03%    passed     99.94%
+ 478  GCA_015158615.1_ASM1515861v1_genomic                       0.11%    passed     99.82%
+ 479  GCA_015158625.1_ASM1515862v1_genomic                       0.68%    passed     99.23%
+ 480  GCA_015158635.1_ASM1515863v1_genomic                       0.03%    passed     99.86%
+ 481  GCA_015158675.1_ASM1515867v1_genomic                       0.03%    passed     99.98%
+ 482  GCA_015158695.1_ASM1515869v1_genomic                       1.03%    passed     99.99%
+ 483  GCA_015158705.1_ASM1515870v1_genomic                       0.02%    passed     99.99%
+ 484  GCA_015158715.1_ASM1515871v1_genomic                       0.01%    passed     99.99%
+ 485  GCA_015158755.1_ASM1515875v1_genomic                       0.01%    passed    100.00%
+ 486  GCA_015158765.1_ASM1515876v1_genomic                       0.01%    passed    100.00%
+ 487  GCA_015158795.1_ASM1515879v1_genomic                       0.00%    passed    100.00%
+ 488  GCA_015158805.1_ASM1515880v1_genomic                       0.03%    passed    100.00%
+ 489  GCA_015158815.1_ASM1515881v1_genomic                       0.03%    passed     99.97%
+ 490  GCA_015158845.1_ASM1515884v1_genomic                       0.01%    passed    100.00%
+ 491  GCA_015158875.1_ASM1515887v1_genomic                       0.01%    passed    100.00%
+ 492  GCA_015158895.1_ASM1515889v1_genomic                       0.00%    passed    100.00%
+ 493  GCA_015158905.1_ASM1515890v1_genomic                       0.01%    passed     99.99%
+ 494  GCA_015158935.1_ASM1515893v1_genomic                       0.01%    passed     99.99%
+ 495  GCA_015158945.1_ASM1515894v1_genomic                       0.01%    passed    100.00%
+ 496  GCA_015158955.1_ASM1515895v1_genomic                       0.42%    passed     99.97%
+ 497  GCA_015158995.1_ASM1515899v1_genomic                       0.01%    passed     99.98%
+ 498  GCA_015159005.1_ASM1515900v1_genomic                       0.00%    passed     99.99%
+ 499  GCA_015159035.1_ASM1515903v1_genomic                       0.00%    passed    100.00%
+ 500  GCA_015159045.1_ASM1515904v1_genomic                       0.04%    passed     99.96%
+ 501  GCA_015159075.1_ASM1515907v1_genomic                       0.01%    passed    100.00%
+ 502  GCA_015159085.1_ASM1515908v1_genomic                       0.00%    passed    100.00%
+ 503  GCA_015159105.1_ASM1515910v1_genomic                       0.02%    passed    100.00%
+ 504  GCA_015159135.1_ASM1515913v1_genomic                       0.01%    passed     99.99%
+ 505  GCA_015159145.1_ASM1515914v1_genomic                       0.01%    passed     99.99%
+ 506  GCA_015159175.1_ASM1515917v1_genomic                       0.01%    passed     99.98%
+ 507  GCA_015159195.1_ASM1515919v1_genomic                       0.01%    passed    100.00%
+ 508  GCA_015159615.1_ASM1515961v1_genomic                       0.02%    passed     98.44%
+ 509  GCA_015190655.1_ASM1519065v1_genomic                       0.02%    passed    100.00%
+ 510  GCA_015274685.1_ASM1527468v1_genomic                       0.03%    passed     99.88%
+ 511  GCA_015274715.1_ASM1527471v1_genomic                       0.13%    passed     99.95%
+ 512  GCA_015274745.1_ASM1527474v1_genomic                       0.05%    passed     99.92%
+ 513  GCA_015350425.1_ASM1535042v1_genomic                       0.51%    passed     97.83%
+ 514  GCA_015350435.1_ASM1535043v1_genomic                       0.59%    passed     95.32%
+ 515  GCA_015350455.1_ASM1535045v1_genomic                       0.40%    passed     95.34%
+ 516  GCA_016102545.1_ASM1610254v1_genomic                       0.25%    passed     99.25%
+ 517  GCA_016102555.1_ASM1610255v1_genomic                       3.01%    passed     72.62%
+ 518  GCA_016102565.1_ASM1610256v1_genomic                       1.36%    passed     78.63%
+ 519  GCA_016102575.1_ASM1610257v1_genomic                       0.16%    passed     99.37%
+ 520  GCA_016102585.1_ASM1610258v1_genomic                       0.02%    passed     98.10%
+ 521  GCA_016102645.1_ASM1610264v1_genomic                       0.24%    passed     95.37%
+ 522  GCA_016102655.1_ASM1610265v1_genomic                       0.13%    passed     98.87%
+ 523  GCA_016102665.1_ASM1610266v1_genomic                       0.80%    passed     79.91%
+ 524  GCA_016102675.1_ASM1610267v1_genomic                       0.02%    passed     98.01%
+ 525  GCA_016102685.1_ASM1610268v1_genomic                       0.64%    passed     63.06%
+ 526  GCA_016102745.1_ASM1610274v1_genomic                       0.54%    passed     92.95%
+ 527  GCA_016102755.1_ASM1610275v1_genomic                       0.19%    passed     98.61%
+ 528  GCA_016102765.1_ASM1610276v1_genomic                       0.03%    passed     98.51%
+ 529  GCA_016102775.1_ASM1610277v1_genomic                       0.08%    passed     98.77%
+ 530  GCA_016102785.1_ASM1610278v1_genomic                       0.64%    passed     95.45%
+ 531  GCA_016102845.1_ASM1610284v1_genomic                       0.06%    passed     98.40%
+ 532  GCA_016102855.1_ASM1610285v1_genomic                       0.04%    passed     98.15%
+ 533  GCA_016102875.1_ASM1610287v1_genomic                       0.79%    passed     97.62%
+ 534  GCA_016102905.1_ASM1610290v1_genomic                       0.08%    passed     97.53%
+ 535  GCA_016102915.1_ASM1610291v1_genomic                       0.03%    passed     97.13%
+ 536  GCA_016102945.1_ASM1610294v1_genomic                       0.03%    passed     98.41%
+ 537  GCA_016102965.1_ASM1610296v1_genomic                       0.02%    passed     97.97%
+ 538  GCA_016102975.1_ASM1610297v1_genomic                       0.08%    passed     98.25%
+ 539  GCA_016103005.1_ASM1610300v1_genomic                       0.08%    passed     97.98%
+ 540  GCA_900460465.1_57940_B01_genomic                          0.30%    passed     99.80%
+ 541  GCA_900637475.1_51108_B01_genomic                          1.46%    failed      0.00%
+ 542  Reference                                                  0.00%    passed     99.26%
+ 543  SAMEA104233046                                            12.98%    passed     94.86%
+ 544  SAMEA104233047                                            21.76%    passed     95.31%
+ 545  SAMEA104233048                                            21.22%    passed     96.05%
+ 546  SAMEA104233049                                             1.50%    passed     95.82%
+ 547  SAMEA104488961                                             0.16%    passed     95.34%
+ 548  SAMEA1061800                                               2.24%    passed     98.47%
+ 549  SAMEA3541826                                               8.79%    passed     37.65%
+ 550  SAMEA3541827                                               4.88%    failed      0.00%
+ 551  SAMEA3713711                                               3.39%    passed     97.23%
+ 552  SAMEA3713712                                               1.58%    passed     95.03%
+ 553  SAMEA3713713                                               1.31%    passed     96.08%
+ 554  SAMEA3713714                                               2.67%    passed     97.10%
+ 555  SAMEA3713715                                               1.30%    passed     96.38%
+ 556  SAMEA3937653                                               7.46%    passed     87.82%
+ 557  SAMEA3937654                                               2.81%    passed     98.59%
+ 558  SAMEA4354665                                               1.18%    passed     99.12%
+ 559  SAMEA5054089                                               4.32%    failed      0.00%
+ 560  SAMEA5054090                                               3.55%    failed      0.01%
+ 561  SAMEA5054092                                               3.77%    failed      4.38%
+ 562  SAMEA5054093                                              23.20%    failed      4.68%
+ 563  SAMEA5661360                                              10.39%    passed     71.30%
+ 564  SAMEA5661363                                               0.18%    passed     99.50%
+ 565  SAMEA5661364                                              24.07%    passed     49.74%
+ 566  SAMEA5661365                                               9.85%    passed     96.20%
+ 567  SAMEA5661367                                               2.42%    passed     97.93%
+ 568  SAMEA5661372                                               7.99%    passed     83.08%
+ 569  SAMEA5661384                                               8.87%    passed     60.48%
+ 570  SAMEA5661385                                              12.98%    passed     69.54%
+ 571  SAMEA5661389                                               7.44%    passed     99.95%
+ 572  SAMEA5661390                                              24.26%    passed     43.98%
+ 573  SAMEA5818798                                               3.18%    passed     99.76%
+ 574  SAMEA5818799                                               1.15%    passed     97.74%
+ 575  SAMEA5818800                                               0.99%    passed     98.91%
+ 576  SAMEA5818801                                               1.76%    passed     99.74%
+ 577  SAMEA5818803                                               0.54%    passed     99.97%
+ 578  SAMEA5818805                                               1.67%    passed     99.95%
+ 579  SAMEA5818806                                               0.41%    passed     99.12%
+ 580  SAMEA5818808                                              15.33%    passed     76.06%
+ 581  SAMEA5818809                                               2.02%    passed     95.20%
+ 582  SAMEA5818811                                              12.27%    passed     67.36%
+ 583  SAMEA5818815                                               0.40%    passed     99.98%
+ 584  SAMEA5818817                                               4.69%    passed     97.30%
+ 585  SAMEA5818818                                               4.49%    passed     99.02%
+ 586  SAMEA5818821                                               3.07%    passed     98.15%
+ 587  SAMEA5818822                                               8.08%    passed     89.70%
+ 588  SAMEA5818825                                              10.32%    passed     72.99%
+ 589  SAMEA5818826                                               0.18%    passed     99.96%
+ 590  SAMEA5818828                                               2.43%    passed     99.05%
+ 591  SAMEA5818829                                               0.98%    passed     99.60%
+ 592  SAMEA5818830                                               2.01%    passed     99.93%
+ 593  SAMEA6637002                                               0.07%    passed     99.84%
+ 594  SAMEA6637004                                               1.09%    passed     99.95%
+ 595  SAMEA6651390                                               0.48%    passed     99.58%
+ 596  SAMEA6812876                                              11.04%    passed     83.56%
+ 597  SAMEA6812877                                               2.73%    passed     69.31%
+ 598  SAMEA7293135                                               1.86%    passed     95.55%
+ 599  SAMEA7293136                                              10.71%    passed     14.14%
+ 600  SAMEA7313236_38                                            3.07%    failed      1.12%
+ 601  SAMEA7313243_45                                           17.21%    passed     45.73%
+ 602  SAMEA7313246_49                                            0.06%    passed     99.93%
+ 603  SAMN00715800                                               2.99%    passed     86.84%
+****  TOTAL                                                      1.21%  8 sequences failed composition chi2 test (p-value<5%; df=3)
+INFO: 4218849 const sites added into alignment
+NOTE: minimal branch length is reduced to 0.000000023556 for long alignment
+NOTE: GCA_000268485.2_ASM26848v2_genomic is identical to GCA_000268485.1_ASM26848v1_genomic but kept for subsequent analysis
+NOTE: GCA_000268725.2_ASM26872v2_genomic is identical to GCA_000268725.1_ASM26872v1_genomic but kept for subsequent analysis
+NOTE: GCA_000268805.2_ASM26880v2_genomic is identical to GCA_000268805.1_ASM26880v1_genomic but kept for subsequent analysis
+NOTE: GCA_000268865.2_ASM26886v2_genomic is identical to GCA_000268865.1_ASM26886v1_genomic but kept for subsequent analysis
+NOTE: GCA_000269285.2_ASM26928v2_genomic is identical to GCA_000269285.1_ASM26928v1_genomic but kept for subsequent analysis
+NOTE: GCA_009669805.1_ASM966980v1_genomic is identical to GCA_009669545.1_ASM966954v1_genomic but kept for subsequent analysis
+NOTE: GCA_009669875.1_ASM966987v1_genomic is identical to GCA_009669665.1_ASM966966v1_genomic but kept for subsequent analysis
+NOTE: GCA_009670565.1_ASM967056v1_genomic is identical to GCA_009669775.1_ASM966977v1_genomic but kept for subsequent analysis
+NOTE: GCA_009670785.1_ASM967078v1_genomic is identical to GCA_009669845.1_ASM966984v1_genomic but kept for subsequent analysis
+NOTE: GCA_013392075.1_ASM1339207v1_genomic is identical to GCA_013392045.1_ASM1339204v1_genomic but kept for subsequent analysis
+NOTE: GCA_014734405.1_ASM1473440v1_genomic is identical to GCA_014734355.1_ASM1473435v1_genomic but kept for subsequent analysis
+NOTE: GCA_015158625.1_ASM1515862v1_genomic is identical to GCA_015158475.1_ASM1515847v1_genomic but kept for subsequent analysis
+NOTE: GCA_015158635.1_ASM1515863v1_genomic is identical to GCA_015158575.1_ASM1515857v1_genomic but kept for subsequent analysis
+NOTE: GCA_015159035.1_ASM1515903v1_genomic is identical to GCA_015158795.1_ASM1515879v1_genomic but kept for subsequent analysis
+NOTE: GCA_015158945.1_ASM1515894v1_genomic is identical to GCA_015158875.1_ASM1515887v1_genomic but kept for subsequent analysis
+NOTE: 7 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: GCA_009669835.1_ASM966983v1_genomic (identical to GCA_009669545.1_ASM966954v1_genomic) is ignored but added at the end
+NOTE: GCA_009669925.1_ASM966992v1_genomic (identical to GCA_009669545.1_ASM966954v1_genomic) is ignored but added at the end
+NOTE: GCA_009670105.1_ASM967010v1_genomic (identical to GCA_009669545.1_ASM966954v1_genomic) is ignored but added at the end
+NOTE: GCA_009670345.1_ASM967034v1_genomic (identical to GCA_009669545.1_ASM966954v1_genomic) is ignored but added at the end
+NOTE: GCA_009670545.1_ASM967054v1_genomic (identical to GCA_009669545.1_ASM966954v1_genomic) is ignored but added at the end
+NOTE: GCA_013392085.1_ASM1339208v1_genomic (identical to GCA_013392045.1_ASM1339204v1_genomic) is ignored but added at the end
+NOTE: GCA_015159085.1_ASM1515908v1_genomic (identical to GCA_015158795.1_ASM1515879v1_genomic) is ignored but added at the end
+Alignment was printed to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.uniqueseq.phy
+
+---> START RUN NUMBER 1 (seed: 47321424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.390 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47321424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174387.824
+2. Current log-likelihood: -6165721.769
+3. Current log-likelihood: -6165695.011
+4. Current log-likelihood: -6165692.604
+5. Current log-likelihood: -6165690.693
+6. Current log-likelihood: -6165688.940
+7. Current log-likelihood: -6165687.865
+8. Current log-likelihood: -6165686.234
+9. Current log-likelihood: -6165685.394
+10. Current log-likelihood: -6165684.582
+11. Current log-likelihood: -6165683.994
+12. Current log-likelihood: -6165683.521
+13. Current log-likelihood: -6165683.169
+14. Current log-likelihood: -6165682.933
+15. Current log-likelihood: -6165682.771
+16. Current log-likelihood: -6165682.628
+17. Current log-likelihood: -6165682.521
+Optimal log-likelihood: -6165682.433
+Rate parameters:  A-C: 1.00000  A-G: 2.43211  A-T: 0.37759  C-G: 0.37759  C-T: 2.43211  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (18.126 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 2.012871 sec (of wall-clock time) 18.535788 sec(of CPU time)
+Computing RapidNJ tree took 0.424851 sec (of wall-clock time) 1.626904 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169114.344
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 321.748 second
+Computing log-likelihood of 98 initial trees ... 22.501 seconds
+Current best score: -6165645.399
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165632.656
+Iteration 10 / LogL: -6165648.705 / Time: 0h:10m:46s
+Iteration 20 / LogL: -6165640.841 / Time: 0h:12m:17s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165632.656 / CPU time: 531.787
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6165673.979 / Time: 0h:12m:56s (0h:24m:17s left)
+Iteration 40 / LogL: -6165791.586 / Time: 0h:13m:38s (0h:16m:37s left)
+Iteration 50 / LogL: -6165678.231 / Time: 0h:14m:18s (0h:11m:45s left)
+Log-likelihood cutoff on original alignment: -6165715.217
+Iteration 60 / LogL: -6165749.805 / Time: 0h:15m:2s (0h:8m:21s left)
+Iteration 70 / LogL: -6165718.835 / Time: 0h:15m:45s (0h:5m:43s left)
+Iteration 80 / LogL: -6165719.906 / Time: 0h:16m:27s (0h:3m:34s left)
+Iteration 90 / LogL: -6165656.714 / Time: 0h:17m:9s (0h:1m:44s left)
+Iteration 100 / LogL: -6165838.553 / Time: 0h:17m:51s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -6165715.217
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:18m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165632.656
+2. Current log-likelihood: -6165632.604
+3. Current log-likelihood: -6165632.565
+4. Current log-likelihood: -6165632.535
+5. Current log-likelihood: -6165632.509
+6. Current log-likelihood: -6165632.489
+7. Current log-likelihood: -6165632.471
+8. Current log-likelihood: -6165632.458
+9. Current log-likelihood: -6165632.446
+Optimal log-likelihood: -6165632.437
+Rate parameters:  A-C: 1.00000  A-G: 2.45479  A-T: 0.37899  C-G: 0.37899  C-T: 2.45479  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 9 rounds (7.997 sec)
+BEST SCORE FOUND : -6165632.437
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 102
+CPU time used for tree search: 6177.500 sec (1h:42m:57s)
+Wall-clock time used for tree search: 875.918 sec (0h:14m:35s)
+Total CPU time used: 6649.071 sec (1h:50m:49s)
+Total wall-clock time used: 1092.088 sec (0h:18m:12s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 5286 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165695.947
+
+---> START RUN NUMBER 2 (seed: 47322424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.341 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47322424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174385.927
+2. Current log-likelihood: -6165726.988
+3. Current log-likelihood: -6165699.915
+4. Current log-likelihood: -6165697.417
+5. Current log-likelihood: -6165695.368
+6. Current log-likelihood: -6165693.670
+7. Current log-likelihood: -6165692.733
+8. Current log-likelihood: -6165690.810
+9. Current log-likelihood: -6165689.965
+10. Current log-likelihood: -6165689.223
+11. Current log-likelihood: -6165688.656
+12. Current log-likelihood: -6165688.147
+13. Current log-likelihood: -6165687.762
+14. Current log-likelihood: -6165687.513
+15. Current log-likelihood: -6165687.320
+16. Current log-likelihood: -6165687.176
+17. Current log-likelihood: -6165687.063
+Optimal log-likelihood: -6165686.969
+Rate parameters:  A-C: 1.00000  A-G: 2.43271  A-T: 0.37842  C-G: 0.37842  C-T: 2.43271  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (17.846 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 1.964650 sec (of wall-clock time) 18.500542 sec(of CPU time)
+Computing RapidNJ tree took 0.426463 sec (of wall-clock time) 1.676334 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169206.333
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 344.185 second
+Computing log-likelihood of 98 initial trees ... 26.233 seconds
+Current best score: -6165637.069
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165623.505
+Iteration 10 / LogL: -6165635.182 / Time: 0h:11m:37s
+Iteration 20 / LogL: -6165652.227 / Time: 0h:13m:37s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165623.505 / CPU time: 609.987
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6165668.486 / Time: 0h:14m:25s (0h:27m:51s left)
+Iteration 40 / LogL: -6165761.849 / Time: 0h:15m:12s (0h:19m:2s left)
+Iteration 50 / LogL: -6166352.833 / Time: 0h:15m:57s (0h:13m:26s left)
+Log-likelihood cutoff on original alignment: -6165744.618
+Iteration 60 / LogL: -6165705.469 / Time: 0h:16m:43s (0h:9m:30s left)
+Iteration 70 / LogL: -6165648.675 / Time: 0h:17m:26s (0h:6m:27s left)
+Iteration 80 / LogL: -6165681.651 / Time: 0h:18m:12s (0h:4m:1s left)
+Iteration 90 / LogL: -6165690.681 / Time: 0h:18m:56s (0h:1m:57s left)
+Iteration 100 / LogL: -6165648.556 / Time: 0h:19m:46s (0h:0m:10s left)
+Log-likelihood cutoff on original alignment: -6165744.618
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:19m:58s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165623.505
+2. Current log-likelihood: -6165623.438
+3. Current log-likelihood: -6165623.385
+4. Current log-likelihood: -6165623.340
+5. Current log-likelihood: -6165623.304
+6. Current log-likelihood: -6165623.274
+7. Current log-likelihood: -6165623.250
+8. Current log-likelihood: -6165623.230
+9. Current log-likelihood: -6165623.214
+10. Current log-likelihood: -6165623.200
+11. Current log-likelihood: -6165623.190
+Optimal log-likelihood: -6165623.180
+Rate parameters:  A-C: 1.00000  A-G: 2.45468  A-T: 0.37998  C-G: 0.37998  C-T: 2.45468  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.954
+Parameters optimization took 11 rounds (11.645 sec)
+BEST SCORE FOUND : -6165623.180
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 102
+CPU time used for tree search: 7138.001 sec (1h:58m:58s)
+Wall-clock time used for tree search: 991.521 sec (0h:16m:31s)
+Total CPU time used: 7637.619 sec (2h:7m:17s)
+Total wall-clock time used: 1212.995 sec (0h:20m:12s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 4909 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165659.962
+
+---> START RUN NUMBER 3 (seed: 47323424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.558 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47323424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174363.794
+2. Current log-likelihood: -6165709.011
+3. Current log-likelihood: -6165682.053
+4. Current log-likelihood: -6165679.567
+5. Current log-likelihood: -6165677.535
+6. Current log-likelihood: -6165675.835
+7. Current log-likelihood: -6165674.869
+8. Current log-likelihood: -6165673.004
+9. Current log-likelihood: -6165672.161
+10. Current log-likelihood: -6165671.417
+11. Current log-likelihood: -6165670.848
+12. Current log-likelihood: -6165670.346
+13. Current log-likelihood: -6165669.965
+14. Current log-likelihood: -6165669.715
+15. Current log-likelihood: -6165669.528
+16. Current log-likelihood: -6165669.382
+17. Current log-likelihood: -6165669.269
+Optimal log-likelihood: -6165669.175
+Rate parameters:  A-C: 1.00000  A-G: 2.43224  A-T: 0.37847  C-G: 0.37847  C-T: 2.43224  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (19.892 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 2.000879 sec (of wall-clock time) 19.105841 sec(of CPU time)
+Computing RapidNJ tree took 0.366105 sec (of wall-clock time) 1.528220 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169273.581
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 357.836 second
+Computing log-likelihood of 98 initial trees ... 24.185 seconds
+Current best score: -6165640.820
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165627.006
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -6165624.737
+Iteration 10 / LogL: -6165652.984 / Time: 0h:11m:54s
+Iteration 20 / LogL: -6165660.299 / Time: 0h:13m:54s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165624.737 / CPU time: 624.097
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6165713.842 / Time: 0h:14m:37s (0h:28m:43s left)
+Iteration 40 / LogL: -6165687.555 / Time: 0h:15m:27s (0h:19m:43s left)
+Iteration 50 / LogL: -6165768.597 / Time: 0h:16m:18s (0h:14m:4s left)
+Log-likelihood cutoff on original alignment: -6165719.338
+Iteration 60 / LogL: -6165668.025 / Time: 0h:17m:10s (0h:10m:3s left)
+Iteration 70 / LogL: -6165864.134 / Time: 0h:17m:51s (0h:6m:52s left)
+Iteration 80 / LogL: -6165717.224 / Time: 0h:18m:36s (0h:4m:19s left)
+Iteration 90 / LogL: -6165935.700 / Time: 0h:19m:18s (0h:2m:11s left)
+Iteration 100 / LogL: -6166804.134 / Time: 0h:20m:0s (0h:0m:20s left)
+Log-likelihood cutoff on original alignment: -6165719.338
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:20m:17s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165624.737
+2. Current log-likelihood: -6165624.680
+3. Current log-likelihood: -6165624.632
+4. Current log-likelihood: -6165624.594
+5. Current log-likelihood: -6165624.562
+6. Current log-likelihood: -6165624.536
+7. Current log-likelihood: -6165624.514
+8. Current log-likelihood: -6165624.497
+9. Current log-likelihood: -6165624.482
+10. Current log-likelihood: -6165624.471
+11. Current log-likelihood: -6165624.461
+Optimal log-likelihood: -6165624.453
+Rate parameters:  A-C: 1.00000  A-G: 2.45584  A-T: 0.37921  C-G: 0.37921  C-T: 2.45584  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 11 rounds (9.662 sec)
+BEST SCORE FOUND : -6165624.453
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 103
+CPU time used for tree search: 7187.356 sec (1h:59m:47s)
+Wall-clock time used for tree search: 1007.783 sec (0h:16m:47s)
+Total CPU time used: 7694.361 sec (2h:8m:14s)
+Total wall-clock time used: 1229.926 sec (0h:20m:29s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 5176 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165679.541
+
+---> START RUN NUMBER 4 (seed: 47324424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.614 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47324424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174425.815
+2. Current log-likelihood: -6165755.338
+3. Current log-likelihood: -6165728.528
+4. Current log-likelihood: -6165726.133
+5. Current log-likelihood: -6165724.238
+6. Current log-likelihood: -6165722.481
+7. Current log-likelihood: -6165721.396
+8. Current log-likelihood: -6165719.798
+9. Current log-likelihood: -6165718.959
+10. Current log-likelihood: -6165718.126
+11. Current log-likelihood: -6165717.533
+12. Current log-likelihood: -6165717.065
+13. Current log-likelihood: -6165716.717
+14. Current log-likelihood: -6165716.487
+15. Current log-likelihood: -6165716.330
+16. Current log-likelihood: -6165716.190
+17. Current log-likelihood: -6165716.087
+Optimal log-likelihood: -6165716.003
+Rate parameters:  A-C: 1.00000  A-G: 2.43194  A-T: 0.37766  C-G: 0.37766  C-T: 2.43194  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (19.145 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 2.006013 sec (of wall-clock time) 18.730454 sec(of CPU time)
+Computing RapidNJ tree took 0.348215 sec (of wall-clock time) 1.505163 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169203.568
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 361.256 second
+Computing log-likelihood of 98 initial trees ... 24.494 seconds
+Current best score: -6165645.026
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165633.013
+Iteration 10 / LogL: -6165645.240 / Time: 0h:12m:12s
+Iteration 20 / LogL: -6165657.104 / Time: 0h:14m:21s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165633.013 / CPU time: 641.430
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6166194.516 / Time: 0h:15m:17s (0h:29m:30s left)
+Iteration 40 / LogL: -6165729.490 / Time: 0h:16m:7s (0h:20m:10s left)
+Iteration 50 / LogL: -6165770.859 / Time: 0h:17m:2s (0h:14m:22s left)
+Log-likelihood cutoff on original alignment: -6165742.134
+Iteration 60 / LogL: -6165699.672 / Time: 0h:17m:52s (0h:10m:10s left)
+Iteration 70 / LogL: -6165766.341 / Time: 0h:18m:46s (0h:6m:58s left)
+Iteration 80 / LogL: -6165813.405 / Time: 0h:19m:37s (0h:4m:21s left)
+Iteration 90 / LogL: -6165740.744 / Time: 0h:20m:24s (0h:2m:7s left)
+Iteration 100 / LogL: -6165721.231 / Time: 0h:21m:11s (0h:0m:10s left)
+Log-likelihood cutoff on original alignment: -6165742.565
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:21m:24s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165633.013
+2. Current log-likelihood: -6165632.962
+3. Current log-likelihood: -6165632.921
+4. Current log-likelihood: -6165632.889
+5. Current log-likelihood: -6165632.863
+6. Current log-likelihood: -6165632.841
+7. Current log-likelihood: -6165632.823
+8. Current log-likelihood: -6165632.809
+9. Current log-likelihood: -6165632.797
+Optimal log-likelihood: -6165632.787
+Rate parameters:  A-C: 1.00000  A-G: 2.45413  A-T: 0.37891  C-G: 0.37891  C-T: 2.45413  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 9 rounds (8.555 sec)
+BEST SCORE FOUND : -6165632.787
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 102
+CPU time used for tree search: 7676.623 sec (2h:7m:56s)
+Wall-clock time used for tree search: 1064.313 sec (0h:17m:44s)
+Total CPU time used: 8181.230 sec (2h:16m:21s)
+Total wall-clock time used: 1295.574 sec (0h:21m:35s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 5077 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165691.195
+
+---> START RUN NUMBER 5 (seed: 47325424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.659 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47325424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174402.475
+2. Current log-likelihood: -6165735.742
+3. Current log-likelihood: -6165708.818
+4. Current log-likelihood: -6165706.388
+5. Current log-likelihood: -6165704.442
+6. Current log-likelihood: -6165702.699
+7. Current log-likelihood: -6165701.647
+8. Current log-likelihood: -6165699.951
+9. Current log-likelihood: -6165699.110
+10. Current log-likelihood: -6165698.337
+11. Current log-likelihood: -6165697.760
+12. Current log-likelihood: -6165697.277
+13. Current log-likelihood: -6165696.914
+14. Current log-likelihood: -6165696.667
+15. Current log-likelihood: -6165696.496
+16. Current log-likelihood: -6165696.346
+17. Current log-likelihood: -6165696.234
+Optimal log-likelihood: -6165696.141
+Rate parameters:  A-C: 1.00000  A-G: 2.43223  A-T: 0.37762  C-G: 0.37762  C-T: 2.43223  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (19.541 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 2.257118 sec (of wall-clock time) 19.238106 sec(of CPU time)
+Computing RapidNJ tree took 0.406747 sec (of wall-clock time) 1.627205 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169084.688
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 363.314 second
+Computing log-likelihood of 98 initial trees ... 29.290 seconds
+Current best score: -6165641.925
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165624.556
+Iteration 10 / LogL: -6165646.329 / Time: 0h:12m:36s
+Iteration 20 / LogL: -6165654.539 / Time: 0h:14m:56s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165624.556 / CPU time: 671.851
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6165690.893 / Time: 0h:15m:47s (0h:30m:34s left)
+Iteration 40 / LogL: -6166333.583 / Time: 0h:16m:41s (0h:20m:58s left)
+Iteration 50 / LogL: -6165658.013 / Time: 0h:17m:36s (0h:14m:53s left)
+Log-likelihood cutoff on original alignment: -6165728.298
+Iteration 60 / LogL: -6165670.243 / Time: 0h:18m:29s (0h:10m:33s left)
+Iteration 70 / LogL: -6165640.389 / Time: 0h:19m:25s (0h:7m:14s left)
+Iteration 80 / LogL: -6165687.905 / Time: 0h:20m:27s (0h:4m:33s left)
+Iteration 90 / LogL: -6165685.454 / Time: 0h:21m:24s (0h:2m:14s left)
+Iteration 100 / LogL: -6165719.743 / Time: 0h:22m:20s (0h:0m:11s left)
+Log-likelihood cutoff on original alignment: -6165728.298
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:22m:33s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165624.556
+2. Current log-likelihood: -6165624.505
+3. Current log-likelihood: -6165624.467
+4. Current log-likelihood: -6165624.437
+5. Current log-likelihood: -6165624.412
+6. Current log-likelihood: -6165624.392
+7. Current log-likelihood: -6165624.375
+8. Current log-likelihood: -6165624.361
+9. Current log-likelihood: -6165624.350
+Optimal log-likelihood: -6165624.341
+Rate parameters:  A-C: 1.00000  A-G: 2.45472  A-T: 0.37900  C-G: 0.37900  C-T: 2.45472  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 9 rounds (8.999 sec)
+BEST SCORE FOUND : -6165624.341
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 102
+CPU time used for tree search: 8323.362 sec (2h:18m:43s)
+Wall-clock time used for tree search: 1128.142 sec (0h:18m:48s)
+Total CPU time used: 8843.547 sec (2h:27m:23s)
+Total wall-clock time used: 1364.484 sec (0h:22m:44s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 5168 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165700.481
+
+---> START RUN NUMBER 6 (seed: 47326424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.638 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47326424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174574.880
+2. Current log-likelihood: -6165882.622
+3. Current log-likelihood: -6165855.153
+4. Current log-likelihood: -6165852.634
+5. Current log-likelihood: -6165850.558
+6. Current log-likelihood: -6165848.863
+7. Current log-likelihood: -6165847.972
+8. Current log-likelihood: -6165845.966
+9. Current log-likelihood: -6165845.120
+10. Current log-likelihood: -6165844.379
+11. Current log-likelihood: -6165843.813
+12. Current log-likelihood: -6165843.300
+13. Current log-likelihood: -6165842.913
+14. Current log-likelihood: -6165842.665
+15. Current log-likelihood: -6165842.471
+16. Current log-likelihood: -6165842.327
+17. Current log-likelihood: -6165842.215
+Optimal log-likelihood: -6165842.120
+Rate parameters:  A-C: 1.00000  A-G: 2.43194  A-T: 0.37869  C-G: 0.37869  C-T: 2.43194  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (21.635 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 2.093672 sec (of wall-clock time) 19.461394 sec(of CPU time)
+Computing RapidNJ tree took 0.439979 sec (of wall-clock time) 1.697738 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169190.470
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 375.115 second
+Computing log-likelihood of 98 initial trees ... 30.705 seconds
+Current best score: -6165640.364
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165627.985
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -6165616.515
+Iteration 10 / LogL: -6165643.596 / Time: 0h:12m:47s
+Iteration 20 / LogL: -6165656.122 / Time: 0h:14m:58s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165616.515 / CPU time: 672.405
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6166248.131 / Time: 0h:15m:50s (0h:31m:36s left)
+Iteration 40 / LogL: -6165676.226 / Time: 0h:16m:42s (0h:21m:41s left)
+Iteration 50 / LogL: -6165692.465 / Time: 0h:17m:34s (0h:15m:27s left)
+Log-likelihood cutoff on original alignment: -6165733.996
+Iteration 60 / LogL: -6165658.783 / Time: 0h:18m:29s (0h:11m:4s left)
+Iteration 70 / LogL: -6165710.882 / Time: 0h:19m:21s (0h:7m:41s left)
+Iteration 80 / LogL: -6165668.377 / Time: 0h:20m:15s (0h:4m:56s left)
+Iteration 90 / LogL: -6165633.906 / Time: 0h:21m:4s (0h:2m:35s left)
+Iteration 100 / LogL: -6165690.130 / Time: 0h:21m:59s (0h:0m:34s left)
+Log-likelihood cutoff on original alignment: -6165733.996
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 104 ITERATIONS / Time: 0h:22m:25s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165616.515
+2. Current log-likelihood: -6165616.471
+3. Current log-likelihood: -6165616.436
+4. Current log-likelihood: -6165616.406
+5. Current log-likelihood: -6165616.383
+6. Current log-likelihood: -6165616.362
+7. Current log-likelihood: -6165616.347
+8. Current log-likelihood: -6165616.333
+9. Current log-likelihood: -6165616.322
+Optimal log-likelihood: -6165616.313
+Rate parameters:  A-C: 1.00000  A-G: 2.45348  A-T: 0.37983  C-G: 0.37983  C-T: 2.45348  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 9 rounds (8.388 sec)
+BEST SCORE FOUND : -6165616.313
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 104
+CPU time used for tree search: 8125.165 sec (2h:15m:25s)
+Wall-clock time used for tree search: 1119.261 sec (0h:18m:39s)
+Total CPU time used: 8648.690 sec (2h:24m:8s)
+Total wall-clock time used: 1356.265 sec (0h:22m:36s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 5315 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165697.020
+
+---> START RUN NUMBER 7 (seed: 47327424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.598 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47327424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174423.301
+2. Current log-likelihood: -6165752.492
+3. Current log-likelihood: -6165725.509
+4. Current log-likelihood: -6165723.028
+5. Current log-likelihood: -6165721.004
+6. Current log-likelihood: -6165719.295
+7. Current log-likelihood: -6165718.319
+8. Current log-likelihood: -6165716.465
+9. Current log-likelihood: -6165715.621
+10. Current log-likelihood: -6165714.878
+11. Current log-likelihood: -6165714.310
+12. Current log-likelihood: -6165713.804
+13. Current log-likelihood: -6165713.421
+14. Current log-likelihood: -6165713.172
+15. Current log-likelihood: -6165712.981
+16. Current log-likelihood: -6165712.836
+17. Current log-likelihood: -6165712.724
+Optimal log-likelihood: -6165712.629
+Rate parameters:  A-C: 1.00000  A-G: 2.43251  A-T: 0.37823  C-G: 0.37823  C-T: 2.43251  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (20.877 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 2.092106 sec (of wall-clock time) 19.365969 sec(of CPU time)
+Computing RapidNJ tree took 0.436870 sec (of wall-clock time) 1.678191 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169275.634
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 365.278 second
+Computing log-likelihood of 98 initial trees ... 31.352 seconds
+Current best score: -6165650.517
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165642.368
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -6165640.113
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -6165637.562
+Iteration 10 / LogL: -6165650.559 / Time: 0h:12m:44s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 13: -6165631.853
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 15: -6165627.154
+Iteration 20 / LogL: -6165662.208 / Time: 0h:15m:4s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165627.154 / CPU time: 678.300
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6165699.093 / Time: 0h:15m:55s (0h:37m:3s left)
+Iteration 40 / LogL: -6166248.139 / Time: 0h:16m:48s (0h:26m:0s left)
+Iteration 50 / LogL: -6165698.322 / Time: 0h:17m:41s (0h:19m:7s left)
+Log-likelihood cutoff on original alignment: -6165718.268
+Iteration 60 / LogL: -6165708.654 / Time: 0h:18m:38s (0h:14m:18s left)
+Iteration 70 / LogL: -6165704.171 / Time: 0h:19m:30s (0h:10m:34s left)
+Iteration 80 / LogL: -6166036.791 / Time: 0h:20m:20s (0h:7m:33s left)
+Iteration 90 / LogL: -6165676.216 / Time: 0h:21m:14s (0h:5m:2s left)
+Iteration 100 / LogL: -6165691.538 / Time: 0h:22m:5s (0h:2m:51s left)
+Log-likelihood cutoff on original alignment: -6165718.268
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+Iteration 110 / LogL: -6165710.387 / Time: 0h:22m:58s (0h:16m:15s left)
+TREE SEARCH COMPLETED AFTER 116 ITERATIONS / Time: 0h:23m:31s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165627.154
+2. Current log-likelihood: -6165627.127
+3. Current log-likelihood: -6165627.106
+4. Current log-likelihood: -6165627.087
+5. Current log-likelihood: -6165627.073
+6. Current log-likelihood: -6165627.060
+Optimal log-likelihood: -6165627.051
+Rate parameters:  A-C: 1.00000  A-G: 2.45288  A-T: 0.37882  C-G: 0.37882  C-T: 2.45288  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 6 rounds (5.727 sec)
+BEST SCORE FOUND : -6165627.051
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 116
+CPU time used for tree search: 8822.041 sec (2h:27m:2s)
+Wall-clock time used for tree search: 1185.278 sec (0h:19m:45s)
+Total CPU time used: 9325.161 sec (2h:35m:25s)
+Total wall-clock time used: 1419.570 sec (0h:23m:39s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 5069 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165679.083
+
+---> START RUN NUMBER 8 (seed: 47328424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.631 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47328424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174332.738
+2. Current log-likelihood: -6165684.990
+3. Current log-likelihood: -6165658.013
+4. Current log-likelihood: -6165655.512
+5. Current log-likelihood: -6165653.456
+6. Current log-likelihood: -6165651.761
+7. Current log-likelihood: -6165650.837
+8. Current log-likelihood: -6165648.893
+9. Current log-likelihood: -6165648.048
+10. Current log-likelihood: -6165647.307
+11. Current log-likelihood: -6165646.740
+12. Current log-likelihood: -6165646.229
+13. Current log-likelihood: -6165645.843
+14. Current log-likelihood: -6165645.594
+15. Current log-likelihood: -6165645.400
+16. Current log-likelihood: -6165645.256
+17. Current log-likelihood: -6165645.144
+Optimal log-likelihood: -6165645.049
+Rate parameters:  A-C: 1.00000  A-G: 2.43299  A-T: 0.37841  C-G: 0.37841  C-T: 2.43299  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (31.604 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 2.021351 sec (of wall-clock time) 19.366102 sec(of CPU time)
+Computing RapidNJ tree took 0.390058 sec (of wall-clock time) 1.503316 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169147.784
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 374.166 second
+Computing log-likelihood of 98 initial trees ... 45.220 seconds
+Current best score: -6165643.489
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165613.444
+Iteration 10 / LogL: -6165639.335 / Time: 0h:13m:45s
+Iteration 20 / LogL: -6165662.537 / Time: 0h:16m:29s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165613.444 / CPU time: 751.055
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6165681.500 / Time: 0h:17m:48s (0h:35m:30s left)
+Iteration 40 / LogL: -6165724.332 / Time: 0h:19m:4s (0h:24m:39s left)
+Iteration 50 / LogL: -6165717.175 / Time: 0h:20m:24s (0h:17m:48s left)
+Log-likelihood cutoff on original alignment: -6165710.710
+Iteration 60 / LogL: -6166747.010 / Time: 0h:21m:49s (0h:12m:52s left)
+Iteration 70 / LogL: -6165679.403 / Time: 0h:23m:6s (0h:8m:53s left)
+Iteration 80 / LogL: -6165653.828 / Time: 0h:24m:27s (0h:5m:37s left)
+Iteration 90 / LogL: -6165742.314 / Time: 0h:25m:50s (0h:2m:47s left)
+Iteration 100 / LogL: -6165812.857 / Time: 0h:27m:5s (0h:0m:14s left)
+Log-likelihood cutoff on original alignment: -6165710.710
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:27m:25s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165613.444
+2. Current log-likelihood: -6165613.379
+3. Current log-likelihood: -6165613.327
+4. Current log-likelihood: -6165613.284
+5. Current log-likelihood: -6165613.249
+6. Current log-likelihood: -6165613.220
+7. Current log-likelihood: -6165613.197
+8. Current log-likelihood: -6165613.178
+9. Current log-likelihood: -6165613.162
+10. Current log-likelihood: -6165613.149
+11. Current log-likelihood: -6165613.139
+Optimal log-likelihood: -6165613.130
+Rate parameters:  A-C: 1.00000  A-G: 2.45477  A-T: 0.37999  C-G: 0.37999  C-T: 2.45477  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 11 rounds (22.596 sec)
+BEST SCORE FOUND : -6165613.130
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 102
+CPU time used for tree search: 10722.232 sec (2h:58m:42s)
+Wall-clock time used for tree search: 1406.641 sec (0h:23m:26s)
+Total CPU time used: 11450.297 sec (3h:10m:50s)
+Total wall-clock time used: 1670.464 sec (0h:27m:50s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 5184 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165704.905
+
+---> START RUN NUMBER 9 (seed: 47329424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 3.680 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47329424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174378.704
+2. Current log-likelihood: -6165711.915
+3. Current log-likelihood: -6165685.084
+4. Current log-likelihood: -6165682.647
+5. Current log-likelihood: -6165680.689
+6. Current log-likelihood: -6165678.952
+7. Current log-likelihood: -6165677.908
+8. Current log-likelihood: -6165676.193
+9. Current log-likelihood: -6165675.349
+10. Current log-likelihood: -6165674.574
+11. Current log-likelihood: -6165673.991
+12. Current log-likelihood: -6165673.510
+13. Current log-likelihood: -6165673.143
+14. Current log-likelihood: -6165672.900
+15. Current log-likelihood: -6165672.727
+16. Current log-likelihood: -6165672.580
+17. Current log-likelihood: -6165672.469
+Optimal log-likelihood: -6165672.378
+Rate parameters:  A-C: 1.00000  A-G: 2.43219  A-T: 0.37776  C-G: 0.37776  C-T: 2.43219  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (37.480 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 2.161436 sec (of wall-clock time) 19.842653 sec(of CPU time)
+Computing RapidNJ tree took 0.389813 sec (of wall-clock time) 1.605295 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169163.342
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 389.134 second
+Computing log-likelihood of 98 initial trees ... 46.843 seconds
+Current best score: -6165641.305
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165632.171
+Iteration 10 / LogL: -6165652.420 / Time: 0h:14m:18s
+Iteration 20 / LogL: -6165661.520 / Time: 0h:17m:3s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165632.171 / CPU time: 769.663
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6165675.869 / Time: 0h:18m:23s (0h:36m:34s left)
+Iteration 40 / LogL: -6166183.361 / Time: 0h:19m:42s (0h:25m:26s left)
+Iteration 50 / LogL: -6165660.201 / Time: 0h:21m:5s (0h:18m:21s left)
+Log-likelihood cutoff on original alignment: -6165702.450
+Iteration 60 / LogL: -6165699.075 / Time: 0h:22m:30s (0h:13m:14s left)
+Iteration 70 / LogL: -6165699.260 / Time: 0h:23m:49s (0h:9m:9s left)
+Iteration 80 / LogL: -6165715.103 / Time: 0h:25m:5s (0h:5m:45s left)
+Iteration 90 / LogL: -6165712.551 / Time: 0h:26m:23s (0h:2m:50s left)
+Iteration 100 / LogL: -6165727.782 / Time: 0h:27m:44s (0h:0m:14s left)
+Log-likelihood cutoff on original alignment: -6165702.450
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 102: -6165627.100
+Iteration 110 / LogL: -6165711.115 / Time: 0h:29m:19s (0h:21m:50s left)
+Iteration 120 / LogL: -6165704.352 / Time: 0h:30m:42s (0h:18m:46s left)
+Iteration 130 / LogL: -6165725.424 / Time: 0h:32m:0s (0h:15m:56s left)
+Iteration 140 / LogL: -6165690.403 / Time: 0h:33m:22s (0h:13m:20s left)
+Iteration 150 / LogL: -6165721.431 / Time: 0h:34m:41s (0h:10m:54s left)
+Log-likelihood cutoff on original alignment: -6165702.714
+Iteration 160 / LogL: -6165803.314 / Time: 0h:36m:0s (0h:8m:36s left)
+Iteration 170 / LogL: -6165725.992 / Time: 0h:37m:22s (0h:6m:25s left)
+Iteration 180 / LogL: -6165669.827 / Time: 0h:38m:35s (0h:4m:19s left)
+Iteration 190 / LogL: -6165705.913 / Time: 0h:39m:46s (0h:2m:18s left)
+Iteration 200 / LogL: -6165646.407 / Time: 0h:40m:58s (0h:0m:22s left)
+Log-likelihood cutoff on original alignment: -6165702.714
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 203 ITERATIONS / Time: 0h:41m:24s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165627.100
+2. Current log-likelihood: -6165627.050
+3. Current log-likelihood: -6165627.009
+4. Current log-likelihood: -6165626.977
+5. Current log-likelihood: -6165626.950
+6. Current log-likelihood: -6165626.928
+7. Current log-likelihood: -6165626.909
+8. Current log-likelihood: -6165626.895
+9. Current log-likelihood: -6165626.882
+Optimal log-likelihood: -6165626.872
+Rate parameters:  A-C: 1.00000  A-G: 2.45365  A-T: 0.37894  C-G: 0.37894  C-T: 2.45365  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.954
+Parameters optimization took 9 rounds (14.550 sec)
+BEST SCORE FOUND : -6165626.872
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 203
+CPU time used for tree search: 18365.560 sec (5h:6m:5s)
+Wall-clock time used for tree search: 2230.065 sec (0h:37m:10s)
+Total CPU time used: 19073.546 sec (5h:17m:53s)
+Total wall-clock time used: 2501.791 sec (0h:41m:41s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 5534 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165669.769
+
+---> START RUN NUMBER 10 (seed: 47330424)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.533 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 47330424)...
+
+NOTE: 565 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6174346.750
+2. Current log-likelihood: -6165696.218
+3. Current log-likelihood: -6165669.335
+4. Current log-likelihood: -6165666.867
+5. Current log-likelihood: -6165664.866
+6. Current log-likelihood: -6165663.156
+7. Current log-likelihood: -6165662.150
+8. Current log-likelihood: -6165660.363
+9. Current log-likelihood: -6165659.523
+10. Current log-likelihood: -6165658.778
+11. Current log-likelihood: -6165658.210
+12. Current log-likelihood: -6165657.711
+13. Current log-likelihood: -6165657.333
+14. Current log-likelihood: -6165657.084
+15. Current log-likelihood: -6165656.900
+16. Current log-likelihood: -6165656.753
+17. Current log-likelihood: -6165656.640
+Optimal log-likelihood: -6165656.547
+Rate parameters:  A-C: 1.00000  A-G: 2.43177  A-T: 0.37829  C-G: 0.37829  C-T: 2.43177  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 17 rounds (29.812 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 1.932751 sec (of wall-clock time) 18.300996 sec(of CPU time)
+Computing RapidNJ tree took 0.411444 sec (of wall-clock time) 1.720896 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6169205.754
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 336.522 second
+Computing log-likelihood of 98 initial trees ... 39.832 seconds
+Current best score: -6165634.419
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6165620.046
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -6165618.875
+Iteration 10 / LogL: -6165651.843 / Time: 0h:11m:58s
+Iteration 20 / LogL: -6165664.354 / Time: 0h:14m:10s
+Finish initializing candidate tree set (20)
+Current best tree score: -6165618.875 / CPU time: 645.153
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6165858.853 / Time: 0h:15m:17s (0h:31m:0s left)
+Iteration 40 / LogL: -6165649.482 / Time: 0h:16m:32s (0h:21m:51s left)
+Iteration 50 / LogL: -6165667.965 / Time: 0h:17m:36s (0h:15m:43s left)
+Log-likelihood cutoff on original alignment: -6165715.222
+Iteration 60 / LogL: -6165697.044 / Time: 0h:18m:53s (0h:11m:27s left)
+Iteration 70 / LogL: -6165815.043 / Time: 0h:19m:55s (0h:7m:56s left)
+Iteration 80 / LogL: -6165758.439 / Time: 0h:21m:3s (0h:5m:5s left)
+Iteration 90 / LogL: -6165752.849 / Time: 0h:22m:8s (0h:2m:36s left)
+Iteration 100 / LogL: -6165698.789 / Time: 0h:23m:8s (0h:0m:24s left)
+Log-likelihood cutoff on original alignment: -6165715.222
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:23m:29s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6165618.875
+2. Current log-likelihood: -6165618.823
+3. Current log-likelihood: -6165618.781
+4. Current log-likelihood: -6165618.748
+5. Current log-likelihood: -6165618.721
+6. Current log-likelihood: -6165618.699
+7. Current log-likelihood: -6165618.680
+8. Current log-likelihood: -6165618.665
+9. Current log-likelihood: -6165618.652
+Optimal log-likelihood: -6165618.642
+Rate parameters:  A-C: 1.00000  A-G: 2.45330  A-T: 0.37821  C-G: 0.37821  C-T: 2.45330  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.955
+Parameters optimization took 9 rounds (15.553 sec)
+BEST SCORE FOUND : -6165618.642
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Total tree length: 0.007
+
+Total number of iterations: 103
+CPU time used for tree search: 9220.435 sec (2h:33m:40s)
+Wall-clock time used for tree search: 1203.797 sec (0h:20m:3s)
+Total CPU time used: 9836.173 sec (2h:43m:56s)
+Total wall-clock time used: 1427.371 sec (0h:23m:47s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex...
+596 taxa and 5267 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Log-likelihood of consensus tree: -6165663.343
+
+---> SUMMARIZE RESULTS FROM 10 RUNS
+
+Run 8 gave best log-likelihood: -6165613.130
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+Total CPU time for 10 runs: 97580.115 seconds.
+Total wall-clock time for 10 runs: 14603.473 seconds.
+
+
+Analysis results written to: 
+  IQ-TREE report:                /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.iqtree
+  Maximum-likelihood tree:       /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.treefile
+  Trees from independent runs:   /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.runtrees
+  Likelihood distances:          /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.splits.nex
+  Consensus tree:                /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.contree
+  Screen log file:               /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.log
+
+Date and Time: Tue Apr 20 21:11:53 2021
