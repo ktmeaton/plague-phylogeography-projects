@@ -1,0 +1,51 @@
+
+LEAST-SQUARE METHODS TO ESTIMATE RATES AND DATES - v.1.9.9 
+
+
+Input files:
+  i                                               Input tree file : /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.treefile
+  d                                               Input date file : /2/scratch/keaton/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.dates.txt
+  p                                                Partition file : No
+  g                                       File contains outgroups : /2/scratch/keaton/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.outgroups.txt
+  G                       Remove outgroups in the estimating tree : Yes
+Output file:
+  o                                                  Output file  : /2/scratch/keaton/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd
+Parameters:
+  a                                                     Root date : No
+  z                                                     Tips date : No
+  c                                              With constraints : Yes
+  t                                      Lower bound for the rate : 1e-10
+  v                                                With variances : Yes, use variances based on input branch lengths
+  b                              Adjusted parameter for variances : To estimate
+  r                                             Estimate the root : On the branch given by the outgroups
+  w                                       Given substitution rate : No
+  n                                             Multiple data set : No
+  f                                  Compute confidence intervals : Yes, sampling 100 times
+  q                  Standard deviation of lognormal relaxed clock: 0.2 (for computing confidence intervals)
+  s                                               Sequence length : 47321424
+  e                                          Exclude outlier tips : Yes, detect and exclude outliers from the analysis
+  m                   Number of sampling nodes to detect outliers : 10
+  e                       The Zscore threshold to detect outliers : 3
+  u                Min internal branch length of time scaled tree : 0
+  U                Min external branch length of time scaled tree : 0
+  l                        Collapsed internal branch length limit : 1.0566e-08
+  D                                            Output date format : Based on input date format
+  E  Estimate rates for external and internal branches separately : No
+
+  h to print Help 
+  y to accept or type a letter to change an option (x = Exit) 
+Tree 1 
+Parameter to adjust variances was set to 4.711e-07 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+*RESULTS:
+- The input dates associated with the following 3 nodes are considered as
+ outliers, so those nodes were removed from the analysis:
+ SAMEA3541827 SAMEA104488961 SAMEA1061800
+- Dating results:
+ rate 1.13851e-08, tMRCA -5755.67 , objective function 0.00148639
+- Results with confidence intervals:
+ rate 1.13851e-08 [1.06455e-08; 1.24908e-08], tMRCA -5755.67 [-6040.68; -5461.15], objective function 0.00148639
+
+*********************************************************
+
+TOTAL ELAPSED TIME: 1.39 seconds
