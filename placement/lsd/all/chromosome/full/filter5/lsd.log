@@ -1,189 +1,21 @@
-IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Mar 30 2021
-Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
-Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
-
-Host:    DESKTOP-36M8DA7 (SSE4.2, 12 GB RAM)
-Command: iqtree -s /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.aln -m MFP --date /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.dates.txt --prefix /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd -fconst 1115134,1003304,1014310,1112092 --date-ci 100 --date-outlier 3 -te /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.treefile
-Seed:    428835 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Sat Apr 17 16:51:10 2021
-Kernel:  SSE2 - 1 threads (4 CPU cores detected)
-
-HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
-HINT: -nt AUTO will automatically determine the best number of threads to use.
-
-Reading alignment file /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.aln ... Fasta format detected
-Alignment most likely contains DNA/RNA sequences
-Alignment has 28 sequences with 17929 columns, 791 distinct patterns
-520 parsimony-informative, 1358 singleton sites, 16051 constant sites
-                                      Gap/Ambiguity  Composition  p-value
-   1  GCA_000169635.1_ASM16963v1_genomic      0.02%    passed     98.70%
-   2  GCA_000170275.1_ASM17027v1_genomic      0.07%    passed     98.83%
-   3  GCA_000269145.1_ASM26914v1_genomic      0.81%    passed     98.19%
-   4  GCA_000320465.1_ASM32046v1_genomic      0.02%    passed     99.54%
-   5  GCA_000323485.1_ASM32348v1_genomic      0.59%    passed     43.42%
-   6  GCA_000323505.1_ASM32350v1_genomic      0.21%    passed     99.93%
-   7  GCA_000323565.1_ASM32356v1_genomic      1.76%    passed     98.38%
-   8  GCA_000323625.1_ASM32362v1_genomic      2.07%    passed     97.86%
-   9  GCA_000323845.1_ASM32384v1_genomic      0.77%    passed     56.66%
-  10  GCA_000323945.1_ASM32394v1_genomic      8.89%    passed     93.13%
-  11  GCA_000323965.1_ASM32396v1_genomic      0.40%    passed     99.93%
-  12  GCA_000324065.1_ASM32406v1_genomic      2.62%    passed     98.99%
-  13  GCA_000324565.1_ASM32456v1_genomic      0.02%    passed     99.80%
-  14  GCA_000324725.1_ASM32472v1_genomic      0.37%    passed     99.91%
-  15  GCA_000325305.1_ASM32530v1_genomic      0.45%    passed     99.93%
-  16  GCA_000325365.1_ASM32536v1_genomic      0.36%    passed     99.35%
-  17  GCA_000835005.1_ASM83500v1_genomic      4.45%    passed     85.34%
-  18  GCA_001188795.1_ASM118879v1_genomic     2.17%    passed     93.39%
-  19  GCA_001294975.1_ASM129497v1_genomic     0.12%    passed     98.68%
-  20  GCA_002005285.1_ASM200528v1_genomic     0.07%    passed     99.53%
-  21  GCA_002981895.1_ASM298189v1_genomic     0.25%    passed     98.81%
-  22  GCA_003074235.1_ASM307423v1_genomic     0.25%    passed     99.72%
-  23  GCA_003074535.1_ASM307453v1_genomic     0.07%    passed     99.87%
-  24  GCA_008630435.1_ASM863043v1_genomic     0.52%    passed     98.18%
-  25  GCA_009670865.1_ASM967086v1_genomic     0.11%    passed     99.30%
-  26  GCA_015158755.1_ASM1515875v1_genomic    0.03%    passed     99.83%
-  27  GCA_016102905.1_ASM1610290v1_genomic    0.03%    passed     94.34%
-  28  Reference                               0.00%    passed     98.27%
-****  TOTAL                                   0.98%  0 sequences failed composition chi2 test (p-value<5%; df=3)
-INFO: 4244840 const sites added into alignment
-NOTE: minimal branch length is reduced to 0.000000023459 for long alignment
-
-Reading input tree file /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/full/filter5/iqtree.treefile ... rooted tree
-Perform fast likelihood tree search using GTR+I+G model...
-Estimate model parameters (epsilon = 5.000)
-Time for fast ML tree search: 0.385 seconds
-
-NOTE: ModelFinder requires 7 MB RAM!
-ModelFinder will test up to 286 DNA models (sample size: 4262769) ...
- No. Model         -LnL         df  AIC          AICc         BIC
-  1  GTR+F         5929318.696  61  11858759.392 11858759.394 11859568.583
-  2  GTR+F+I       5929295.225  62  11858714.449 11858714.451 11859536.906
-  3  GTR+F+G4      5929305.906  62  11858735.812 11858735.813 11859558.268
-  4  GTR+F+I+G4    5929300.428  63  11858726.856 11858726.858 11859562.578
-  5  GTR+F+R2      5929166.201  63  11858458.402 11858458.404 11859294.124
-  6  GTR+F+R3      5928452.198  65  11857034.395 11857034.397 11857896.648
-  7  GTR+F+R4      5928448.412  67  11857030.823 11857030.825 11857919.607
- 19  SYM+R3        5933643.633  62  11867411.267 11867411.268 11868233.723
- 32  TVM+F+R3      5928453.240  64  11857034.480 11857034.482 11857883.468
- 45  TVMe+R3       5933644.501  61  11867411.001 11867411.003 11868220.193
- 58  TIM3+F+R3     5928553.833  63  11857233.667 11857233.669 11858069.389
- 71  TIM3e+R3      5933746.557  60  11867613.114 11867613.116 11868409.040
- 84  TIM2+F+R3     5928552.780  63  11857231.559 11857231.561 11858067.281
- 97  TIM2e+R3      5933745.081  60  11867610.162 11867610.163 11868406.087
-110  TIM+F+R3      5928459.072  63  11857044.144 11857044.146 11857879.866
-123  TIMe+R3       5933653.239  60  11867426.478 11867426.479 11868222.403
-136  TPM3u+F+R3    5928554.440  62  11857232.880 11857232.882 11858055.337
-149  TPM3+F+R3     5928554.440  62  11857232.880 11857232.882 11858055.337
-162  TPM2u+F+R3    5928553.291  62  11857230.582 11857230.584 11858053.038
-175  TPM2+F+R3     5928553.291  62  11857230.582 11857230.584 11858053.038
-188  K3Pu+F+R3     5928460.063  62  11857044.126 11857044.128 11857866.582
-201  K3P+R3        5933654.095  59  11867426.190 11867426.192 11868208.851
-214  TN+F+R3       5928553.698  62  11857231.397 11857231.399 11858053.853
-227  TNe+R3        5933747.108  59  11867612.215 11867612.217 11868394.876
-240  HKY+F+R3      5928554.889  61  11857231.778 11857231.780 11858040.969
-253  K2P+R3        5933748.126  58  11867612.252 11867612.254 11868381.647
-266  F81+F+R3      5928867.999  60  11857855.997 11857855.999 11858651.923
-279  JC+R3         5934059.967  57  11868233.935 11868233.936 11868990.064
-Akaike Information Criterion:           GTR+F+R4
-Corrected Akaike Information Criterion: GTR+F+R4
-Bayesian Information Criterion:         K3Pu+F+R3
-Best-fit model: K3Pu+F+R3 chosen according to BIC
-
-All model information printed to /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.model.gz
-CPU time for ModelFinder: 8.981 seconds (0h:0m:8s)
-Wall-clock time for ModelFinder: 9.093 seconds (0h:0m:9s)
-
-NOTE: 2 MB RAM (0 GB) is required!
-Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -5928460.063
-2. Current log-likelihood: -5928459.990
-3. Current log-likelihood: -5928459.919
-4. Current log-likelihood: -5928459.849
-5. Current log-likelihood: -5928459.781
-6. Current log-likelihood: -5928459.713
-7. Current log-likelihood: -5928459.646
-8. Current log-likelihood: -5928459.581
-9. Current log-likelihood: -5928459.517
-10. Current log-likelihood: -5928459.453
-11. Current log-likelihood: -5928459.391
-12. Current log-likelihood: -5928459.330
-13. Current log-likelihood: -5928459.270
-14. Current log-likelihood: -5928459.211
-15. Current log-likelihood: -5928459.154
-16. Current log-likelihood: -5928459.097
-17. Current log-likelihood: -5928459.042
-18. Current log-likelihood: -5928458.987
-19. Current log-likelihood: -5928458.934
-20. Current log-likelihood: -5928458.882
-21. Current log-likelihood: -5928458.831
-22. Current log-likelihood: -5928458.781
-23. Current log-likelihood: -5928458.732
-24. Current log-likelihood: -5928458.684
-25. Current log-likelihood: -5928458.638
-26. Current log-likelihood: -5928458.592
-27. Current log-likelihood: -5928458.547
-28. Current log-likelihood: -5928458.504
-29. Current log-likelihood: -5928458.461
-30. Current log-likelihood: -5928458.419
-31. Current log-likelihood: -5928458.379
-32. Current log-likelihood: -5928458.340
-33. Current log-likelihood: -5928458.303
-34. Current log-likelihood: -5928458.266
-35. Current log-likelihood: -5928458.230
-36. Current log-likelihood: -5928458.194
-37. Current log-likelihood: -5928458.161
-Optimal log-likelihood: -5928458.157
-Rate parameters:  A-C: 1.00000  A-G: 2.13213  A-T: 0.33379  C-G: 0.33379  C-T: 2.13213  G-T: 1.00000
-Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
-Site proportion and rates:  (0.333,0.189) (0.333,0.223) (0.333,2.589)
-Parameters optimization took 37 rounds (2.553 sec)
-BEST SCORE FOUND : -5928458.157
-Total tree length: 0.000
-
-Total number of iterations: 0
-CPU time used for tree search: 0.000 sec (0h:0m:0s)
-Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
-Total CPU time used: 2.543 sec (0h:0m:2s)
-Total wall-clock time used: 2.584 sec (0h:0m:2s)
-
-Analysis results written to: 
-  IQ-TREE report:                /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.iqtree
-  Maximum-likelihood tree:       /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.treefile
-  Screen log file:               /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.log
-
---- Start phylogenetic dating ---
-Reading date file /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.dates.txt ...
-28 dates extracted
-Building time tree by least-square dating (LSD) with command:
-lsd -i /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.timetree.subst -s 4262769 -o /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.timetree -f 100 -e 3 -r a -d /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.timetree.date 
+Removing outgroups of tree(s) ...
 
 TREE 1
 *PROCESSING:
 Reading the tree ... 
-Collapse 5 (over 25) internal branches having branch length <= 1.17e-07
+Collapse 0 (over 26) internal branches having branch length <= 7.40798e-10
  (settable via option -l)
-Parameter to adjust variances was set to 4.93e-06 (settable via option -b)
+Parameter to adjust variances was set to 4.09915e-06 (settable via option -b)
 Calculating the outlier nodes with Zscore threshold 3 (setable via option -e)...
 Minimum branch length of time scaled tree (settable via option -u and -U): 0
-Estimating the root position on all branches using fast method ...
-Computing confidence intervals using sequence length 4262769 and a lognormal
+Estimating the root position on the branch defined by given outgroups ...
+Computing confidence intervals using sequence length 674947425 and a lognormal
  relaxed clock with mean 1, standard deviation 0.2 (settable via option -q)
-*WARNINGS:
-- 20% internal branches were collapsed.
 *RESULTS:
-- The input dates associated with the following 2 nodes are considered as
- outliers, so the nodes were excluded from the analysis:
- GCA_000323625.1_ASM32362v1_genomic GCA_001188795.1_ASM118879v1_genomic
+- There is not any outlier date.
 - Dating results:
- rate 1.22623e-08, tMRCA -4102.87 , objective function 4.32838e-05
+ rate 6.17038e-09, tMRCA -8352.77 , objective function 5.43153e-05
 - Results with confidence intervals:
- rate 1.22623e-08 [1e-10; 4.95269e-08], tMRCA -4102.87 [-544217; -991.12], objective function 4.32838e-05
+ rate 6.17038e-09 [1e-10; 3.40749e-08], tMRCA -8352.77 [-600787; -1493.06], objective function 5.43153e-05
 
-TOTAL ELAPSED TIME: 0.019 seconds
-LSD results written to:
-  LSD report:                  /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.timetree.lsd
-  Time tree in nexus format:   /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.timetree.nex
-  Time tree in newick format:  /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/full/filter5/lsd.timetree.nwk
-
---- End phylogenetic dating ---
-Date and Time: Sat Apr 17 16:51:22 2021
+TOTAL ELAPSED TIME: 0.016287 seconds
