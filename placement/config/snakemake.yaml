@@ -93,22 +93,24 @@ snippy_multi_plot_missing_data:
 iqtree_model: "-m MFP"
 #iqtree_model : "-m K3Pu+F+I"
 iqtree_seed : "674947425" # keeping it consistent in a config file allows for checkpointing
+iqtree_other : ""
+iqtree_runs : 1
 
 # Outgroup Option #1: Reference
 #iqtree_outgroup : "Reference"
 
 # Outgroup Option #2: Basal modern clade
-#iqtree_constraint: "((GCA_000323485.1_ASM32348v1_genomic),Reference);"
 #iqtree_outgroup : "GCA_000323485.1_ASM32348v1_genomic"
 
 # Outgroup Option #3: Basal ancient clade
-#iqtree_constraint: "((SAMEA3541826,SAMEA3541827),Reference);"
 #iqtree_outgroup : "SAMEA3541826,SAMEA3541827"
 
 # Outgroup Option #4: Other species
-iqtree_constraint: "((GCA_900637475.1_51108_B01_genomic,GCA_000834295.1_ASM83429v1_genomic),Reference);"
 iqtree_outgroup : "GCA_900637475.1_51108_B01_genomic,GCA_000834295.1_ASM83429v1_genomic"
-lsd_outgroup : "GCA_000323845.1_ASM32384v1_genomic,GCA_000323485.1_ASM32348v1_genomic"
 
-iqtree_other : ""
-iqtree_runs : 1
+# MUGRATION
+mugration_attribute:
+  - branch_major
+  - branch_minor
+  - country
+  - province

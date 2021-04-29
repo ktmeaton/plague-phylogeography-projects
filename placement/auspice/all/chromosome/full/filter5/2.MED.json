@@ -1,0 +1,995 @@
+{
+  "meta": {
+    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/placement",
+    "colorings": [
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "2.MED",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major_conf_category",
+        "title": "Branch Major Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "2.MED0",
+            "#8afeaf"
+          ],
+          [
+            "2.MED3",
+            "#9efaa3"
+          ],
+          [
+            "2.MED2",
+            "#b2f396"
+          ],
+          [
+            "2.MED1",
+            "#c7e789"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor_conf_category",
+        "title": "Branch Minor Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#8000ff"
+          ],
+          [
+            "Russia",
+            "#9cfba4"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Xinjiang",
+            "#00b4ec"
+          ],
+          [
+            "Inner Mongolia",
+            "#40ecd4"
+          ],
+          [
+            "Karachay-Cherkessia",
+            "#9ffaa2"
+          ],
+          [
+            "Republic of Kalmykia",
+            "#bfec8e"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "2.MED",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major_conf_category",
+        "title": "Branch Major Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#8000ff"
+          ],
+          [
+            "Russia",
+            "#9cfba4"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "2.MED0",
+            "#8afeaf"
+          ],
+          [
+            "2.MED3",
+            "#9efaa3"
+          ],
+          [
+            "2.MED2",
+            "#b2f396"
+          ],
+          [
+            "2.MED1",
+            "#c7e789"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Xinjiang",
+            "#00b4ec"
+          ],
+          [
+            "Inner Mongolia",
+            "#40ecd4"
+          ],
+          [
+            "Karachay-Cherkessia",
+            "#9ffaa2"
+          ],
+          [
+            "Republic of Kalmykia",
+            "#bfec8e"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor_conf_category",
+        "title": "Branch Minor Confidence",
+        "type": "categorical"
+      }
+    ],
+    "display_defaults": {
+      "branch_label": "none",
+      "color_by": "branch_major",
+      "distance_measure": "num_date",
+      "geo_resolution": "province",
+      "layout": "rect",
+      "map_triplicate": true,
+      "transmission_lines": true
+    },
+    "filters": [
+      "country",
+      "province",
+      "branch_major",
+      "branch_minor"
+    ],
+    "geo_resolutions": [
+      {
+        "demes": {
+          "China": {
+            "latitude": 35.000074,
+            "longitude": 104.999927
+          },
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          }
+        },
+        "key": "country"
+      },
+      {
+        "demes": {
+          "Inner Mongolia": {
+            "latitude": 43.2443242,
+            "longitude": 114.3251664
+          },
+          "Karachay-Cherkessia": {
+            "latitude": 43.7368326,
+            "longitude": 41.7267991
+          },
+          "Republic of Kalmykia": {
+            "latitude": 46.2313018,
+            "longitude": 45.3275745
+          },
+          "Xinjiang": {
+            "latitude": 42.4804953,
+            "longitude": 85.4633464
+          }
+        },
+        "key": "province"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "name"
+      },
+      {
+        "name": "url"
+      }
+    ],
+    "panels": [
+      "tree",
+      "map"
+    ],
+    "title": "Plague Phylogeography Placement",
+    "updated": "2021-04-29"
+  },
+  "tree": {
+    "branch_attrs": {
+      "labels": {
+        "biosample_accession": "NA",
+        "branch_length": 5.344e-06,
+        "branch_major_conf_category": "HIGH",
+        "branch_minor_conf_category": "LOW",
+        "branch_number": "NA",
+        "branch_support": 0.0,
+        "clade_rtt_dist": 5.344e-06,
+        "continent": "NA",
+        "country_conf_category": "LOW",
+        "date_bp_mean": "NA",
+        "date_err": "NA",
+        "date_mean": "NA",
+        "geometry_size": 1.0,
+        "mugration_branch_major": "2.MED",
+        "mugration_branch_major_confidence": 0.98,
+        "mugration_branch_minor": "2.MED0",
+        "mugration_branch_minor_confidence": 0.43,
+        "mugration_country": "Russia",
+        "mugration_country_confidence": 0.48,
+        "mugration_province": "Karachay-Cherkessia",
+        "mugration_province_confidence": 0.34,
+        "node_type": "internal",
+        "province_conf_category": "LOW",
+        "root_rtt_dist": 6.222500000000001e-05,
+        "strain": "NA",
+        "timetree_num_date": 630.0,
+        "timetree_num_date_confidence": [
+          -88337.0,
+          1800.0
+        ]
+      }
+    },
+    "children": [
+      {
+        "branch_attrs": {},
+        "name": "GCA_008630435.1_ASM863043v1_genomic",
+        "node_attrs": {
+          "biosample_accession": {
+            "value": "SAMN12721146"
+          },
+          "branch_major": {
+            "confidence": {
+              "2.MED": 1.0
+            },
+            "value": "2.MED"
+          },
+          "branch_major_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_minor": {
+            "confidence": {
+              "2.MED0": 1.0
+            },
+            "value": "2.MED0"
+          },
+          "branch_minor_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_number": {
+            "value": "2.0"
+          },
+          "branch_support": {
+            "value": 100.0
+          },
+          "clade_rtt_dist": {
+            "value": 2.9520999999999997e-05
+          },
+          "continent": {
+            "value": "Europe"
+          },
+          "country": {
+            "confidence": {
+              "Russia": 1.0
+            },
+            "value": "Russia"
+          },
+          "country_conf_category": {
+            "value": "HIGH"
+          },
+          "date_bp_mean": {
+            "value": 25.0
+          },
+          "date_err": {
+            "value": 0.0
+          },
+          "date_mean": {
+            "value": 1996.0
+          },
+          "div": 2.4177e-05,
+          "node_type": {
+            "value": "terminal"
+          },
+          "num_date": {
+            "confidence": [
+              1996.0,
+              1996.0
+            ],
+            "value": 1996.0
+          },
+          "province": {
+            "confidence": {
+              "Karachay-Cherkessia": 1.0
+            },
+            "value": "Karachay-Cherkessia"
+          },
+          "province_conf_category": {
+            "value": "HIGH"
+          },
+          "root_rtt_dist": {
+            "value": 8.6402e-05
+          },
+          "strain": {
+            "value": "C-719"
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "biosample_accession": "NA",
+            "branch_length": 1.471e-06,
+            "branch_major_conf_category": "HIGH",
+            "branch_minor_conf_category": "LOW",
+            "branch_number": "NA",
+            "branch_support": 0.0,
+            "clade_rtt_dist": 6.815e-06,
+            "continent": "NA",
+            "country_conf_category": "LOW",
+            "date_bp_mean": "NA",
+            "date_err": "NA",
+            "date_mean": "NA",
+            "geometry_size": 2.0,
+            "mugration_branch_major": "2.MED",
+            "mugration_branch_major_confidence": 1.0,
+            "mugration_branch_minor": "2.MED3",
+            "mugration_branch_minor_confidence": 0.41,
+            "mugration_country": "China",
+            "mugration_country_confidence": 0.61,
+            "mugration_province": "Inner Mongolia",
+            "mugration_province_confidence": 0.51,
+            "node_type": "internal",
+            "province_conf_category": "LOW",
+            "root_rtt_dist": 6.369600000000001e-05,
+            "strain": "NA",
+            "timetree_num_date": 889.0,
+            "timetree_num_date_confidence": [
+              -69927.0,
+              1836.0
+            ]
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {},
+            "name": "GCA_000323945.1_ASM32394v1_genomic",
+            "node_attrs": {
+              "biosample_accession": {
+                "value": "SAMN02403032"
+              },
+              "branch_major": {
+                "confidence": {
+                  "2.MED": 1.0
+                },
+                "value": "2.MED"
+              },
+              "branch_major_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_minor": {
+                "confidence": {
+                  "2.MED3": 1.0
+                },
+                "value": "2.MED3"
+              },
+              "branch_minor_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_number": {
+                "value": "2.0"
+              },
+              "branch_support": {
+                "value": 100.0
+              },
+              "clade_rtt_dist": {
+                "value": 1.5034e-05
+              },
+              "continent": {
+                "value": "Asia"
+              },
+              "country": {
+                "confidence": {
+                  "China": 1.0
+                },
+                "value": "China"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "date_bp_mean": {
+                "value": 18.0
+              },
+              "date_err": {
+                "value": 0.0
+              },
+              "date_mean": {
+                "value": 2003.0
+              },
+              "div": 9.69e-06,
+              "node_type": {
+                "value": "terminal"
+              },
+              "num_date": {
+                "confidence": [
+                  2003.0,
+                  2003.0
+                ],
+                "value": 2003.0
+              },
+              "province": {
+                "confidence": {
+                  "Inner Mongolia": 1.0
+                },
+                "value": "Inner Mongolia"
+              },
+              "province_conf_category": {
+                "value": "HIGH"
+              },
+              "root_rtt_dist": {
+                "value": 7.1915e-05
+              },
+              "strain": {
+                "value": "CMCC107004"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "biosample_accession": "NA",
+                "branch_length": 7.14e-07,
+                "branch_major_conf_category": "HIGH",
+                "branch_minor_conf_category": "LOW",
+                "branch_number": "NA",
+                "branch_support": 0.0,
+                "clade_rtt_dist": 7.529e-06,
+                "continent": "NA",
+                "country_conf_category": "LOW",
+                "date_bp_mean": "NA",
+                "date_err": "NA",
+                "date_mean": "NA",
+                "geometry_size": 4.0,
+                "mugration_branch_major": "2.MED",
+                "mugration_branch_major_confidence": 1.0,
+                "mugration_branch_minor": "2.MED1",
+                "mugration_branch_minor_confidence": 0.36,
+                "mugration_country": "China",
+                "mugration_country_confidence": 0.53,
+                "mugration_province": "Xinjiang",
+                "mugration_province_confidence": 0.33,
+                "node_type": "internal",
+                "province_conf_category": "LOW",
+                "root_rtt_dist": 6.441e-05,
+                "strain": "NA",
+                "timetree_num_date": 1109.0,
+                "timetree_num_date_confidence": [
+                  -67231.0,
+                  1861.0
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {},
+                "name": "GCA_000323565.1_ASM32356v1_genomic",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMN02403012"
+                  },
+                  "branch_major": {
+                    "confidence": {
+                      "2.MED": 1.0
+                    },
+                    "value": "2.MED"
+                  },
+                  "branch_major_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_minor": {
+                    "confidence": {
+                      "2.MED2": 1.0
+                    },
+                    "value": "2.MED2"
+                  },
+                  "branch_minor_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_number": {
+                    "value": "2.0"
+                  },
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "clade_rtt_dist": {
+                    "value": 1.0345e-05
+                  },
+                  "continent": {
+                    "value": "Asia"
+                  },
+                  "country": {
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "value": "China"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "date_bp_mean": {
+                    "value": 48.0
+                  },
+                  "date_err": {
+                    "value": 0.0
+                  },
+                  "date_mean": {
+                    "value": 1973.0
+                  },
+                  "div": 5.001e-06,
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      1973.0,
+                      1973.0
+                    ],
+                    "value": 1973.0
+                  },
+                  "province": {
+                    "confidence": {
+                      "Xinjiang": 1.0
+                    },
+                    "value": "Xinjiang"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "root_rtt_dist": {
+                    "value": 6.7226e-05
+                  },
+                  "strain": {
+                    "value": "7338"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {},
+                "name": "GCA_016102905.1_ASM1610290v1_genomic",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMN15064019"
+                  },
+                  "branch_major": {
+                    "confidence": {
+                      "2.MED": 1.0
+                    },
+                    "value": "2.MED"
+                  },
+                  "branch_major_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_minor": {
+                    "confidence": {
+                      "2.MED1": 1.0
+                    },
+                    "value": "2.MED1"
+                  },
+                  "branch_minor_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_number": {
+                    "value": "2.0"
+                  },
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "clade_rtt_dist": {
+                    "value": 1.573e-05
+                  },
+                  "continent": {
+                    "value": "Europe"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Russia": 1.0
+                    },
+                    "value": "Russia"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "date_bp_mean": {
+                    "value": 35.0
+                  },
+                  "date_err": {
+                    "value": 0.0
+                  },
+                  "date_mean": {
+                    "value": 1986.0
+                  },
+                  "div": 1.0386e-05,
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      1986.0,
+                      1986.0
+                    ],
+                    "value": 1986.0
+                  },
+                  "province": {
+                    "confidence": {
+                      "Republic of Kalmykia": 1.0
+                    },
+                    "value": "Republic of Kalmykia"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "root_rtt_dist": {
+                    "value": 7.2611e-05
+                  },
+                  "strain": {
+                    "value": "M-1355"
+                  }
+                }
+              }
+            ],
+            "name": "NODE17",
+            "node_attrs": {
+              "branch_major": {
+                "confidence": {
+                  "2.MED": 1.0
+                },
+                "value": "2.MED"
+              },
+              "branch_major_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_minor": {
+                "confidence": {
+                  "2.MED1": 0.36
+                },
+                "value": "2.MED1"
+              },
+              "branch_minor_conf_category": {
+                "value": "LOW"
+              },
+              "branch_support": {
+                "value": 0.0
+              },
+              "clade_rtt_dist": {
+                "value": 7.529e-06
+              },
+              "country": {
+                "confidence": {
+                  "China": 0.53
+                },
+                "value": "China"
+              },
+              "country_conf_category": {
+                "value": "LOW"
+              },
+              "div": 2.185e-06,
+              "node_type": {
+                "value": "internal"
+              },
+              "num_date": {
+                "confidence": [
+                  -67231.0,
+                  1861.0
+                ],
+                "value": 1109.0
+              },
+              "province": {
+                "confidence": {
+                  "Xinjiang": 0.33
+                },
+                "value": "Xinjiang"
+              },
+              "province_conf_category": {
+                "value": "LOW"
+              },
+              "root_rtt_dist": {
+                "value": 6.441e-05
+              }
+            }
+          }
+        ],
+        "name": "NODE16",
+        "node_attrs": {
+          "branch_major": {
+            "confidence": {
+              "2.MED": 1.0
+            },
+            "value": "2.MED"
+          },
+          "branch_major_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_minor": {
+            "confidence": {
+              "2.MED3": 0.41
+            },
+            "value": "2.MED3"
+          },
+          "branch_minor_conf_category": {
+            "value": "LOW"
+          },
+          "branch_support": {
+            "value": 0.0
+          },
+          "clade_rtt_dist": {
+            "value": 6.815e-06
+          },
+          "country": {
+            "confidence": {
+              "China": 0.61
+            },
+            "value": "China"
+          },
+          "country_conf_category": {
+            "value": "LOW"
+          },
+          "div": 1.471e-06,
+          "node_type": {
+            "value": "internal"
+          },
+          "num_date": {
+            "confidence": [
+              -69927.0,
+              1836.0
+            ],
+            "value": 889.0
+          },
+          "province": {
+            "confidence": {
+              "Inner Mongolia": 0.51
+            },
+            "value": "Inner Mongolia"
+          },
+          "province_conf_category": {
+            "value": "LOW"
+          },
+          "root_rtt_dist": {
+            "value": 6.369600000000001e-05
+          }
+        }
+      }
+    ],
+    "name": "NODE15",
+    "node_attrs": {
+      "branch_major": {
+        "confidence": {
+          "2.MED": 0.98
+        },
+        "value": "2.MED"
+      },
+      "branch_major_conf_category": {
+        "value": "HIGH"
+      },
+      "branch_minor": {
+        "confidence": {
+          "2.MED0": 0.43
+        },
+        "value": "2.MED0"
+      },
+      "branch_minor_conf_category": {
+        "value": "LOW"
+      },
+      "branch_support": {
+        "value": 0.0
+      },
+      "clade_rtt_dist": {
+        "value": 5.344e-06
+      },
+      "country": {
+        "confidence": {
+          "Russia": 0.48
+        },
+        "value": "Russia"
+      },
+      "country_conf_category": {
+        "value": "LOW"
+      },
+      "div": 0,
+      "node_type": {
+        "value": "internal"
+      },
+      "num_date": {
+        "confidence": [
+          -88337.0,
+          1800.0
+        ],
+        "value": 630.0
+      },
+      "province": {
+        "confidence": {
+          "Karachay-Cherkessia": 0.34
+        },
+        "value": "Karachay-Cherkessia"
+      },
+      "province_conf_category": {
+        "value": "LOW"
+      },
+      "root_rtt_dist": {
+        "value": 6.222500000000001e-05
+      }
+    }
+  },
+  "version": "v2"
+}
