@@ -17,7 +17,7 @@
         "scale": [
           [
             "1.ANT",
-            "#4df3ce"
+            "#ff964f"
           ]
         ],
         "title": "Branch Major",
@@ -33,7 +33,7 @@
         "scale": [
           [
             "1.ANT1",
-            "#78ffb9"
+            "#ff8a48"
           ]
         ],
         "title": "Branch Minor",
@@ -69,15 +69,15 @@
         "scale": [
           [
             "Kenya",
-            "#80ffb4"
+            "#d0e083"
           ],
           [
             "Uganda",
-            "#8dfead"
+            "#ddd579"
           ],
           [
             "Democratic Republic of the Congo",
-            "#9afca5"
+            "#ebc970"
           ]
         ],
         "title": "Country",
@@ -105,6 +105,16 @@
       },
       {
         "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#000000"
+          ],
+          [
+            "terminal",
+            "#ff964f"
+          ]
+        ],
         "title": "Node Type",
         "type": "categorical"
       },
@@ -113,7 +123,7 @@
         "scale": [
           [
             "Nairobi",
-            "#5bf9c7"
+            "#ff9f54"
           ]
         ],
         "title": "Province",
@@ -135,59 +145,34 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
         "key": "province",
         "scale": [
           [
             "Nairobi",
-            "#5bf9c7"
+            "#ff9f54"
           ]
         ],
         "title": "Province",
         "type": "categorical"
       },
       {
-        "key": "branch_minor",
-        "scale": [
-          [
-            "1.ANT1",
-            "#78ffb9"
-          ]
-        ],
-        "title": "Branch Minor",
+        "key": "continent",
+        "title": "Continent",
         "type": "categorical"
       },
       {
-        "key": "country",
-        "scale": [
-          [
-            "Kenya",
-            "#80ffb4"
-          ],
-          [
-            "Uganda",
-            "#8dfead"
-          ],
-          [
-            "Democratic Republic of the Congo",
-            "#9afca5"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
       },
       {
         "key": "branch_minor_conf_category",
         "title": "Branch Minor Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major_conf_category",
-        "title": "Branch Major Confidence",
         "type": "categorical"
       },
       {
@@ -196,50 +181,28 @@
         "type": "categorical"
       },
       {
-        "key": "node_type",
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "1.ANT",
-            "#4df3ce"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
         "key": "date_err",
         "title": "Collection Date Uncertainty",
         "type": "continuous"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date",
-        "type": "continuous"
+        "key": "country",
+        "scale": [
+          [
+            "Kenya",
+            "#d0e083"
+          ],
+          [
+            "Uganda",
+            "#ddd579"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#ebc970"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
       },
       {
         "key": "country_conf_category",
@@ -247,9 +210,9 @@
         "type": "categorical"
       },
       {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
+        "key": "branch_major_conf_category",
+        "title": "Branch Major Confidence",
+        "type": "categorical"
       },
       {
         "key": "biosample_accession",
@@ -257,9 +220,66 @@
         "type": "categorical"
       },
       {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
+      },
+      {
         "key": "province_conf_category",
         "title": "Province Confidence",
         "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#000000"
+          ],
+          [
+            "terminal",
+            "#ff964f"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "1.ANT1",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
       }
     ],
     "display_defaults": {
@@ -318,7 +338,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-04-29"
+    "updated": "2021-04-30"
   },
   "tree": {
     "branch_attrs": {
@@ -348,10 +368,10 @@
         "province_conf_category": "LOW",
         "root_rtt_dist": 6.227529999999999e-05,
         "strain": "NA",
-        "timetree_num_date": 1151.0,
+        "timetree_num_date": 1662.0,
         "timetree_num_date_confidence": [
-          1091.0,
-          1267.0
+          1549.0,
+          1818.0
         ]
       }
     },
@@ -467,9 +487,9 @@
             "province_conf_category": "LOW",
             "root_rtt_dist": 7.30048e-05,
             "strain": "NA",
-            "timetree_num_date": 1938.0,
+            "timetree_num_date": 1954.0,
             "timetree_num_date_confidence": [
-              1883.0,
+              1914.0,
               1954.0
             ]
           }
@@ -683,10 +703,10 @@
           },
           "num_date": {
             "confidence": [
-              1883.0,
+              1914.0,
               1954.0
             ],
-            "value": 1938.0
+            "value": 1954.0
           },
           "province": {
             "confidence": {
@@ -744,10 +764,10 @@
       },
       "num_date": {
         "confidence": [
-          1091.0,
-          1267.0
+          1549.0,
+          1818.0
         ],
-        "value": 1151.0
+        "value": 1662.0
       },
       "province": {
         "confidence": {

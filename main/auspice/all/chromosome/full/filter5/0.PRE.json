@@ -113,6 +113,16 @@
       },
       {
         "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#000000"
+          ],
+          [
+            "terminal",
+            "#8000ff"
+          ]
+        ],
         "title": "Node Type",
         "type": "categorical"
       },
@@ -163,29 +173,9 @@
         "type": "categorical"
       },
       {
-        "key": "date_mean",
-        "title": "Collection Date",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
         "key": "date_bp_mean",
         "title": "Collection Date (BP)",
         "type": "continuous"
-      },
-      {
-        "key": "branch_major_conf_category",
-        "title": "Branch Major Confidence",
-        "type": "categorical"
       },
       {
         "key": "branch_minor_conf_category",
@@ -216,8 +206,33 @@
         "type": "categorical"
       },
       {
-        "key": "node_type",
-        "title": "Node Type",
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "0.PRE2",
+            "#8000ff"
+          ],
+          [
+            "0.PRE1",
+            "#7018ff"
+          ]
+        ],
+        "title": "Branch Minor",
         "type": "categorical"
       },
       {
@@ -230,16 +245,6 @@
         ],
         "title": "Branch Major",
         "type": "categorical"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
       },
       {
         "key": "branch_number",
@@ -278,28 +283,48 @@
         "type": "categorical"
       },
       {
-        "key": "country_conf_category",
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
         "key": "strain",
         "title": "Strain",
         "type": "categorical"
       },
       {
-        "key": "branch_minor",
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
         "scale": [
           [
-            "0.PRE2",
-            "#8000ff"
+            "internal",
+            "#000000"
           ],
           [
-            "0.PRE1",
-            "#7018ff"
+            "terminal",
+            "#8000ff"
           ]
         ],
-        "title": "Branch Minor",
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major_conf_category",
+        "title": "Branch Major Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "title": "Country Confidence",
         "type": "categorical"
       },
       {
@@ -308,13 +333,8 @@
         "type": "continuous"
       },
       {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
       }
     ],
@@ -398,7 +418,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-04-29"
+    "updated": "2021-04-30"
   },
   "tree": {
     "branch_attrs": {
@@ -428,10 +448,10 @@
         "province_conf_category": "LOW",
         "root_rtt_dist": 3.4741e-06,
         "strain": "NA",
-        "timetree_num_date": -3910.0,
+        "timetree_num_date": -3003.0,
         "timetree_num_date_confidence": [
-          -4308.0,
-          -3533.0
+          -3003.0,
+          -2892.0
         ]
       }
     },
@@ -497,10 +517,10 @@
           },
           "num_date": {
             "confidence": [
-              -2876.0,
+              -2812.0,
               -2677.0
             ],
-            "value": -2876.0
+            "value": -2677.0
           },
           "province": {
             "confidence": {
@@ -547,10 +567,10 @@
             "province_conf_category": "LOW",
             "root_rtt_dist": 1.68172e-05,
             "strain": "NA",
-            "timetree_num_date": -3204.0,
+            "timetree_num_date": -2767.0,
             "timetree_num_date_confidence": [
-              -3412.0,
-              -2974.0
+              -2875.0,
+              -2692.0
             ]
           }
         },
@@ -619,7 +639,7 @@
                   -2621.0,
                   -2472.0
                 ],
-                "value": -2621.0
+                "value": -2485.0
               },
               "province": {
                 "confidence": {
@@ -666,10 +686,10 @@
                 "province_conf_category": "LOW",
                 "root_rtt_dist": 3.01276e-05,
                 "strain": "NA",
-                "timetree_num_date": -2818.0,
+                "timetree_num_date": -2616.0,
                 "timetree_num_date_confidence": [
-                  -2918.0,
-                  -2666.0
+                  -2724.0,
+                  -2548.0
                 ]
               }
             },
@@ -738,7 +758,7 @@
                       -2574.0,
                       -2340.0
                     ],
-                    "value": -2501.0
+                    "value": -2420.0
                   },
                   "province": {
                     "confidence": {
@@ -785,10 +805,10 @@
                     "province_conf_category": "LOW",
                     "root_rtt_dist": 3.10511e-05,
                     "strain": "NA",
-                    "timetree_num_date": -2818.0,
+                    "timetree_num_date": -2616.0,
                     "timetree_num_date_confidence": [
-                      -2918.0,
-                      -2666.0
+                      -2724.0,
+                      -2548.0
                     ]
                   }
                 },
@@ -821,9 +841,9 @@
                         "province_conf_category": "HIGH",
                         "root_rtt_dist": 3.2666499999999996e-05,
                         "strain": "NA",
-                        "timetree_num_date": -2595.0,
+                        "timetree_num_date": -2520.0,
                         "timetree_num_date_confidence": [
-                          -2679.0,
+                          -2588.0,
                           -2495.0
                         ]
                       }
@@ -890,10 +910,10 @@
                           },
                           "num_date": {
                             "confidence": [
-                              -2635.0,
+                              -2578.0,
                               -2495.0
                             ],
-                            "value": -2534.0
+                            "value": -2495.0
                           },
                           "province": {
                             "confidence": {
@@ -974,9 +994,9 @@
                           "num_date": {
                             "confidence": [
                               -2569.0,
-                              -2467.0
+                              -2488.0
                             ],
-                            "value": -2569.0
+                            "value": -2518.0
                           },
                           "province": {
                             "confidence": {
@@ -1037,10 +1057,10 @@
                       },
                       "num_date": {
                         "confidence": [
-                          -2679.0,
+                          -2588.0,
                           -2495.0
                         ],
-                        "value": -2595.0
+                        "value": -2520.0
                       },
                       "province": {
                         "confidence": {
@@ -1084,10 +1104,10 @@
                         "province_conf_category": "HIGH",
                         "root_rtt_dist": 4.20002e-05,
                         "strain": "NA",
-                        "timetree_num_date": -2664.0,
+                        "timetree_num_date": -2518.0,
                         "timetree_num_date_confidence": [
-                          -2825.0,
-                          -2497.0
+                          -2658.0,
+                          -2428.0
                         ]
                       }
                     },
@@ -1156,7 +1176,7 @@
                               -2396.0,
                               -2148.0
                             ],
-                            "value": -2162.0
+                            "value": -2208.0
                           },
                           "province": {
                             "confidence": {
@@ -1203,10 +1223,10 @@
                             "province_conf_category": "HIGH",
                             "root_rtt_dist": 5.98717e-05,
                             "strain": "NA",
-                            "timetree_num_date": -2289.0,
+                            "timetree_num_date": -2356.0,
                             "timetree_num_date_confidence": [
-                              -2455.0,
-                              -2094.0
+                              -2493.0,
+                              -2239.0
                             ]
                           }
                         },
@@ -1419,10 +1439,10 @@
                           },
                           "num_date": {
                             "confidence": [
-                              -2455.0,
-                              -2094.0
+                              -2493.0,
+                              -2239.0
                             ],
-                            "value": -2289.0
+                            "value": -2356.0
                           },
                           "province": {
                             "confidence": {
@@ -1480,10 +1500,10 @@
                       },
                       "num_date": {
                         "confidence": [
-                          -2825.0,
-                          -2497.0
+                          -2658.0,
+                          -2428.0
                         ],
-                        "value": -2664.0
+                        "value": -2518.0
                       },
                       "province": {
                         "confidence": {
@@ -1541,10 +1561,10 @@
                   },
                   "num_date": {
                     "confidence": [
-                      -2918.0,
-                      -2666.0
+                      -2724.0,
+                      -2548.0
                     ],
-                    "value": -2818.0
+                    "value": -2616.0
                   },
                   "province": {
                     "confidence": {
@@ -1602,10 +1622,10 @@
               },
               "num_date": {
                 "confidence": [
-                  -2918.0,
-                  -2666.0
+                  -2724.0,
+                  -2548.0
                 ],
-                "value": -2818.0
+                "value": -2616.0
               },
               "province": {
                 "confidence": {
@@ -1663,10 +1683,10 @@
           },
           "num_date": {
             "confidence": [
-              -3412.0,
-              -2974.0
+              -2875.0,
+              -2692.0
             ],
-            "value": -3204.0
+            "value": -2767.0
           },
           "province": {
             "confidence": {
@@ -1724,10 +1744,10 @@
       },
       "num_date": {
         "confidence": [
-          -4308.0,
-          -3533.0
+          -3003.0,
+          -2892.0
         ],
-        "value": -3910.0
+        "value": -3003.0
       },
       "province": {
         "confidence": {

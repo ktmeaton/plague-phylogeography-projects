@@ -3,19 +3,19 @@ LEAST-SQUARE METHODS TO ESTIMATE RATES AND DATES - v.1.9.9
 
 
 Input files:
-  i                                               Input tree file : /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/prune/filter5/iqtree.treefile
-  d                                               Input date file : /2/scratch/keaton/plague-phylogeography/results/lsd/all/chromosome/prune/filter5/lsd.dates.txt
+  i                                               Input tree file : /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/iqtree/all/chromosome/prune/filter5/iqtree.treefile
+  d                                               Input date file : /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/prune/filter5/lsd.dates.txt
   p                                                Partition file : No
-  g                                       File contains outgroups : /2/scratch/keaton/plague-phylogeography/results/lsd/all/chromosome/prune/filter5/lsd.outgroups.txt
+  g                                       File contains outgroups : /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/prune/filter5/lsd.outgroups.txt
   G                       Remove outgroups in the estimating tree : Yes
 Output file:
-  o                                                  Output file  : /2/scratch/keaton/plague-phylogeography/results/lsd/all/chromosome/prune/filter5/lsd
+  o                                                  Output file  : /mnt/c/Users/ktmea/Projects/plague-phylogeography/results/lsd/all/chromosome/prune/filter5/lsd
 Parameters:
   a                                                     Root date : No
   z                                                     Tips date : No
   c                                              With constraints : Yes
   t                                      Lower bound for the rate : 1e-10
-  v                                                With variances : Yes, use variances based on input branch lengths
+  v                                                With variances : Yes, use variances based on estimated branch lengths
   b                              Adjusted parameter for variances : To estimate
   r                                             Estimate the root : On the branch given by the outgroups
   w                                       Given substitution rate : No
@@ -35,15 +35,14 @@ Parameters:
 Tree 1 
 Parameter to adjust variances was set to 2.37031e-06 (settable via option -b)
 Minimum branch length of time scaled tree (settable via option -u and -U): 0
-*WARNINGS:
-- The nodes Reference have more than one temporal constraint.
-- There's conflict in the input temporal constraints.
 *RESULTS:
 - Dating results:
- rate 7.87474e-09, tMRCA -6461.51 , objective function 0.000349956
+ rate 8.57131e-09, tMRCA -5745.45 , objective function 0.000365021
+- Results of the second run with variances based on results of the first run:
+ rate 1.35666e-08, tMRCA -5128.08, objective function 0.00120774
 - Results with confidence intervals:
- rate 7.87474e-09 [7.03411e-09; 8.83516e-09], tMRCA -6461.51 [-6996.87; -5961.32], objective function 0.000349956
+ rate 1.35666e-08 [1.27014e-08; 1.48121e-08], tMRCA -5128.08 [-5228.77; -5000.56], objective function 0.00120774
 
 *********************************************************
 
-TOTAL ELAPSED TIME: 0.42 seconds
+TOTAL ELAPSED TIME: 0.527435 seconds
