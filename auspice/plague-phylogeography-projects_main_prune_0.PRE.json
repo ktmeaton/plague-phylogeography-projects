@@ -13,6 +13,16 @@
         "type": "categorical"
       },
       {
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
         "key": "branch_major",
         "scale": [
           [
@@ -152,6 +162,11 @@
         "type": "categorical"
       },
       {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
         "key": "date_bp_mean",
         "title": "Collection Date (BP)",
         "type": "continuous"
@@ -213,6 +228,11 @@
         "type": "categorical"
       },
       {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
         "key": "province_lat",
         "title": "Province Latitude",
         "type": "continuous"
@@ -243,44 +263,39 @@
         "type": "continuous"
       },
       {
+        "key": "rate_sub",
+        "title": "Substitution Rate",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
+        "type": "continuous"
+      },
+      {
         "key": "strain",
         "title": "Strain",
         "type": "categorical"
       },
       {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#8000ff"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#8000ff"
-          ]
-        ],
-        "title": "Branch Minor Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
         "type": "continuous"
+      },
+      {
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
       },
       {
         "key": "branch_support",
@@ -288,69 +303,28 @@
         "type": "continuous"
       },
       {
-        "key": "branch_major",
-        "scale": [
-          [
-            "0.PRE",
-            "#8000ff"
-          ]
-        ],
-        "title": "Branch Major",
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#8000ff"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date",
+        "key": "rate_sub",
+        "title": "Substitution Rate",
         "type": "continuous"
       },
       {
-        "key": "branch_major_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#8000ff"
-          ]
-        ],
-        "title": "Branch Major Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
+        "type": "continuous"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
         "type": "continuous"
       },
       {
@@ -385,23 +359,68 @@
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "province_lon",
+        "title": "Province Longitude",
         "type": "continuous"
       },
       {
-        "key": "node_type",
+        "key": "branch_major_conf_category",
         "scale": [
           [
-            "internal",
+            "LOW",
             "#FFFFFF"
           ],
           [
-            "terminal",
+            "HIGH",
             "#8000ff"
           ]
         ],
-        "title": "Node Type",
+        "title": "Branch Major Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "0.PRE2",
+            "#8000ff"
+          ],
+          [
+            "0.PRE1",
+            "#7018ff"
+          ]
+        ],
+        "title": "Branch Minor",
         "type": "categorical"
       },
       {
@@ -428,7 +447,12 @@
         "type": "categorical"
       },
       {
-        "key": "country_conf_category",
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_minor_conf_category",
         "scale": [
           [
             "LOW",
@@ -439,8 +463,53 @@
             "#8000ff"
           ]
         ],
-        "title": "Country Confidence",
+        "title": "Branch Minor Confidence",
         "type": "categorical"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#8000ff"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
       },
       {
         "key": "biosample_accession",
@@ -448,44 +517,45 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_minor",
+        "key": "country_conf_category",
         "scale": [
           [
-            "0.PRE2",
-            "#8000ff"
+            "LOW",
+            "#FFFFFF"
           ],
           [
-            "0.PRE1",
-            "#7018ff"
+            "HIGH",
+            "#8000ff"
           ]
         ],
-        "title": "Branch Minor",
+        "title": "Country Confidence",
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "0.PRE",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Major",
         "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
       }
     ],
     "display_defaults": {
@@ -569,13 +639,15 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-01"
+    "updated": "2021-05-03"
   },
   "tree": {
     "branch_attrs": {
       "labels": {
         "Biosample Accession": "NA",
-        "Branch Length": 1.21246e-05,
+        "Branch Length": 1.33431e-05,
+        "Branch Length Sub": 56,
+        "Branch Length Time": 237,
         "Branch Major": "0.PRE",
         "Branch Major Conf Category": "HIGH",
         "Branch Major Confidence": 1.0,
@@ -585,33 +657,38 @@
         "Branch Number": "NA",
         "Branch Support": 100.0,
         "Branch Support Conf Category": "HIGH",
-        "Clade Rtt Dist": 1.5590200000000002e-05,
+        "Clade Rtt Dist": 1.68172e-05,
         "Continent": "NA",
         "Country": "Russia",
-        "Country Conf Category": "LOW",
-        "Country Confidence": 0.94,
+        "Country Conf Category": "HIGH",
+        "Country Confidence": 0.99,
+        "Country Date Strain": "NA",
         "Country Lat": 64.6863136,
-        "Country Lat Confidence": 0.93845714420342,
+        "Country Lat Confidence": 0.9863886364757968,
         "Country Lon": 97.7453061,
-        "Country Lon Confidence": 0.93845714420342,
+        "Country Lon Confidence": 0.9863886364757968,
         "Date Bp Mean": "NA",
         "Date Err": "NA",
         "Date Mean": "NA",
         "Geometry Size": 1.0,
         "Node Type": "internal",
-        "Num Date": -2777.0,
+        "Num Date": -2767.0,
         "Num Date Confidence": [
-          -2896.0,
-          -2661.0
+          -2875.0,
+          -2692.0
         ],
         "Province": "Panevezys County",
         "Province Conf Category": "LOW",
-        "Province Confidence": 0.4,
+        "Province Confidence": 0.46,
+        "Province Date Strain": "NA",
         "Province Lat": 55.9156048,
-        "Province Lat Confidence": 0.4032642955961063,
+        "Province Lat Confidence": 0.4627656232842057,
         "Province Lon": 25.03115989218585,
-        "Province Lon Confidence": 0.4032642955961063,
-        "Root Rtt Dist": 1.5590200000000002e-05,
+        "Province Lon Confidence": 0.4627656232842057,
+        "Rate Geo Sub": 69.28823249766799,
+        "Rate Geo Time": 16.50478653213878,
+        "Rate Sub": 0.23820475623612247,
+        "Root Rtt Dist": 1.68172e-05,
         "Strain": "NA"
       }
     },
@@ -622,6 +699,12 @@
         "node_attrs": {
           "biosample_accession": {
             "value": "SAMEA3541827"
+          },
+          "branch_length_sub": {
+            "value": 23
+          },
+          "branch_length_time": {
+            "value": 327
           },
           "branch_major": {
             "confidence": {
@@ -651,7 +734,7 @@
             "value": "HIGH"
           },
           "clade_rtt_dist": {
-            "value": 9.0221e-06
+            "value": 8.9963e-06
           },
           "continent": {
             "value": "Europe"
@@ -664,6 +747,9 @@
           },
           "country_conf_category": {
             "value": "HIGH"
+          },
+          "country_date_strain": {
+            "value": "Russia -2876:-2677 RISE509"
           },
           "country_lat": {
             "confidence": {
@@ -686,7 +772,7 @@
           "date_mean": {
             "value": -2776.5
           },
-          "div": 5.5565e-06,
+          "div": 5.5222e-06,
           "node_type": {
             "value": "terminal"
           },
@@ -706,6 +792,9 @@
           "province_conf_category": {
             "value": "HIGH"
           },
+          "province_date_strain": {
+            "value": "Russia -2876:-2677 RISE509"
+          },
           "province_lat": {
             "confidence": {
               "63.3233807": 1.0
@@ -718,8 +807,17 @@
             },
             "value": 97.0979974
           },
+          "rate_geo_sub": {
+            "value": 0.0
+          },
+          "rate_geo_time": {
+            "value": 0.0
+          },
+          "rate_sub": {
+            "value": 0.07142856043064032
+          },
           "root_rtt_dist": {
-            "value": 9.0221e-06
+            "value": 8.9963e-06
           },
           "strain": {
             "value": "RISE509"
@@ -730,7 +828,9 @@
         "branch_attrs": {
           "labels": {
             "Biosample Accession": "NA",
-            "Branch Length": 1.21246e-05,
+            "Branch Length": 1.33431e-05,
+            "Branch Length Sub": 56,
+            "Branch Length Time": 237,
             "Branch Major": "0.PRE",
             "Branch Major Conf Category": "HIGH",
             "Branch Major Confidence": 1.0,
@@ -740,33 +840,38 @@
             "Branch Number": "NA",
             "Branch Support": 100.0,
             "Branch Support Conf Category": "HIGH",
-            "Clade Rtt Dist": 1.5590200000000002e-05,
+            "Clade Rtt Dist": 1.68172e-05,
             "Continent": "NA",
             "Country": "Russia",
-            "Country Conf Category": "LOW",
-            "Country Confidence": 0.94,
+            "Country Conf Category": "HIGH",
+            "Country Confidence": 0.99,
+            "Country Date Strain": "NA",
             "Country Lat": 64.6863136,
-            "Country Lat Confidence": 0.93845714420342,
+            "Country Lat Confidence": 0.9863886364757968,
             "Country Lon": 97.7453061,
-            "Country Lon Confidence": 0.93845714420342,
+            "Country Lon Confidence": 0.9863886364757968,
             "Date Bp Mean": "NA",
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 1.0,
             "Node Type": "internal",
-            "Num Date": -2777.0,
+            "Num Date": -2767.0,
             "Num Date Confidence": [
-              -2896.0,
-              -2661.0
+              -2875.0,
+              -2692.0
             ],
             "Province": "Panevezys County",
             "Province Conf Category": "LOW",
-            "Province Confidence": 0.4,
+            "Province Confidence": 0.46,
+            "Province Date Strain": "NA",
             "Province Lat": 55.9156048,
-            "Province Lat Confidence": 0.4032642955961063,
+            "Province Lat Confidence": 0.4627656232842057,
             "Province Lon": 25.03115989218585,
-            "Province Lon Confidence": 0.4032642955961063,
-            "Root Rtt Dist": 1.5590200000000002e-05,
+            "Province Lon Confidence": 0.4627656232842057,
+            "Rate Geo Sub": 69.28823249766799,
+            "Rate Geo Time": 16.50478653213878,
+            "Rate Sub": 0.23820475623612247,
+            "Root Rtt Dist": 1.68172e-05,
             "Strain": "NA"
           }
         },
@@ -777,6 +882,12 @@
             "node_attrs": {
               "biosample_accession": {
                 "value": "SAMEA104233046"
+              },
+              "branch_length_sub": {
+                "value": 17
+              },
+              "branch_length_time": {
+                "value": 281
               },
               "branch_major": {
                 "confidence": {
@@ -806,7 +917,7 @@
                 "value": "HIGH"
               },
               "clade_rtt_dist": {
-                "value": 1.9516e-05
+                "value": 2.08194e-05
               },
               "continent": {
                 "value": "Europe"
@@ -819,6 +930,9 @@
               },
               "country_conf_category": {
                 "value": "HIGH"
+              },
+              "country_date_strain": {
+                "value": "Lithuania -2621:-2472 Gyvakarai1"
               },
               "country_lat": {
                 "confidence": {
@@ -841,7 +955,7 @@
               "date_mean": {
                 "value": -2546.5
               },
-              "div": 1.60504e-05,
+              "div": 1.7345299999999998e-05,
               "node_type": {
                 "value": "terminal"
               },
@@ -850,7 +964,7 @@
                   -2621.0,
                   -2472.0
                 ],
-                "value": -2488.0
+                "value": -2485.0
               },
               "province": {
                 "confidence": {
@@ -860,6 +974,9 @@
               },
               "province_conf_category": {
                 "value": "HIGH"
+              },
+              "province_date_strain": {
+                "value": "Lithuania -2621:-2472 Gyvakarai1"
               },
               "province_lat": {
                 "confidence": {
@@ -873,8 +990,17 @@
                 },
                 "value": 25.03115989218585
               },
+              "rate_geo_sub": {
+                "value": 0.0
+              },
+              "rate_geo_time": {
+                "value": 0.0
+              },
+              "rate_sub": {
+                "value": 0.060130651393694806
+              },
               "root_rtt_dist": {
-                "value": 1.9516e-05
+                "value": 2.08194e-05
               },
               "strain": {
                 "value": "Gyvakarai1"
@@ -885,7 +1011,9 @@
             "branch_attrs": {
               "labels": {
                 "Biosample Accession": "NA",
-                "Branch Length": 1.30406e-05,
+                "Branch Length": 1.33104e-05,
+                "Branch Length Sub": 56,
+                "Branch Length Time": 150,
                 "Branch Major": "0.PRE",
                 "Branch Major Conf Category": "HIGH",
                 "Branch Major Confidence": 1.0,
@@ -895,33 +1023,38 @@
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
-                "Clade Rtt Dist": 2.8630800000000004e-05,
+                "Clade Rtt Dist": 3.01276e-05,
                 "Continent": "NA",
                 "Country": "Russia",
-                "Country Conf Category": "LOW",
-                "Country Confidence": 0.94,
+                "Country Conf Category": "HIGH",
+                "Country Confidence": 0.99,
+                "Country Date Strain": "NA",
                 "Country Lat": 64.6863136,
-                "Country Lat Confidence": 0.9373011368561616,
+                "Country Lat Confidence": 0.9856170535320502,
                 "Country Lon": 97.7453061,
-                "Country Lon Confidence": 0.9373011368561616,
+                "Country Lon Confidence": 0.9856170535320502,
                 "Date Bp Mean": "NA",
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 1.0,
                 "Node Type": "internal",
-                "Num Date": -2635.0,
+                "Num Date": -2616.0,
                 "Num Date Confidence": [
-                  -2742.0,
-                  -2545.0
+                  -2724.0,
+                  -2548.0
                 ],
                 "Province": "P\u00e4rnu maakond",
                 "Province Conf Category": "LOW",
-                "Province Confidence": 0.39,
+                "Province Confidence": 0.45,
+                "Province Date Strain": "NA",
                 "Province Lat": 58.31950685,
-                "Province Lat Confidence": 0.3893050212873661,
+                "Province Lat Confidence": 0.4480406205139925,
                 "Province Lon": 24.30261214859043,
-                "Province Lon Confidence": 0.3893050212873661,
-                "Root Rtt Dist": 2.8630800000000004e-05,
+                "Province Lon Confidence": 0.4480406205139925,
+                "Rate Geo Sub": 4.812352227083899,
+                "Rate Geo Time": 1.803974667258769,
+                "Rate Sub": 0.37486338948882564,
+                "Root Rtt Dist": 3.01276e-05,
                 "Strain": "NA"
               }
             },
@@ -932,6 +1065,12 @@
                 "node_attrs": {
                   "biosample_accession": {
                     "value": "SAMEA104233047"
+                  },
+                  "branch_length_sub": {
+                    "value": 12
+                  },
+                  "branch_length_time": {
+                    "value": 196
                   },
                   "branch_major": {
                     "confidence": {
@@ -961,7 +1100,7 @@
                     "value": "HIGH"
                   },
                   "clade_rtt_dist": {
-                    "value": 3.1382400000000006e-05
+                    "value": 3.29161e-05
                   },
                   "continent": {
                     "value": "Europe"
@@ -974,6 +1113,9 @@
                   },
                   "country_conf_category": {
                     "value": "HIGH"
+                  },
+                  "country_date_strain": {
+                    "value": "Estonia -2574:-2340 KunilaII"
                   },
                   "country_lat": {
                     "confidence": {
@@ -996,7 +1138,7 @@
                   "date_mean": {
                     "value": -2457.0
                   },
-                  "div": 2.79168e-05,
+                  "div": 2.9441999999999997e-05,
                   "node_type": {
                     "value": "terminal"
                   },
@@ -1005,7 +1147,7 @@
                       -2574.0,
                       -2340.0
                     ],
-                    "value": -2432.0
+                    "value": -2420.0
                   },
                   "province": {
                     "confidence": {
@@ -1015,6 +1157,9 @@
                   },
                   "province_conf_category": {
                     "value": "HIGH"
+                  },
+                  "province_date_strain": {
+                    "value": "Estonia -2574:-2340 KunilaII"
                   },
                   "province_lat": {
                     "confidence": {
@@ -1028,8 +1173,17 @@
                     },
                     "value": 24.30261214859043
                   },
+                  "rate_geo_sub": {
+                    "value": 0.0
+                  },
+                  "rate_geo_time": {
+                    "value": 0.0
+                  },
+                  "rate_sub": {
+                    "value": 0.060130428526266946
+                  },
                   "root_rtt_dist": {
-                    "value": 3.1382400000000006e-05
+                    "value": 3.29161e-05
                   },
                   "strain": {
                     "value": "KunilaII"
@@ -1040,7 +1194,9 @@
                 "branch_attrs": {
                   "labels": {
                     "Biosample Accession": "NA",
-                    "Branch Length": 9.03e-07,
+                    "Branch Length": 9.235e-07,
+                    "Branch Length Sub": 4,
+                    "Branch Length Time": 0,
                     "Branch Major": "0.PRE",
                     "Branch Major Conf Category": "HIGH",
                     "Branch Major Confidence": 1.0,
@@ -1048,35 +1204,40 @@
                     "Branch Minor Conf Category": "HIGH",
                     "Branch Minor Confidence": 1.0,
                     "Branch Number": "NA",
-                    "Branch Support": 99.0,
+                    "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
-                    "Clade Rtt Dist": 2.9533800000000005e-05,
+                    "Clade Rtt Dist": 3.10511e-05,
                     "Continent": "NA",
                     "Country": "Russia",
                     "Country Conf Category": "HIGH",
-                    "Country Confidence": 0.96,
+                    "Country Confidence": 0.99,
+                    "Country Date Strain": "NA",
                     "Country Lat": 64.6863136,
-                    "Country Lat Confidence": 0.9638754146066564,
+                    "Country Lat Confidence": 0.9922328431684168,
                     "Country Lon": 97.7453061,
-                    "Country Lon Confidence": 0.9638754146066564,
+                    "Country Lon Confidence": 0.9922328431684168,
                     "Date Bp Mean": "NA",
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 2.0,
                     "Node Type": "internal",
-                    "Num Date": -2635.0,
+                    "Num Date": -2616.0,
                     "Num Date Confidence": [
-                      -2742.0,
-                      -2545.0
+                      -2724.0,
+                      -2548.0
                     ],
                     "Province": "Irkutsk Oblast",
                     "Province Conf Category": "LOW",
-                    "Province Confidence": 0.34,
+                    "Province Confidence": 0.38,
+                    "Province Date Strain": "NA",
                     "Province Lat": 56.6370122,
-                    "Province Lat Confidence": 0.34076144850841955,
+                    "Province Lat Confidence": 0.3828050610978179,
                     "Province Lon": 104.719221,
-                    "Province Lon Confidence": 0.34076144850841955,
-                    "Root Rtt Dist": 2.9533800000000005e-05,
+                    "Province Lon Confidence": 0.3828050610978179,
+                    "Rate Geo Sub": 1157.0158755480713,
+                    "Rate Geo Time": 0.0,
+                    "Rate Sub": 0.0,
+                    "Root Rtt Dist": 3.10511e-05,
                     "Strain": "NA"
                   }
                 },
@@ -1085,7 +1246,9 @@
                     "branch_attrs": {
                       "labels": {
                         "Biosample Accession": "NA",
-                        "Branch Length": 1.4155e-06,
+                        "Branch Length": 1.6154e-06,
+                        "Branch Length Sub": 7,
+                        "Branch Length Time": 97,
                         "Branch Major": "0.PRE",
                         "Branch Major Conf Category": "HIGH",
                         "Branch Major Confidence": 1.0,
@@ -1095,33 +1258,38 @@
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
-                        "Clade Rtt Dist": 3.0949300000000005e-05,
+                        "Clade Rtt Dist": 3.2666499999999996e-05,
                         "Continent": "NA",
                         "Country": "Russia",
                         "Country Conf Category": "HIGH",
                         "Country Confidence": 1.0,
+                        "Country Date Strain": "NA",
                         "Country Lat": 64.6863136,
-                        "Country Lat Confidence": 0.999567008125014,
+                        "Country Lat Confidence": 0.9999746605891918,
                         "Country Lon": 97.7453061,
-                        "Country Lon Confidence": 0.999567008125014,
+                        "Country Lon Confidence": 0.9999746605891918,
                         "Date Bp Mean": "NA",
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 2.0,
                         "Node Type": "internal",
-                        "Num Date": -2531.0,
+                        "Num Date": -2520.0,
                         "Num Date Confidence": [
-                          -2601.0,
+                          -2588.0,
                           -2495.0
                         ],
                         "Province": "Irkutsk Oblast",
                         "Province Conf Category": "HIGH",
-                        "Province Confidence": 0.99,
+                        "Province Confidence": 1.0,
+                        "Province Date Strain": "NA",
                         "Province Lat": 56.6370122,
-                        "Province Lat Confidence": 0.991227826447546,
+                        "Province Lat Confidence": 0.9986086016129464,
                         "Province Lon": 104.719221,
-                        "Province Lon Confidence": 0.991227826447546,
-                        "Root Rtt Dist": 3.0949300000000005e-05,
+                        "Province Lon Confidence": 0.9986086016129464,
+                        "Rate Geo Sub": 0.0,
+                        "Rate Geo Time": 0.0,
+                        "Rate Sub": 0.07063494677527084,
+                        "Root Rtt Dist": 3.2666499999999996e-05,
                         "Strain": "NA"
                       }
                     },
@@ -1132,6 +1300,12 @@
                         "node_attrs": {
                           "biosample_accession": {
                             "value": "SAMEA6812876"
+                          },
+                          "branch_length_sub": {
+                            "value": 2
+                          },
+                          "branch_length_time": {
+                            "value": 25
                           },
                           "branch_major": {
                             "confidence": {
@@ -1161,7 +1335,7 @@
                             "value": "HIGH"
                           },
                           "clade_rtt_dist": {
-                            "value": 3.14211e-05
+                            "value": 3.31995e-05
                           },
                           "continent": {
                             "value": "Europe"
@@ -1174,6 +1348,9 @@
                           },
                           "country_conf_category": {
                             "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Russia -2838:-2495 GLZ001"
                           },
                           "country_lat": {
                             "confidence": {
@@ -1196,16 +1373,16 @@
                           "date_mean": {
                             "value": -2666.5
                           },
-                          "div": 2.7955500000000004e-05,
+                          "div": 2.97254e-05,
                           "node_type": {
                             "value": "terminal"
                           },
                           "num_date": {
                             "confidence": [
-                              -2579.0,
+                              -2578.0,
                               -2495.0
                             ],
-                            "value": -2496.0
+                            "value": -2495.0
                           },
                           "province": {
                             "confidence": {
@@ -1215,6 +1392,9 @@
                           },
                           "province_conf_category": {
                             "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Russia -2838:-2495 GLZ001"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1228,8 +1408,17 @@
                             },
                             "value": 104.719221
                           },
+                          "rate_geo_sub": {
+                            "value": 0.0
+                          },
+                          "rate_geo_time": {
+                            "value": 0.0
+                          },
+                          "rate_sub": {
+                            "value": 0.0895219597766428
+                          },
                           "root_rtt_dist": {
-                            "value": 3.14211e-05
+                            "value": 3.31995e-05
                           },
                           "strain": {
                             "value": "GLZ001"
@@ -1242,6 +1431,12 @@
                         "node_attrs": {
                           "biosample_accession": {
                             "value": "SAMEA6812877"
+                          },
+                          "branch_length_sub": {
+                            "value": 0
+                          },
+                          "branch_length_time": {
+                            "value": 2
                           },
                           "branch_major": {
                             "confidence": {
@@ -1271,7 +1466,7 @@
                             "value": "HIGH"
                           },
                           "clade_rtt_dist": {
-                            "value": 3.09729e-05
+                            "value": 3.2690099999999994e-05
                           },
                           "continent": {
                             "value": "Europe"
@@ -1284,6 +1479,9 @@
                           },
                           "country_conf_category": {
                             "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Russia -2569:-2467 GLZ002"
                           },
                           "country_lat": {
                             "confidence": {
@@ -1306,16 +1504,16 @@
                           "date_mean": {
                             "value": -2518.0
                           },
-                          "div": 2.7507300000000003e-05,
+                          "div": 2.9216e-05,
                           "node_type": {
                             "value": "terminal"
                           },
                           "num_date": {
                             "confidence": [
                               -2569.0,
-                              -2490.0
+                              -2488.0
                             ],
-                            "value": -2529.0
+                            "value": -2518.0
                           },
                           "province": {
                             "confidence": {
@@ -1325,6 +1523,9 @@
                           },
                           "province_conf_category": {
                             "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Russia -2569:-2467 GLZ002"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1338,8 +1539,17 @@
                             },
                             "value": 104.719221
                           },
+                          "rate_geo_sub": {
+                            "value": 0.0
+                          },
+                          "rate_geo_time": {
+                            "value": 0.0
+                          },
+                          "rate_sub": {
+                            "value": 0.06013068374472085
+                          },
                           "root_rtt_dist": {
-                            "value": 3.09729e-05
+                            "value": 3.2690099999999994e-05
                           },
                           "strain": {
                             "value": "GLZ002"
@@ -1349,6 +1559,12 @@
                     ],
                     "name": "NODE5",
                     "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 7
+                      },
+                      "branch_length_time": {
+                        "value": 97
+                      },
                       "branch_major": {
                         "confidence": {
                           "0.PRE": 1.0
@@ -1374,7 +1590,7 @@
                         "value": "HIGH"
                       },
                       "clade_rtt_dist": {
-                        "value": 3.0949300000000005e-05
+                        "value": 3.2666499999999996e-05
                       },
                       "country": {
                         "confidence": {
@@ -1387,30 +1603,30 @@
                       },
                       "country_lat": {
                         "confidence": {
-                          "64.6863136": 0.999567008125014
+                          "64.6863136": 0.9999746605891918
                         },
                         "value": 64.6863136
                       },
                       "country_lon": {
                         "confidence": {
-                          "97.7453061": 0.999567008125014
+                          "97.7453061": 0.9999746605891918
                         },
                         "value": 97.7453061
                       },
-                      "div": 2.7483700000000003e-05,
+                      "div": 2.91924e-05,
                       "node_type": {
                         "value": "internal"
                       },
                       "num_date": {
                         "confidence": [
-                          -2601.0,
+                          -2588.0,
                           -2495.0
                         ],
-                        "value": -2531.0
+                        "value": -2520.0
                       },
                       "province": {
                         "confidence": {
-                          "Irkutsk Oblast": 0.99
+                          "Irkutsk Oblast": 1.0
                         },
                         "value": "Irkutsk Oblast"
                       },
@@ -1419,18 +1635,27 @@
                       },
                       "province_lat": {
                         "confidence": {
-                          "56.6370122": 0.991227826447546
+                          "56.6370122": 0.9986086016129464
                         },
                         "value": 56.6370122
                       },
                       "province_lon": {
                         "confidence": {
-                          "104.719221": 0.991227826447546
+                          "104.719221": 0.9986086016129464
                         },
                         "value": 104.719221
                       },
+                      "rate_geo_sub": {
+                        "value": 0.0
+                      },
+                      "rate_geo_time": {
+                        "value": 0.0
+                      },
+                      "rate_sub": {
+                        "value": 0.07063494677527084
+                      },
                       "root_rtt_dist": {
-                        "value": 3.0949300000000005e-05
+                        "value": 3.2666499999999996e-05
                       }
                     }
                   },
@@ -1438,7 +1663,9 @@
                     "branch_attrs": {
                       "labels": {
                         "Biosample Accession": "NA",
-                        "Branch Length": 1.07358e-05,
+                        "Branch Length": 1.09491e-05,
+                        "Branch Length Sub": 46,
+                        "Branch Length Time": 98,
                         "Branch Major": "0.PRE",
                         "Branch Major Conf Category": "HIGH",
                         "Branch Major Confidence": 1.0,
@@ -1448,33 +1675,38 @@
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
-                        "Clade Rtt Dist": 4.0269600000000005e-05,
+                        "Clade Rtt Dist": 4.20002e-05,
                         "Continent": "NA",
                         "Country": "Russia",
                         "Country Conf Category": "LOW",
-                        "Country Confidence": 0.55,
+                        "Country Confidence": 0.59,
+                        "Country Date Strain": "NA",
                         "Country Lat": 64.6863136,
-                        "Country Lat Confidence": 0.5459809447097186,
+                        "Country Lat Confidence": 0.5949598086158245,
                         "Country Lon": 97.7453061,
-                        "Country Lon Confidence": 0.5459809447097186,
+                        "Country Lon Confidence": 0.5949598086158245,
                         "Date Bp Mean": "NA",
                         "Date Err": "NA",
                         "Date Mean": "NA",
-                        "Geometry Size": 6.0,
+                        "Geometry Size": 11.0,
                         "Node Type": "internal",
-                        "Num Date": -2542.0,
+                        "Num Date": -2518.0,
                         "Num Date Confidence": [
-                          -2692.0,
-                          -2446.0
+                          -2658.0,
+                          -2428.0
                         ],
                         "Province": "Bavaria",
                         "Province Conf Category": "HIGH",
-                        "Province Confidence": 0.96,
+                        "Province Confidence": 0.99,
+                        "Province Date Strain": "NA",
                         "Province Lat": 48.9467562,
-                        "Province Lat Confidence": 0.9626461163195904,
+                        "Province Lat Confidence": 0.9944982521388296,
                         "Province Lon": 11.4038717,
-                        "Province Lon Confidence": 0.9626461163195904,
-                        "Root Rtt Dist": 4.0269600000000005e-05,
+                        "Province Lon Confidence": 0.9944982521388296,
+                        "Rate Geo Sub": 126.04123823795514,
+                        "Rate Geo Time": 59.50973873567094,
+                        "Rate Sub": 0.4721449865743275,
+                        "Root Rtt Dist": 4.20002e-05,
                         "Strain": "NA"
                       }
                     },
@@ -1485,6 +1717,12 @@
                         "node_attrs": {
                           "biosample_accession": {
                             "value": "SAMEA104233049"
+                          },
+                          "branch_length_sub": {
+                            "value": 19
+                          },
+                          "branch_length_time": {
+                            "value": 311
                           },
                           "branch_major": {
                             "confidence": {
@@ -1514,7 +1752,7 @@
                             "value": "HIGH"
                           },
                           "clade_rtt_dist": {
-                            "value": 4.4130000000000006e-05
+                            "value": 4.6415199999999996e-05
                           },
                           "continent": {
                             "value": "Europe"
@@ -1527,6 +1765,9 @@
                           },
                           "country_conf_category": {
                             "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Germany -2396:-2148 1343UnTal85"
                           },
                           "country_lat": {
                             "confidence": {
@@ -1549,7 +1790,7 @@
                           "date_mean": {
                             "value": -2272.0
                           },
-                          "div": 4.06644e-05,
+                          "div": 4.2941099999999994e-05,
                           "node_type": {
                             "value": "terminal"
                           },
@@ -1558,7 +1799,7 @@
                               -2396.0,
                               -2148.0
                             ],
-                            "value": -2257.0
+                            "value": -2208.0
                           },
                           "province": {
                             "confidence": {
@@ -1568,6 +1809,9 @@
                           },
                           "province_conf_category": {
                             "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Germany -2396:-2148 1343UnTal85"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1581,8 +1825,17 @@
                             },
                             "value": 11.4038717
                           },
+                          "rate_geo_sub": {
+                            "value": 0.0
+                          },
+                          "rate_geo_time": {
+                            "value": 0.0
+                          },
+                          "rate_sub": {
+                            "value": 0.060130646409996304
+                          },
                           "root_rtt_dist": {
-                            "value": 4.4130000000000006e-05
+                            "value": 4.6415199999999996e-05
                           },
                           "strain": {
                             "value": "1343UnTal85"
@@ -1593,7 +1846,9 @@
                         "branch_attrs": {
                           "labels": {
                             "Biosample Accession": "NA",
-                            "Branch Length": 1.65054e-05,
+                            "Branch Length": 1.78715e-05,
+                            "Branch Length Sub": 76,
+                            "Branch Length Time": 162,
                             "Branch Major": "0.PRE",
                             "Branch Major Conf Category": "HIGH",
                             "Branch Major Confidence": 1.0,
@@ -1603,33 +1858,38 @@
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
-                            "Clade Rtt Dist": 5.6775000000000004e-05,
+                            "Clade Rtt Dist": 5.98717e-05,
                             "Continent": "NA",
                             "Country": "Russia",
                             "Country Conf Category": "LOW",
-                            "Country Confidence": 0.55,
+                            "Country Confidence": 0.6,
+                            "Country Date Strain": "NA",
                             "Country Lat": 64.6863136,
-                            "Country Lat Confidence": 0.5465751818827411,
+                            "Country Lat Confidence": 0.5950014551377982,
                             "Country Lon": 97.7453061,
-                            "Country Lon Confidence": 0.5465751818827411,
+                            "Country Lon Confidence": 0.5950014551377982,
                             "Date Bp Mean": "NA",
                             "Date Err": "NA",
                             "Date Mean": "NA",
-                            "Geometry Size": 6.0,
+                            "Geometry Size": 11.0,
                             "Node Type": "internal",
-                            "Num Date": -2353.0,
+                            "Num Date": -2356.0,
                             "Num Date Confidence": [
-                              -2533.0,
-                              -2240.0
+                              -2493.0,
+                              -2239.0
                             ],
                             "Province": "Bavaria",
                             "Province Conf Category": "HIGH",
-                            "Province Confidence": 0.96,
+                            "Province Confidence": 0.99,
+                            "Province Date Strain": "NA",
                             "Province Lat": 48.9467562,
-                            "Province Lat Confidence": 0.9574954348476354,
+                            "Province Lat Confidence": 0.993362735344288,
                             "Province Lon": 11.4038717,
-                            "Province Lon Confidence": 0.9574954348476354,
-                            "Root Rtt Dist": 5.6775000000000004e-05,
+                            "Province Lon Confidence": 0.993362735344288,
+                            "Rate Geo Sub": 0.0,
+                            "Rate Geo Time": 0.0,
+                            "Rate Sub": 0.465800509722111,
+                            "Root Rtt Dist": 5.98717e-05,
                             "Strain": "NA"
                           }
                         },
@@ -1640,6 +1900,12 @@
                             "node_attrs": {
                               "biosample_accession": {
                                 "value": "SAMEA104233048"
+                              },
+                              "branch_length_sub": {
+                                "value": 9
+                              },
+                              "branch_length_time": {
+                                "value": 350
                               },
                               "branch_major": {
                                 "confidence": {
@@ -1669,7 +1935,7 @@
                                 "value": "HIGH"
                               },
                               "clade_rtt_dist": {
-                                "value": 5.8898200000000005e-05
+                                "value": 6.19918e-05
                               },
                               "continent": {
                                 "value": "Europe"
@@ -1682,6 +1948,9 @@
                               },
                               "country_conf_category": {
                                 "value": "HIGH"
+                              },
+                              "country_date_strain": {
+                                "value": "Germany -2007:-1882 Post6"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -1704,7 +1973,7 @@
                               "date_mean": {
                                 "value": -1944.5
                               },
-                              "div": 5.54326e-05,
+                              "div": 5.85177e-05,
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -1724,6 +1993,9 @@
                               "province_conf_category": {
                                 "value": "HIGH"
                               },
+                              "province_date_strain": {
+                                "value": "Germany -2007:-1882 Post6"
+                              },
                               "province_lat": {
                                 "confidence": {
                                   "48.9467562": 1.0
@@ -1736,8 +2008,17 @@
                                 },
                                 "value": 11.4038717
                               },
+                              "rate_geo_sub": {
+                                "value": 0.0
+                              },
+                              "rate_geo_time": {
+                                "value": 0.0
+                              },
+                              "rate_sub": {
+                                "value": 0.025649337518916366
+                              },
                               "root_rtt_dist": {
-                                "value": 5.8898200000000005e-05
+                                "value": 6.19918e-05
                               },
                               "strain": {
                                 "value": "Post6"
@@ -1750,6 +2031,12 @@
                             "node_attrs": {
                               "biosample_accession": {
                                 "value": "SAMEA3541826"
+                              },
+                              "branch_length_sub": {
+                                "value": 164
+                              },
+                              "branch_length_time": {
+                                "value": 731
                               },
                               "branch_major": {
                                 "confidence": {
@@ -1779,7 +2066,7 @@
                                 "value": "HIGH"
                               },
                               "clade_rtt_dist": {
-                                "value": 9.3309e-05
+                                "value": 9.86688e-05
                               },
                               "continent": {
                                 "value": "Europe"
@@ -1792,6 +2079,9 @@
                               },
                               "country_conf_category": {
                                 "value": "HIGH"
+                              },
+                              "country_date_strain": {
+                                "value": "Russia -1746:-1626 RISE505"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -1814,7 +2104,7 @@
                               "date_mean": {
                                 "value": -1686.0
                               },
-                              "div": 8.98434e-05,
+                              "div": 9.519469999999999e-05,
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -1834,6 +2124,9 @@
                               "province_conf_category": {
                                 "value": "HIGH"
                               },
+                              "province_date_strain": {
+                                "value": "Russia -1746:-1626 RISE505"
+                              },
                               "province_lat": {
                                 "confidence": {
                                   "52.6932243": 1.0
@@ -1846,8 +2139,17 @@
                                 },
                                 "value": 82.69314240000001
                               },
+                              "rate_geo_sub": {
+                                "value": 29.35975148205946
+                              },
+                              "rate_geo_time": {
+                                "value": 6.5938722114129
+                              },
+                              "rate_sub": {
+                                "value": 0.22458882921547021
+                              },
                               "root_rtt_dist": {
-                                "value": 9.3309e-05
+                                "value": 9.86688e-05
                               },
                               "strain": {
                                 "value": "RISE505"
@@ -1857,6 +2159,12 @@
                         ],
                         "name": "NODE7",
                         "node_attrs": {
+                          "branch_length_sub": {
+                            "value": 76
+                          },
+                          "branch_length_time": {
+                            "value": 162
+                          },
                           "branch_major": {
                             "confidence": {
                               "0.PRE": 1.0
@@ -1882,11 +2190,11 @@
                             "value": "HIGH"
                           },
                           "clade_rtt_dist": {
-                            "value": 5.6775000000000004e-05
+                            "value": 5.98717e-05
                           },
                           "country": {
                             "confidence": {
-                              "Russia": 0.55
+                              "Russia": 0.6
                             },
                             "value": "Russia"
                           },
@@ -1895,30 +2203,30 @@
                           },
                           "country_lat": {
                             "confidence": {
-                              "64.6863136": 0.5465751818827411
+                              "64.6863136": 0.5950014551377982
                             },
                             "value": 64.6863136
                           },
                           "country_lon": {
                             "confidence": {
-                              "97.7453061": 0.5465751818827411
+                              "97.7453061": 0.5950014551377982
                             },
                             "value": 97.7453061
                           },
-                          "div": 5.33094e-05,
+                          "div": 5.63976e-05,
                           "node_type": {
                             "value": "internal"
                           },
                           "num_date": {
                             "confidence": [
-                              -2533.0,
-                              -2240.0
+                              -2493.0,
+                              -2239.0
                             ],
-                            "value": -2353.0
+                            "value": -2356.0
                           },
                           "province": {
                             "confidence": {
-                              "Bavaria": 0.96
+                              "Bavaria": 0.99
                             },
                             "value": "Bavaria"
                           },
@@ -1927,24 +2235,39 @@
                           },
                           "province_lat": {
                             "confidence": {
-                              "48.9467562": 0.9574954348476354
+                              "48.9467562": 0.993362735344288
                             },
                             "value": 48.9467562
                           },
                           "province_lon": {
                             "confidence": {
-                              "11.4038717": 0.9574954348476354
+                              "11.4038717": 0.993362735344288
                             },
                             "value": 11.4038717
                           },
+                          "rate_geo_sub": {
+                            "value": 0.0
+                          },
+                          "rate_geo_time": {
+                            "value": 0.0
+                          },
+                          "rate_sub": {
+                            "value": 0.465800509722111
+                          },
                           "root_rtt_dist": {
-                            "value": 5.6775000000000004e-05
+                            "value": 5.98717e-05
                           }
                         }
                       }
                     ],
                     "name": "NODE6",
                     "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 46
+                      },
+                      "branch_length_time": {
+                        "value": 98
+                      },
                       "branch_major": {
                         "confidence": {
                           "0.PRE": 1.0
@@ -1970,11 +2293,11 @@
                         "value": "HIGH"
                       },
                       "clade_rtt_dist": {
-                        "value": 4.0269600000000005e-05
+                        "value": 4.20002e-05
                       },
                       "country": {
                         "confidence": {
-                          "Russia": 0.55
+                          "Russia": 0.59
                         },
                         "value": "Russia"
                       },
@@ -1983,30 +2306,30 @@
                       },
                       "country_lat": {
                         "confidence": {
-                          "64.6863136": 0.5459809447097186
+                          "64.6863136": 0.5949598086158245
                         },
                         "value": 64.6863136
                       },
                       "country_lon": {
                         "confidence": {
-                          "97.7453061": 0.5459809447097186
+                          "97.7453061": 0.5949598086158245
                         },
                         "value": 97.7453061
                       },
-                      "div": 3.6804e-05,
+                      "div": 3.85261e-05,
                       "node_type": {
                         "value": "internal"
                       },
                       "num_date": {
                         "confidence": [
-                          -2692.0,
-                          -2446.0
+                          -2658.0,
+                          -2428.0
                         ],
-                        "value": -2542.0
+                        "value": -2518.0
                       },
                       "province": {
                         "confidence": {
-                          "Bavaria": 0.96
+                          "Bavaria": 0.99
                         },
                         "value": "Bavaria"
                       },
@@ -2015,24 +2338,39 @@
                       },
                       "province_lat": {
                         "confidence": {
-                          "48.9467562": 0.9626461163195904
+                          "48.9467562": 0.9944982521388296
                         },
                         "value": 48.9467562
                       },
                       "province_lon": {
                         "confidence": {
-                          "11.4038717": 0.9626461163195904
+                          "11.4038717": 0.9944982521388296
                         },
                         "value": 11.4038717
                       },
+                      "rate_geo_sub": {
+                        "value": 126.04123823795514
+                      },
+                      "rate_geo_time": {
+                        "value": 59.50973873567094
+                      },
+                      "rate_sub": {
+                        "value": 0.4721449865743275
+                      },
                       "root_rtt_dist": {
-                        "value": 4.0269600000000005e-05
+                        "value": 4.20002e-05
                       }
                     }
                   }
                 ],
                 "name": "NODE4",
                 "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 4
+                  },
+                  "branch_length_time": {
+                    "value": 0
+                  },
                   "branch_major": {
                     "confidence": {
                       "0.PRE": 1.0
@@ -2052,17 +2390,17 @@
                     "value": "HIGH"
                   },
                   "branch_support": {
-                    "value": 99.0
+                    "value": 100.0
                   },
                   "branch_support_conf_category": {
                     "value": "HIGH"
                   },
                   "clade_rtt_dist": {
-                    "value": 2.9533800000000005e-05
+                    "value": 3.10511e-05
                   },
                   "country": {
                     "confidence": {
-                      "Russia": 0.96
+                      "Russia": 0.99
                     },
                     "value": "Russia"
                   },
@@ -2071,30 +2409,30 @@
                   },
                   "country_lat": {
                     "confidence": {
-                      "64.6863136": 0.9638754146066564
+                      "64.6863136": 0.9922328431684168
                     },
                     "value": 64.6863136
                   },
                   "country_lon": {
                     "confidence": {
-                      "97.7453061": 0.9638754146066564
+                      "97.7453061": 0.9922328431684168
                     },
                     "value": 97.7453061
                   },
-                  "div": 2.6068200000000002e-05,
+                  "div": 2.7576999999999997e-05,
                   "node_type": {
                     "value": "internal"
                   },
                   "num_date": {
                     "confidence": [
-                      -2742.0,
-                      -2545.0
+                      -2724.0,
+                      -2548.0
                     ],
-                    "value": -2635.0
+                    "value": -2616.0
                   },
                   "province": {
                     "confidence": {
-                      "Irkutsk Oblast": 0.34
+                      "Irkutsk Oblast": 0.38
                     },
                     "value": "Irkutsk Oblast"
                   },
@@ -2103,24 +2441,39 @@
                   },
                   "province_lat": {
                     "confidence": {
-                      "56.6370122": 0.34076144850841955
+                      "56.6370122": 0.3828050610978179
                     },
                     "value": 56.6370122
                   },
                   "province_lon": {
                     "confidence": {
-                      "104.719221": 0.34076144850841955
+                      "104.719221": 0.3828050610978179
                     },
                     "value": 104.719221
                   },
+                  "rate_geo_sub": {
+                    "value": 1157.0158755480713
+                  },
+                  "rate_geo_time": {
+                    "value": 0.0
+                  },
+                  "rate_sub": {
+                    "value": 0.0
+                  },
                   "root_rtt_dist": {
-                    "value": 2.9533800000000005e-05
+                    "value": 3.10511e-05
                   }
                 }
               }
             ],
             "name": "NODE3",
             "node_attrs": {
+              "branch_length_sub": {
+                "value": 56
+              },
+              "branch_length_time": {
+                "value": 150
+              },
               "branch_major": {
                 "confidence": {
                   "0.PRE": 1.0
@@ -2146,43 +2499,43 @@
                 "value": "HIGH"
               },
               "clade_rtt_dist": {
-                "value": 2.8630800000000004e-05
+                "value": 3.01276e-05
               },
               "country": {
                 "confidence": {
-                  "Russia": 0.94
+                  "Russia": 0.99
                 },
                 "value": "Russia"
               },
               "country_conf_category": {
-                "value": "LOW"
+                "value": "HIGH"
               },
               "country_lat": {
                 "confidence": {
-                  "64.6863136": 0.9373011368561616
+                  "64.6863136": 0.9856170535320502
                 },
                 "value": 64.6863136
               },
               "country_lon": {
                 "confidence": {
-                  "97.7453061": 0.9373011368561616
+                  "97.7453061": 0.9856170535320502
                 },
                 "value": 97.7453061
               },
-              "div": 2.51652e-05,
+              "div": 2.6653499999999998e-05,
               "node_type": {
                 "value": "internal"
               },
               "num_date": {
                 "confidence": [
-                  -2742.0,
-                  -2545.0
+                  -2724.0,
+                  -2548.0
                 ],
-                "value": -2635.0
+                "value": -2616.0
               },
               "province": {
                 "confidence": {
-                  "P\u00e4rnu maakond": 0.39
+                  "P\u00e4rnu maakond": 0.45
                 },
                 "value": "P\u00e4rnu maakond"
               },
@@ -2191,24 +2544,39 @@
               },
               "province_lat": {
                 "confidence": {
-                  "58.31950685": 0.3893050212873661
+                  "58.31950685": 0.4480406205139925
                 },
                 "value": 58.31950685
               },
               "province_lon": {
                 "confidence": {
-                  "24.30261214859043": 0.3893050212873661
+                  "24.30261214859043": 0.4480406205139925
                 },
                 "value": 24.30261214859043
               },
+              "rate_geo_sub": {
+                "value": 4.812352227083899
+              },
+              "rate_geo_time": {
+                "value": 1.803974667258769
+              },
+              "rate_sub": {
+                "value": 0.37486338948882564
+              },
               "root_rtt_dist": {
-                "value": 2.8630800000000004e-05
+                "value": 3.01276e-05
               }
             }
           }
         ],
         "name": "NODE2",
         "node_attrs": {
+          "branch_length_sub": {
+            "value": 56
+          },
+          "branch_length_time": {
+            "value": 237
+          },
           "branch_major": {
             "confidence": {
               "0.PRE": 1.0
@@ -2234,43 +2602,43 @@
             "value": "HIGH"
           },
           "clade_rtt_dist": {
-            "value": 1.5590200000000002e-05
+            "value": 1.68172e-05
           },
           "country": {
             "confidence": {
-              "Russia": 0.94
+              "Russia": 0.99
             },
             "value": "Russia"
           },
           "country_conf_category": {
-            "value": "LOW"
+            "value": "HIGH"
           },
           "country_lat": {
             "confidence": {
-              "64.6863136": 0.93845714420342
+              "64.6863136": 0.9863886364757968
             },
             "value": 64.6863136
           },
           "country_lon": {
             "confidence": {
-              "97.7453061": 0.93845714420342
+              "97.7453061": 0.9863886364757968
             },
             "value": 97.7453061
           },
-          "div": 1.21246e-05,
+          "div": 1.33431e-05,
           "node_type": {
             "value": "internal"
           },
           "num_date": {
             "confidence": [
-              -2896.0,
-              -2661.0
+              -2875.0,
+              -2692.0
             ],
-            "value": -2777.0
+            "value": -2767.0
           },
           "province": {
             "confidence": {
-              "Panevezys County": 0.4
+              "Panevezys County": 0.46
             },
             "value": "Panevezys County"
           },
@@ -2279,24 +2647,39 @@
           },
           "province_lat": {
             "confidence": {
-              "55.9156048": 0.4032642955961063
+              "55.9156048": 0.4627656232842057
             },
             "value": 55.9156048
           },
           "province_lon": {
             "confidence": {
-              "25.03115989218585": 0.4032642955961063
+              "25.03115989218585": 0.4627656232842057
             },
             "value": 25.03115989218585
           },
+          "rate_geo_sub": {
+            "value": 69.28823249766799
+          },
+          "rate_geo_time": {
+            "value": 16.50478653213878
+          },
+          "rate_sub": {
+            "value": 0.23820475623612247
+          },
           "root_rtt_dist": {
-            "value": 1.5590200000000002e-05
+            "value": 1.68172e-05
           }
         }
       }
     ],
     "name": "NODE1",
     "node_attrs": {
+      "branch_length_sub": {
+        "value": 15
+      },
+      "branch_length_time": {
+        "value": 242
+      },
       "branch_major": {
         "confidence": {
           "0.PRE": 1.0
@@ -2322,11 +2705,11 @@
         "value": "HIGH"
       },
       "clade_rtt_dist": {
-        "value": 3.4656e-06
+        "value": 3.4741e-06
       },
       "country": {
         "confidence": {
-          "Russia": 0.97
+          "Russia": 1.0
         },
         "value": "Russia"
       },
@@ -2335,13 +2718,13 @@
       },
       "country_lat": {
         "confidence": {
-          "64.6863136": 0.974858134590734
+          "64.6863136": 0.9956745384477992
         },
         "value": 64.6863136
       },
       "country_lon": {
         "confidence": {
-          "97.7453061": 0.974858134590734
+          "97.7453061": 0.9956745384477992
         },
         "value": 97.7453061
       },
@@ -2351,14 +2734,14 @@
       },
       "num_date": {
         "confidence": [
-          -3006.0,
-          -2905.0
+          -3003.0,
+          -2892.0
         ],
-        "value": -3006.0
+        "value": -3003.0
       },
       "province": {
         "confidence": {
-          "Krasnoyarsk Krai": 0.42
+          "Krasnoyarsk Krai": 0.49
         },
         "value": "Krasnoyarsk Krai"
       },
@@ -2367,18 +2750,27 @@
       },
       "province_lat": {
         "confidence": {
-          "63.3233807": 0.42476104404540416
+          "63.3233807": 0.4889019602814607
         },
         "value": 63.3233807
       },
       "province_lon": {
         "confidence": {
-          "97.0979974": 0.42476104404540416
+          "97.0979974": 0.4889019602814607
         },
         "value": 97.0979974
       },
+      "rate_geo_sub": {
+        "value": 211.34522006017733
+      },
+      "rate_geo_time": {
+        "value": 12.820335481355977
+      },
+      "rate_sub": {
+        "value": 0.060660636080180005
+      },
       "root_rtt_dist": {
-        "value": 3.4656e-06
+        "value": 3.4741e-06
       }
     }
   },

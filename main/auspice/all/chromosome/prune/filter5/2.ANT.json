@@ -13,6 +13,16 @@
         "type": "categorical"
       },
       {
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
         "key": "branch_major",
         "scale": [
           [
@@ -263,104 +273,18 @@
         "type": "continuous"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Branch Minor Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
+        "key": "rate_sub",
+        "title": "Substitution Rate",
         "type": "continuous"
       },
       {
-        "key": "branch_support",
-        "title": "Branch Support",
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
         "type": "continuous"
       },
       {
-        "key": "branch_major",
-        "scale": [
-          [
-            "2.ANT",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Branch Major Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
         "type": "continuous"
       },
       {
@@ -369,114 +293,14 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
+        "key": "province_lon",
+        "title": "Province Longitude",
         "type": "continuous"
       },
       {
-        "key": "province",
-        "scale": [
-          [
-            "Qinghai",
-            "#642bfe"
-          ],
-          [
-            "Inner Mongolia",
-            "#3275f8"
-          ],
-          [
-            "Jilin",
-            "#2edfdc"
-          ],
-          [
-            "St. Petersberg",
-            "#32e3da"
-          ],
-          [
-            "Zabaykalsky Krai",
-            "#37e6d8"
-          ],
-          [
-            "Heilongjiang",
-            "#3be9d6"
-          ],
-          [
-            "Tibet",
-            "#40ecd4"
-          ],
-          [
-            "Gandaki Pradesh",
-            "#44eed2"
-          ],
-          [
-            "Maharashtra",
-            "#49f1d0"
-          ],
-          [
-            "Himachal Pradesh",
-            "#4df3ce"
-          ]
-        ],
-        "title": "Province",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
         "type": "continuous"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "Russia",
-            "#8000ff"
-          ],
-          [
-            "China",
-            "#4a53fc"
-          ],
-          [
-            "Nepal",
-            "#3cead5"
-          ],
-          [
-            "India",
-            "#4af1d0"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
-      },
-      {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
       },
       {
         "key": "biosample_accession",
@@ -484,8 +308,66 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "branch_minor_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Branch Minor Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "Nepal",
+            "#3cead5"
+          ],
+          [
+            "India",
+            "#4af1d0"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Branch Major Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
         "type": "continuous"
       },
       {
@@ -494,14 +376,29 @@
         "type": "continuous"
       },
       {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
         "type": "continuous"
       },
       {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
+        "key": "country_lon",
+        "title": "Country Longitude",
         "type": "continuous"
+      },
+      {
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
+        "type": "continuous"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
       },
       {
         "key": "branch_minor",
@@ -523,9 +420,162 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Node Type",
         "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate",
+        "type": "continuous"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Qinghai",
+            "#642bfe"
+          ],
+          [
+            "Inner Mongolia",
+            "#3275f8"
+          ],
+          [
+            "Jilin",
+            "#2edfdc"
+          ],
+          [
+            "St. Petersberg",
+            "#32e3da"
+          ],
+          [
+            "Zabaykalsky Krai",
+            "#37e6d8"
+          ],
+          [
+            "Heilongjiang",
+            "#3be9d6"
+          ],
+          [
+            "Tibet",
+            "#40ecd4"
+          ],
+          [
+            "Gandaki Pradesh",
+            "#44eed2"
+          ],
+          [
+            "Maharashtra",
+            "#49f1d0"
+          ],
+          [
+            "Himachal Pradesh",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "2.ANT",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
       }
     ],
     "display_defaults": {
@@ -625,13 +675,15 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-01"
+    "updated": "2021-05-02"
   },
   "tree": {
     "branch_attrs": {
       "labels": {
         "Biosample Accession": "NA",
         "Branch Length": 1.1796e-06,
+        "Branch Length Sub": 5,
+        "Branch Length Time": 0,
         "Branch Major": "2.ANT",
         "Branch Major Conf Category": "HIGH",
         "Branch Major Confidence": 1.0,
@@ -667,6 +719,9 @@
         "Province Lat Confidence": 0.9759150325420394,
         "Province Lon": 114.3251664,
         "Province Lon Confidence": 0.9759150325420394,
+        "Rate Geo Sub": 0.0,
+        "Rate Geo Time": 0.0,
+        "Rate Sub": 0.0,
         "Root Rtt Dist": 5.7827099999999994e-05,
         "Strain": "NA"
       }
@@ -677,6 +732,8 @@
           "labels": {
             "Biosample Accession": "NA",
             "Branch Length": 1.8873e-06,
+            "Branch Length Sub": 8,
+            "Branch Length Time": 196,
             "Branch Major": "2.ANT",
             "Branch Major Conf Category": "HIGH",
             "Branch Major Confidence": 1.0,
@@ -712,6 +769,9 @@
             "Province Lat Confidence": 0.8782274973923132,
             "Province Lon": 90.8749807,
             "Province Lon Confidence": 0.8782274973923132,
+            "Rate Geo Sub": 320.56707697173294,
+            "Rate Geo Time": 13.032787946368712,
+            "Rate Sub": 0.0406554162376379,
             "Root Rtt Dist": 5.8534799999999994e-05,
             "Strain": "NA"
           }
@@ -722,6 +782,8 @@
               "labels": {
                 "Biosample Accession": "NA",
                 "Branch Length": 2.36e-08,
+                "Branch Length Sub": 0,
+                "Branch Length Time": 183,
                 "Branch Major": "2.ANT",
                 "Branch Major Conf Category": "HIGH",
                 "Branch Major Confidence": 1.0,
@@ -757,6 +819,9 @@
                 "Province Lat Confidence": 0.8917668043977198,
                 "Province Lon": 90.8749807,
                 "Province Lon Confidence": 0.8917668043977198,
+                "Rate Geo Sub": 0.0,
+                "Rate Geo Time": 0.0,
+                "Rate Sub": 0.0005437110542594218,
                 "Root Rtt Dist": 5.855839999999999e-05,
                 "Strain": "NA"
               }
@@ -768,6 +833,12 @@
                 "node_attrs": {
                   "biosample_accession": {
                     "value": "SAMN02402993"
+                  },
+                  "branch_length_sub": {
+                    "value": 9
+                  },
+                  "branch_length_time": {
+                    "value": 324
                   },
                   "branch_major": {
                     "confidence": {
@@ -864,6 +935,15 @@
                     },
                     "value": 95.95211573241954
                   },
+                  "rate_geo_sub": {
+                    "value": 86.85772368757203
+                  },
+                  "rate_geo_time": {
+                    "value": 2.400257101736062
+                  },
+                  "rate_sub": {
+                    "value": 0.027634354204006163
+                  },
                   "root_rtt_dist": {
                     "value": 6.068159999999999e-05
                   },
@@ -878,6 +958,12 @@
                 "node_attrs": {
                   "biosample_accession": {
                     "value": "SAMN02403079"
+                  },
+                  "branch_length_sub": {
+                    "value": 10
+                  },
+                  "branch_length_time": {
+                    "value": 316
                   },
                   "branch_major": {
                     "confidence": {
@@ -974,6 +1060,15 @@
                     },
                     "value": 90.8749807
                   },
+                  "rate_geo_sub": {
+                    "value": 0.0
+                  },
+                  "rate_geo_time": {
+                    "value": 0.0
+                  },
+                  "rate_sub": {
+                    "value": 0.03148079938262244
+                  },
                   "root_rtt_dist": {
                     "value": 6.0917499999999994e-05
                   },
@@ -985,6 +1080,12 @@
             ],
             "name": "NODE132",
             "node_attrs": {
+              "branch_length_sub": {
+                "value": 0
+              },
+              "branch_length_time": {
+                "value": 183
+              },
               "branch_major": {
                 "confidence": {
                   "2.ANT": 1.0
@@ -1065,6 +1166,15 @@
                 },
                 "value": 90.8749807
               },
+              "rate_geo_sub": {
+                "value": 0.0
+              },
+              "rate_geo_time": {
+                "value": 0.0
+              },
+              "rate_sub": {
+                "value": 0.0005437110542594218
+              },
               "root_rtt_dist": {
                 "value": 5.855839999999999e-05
               }
@@ -1075,6 +1185,8 @@
               "labels": {
                 "Biosample Accession": "NA",
                 "Branch Length": 4.744e-07,
+                "Branch Length Sub": 2,
+                "Branch Length Time": 0,
                 "Branch Major": "2.ANT",
                 "Branch Major Conf Category": "HIGH",
                 "Branch Major Confidence": 1.0,
@@ -1110,6 +1222,9 @@
                 "Province Lat Confidence": 0.9121291395520186,
                 "Province Lon": 90.8749807,
                 "Province Lon Confidence": 0.9121291395520186,
+                "Rate Geo Sub": 0.0,
+                "Rate Geo Time": 0.0,
+                "Rate Sub": 0.0,
                 "Root Rtt Dist": 5.900919999999999e-05,
                 "Strain": "NA"
               }
@@ -1121,6 +1236,12 @@
                 "node_attrs": {
                   "biosample_accession": {
                     "value": "SAMN13021975"
+                  },
+                  "branch_length_sub": {
+                    "value": 7
+                  },
+                  "branch_length_time": {
+                    "value": 511
                   },
                   "branch_major": {
                     "confidence": {
@@ -1217,6 +1338,15 @@
                     },
                     "value": 90.8749807
                   },
+                  "rate_geo_sub": {
+                    "value": 0.0
+                  },
+                  "rate_geo_time": {
+                    "value": 0.0
+                  },
+                  "rate_sub": {
+                    "value": 0.013653844498779422
+                  },
                   "root_rtt_dist": {
                     "value": 6.066059999999999e-05
                   },
@@ -1230,6 +1360,8 @@
                   "labels": {
                     "Biosample Accession": "NA",
                     "Branch Length": 4.718e-07,
+                    "Branch Length Sub": 2,
+                    "Branch Length Time": 0,
                     "Branch Major": "2.ANT",
                     "Branch Major Conf Category": "HIGH",
                     "Branch Major Confidence": 1.0,
@@ -1265,6 +1397,9 @@
                     "Province Lat Confidence": 0.3365692849479182,
                     "Province Lon": 77.34932051968858,
                     "Province Lon Confidence": 0.3365692849479182,
+                    "Rate Geo Sub": 656.7892478332709,
+                    "Rate Geo Time": 0.0,
+                    "Rate Sub": 0.0,
                     "Root Rtt Dist": 5.948099999999999e-05,
                     "Strain": "NA"
                   }
@@ -1276,6 +1411,12 @@
                     "node_attrs": {
                       "biosample_accession": {
                         "value": "SAMN02470613"
+                      },
+                      "branch_length_sub": {
+                        "value": 69
+                      },
+                      "branch_length_time": {
+                        "value": 506
                       },
                       "branch_major": {
                         "confidence": {
@@ -1372,6 +1513,15 @@
                         },
                         "value": 77.34932051968858
                       },
+                      "rate_geo_sub": {
+                        "value": 0.0
+                      },
+                      "rate_geo_time": {
+                        "value": 0.0
+                      },
+                      "rate_sub": {
+                        "value": 0.13561446869794375
+                      },
                       "root_rtt_dist": {
                         "value": 7.572269999999999e-05
                       },
@@ -1385,6 +1535,8 @@
                       "labels": {
                         "Biosample Accession": "NA",
                         "Branch Length": 3.5387e-06,
+                        "Branch Length Sub": 15,
+                        "Branch Length Time": 294,
                         "Branch Major": "2.ANT",
                         "Branch Major Conf Category": "HIGH",
                         "Branch Major Confidence": 1.0,
@@ -1420,6 +1572,9 @@
                         "Province Lat Confidence": 0.3304244234872685,
                         "Province Lon": 84.03632755245305,
                         "Province Lon Confidence": 0.3304244234872685,
+                        "Rate Geo Sub": 50.0318454924941,
+                        "Rate Geo Time": 2.5427681058026343,
+                        "Rate Sub": 0.050822992451559815,
                         "Root Rtt Dist": 6.301969999999998e-05,
                         "Strain": "NA"
                       }
@@ -1431,6 +1586,12 @@
                         "node_attrs": {
                           "biosample_accession": {
                             "value": "SAMN02403941"
+                          },
+                          "branch_length_sub": {
+                            "value": 11
+                          },
+                          "branch_length_time": {
+                            "value": 177
                           },
                           "branch_major": {
                             "confidence": {
@@ -1527,6 +1688,15 @@
                             },
                             "value": 84.03632755245305
                           },
+                          "rate_geo_sub": {
+                            "value": 0.0
+                          },
+                          "rate_geo_time": {
+                            "value": 0.0
+                          },
+                          "rate_sub": {
+                            "value": 0.06201121602158994
+                          },
                           "root_rtt_dist": {
                             "value": 6.561479999999999e-05
                           },
@@ -1541,6 +1711,12 @@
                         "node_attrs": {
                           "biosample_accession": {
                             "value": "SAMN06161235"
+                          },
+                          "branch_length_sub": {
+                            "value": 4
+                          },
+                          "branch_length_time": {
+                            "value": 108
                           },
                           "branch_major": {
                             "confidence": {
@@ -1637,6 +1813,15 @@
                             },
                             "value": 75.6741579
                           },
+                          "rate_geo_sub": {
+                            "value": 339.7053331901339
+                          },
+                          "rate_geo_time": {
+                            "value": 12.565974885900118
+                          },
+                          "rate_sub": {
+                            "value": 0.03699080838058822
+                          },
                           "root_rtt_dist": {
                             "value": 6.396339999999998e-05
                           },
@@ -1648,6 +1833,12 @@
                     ],
                     "name": "NODE135",
                     "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 15
+                      },
+                      "branch_length_time": {
+                        "value": 294
+                      },
                       "branch_major": {
                         "confidence": {
                           "2.ANT": 1.0
@@ -1728,6 +1919,15 @@
                         },
                         "value": 84.03632755245305
                       },
+                      "rate_geo_sub": {
+                        "value": 50.0318454924941
+                      },
+                      "rate_geo_time": {
+                        "value": 2.5427681058026343
+                      },
+                      "rate_sub": {
+                        "value": 0.050822992451559815
+                      },
                       "root_rtt_dist": {
                         "value": 6.301969999999998e-05
                       }
@@ -1736,6 +1936,12 @@
                 ],
                 "name": "NODE134",
                 "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 2
+                  },
+                  "branch_length_time": {
+                    "value": 0
+                  },
                   "branch_major": {
                     "confidence": {
                       "2.ANT": 1.0
@@ -1816,6 +2022,15 @@
                     },
                     "value": 77.34932051968858
                   },
+                  "rate_geo_sub": {
+                    "value": 656.7892478332709
+                  },
+                  "rate_geo_time": {
+                    "value": 0.0
+                  },
+                  "rate_sub": {
+                    "value": 0.0
+                  },
                   "root_rtt_dist": {
                     "value": 5.948099999999999e-05
                   }
@@ -1824,6 +2039,12 @@
             ],
             "name": "NODE133",
             "node_attrs": {
+              "branch_length_sub": {
+                "value": 2
+              },
+              "branch_length_time": {
+                "value": 0
+              },
               "branch_major": {
                 "confidence": {
                   "2.ANT": 1.0
@@ -1904,6 +2125,15 @@
                 },
                 "value": 90.8749807
               },
+              "rate_geo_sub": {
+                "value": 0.0
+              },
+              "rate_geo_time": {
+                "value": 0.0
+              },
+              "rate_sub": {
+                "value": 0.0
+              },
               "root_rtt_dist": {
                 "value": 5.900919999999999e-05
               }
@@ -1912,6 +2142,12 @@
         ],
         "name": "NODE131",
         "node_attrs": {
+          "branch_length_sub": {
+            "value": 8
+          },
+          "branch_length_time": {
+            "value": 196
+          },
           "branch_major": {
             "confidence": {
               "2.ANT": 1.0
@@ -1992,6 +2228,15 @@
             },
             "value": 90.8749807
           },
+          "rate_geo_sub": {
+            "value": 320.56707697173294
+          },
+          "rate_geo_time": {
+            "value": 13.032787946368712
+          },
+          "rate_sub": {
+            "value": 0.0406554162376379
+          },
           "root_rtt_dist": {
             "value": 5.8534799999999994e-05
           }
@@ -2002,6 +2247,8 @@
           "labels": {
             "Biosample Accession": "NA",
             "Branch Length": 1.1796e-06,
+            "Branch Length Sub": 5,
+            "Branch Length Time": 0,
             "Branch Major": "2.ANT",
             "Branch Major Conf Category": "HIGH",
             "Branch Major Confidence": 1.0,
@@ -2037,6 +2284,9 @@
             "Province Lat Confidence": 0.9759150325420394,
             "Province Lon": 114.3251664,
             "Province Lon Confidence": 0.9759150325420394,
+            "Rate Geo Sub": 0.0,
+            "Rate Geo Time": 0.0,
+            "Rate Sub": 0.0,
             "Root Rtt Dist": 5.7827099999999994e-05,
             "Strain": "NA"
           }
@@ -2048,6 +2298,12 @@
             "node_attrs": {
               "biosample_accession": {
                 "value": "SAMN02403060"
+              },
+              "branch_length_sub": {
+                "value": 17
+              },
+              "branch_length_time": {
+                "value": 671
               },
               "branch_major": {
                 "confidence": {
@@ -2144,6 +2400,15 @@
                 },
                 "value": 114.3251664
               },
+              "rate_geo_sub": {
+                "value": 0.0
+              },
+              "rate_geo_time": {
+                "value": 0.0
+              },
+              "rate_sub": {
+                "value": 0.025248392668202946
+              },
               "root_rtt_dist": {
                 "value": 6.183769999999999e-05
               },
@@ -2157,6 +2422,8 @@
               "labels": {
                 "Biosample Accession": "NA",
                 "Branch Length": 1.1796e-06,
+                "Branch Length Sub": 5,
+                "Branch Length Time": 0,
                 "Branch Major": "2.ANT",
                 "Branch Major Conf Category": "HIGH",
                 "Branch Major Confidence": 1.0,
@@ -2192,6 +2459,9 @@
                 "Province Lat Confidence": 0.9727529601371646,
                 "Province Lon": 114.3251664,
                 "Province Lon Confidence": 0.9727529601371646,
+                "Rate Geo Sub": 0.0,
+                "Rate Geo Time": 0.0,
+                "Rate Sub": 0.0,
                 "Root Rtt Dist": 5.900669999999999e-05,
                 "Strain": "NA"
               }
@@ -2202,6 +2472,8 @@
                   "labels": {
                     "Biosample Accession": "NA",
                     "Branch Length": 1.6514e-06,
+                    "Branch Length Sub": 7,
+                    "Branch Length Time": 491,
                     "Branch Major": "2.ANT",
                     "Branch Major Conf Category": "HIGH",
                     "Branch Major Confidence": 1.0,
@@ -2237,6 +2509,9 @@
                     "Province Lat Confidence": 0.9980336767644008,
                     "Province Lon": 114.3251664,
                     "Province Lon Confidence": 0.9980336767644008,
+                    "Rate Geo Sub": 0.0,
+                    "Rate Geo Time": 0.0,
+                    "Rate Sub": 0.014196153150868394,
                     "Root Rtt Dist": 6.0658099999999994e-05,
                     "Strain": "NA"
                   }
@@ -2248,6 +2523,12 @@
                     "node_attrs": {
                       "biosample_accession": {
                         "value": "SAMN02403030"
+                      },
+                      "branch_length_sub": {
+                        "value": 3
+                      },
+                      "branch_length_time": {
+                        "value": 198
                       },
                       "branch_major": {
                         "confidence": {
@@ -2344,6 +2625,15 @@
                         },
                         "value": 114.3251664
                       },
+                      "rate_geo_sub": {
+                        "value": 0.0
+                      },
+                      "rate_geo_time": {
+                        "value": 0.0
+                      },
+                      "rate_sub": {
+                        "value": 0.015128076993389953
+                      },
                       "root_rtt_dist": {
                         "value": 6.13658e-05
                       },
@@ -2357,6 +2647,8 @@
                       "labels": {
                         "Biosample Accession": "NA",
                         "Branch Length": 2.36e-08,
+                        "Branch Length Sub": 0,
+                        "Branch Length Time": 82,
                         "Branch Major": "2.ANT",
                         "Branch Major Conf Category": "HIGH",
                         "Branch Major Confidence": 1.0,
@@ -2392,6 +2684,9 @@
                         "Province Lat Confidence": 0.9821177523193486,
                         "Province Lon": 114.3251664,
                         "Province Lon Confidence": 0.9821177523193486,
+                        "Rate Geo Sub": 0.0,
+                        "Rate Geo Time": 0.0,
+                        "Rate Sub": 0.0012197851263537904,
                         "Root Rtt Dist": 6.068169999999999e-05,
                         "Strain": "NA"
                       }
@@ -2403,6 +2698,12 @@
                         "node_attrs": {
                           "biosample_accession": {
                             "value": "SAMN02403031"
+                          },
+                          "branch_length_sub": {
+                            "value": 1
+                          },
+                          "branch_length_time": {
+                            "value": 123
                           },
                           "branch_major": {
                             "confidence": {
@@ -2499,6 +2800,15 @@
                             },
                             "value": 114.3251664
                           },
+                          "rate_geo_sub": {
+                            "value": 0.0
+                          },
+                          "rate_geo_time": {
+                            "value": 0.0
+                          },
+                          "rate_sub": {
+                            "value": 0.00810930202503622
+                          },
                           "root_rtt_dist": {
                             "value": 6.0917599999999994e-05
                           },
@@ -2513,6 +2823,12 @@
                         "node_attrs": {
                           "biosample_accession": {
                             "value": "SAMN02403047"
+                          },
+                          "branch_length_sub": {
+                            "value": 5
+                          },
+                          "branch_length_time": {
+                            "value": 81
                           },
                           "branch_major": {
                             "confidence": {
@@ -2609,6 +2925,15 @@
                             },
                             "value": 125.9816054
                           },
+                          "rate_geo_sub": {
+                            "value": 189.81718853199064
+                          },
+                          "rate_geo_time": {
+                            "value": 11.694892976279057
+                          },
+                          "rate_sub": {
+                            "value": 0.06161134861771526
+                          },
                           "root_rtt_dist": {
                             "value": 6.186129999999999e-05
                           },
@@ -2620,6 +2945,12 @@
                     ],
                     "name": "NODE139",
                     "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 0
+                      },
+                      "branch_length_time": {
+                        "value": 82
+                      },
                       "branch_major": {
                         "confidence": {
                           "2.ANT": 1.0
@@ -2700,6 +3031,15 @@
                         },
                         "value": 114.3251664
                       },
+                      "rate_geo_sub": {
+                        "value": 0.0
+                      },
+                      "rate_geo_time": {
+                        "value": 0.0
+                      },
+                      "rate_sub": {
+                        "value": 0.0012197851263537904
+                      },
                       "root_rtt_dist": {
                         "value": 6.068169999999999e-05
                       }
@@ -2708,6 +3048,12 @@
                 ],
                 "name": "NODE138",
                 "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 7
+                  },
+                  "branch_length_time": {
+                    "value": 491
+                  },
                   "branch_major": {
                     "confidence": {
                       "2.ANT": 1.0
@@ -2788,6 +3134,15 @@
                     },
                     "value": 114.3251664
                   },
+                  "rate_geo_sub": {
+                    "value": 0.0
+                  },
+                  "rate_geo_time": {
+                    "value": 0.0
+                  },
+                  "rate_sub": {
+                    "value": 0.014196153150868394
+                  },
                   "root_rtt_dist": {
                     "value": 6.0658099999999994e-05
                   }
@@ -2798,6 +3153,8 @@
                   "labels": {
                     "Biosample Accession": "NA",
                     "Branch Length": 2.359e-07,
+                    "Branch Length Sub": 1,
+                    "Branch Length Time": 0,
                     "Branch Major": "2.ANT",
                     "Branch Major Conf Category": "HIGH",
                     "Branch Major Confidence": 1.0,
@@ -2833,6 +3190,9 @@
                     "Province Lat Confidence": 0.3322856323396799,
                     "Province Lon": 30.316229,
                     "Province Lon Confidence": 0.3322856323396799,
+                    "Rate Geo Sub": 5677.688666590533,
+                    "Rate Geo Time": 0.0,
+                    "Rate Sub": 0.0,
                     "Root Rtt Dist": 5.9242599999999994e-05,
                     "Strain": "NA"
                   }
@@ -2844,6 +3204,12 @@
                     "node_attrs": {
                       "biosample_accession": {
                         "value": "SAMN02403013"
+                      },
+                      "branch_length_sub": {
+                        "value": 16
+                      },
+                      "branch_length_time": {
+                        "value": 665
                       },
                       "branch_major": {
                         "confidence": {
@@ -2940,6 +3306,15 @@
                         },
                         "value": 30.316229
                       },
+                      "rate_geo_sub": {
+                        "value": 0.0
+                      },
+                      "rate_geo_time": {
+                        "value": 0.0
+                      },
+                      "rate_sub": {
+                        "value": 0.023977111486179585
+                      },
                       "root_rtt_dist": {
                         "value": 6.30172e-05
                       },
@@ -2953,6 +3328,8 @@
                       "labels": {
                         "Biosample Accession": "NA",
                         "Branch Length": 2.359e-07,
+                        "Branch Length Sub": 1,
+                        "Branch Length Time": 0,
                         "Branch Major": "2.ANT",
                         "Branch Major Conf Category": "HIGH",
                         "Branch Major Confidence": 1.0,
@@ -2988,6 +3365,9 @@
                         "Province Lat Confidence": 0.33173462419103084,
                         "Province Lon": 115.956325,
                         "Province Lon Confidence": 0.33173462419103084,
+                        "Rate Geo Sub": 5017.4559903192585,
+                        "Rate Geo Time": 0.0,
+                        "Rate Sub": 0.0,
                         "Root Rtt Dist": 5.9478499999999996e-05,
                         "Strain": "NA"
                       }
@@ -2999,6 +3379,12 @@
                         "node_attrs": {
                           "biosample_accession": {
                             "value": "SAMN04357319"
+                          },
+                          "branch_length_sub": {
+                            "value": 7
+                          },
+                          "branch_length_time": {
+                            "value": 670
                           },
                           "branch_major": {
                             "confidence": {
@@ -3095,6 +3481,15 @@
                             },
                             "value": 115.956325
                           },
+                          "rate_geo_sub": {
+                            "value": 0.0
+                          },
+                          "rate_geo_time": {
+                            "value": 0.0
+                          },
+                          "rate_sub": {
+                            "value": 0.010411768283558696
+                          },
                           "root_rtt_dist": {
                             "value": 6.11299e-05
                           },
@@ -3108,6 +3503,8 @@
                           "labels": {
                             "Biosample Accession": "NA",
                             "Branch Length": 3.18491e-05,
+                            "Branch Length Sub": 135,
+                            "Branch Length Time": 640,
                             "Branch Major": "2.ANT",
                             "Branch Major Conf Category": "HIGH",
                             "Branch Major Confidence": 1.0,
@@ -3143,6 +3540,9 @@
                             "Province Lat Confidence": 0.9910279855352978,
                             "Province Lon": 127.999992,
                             "Province Lon Confidence": 0.9910279855352978,
+                            "Rate Geo Sub": 7.272405079476404,
+                            "Rate Geo Time": 1.5287826067271226,
+                            "Rate Sub": 0.21021692136505565,
                             "Root Rtt Dist": 9.13276e-05,
                             "Strain": "NA"
                           }
@@ -3154,6 +3554,12 @@
                             "node_attrs": {
                               "biosample_accession": {
                                 "value": "SAMN02769655"
+                              },
+                              "branch_length_sub": {
+                                "value": 76
+                              },
+                              "branch_length_time": {
+                                "value": 0
                               },
                               "branch_major": {
                                 "confidence": {
@@ -3250,6 +3656,15 @@
                                 },
                                 "value": 127.999992
                               },
+                              "rate_geo_sub": {
+                                "value": 0.0
+                              },
+                              "rate_geo_time": {
+                                "value": 0.0
+                              },
+                              "rate_sub": {
+                                "value": 0.0
+                              },
                               "root_rtt_dist": {
                                 "value": 0.0001092573
                               },
@@ -3264,6 +3679,12 @@
                             "node_attrs": {
                               "biosample_accession": {
                                 "value": "SAMN03216612"
+                              },
+                              "branch_length_sub": {
+                                "value": 62
+                              },
+                              "branch_length_time": {
+                                "value": 68
                               },
                               "branch_major": {
                                 "confidence": {
@@ -3360,6 +3781,15 @@
                                 },
                                 "value": 127.999992
                               },
+                              "rate_geo_sub": {
+                                "value": 0.0
+                              },
+                              "rate_geo_time": {
+                                "value": 0.0
+                              },
+                              "rate_sub": {
+                                "value": 0.9084761406
+                              },
                               "root_rtt_dist": {
                                 "value": 0.00010595440000000001
                               },
@@ -3371,6 +3801,12 @@
                         ],
                         "name": "NODE142",
                         "node_attrs": {
+                          "branch_length_sub": {
+                            "value": 135
+                          },
+                          "branch_length_time": {
+                            "value": 640
+                          },
                           "branch_major": {
                             "confidence": {
                               "2.ANT": 1.0
@@ -3451,6 +3887,15 @@
                             },
                             "value": 127.999992
                           },
+                          "rate_geo_sub": {
+                            "value": 7.272405079476404
+                          },
+                          "rate_geo_time": {
+                            "value": 1.5287826067271226
+                          },
+                          "rate_sub": {
+                            "value": 0.21021692136505565
+                          },
                           "root_rtt_dist": {
                             "value": 9.13276e-05
                           }
@@ -3459,6 +3904,12 @@
                     ],
                     "name": "NODE141",
                     "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 1
+                      },
+                      "branch_length_time": {
+                        "value": 0
+                      },
                       "branch_major": {
                         "confidence": {
                           "2.ANT": 1.0
@@ -3539,6 +3990,15 @@
                         },
                         "value": 115.956325
                       },
+                      "rate_geo_sub": {
+                        "value": 5017.4559903192585
+                      },
+                      "rate_geo_time": {
+                        "value": 0.0
+                      },
+                      "rate_sub": {
+                        "value": 0.0
+                      },
                       "root_rtt_dist": {
                         "value": 5.9478499999999996e-05
                       }
@@ -3547,6 +4007,12 @@
                 ],
                 "name": "NODE140",
                 "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 1
+                  },
+                  "branch_length_time": {
+                    "value": 0
+                  },
                   "branch_major": {
                     "confidence": {
                       "2.ANT": 1.0
@@ -3627,6 +4093,15 @@
                     },
                     "value": 30.316229
                   },
+                  "rate_geo_sub": {
+                    "value": 5677.688666590533
+                  },
+                  "rate_geo_time": {
+                    "value": 0.0
+                  },
+                  "rate_sub": {
+                    "value": 0.0
+                  },
                   "root_rtt_dist": {
                     "value": 5.9242599999999994e-05
                   }
@@ -3635,6 +4110,12 @@
             ],
             "name": "NODE137",
             "node_attrs": {
+              "branch_length_sub": {
+                "value": 5
+              },
+              "branch_length_time": {
+                "value": 0
+              },
               "branch_major": {
                 "confidence": {
                   "2.ANT": 1.0
@@ -3715,6 +4196,15 @@
                 },
                 "value": 114.3251664
               },
+              "rate_geo_sub": {
+                "value": 0.0
+              },
+              "rate_geo_time": {
+                "value": 0.0
+              },
+              "rate_sub": {
+                "value": 0.0
+              },
               "root_rtt_dist": {
                 "value": 5.900669999999999e-05
               }
@@ -3723,6 +4213,12 @@
         ],
         "name": "NODE136",
         "node_attrs": {
+          "branch_length_sub": {
+            "value": 5
+          },
+          "branch_length_time": {
+            "value": 0
+          },
           "branch_major": {
             "confidence": {
               "2.ANT": 1.0
@@ -3803,6 +4299,15 @@
             },
             "value": 114.3251664
           },
+          "rate_geo_sub": {
+            "value": 0.0
+          },
+          "rate_geo_time": {
+            "value": 0.0
+          },
+          "rate_sub": {
+            "value": 0.0
+          },
           "root_rtt_dist": {
             "value": 5.7827099999999994e-05
           }
@@ -3811,6 +4316,12 @@
     ],
     "name": "NODE130",
     "node_attrs": {
+      "branch_length_sub": {
+        "value": 14
+      },
+      "branch_length_time": {
+        "value": 0
+      },
       "branch_major": {
         "confidence": {
           "2.ANT": 1.0
@@ -3890,6 +4401,15 @@
           "114.3251664": 0.4910811021404189
         },
         "value": 114.3251664
+      },
+      "rate_geo_sub": {
+        "value": 0.0
+      },
+      "rate_geo_time": {
+        "value": 0.0
+      },
+      "rate_sub": {
+        "value": 0.0
       },
       "root_rtt_dist": {
         "value": 5.6647499999999996e-05
