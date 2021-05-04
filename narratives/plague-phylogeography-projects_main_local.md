@@ -19,21 +19,36 @@ remote url: https://nextstrain.org/community/ktmeaton/plague-phylogeography-proj
 sed 's/http:\/\/localhost:4000\/plague-phylogeography-projects/https:\/\/nextstrain.org\/community\/ktmeaton\/plague-phylogeography-projects@main/g' plague-phylogeography-projects_main_local.md > plague-phylogeography-projects_main.md
 -->
 
+# [Plague Genomics](http://localhost:4000/plague-phylogeography-projects/main/full/all?c=continent&d=map&p=full&transmissions=show)
+
+The field of plague genomics has changed considerably over the last decade, from [17 bacterial genomes](https://doi.org/10.1038/ng.705)to [over 1300](https://doi.org/10.1101/gr.251678.119) In 2011, *Y. pestis* became the first pathogen to be [fully sequenced from ancient DNA](https://doi.org/10.1038/nature10549) and since then, over 100 genomes have been isolated from skeletal remains. To date, *Y. pestis* is the most intensively sequenced historical pathogen.
+
+---
+
+### Methods
+ 
+1693 *Y. pestis* genome sequencing projects were identified from the NCBI databases using [NCBImeta](https://doi.org/10.21105/joss.01990).  Collection date and geographic location were curated by cross-referencing the original publications. Geocoding was performed using [GeoPy]() and the [Nominatim API]() for [OpenStreetMap](). Latitude and longitude for each sample were standardized at the levels of country and state. 
+
+Genomes were removed if no associated date or location could be identified or if laboratory manipulation was documented. After curation, 600 genomes remained, comprised of 539 modern (90%) and 61 ancient (10%).  
+
+To root the phylogentic tree, two genomes from the outgroup *Yersinia pseudotuberculosis* were downloaded ([NCTC10275](https://www.ncbi.nlm.nih.gov/nuccore/LR134373.1), [IP32953](https://www.ncbi.nlm.nih.gov/nuccore/NZ_CP009712.1)). 
+
+---
 
 # [Introducing the Phylogeny](http://localhost:4000/plague-phylogeography-projects/main/full/all?c=branch_major&d=tree&m=div)
 
+The ability to differentiate strains of *Y. pestis* is at the core of genomics research. Numerous taxonomic systems have developed to identify unique lineages of plague using biochemical and molecular characteristics.
+### Branch Taxonomy
 
-## Branch Nomenclature
+The system shown here uses the phylogenetic branching patterns to separate 5 major groups, numbered **0** through **4**. These branch numbers have historically been assigned based on the order in which they were discovered and their relative proximity to the root of the tree.
 
-There are numerous taxonomic systems used to differentiate strains of *Y. pestis*. The system shown here uses the phylogenetic branching patterns to separate 5 major groups, numbered 0 through 4. These branching numbers have historically been assigned based on the order in which they were discovered, or how close they are to the root of the tree.
-
-## Clade Designation
+### Clades
 
 The branch nomenclature system can be further divided into clades. This nomenclature combines a branch number with a 2-3 letter clade designation. This approach is widely adopted in plague genomics research, and is suitable for broad-scale comparisons.
 
 One example is the 'Pestoides' clade, shortened to **PE** which is part of branch **0**, thus deriving the clade name **0.PE**. This clade is known for being avirulent in humans, and only causes disease in wild rodent populations.
 
-## Sub-Clade Suffixes
+### Sub-Clades
 This nomenclature system can be broken down into finer and finer units, depending on the resolution needed.
 
 - *0*
@@ -42,6 +57,16 @@ This nomenclature system can be broken down into finer and finer units, dependin
 - *0.PE4h*
 
 For the purposes of this narrative, the sub-clade nomenclature will not be used. But if you're interested, you can view the [dataset colored by sub-clades here](http://localhost:4000/plague-phylogeography-projects/main/full/all?c=branch_minor&d=tree&legend=open&m=div&p=full).
+
+---
+
+### Methods
+
+Sequencing projects that were only available from the Sequence Read Archive (SRA) underwent pre-processing using the [nf-core/eager pipeline](https://doi.org/10.7717/peerj.10947). Reads were trimmed for synthetic sequences, merged across paired end libraries and lanes, and aligned to the [*Y. pestis* reference genome](https://www.ncbi.nlm.nih.gov/assembly/GCA_000009065.1). Ancient DNA (aDNA) projects were required to obtain 70% coverage of the reference genome at a minimum depth of 3X. For modern projects, a minimum depth of 10X was enforced.
+
+The [snippy pipeline](https://github.com/tseemann/snippy) was used to perform variant calling and multiple alignment on post-processed SRA datasets and pre-assembled genomes. The output multiple alignment was filtered to only include chromosomal regions, and sites with no more than 5% missing data. 
+
+Model selection was performed using [Modelfinder](https://doi.org/10.1038/nmeth.4285) and a maximum likelihood tree was estimated across 10 independent runs of [IQTREE](https://doi.org/10.1093/molbev/msaa015) using the K3Pu+F+I model. Branch support was evaluated using 1000 iterations of the [ultrafast bootstrap approximation (UFboot)](https://doi.org/10.1093/molbev/msx281) and considered to have strong support if UFboot >= 95.
 
 ---
 

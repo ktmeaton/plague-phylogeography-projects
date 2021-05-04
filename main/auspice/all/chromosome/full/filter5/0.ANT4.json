@@ -279,49 +279,9 @@
         "type": "categorical"
       },
       {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_time",
-        "title": "Geographic Rate Time",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "key": "strain",
+        "title": "Strain",
         "type": "categorical"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
       },
       {
         "key": "province",
@@ -351,12 +311,42 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
       },
       {
-        "key": "branch_major_conf_category",
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#1996f3"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -367,13 +357,13 @@
             "#1996f3"
           ]
         ],
-        "title": "Branch Major Confidence",
+        "title": "Province Confidence",
         "type": "categorical"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
       },
       {
         "key": "branch_support_conf_category",
@@ -391,14 +381,9 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
         "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
       },
       {
         "key": "branch_minor",
@@ -410,6 +395,67 @@
         ],
         "title": "Branch Minor",
         "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "0.ANT",
+            "#1996f3"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#1996f3"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
       },
       {
         "key": "country",
@@ -439,9 +485,54 @@
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
         "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "node_name",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#1996f3"
+          ]
+        ],
+        "title": "Branch Major Confidence",
+        "type": "categorical"
       },
       {
         "key": "branch_minor_conf_category",
@@ -457,92 +548,6 @@
         ],
         "title": "Branch Minor Confidence",
         "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#1996f3"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#1996f3"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#1996f3"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "0.ANT",
-            "#1996f3"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
       },
       {
         "key": "date_mean",
@@ -631,7 +636,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-03"
+    "updated": "2021-05-04"
   },
   "tree": {
     "branch_attrs": {
@@ -663,6 +668,7 @@
         "Date Err": "NA",
         "Date Mean": "NA",
         "Geometry Size": 4.0,
+        "Node Name": "NODE182",
         "Node Type": "internal",
         "Num Date": 408.0,
         "Num Date Confidence": [
@@ -741,7 +747,7 @@
             "value": "HIGH"
           },
           "country_date_strain": {
-            "value": "Kyrgyzstan 214:261 DA101"
+            "value": "Kyrgyzstan (214:261) DA101"
           },
           "country_lat": {
             "confidence": {
@@ -765,6 +771,9 @@
             "value": 237.5
           },
           "div": 3.4116e-06,
+          "node_name": {
+            "value": "SAMEA1061800"
+          },
           "node_type": {
             "value": "terminal"
           },
@@ -785,7 +794,7 @@
             "value": "HIGH"
           },
           "province_date_strain": {
-            "value": "Kyrgyzstan 214:261 DA101"
+            "value": "Kyrgyzstan (214:261) DA101"
           },
           "province_lat": {
             "confidence": {
@@ -846,6 +855,7 @@
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 4.0,
+            "Node Name": "NODE182",
             "Node Type": "internal",
             "Num Date": 408.0,
             "Num Date Confidence": [
@@ -898,6 +908,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 4.0,
+                "Node Name": "NODE183",
                 "Node Type": "internal",
                 "Num Date": 431.0,
                 "Num Date Confidence": [
@@ -976,7 +987,7 @@
                     "value": "HIGH"
                   },
                   "country_date_strain": {
-                    "value": "England 500:650 EDI004"
+                    "value": "England (500:650) EDI004"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1000,6 +1011,9 @@
                     "value": 575.0
                   },
                   "div": 1.1277099999999999e-05,
+                  "node_name": {
+                    "value": "SAMEA5661365"
+                  },
                   "node_type": {
                     "value": "terminal"
                   },
@@ -1020,7 +1034,7 @@
                     "value": "HIGH"
                   },
                   "province_date_strain": {
-                    "value": "England 500:650 EDI004"
+                    "value": "England (500:650) EDI004"
                   },
                   "province_lat": {
                     "confidence": {
@@ -1081,6 +1095,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 4.0,
+                    "Node Name": "NODE184",
                     "Node Type": "internal",
                     "Num Date": 471.0,
                     "Num Date Confidence": [
@@ -1159,7 +1174,7 @@
                         "value": "HIGH"
                       },
                       "country_date_strain": {
-                        "value": "England 474:637 EDI001"
+                        "value": "England (474:637) EDI001"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1183,6 +1198,9 @@
                         "value": 555.5
                       },
                       "div": 1.1495999999999998e-05,
+                      "node_name": {
+                        "value": "SAMEA5661363"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -1203,7 +1221,7 @@
                         "value": "HIGH"
                       },
                       "province_date_strain": {
-                        "value": "England 474:637 EDI001"
+                        "value": "England (474:637) EDI001"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1290,7 +1308,7 @@
                         "value": "HIGH"
                       },
                       "country_date_strain": {
-                        "value": "England 500:650 EDI003"
+                        "value": "England (500:650) EDI003"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1314,6 +1332,9 @@
                         "value": 575.0
                       },
                       "div": 1.4201799999999998e-05,
+                      "node_name": {
+                        "value": "SAMEA5661364"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -1334,7 +1355,7 @@
                         "value": "HIGH"
                       },
                       "province_date_strain": {
-                        "value": "England 500:650 EDI003"
+                        "value": "England (500:650) EDI003"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1423,6 +1444,9 @@
                     "value": -1.2649062
                   },
                   "div": 1.1472399999999999e-05,
+                  "node_name": {
+                    "value": "NODE184"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -1526,6 +1550,9 @@
                 "value": -1.2649062
               },
               "div": 1.0806e-05,
+              "node_name": {
+                "value": "NODE183"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -1601,6 +1628,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 11.0,
+                "Node Name": "NODE185",
                 "Node Type": "internal",
                 "Num Date": 408.0,
                 "Num Date Confidence": [
@@ -1679,7 +1707,7 @@
                     "value": "HIGH"
                   },
                   "country_date_strain": {
-                    "value": "Spain 432:610 VAL001"
+                    "value": "Spain (432:610) VAL001"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1703,6 +1731,9 @@
                     "value": 521.0
                   },
                   "div": 1.29944e-05,
+                  "node_name": {
+                    "value": "SAMEA5661384"
+                  },
                   "node_type": {
                     "value": "terminal"
                   },
@@ -1723,7 +1754,7 @@
                     "value": "HIGH"
                   },
                   "province_date_strain": {
-                    "value": "Spain 432:610 VAL001"
+                    "value": "Spain (432:610) VAL001"
                   },
                   "province_lat": {
                     "confidence": {
@@ -1784,6 +1815,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 11.0,
+                    "Node Name": "NODE186",
                     "Node Type": "internal",
                     "Num Date": 408.0,
                     "Num Date Confidence": [
@@ -1836,6 +1868,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 11.0,
+                        "Node Name": "NODE187",
                         "Node Type": "internal",
                         "Num Date": 408.0,
                         "Num Date Confidence": [
@@ -1914,7 +1947,7 @@
                             "value": "HIGH"
                           },
                           "country_date_strain": {
-                            "value": "Germany 434:600 PET004"
+                            "value": "Germany (434:600) PET004"
                           },
                           "country_lat": {
                             "confidence": {
@@ -1938,6 +1971,9 @@
                             "value": 517.0
                           },
                           "div": 1.65287e-05,
+                          "node_name": {
+                            "value": "SAMEA5661385"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -1958,7 +1994,7 @@
                             "value": "HIGH"
                           },
                           "province_date_strain": {
-                            "value": "Germany 434:600 PET004"
+                            "value": "Germany (434:600) PET004"
                           },
                           "province_lat": {
                             "confidence": {
@@ -2019,6 +2055,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 2.0,
+                            "Node Name": "NODE188",
                             "Node Type": "internal",
                             "Num Date": 686.0,
                             "Num Date Confidence": [
@@ -2097,7 +2134,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "France 650:880 LSD001"
+                                "value": "France (650:880) LSD001"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2121,6 +2158,9 @@
                                 "value": 765.0
                               },
                               "div": 1.91376e-05,
+                              "node_name": {
+                                "value": "SAMEA5661367"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -2141,7 +2181,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "France 650:880 LSD001"
+                                "value": "France (650:880) LSD001"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2228,7 +2268,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "France 650:880 LSD020"
+                                "value": "France (650:880) LSD020"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2252,6 +2292,9 @@
                                 "value": 765.0
                               },
                               "div": 1.83014e-05,
+                              "node_name": {
+                                "value": "SAMEA5661372"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -2272,7 +2315,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "France 650:880 LSD020"
+                                "value": "France (650:880) LSD020"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2361,6 +2404,9 @@
                             "value": 1.8883335
                           },
                           "div": 1.61813e-05,
+                          "node_name": {
+                            "value": "NODE188"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -2464,6 +2510,9 @@
                         "value": 10.4234469
                       },
                       "div": 1.19856e-05,
+                      "node_name": {
+                        "value": "NODE187"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -2539,6 +2588,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 11.0,
+                        "Node Name": "NODE189",
                         "Node Type": "internal",
                         "Num Date": 408.0,
                         "Num Date Confidence": [
@@ -2617,7 +2667,7 @@
                             "value": "HIGH"
                           },
                           "country_date_strain": {
-                            "value": "Germany 426:571 AE1175"
+                            "value": "Germany (426:571) AE1175"
                           },
                           "country_lat": {
                             "confidence": {
@@ -2641,6 +2691,9 @@
                             "value": 498.5
                           },
                           "div": 1.2221199999999999e-05,
+                          "node_name": {
+                            "value": "SAMEA4354665"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -2661,7 +2714,7 @@
                             "value": "HIGH"
                           },
                           "province_date_strain": {
-                            "value": "Germany 426:571 AE1175"
+                            "value": "Germany (426:571) AE1175"
                           },
                           "province_lat": {
                             "confidence": {
@@ -2722,6 +2775,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 11.0,
+                            "Node Name": "NODE190",
                             "Node Type": "internal",
                             "Num Date": 408.0,
                             "Num Date Confidence": [
@@ -2800,7 +2854,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "Germany 433:599 UNT003"
+                                "value": "Germany (433:599) UNT003"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2824,6 +2878,9 @@
                                 "value": 516.0
                               },
                               "div": 1.2271299999999999e-05,
+                              "node_name": {
+                                "value": "SAMEA5661389"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -2844,7 +2901,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "Germany 433:599 UNT003"
+                                "value": "Germany (433:599) UNT003"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2905,6 +2962,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 11.0,
+                                "Node Name": "NODE191",
                                 "Node Type": "internal",
                                 "Num Date": 408.0,
                                 "Num Date Confidence": [
@@ -2983,7 +3041,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "Germany 428:595 DIT003"
+                                    "value": "Germany (428:595) DIT003"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -3007,6 +3065,9 @@
                                     "value": 511.5
                                   },
                                   "div": 1.3020699999999999e-05,
+                                  "node_name": {
+                                    "value": "SAMEA5661360"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -3027,7 +3088,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "Germany 428:595 DIT003"
+                                    "value": "Germany (428:595) DIT003"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -3114,7 +3175,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "Germany 419:537 UNT004"
+                                    "value": "Germany (419:537) UNT004"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -3138,6 +3199,9 @@
                                     "value": 478.0
                                   },
                                   "div": 1.66788e-05,
+                                  "node_name": {
+                                    "value": "SAMEA5661390"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -3158,7 +3222,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "Germany 419:537 UNT004"
+                                    "value": "Germany (419:537) UNT004"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -3247,6 +3311,9 @@
                                 "value": 10.4234469
                               },
                               "div": 1.2314e-05,
+                              "node_name": {
+                                "value": "NODE191"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -3350,6 +3417,9 @@
                             "value": 10.4234469
                           },
                           "div": 1.22477e-05,
+                          "node_name": {
+                            "value": "NODE190"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -3453,6 +3523,9 @@
                         "value": 10.4234469
                       },
                       "div": 1.21976e-05,
+                      "node_name": {
+                        "value": "NODE189"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -3556,6 +3629,9 @@
                     "value": 10.4234469
                   },
                   "div": 1.1962e-05,
+                  "node_name": {
+                    "value": "NODE186"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -3659,6 +3735,9 @@
                 "value": 10.4234469
               },
               "div": 1.1581e-05,
+              "node_name": {
+                "value": "NODE185"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -3762,6 +3841,9 @@
             "value": -1.2649062
           },
           "div": 1.07824e-05,
+          "node_name": {
+            "value": "NODE182"
+          },
           "node_type": {
             "value": "internal"
           },
@@ -3865,6 +3947,9 @@
         "value": 74.724091
       },
       "div": 0,
+      "node_name": {
+        "value": "NODE181"
+      },
       "node_type": {
         "value": "internal"
       },

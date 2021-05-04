@@ -363,49 +363,9 @@
         "type": "categorical"
       },
       {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_time",
-        "title": "Geographic Rate Time",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "key": "strain",
+        "title": "Strain",
         "type": "categorical"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
       },
       {
         "key": "province",
@@ -483,12 +443,42 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
       },
       {
-        "key": "branch_major_conf_category",
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#e6ce74"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -499,13 +489,13 @@
             "#e6ce74"
           ]
         ],
-        "title": "Branch Major Confidence",
+        "title": "Province Confidence",
         "type": "categorical"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
       },
       {
         "key": "branch_support_conf_category",
@@ -523,14 +513,9 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
         "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
       },
       {
         "key": "branch_minor",
@@ -554,6 +539,67 @@
         ],
         "title": "Branch Minor",
         "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "1.PRE",
+            "#e6ce74"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#e6ce74"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
       },
       {
         "key": "country",
@@ -607,9 +653,54 @@
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
         "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "node_name",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#e6ce74"
+          ]
+        ],
+        "title": "Branch Major Confidence",
+        "type": "categorical"
       },
       {
         "key": "branch_minor_conf_category",
@@ -625,92 +716,6 @@
         ],
         "title": "Branch Minor Confidence",
         "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#e6ce74"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#e6ce74"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#e6ce74"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "1.PRE",
-            "#e6ce74"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
       },
       {
         "key": "date_mean",
@@ -871,7 +876,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-03"
+    "updated": "2021-05-04"
   },
   "tree": {
     "branch_attrs": {
@@ -903,6 +908,7 @@
         "Date Err": "NA",
         "Date Mean": "NA",
         "Geometry Size": 11.0,
+        "Node Name": "NODE402",
         "Node Type": "internal",
         "Num Date": 1316.0,
         "Num Date Confidence": [
@@ -981,7 +987,7 @@
             "value": "HIGH"
           },
           "country_date_strain": {
-            "value": "Russia 1300:1400 LAI009"
+            "value": "Russia (1300:1400) LAI009"
           },
           "country_lat": {
             "confidence": {
@@ -1005,6 +1011,9 @@
             "value": 1350.0
           },
           "div": 2.36e-08,
+          "node_name": {
+            "value": "SAMEA5818806"
+          },
           "node_type": {
             "value": "terminal"
           },
@@ -1025,7 +1034,7 @@
             "value": "HIGH"
           },
           "province_date_strain": {
-            "value": "Russia 1300:1400 LAI009"
+            "value": "Russia (1300:1400) LAI009"
           },
           "province_lat": {
             "confidence": {
@@ -1086,6 +1095,7 @@
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 11.0,
+            "Node Name": "NODE402",
             "Node Type": "internal",
             "Num Date": 1316.0,
             "Num Date Confidence": [
@@ -1138,6 +1148,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 11.0,
+                "Node Name": "NODE403",
                 "Node Type": "internal",
                 "Num Date": 1316.0,
                 "Num Date Confidence": [
@@ -1216,7 +1227,7 @@
                     "value": "HIGH"
                   },
                   "country_date_strain": {
-                    "value": "Italy 1300:1400 COL001"
+                    "value": "Italy (1300:1400) COL001"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1240,6 +1251,9 @@
                     "value": 1350.0
                   },
                   "div": 1.8845e-06,
+                  "node_name": {
+                    "value": "SAMEA7293136"
+                  },
                   "node_type": {
                     "value": "terminal"
                   },
@@ -1260,7 +1274,7 @@
                     "value": "HIGH"
                   },
                   "province_date_strain": {
-                    "value": "Italy 1300:1400 COL001"
+                    "value": "Italy (1300:1400) COL001"
                   },
                   "province_lat": {
                     "confidence": {
@@ -1321,6 +1335,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 11.0,
+                    "Node Name": "NODE404",
                     "Node Type": "internal",
                     "Num Date": 1316.0,
                     "Num Date Confidence": [
@@ -1399,7 +1414,7 @@
                         "value": "HIGH"
                       },
                       "country_date_strain": {
-                        "value": "Germany 1283:1390 MAN008"
+                        "value": "Germany (1283:1390) MAN008"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1423,6 +1438,9 @@
                         "value": 1336.5
                       },
                       "div": 3.0623999999999997e-06,
+                      "node_name": {
+                        "value": "SAMEA5818809"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -1443,7 +1461,7 @@
                         "value": "HIGH"
                       },
                       "province_date_strain": {
-                        "value": "Germany 1283:1390 MAN008"
+                        "value": "Germany (1283:1390) MAN008"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1504,6 +1522,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 11.0,
+                        "Node Name": "NODE405",
                         "Node Type": "internal",
                         "Num Date": 1316.0,
                         "Num Date Confidence": [
@@ -1582,7 +1601,7 @@
                             "value": "HIGH"
                           },
                           "country_date_strain": {
-                            "value": "Germany 1420:1630 STA001"
+                            "value": "Germany (1420:1630) STA001"
                           },
                           "country_lat": {
                             "confidence": {
@@ -1606,6 +1625,9 @@
                             "value": 1525.0
                           },
                           "div": 4.3337e-06,
+                          "node_name": {
+                            "value": "SAMEA5818817"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -1626,7 +1648,7 @@
                             "value": "HIGH"
                           },
                           "province_date_strain": {
-                            "value": "Germany 1420:1630 STA001"
+                            "value": "Germany (1420:1630) STA001"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1687,6 +1709,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 11.0,
+                            "Node Name": "NODE406",
                             "Node Type": "internal",
                             "Num Date": 1316.0,
                             "Num Date Confidence": [
@@ -1765,7 +1788,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "England 1475:1536 NMS002"
+                                "value": "England (1475:1536) NMS002"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -1789,6 +1812,9 @@
                                 "value": 1505.5
                               },
                               "div": 7.6858e-06,
+                              "node_name": {
+                                "value": "SAMEA5818815"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -1809,7 +1835,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "England 1475:1536 NMS002"
+                                "value": "England (1475:1536) NMS002"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -1870,6 +1896,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 11.0,
+                                "Node Name": "NODE407",
                                 "Node Type": "internal",
                                 "Num Date": 1316.0,
                                 "Num Date Confidence": [
@@ -1922,6 +1949,7 @@
                                     "Date Err": "NA",
                                     "Date Mean": "NA",
                                     "Geometry Size": 5.0,
+                                    "Node Name": "NODE408",
                                     "Node Type": "internal",
                                     "Num Date": 1618.0,
                                     "Num Date Confidence": [
@@ -2000,7 +2028,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "England 1560:1635 BED030"
+                                        "value": "England (1560:1635) BED030"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -2024,6 +2052,9 @@
                                         "value": 1597.5
                                       },
                                       "div": 2.05575e-05,
+                                      "node_name": {
+                                        "value": "SAMEA5818800"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -2044,7 +2075,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "England 1560:1635 BED030"
+                                        "value": "England (1560:1635) BED030"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -2105,6 +2136,7 @@
                                         "Date Err": "NA",
                                         "Date Mean": "NA",
                                         "Geometry Size": 5.0,
+                                        "Node Name": "NODE409",
                                         "Node Type": "internal",
                                         "Num Date": 1618.0,
                                         "Num Date Confidence": [
@@ -2157,6 +2189,7 @@
                                             "Date Err": "NA",
                                             "Date Mean": "NA",
                                             "Geometry Size": 5.0,
+                                            "Node Name": "NODE410",
                                             "Node Type": "internal",
                                             "Num Date": 1618.0,
                                             "Num Date Confidence": [
@@ -2235,7 +2268,7 @@
                                                 "value": "HIGH"
                                               },
                                               "country_date_strain": {
-                                                "value": "England 1560:1635 BED024"
+                                                "value": "England (1560:1635) BED024"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -2259,6 +2292,9 @@
                                                 "value": 1597.5
                                               },
                                               "div": 2.10907e-05,
+                                              "node_name": {
+                                                "value": "SAMEA5818798"
+                                              },
                                               "node_type": {
                                                 "value": "terminal"
                                               },
@@ -2279,7 +2315,7 @@
                                                 "value": "HIGH"
                                               },
                                               "province_date_strain": {
-                                                "value": "England 1560:1635 BED024"
+                                                "value": "England (1560:1635) BED024"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -2340,6 +2376,7 @@
                                                 "Date Err": "NA",
                                                 "Date Mean": "NA",
                                                 "Geometry Size": 5.0,
+                                                "Node Name": "NODE411",
                                                 "Node Type": "internal",
                                                 "Num Date": 1620.0,
                                                 "Num Date Confidence": [
@@ -2418,7 +2455,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "country_date_strain": {
-                                                    "value": "England 1560:1635 BED028"
+                                                    "value": "England (1560:1635) BED028"
                                                   },
                                                   "country_lat": {
                                                     "confidence": {
@@ -2442,6 +2479,9 @@
                                                     "value": 1597.5
                                                   },
                                                   "div": 2.0853300000000002e-05,
+                                                  "node_name": {
+                                                    "value": "SAMEA5818799"
+                                                  },
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
@@ -2462,7 +2502,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "province_date_strain": {
-                                                    "value": "England 1560:1635 BED028"
+                                                    "value": "England (1560:1635) BED028"
                                                   },
                                                   "province_lat": {
                                                     "confidence": {
@@ -2549,7 +2589,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "country_date_strain": {
-                                                    "value": "England 1560:1635 BED034"
+                                                    "value": "England (1560:1635) BED034"
                                                   },
                                                   "country_lat": {
                                                     "confidence": {
@@ -2573,6 +2613,9 @@
                                                     "value": 1597.5
                                                   },
                                                   "div": 2.0666800000000003e-05,
+                                                  "node_name": {
+                                                    "value": "SAMEA5818801"
+                                                  },
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
@@ -2593,7 +2636,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "province_date_strain": {
-                                                    "value": "England 1560:1635 BED034"
+                                                    "value": "England (1560:1635) BED034"
                                                   },
                                                   "province_lat": {
                                                     "confidence": {
@@ -2682,6 +2725,9 @@
                                                 "value": -1.2649062
                                               },
                                               "div": 2.0643200000000003e-05,
+                                              "node_name": {
+                                                "value": "NODE411"
+                                              },
                                               "node_type": {
                                                 "value": "internal"
                                               },
@@ -2785,6 +2831,9 @@
                                             "value": -1.2649062
                                           },
                                           "div": 2.06196e-05,
+                                          "node_name": {
+                                            "value": "NODE410"
+                                          },
                                           "node_type": {
                                             "value": "internal"
                                           },
@@ -2860,6 +2909,7 @@
                                             "Date Err": "NA",
                                             "Date Mean": "NA",
                                             "Geometry Size": 4.0,
+                                            "Node Name": "NODE412",
                                             "Node Type": "internal",
                                             "Num Date": 1618.0,
                                             "Num Date Confidence": [
@@ -2938,7 +2988,7 @@
                                                 "value": "HIGH"
                                               },
                                               "country_date_strain": {
-                                                "value": "Russia 1400:1700 Azov38"
+                                                "value": "Russia (1400:1700) Azov38"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -2962,6 +3012,9 @@
                                                 "value": 1550.0
                                               },
                                               "div": 2.21397e-05,
+                                              "node_name": {
+                                                "value": "SAMEA7313243_45"
+                                              },
                                               "node_type": {
                                                 "value": "terminal"
                                               },
@@ -2982,7 +3035,7 @@
                                                 "value": "HIGH"
                                               },
                                               "province_date_strain": {
-                                                "value": "Russia 1400:1700 Azov38"
+                                                "value": "Russia (1400:1700) Azov38"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -3043,6 +3096,7 @@
                                                 "Date Err": "NA",
                                                 "Date Mean": "NA",
                                                 "Geometry Size": 4.0,
+                                                "Node Name": "NODE413",
                                                 "Node Type": "internal",
                                                 "Num Date": 1618.0,
                                                 "Num Date Confidence": [
@@ -3095,6 +3149,7 @@
                                                     "Date Err": "NA",
                                                     "Date Mean": "NA",
                                                     "Geometry Size": 4.0,
+                                                    "Node Name": "NODE414",
                                                     "Node Type": "internal",
                                                     "Num Date": 1618.0,
                                                     "Num Date Confidence": [
@@ -3173,7 +3228,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "country_date_strain": {
-                                                        "value": "Russia 1500:1800 CHE1"
+                                                        "value": "Russia (1500:1800) CHE1"
                                                       },
                                                       "country_lat": {
                                                         "confidence": {
@@ -3197,6 +3252,9 @@
                                                         "value": 1650.0
                                                       },
                                                       "div": 3.55265e-05,
+                                                      "node_name": {
+                                                        "value": "SAMEA7293135"
+                                                      },
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
@@ -3217,7 +3275,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "province_date_strain": {
-                                                        "value": "Russia 1500:1800 CHE1"
+                                                        "value": "Russia (1500:1800) CHE1"
                                                       },
                                                       "province_lat": {
                                                         "confidence": {
@@ -3304,7 +3362,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "country_date_strain": {
-                                                        "value": "Russia 1762:1773 Rostov2033"
+                                                        "value": "Russia (1762:1773) Rostov2033"
                                                       },
                                                       "country_lat": {
                                                         "confidence": {
@@ -3328,6 +3386,9 @@
                                                         "value": 1767.5
                                                       },
                                                       "div": 2.79907e-05,
+                                                      "node_name": {
+                                                        "value": "SAMEA7313236_38"
+                                                      },
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
@@ -3348,7 +3409,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "province_date_strain": {
-                                                        "value": "Russia 1762:1773 Rostov2033"
+                                                        "value": "Russia (1762:1773) Rostov2033"
                                                       },
                                                       "province_lat": {
                                                         "confidence": {
@@ -3437,6 +3498,9 @@
                                                     "value": 97.7453061
                                                   },
                                                   "div": 2.39857e-05,
+                                                  "node_name": {
+                                                    "value": "NODE414"
+                                                  },
                                                   "node_type": {
                                                     "value": "internal"
                                                   },
@@ -3512,6 +3576,7 @@
                                                     "Date Err": "NA",
                                                     "Date Mean": "NA",
                                                     "Geometry Size": 5.0,
+                                                    "Node Name": "NODE415",
                                                     "Node Type": "internal",
                                                     "Num Date": 1687.0,
                                                     "Num Date Confidence": [
@@ -3590,7 +3655,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "country_date_strain": {
-                                                        "value": "France 1720:1722 OBS137"
+                                                        "value": "France (1720:1722) OBS137"
                                                       },
                                                       "country_lat": {
                                                         "confidence": {
@@ -3614,6 +3679,9 @@
                                                         "value": 1721.0
                                                       },
                                                       "div": 2.48515e-05,
+                                                      "node_name": {
+                                                        "value": "SAMEA3713715"
+                                                      },
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
@@ -3634,7 +3702,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "province_date_strain": {
-                                                        "value": "France 1720:1722 OBS137"
+                                                        "value": "France (1720:1722) OBS137"
                                                       },
                                                       "province_lat": {
                                                         "confidence": {
@@ -3695,6 +3763,7 @@
                                                         "Date Err": "NA",
                                                         "Date Mean": "NA",
                                                         "Geometry Size": 5.0,
+                                                        "Node Name": "NODE416",
                                                         "Node Type": "internal",
                                                         "Num Date": 1706.0,
                                                         "Num Date Confidence": [
@@ -3747,6 +3816,7 @@
                                                             "Date Err": "NA",
                                                             "Date Mean": "NA",
                                                             "Geometry Size": 5.0,
+                                                            "Node Name": "NODE417",
                                                             "Node Type": "internal",
                                                             "Num Date": 1711.0,
                                                             "Num Date Confidence": [
@@ -3825,7 +3895,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "country_date_strain": {
-                                                                "value": "France 1720:1722 OBS107"
+                                                                "value": "France (1720:1722) OBS107"
                                                               },
                                                               "country_lat": {
                                                                 "confidence": {
@@ -3849,6 +3919,9 @@
                                                                 "value": 1721.0
                                                               },
                                                               "div": 2.5321599999999998e-05,
+                                                              "node_name": {
+                                                                "value": "SAMEA3713711"
+                                                              },
                                                               "node_type": {
                                                                 "value": "terminal"
                                                               },
@@ -3869,7 +3942,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "province_date_strain": {
-                                                                "value": "France 1720:1722 OBS107"
+                                                                "value": "France (1720:1722) OBS107"
                                                               },
                                                               "province_lat": {
                                                                 "confidence": {
@@ -3956,7 +4029,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "country_date_strain": {
-                                                                "value": "France 1720:1722 OBS124"
+                                                                "value": "France (1720:1722) OBS124"
                                                               },
                                                               "country_lat": {
                                                                 "confidence": {
@@ -3980,6 +4053,9 @@
                                                                 "value": 1721.0
                                                               },
                                                               "div": 2.51342e-05,
+                                                              "node_name": {
+                                                                "value": "SAMEA3713714"
+                                                              },
                                                               "node_type": {
                                                                 "value": "terminal"
                                                               },
@@ -4000,7 +4076,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "province_date_strain": {
-                                                                "value": "France 1720:1722 OBS124"
+                                                                "value": "France (1720:1722) OBS124"
                                                               },
                                                               "province_lat": {
                                                                 "confidence": {
@@ -4089,6 +4165,9 @@
                                                             "value": 1.8883335
                                                           },
                                                           "div": 2.51106e-05,
+                                                          "node_name": {
+                                                            "value": "NODE417"
+                                                          },
                                                           "node_type": {
                                                             "value": "internal"
                                                           },
@@ -4164,6 +4243,7 @@
                                                             "Date Err": "NA",
                                                             "Date Mean": "NA",
                                                             "Geometry Size": 5.0,
+                                                            "Node Name": "NODE418",
                                                             "Node Type": "internal",
                                                             "Num Date": 1706.0,
                                                             "Num Date Confidence": [
@@ -4242,7 +4322,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "country_date_strain": {
-                                                                "value": "France 1720:1722 OBS110"
+                                                                "value": "France (1720:1722) OBS110"
                                                               },
                                                               "country_lat": {
                                                                 "confidence": {
@@ -4266,6 +4346,9 @@
                                                                 "value": 1721.0
                                                               },
                                                               "div": 2.53462e-05,
+                                                              "node_name": {
+                                                                "value": "SAMEA3713712"
+                                                              },
                                                               "node_type": {
                                                                 "value": "terminal"
                                                               },
@@ -4286,7 +4369,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "province_date_strain": {
-                                                                "value": "France 1720:1722 OBS110"
+                                                                "value": "France (1720:1722) OBS110"
                                                               },
                                                               "province_lat": {
                                                                 "confidence": {
@@ -4373,7 +4456,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "country_date_strain": {
-                                                                "value": "France 1720:1722 OBS116"
+                                                                "value": "France (1720:1722) OBS116"
                                                               },
                                                               "country_lat": {
                                                                 "confidence": {
@@ -4397,6 +4480,9 @@
                                                                 "value": 1721.0
                                                               },
                                                               "div": 2.55817e-05,
+                                                              "node_name": {
+                                                                "value": "SAMEA3713713"
+                                                              },
                                                               "node_type": {
                                                                 "value": "terminal"
                                                               },
@@ -4417,7 +4503,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "province_date_strain": {
-                                                                "value": "France 1720:1722 OBS116"
+                                                                "value": "France (1720:1722) OBS116"
                                                               },
                                                               "province_lat": {
                                                                 "confidence": {
@@ -4506,6 +4592,9 @@
                                                             "value": 1.8883335
                                                           },
                                                           "div": 2.51106e-05,
+                                                          "node_name": {
+                                                            "value": "NODE418"
+                                                          },
                                                           "node_type": {
                                                             "value": "internal"
                                                           },
@@ -4609,6 +4698,9 @@
                                                         "value": 1.8883335
                                                       },
                                                       "div": 2.5087e-05,
+                                                      "node_name": {
+                                                        "value": "NODE416"
+                                                      },
                                                       "node_type": {
                                                         "value": "internal"
                                                       },
@@ -4712,6 +4804,9 @@
                                                     "value": 1.8883335
                                                   },
                                                   "div": 2.46159e-05,
+                                                  "node_name": {
+                                                    "value": "NODE415"
+                                                  },
                                                   "node_type": {
                                                     "value": "internal"
                                                   },
@@ -4815,6 +4910,9 @@
                                                 "value": 97.7453061
                                               },
                                               "div": 2.36736e-05,
+                                              "node_name": {
+                                                "value": "NODE413"
+                                              },
                                               "node_type": {
                                                 "value": "internal"
                                               },
@@ -4918,6 +5016,9 @@
                                             "value": 97.7453061
                                           },
                                           "div": 2.09374e-05,
+                                          "node_name": {
+                                            "value": "NODE412"
+                                          },
                                           "node_type": {
                                             "value": "internal"
                                           },
@@ -5021,6 +5122,9 @@
                                         "value": -1.2649062
                                       },
                                       "div": 2.0596e-05,
+                                      "node_name": {
+                                        "value": "NODE409"
+                                      },
                                       "node_type": {
                                         "value": "internal"
                                       },
@@ -5124,6 +5228,9 @@
                                     "value": -1.2649062
                                   },
                                   "div": 2.03219e-05,
+                                  "node_name": {
+                                    "value": "NODE408"
+                                  },
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -5199,6 +5306,7 @@
                                     "Date Err": "NA",
                                     "Date Mean": "NA",
                                     "Geometry Size": 11.0,
+                                    "Node Name": "NODE419",
                                     "Node Type": "internal",
                                     "Num Date": 1346.0,
                                     "Num Date Confidence": [
@@ -5251,6 +5359,7 @@
                                         "Date Err": "NA",
                                         "Date Mean": "NA",
                                         "Geometry Size": 1.0,
+                                        "Node Name": "NODE420",
                                         "Node Type": "internal",
                                         "Num Date": 1409.0,
                                         "Num Date Confidence": [
@@ -5329,7 +5438,7 @@
                                             "value": "HIGH"
                                           },
                                           "country_date_strain": {
-                                            "value": "Germany 1485:1627 ELW098"
+                                            "value": "Germany (1485:1627) ELW098"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -5353,6 +5462,9 @@
                                             "value": 1556.0
                                           },
                                           "div": 6.7593e-06,
+                                          "node_name": {
+                                            "value": "SAMEA5818805"
+                                          },
                                           "node_type": {
                                             "value": "terminal"
                                           },
@@ -5373,7 +5485,7 @@
                                             "value": "HIGH"
                                           },
                                           "province_date_strain": {
-                                            "value": "Germany 1485:1627 ELW098"
+                                            "value": "Germany (1485:1627) ELW098"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -5434,6 +5546,7 @@
                                             "Date Err": "NA",
                                             "Date Mean": "NA",
                                             "Geometry Size": 3.0,
+                                            "Node Name": "NODE421",
                                             "Node Type": "internal",
                                             "Num Date": 1430.0,
                                             "Num Date Confidence": [
@@ -5512,7 +5625,7 @@
                                                 "value": "HIGH"
                                               },
                                               "country_date_strain": {
-                                                "value": "Lithuania 1435:1477 AGU010"
+                                                "value": "Lithuania (1435:1477) AGU010"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -5536,6 +5649,9 @@
                                                 "value": 1456.0
                                               },
                                               "div": 6.3354e-06,
+                                              "node_name": {
+                                                "value": "SAMEA6651390"
+                                              },
                                               "node_type": {
                                                 "value": "terminal"
                                               },
@@ -5556,7 +5672,7 @@
                                                 "value": "HIGH"
                                               },
                                               "province_date_strain": {
-                                                "value": "Lithuania 1435:1477 AGU010"
+                                                "value": "Lithuania (1435:1477) AGU010"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -5617,6 +5733,7 @@
                                                 "Date Err": "NA",
                                                 "Date Mean": "NA",
                                                 "Geometry Size": 3.0,
+                                                "Node Name": "NODE422",
                                                 "Node Type": "internal",
                                                 "Num Date": 1447.0,
                                                 "Num Date Confidence": [
@@ -5695,7 +5812,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "country_date_strain": {
-                                                    "value": "Lithuania 1463:1632 AGU007B"
+                                                    "value": "Lithuania (1463:1632) AGU007B"
                                                   },
                                                   "country_lat": {
                                                     "confidence": {
@@ -5719,6 +5836,9 @@
                                                     "value": 1547.5
                                                   },
                                                   "div": 6.3590000000000004e-06,
+                                                  "node_name": {
+                                                    "value": "SAMEA6637002"
+                                                  },
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
@@ -5739,7 +5859,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "province_date_strain": {
-                                                    "value": "Lithuania 1463:1632 AGU007B"
+                                                    "value": "Lithuania (1463:1632) AGU007B"
                                                   },
                                                   "province_lat": {
                                                     "confidence": {
@@ -5800,6 +5920,7 @@
                                                     "Date Err": "NA",
                                                     "Date Mean": "NA",
                                                     "Geometry Size": 3.0,
+                                                    "Node Name": "NODE423",
                                                     "Node Type": "internal",
                                                     "Num Date": 1449.0,
                                                     "Num Date Confidence": [
@@ -5878,7 +5999,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "country_date_strain": {
-                                                        "value": "Lithuania 1441:1612 AGU025"
+                                                        "value": "Lithuania (1441:1612) AGU025"
                                                       },
                                                       "country_lat": {
                                                         "confidence": {
@@ -5902,6 +6023,9 @@
                                                         "value": 1526.5
                                                       },
                                                       "div": 7.301300000000001e-06,
+                                                      "node_name": {
+                                                        "value": "SAMEA6637004"
+                                                      },
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
@@ -5922,7 +6046,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "province_date_strain": {
-                                                        "value": "Lithuania 1441:1612 AGU025"
+                                                        "value": "Lithuania (1441:1612) AGU025"
                                                       },
                                                       "province_lat": {
                                                         "confidence": {
@@ -6009,7 +6133,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "country_date_strain": {
-                                                        "value": "Poland 1400:1700 Gdansk8"
+                                                        "value": "Poland (1400:1700) Gdansk8"
                                                       },
                                                       "country_lat": {
                                                         "confidence": {
@@ -6033,6 +6157,9 @@
                                                         "value": 1550.0
                                                       },
                                                       "div": 6.872100000000001e-06,
+                                                      "node_name": {
+                                                        "value": "SAMEA7313246_49"
+                                                      },
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
@@ -6053,7 +6180,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "province_date_strain": {
-                                                        "value": "Poland 1400:1700 Gdansk8"
+                                                        "value": "Poland (1400:1700) Gdansk8"
                                                       },
                                                       "province_lat": {
                                                         "confidence": {
@@ -6142,6 +6269,9 @@
                                                     "value": 23.7499997
                                                   },
                                                   "div": 6.3590000000000004e-06,
+                                                  "node_name": {
+                                                    "value": "NODE423"
+                                                  },
                                                   "node_type": {
                                                     "value": "internal"
                                                   },
@@ -6245,6 +6375,9 @@
                                                 "value": 23.7499997
                                               },
                                               "div": 6.3354e-06,
+                                              "node_name": {
+                                                "value": "NODE422"
+                                              },
                                               "node_type": {
                                                 "value": "internal"
                                               },
@@ -6348,6 +6481,9 @@
                                             "value": 23.7499997
                                           },
                                           "div": 6.3118e-06,
+                                          "node_name": {
+                                            "value": "NODE421"
+                                          },
                                           "node_type": {
                                             "value": "internal"
                                           },
@@ -6451,6 +6587,9 @@
                                         "value": 10.4234469
                                       },
                                       "div": 6.2882e-06,
+                                      "node_name": {
+                                        "value": "NODE420"
+                                      },
                                       "node_type": {
                                         "value": "internal"
                                       },
@@ -6526,6 +6665,7 @@
                                         "Date Err": "NA",
                                         "Date Mean": "NA",
                                         "Geometry Size": 11.0,
+                                        "Node Name": "NODE424",
                                         "Node Type": "internal",
                                         "Num Date": 1461.0,
                                         "Num Date Confidence": [
@@ -6604,7 +6744,7 @@
                                             "value": "HIGH"
                                           },
                                           "country_date_strain": {
-                                            "value": "Germany 1455:1632 LBG002"
+                                            "value": "Germany (1455:1632) LBG002"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -6628,6 +6768,9 @@
                                             "value": 1543.5
                                           },
                                           "div": 9.276599999999999e-06,
+                                          "node_name": {
+                                            "value": "SAMEA5818808"
+                                          },
                                           "node_type": {
                                             "value": "terminal"
                                           },
@@ -6648,7 +6791,7 @@
                                             "value": "HIGH"
                                           },
                                           "province_date_strain": {
-                                            "value": "Germany 1455:1632 LBG002"
+                                            "value": "Germany (1455:1632) LBG002"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -6709,6 +6852,7 @@
                                             "Date Err": "NA",
                                             "Date Mean": "NA",
                                             "Geometry Size": 1.0,
+                                            "Node Name": "NODE425",
                                             "Node Type": "internal",
                                             "Num Date": 1494.0,
                                             "Num Date Confidence": [
@@ -6787,7 +6931,7 @@
                                                 "value": "HIGH"
                                               },
                                               "country_date_strain": {
-                                                "value": "Germany 1618:1648 BRA001"
+                                                "value": "Germany (1618:1648) BRA001"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -6811,6 +6955,9 @@
                                                 "value": 1633.0
                                               },
                                               "div": 1.1822499999999999e-05,
+                                              "node_name": {
+                                                "value": "SAMEA5818803"
+                                              },
                                               "node_type": {
                                                 "value": "terminal"
                                               },
@@ -6831,7 +6978,7 @@
                                                 "value": "HIGH"
                                               },
                                               "province_date_strain": {
-                                                "value": "Germany 1618:1648 BRA001"
+                                                "value": "Germany (1618:1648) BRA001"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -6892,6 +7039,7 @@
                                                 "Date Err": "NA",
                                                 "Date Mean": "NA",
                                                 "Geometry Size": 8.0,
+                                                "Node Name": "NODE426",
                                                 "Node Type": "internal",
                                                 "Num Date": 1517.0,
                                                 "Num Date Confidence": [
@@ -6970,7 +7118,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "country_date_strain": {
-                                                    "value": "Switzerland 1485:1635 STN014"
+                                                    "value": "Switzerland (1485:1635) STN014"
                                                   },
                                                   "country_lat": {
                                                     "confidence": {
@@ -6994,6 +7142,9 @@
                                                     "value": 1560.0
                                                   },
                                                   "div": 9.472299999999999e-06,
+                                                  "node_name": {
+                                                    "value": "SAMEA5818826"
+                                                  },
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
@@ -7014,7 +7165,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "province_date_strain": {
-                                                    "value": "Switzerland 1485:1635 STN014"
+                                                    "value": "Switzerland (1485:1635) STN014"
                                                   },
                                                   "province_lat": {
                                                     "confidence": {
@@ -7075,6 +7226,7 @@
                                                     "Date Err": "NA",
                                                     "Date Mean": "NA",
                                                     "Geometry Size": 8.0,
+                                                    "Node Name": "NODE427",
                                                     "Node Type": "internal",
                                                     "Num Date": 1521.0,
                                                     "Num Date Confidence": [
@@ -7153,7 +7305,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "country_date_strain": {
-                                                        "value": "Switzerland 1485:1635 STN020"
+                                                        "value": "Switzerland (1485:1635) STN020"
                                                       },
                                                       "country_lat": {
                                                         "confidence": {
@@ -7177,6 +7329,9 @@
                                                         "value": 1560.0
                                                       },
                                                       "div": 9.522399999999999e-06,
+                                                      "node_name": {
+                                                        "value": "SAMEA5818829"
+                                                      },
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
@@ -7197,7 +7352,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "province_date_strain": {
-                                                        "value": "Switzerland 1485:1635 STN020"
+                                                        "value": "Switzerland (1485:1635) STN020"
                                                       },
                                                       "province_lat": {
                                                         "confidence": {
@@ -7258,6 +7413,7 @@
                                                         "Date Err": "NA",
                                                         "Date Mean": "NA",
                                                         "Geometry Size": 8.0,
+                                                        "Node Name": "NODE428",
                                                         "Node Type": "internal",
                                                         "Num Date": 1522.0,
                                                         "Num Date Confidence": [
@@ -7310,6 +7466,7 @@
                                                             "Date Err": "NA",
                                                             "Date Mean": "NA",
                                                             "Geometry Size": 8.0,
+                                                            "Node Name": "NODE429",
                                                             "Node Type": "internal",
                                                             "Num Date": 1524.0,
                                                             "Num Date Confidence": [
@@ -7388,7 +7545,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "country_date_strain": {
-                                                                "value": "Switzerland 1485:1635 STN019"
+                                                                "value": "Switzerland (1485:1635) STN019"
                                                               },
                                                               "country_lat": {
                                                                 "confidence": {
@@ -7412,6 +7569,9 @@
                                                                 "value": 1560.0
                                                               },
                                                               "div": 9.569599999999997e-06,
+                                                              "node_name": {
+                                                                "value": "SAMEA5818828"
+                                                              },
                                                               "node_type": {
                                                                 "value": "terminal"
                                                               },
@@ -7432,7 +7592,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "province_date_strain": {
-                                                                "value": "Switzerland 1485:1635 STN019"
+                                                                "value": "Switzerland (1485:1635) STN019"
                                                               },
                                                               "province_lat": {
                                                                 "confidence": {
@@ -7493,6 +7653,7 @@
                                                                 "Date Err": "NA",
                                                                 "Date Mean": "NA",
                                                                 "Geometry Size": 8.0,
+                                                                "Node Name": "NODE430",
                                                                 "Node Type": "internal",
                                                                 "Num Date": 1526.0,
                                                                 "Num Date Confidence": [
@@ -7571,7 +7732,7 @@
                                                                     "value": "HIGH"
                                                                   },
                                                                   "country_date_strain": {
-                                                                    "value": "Switzerland 1485:1635 STN002"
+                                                                    "value": "Switzerland (1485:1635) STN002"
                                                                   },
                                                                   "country_lat": {
                                                                     "confidence": {
@@ -7595,6 +7756,9 @@
                                                                     "value": 1560.0
                                                                   },
                                                                   "div": 9.593199999999997e-06,
+                                                                  "node_name": {
+                                                                    "value": "SAMEA5818818"
+                                                                  },
                                                                   "node_type": {
                                                                     "value": "terminal"
                                                                   },
@@ -7615,7 +7779,7 @@
                                                                     "value": "HIGH"
                                                                   },
                                                                   "province_date_strain": {
-                                                                    "value": "Switzerland 1485:1635 STN002"
+                                                                    "value": "Switzerland (1485:1635) STN002"
                                                                   },
                                                                   "province_lat": {
                                                                     "confidence": {
@@ -7702,7 +7866,7 @@
                                                                     "value": "HIGH"
                                                                   },
                                                                   "country_date_strain": {
-                                                                    "value": "Switzerland 1485:1635 STN008"
+                                                                    "value": "Switzerland (1485:1635) STN008"
                                                                   },
                                                                   "country_lat": {
                                                                     "confidence": {
@@ -7726,6 +7890,9 @@
                                                                     "value": 1560.0
                                                                   },
                                                                   "div": 1.0713299999999998e-05,
+                                                                  "node_name": {
+                                                                    "value": "SAMEA5818822"
+                                                                  },
                                                                   "node_type": {
                                                                     "value": "terminal"
                                                                   },
@@ -7746,7 +7913,7 @@
                                                                     "value": "HIGH"
                                                                   },
                                                                   "province_date_strain": {
-                                                                    "value": "Switzerland 1485:1635 STN008"
+                                                                    "value": "Switzerland (1485:1635) STN008"
                                                                   },
                                                                   "province_lat": {
                                                                     "confidence": {
@@ -7835,6 +8002,9 @@
                                                                 "value": 8.444947437939406
                                                               },
                                                               "div": 9.569599999999997e-06,
+                                                              "node_name": {
+                                                                "value": "NODE430"
+                                                              },
                                                               "node_type": {
                                                                 "value": "internal"
                                                               },
@@ -7938,6 +8108,9 @@
                                                             "value": 8.444947437939406
                                                           },
                                                           "div": 9.545999999999998e-06,
+                                                          "node_name": {
+                                                            "value": "NODE429"
+                                                          },
                                                           "node_type": {
                                                             "value": "internal"
                                                           },
@@ -8013,6 +8186,7 @@
                                                             "Date Err": "NA",
                                                             "Date Mean": "NA",
                                                             "Geometry Size": 8.0,
+                                                            "Node Name": "NODE431",
                                                             "Node Type": "internal",
                                                             "Num Date": 1524.0,
                                                             "Num Date Confidence": [
@@ -8091,7 +8265,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "country_date_strain": {
-                                                                "value": "Switzerland 1485:1635 STN007"
+                                                                "value": "Switzerland (1485:1635) STN007"
                                                               },
                                                               "country_lat": {
                                                                 "confidence": {
@@ -8115,6 +8289,9 @@
                                                                 "value": 1560.0
                                                               },
                                                               "div": 1.0017099999999998e-05,
+                                                              "node_name": {
+                                                                "value": "SAMEA5818821"
+                                                              },
                                                               "node_type": {
                                                                 "value": "terminal"
                                                               },
@@ -8135,7 +8312,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "province_date_strain": {
-                                                                "value": "Switzerland 1485:1635 STN007"
+                                                                "value": "Switzerland (1485:1635) STN007"
                                                               },
                                                               "province_lat": {
                                                                 "confidence": {
@@ -8196,6 +8373,7 @@
                                                                 "Date Err": "NA",
                                                                 "Date Mean": "NA",
                                                                 "Geometry Size": 8.0,
+                                                                "Node Name": "NODE432",
                                                                 "Node Type": "internal",
                                                                 "Num Date": 1541.0,
                                                                 "Num Date Confidence": [
@@ -8274,7 +8452,7 @@
                                                                     "value": "HIGH"
                                                                   },
                                                                   "country_date_strain": {
-                                                                    "value": "Switzerland 1485:1635 STN013"
+                                                                    "value": "Switzerland (1485:1635) STN013"
                                                                   },
                                                                   "country_lat": {
                                                                     "confidence": {
@@ -8298,6 +8476,9 @@
                                                                     "value": 1560.0
                                                                   },
                                                                   "div": 1.0017199999999998e-05,
+                                                                  "node_name": {
+                                                                    "value": "SAMEA5818825"
+                                                                  },
                                                                   "node_type": {
                                                                     "value": "terminal"
                                                                   },
@@ -8318,7 +8499,7 @@
                                                                     "value": "HIGH"
                                                                   },
                                                                   "province_date_strain": {
-                                                                    "value": "Switzerland 1485:1635 STN013"
+                                                                    "value": "Switzerland (1485:1635) STN013"
                                                                   },
                                                                   "province_lat": {
                                                                     "confidence": {
@@ -8405,7 +8586,7 @@
                                                                     "value": "HIGH"
                                                                   },
                                                                   "country_date_strain": {
-                                                                    "value": "Switzerland 1485:1635 STN021"
+                                                                    "value": "Switzerland (1485:1635) STN021"
                                                                   },
                                                                   "country_lat": {
                                                                     "confidence": {
@@ -8429,6 +8610,9 @@
                                                                     "value": 1560.0
                                                                   },
                                                                   "div": 9.805199999999997e-06,
+                                                                  "node_name": {
+                                                                    "value": "SAMEA5818830"
+                                                                  },
                                                                   "node_type": {
                                                                     "value": "terminal"
                                                                   },
@@ -8449,7 +8633,7 @@
                                                                     "value": "HIGH"
                                                                   },
                                                                   "province_date_strain": {
-                                                                    "value": "Switzerland 1485:1635 STN021"
+                                                                    "value": "Switzerland (1485:1635) STN021"
                                                                   },
                                                                   "province_lat": {
                                                                     "confidence": {
@@ -8538,6 +8722,9 @@
                                                                 "value": 8.444947437939406
                                                               },
                                                               "div": 9.781599999999998e-06,
+                                                              "node_name": {
+                                                                "value": "NODE432"
+                                                              },
                                                               "node_type": {
                                                                 "value": "internal"
                                                               },
@@ -8641,6 +8828,9 @@
                                                             "value": 8.444947437939406
                                                           },
                                                           "div": 9.545999999999998e-06,
+                                                          "node_name": {
+                                                            "value": "NODE431"
+                                                          },
                                                           "node_type": {
                                                             "value": "internal"
                                                           },
@@ -8744,6 +8934,9 @@
                                                         "value": 8.444947437939406
                                                       },
                                                       "div": 9.522399999999999e-06,
+                                                      "node_name": {
+                                                        "value": "NODE428"
+                                                      },
                                                       "node_type": {
                                                         "value": "internal"
                                                       },
@@ -8847,6 +9040,9 @@
                                                     "value": 8.444947437939406
                                                   },
                                                   "div": 9.4988e-06,
+                                                  "node_name": {
+                                                    "value": "NODE427"
+                                                  },
                                                   "node_type": {
                                                     "value": "internal"
                                                   },
@@ -8950,6 +9146,9 @@
                                                 "value": 8.444947437939406
                                               },
                                               "div": 9.4487e-06,
+                                              "node_name": {
+                                                "value": "NODE426"
+                                              },
                                               "node_type": {
                                                 "value": "internal"
                                               },
@@ -9053,6 +9252,9 @@
                                             "value": 10.4234469
                                           },
                                           "div": 9.1263e-06,
+                                          "node_name": {
+                                            "value": "NODE425"
+                                          },
                                           "node_type": {
                                             "value": "internal"
                                           },
@@ -9156,6 +9358,9 @@
                                         "value": 10.4234469
                                       },
                                       "div": 8.334299999999999e-06,
+                                      "node_name": {
+                                        "value": "NODE424"
+                                      },
                                       "node_type": {
                                         "value": "internal"
                                       },
@@ -9259,6 +9464,9 @@
                                     "value": 10.4234469
                                   },
                                   "div": 6.2646e-06,
+                                  "node_name": {
+                                    "value": "NODE419"
+                                  },
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -9362,6 +9570,9 @@
                                 "value": 10.4234469
                               },
                               "div": 6.241e-06,
+                              "node_name": {
+                                "value": "NODE407"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -9465,6 +9676,9 @@
                             "value": 10.4234469
                           },
                           "div": 5.3302e-06,
+                          "node_name": {
+                            "value": "NODE406"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -9568,6 +9782,9 @@
                         "value": 10.4234469
                       },
                       "div": 2.9203e-06,
+                      "node_name": {
+                        "value": "NODE405"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -9671,6 +9888,9 @@
                     "value": 10.4234469
                   },
                   "div": 9.423e-07,
+                  "node_name": {
+                    "value": "NODE404"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -9774,6 +9994,9 @@
                 "value": 10.4234469
               },
               "div": 7.066999999999999e-07,
+              "node_name": {
+                "value": "NODE403"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -9849,6 +10072,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 11.0,
+                "Node Name": "NODE433",
                 "Node Type": "internal",
                 "Num Date": 1316.0,
                 "Num Date Confidence": [
@@ -9901,6 +10125,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 11.0,
+                    "Node Name": "NODE434",
                     "Node Type": "internal",
                     "Num Date": 1321.0,
                     "Num Date Confidence": [
@@ -9979,7 +10204,7 @@
                         "value": "HIGH"
                       },
                       "country_date_strain": {
-                        "value": "Norway 1270:1390 OSL1"
+                        "value": "Norway (1270:1390) OSL1"
                       },
                       "country_lat": {
                         "confidence": {
@@ -10003,6 +10228,9 @@
                         "value": 1330.0
                       },
                       "div": 9.895e-07,
+                      "node_name": {
+                        "value": "SAMEA5054092"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -10023,7 +10251,7 @@
                         "value": "HIGH"
                       },
                       "province_date_strain": {
-                        "value": "Norway 1270:1390 OSL1"
+                        "value": "Norway (1270:1390) OSL1"
                       },
                       "province_lat": {
                         "confidence": {
@@ -10084,6 +10312,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 11.0,
+                        "Node Name": "NODE435",
                         "Node Type": "internal",
                         "Num Date": 1327.0,
                         "Num Date Confidence": [
@@ -10162,7 +10391,7 @@
                             "value": "HIGH"
                           },
                           "country_date_strain": {
-                            "value": "England 1348:1350 8291"
+                            "value": "England (1348:1350) 8291"
                           },
                           "country_lat": {
                             "confidence": {
@@ -10186,6 +10415,9 @@
                             "value": 1349.0
                           },
                           "div": 5.42e-07,
+                          "node_name": {
+                            "value": "SAMN00715800"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -10206,7 +10438,7 @@
                             "value": "HIGH"
                           },
                           "province_date_strain": {
-                            "value": "England 1348:1350 8291"
+                            "value": "England (1348:1350) 8291"
                           },
                           "province_lat": {
                             "confidence": {
@@ -10267,6 +10499,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 11.0,
+                            "Node Name": "NODE436",
                             "Node Type": "internal",
                             "Num Date": 1329.0,
                             "Num Date Confidence": [
@@ -10345,7 +10578,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "Spain 1300:1420 Barcelona3031"
+                                "value": "Spain (1300:1420) Barcelona3031"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -10369,6 +10602,9 @@
                                 "value": 1360.0
                               },
                               "div": 5.655999999999999e-07,
+                              "node_name": {
+                                "value": "SAMEA3937653"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -10389,7 +10625,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "Spain 1300:1420 Barcelona3031"
+                                "value": "Spain (1300:1420) Barcelona3031"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -10476,7 +10712,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "Germany 1292:1392 NAB003"
+                                "value": "Germany (1292:1392) NAB003"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -10500,6 +10736,9 @@
                                 "value": 1342.0
                               },
                               "div": 3.535999999999999e-07,
+                              "node_name": {
+                                "value": "SAMEA5818811"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -10520,7 +10759,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "Germany 1292:1392 NAB003"
+                                "value": "Germany (1292:1392) NAB003"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -10609,6 +10848,9 @@
                             "value": 10.4234469
                           },
                           "div": 3.299999999999999e-07,
+                          "node_name": {
+                            "value": "NODE436"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -10712,6 +10954,9 @@
                         "value": 10.4234469
                       },
                       "div": 3.0639999999999994e-07,
+                      "node_name": {
+                        "value": "NODE435"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -10815,6 +11060,9 @@
                     "value": 10.4234469
                   },
                   "div": 2.8279999999999996e-07,
+                  "node_name": {
+                    "value": "NODE434"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -10890,6 +11138,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 2.0,
+                    "Node Name": "NODE437",
                     "Node Type": "internal",
                     "Num Date": 1316.0,
                     "Num Date Confidence": [
@@ -10968,7 +11217,7 @@
                         "value": "HIGH"
                       },
                       "country_date_strain": {
-                        "value": "France 1279:1389 SLC1006"
+                        "value": "France (1279:1389) SLC1006"
                       },
                       "country_lat": {
                         "confidence": {
@@ -10992,6 +11241,9 @@
                         "value": 1334.0
                       },
                       "div": 2.2485e-06,
+                      "node_name": {
+                        "value": "SAMEA5054093"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -11012,7 +11264,7 @@
                         "value": "HIGH"
                       },
                       "province_date_strain": {
-                        "value": "France 1279:1389 SLC1006"
+                        "value": "France (1279:1389) SLC1006"
                       },
                       "province_lat": {
                         "confidence": {
@@ -11073,6 +11325,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 2.0,
+                        "Node Name": "NODE438",
                         "Node Type": "internal",
                         "Num Date": 1316.0,
                         "Num Date Confidence": [
@@ -11151,7 +11404,7 @@
                             "value": "HIGH"
                           },
                           "country_date_strain": {
-                            "value": "The Netherlands 1300:1400 Ber37"
+                            "value": "The Netherlands (1300:1400) Ber37"
                           },
                           "country_lat": {
                             "confidence": {
@@ -11175,6 +11428,9 @@
                             "value": 1350.0
                           },
                           "div": 2.4115e-06,
+                          "node_name": {
+                            "value": "SAMEA5054089"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -11195,7 +11451,7 @@
                             "value": "HIGH"
                           },
                           "province_date_strain": {
-                            "value": "The Netherlands 1300:1400 Ber37"
+                            "value": "The Netherlands (1300:1400) Ber37"
                           },
                           "province_lat": {
                             "confidence": {
@@ -11256,6 +11512,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 2.0,
+                            "Node Name": "NODE439",
                             "Node Type": "internal",
                             "Num Date": 1316.0,
                             "Num Date Confidence": [
@@ -11334,7 +11591,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "Russia 1362:1400 BolgarCity2370"
+                                "value": "Russia (1362:1400) BolgarCity2370"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -11358,6 +11615,9 @@
                                 "value": 1381.0
                               },
                               "div": 1.2663e-06,
+                              "node_name": {
+                                "value": "SAMEA3937654"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -11378,7 +11638,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "Russia 1362:1400 BolgarCity2370"
+                                "value": "Russia (1362:1400) BolgarCity2370"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -11439,6 +11699,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 2.0,
+                                "Node Name": "NODE440",
                                 "Node Type": "internal",
                                 "Num Date": 1316.0,
                                 "Num Date Confidence": [
@@ -11517,7 +11778,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "The Netherlands 1300:1400 Ber45"
+                                    "value": "The Netherlands (1300:1400) Ber45"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -11541,6 +11802,9 @@
                                     "value": 1350.0
                                   },
                                   "div": 1.5183e-06,
+                                  "node_name": {
+                                    "value": "SAMEA5054090"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -11561,7 +11825,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "The Netherlands 1300:1400 Ber45"
+                                    "value": "The Netherlands (1300:1400) Ber45"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -11650,6 +11914,9 @@
                                 "value": 5.7480821
                               },
                               "div": 1.267e-06,
+                              "node_name": {
+                                "value": "NODE440"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -11753,6 +12020,9 @@
                             "value": 5.7480821
                           },
                           "div": 7.952e-07,
+                          "node_name": {
+                            "value": "NODE439"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -11856,6 +12126,9 @@
                         "value": 5.7480821
                       },
                       "div": 7.451000000000001e-07,
+                      "node_name": {
+                        "value": "NODE438"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -11959,6 +12232,9 @@
                     "value": 1.8883335
                   },
                   "div": 3.093e-07,
+                  "node_name": {
+                    "value": "NODE437"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -12062,6 +12338,9 @@
                 "value": 10.4234469
               },
               "div": 2.592e-07,
+              "node_name": {
+                "value": "NODE433"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -12165,6 +12444,9 @@
             "value": 10.4234469
           },
           "div": 2.356e-07,
+          "node_name": {
+            "value": "NODE402"
+          },
           "node_type": {
             "value": "internal"
           },
@@ -12268,6 +12550,9 @@
         "value": 97.7453061
       },
       "div": 0,
+      "node_name": {
+        "value": "NODE401"
+      },
       "node_type": {
         "value": "internal"
       },

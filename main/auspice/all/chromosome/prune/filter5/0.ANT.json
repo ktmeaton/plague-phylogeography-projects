@@ -166,6 +166,11 @@
         "type": "categorical"
       },
       {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
         "key": "date_bp_mean",
         "title": "Collection Date (BP)",
         "type": "continuous"
@@ -219,6 +224,11 @@
         "type": "categorical"
       },
       {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
         "key": "province_lat",
         "title": "Province Latitude",
         "type": "continuous"
@@ -269,51 +279,6 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#1996f3"
-          ]
-        ],
-        "title": "Branch Minor Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "China",
-            "#4a53fc"
-          ],
-          [
-            "Kyrgyzstan",
-            "#07bcea"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
-      },
-      {
         "key": "branch_major_conf_category",
         "scale": [
           [
@@ -329,8 +294,28 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#1996f3"
+          ]
+        ],
+        "title": "Branch Support Confidence",
         "type": "categorical"
       },
       {
@@ -339,13 +324,33 @@
         "type": "continuous"
       },
       {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
         "type": "continuous"
       },
       {
-        "key": "strain",
-        "title": "Strain",
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#1996f3"
+          ]
+        ],
+        "title": "Node Type",
         "type": "categorical"
       },
       {
@@ -354,18 +359,28 @@
         "type": "continuous"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
       },
       {
-        "key": "rate_geo_time",
-        "title": "Geographic Rate Time",
-        "type": "continuous"
+        "key": "node_name",
+        "title": "node_name",
+        "type": "categorical"
       },
       {
-        "key": "continent",
-        "title": "Continent",
+        "key": "branch_minor_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#1996f3"
+          ]
+        ],
+        "title": "Branch Minor Confidence",
         "type": "categorical"
       },
       {
@@ -396,18 +411,59 @@
         "type": "categorical"
       },
       {
-        "key": "node_type",
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
         "scale": [
           [
-            "internal",
+            "LOW",
             "#FFFFFF"
           ],
           [
-            "terminal",
+            "HIGH",
             "#1996f3"
           ]
         ],
-        "title": "Node Type",
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "0.ANT",
+            "#1996f3"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
         "type": "categorical"
       },
       {
@@ -416,8 +472,13 @@
         "type": "continuous"
       },
       {
-        "key": "rate_sub",
-        "title": "Substitution Rate",
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
         "type": "continuous"
       },
       {
@@ -444,23 +505,8 @@
         "type": "categorical"
       },
       {
-        "key": "date_mean",
-        "title": "Collection Date",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
         "type": "continuous"
       },
       {
@@ -479,55 +525,34 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#1996f3"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "0.ANT",
-            "#1996f3"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
         "type": "continuous"
       },
       {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#1996f3"
-          ]
-        ],
-        "title": "Country Confidence",
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "Kyrgyzstan",
+            "#07bcea"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
       }
     ],
     "display_defaults": {
@@ -599,7 +624,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-02"
+    "updated": "2021-05-04"
   },
   "tree": {
     "branch_attrs": {
@@ -622,6 +647,7 @@
         "Country": "China",
         "Country Conf Category": "LOW",
         "Country Confidence": 0.61,
+        "Country Date Strain": "NA",
         "Country Lat": 35.000074,
         "Country Lat Confidence": 0.6128613568570618,
         "Country Lon": 104.999927,
@@ -630,6 +656,7 @@
         "Date Err": "NA",
         "Date Mean": "NA",
         "Geometry Size": 3.0,
+        "Node Name": "NODE36",
         "Node Type": "internal",
         "Num Date": 51.0,
         "Num Date Confidence": [
@@ -639,6 +666,7 @@
         "Province": "Issyk-Kul Region",
         "Province Conf Category": "LOW",
         "Province Confidence": 0.51,
+        "Province Date Strain": "NA",
         "Province Lat": 42.06103415,
         "Province Lat Confidence": 0.5112204169845516,
         "Province Lon": 78.17073232346421,
@@ -672,6 +700,7 @@
             "Country": "China",
             "Country Conf Category": "HIGH",
             "Country Confidence": 1.0,
+            "Country Date Strain": "NA",
             "Country Lat": 35.000074,
             "Country Lat Confidence": 0.9987603154305849,
             "Country Lon": 104.999927,
@@ -680,6 +709,7 @@
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 8.0,
+            "Node Name": "NODE35",
             "Node Type": "internal",
             "Num Date": 1907.0,
             "Num Date Confidence": [
@@ -689,6 +719,7 @@
             "Province": "Xinjiang",
             "Province Conf Category": "HIGH",
             "Province Confidence": 0.99,
+            "Province Date Strain": "NA",
             "Province Lat": 42.4804953,
             "Province Lat Confidence": 0.9946344737567364,
             "Province Lon": 85.4633464,
@@ -756,6 +787,9 @@
               "country_conf_category": {
                 "value": "HIGH"
               },
+              "country_date_strain": {
+                "value": "China (2006.0) 42126"
+              },
               "country_lat": {
                 "confidence": {
                   "35.000074": 1.0
@@ -778,6 +812,9 @@
                 "value": 2006.0
               },
               "div": 1.1111699999999999e-05,
+              "node_name": {
+                "value": "GCA_009669545.1_ASM966954v1_genomic"
+              },
               "node_type": {
                 "value": "terminal"
               },
@@ -796,6 +833,9 @@
               },
               "province_conf_category": {
                 "value": "HIGH"
+              },
+              "province_date_strain": {
+                "value": "China (2006.0) 42126"
               },
               "province_lat": {
                 "confidence": {
@@ -881,6 +921,9 @@
               "country_conf_category": {
                 "value": "HIGH"
               },
+              "country_date_strain": {
+                "value": "China (1980.0) 42092"
+              },
               "country_lat": {
                 "confidence": {
                   "35.000074": 1.0
@@ -903,6 +946,9 @@
                 "value": 1980.0
               },
               "div": 1.1111699999999999e-05,
+              "node_name": {
+                "value": "GCA_009669805.1_ASM966980v1_genomic"
+              },
               "node_type": {
                 "value": "terminal"
               },
@@ -921,6 +967,9 @@
               },
               "province_conf_category": {
                 "value": "HIGH"
+              },
+              "province_date_strain": {
+                "value": "China (1980.0) 42092"
               },
               "province_lat": {
                 "confidence": {
@@ -1009,6 +1058,9 @@
             "value": 104.999927
           },
           "div": 1.10881e-05,
+          "node_name": {
+            "value": "NODE35"
+          },
           "node_type": {
             "value": "internal"
           },
@@ -1075,6 +1127,7 @@
             "Country": "China",
             "Country Conf Category": "LOW",
             "Country Confidence": 0.61,
+            "Country Date Strain": "NA",
             "Country Lat": 35.000074,
             "Country Lat Confidence": 0.6128613568570618,
             "Country Lon": 104.999927,
@@ -1083,6 +1136,7 @@
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 3.0,
+            "Node Name": "NODE36",
             "Node Type": "internal",
             "Num Date": 51.0,
             "Num Date Confidence": [
@@ -1092,6 +1146,7 @@
             "Province": "Issyk-Kul Region",
             "Province Conf Category": "LOW",
             "Province Confidence": 0.51,
+            "Province Date Strain": "NA",
             "Province Lat": 42.06103415,
             "Province Lat Confidence": 0.5112204169845516,
             "Province Lon": 78.17073232346421,
@@ -1125,6 +1180,7 @@
                 "Country": "China",
                 "Country Conf Category": "LOW",
                 "Country Confidence": 0.61,
+                "Country Date Strain": "NA",
                 "Country Lat": 35.000074,
                 "Country Lat Confidence": 0.6092155353468042,
                 "Country Lon": 104.999927,
@@ -1133,6 +1189,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 3.0,
+                "Node Name": "NODE42",
                 "Node Type": "internal",
                 "Num Date": 1095.0,
                 "Num Date Confidence": [
@@ -1142,6 +1199,7 @@
                 "Province": "Issyk-Kul Region",
                 "Province Conf Category": "LOW",
                 "Province Confidence": 0.52,
+                "Province Date Strain": "NA",
                 "Province Lat": 42.06103415,
                 "Province Lat Confidence": 0.5179589127929534,
                 "Province Lon": 78.17073232346421,
@@ -1175,6 +1233,7 @@
                     "Country": "Kyrgyzstan",
                     "Country Conf Category": "HIGH",
                     "Country Confidence": 0.99,
+                    "Country Date Strain": "NA",
                     "Country Lat": 41.5089324,
                     "Country Lat Confidence": 0.9912412767775466,
                     "Country Lon": 74.724091,
@@ -1183,6 +1242,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 3.0,
+                    "Node Name": "NODE43",
                     "Node Type": "internal",
                     "Num Date": 1692.0,
                     "Num Date Confidence": [
@@ -1192,6 +1252,7 @@
                     "Province": "Issyk-Kul Region",
                     "Province Conf Category": "HIGH",
                     "Province Confidence": 0.98,
+                    "Province Date Strain": "NA",
                     "Province Lat": 42.06103415,
                     "Province Lat Confidence": 0.9818892486870746,
                     "Province Lon": 78.17073232346421,
@@ -1259,6 +1320,9 @@
                       "country_conf_category": {
                         "value": "HIGH"
                       },
+                      "country_date_strain": {
+                        "value": "Kyrgyzstan (1971.0) A-1691"
+                      },
                       "country_lat": {
                         "confidence": {
                           "41.5089324": 1.0
@@ -1281,6 +1345,9 @@
                         "value": 1971.0
                       },
                       "div": 1.9086900000000002e-05,
+                      "node_name": {
+                        "value": "GCA_002412245.1_Y.pestis_A-1691_genomic"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -1299,6 +1366,9 @@
                       },
                       "province_conf_category": {
                         "value": "HIGH"
+                      },
+                      "province_date_strain": {
+                        "value": "Kyrgyzstan (1971.0) A-1691"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1350,6 +1420,7 @@
                         "Country": "Kyrgyzstan",
                         "Country Conf Category": "HIGH",
                         "Country Confidence": 1.0,
+                        "Country Date Strain": "NA",
                         "Country Lat": 41.5089324,
                         "Country Lat Confidence": 0.9998696638654097,
                         "Country Lon": 74.724091,
@@ -1358,6 +1429,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 3.0,
+                        "Node Name": "NODE44",
                         "Node Type": "internal",
                         "Num Date": 1890.0,
                         "Num Date Confidence": [
@@ -1367,6 +1439,7 @@
                         "Province": "Issyk-Kul Region",
                         "Province Conf Category": "HIGH",
                         "Province Confidence": 0.98,
+                        "Province Date Strain": "NA",
                         "Province Lat": 42.06103415,
                         "Province Lat Confidence": 0.9834102568615478,
                         "Province Lon": 78.17073232346421,
@@ -1434,6 +1507,9 @@
                           "country_conf_category": {
                             "value": "HIGH"
                           },
+                          "country_date_strain": {
+                            "value": "Kyrgyzstan (1952.0) 5M"
+                          },
                           "country_lat": {
                             "confidence": {
                               "41.5089324": 1.0
@@ -1456,6 +1532,9 @@
                             "value": 1952.0
                           },
                           "div": 1.53123e-05,
+                          "node_name": {
+                            "value": "GCA_003074535.1_ASM307453v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -1474,6 +1553,9 @@
                           },
                           "province_conf_category": {
                             "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Kyrgyzstan (1952.0) 5M"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1559,6 +1641,9 @@
                           "country_conf_category": {
                             "value": "HIGH"
                           },
+                          "country_date_strain": {
+                            "value": "Kyrgyzstan (2019.0) KM2074"
+                          },
                           "country_lat": {
                             "confidence": {
                               "41.5089324": 1.0
@@ -1581,6 +1666,9 @@
                             "value": 2019.0
                           },
                           "div": 1.60201e-05,
+                          "node_name": {
+                            "value": "GCA_015274745.1_ASM1527474v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -1599,6 +1687,9 @@
                           },
                           "province_conf_category": {
                             "value": "LOW"
+                          },
+                          "province_date_strain": {
+                            "value": "Kyrgyzstan (2019.0) KM2074"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1687,6 +1778,9 @@
                         "value": 74.724091
                       },
                       "div": 1.50764e-05,
+                      "node_name": {
+                        "value": "NODE44"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -1790,6 +1884,9 @@
                     "value": 74.724091
                   },
                   "div": 1.4132700000000001e-05,
+                  "node_name": {
+                    "value": "NODE43"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -1856,6 +1953,7 @@
                     "Country": "China",
                     "Country Conf Category": "HIGH",
                     "Country Confidence": 0.95,
+                    "Country Date Strain": "NA",
                     "Country Lat": 35.000074,
                     "Country Lat Confidence": 0.947490465377004,
                     "Country Lon": 104.999927,
@@ -1864,6 +1962,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 8.0,
+                    "Node Name": "NODE45",
                     "Node Type": "internal",
                     "Num Date": 1256.0,
                     "Num Date Confidence": [
@@ -1873,6 +1972,7 @@
                     "Province": "Xinjiang",
                     "Province Conf Category": "HIGH",
                     "Province Confidence": 0.97,
+                    "Province Date Strain": "NA",
                     "Province Lat": 42.4804953,
                     "Province Lat Confidence": 0.9748105180888664,
                     "Province Lon": 85.4633464,
@@ -1940,6 +2040,9 @@
                       "country_conf_category": {
                         "value": "HIGH"
                       },
+                      "country_date_strain": {
+                        "value": "China (2003.0) B42003004"
+                      },
                       "country_lat": {
                         "confidence": {
                           "35.000074": 1.0
@@ -1962,6 +2065,9 @@
                         "value": 2003.0
                       },
                       "div": 1.06176e-05,
+                      "node_name": {
+                        "value": "GCA_000169675.1_ASM16967v1_genomic"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -1980,6 +2086,9 @@
                       },
                       "province_conf_category": {
                         "value": "HIGH"
+                      },
+                      "province_date_strain": {
+                        "value": "China (2003.0) B42003004"
                       },
                       "province_lat": {
                         "confidence": {
@@ -2031,6 +2140,7 @@
                         "Country": "China",
                         "Country Conf Category": "LOW",
                         "Country Confidence": 0.94,
+                        "Country Date Strain": "NA",
                         "Country Lat": 35.000074,
                         "Country Lat Confidence": 0.9386699626934248,
                         "Country Lon": 104.999927,
@@ -2039,6 +2149,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 8.0,
+                        "Node Name": "NODE46",
                         "Node Type": "internal",
                         "Num Date": 1301.0,
                         "Num Date Confidence": [
@@ -2048,6 +2159,7 @@
                         "Province": "Xinjiang",
                         "Province Conf Category": "HIGH",
                         "Province Confidence": 0.97,
+                        "Province Date Strain": "NA",
                         "Province Lat": 42.4804953,
                         "Province Lat Confidence": 0.9727565817905856,
                         "Province Lon": 85.4633464,
@@ -2081,6 +2193,7 @@
                             "Country": "China",
                             "Country Conf Category": "LOW",
                             "Country Confidence": 0.94,
+                            "Country Date Strain": "NA",
                             "Country Lat": 35.000074,
                             "Country Lat Confidence": 0.9364088029387324,
                             "Country Lon": 104.999927,
@@ -2089,6 +2202,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 8.0,
+                            "Node Name": "NODE47",
                             "Node Type": "internal",
                             "Num Date": 1768.0,
                             "Num Date Confidence": [
@@ -2098,6 +2212,7 @@
                             "Province": "Xinjiang",
                             "Province Conf Category": "HIGH",
                             "Province Confidence": 0.99,
+                            "Province Date Strain": "NA",
                             "Province Lat": 42.4804953,
                             "Province Lat Confidence": 0.9947971533731684,
                             "Province Lon": 85.4633464,
@@ -2131,6 +2246,7 @@
                                 "Country": "China",
                                 "Country Conf Category": "LOW",
                                 "Country Confidence": 0.92,
+                                "Country Date Strain": "NA",
                                 "Country Lat": 35.000074,
                                 "Country Lat Confidence": 0.9231718268564048,
                                 "Country Lon": 104.999927,
@@ -2139,6 +2255,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 8.0,
+                                "Node Name": "NODE48",
                                 "Node Type": "internal",
                                 "Num Date": 1835.0,
                                 "Num Date Confidence": [
@@ -2148,6 +2265,7 @@
                                 "Province": "Xinjiang",
                                 "Province Conf Category": "HIGH",
                                 "Province Confidence": 0.98,
+                                "Province Date Strain": "NA",
                                 "Province Lat": 42.4804953,
                                 "Province Lat Confidence": 0.9807672919841112,
                                 "Province Lon": 85.4633464,
@@ -2215,6 +2333,9 @@
                                   "country_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "country_date_strain": {
+                                    "value": "China (2001.0) CMCC21106"
+                                  },
                                   "country_lat": {
                                     "confidence": {
                                       "35.000074": 1.0
@@ -2237,6 +2358,9 @@
                                     "value": 2001.0
                                   },
                                   "div": 1.4156300000000002e-05,
+                                  "node_name": {
+                                    "value": "GCA_000324065.1_ASM32406v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -2255,6 +2379,9 @@
                                   },
                                   "province_conf_category": {
                                     "value": "HIGH"
+                                  },
+                                  "province_date_strain": {
+                                    "value": "China (2001.0) CMCC21106"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -2340,6 +2467,9 @@
                                   "country_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "country_date_strain": {
+                                    "value": "Kyrgyzstan (1947.0) 231"
+                                  },
                                   "country_lat": {
                                     "confidence": {
                                       "41.5089324": 1.0
@@ -2362,6 +2492,9 @@
                                     "value": 1947.0
                                   },
                                   "div": 1.3684500000000001e-05,
+                                  "node_name": {
+                                    "value": "GCA_000734805.1_ASM73480v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -2380,6 +2513,9 @@
                                   },
                                   "province_conf_category": {
                                     "value": "HIGH"
+                                  },
+                                  "province_date_strain": {
+                                    "value": "Kyrgyzstan (1947.0) 231"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -2468,6 +2604,9 @@
                                 "value": 104.999927
                               },
                               "div": 1.2504900000000001e-05,
+                              "node_name": {
+                                "value": "NODE48"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -2534,6 +2673,7 @@
                                 "Country": "China",
                                 "Country Conf Category": "LOW",
                                 "Country Confidence": 0.92,
+                                "Country Date Strain": "NA",
                                 "Country Lat": 35.000074,
                                 "Country Lat Confidence": 0.9233849773480238,
                                 "Country Lon": 104.999927,
@@ -2542,6 +2682,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 8.0,
+                                "Node Name": "NODE49",
                                 "Node Type": "internal",
                                 "Num Date": 1865.0,
                                 "Num Date Confidence": [
@@ -2551,6 +2692,7 @@
                                 "Province": "Xinjiang",
                                 "Province Conf Category": "HIGH",
                                 "Province Confidence": 0.99,
+                                "Province Date Strain": "NA",
                                 "Province Lat": 42.4804953,
                                 "Province Lat Confidence": 0.9869964617401198,
                                 "Province Lon": 85.4633464,
@@ -2618,6 +2760,9 @@
                                   "country_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "country_date_strain": {
+                                    "value": "China (1956.0) A1956001"
+                                  },
                                   "country_lat": {
                                     "confidence": {
                                       "35.000074": 1.0
@@ -2640,6 +2785,9 @@
                                     "value": 1956.0
                                   },
                                   "div": 1.34485e-05,
+                                  "node_name": {
+                                    "value": "GCA_000323705.1_ASM32370v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -2658,6 +2806,9 @@
                                   },
                                   "province_conf_category": {
                                     "value": "HIGH"
+                                  },
+                                  "province_date_strain": {
+                                    "value": "China (1956.0) A1956001"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -2709,6 +2860,7 @@
                                     "Country": "Kyrgyzstan",
                                     "Country Conf Category": "HIGH",
                                     "Country Confidence": 0.99,
+                                    "Country Date Strain": "NA",
                                     "Country Lat": 41.5089324,
                                     "Country Lat Confidence": 0.9869279868865074,
                                     "Country Lon": 74.724091,
@@ -2717,6 +2869,7 @@
                                     "Date Err": "NA",
                                     "Date Mean": "NA",
                                     "Geometry Size": 1.0,
+                                    "Node Name": "NODE50",
                                     "Node Type": "internal",
                                     "Num Date": 1891.0,
                                     "Num Date Confidence": [
@@ -2726,6 +2879,7 @@
                                     "Province": "Osh Region",
                                     "Province Conf Category": "LOW",
                                     "Province Confidence": 0.39,
+                                    "Province Date Strain": "NA",
                                     "Province Lat": 40.1537925,
                                     "Province Lat Confidence": 0.3895166133808201,
                                     "Province Lon": 73.35273504013053,
@@ -2793,6 +2947,9 @@
                                       "country_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "country_date_strain": {
+                                        "value": "Kyrgyzstan (1961:1976) 790"
+                                      },
                                       "country_lat": {
                                         "confidence": {
                                           "41.5089324": 1.0
@@ -2815,6 +2972,9 @@
                                         "value": 1968.5
                                       },
                                       "div": 1.41562e-05,
+                                      "node_name": {
+                                        "value": "GCA_001188675.1_ASM118867v1_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -2833,6 +2993,9 @@
                                       },
                                       "province_conf_category": {
                                         "value": "LOW"
+                                      },
+                                      "province_date_strain": {
+                                        "value": "Kyrgyzstan (1961:1976) 790"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -2918,6 +3081,9 @@
                                       "country_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "country_date_strain": {
+                                        "value": "Kyrgyzstan (1966.0) A-1486"
+                                      },
                                       "country_lat": {
                                         "confidence": {
                                           "41.5089324": 1.0
@@ -2940,6 +3106,9 @@
                                         "value": 1966.0
                                       },
                                       "div": 1.4864e-05,
+                                      "node_name": {
+                                        "value": "GCA_002412225.1_Y.pestis_A-1486_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -2958,6 +3127,9 @@
                                       },
                                       "province_conf_category": {
                                         "value": "HIGH"
+                                      },
+                                      "province_date_strain": {
+                                        "value": "Kyrgyzstan (1966.0) A-1486"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -3046,6 +3218,9 @@
                                     "value": 74.724091
                                   },
                                   "div": 1.34485e-05,
+                                  "node_name": {
+                                    "value": "NODE50"
+                                  },
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -3149,6 +3324,9 @@
                                 "value": 104.999927
                               },
                               "div": 1.29767e-05,
+                              "node_name": {
+                                "value": "NODE49"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -3252,6 +3430,9 @@
                             "value": 104.999927
                           },
                           "div": 1.2269e-05,
+                          "node_name": {
+                            "value": "NODE47"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -3355,6 +3536,9 @@
                         "value": 104.999927
                       },
                       "div": 8.7303e-06,
+                      "node_name": {
+                        "value": "NODE46"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -3458,6 +3642,9 @@
                     "value": 104.999927
                   },
                   "div": 7.5507e-06,
+                  "node_name": {
+                    "value": "NODE45"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -3561,6 +3748,9 @@
                 "value": 104.999927
               },
               "div": 7.5271e-06,
+              "node_name": {
+                "value": "NODE42"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -3664,6 +3854,9 @@
             "value": 104.999927
           },
           "div": 1.9948e-06,
+          "node_name": {
+            "value": "NODE36"
+          },
           "node_type": {
             "value": "internal"
           },
@@ -3767,6 +3960,9 @@
         "value": 104.999927
       },
       "div": 0,
+      "node_name": {
+        "value": "NODE34"
+      },
       "node_type": {
         "value": "internal"
       },

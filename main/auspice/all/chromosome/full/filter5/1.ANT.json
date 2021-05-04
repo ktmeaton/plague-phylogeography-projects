@@ -255,49 +255,9 @@
         "type": "categorical"
       },
       {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_time",
-        "title": "Geographic Rate Time",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "key": "strain",
+        "title": "Strain",
         "type": "categorical"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
       },
       {
         "key": "province",
@@ -311,12 +271,42 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
       },
       {
-        "key": "branch_major_conf_category",
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff964f"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -327,13 +317,13 @@
             "#ff964f"
           ]
         ],
-        "title": "Branch Major Confidence",
+        "title": "Province Confidence",
         "type": "categorical"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
       },
       {
         "key": "branch_support_conf_category",
@@ -351,14 +341,9 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
         "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
       },
       {
         "key": "branch_minor",
@@ -370,6 +355,67 @@
         ],
         "title": "Branch Minor",
         "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
       },
       {
         "key": "country",
@@ -391,9 +437,54 @@
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
         "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "node_name",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Major Confidence",
+        "type": "categorical"
       },
       {
         "key": "branch_minor_conf_category",
@@ -409,92 +500,6 @@
         ],
         "title": "Branch Minor Confidence",
         "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#ff964f"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "1.ANT",
-            "#ff964f"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
       },
       {
         "key": "date_mean",
@@ -567,7 +572,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-03"
+    "updated": "2021-05-04"
   },
   "tree": {
     "branch_attrs": {
@@ -599,6 +604,7 @@
         "Date Err": "NA",
         "Date Mean": "NA",
         "Geometry Size": 1.0,
+        "Node Name": "NODE443",
         "Node Type": "internal",
         "Num Date": 1954.0,
         "Num Date Confidence": [
@@ -677,7 +683,7 @@
             "value": "HIGH"
           },
           "country_date_strain": {
-            "value": "Kenya 1985.0 Nairobi"
+            "value": "Kenya (1985.0) Nairobi"
           },
           "country_lat": {
             "confidence": {
@@ -701,6 +707,9 @@
             "value": 1985.0
           },
           "div": 1.54421e-05,
+          "node_name": {
+            "value": "GCA_000835005.1_ASM83500v1_genomic"
+          },
           "node_type": {
             "value": "terminal"
           },
@@ -721,7 +730,7 @@
             "value": "HIGH"
           },
           "province_date_strain": {
-            "value": "Kenya 1985.0 Nairobi"
+            "value": "Kenya (1985.0) Nairobi"
           },
           "province_lat": {
             "confidence": {
@@ -782,6 +791,7 @@
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 1.0,
+            "Node Name": "NODE443",
             "Node Type": "internal",
             "Num Date": 1954.0,
             "Num Date Confidence": [
@@ -860,7 +870,7 @@
                 "value": "HIGH"
               },
               "country_date_strain": {
-                "value": "Uganda 2004.0 UG05-0454"
+                "value": "Uganda (2004.0) UG05-0454"
               },
               "country_lat": {
                 "confidence": {
@@ -884,6 +894,9 @@
                 "value": 2004.0
               },
               "div": 1.42868e-05,
+              "node_name": {
+                "value": "GCA_000169615.1_ASM16961v1_genomic"
+              },
               "node_type": {
                 "value": "terminal"
               },
@@ -904,7 +917,7 @@
                 "value": "LOW"
               },
               "province_date_strain": {
-                "value": "Uganda 2004.0 UG05-0454"
+                "value": "Uganda (2004.0) UG05-0454"
               },
               "province_lat": {
                 "confidence": {
@@ -965,6 +978,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 1.0,
+                "Node Name": "NODE444",
                 "Node Type": "internal",
                 "Num Date": 1954.0,
                 "Num Date Confidence": [
@@ -1043,7 +1057,7 @@
                     "value": "HIGH"
                   },
                   "country_date_strain": {
-                    "value": "Democratic Republic of the Congo 1965.0 Antiqua"
+                    "value": "Democratic Republic of the Congo (1965.0) Antiqua"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1067,6 +1081,9 @@
                     "value": 1965.0
                   },
                   "div": 1.2661499999999999e-05,
+                  "node_name": {
+                    "value": "GCA_000013825.1_ASM1382v1_genomic"
+                  },
                   "node_type": {
                     "value": "terminal"
                   },
@@ -1087,7 +1104,7 @@
                     "value": "LOW"
                   },
                   "province_date_strain": {
-                    "value": "Democratic Republic of the Congo 1965.0 Antiqua"
+                    "value": "Democratic Republic of the Congo (1965.0) Antiqua"
                   },
                   "province_lat": {
                     "confidence": {
@@ -1174,7 +1191,7 @@
                     "value": "HIGH"
                   },
                   "country_date_strain": {
-                    "value": "Democratic Republic of the Congo 1954.0 FDAARGOS_601"
+                    "value": "Democratic Republic of the Congo (1954.0) FDAARGOS_601"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1198,6 +1215,9 @@
                     "value": 1954.0
                   },
                   "div": 1.1742799999999999e-05,
+                  "node_name": {
+                    "value": "GCA_003798225.1_ASM379822v1_genomic"
+                  },
                   "node_type": {
                     "value": "terminal"
                   },
@@ -1218,7 +1238,7 @@
                     "value": "LOW"
                   },
                   "province_date_strain": {
-                    "value": "Democratic Republic of the Congo 1954.0 FDAARGOS_601"
+                    "value": "Democratic Republic of the Congo (1954.0) FDAARGOS_601"
                   },
                   "province_lat": {
                     "confidence": {
@@ -1307,6 +1327,9 @@
                 "value": 23.822263600000007
               },
               "div": 1.17192e-05,
+              "node_name": {
+                "value": "NODE444"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -1410,6 +1433,9 @@
             "value": 32.2166578
           },
           "div": 1.16956e-05,
+          "node_name": {
+            "value": "NODE443"
+          },
           "node_type": {
             "value": "internal"
           },
@@ -1513,6 +1539,9 @@
         "value": 38.4313975
       },
       "div": 0,
+      "node_name": {
+        "value": "NODE442"
+      },
       "node_type": {
         "value": "internal"
       },

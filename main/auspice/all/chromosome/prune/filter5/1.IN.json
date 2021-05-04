@@ -154,6 +154,11 @@
         "type": "categorical"
       },
       {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
         "key": "date_bp_mean",
         "title": "Collection Date (BP)",
         "type": "continuous"
@@ -211,6 +216,11 @@
         "type": "categorical"
       },
       {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
         "key": "province_lat",
         "title": "Province Latitude",
         "type": "continuous"
@@ -261,47 +271,6 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Branch Minor Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "China",
-            "#4a53fc"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
-      },
-      {
         "key": "branch_major_conf_category",
         "scale": [
           [
@@ -317,8 +286,28 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Branch Support Confidence",
         "type": "categorical"
       },
       {
@@ -327,13 +316,33 @@
         "type": "continuous"
       },
       {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
         "type": "continuous"
       },
       {
-        "key": "strain",
-        "title": "Strain",
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Node Type",
         "type": "categorical"
       },
       {
@@ -342,18 +351,28 @@
         "type": "continuous"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
       },
       {
-        "key": "rate_geo_time",
-        "title": "Geographic Rate Time",
-        "type": "continuous"
+        "key": "node_name",
+        "title": "node_name",
+        "type": "categorical"
       },
       {
-        "key": "continent",
-        "title": "Continent",
+        "key": "branch_minor_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Branch Minor Confidence",
         "type": "categorical"
       },
       {
@@ -376,18 +395,59 @@
         "type": "categorical"
       },
       {
-        "key": "node_type",
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
         "scale": [
           [
-            "internal",
+            "LOW",
             "#FFFFFF"
           ],
           [
-            "terminal",
+            "HIGH",
             "#ff4f28"
           ]
         ],
-        "title": "Node Type",
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "1.IN",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
         "type": "categorical"
       },
       {
@@ -396,8 +456,13 @@
         "type": "continuous"
       },
       {
-        "key": "rate_sub",
-        "title": "Substitution Rate",
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
         "type": "continuous"
       },
       {
@@ -428,23 +493,8 @@
         "type": "categorical"
       },
       {
-        "key": "date_mean",
-        "title": "Collection Date",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
         "type": "continuous"
       },
       {
@@ -463,55 +513,30 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "1.IN",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
         "type": "continuous"
       },
       {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Country Confidence",
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
       }
     ],
     "display_defaults": {
@@ -579,7 +604,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-02"
+    "updated": "2021-05-04"
   },
   "tree": {
     "branch_attrs": {
@@ -602,6 +627,7 @@
         "Country": "China",
         "Country Conf Category": "HIGH",
         "Country Confidence": 1.0,
+        "Country Date Strain": "NA",
         "Country Lat": 35.000074,
         "Country Lat Confidence": 0.9998237253495588,
         "Country Lon": 104.999927,
@@ -610,6 +636,7 @@
         "Date Err": "NA",
         "Date Mean": "NA",
         "Geometry Size": 10.0,
+        "Node Name": "NODE77",
         "Node Type": "internal",
         "Num Date": 1589.0,
         "Num Date Confidence": [
@@ -619,6 +646,7 @@
         "Province": "Qinghai",
         "Province Conf Category": "LOW",
         "Province Confidence": 0.91,
+        "Province Date Strain": "NA",
         "Province Lat": 35.40709525,
         "Province Lat Confidence": 0.9129328356294041,
         "Province Lon": 95.95211573241954,
@@ -686,6 +714,9 @@
           "country_conf_category": {
             "value": "HIGH"
           },
+          "country_date_strain": {
+            "value": "China (1985.0) K21985002"
+          },
           "country_lat": {
             "confidence": {
               "35.000074": 1.0
@@ -708,6 +739,9 @@
             "value": 1985.0
           },
           "div": 2.831e-06,
+          "node_name": {
+            "value": "GCA_000325165.1_ASM32516v1_genomic"
+          },
           "node_type": {
             "value": "terminal"
           },
@@ -726,6 +760,9 @@
           },
           "province_conf_category": {
             "value": "HIGH"
+          },
+          "province_date_strain": {
+            "value": "China (1985.0) K21985002"
           },
           "province_lat": {
             "confidence": {
@@ -777,6 +814,7 @@
             "Country": "China",
             "Country Conf Category": "HIGH",
             "Country Confidence": 1.0,
+            "Country Date Strain": "NA",
             "Country Lat": 35.000074,
             "Country Lat Confidence": 0.9998237253495588,
             "Country Lon": 104.999927,
@@ -785,6 +823,7 @@
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 10.0,
+            "Node Name": "NODE77",
             "Node Type": "internal",
             "Num Date": 1589.0,
             "Num Date Confidence": [
@@ -794,6 +833,7 @@
             "Province": "Qinghai",
             "Province Conf Category": "LOW",
             "Province Confidence": 0.91,
+            "Province Date Strain": "NA",
             "Province Lat": 35.40709525,
             "Province Lat Confidence": 0.9129328356294041,
             "Province Lon": 95.95211573241954,
@@ -861,6 +901,9 @@
               "country_conf_category": {
                 "value": "HIGH"
               },
+              "country_date_strain": {
+                "value": "China (1954.0) CMCC11001"
+              },
               "country_lat": {
                 "confidence": {
                   "35.000074": 1.0
@@ -883,6 +926,9 @@
                 "value": 1954.0
               },
               "div": 1.4391000000000001e-06,
+              "node_name": {
+                "value": "GCA_000323965.1_ASM32396v1_genomic"
+              },
               "node_type": {
                 "value": "terminal"
               },
@@ -901,6 +947,9 @@
               },
               "province_conf_category": {
                 "value": "HIGH"
+              },
+              "province_date_strain": {
+                "value": "China (1954.0) CMCC11001"
               },
               "province_lat": {
                 "confidence": {
@@ -952,6 +1001,7 @@
                 "Country": "China",
                 "Country Conf Category": "HIGH",
                 "Country Confidence": 1.0,
+                "Country Date Strain": "NA",
                 "Country Lat": 35.000074,
                 "Country Lat Confidence": 0.9999475235860056,
                 "Country Lon": 104.999927,
@@ -960,6 +1010,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 10.0,
+                "Node Name": "NODE78",
                 "Node Type": "internal",
                 "Num Date": 1589.0,
                 "Num Date Confidence": [
@@ -969,6 +1020,7 @@
                 "Province": "Qinghai",
                 "Province Conf Category": "LOW",
                 "Province Confidence": 0.88,
+                "Province Date Strain": "NA",
                 "Province Lat": 35.40709525,
                 "Province Lat Confidence": 0.8821625486593172,
                 "Province Lon": 95.95211573241954,
@@ -1002,6 +1054,7 @@
                     "Country": "China",
                     "Country Conf Category": "HIGH",
                     "Country Confidence": 1.0,
+                    "Country Date Strain": "NA",
                     "Country Lat": 35.000074,
                     "Country Lat Confidence": 0.9999620391570418,
                     "Country Lon": 104.999927,
@@ -1010,6 +1063,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 10.0,
+                    "Node Name": "NODE79",
                     "Node Type": "internal",
                     "Num Date": 1716.0,
                     "Num Date Confidence": [
@@ -1019,6 +1073,7 @@
                     "Province": "Qinghai",
                     "Province Conf Category": "LOW",
                     "Province Confidence": 0.9,
+                    "Province Date Strain": "NA",
                     "Province Lat": 35.40709525,
                     "Province Lat Confidence": 0.8966776399500375,
                     "Province Lon": 95.95211573241954,
@@ -1052,6 +1107,7 @@
                         "Country": "China",
                         "Country Conf Category": "HIGH",
                         "Country Confidence": 1.0,
+                        "Country Date Strain": "NA",
                         "Country Lat": 35.000074,
                         "Country Lat Confidence": 0.9999638922808572,
                         "Country Lon": 104.999927,
@@ -1060,6 +1116,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 4.0,
+                        "Node Name": "NODE80",
                         "Node Type": "internal",
                         "Num Date": 1960.0,
                         "Num Date Confidence": [
@@ -1069,6 +1126,7 @@
                         "Province": "Tibet",
                         "Province Conf Category": "HIGH",
                         "Province Confidence": 0.99,
+                        "Province Date Strain": "NA",
                         "Province Lat": 29.8556443,
                         "Province Lat Confidence": 0.9861041290971996,
                         "Province Lon": 90.8749807,
@@ -1136,6 +1194,9 @@
                           "country_conf_category": {
                             "value": "HIGH"
                           },
+                          "country_date_strain": {
+                            "value": "China (2008.0) S20080153"
+                          },
                           "country_lat": {
                             "confidence": {
                               "35.000074": 1.0
@@ -1158,6 +1219,9 @@
                             "value": 2008.0
                           },
                           "div": 1.9581e-06,
+                          "node_name": {
+                            "value": "GCA_015158475.1_ASM1515847v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -1176,6 +1240,9 @@
                           },
                           "province_conf_category": {
                             "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "China (2008.0) S20080153"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1261,6 +1328,9 @@
                           "country_conf_category": {
                             "value": "HIGH"
                           },
+                          "country_date_strain": {
+                            "value": "China (1994.0) S19940051"
+                          },
                           "country_lat": {
                             "confidence": {
                               "35.000074": 1.0
@@ -1283,6 +1353,9 @@
                             "value": 1994.0
                           },
                           "div": 1.9581e-06,
+                          "node_name": {
+                            "value": "GCA_015158625.1_ASM1515862v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -1301,6 +1374,9 @@
                           },
                           "province_conf_category": {
                             "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "China (1994.0) S19940051"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1389,6 +1465,9 @@
                         "value": 104.999927
                       },
                       "div": 1.9345e-06,
+                      "node_name": {
+                        "value": "NODE80"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -1455,6 +1534,7 @@
                         "Country": "China",
                         "Country Conf Category": "HIGH",
                         "Country Confidence": 1.0,
+                        "Country Date Strain": "NA",
                         "Country Lat": 35.000074,
                         "Country Lat Confidence": 0.9999631045272652,
                         "Country Lon": 104.999927,
@@ -1463,6 +1543,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 10.0,
+                        "Node Name": "NODE81",
                         "Node Type": "internal",
                         "Num Date": 1828.0,
                         "Num Date Confidence": [
@@ -1472,6 +1553,7 @@
                         "Province": "Qinghai",
                         "Province Conf Category": "HIGH",
                         "Province Confidence": 0.99,
+                        "Province Date Strain": "NA",
                         "Province Lat": 35.40709525,
                         "Province Lat Confidence": 0.993915082730902,
                         "Province Lon": 95.95211573241954,
@@ -1539,6 +1621,9 @@
                           "country_conf_category": {
                             "value": "HIGH"
                           },
+                          "country_date_strain": {
+                            "value": "China (2004.0) 5"
+                          },
                           "country_lat": {
                             "confidence": {
                               "35.000074": 1.0
@@ -1561,6 +1646,9 @@
                             "value": 2004.0
                           },
                           "div": 3.1141e-06,
+                          "node_name": {
+                            "value": "GCA_000323445.1_ASM32344v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -1579,6 +1667,9 @@
                           },
                           "province_conf_category": {
                             "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "China (2004.0) 5"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1630,6 +1721,7 @@
                             "Country": "China",
                             "Country Conf Category": "HIGH",
                             "Country Confidence": 1.0,
+                            "Country Date Strain": "NA",
                             "Country Lat": 35.000074,
                             "Country Lat Confidence": 0.9999631492530072,
                             "Country Lon": 104.999927,
@@ -1638,6 +1730,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 10.0,
+                            "Node Name": "NODE82",
                             "Node Type": "internal",
                             "Num Date": 1933.0,
                             "Num Date Confidence": [
@@ -1647,6 +1740,7 @@
                             "Province": "Qinghai",
                             "Province Conf Category": "HIGH",
                             "Province Confidence": 0.98,
+                            "Province Date Strain": "NA",
                             "Province Lat": 35.40709525,
                             "Province Lat Confidence": 0.9785655259210448,
                             "Province Lon": 95.95211573241954,
@@ -1714,6 +1808,9 @@
                               "country_conf_category": {
                                 "value": "HIGH"
                               },
+                              "country_date_strain": {
+                                "value": "China (1982.0) D1982001"
+                              },
                               "country_lat": {
                                 "confidence": {
                                   "35.000074": 1.0
@@ -1736,6 +1833,9 @@
                                 "value": 1982.0
                               },
                               "div": 3.5859e-06,
+                              "node_name": {
+                                "value": "GCA_000324725.1_ASM32472v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -1754,6 +1854,9 @@
                               },
                               "province_conf_category": {
                                 "value": "HIGH"
+                              },
+                              "province_date_strain": {
+                                "value": "China (1982.0) D1982001"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -1805,6 +1908,7 @@
                                 "Country": "China",
                                 "Country Conf Category": "HIGH",
                                 "Country Confidence": 1.0,
+                                "Country Date Strain": "NA",
                                 "Country Lat": 35.000074,
                                 "Country Lat Confidence": 0.9999639183972632,
                                 "Country Lon": 104.999927,
@@ -1813,6 +1917,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 10.0,
+                                "Node Name": "NODE83",
                                 "Node Type": "internal",
                                 "Num Date": 1937.0,
                                 "Num Date Confidence": [
@@ -1822,6 +1927,7 @@
                                 "Province": "Qinghai",
                                 "Province Conf Category": "HIGH",
                                 "Province Confidence": 1.0,
+                                "Province Date Strain": "NA",
                                 "Province Lat": 35.40709525,
                                 "Province Lat Confidence": 0.9995944275856448,
                                 "Province Lon": 95.95211573241954,
@@ -1889,6 +1995,9 @@
                                   "country_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "country_date_strain": {
+                                    "value": "China (1965.0) CMCC02041"
+                                  },
                                   "country_lat": {
                                     "confidence": {
                                       "35.000074": 1.0
@@ -1911,6 +2020,9 @@
                                     "value": 1965.0
                                   },
                                   "div": 3.1377e-06,
+                                  "node_name": {
+                                    "value": "GCA_000323805.1_ASM32380v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -1929,6 +2041,9 @@
                                   },
                                   "province_conf_category": {
                                     "value": "HIGH"
+                                  },
+                                  "province_date_strain": {
+                                    "value": "China (1965.0) CMCC02041"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -2014,6 +2129,9 @@
                                   "country_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "country_date_strain": {
+                                    "value": "China (1964.0) D1964002"
+                                  },
                                   "country_lat": {
                                     "confidence": {
                                       "35.000074": 1.0
@@ -2036,6 +2154,9 @@
                                     "value": 1964.0
                                   },
                                   "div": 3.3735999999999998e-06,
+                                  "node_name": {
+                                    "value": "GCA_000324705.1_ASM32470v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -2054,6 +2175,9 @@
                                   },
                                   "province_conf_category": {
                                     "value": "HIGH"
+                                  },
+                                  "province_date_strain": {
+                                    "value": "China (1964.0) D1964002"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -2142,6 +2266,9 @@
                                 "value": 104.999927
                               },
                               "div": 2.9018e-06,
+                              "node_name": {
+                                "value": "NODE83"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -2245,6 +2372,9 @@
                             "value": 104.999927
                           },
                           "div": 2.8782e-06,
+                          "node_name": {
+                            "value": "NODE82"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -2348,6 +2478,9 @@
                         "value": 104.999927
                       },
                       "div": 1.4627e-06,
+                      "node_name": {
+                        "value": "NODE81"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -2451,6 +2584,9 @@
                     "value": 104.999927
                   },
                   "div": 5.189999999999999e-07,
+                  "node_name": {
+                    "value": "NODE79"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -2517,6 +2653,7 @@
                     "Country": "China",
                     "Country Conf Category": "HIGH",
                     "Country Confidence": 1.0,
+                    "Country Date Strain": "NA",
                     "Country Lat": 35.000074,
                     "Country Lat Confidence": 0.9992286258428316,
                     "Country Lon": 104.999927,
@@ -2525,6 +2662,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 3.0,
+                    "Node Name": "NODE84",
                     "Node Type": "internal",
                     "Num Date": 1589.0,
                     "Num Date Confidence": [
@@ -2534,6 +2672,7 @@
                     "Province": "Yunnan",
                     "Province Conf Category": "LOW",
                     "Province Confidence": 0.46,
+                    "Province Date Strain": "NA",
                     "Province Lat": 25.0,
                     "Province Lat Confidence": 0.4603184372660407,
                     "Province Lon": 102.0,
@@ -2567,6 +2706,7 @@
                         "Country": "China",
                         "Country Conf Category": "HIGH",
                         "Country Confidence": 1.0,
+                        "Country Date Strain": "NA",
                         "Country Lat": 35.000074,
                         "Country Lat Confidence": 0.9999535387485462,
                         "Country Lon": 104.999927,
@@ -2575,6 +2715,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 3.0,
+                        "Node Name": "NODE85",
                         "Node Type": "internal",
                         "Num Date": 1851.0,
                         "Num Date Confidence": [
@@ -2584,6 +2725,7 @@
                         "Province": "Yunnan",
                         "Province Conf Category": "HIGH",
                         "Province Confidence": 0.99,
+                        "Province Date Strain": "NA",
                         "Province Lat": 25.0,
                         "Province Lat Confidence": 0.9925700756819176,
                         "Province Lon": 102.0,
@@ -2651,6 +2793,9 @@
                           "country_conf_category": {
                             "value": "HIGH"
                           },
+                          "country_date_strain": {
+                            "value": "China (1982.0) CMCC84038"
+                          },
                           "country_lat": {
                             "confidence": {
                               "35.000074": 1.0
@@ -2673,6 +2818,9 @@
                             "value": 1982.0
                           },
                           "div": 3.7302e-06,
+                          "node_name": {
+                            "value": "GCA_000324385.1_ASM32438v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -2691,6 +2839,9 @@
                           },
                           "province_conf_category": {
                             "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "China (1982.0) CMCC84038"
                           },
                           "province_lat": {
                             "confidence": {
@@ -2776,6 +2927,9 @@
                           "country_conf_category": {
                             "value": "HIGH"
                           },
+                          "country_date_strain": {
+                            "value": "China (1977.0) YN1683"
+                          },
                           "country_lat": {
                             "confidence": {
                               "35.000074": 1.0
@@ -2798,6 +2952,9 @@
                             "value": 1977.0
                           },
                           "div": 3.4774e-06,
+                          "node_name": {
+                            "value": "GCA_000325385.1_ASM32538v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -2816,6 +2973,9 @@
                           },
                           "province_conf_category": {
                             "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "China (1977.0) YN1683"
                           },
                           "province_lat": {
                             "confidence": {
@@ -2904,6 +3064,9 @@
                         "value": 104.999927
                       },
                       "div": 2.6947e-06,
+                      "node_name": {
+                        "value": "NODE85"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -3007,6 +3170,9 @@
                     "value": 104.999927
                   },
                   "div": 1.2304e-06,
+                  "node_name": {
+                    "value": "NODE84"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -3110,6 +3276,9 @@
                 "value": 104.999927
               },
               "div": 4.954e-07,
+              "node_name": {
+                "value": "NODE78"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -3213,6 +3382,9 @@
             "value": 104.999927
           },
           "div": 2.36e-08,
+          "node_name": {
+            "value": "NODE77"
+          },
           "node_type": {
             "value": "internal"
           },
@@ -3316,6 +3488,9 @@
         "value": 104.999927
       },
       "div": 0,
+      "node_name": {
+        "value": "NODE76"
+      },
       "node_type": {
         "value": "internal"
       },

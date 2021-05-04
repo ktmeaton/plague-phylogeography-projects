@@ -303,49 +303,9 @@
         "type": "categorical"
       },
       {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_time",
-        "title": "Geographic Rate Time",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "key": "strain",
+        "title": "Strain",
         "type": "categorical"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
       },
       {
         "key": "province",
@@ -395,12 +355,42 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
       },
       {
-        "key": "branch_major_conf_category",
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -411,13 +401,13 @@
             "#80ffb4"
           ]
         ],
-        "title": "Branch Major Confidence",
+        "title": "Province Confidence",
         "type": "categorical"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
       },
       {
         "key": "branch_support_conf_category",
@@ -435,14 +425,9 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
         "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
       },
       {
         "key": "branch_minor",
@@ -462,6 +447,67 @@
         ],
         "title": "Branch Minor",
         "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "2.ANT",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
       },
       {
         "key": "country",
@@ -487,9 +533,54 @@
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
         "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "node_name",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Branch Major Confidence",
+        "type": "categorical"
       },
       {
         "key": "branch_minor_conf_category",
@@ -505,92 +596,6 @@
         ],
         "title": "Branch Minor Confidence",
         "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "2.ANT",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
       },
       {
         "key": "date_mean",
@@ -695,7 +700,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-03"
+    "updated": "2021-05-04"
   },
   "tree": {
     "branch_attrs": {
@@ -727,6 +732,7 @@
         "Date Err": "NA",
         "Date Mean": "NA",
         "Geometry Size": 25.0,
+        "Node Name": "NODE248",
         "Node Type": "internal",
         "Num Date": 1591.0,
         "Num Date Confidence": [
@@ -779,6 +785,7 @@
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 20.0,
+            "Node Name": "NODE234",
             "Node Type": "internal",
             "Num Date": 1128.0,
             "Num Date Confidence": [
@@ -831,6 +838,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 20.0,
+                "Node Name": "NODE235",
                 "Node Type": "internal",
                 "Num Date": 1517.0,
                 "Num Date Confidence": [
@@ -883,6 +891,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 20.0,
+                    "Node Name": "NODE236",
                     "Node Type": "internal",
                     "Num Date": 1873.0,
                     "Num Date Confidence": [
@@ -961,7 +970,7 @@
                         "value": "HIGH"
                       },
                       "country_date_strain": {
-                        "value": "China 1971.0 CMCC92010"
+                        "value": "China (1971.0) CMCC92010"
                       },
                       "country_lat": {
                         "confidence": {
@@ -985,6 +994,9 @@
                         "value": 1971.0
                       },
                       "div": 6.3511999999999994e-06,
+                      "node_name": {
+                        "value": "GCA_000324505.1_ASM32450v1_genomic"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -1005,7 +1017,7 @@
                         "value": "HIGH"
                       },
                       "province_date_strain": {
-                        "value": "China 1971.0 CMCC92010"
+                        "value": "China (1971.0) CMCC92010"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1092,7 +1104,7 @@
                         "value": "HIGH"
                       },
                       "country_date_strain": {
-                        "value": "China 1970.0 CMCC95001"
+                        "value": "China (1970.0) CMCC95001"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1116,6 +1128,9 @@
                         "value": 1970.0
                       },
                       "div": 6.065199999999999e-06,
+                      "node_name": {
+                        "value": "GCA_000324545.1_ASM32454v1_genomic"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -1136,7 +1151,7 @@
                         "value": "HIGH"
                       },
                       "province_date_strain": {
-                        "value": "China 1970.0 CMCC95001"
+                        "value": "China (1970.0) CMCC95001"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1225,6 +1240,9 @@
                     "value": 104.999927
                   },
                   "div": 5.5940999999999995e-06,
+                  "node_name": {
+                    "value": "NODE236"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -1300,6 +1318,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 20.0,
+                    "Node Name": "NODE237",
                     "Node Type": "internal",
                     "Num Date": 1822.0,
                     "Num Date Confidence": [
@@ -1378,7 +1397,7 @@
                         "value": "HIGH"
                       },
                       "country_date_strain": {
-                        "value": "China 1957.0 CMCC96001"
+                        "value": "China (1957.0) CMCC96001"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1402,6 +1421,9 @@
                         "value": 1957.0
                       },
                       "div": 5.6386e-06,
+                      "node_name": {
+                        "value": "GCA_000324565.1_ASM32456v1_genomic"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -1422,7 +1444,7 @@
                         "value": "HIGH"
                       },
                       "province_date_strain": {
-                        "value": "China 1957.0 CMCC96001"
+                        "value": "China (1957.0) CMCC96001"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1509,7 +1531,7 @@
                         "value": "HIGH"
                       },
                       "country_date_strain": {
-                        "value": "China 1989.0 CMCC96007"
+                        "value": "China (1989.0) CMCC96007"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1533,6 +1555,9 @@
                         "value": 1989.0
                       },
                       "div": 5.555e-06,
+                      "node_name": {
+                        "value": "GCA_000324585.1_ASM32458v1_genomic"
+                      },
                       "node_type": {
                         "value": "terminal"
                       },
@@ -1553,7 +1578,7 @@
                         "value": "HIGH"
                       },
                       "province_date_strain": {
-                        "value": "China 1989.0 CMCC96007"
+                        "value": "China (1989.0) CMCC96007"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1642,6 +1667,9 @@
                     "value": 104.999927
                   },
                   "div": 4.6127e-06,
+                  "node_name": {
+                    "value": "NODE237"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -1745,6 +1773,9 @@
                 "value": 104.999927
               },
               "div": 3.0623e-06,
+              "node_name": {
+                "value": "NODE235"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -1820,6 +1851,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 20.0,
+                "Node Name": "NODE238",
                 "Node Type": "internal",
                 "Num Date": 1128.0,
                 "Num Date Confidence": [
@@ -1898,7 +1930,7 @@
                     "value": "HIGH"
                   },
                   "country_date_strain": {
-                    "value": "China 1959.0 CMCC67001"
+                    "value": "China (1959.0) CMCC67001"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1922,6 +1954,9 @@
                     "value": 1959.0
                   },
                   "div": 8.0092e-06,
+                  "node_name": {
+                    "value": "GCA_000324305.1_ASM32430v1_genomic"
+                  },
                   "node_type": {
                     "value": "terminal"
                   },
@@ -1942,7 +1977,7 @@
                     "value": "HIGH"
                   },
                   "province_date_strain": {
-                    "value": "China 1959.0 CMCC67001"
+                    "value": "China (1959.0) CMCC67001"
                   },
                   "province_lat": {
                     "confidence": {
@@ -2003,6 +2038,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 20.0,
+                    "Node Name": "NODE239",
                     "Node Type": "internal",
                     "Num Date": 1128.0,
                     "Num Date Confidence": [
@@ -2055,6 +2091,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 20.0,
+                        "Node Name": "NODE240",
                         "Node Type": "internal",
                         "Num Date": 1614.0,
                         "Num Date Confidence": [
@@ -2133,7 +2170,7 @@
                             "value": "HIGH"
                           },
                           "country_date_strain": {
-                            "value": "China 1957.0 CMCC64001"
+                            "value": "China (1957.0) CMCC64001"
                           },
                           "country_lat": {
                             "confidence": {
@@ -2157,6 +2194,9 @@
                             "value": 1957.0
                           },
                           "div": 8.4803e-06,
+                          "node_name": {
+                            "value": "GCA_000324265.1_ASM32426v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -2177,7 +2217,7 @@
                             "value": "HIGH"
                           },
                           "province_date_strain": {
-                            "value": "China 1957.0 CMCC64001"
+                            "value": "China (1957.0) CMCC64001"
                           },
                           "province_lat": {
                             "confidence": {
@@ -2238,6 +2278,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 20.0,
+                            "Node Name": "NODE241",
                             "Node Type": "internal",
                             "Num Date": 1821.0,
                             "Num Date Confidence": [
@@ -2316,7 +2357,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "China 1996.0 CMCC106002"
+                                "value": "China (1996.0) CMCC106002"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2340,6 +2381,9 @@
                                 "value": 1996.0
                               },
                               "div": 5.206e-06,
+                              "node_name": {
+                                "value": "GCA_000323925.1_ASM32392v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -2360,7 +2404,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "China 1996.0 CMCC106002"
+                                "value": "China (1996.0) CMCC106002"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2421,6 +2465,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 20.0,
+                                "Node Name": "NODE242",
                                 "Node Type": "internal",
                                 "Num Date": 1865.0,
                                 "Num Date Confidence": [
@@ -2499,7 +2544,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "China 1989.0 CMCC104003"
+                                    "value": "China (1989.0) CMCC104003"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -2523,6 +2568,9 @@
                                     "value": 1989.0
                                   },
                                   "div": 5.7007e-06,
+                                  "node_name": {
+                                    "value": "GCA_000323905.1_ASM32390v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -2543,7 +2591,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "China 1989.0 CMCC104003"
+                                    "value": "China (1989.0) CMCC104003"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -2630,7 +2678,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "China 1954.0 CMCC51020"
+                                    "value": "China (1954.0) CMCC51020"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -2654,6 +2702,9 @@
                                     "value": 1954.0
                                   },
                                   "div": 6.4074e-06,
+                                  "node_name": {
+                                    "value": "GCA_000324245.1_ASM32424v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -2674,7 +2725,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "China 1954.0 CMCC51020"
+                                    "value": "China (1954.0) CMCC51020"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -2763,6 +2814,9 @@
                                 "value": 104.999927
                               },
                               "div": 4.994e-06,
+                              "node_name": {
+                                "value": "NODE242"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -2866,6 +2920,9 @@
                             "value": 104.999927
                           },
                           "div": 4.9704e-06,
+                          "node_name": {
+                            "value": "NODE241"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -2969,6 +3026,9 @@
                         "value": 104.999927
                       },
                       "div": 4.9468e-06,
+                      "node_name": {
+                        "value": "NODE240"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -3044,6 +3104,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 20.0,
+                        "Node Name": "NODE243",
                         "Node Type": "internal",
                         "Num Date": 1128.0,
                         "Num Date Confidence": [
@@ -3096,6 +3157,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 2.0,
+                            "Node Name": "NODE244",
                             "Node Type": "internal",
                             "Num Date": 1661.0,
                             "Num Date Confidence": [
@@ -3174,7 +3236,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "Russia 1956.0 5761"
+                                "value": "Russia (1956.0) 5761"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -3198,6 +3260,9 @@
                                 "value": 1956.0
                               },
                               "div": 6.8313999999999995e-06,
+                              "node_name": {
+                                "value": "GCA_000323465.1_ASM32346v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -3218,7 +3283,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "Russia 1956.0 5761"
+                                "value": "Russia (1956.0) 5761"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -3305,7 +3370,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "Russia 1965.0 735"
+                                "value": "Russia (1965.0) 735"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -3329,6 +3394,9 @@
                                 "value": 1965.0
                               },
                               "div": 7.3025e-06,
+                              "node_name": {
+                                "value": "GCA_000323585.1_ASM32358v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -3349,7 +3417,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "Russia 1965.0 735"
+                                "value": "Russia (1965.0) 735"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -3438,6 +3506,9 @@
                             "value": 97.7453061
                           },
                           "div": 5.418e-06,
+                          "node_name": {
+                            "value": "NODE244"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -3513,6 +3584,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 3.0,
+                            "Node Name": "NODE245",
                             "Node Type": "internal",
                             "Num Date": 1128.0,
                             "Num Date Confidence": [
@@ -3591,7 +3663,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "China 1959.0 H1959004"
+                                "value": "China (1959.0) H1959004"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -3615,6 +3687,9 @@
                                 "value": 1959.0
                               },
                               "div": 5.206e-06,
+                              "node_name": {
+                                "value": "GCA_000324965.1_ASM32496v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -3635,7 +3710,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "China 1959.0 H1959004"
+                                "value": "China (1959.0) H1959004"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -3696,6 +3771,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 1.0,
+                                "Node Name": "NODE246",
                                 "Node Type": "internal",
                                 "Num Date": 1128.0,
                                 "Num Date Confidence": [
@@ -3774,7 +3850,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "Russia 1970.0 I-1996"
+                                    "value": "Russia (1970.0) I-1996"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -3798,6 +3874,9 @@
                                     "value": 1970.0
                                   },
                                   "div": 5.4416e-06,
+                                  "node_name": {
+                                    "value": "GCA_001601285.1_ASM160128v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -3818,7 +3897,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "Russia 1970.0 I-1996"
+                                    "value": "Russia (1970.0) I-1996"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -3879,6 +3958,7 @@
                                     "Date Err": "NA",
                                     "Date Mean": "NA",
                                     "Geometry Size": 2.0,
+                                    "Node Name": "NODE247",
                                     "Node Type": "internal",
                                     "Num Date": 1940.0,
                                     "Num Date Confidence": [
@@ -3957,7 +4037,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "China 1940.0 Harbin35"
+                                        "value": "China (1940.0) Harbin35"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -3981,6 +4061,9 @@
                                         "value": 1940.0
                                       },
                                       "div": 5.5187500000000007e-05,
+                                      "node_name": {
+                                        "value": "GCA_000834275.1_ASM83427v1_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -4001,7 +4084,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "China 1940.0 Harbin35"
+                                        "value": "China (1940.0) Harbin35"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -4088,7 +4171,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "China 2008.0 Nicholisk 41"
+                                        "value": "China (2008.0) Nicholisk 41"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -4112,6 +4195,9 @@
                                         "value": 2008.0
                                       },
                                       "div": 5.1889700000000006e-05,
+                                      "node_name": {
+                                        "value": "GCA_000834885.1_ASM83488v1_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -4132,7 +4218,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "China 2008.0 Nicholisk 41"
+                                        "value": "China (2008.0) Nicholisk 41"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -4221,6 +4307,9 @@
                                     "value": 104.999927
                                   },
                                   "div": 3.6094200000000004e-05,
+                                  "node_name": {
+                                    "value": "NODE247"
+                                  },
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -4324,6 +4413,9 @@
                                 "value": 104.999927
                               },
                               "div": 3.7926999999999997e-06,
+                              "node_name": {
+                                "value": "NODE246"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -4427,6 +4519,9 @@
                             "value": 104.999927
                           },
                           "div": 3.5571e-06,
+                          "node_name": {
+                            "value": "NODE245"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -4530,6 +4625,9 @@
                         "value": 104.999927
                       },
                       "div": 3.5334999999999997e-06,
+                      "node_name": {
+                        "value": "NODE243"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -4633,6 +4731,9 @@
                     "value": 104.999927
                   },
                   "div": 3.2979e-06,
+                  "node_name": {
+                    "value": "NODE239"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -4736,6 +4837,9 @@
                 "value": 104.999927
               },
               "div": 2.8267999999999998e-06,
+              "node_name": {
+                "value": "NODE238"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -4839,6 +4943,9 @@
             "value": 104.999927
           },
           "div": 1.8845e-06,
+          "node_name": {
+            "value": "NODE234"
+          },
           "node_type": {
             "value": "internal"
           },
@@ -4914,6 +5021,7 @@
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 25.0,
+            "Node Name": "NODE248",
             "Node Type": "internal",
             "Num Date": 1591.0,
             "Num Date Confidence": [
@@ -4992,7 +5100,7 @@
                 "value": "HIGH"
               },
               "country_date_strain": {
-                "value": "China 2004.0 2"
+                "value": "China (2004.0) 2"
               },
               "country_lat": {
                 "confidence": {
@@ -5016,6 +5124,9 @@
                 "value": 2004.0
               },
               "div": 3.769e-06,
+              "node_name": {
+                "value": "GCA_000320445.1_ASM32044v1_genomic"
+              },
               "node_type": {
                 "value": "terminal"
               },
@@ -5036,7 +5147,7 @@
                 "value": "HIGH"
               },
               "province_date_strain": {
-                "value": "China 2004.0 2"
+                "value": "China (2004.0) 2"
               },
               "province_lat": {
                 "confidence": {
@@ -5097,6 +5208,7 @@
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 45.0,
+                "Node Name": "NODE249",
                 "Node Type": "internal",
                 "Num Date": 1650.0,
                 "Num Date Confidence": [
@@ -5149,6 +5261,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 45.0,
+                    "Node Name": "NODE250",
                     "Node Type": "internal",
                     "Num Date": 1773.0,
                     "Num Date Confidence": [
@@ -5201,6 +5314,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 45.0,
+                        "Node Name": "NODE251",
                         "Node Type": "internal",
                         "Num Date": 1949.0,
                         "Num Date Confidence": [
@@ -5279,7 +5393,7 @@
                             "value": "HIGH"
                           },
                           "country_date_strain": {
-                            "value": "China 2008.0 S20080149"
+                            "value": "China (2008.0) S20080149"
                           },
                           "country_lat": {
                             "confidence": {
@@ -5303,6 +5417,9 @@
                             "value": 2008.0
                           },
                           "div": 3.1095e-06,
+                          "node_name": {
+                            "value": "GCA_015158935.1_ASM1515893v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -5323,7 +5440,7 @@
                             "value": "HIGH"
                           },
                           "province_date_strain": {
-                            "value": "China 2008.0 S20080149"
+                            "value": "China (2008.0) S20080149"
                           },
                           "province_lat": {
                             "confidence": {
@@ -5384,6 +5501,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 45.0,
+                            "Node Name": "NODE252",
                             "Node Type": "internal",
                             "Num Date": 1971.0,
                             "Num Date Confidence": [
@@ -5462,7 +5580,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "China 2004.0 S20040188"
+                                "value": "China (2004.0) S20040188"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -5486,6 +5604,9 @@
                                 "value": 2004.0
                               },
                               "div": 3.3686000000000002e-06,
+                              "node_name": {
+                                "value": "GCA_015158715.1_ASM1515871v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -5506,7 +5627,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "China 2004.0 S20040188"
+                                "value": "China (2004.0) S20040188"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -5593,7 +5714,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "China 2008.0 S20080154"
+                                "value": "China (2008.0) S20080154"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -5617,6 +5738,9 @@
                                 "value": 2008.0
                               },
                               "div": 3.1331e-06,
+                              "node_name": {
+                                "value": "GCA_015158815.1_ASM1515881v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -5637,7 +5761,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "China 2008.0 S20080154"
+                                "value": "China (2008.0) S20080154"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -5726,6 +5850,9 @@
                             "value": 104.999927
                           },
                           "div": 2.8975e-06,
+                          "node_name": {
+                            "value": "NODE252"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -5829,6 +5956,9 @@
                         "value": 104.999927
                       },
                       "div": 2.8739e-06,
+                      "node_name": {
+                        "value": "NODE251"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -5904,6 +6034,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 45.0,
+                        "Node Name": "NODE253",
                         "Node Type": "internal",
                         "Num Date": 1949.0,
                         "Num Date Confidence": [
@@ -5982,7 +6113,7 @@
                             "value": "HIGH"
                           },
                           "country_date_strain": {
-                            "value": "China 2008.0 S20080158"
+                            "value": "China (2008.0) S20080158"
                           },
                           "country_lat": {
                             "confidence": {
@@ -6006,6 +6137,9 @@
                             "value": 2008.0
                           },
                           "div": 3.3451000000000004e-06,
+                          "node_name": {
+                            "value": "GCA_015158765.1_ASM1515876v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -6026,7 +6160,7 @@
                             "value": "HIGH"
                           },
                           "province_date_strain": {
-                            "value": "China 2008.0 S20080158"
+                            "value": "China (2008.0) S20080158"
                           },
                           "province_lat": {
                             "confidence": {
@@ -6087,6 +6221,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 45.0,
+                            "Node Name": "NODE254",
                             "Node Type": "internal",
                             "Num Date": 1961.0,
                             "Num Date Confidence": [
@@ -6139,6 +6274,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 45.0,
+                                "Node Name": "NODE255",
                                 "Node Type": "internal",
                                 "Num Date": 1961.0,
                                 "Num Date Confidence": [
@@ -6217,7 +6353,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "China 1996.0 351001"
+                                    "value": "China (1996.0) 351001"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -6241,6 +6377,9 @@
                                     "value": 1996.0
                                   },
                                   "div": 3.3923000000000005e-06,
+                                  "node_name": {
+                                    "value": "GCA_000323345.1_ASM32334v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -6261,7 +6400,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "China 1996.0 351001"
+                                    "value": "China (1996.0) 351001"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -6348,7 +6487,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "China 1996.0 CMCC347001"
+                                    "value": "China (1996.0) CMCC347001"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -6372,6 +6511,9 @@
                                     "value": 1996.0
                                   },
                                   "div": 4.099000000000001e-06,
+                                  "node_name": {
+                                    "value": "GCA_000324125.1_ASM32412v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -6392,7 +6534,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "China 1996.0 CMCC347001"
+                                    "value": "China (1996.0) CMCC347001"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -6481,6 +6623,9 @@
                                 "value": 104.999927
                               },
                               "div": 3.1567000000000006e-06,
+                              "node_name": {
+                                "value": "NODE255"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -6556,6 +6701,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 45.0,
+                                "Node Name": "NODE256",
                                 "Node Type": "internal",
                                 "Num Date": 1983.0,
                                 "Num Date Confidence": [
@@ -6634,7 +6780,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "China 2008.0 S20080150"
+                                    "value": "China (2008.0) S20080150"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -6658,6 +6804,9 @@
                                     "value": 2008.0
                                   },
                                   "div": 3.1803000000000007e-06,
+                                  "node_name": {
+                                    "value": "GCA_015158895.1_ASM1515889v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -6678,7 +6827,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "China 2008.0 S20080150"
+                                    "value": "China (2008.0) S20080150"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -6739,6 +6888,7 @@
                                     "Date Err": "NA",
                                     "Date Mean": "NA",
                                     "Geometry Size": 45.0,
+                                    "Node Name": "NODE257",
                                     "Node Type": "internal",
                                     "Num Date": 1983.0,
                                     "Num Date Confidence": [
@@ -6817,7 +6967,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "China 2007.0 S20070088"
+                                        "value": "China (2007.0) S20070088"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -6841,6 +6991,9 @@
                                         "value": 2007.0
                                       },
                                       "div": 3.4159000000000006e-06,
+                                      "node_name": {
+                                        "value": "GCA_015158845.1_ASM1515884v1_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -6861,7 +7014,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "China 2007.0 S20070088"
+                                        "value": "China (2007.0) S20070088"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -6922,6 +7075,7 @@
                                         "Date Err": "NA",
                                         "Date Mean": "NA",
                                         "Geometry Size": 45.0,
+                                        "Node Name": "NODE258",
                                         "Node Type": "internal",
                                         "Num Date": 1991.0,
                                         "Num Date Confidence": [
@@ -7000,7 +7154,7 @@
                                             "value": "HIGH"
                                           },
                                           "country_date_strain": {
-                                            "value": "China 2001.0 S20010083"
+                                            "value": "China (2001.0) S20010083"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -7024,6 +7178,9 @@
                                             "value": 2001.0
                                           },
                                           "div": 3.6515000000000005e-06,
+                                          "node_name": {
+                                            "value": "GCA_015159075.1_ASM1515907v1_genomic"
+                                          },
                                           "node_type": {
                                             "value": "terminal"
                                           },
@@ -7044,7 +7201,7 @@
                                             "value": "HIGH"
                                           },
                                           "province_date_strain": {
-                                            "value": "China 2001.0 S20010083"
+                                            "value": "China (2001.0) S20010083"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -7131,7 +7288,7 @@
                                             "value": "HIGH"
                                           },
                                           "country_date_strain": {
-                                            "value": "China 2003.0 S20030070"
+                                            "value": "China (2003.0) S20030070"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -7155,6 +7312,9 @@
                                             "value": 2003.0
                                           },
                                           "div": 3.6515000000000005e-06,
+                                          "node_name": {
+                                            "value": "GCA_015159105.1_ASM1515910v1_genomic"
+                                          },
                                           "node_type": {
                                             "value": "terminal"
                                           },
@@ -7175,7 +7335,7 @@
                                             "value": "HIGH"
                                           },
                                           "province_date_strain": {
-                                            "value": "China 2003.0 S20030070"
+                                            "value": "China (2003.0) S20030070"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -7264,6 +7424,9 @@
                                         "value": 104.999927
                                       },
                                       "div": 3.4159000000000006e-06,
+                                      "node_name": {
+                                        "value": "NODE258"
+                                      },
                                       "node_type": {
                                         "value": "internal"
                                       },
@@ -7367,6 +7530,9 @@
                                     "value": 104.999927
                                   },
                                   "div": 3.1803000000000007e-06,
+                                  "node_name": {
+                                    "value": "NODE257"
+                                  },
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -7470,6 +7636,9 @@
                                 "value": 104.999927
                               },
                               "div": 3.1567000000000006e-06,
+                              "node_name": {
+                                "value": "NODE256"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -7573,6 +7742,9 @@
                             "value": 104.999927
                           },
                           "div": 3.1331000000000005e-06,
+                          "node_name": {
+                            "value": "NODE254"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -7676,6 +7848,9 @@
                         "value": 104.999927
                       },
                       "div": 3.1095000000000005e-06,
+                      "node_name": {
+                        "value": "NODE253"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -7779,6 +7954,9 @@
                     "value": 104.999927
                   },
                   "div": 1.6961000000000002e-06,
+                  "node_name": {
+                    "value": "NODE250"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -7854,6 +8032,7 @@
                     "Date Err": "NA",
                     "Date Mean": "NA",
                     "Geometry Size": 45.0,
+                    "Node Name": "NODE259",
                     "Node Type": "internal",
                     "Num Date": 1650.0,
                     "Num Date Confidence": [
@@ -7906,6 +8085,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 45.0,
+                        "Node Name": "NODE260",
                         "Node Type": "internal",
                         "Num Date": 1650.0,
                         "Num Date Confidence": [
@@ -7984,7 +8164,7 @@
                             "value": "HIGH"
                           },
                           "country_date_strain": {
-                            "value": "China 1968.0 34008"
+                            "value": "China (1968.0) 34008"
                           },
                           "country_lat": {
                             "confidence": {
@@ -8008,6 +8188,9 @@
                             "value": 1968.0
                           },
                           "div": 3.3346000000000002e-06,
+                          "node_name": {
+                            "value": "GCA_000323305.1_ASM32330v1_genomic"
+                          },
                           "node_type": {
                             "value": "terminal"
                           },
@@ -8028,7 +8211,7 @@
                             "value": "HIGH"
                           },
                           "province_date_strain": {
-                            "value": "China 1968.0 34008"
+                            "value": "China (1968.0) 34008"
                           },
                           "province_lat": {
                             "confidence": {
@@ -8089,6 +8272,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 45.0,
+                            "Node Name": "NODE261",
                             "Node Type": "internal",
                             "Num Date": 1650.0,
                             "Num Date Confidence": [
@@ -8141,6 +8325,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 45.0,
+                                "Node Name": "NODE262",
                                 "Node Type": "internal",
                                 "Num Date": 1881.0,
                                 "Num Date Confidence": [
@@ -8219,7 +8404,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "China 1990.0 34202"
+                                    "value": "China (1990.0) 34202"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -8243,6 +8428,9 @@
                                     "value": 1990.0
                                   },
                                   "div": 4.300500000000001e-06,
+                                  "node_name": {
+                                    "value": "GCA_000323325.1_ASM32332v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -8263,7 +8451,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "China 1990.0 34202"
+                                    "value": "China (1990.0) 34202"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -8324,6 +8512,7 @@
                                     "Date Err": "NA",
                                     "Date Mean": "NA",
                                     "Geometry Size": 45.0,
+                                    "Node Name": "NODE263",
                                     "Node Type": "internal",
                                     "Num Date": 1973.0,
                                     "Num Date Confidence": [
@@ -8402,7 +8591,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "China 2007.0 S20070189"
+                                        "value": "China (2007.0) S20070189"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -8426,6 +8615,9 @@
                                         "value": 2007.0
                                       },
                                       "div": 4.324100000000001e-06,
+                                      "node_name": {
+                                        "value": "GCA_015158675.1_ASM1515867v1_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -8446,7 +8638,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "China 2007.0 S20070189"
+                                        "value": "China (2007.0) S20070189"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -8533,7 +8725,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "China 2008.0 S20080157"
+                                        "value": "China (2008.0) S20080157"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -8557,6 +8749,9 @@
                                         "value": 2008.0
                                       },
                                       "div": 4.7716e-06,
+                                      "node_name": {
+                                        "value": "GCA_015158805.1_ASM1515880v1_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -8577,7 +8772,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "China 2008.0 S20080157"
+                                        "value": "China (2008.0) S20080157"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -8666,6 +8861,9 @@
                                     "value": 104.999927
                                   },
                                   "div": 4.300500000000001e-06,
+                                  "node_name": {
+                                    "value": "NODE263"
+                                  },
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -8769,6 +8967,9 @@
                                 "value": 104.999927
                               },
                               "div": 3.5938000000000002e-06,
+                              "node_name": {
+                                "value": "NODE262"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -8844,6 +9045,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 45.0,
+                                "Node Name": "NODE264",
                                 "Node Type": "internal",
                                 "Num Date": 1650.0,
                                 "Num Date Confidence": [
@@ -8896,6 +9098,7 @@
                                     "Date Err": "NA",
                                     "Date Mean": "NA",
                                     "Geometry Size": 1.0,
+                                    "Node Name": "NODE265",
                                     "Node Type": "internal",
                                     "Num Date": 1849.0,
                                     "Num Date Confidence": [
@@ -8974,7 +9177,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "Nepal 1967.0 Nepal516"
+                                        "value": "Nepal (1967.0) Nepal516"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -8998,6 +9201,9 @@
                                         "value": 1967.0
                                       },
                                       "div": 9.2473e-06,
+                                      "node_name": {
+                                        "value": "GCA_000182485.1_ASM18248v1_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -9018,7 +9224,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "Nepal 1967.0 Nepal516"
+                                        "value": "Nepal (1967.0) Nepal516"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -9105,7 +9311,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "India 1898:1950 195/P"
+                                        "value": "India (1898:1950) 195/P"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -9129,6 +9335,9 @@
                                         "value": 1924.0
                                       },
                                       "div": 8.069500000000001e-06,
+                                      "node_name": {
+                                        "value": "GCA_002005285.1_ASM200528v1_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -9149,7 +9358,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "India 1898:1950 195/P"
+                                        "value": "India (1898:1950) 195/P"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -9238,6 +9447,9 @@
                                     "value": 78.6677428
                                   },
                                   "div": 6.6561000000000005e-06,
+                                  "node_name": {
+                                    "value": "NODE265"
+                                  },
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -9313,6 +9525,7 @@
                                     "Date Err": "NA",
                                     "Date Mean": "NA",
                                     "Geometry Size": 45.0,
+                                    "Node Name": "NODE266",
                                     "Node Type": "internal",
                                     "Num Date": 1650.0,
                                     "Num Date Confidence": [
@@ -9391,7 +9604,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "India 2002.0 S3"
+                                        "value": "India (2002.0) S3"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -9415,6 +9628,9 @@
                                         "value": 2002.0
                                       },
                                       "div": 2.0289e-05,
+                                      "node_name": {
+                                        "value": "GCA_000475135.2_YPS03_v2_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -9435,7 +9651,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "India 2002.0 S3"
+                                        "value": "India (2002.0) S3"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -9522,7 +9738,7 @@
                                         "value": "HIGH"
                                       },
                                       "country_date_strain": {
-                                        "value": "China 2005.0 S20050087"
+                                        "value": "China (2005.0) S20050087"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -9546,6 +9762,9 @@
                                         "value": 2005.0
                                       },
                                       "div": 4.7716e-06,
+                                      "node_name": {
+                                        "value": "GCA_015159045.1_ASM1515904v1_genomic"
+                                      },
                                       "node_type": {
                                         "value": "terminal"
                                       },
@@ -9566,7 +9785,7 @@
                                         "value": "HIGH"
                                       },
                                       "province_date_strain": {
-                                        "value": "China 2005.0 S20050087"
+                                        "value": "China (2005.0) S20050087"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -9655,6 +9874,9 @@
                                     "value": 104.999927
                                   },
                                   "div": 3.1227e-06,
+                                  "node_name": {
+                                    "value": "NODE266"
+                                  },
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -9758,6 +9980,9 @@
                                 "value": 104.999927
                               },
                               "div": 2.8871000000000003e-06,
+                              "node_name": {
+                                "value": "NODE264"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -9861,6 +10086,9 @@
                             "value": 104.999927
                           },
                           "div": 2.1804000000000003e-06,
+                          "node_name": {
+                            "value": "NODE261"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -9964,6 +10192,9 @@
                         "value": 104.999927
                       },
                       "div": 2.1568000000000003e-06,
+                      "node_name": {
+                        "value": "NODE260"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -10039,6 +10270,7 @@
                         "Date Err": "NA",
                         "Date Mean": "NA",
                         "Geometry Size": 45.0,
+                        "Node Name": "NODE267",
                         "Node Type": "internal",
                         "Num Date": 1822.0,
                         "Num Date Confidence": [
@@ -10091,6 +10323,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 45.0,
+                            "Node Name": "NODE268",
                             "Node Type": "internal",
                             "Num Date": 1966.0,
                             "Num Date Confidence": [
@@ -10169,7 +10402,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "China 2008.0 S20080165"
+                                "value": "China (2008.0) S20080165"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -10193,6 +10426,9 @@
                                 "value": 2008.0
                               },
                               "div": 2.6619000000000003e-06,
+                              "node_name": {
+                                "value": "GCA_015158695.1_ASM1515869v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -10213,7 +10449,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "China 2008.0 S20080165"
+                                "value": "China (2008.0) S20080165"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -10300,7 +10536,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "China 2008.0 S20080164"
+                                "value": "China (2008.0) S20080164"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -10324,6 +10560,9 @@
                                 "value": 2008.0
                               },
                               "div": 2.6619000000000003e-06,
+                              "node_name": {
+                                "value": "GCA_015158705.1_ASM1515870v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -10344,7 +10583,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "China 2008.0 S20080164"
+                                "value": "China (2008.0) S20080164"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -10433,6 +10672,9 @@
                             "value": 104.999927
                           },
                           "div": 2.6383000000000002e-06,
+                          "node_name": {
+                            "value": "NODE268"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -10508,6 +10750,7 @@
                             "Date Err": "NA",
                             "Date Mean": "NA",
                             "Geometry Size": 45.0,
+                            "Node Name": "NODE269",
                             "Node Type": "internal",
                             "Num Date": 1956.0,
                             "Num Date Confidence": [
@@ -10586,7 +10829,7 @@
                                 "value": "HIGH"
                               },
                               "country_date_strain": {
-                                "value": "China 1998.0 S19960038"
+                                "value": "China (1998.0) S19960038"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -10610,6 +10853,9 @@
                                 "value": 1998.0
                               },
                               "div": 4.0517e-06,
+                              "node_name": {
+                                "value": "GCA_015159195.1_ASM1515919v1_genomic"
+                              },
                               "node_type": {
                                 "value": "terminal"
                               },
@@ -10630,7 +10876,7 @@
                                 "value": "HIGH"
                               },
                               "province_date_strain": {
-                                "value": "China 1998.0 S19960038"
+                                "value": "China (1998.0) S19960038"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -10691,6 +10937,7 @@
                                 "Date Err": "NA",
                                 "Date Mean": "NA",
                                 "Geometry Size": 45.0,
+                                "Node Name": "NODE270",
                                 "Node Type": "internal",
                                 "Num Date": 1971.0,
                                 "Num Date Confidence": [
@@ -10769,7 +11016,7 @@
                                     "value": "HIGH"
                                   },
                                   "country_date_strain": {
-                                    "value": "China 2007.0 S20070126"
+                                    "value": "China (2007.0) S20070126"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -10793,6 +11040,9 @@
                                     "value": 2007.0
                                   },
                                   "div": 3.6278000000000002e-06,
+                                  "node_name": {
+                                    "value": "GCA_015158945.1_ASM1515894v1_genomic"
+                                  },
                                   "node_type": {
                                     "value": "terminal"
                                   },
@@ -10813,7 +11063,7 @@
                                     "value": "HIGH"
                                   },
                                   "province_date_strain": {
-                                    "value": "China 2007.0 S20070126"
+                                    "value": "China (2007.0) S20070126"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -10874,6 +11124,7 @@
                                     "Date Err": "NA",
                                     "Date Mean": "NA",
                                     "Geometry Size": 45.0,
+                                    "Node Name": "NODE271",
                                     "Node Type": "internal",
                                     "Num Date": 1971.0,
                                     "Num Date Confidence": [
@@ -10926,6 +11177,7 @@
                                         "Date Err": "NA",
                                         "Date Mean": "NA",
                                         "Geometry Size": 45.0,
+                                        "Node Name": "NODE272",
                                         "Node Type": "internal",
                                         "Num Date": 1991.0,
                                         "Num Date Confidence": [
@@ -11004,7 +11256,7 @@
                                             "value": "HIGH"
                                           },
                                           "country_date_strain": {
-                                            "value": "China 1996.0 S19960156"
+                                            "value": "China (1996.0) S19960156"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -11028,6 +11280,9 @@
                                             "value": 1996.0
                                           },
                                           "div": 3.6514000000000003e-06,
+                                          "node_name": {
+                                            "value": "GCA_015158795.1_ASM1515879v1_genomic"
+                                          },
                                           "node_type": {
                                             "value": "terminal"
                                           },
@@ -11048,7 +11303,7 @@
                                             "value": "HIGH"
                                           },
                                           "province_date_strain": {
-                                            "value": "China 1996.0 S19960156"
+                                            "value": "China (1996.0) S19960156"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -11135,7 +11390,7 @@
                                             "value": "HIGH"
                                           },
                                           "country_date_strain": {
-                                            "value": "China 2002.0 S20020079"
+                                            "value": "China (2002.0) S20020079"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -11159,6 +11414,9 @@
                                             "value": 2002.0
                                           },
                                           "div": 3.6514000000000003e-06,
+                                          "node_name": {
+                                            "value": "GCA_015159085.1_ASM1515908v1_genomic"
+                                          },
                                           "node_type": {
                                             "value": "terminal"
                                           },
@@ -11179,7 +11437,7 @@
                                             "value": "HIGH"
                                           },
                                           "province_date_strain": {
-                                            "value": "China 2002.0 S20020079"
+                                            "value": "China (2002.0) S20020079"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -11268,6 +11526,9 @@
                                         "value": 104.999927
                                       },
                                       "div": 3.6514000000000003e-06,
+                                      "node_name": {
+                                        "value": "NODE272"
+                                      },
                                       "node_type": {
                                         "value": "internal"
                                       },
@@ -11343,6 +11604,7 @@
                                         "Date Err": "NA",
                                         "Date Mean": "NA",
                                         "Geometry Size": 45.0,
+                                        "Node Name": "NODE273",
                                         "Node Type": "internal",
                                         "Num Date": 1971.0,
                                         "Num Date Confidence": [
@@ -11395,6 +11657,7 @@
                                             "Date Err": "NA",
                                             "Date Mean": "NA",
                                             "Geometry Size": 45.0,
+                                            "Node Name": "NODE274",
                                             "Node Type": "internal",
                                             "Num Date": 1971.0,
                                             "Num Date Confidence": [
@@ -11447,6 +11710,7 @@
                                                 "Date Err": "NA",
                                                 "Date Mean": "NA",
                                                 "Geometry Size": 45.0,
+                                                "Node Name": "NODE275",
                                                 "Node Type": "internal",
                                                 "Num Date": 1971.0,
                                                 "Num Date Confidence": [
@@ -11525,7 +11789,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "country_date_strain": {
-                                                    "value": "China 2008.0 S20080163"
+                                                    "value": "China (2008.0) S20080163"
                                                   },
                                                   "country_lat": {
                                                     "confidence": {
@@ -11549,6 +11813,9 @@
                                                     "value": 2008.0
                                                   },
                                                   "div": 4.640900000000001e-06,
+                                                  "node_name": {
+                                                    "value": "GCA_015158755.1_ASM1515875v1_genomic"
+                                                  },
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
@@ -11569,7 +11836,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "province_date_strain": {
-                                                    "value": "China 2008.0 S20080163"
+                                                    "value": "China (2008.0) S20080163"
                                                   },
                                                   "province_lat": {
                                                     "confidence": {
@@ -11656,7 +11923,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "country_date_strain": {
-                                                    "value": "China 1996.0 S19960127"
+                                                    "value": "China (1996.0) S19960127"
                                                   },
                                                   "country_lat": {
                                                     "confidence": {
@@ -11680,6 +11947,9 @@
                                                     "value": 1996.0
                                                   },
                                                   "div": 3.9342e-06,
+                                                  "node_name": {
+                                                    "value": "GCA_015190655.1_ASM1519065v1_genomic"
+                                                  },
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
@@ -11700,7 +11970,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "province_date_strain": {
-                                                    "value": "China 1996.0 S19960127"
+                                                    "value": "China (1996.0) S19960127"
                                                   },
                                                   "province_lat": {
                                                     "confidence": {
@@ -11789,6 +12059,9 @@
                                                 "value": 104.999927
                                               },
                                               "div": 3.6986000000000005e-06,
+                                              "node_name": {
+                                                "value": "NODE275"
+                                              },
                                               "node_type": {
                                                 "value": "internal"
                                               },
@@ -11864,6 +12137,7 @@
                                                 "Date Err": "NA",
                                                 "Date Mean": "NA",
                                                 "Geometry Size": 45.0,
+                                                "Node Name": "NODE276",
                                                 "Node Type": "internal",
                                                 "Num Date": 1996.0,
                                                 "Num Date Confidence": [
@@ -11942,7 +12216,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "country_date_strain": {
-                                                    "value": "China 1998.0 S19980039"
+                                                    "value": "China (1998.0) S19980039"
                                                   },
                                                   "country_lat": {
                                                     "confidence": {
@@ -11966,6 +12240,9 @@
                                                     "value": 1998.0
                                                   },
                                                   "div": 4.405300000000001e-06,
+                                                  "node_name": {
+                                                    "value": "GCA_015159175.1_ASM1515917v1_genomic"
+                                                  },
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
@@ -11986,7 +12263,7 @@
                                                     "value": "HIGH"
                                                   },
                                                   "province_date_strain": {
-                                                    "value": "China 1998.0 S19980039"
+                                                    "value": "China (1998.0) S19980039"
                                                   },
                                                   "province_lat": {
                                                     "confidence": {
@@ -12047,6 +12324,7 @@
                                                     "Date Err": "NA",
                                                     "Date Mean": "NA",
                                                     "Geometry Size": 45.0,
+                                                    "Node Name": "NODE277",
                                                     "Node Type": "internal",
                                                     "Num Date": 1996.0,
                                                     "Num Date Confidence": [
@@ -12125,7 +12403,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "country_date_strain": {
-                                                        "value": "China 1998.0 S19980124"
+                                                        "value": "China (1998.0) S19980124"
                                                       },
                                                       "country_lat": {
                                                         "confidence": {
@@ -12149,6 +12427,9 @@
                                                         "value": 1998.0
                                                       },
                                                       "div": 4.428900000000001e-06,
+                                                      "node_name": {
+                                                        "value": "GCA_015158995.1_ASM1515899v1_genomic"
+                                                      },
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
@@ -12169,7 +12450,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "province_date_strain": {
-                                                        "value": "China 1998.0 S19980124"
+                                                        "value": "China (1998.0) S19980124"
                                                       },
                                                       "province_lat": {
                                                         "confidence": {
@@ -12230,6 +12511,7 @@
                                                         "Date Err": "NA",
                                                         "Date Mean": "NA",
                                                         "Geometry Size": 45.0,
+                                                        "Node Name": "NODE278",
                                                         "Node Type": "internal",
                                                         "Num Date": 1996.0,
                                                         "Num Date Confidence": [
@@ -12308,7 +12590,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "country_date_strain": {
-                                                            "value": "China 1998.0 CMCC348002"
+                                                            "value": "China (1998.0) CMCC348002"
                                                           },
                                                           "country_lat": {
                                                             "confidence": {
@@ -12332,6 +12614,9 @@
                                                             "value": 1998.0
                                                           },
                                                           "div": 4.664500000000001e-06,
+                                                          "node_name": {
+                                                            "value": "GCA_000324145.1_ASM32414v1_genomic"
+                                                          },
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
@@ -12352,7 +12637,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "province_date_strain": {
-                                                            "value": "China 1998.0 CMCC348002"
+                                                            "value": "China (1998.0) CMCC348002"
                                                           },
                                                           "province_lat": {
                                                             "confidence": {
@@ -12439,7 +12724,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "country_date_strain": {
-                                                            "value": "China 1996.0 G1996010"
+                                                            "value": "China (1996.0) G1996010"
                                                           },
                                                           "country_lat": {
                                                             "confidence": {
@@ -12463,6 +12748,9 @@
                                                             "value": 1996.0
                                                           },
                                                           "div": 4.452500000000001e-06,
+                                                          "node_name": {
+                                                            "value": "GCA_000324905.1_ASM32490v1_genomic"
+                                                          },
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
@@ -12483,7 +12771,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "province_date_strain": {
-                                                            "value": "China 1996.0 G1996010"
+                                                            "value": "China (1996.0) G1996010"
                                                           },
                                                           "province_lat": {
                                                             "confidence": {
@@ -12572,6 +12860,9 @@
                                                         "value": 104.999927
                                                       },
                                                       "div": 4.428900000000001e-06,
+                                                      "node_name": {
+                                                        "value": "NODE278"
+                                                      },
                                                       "node_type": {
                                                         "value": "internal"
                                                       },
@@ -12675,6 +12966,9 @@
                                                     "value": 104.999927
                                                   },
                                                   "div": 4.405300000000001e-06,
+                                                  "node_name": {
+                                                    "value": "NODE277"
+                                                  },
                                                   "node_type": {
                                                     "value": "internal"
                                                   },
@@ -12778,6 +13072,9 @@
                                                 "value": 104.999927
                                               },
                                               "div": 4.381700000000001e-06,
+                                              "node_name": {
+                                                "value": "NODE276"
+                                              },
                                               "node_type": {
                                                 "value": "internal"
                                               },
@@ -12881,6 +13178,9 @@
                                             "value": 104.999927
                                           },
                                           "div": 3.6750000000000004e-06,
+                                          "node_name": {
+                                            "value": "NODE274"
+                                          },
                                           "node_type": {
                                             "value": "internal"
                                           },
@@ -12956,6 +13256,7 @@
                                             "Date Err": "NA",
                                             "Date Mean": "NA",
                                             "Geometry Size": 45.0,
+                                            "Node Name": "NODE279",
                                             "Node Type": "internal",
                                             "Num Date": 1980.0,
                                             "Num Date Confidence": [
@@ -13034,7 +13335,7 @@
                                                 "value": "HIGH"
                                               },
                                               "country_date_strain": {
-                                                "value": "China 2005.0 S20050084"
+                                                "value": "China (2005.0) S20050084"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -13058,6 +13359,9 @@
                                                 "value": 2005.0
                                               },
                                               "div": 3.6986000000000005e-06,
+                                              "node_name": {
+                                                "value": "GCA_015159035.1_ASM1515903v1_genomic"
+                                              },
                                               "node_type": {
                                                 "value": "terminal"
                                               },
@@ -13078,7 +13382,7 @@
                                                 "value": "HIGH"
                                               },
                                               "province_date_strain": {
-                                                "value": "China 2005.0 S20050084"
+                                                "value": "China (2005.0) S20050084"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -13139,6 +13443,7 @@
                                                 "Date Err": "NA",
                                                 "Date Mean": "NA",
                                                 "Geometry Size": 45.0,
+                                                "Node Name": "NODE280",
                                                 "Node Type": "internal",
                                                 "Num Date": 1980.0,
                                                 "Num Date Confidence": [
@@ -13191,6 +13496,7 @@
                                                     "Date Err": "NA",
                                                     "Date Mean": "NA",
                                                     "Geometry Size": 45.0,
+                                                    "Node Name": "NODE281",
                                                     "Node Type": "internal",
                                                     "Num Date": 1995.0,
                                                     "Num Date Confidence": [
@@ -13269,7 +13575,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "country_date_strain": {
-                                                        "value": "China 1996.0 G1996006"
+                                                        "value": "China (1996.0) G1996006"
                                                       },
                                                       "country_lat": {
                                                         "confidence": {
@@ -13293,6 +13599,9 @@
                                                         "value": 1996.0
                                                       },
                                                       "div": 3.7458000000000006e-06,
+                                                      "node_name": {
+                                                        "value": "GCA_000324885.1_ASM32488v1_genomic"
+                                                      },
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
@@ -13313,7 +13622,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "province_date_strain": {
-                                                        "value": "China 1996.0 G1996006"
+                                                        "value": "China (1996.0) G1996006"
                                                       },
                                                       "province_lat": {
                                                         "confidence": {
@@ -13400,7 +13709,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "country_date_strain": {
-                                                        "value": "China 2008.0 S20080151"
+                                                        "value": "China (2008.0) S20080151"
                                                       },
                                                       "country_lat": {
                                                         "confidence": {
@@ -13424,6 +13733,9 @@
                                                         "value": 2008.0
                                                       },
                                                       "div": 3.7458000000000006e-06,
+                                                      "node_name": {
+                                                        "value": "GCA_015158875.1_ASM1515887v1_genomic"
+                                                      },
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
@@ -13444,7 +13756,7 @@
                                                         "value": "HIGH"
                                                       },
                                                       "province_date_strain": {
-                                                        "value": "China 2008.0 S20080151"
+                                                        "value": "China (2008.0) S20080151"
                                                       },
                                                       "province_lat": {
                                                         "confidence": {
@@ -13533,6 +13845,9 @@
                                                     "value": 104.999927
                                                   },
                                                   "div": 3.7222000000000005e-06,
+                                                  "node_name": {
+                                                    "value": "NODE281"
+                                                  },
                                                   "node_type": {
                                                     "value": "internal"
                                                   },
@@ -13608,6 +13923,7 @@
                                                     "Date Err": "NA",
                                                     "Date Mean": "NA",
                                                     "Geometry Size": 45.0,
+                                                    "Node Name": "NODE282",
                                                     "Node Type": "internal",
                                                     "Num Date": 1980.0,
                                                     "Num Date Confidence": [
@@ -13660,6 +13976,7 @@
                                                         "Date Err": "NA",
                                                         "Date Mean": "NA",
                                                         "Geometry Size": 45.0,
+                                                        "Node Name": "NODE283",
                                                         "Node Type": "internal",
                                                         "Num Date": 1991.0,
                                                         "Num Date Confidence": [
@@ -13738,7 +14055,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "country_date_strain": {
-                                                            "value": "China 1991.0 S19910050"
+                                                            "value": "China (1991.0) S19910050"
                                                           },
                                                           "country_lat": {
                                                             "confidence": {
@@ -13762,6 +14079,9 @@
                                                             "value": 1991.0
                                                           },
                                                           "div": 3.9814000000000005e-06,
+                                                          "node_name": {
+                                                            "value": "GCA_015159135.1_ASM1515913v1_genomic"
+                                                          },
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
@@ -13782,7 +14102,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "province_date_strain": {
-                                                            "value": "China 1991.0 S19910050"
+                                                            "value": "China (1991.0) S19910050"
                                                           },
                                                           "province_lat": {
                                                             "confidence": {
@@ -13869,7 +14189,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "country_date_strain": {
-                                                            "value": "China 1991.0 S19910056"
+                                                            "value": "China (1991.0) S19910056"
                                                           },
                                                           "country_lat": {
                                                             "confidence": {
@@ -13893,6 +14213,9 @@
                                                             "value": 1991.0
                                                           },
                                                           "div": 3.9814000000000005e-06,
+                                                          "node_name": {
+                                                            "value": "GCA_015159145.1_ASM1515914v1_genomic"
+                                                          },
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
@@ -13913,7 +14236,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "province_date_strain": {
-                                                            "value": "China 1991.0 S19910056"
+                                                            "value": "China (1991.0) S19910056"
                                                           },
                                                           "province_lat": {
                                                             "confidence": {
@@ -14002,6 +14325,9 @@
                                                         "value": 104.999927
                                                       },
                                                       "div": 3.9578000000000005e-06,
+                                                      "node_name": {
+                                                        "value": "NODE283"
+                                                      },
                                                       "node_type": {
                                                         "value": "internal"
                                                       },
@@ -14077,6 +14403,7 @@
                                                         "Date Err": "NA",
                                                         "Date Mean": "NA",
                                                         "Geometry Size": 45.0,
+                                                        "Node Name": "NODE284",
                                                         "Node Type": "internal",
                                                         "Num Date": 1992.0,
                                                         "Num Date Confidence": [
@@ -14155,7 +14482,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "country_date_strain": {
-                                                            "value": "China 2001.0 S20010125"
+                                                            "value": "China (2001.0) S20010125"
                                                           },
                                                           "country_lat": {
                                                             "confidence": {
@@ -14179,6 +14506,9 @@
                                                             "value": 2001.0
                                                           },
                                                           "div": 4.6644e-06,
+                                                          "node_name": {
+                                                            "value": "GCA_015158955.1_ASM1515895v1_genomic"
+                                                          },
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
@@ -14199,7 +14529,7 @@
                                                             "value": "HIGH"
                                                           },
                                                           "province_date_strain": {
-                                                            "value": "China 2001.0 S20010125"
+                                                            "value": "China (2001.0) S20010125"
                                                           },
                                                           "province_lat": {
                                                             "confidence": {
@@ -14260,6 +14590,7 @@
                                                             "Date Err": "NA",
                                                             "Date Mean": "NA",
                                                             "Geometry Size": 45.0,
+                                                            "Node Name": "NODE285",
                                                             "Node Type": "internal",
                                                             "Num Date": 1995.0,
                                                             "Num Date Confidence": [
@@ -14338,7 +14669,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "country_date_strain": {
-                                                                "value": "China 2005.0 S20050130"
+                                                                "value": "China (2005.0) S20050130"
                                                               },
                                                               "country_lat": {
                                                                 "confidence": {
@@ -14362,6 +14693,9 @@
                                                                 "value": 2005.0
                                                               },
                                                               "div": 4.4525e-06,
+                                                              "node_name": {
+                                                                "value": "GCA_015158905.1_ASM1515890v1_genomic"
+                                                              },
                                                               "node_type": {
                                                                 "value": "terminal"
                                                               },
@@ -14382,7 +14716,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "province_date_strain": {
-                                                                "value": "China 2005.0 S20050130"
+                                                                "value": "China (2005.0) S20050130"
                                                               },
                                                               "province_lat": {
                                                                 "confidence": {
@@ -14469,7 +14803,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "country_date_strain": {
-                                                                "value": "China 2005.0 S20050120"
+                                                                "value": "China (2005.0) S20050120"
                                                               },
                                                               "country_lat": {
                                                                 "confidence": {
@@ -14493,6 +14827,9 @@
                                                                 "value": 2005.0
                                                               },
                                                               "div": 4.2405e-06,
+                                                              "node_name": {
+                                                                "value": "GCA_015159005.1_ASM1515900v1_genomic"
+                                                              },
                                                               "node_type": {
                                                                 "value": "terminal"
                                                               },
@@ -14513,7 +14850,7 @@
                                                                 "value": "HIGH"
                                                               },
                                                               "province_date_strain": {
-                                                                "value": "China 2005.0 S20050120"
+                                                                "value": "China (2005.0) S20050120"
                                                               },
                                                               "province_lat": {
                                                                 "confidence": {
@@ -14602,6 +14939,9 @@
                                                             "value": 104.999927
                                                           },
                                                           "div": 4.2169e-06,
+                                                          "node_name": {
+                                                            "value": "NODE285"
+                                                          },
                                                           "node_type": {
                                                             "value": "internal"
                                                           },
@@ -14705,6 +15045,9 @@
                                                         "value": 104.999927
                                                       },
                                                       "div": 4.1933e-06,
+                                                      "node_name": {
+                                                        "value": "NODE284"
+                                                      },
                                                       "node_type": {
                                                         "value": "internal"
                                                       },
@@ -14808,6 +15151,9 @@
                                                     "value": 104.999927
                                                   },
                                                   "div": 3.7222000000000005e-06,
+                                                  "node_name": {
+                                                    "value": "NODE282"
+                                                  },
                                                   "node_type": {
                                                     "value": "internal"
                                                   },
@@ -14911,6 +15257,9 @@
                                                 "value": 104.999927
                                               },
                                               "div": 3.6986000000000005e-06,
+                                              "node_name": {
+                                                "value": "NODE280"
+                                              },
                                               "node_type": {
                                                 "value": "internal"
                                               },
@@ -15014,6 +15363,9 @@
                                             "value": 104.999927
                                           },
                                           "div": 3.6750000000000004e-06,
+                                          "node_name": {
+                                            "value": "NODE279"
+                                          },
                                           "node_type": {
                                             "value": "internal"
                                           },
@@ -15117,6 +15469,9 @@
                                         "value": 104.999927
                                       },
                                       "div": 3.6514000000000003e-06,
+                                      "node_name": {
+                                        "value": "NODE273"
+                                      },
                                       "node_type": {
                                         "value": "internal"
                                       },
@@ -15220,6 +15575,9 @@
                                     "value": 104.999927
                                   },
                                   "div": 3.6278000000000002e-06,
+                                  "node_name": {
+                                    "value": "NODE271"
+                                  },
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -15323,6 +15681,9 @@
                                 "value": 104.999927
                               },
                               "div": 3.6042e-06,
+                              "node_name": {
+                                "value": "NODE270"
+                              },
                               "node_type": {
                                 "value": "internal"
                               },
@@ -15426,6 +15787,9 @@
                             "value": 104.999927
                           },
                           "div": 3.5806e-06,
+                          "node_name": {
+                            "value": "NODE269"
+                          },
                           "node_type": {
                             "value": "internal"
                           },
@@ -15529,6 +15893,9 @@
                         "value": 104.999927
                       },
                       "div": 2.1672e-06,
+                      "node_name": {
+                        "value": "NODE267"
+                      },
                       "node_type": {
                         "value": "internal"
                       },
@@ -15632,6 +15999,9 @@
                     "value": 104.999927
                   },
                   "div": 1.6961000000000002e-06,
+                  "node_name": {
+                    "value": "NODE259"
+                  },
                   "node_type": {
                     "value": "internal"
                   },
@@ -15735,6 +16105,9 @@
                 "value": 104.999927
               },
               "div": 1.6725e-06,
+              "node_name": {
+                "value": "NODE249"
+              },
               "node_type": {
                 "value": "internal"
               },
@@ -15838,6 +16211,9 @@
             "value": 104.999927
           },
           "div": 1.6489e-06,
+          "node_name": {
+            "value": "NODE248"
+          },
           "node_type": {
             "value": "internal"
           },
@@ -15941,6 +16317,9 @@
         "value": 104.999927
       },
       "div": 0,
+      "node_name": {
+        "value": "NODE233"
+      },
       "node_type": {
         "value": "internal"
       },
