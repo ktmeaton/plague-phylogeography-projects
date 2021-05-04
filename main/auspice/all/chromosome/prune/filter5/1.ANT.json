@@ -13,6 +13,11 @@
         "type": "categorical"
       },
       {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
         "key": "branch_length_sub",
         "title": "Branch Length Substitutions",
         "type": "continuous"
@@ -174,6 +179,11 @@
         "type": "continuous"
       },
       {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
         "key": "node_type",
         "scale": [
           [
@@ -255,7 +265,17 @@
         "type": "categorical"
       },
       {
-        "key": "branch_major_conf_category",
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -266,17 +286,12 @@
             "#ff964f"
           ]
         ],
-        "title": "Branch Major Confidence",
+        "title": "Province Confidence",
         "type": "categorical"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
         "type": "continuous"
       },
       {
@@ -295,44 +310,28 @@
         "type": "categorical"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#ff964f"
-          ]
-        ],
-        "title": "Node Type",
+        "key": "branch_number",
+        "title": "Branch Number",
         "type": "categorical"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Substitutions",
-        "type": "continuous"
+        "key": "country",
+        "scale": [
+          [
+            "Kenya",
+            "#d0e083"
+          ],
+          [
+            "Uganda",
+            "#ddd579"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#ebc970"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
       },
       {
         "key": "biosample_accession",
@@ -340,8 +339,85 @@
         "type": "categorical"
       },
       {
-        "key": "node_name",
-        "title": "node_name",
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "1.ANT1",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Nairobi",
+            "#ff9f54"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
         "type": "categorical"
       },
       {
@@ -360,38 +436,7 @@
         "type": "categorical"
       },
       {
-        "key": "branch_minor",
-        "scale": [
-          [
-            "1.ANT1",
-            "#ff8a48"
-          ]
-        ],
-        "title": "Branch Minor",
-        "type": "categorical"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_time",
-        "title": "Geographic Rate Time",
-        "type": "continuous"
-      },
-      {
-        "key": "country_conf_category",
+        "key": "branch_major_conf_category",
         "scale": [
           [
             "LOW",
@@ -402,13 +447,38 @@
             "#ff964f"
           ]
         ],
-        "title": "Country Confidence",
+        "title": "Branch Major Confidence",
         "type": "categorical"
       },
       {
-        "key": "strain",
-        "title": "Strain",
+        "key": "node_name",
+        "title": "Node Name",
         "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff964f"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
       },
       {
         "key": "branch_major",
@@ -422,9 +492,19 @@
         "type": "categorical"
       },
       {
-        "key": "continent",
-        "title": "Continent",
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
         "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
+        "type": "continuous"
       },
       {
         "key": "branch_support",
@@ -437,74 +517,9 @@
         "type": "continuous"
       },
       {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
+        "key": "country_lat",
+        "title": "Country Latitude",
         "type": "continuous"
-      },
-      {
-        "key": "province",
-        "scale": [
-          [
-            "Nairobi",
-            "#ff9f54"
-          ]
-        ],
-        "title": "Province",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "Kenya",
-            "#d0e083"
-          ],
-          [
-            "Uganda",
-            "#ddd579"
-          ],
-          [
-            "Democratic Republic of the Congo",
-            "#ebc970"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
       }
     ],
     "display_defaults": {
@@ -578,6 +593,7 @@
     "branch_attrs": {
       "labels": {
         "Biosample Accession": "NA",
+        "Blank": " ",
         "Branch Length": 1.07295e-05,
         "Branch Length Sub": 45,
         "Branch Length Time": 293,
@@ -765,6 +781,7 @@
         "branch_attrs": {
           "labels": {
             "Biosample Accession": "NA",
+            "Blank": " ",
             "Branch Length": 1.07295e-05,
             "Branch Length Sub": 45,
             "Branch Length Time": 293,

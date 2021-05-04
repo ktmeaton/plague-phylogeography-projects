@@ -9,17 +9,30 @@ date: "May 2021"
 dataset: "https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?c=continent&d=map&p=full&transmissions=show"
 abstract: "
 Plague has an impressively long and expansive history as a human pathogen. The earliest evidence of the plague bacterium *Yersinia pestis* comes from ancient DNA studies dating its emergence to at least the Neolithic. Since then, *Y. pestis* has travelled extensively due to ever-expanding global trade networks and the ability to infect a diverse array of mammalian hosts. Few regions of the ancient and modern world remain untouched by this disease, as plague has an established presence on every continent except Oceania.
+
+1. [Introduction](https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main?n=1)
+
+2. [Molecular Clock](https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main?n=3)
+
+3. [Geographic Dispersal](https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main?n=5)
+
 "
+
 ---
 
 <!--
 To Convert This Local Narrative to Remote
-local url:  https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/
-remote url: https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main
-sed 's/http:\/\/localhost:4000\/plague-phylogeography-projects/https:\/\/nextstrain.org\/community\/ktmeaton\/plague-phylogeography-projects@main/g' plague-phylogeography-projects_main_local.md > plague-phylogeography-projects_main.md
+Dataset local url:  https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/
+Dataset remote url: https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main
+cat plague-phylogeography-projects_main_local.md | \
+  sed 's/http:\/\/localhost:4000\/plague-phylogeography-projects/https:\/\/nextstrain.org\/community\/ktmeaton\/plague-phylogeography-projects@main/g' \
+  > plague-phylogeography-projects_main.md
+
+Narrative Local url: https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main
+Narrative remote url: https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main
 -->
 
-# [Plague Genomics](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?c=continent&d=map&p=full&transmissions=show)
+# [The Field of Plague Genomics](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?c=continent&d=map&p=full&transmissions=show)
 
 The field of plague genomics has changed considerably over the last decade, from [17 bacterial genomes](https://doi.org/10.1038/ng.705)to [over 1300](https://doi.org/10.1101/gr.251678.119) In 2011, *Y. pestis* became the first pathogen to be [fully sequenced from ancient DNA](https://doi.org/10.1038/nature10549) and since then, over 100 genomes have been isolated from skeletal remains. To date, *Y. pestis* is the most intensively sequenced historical pathogen.
 
@@ -35,7 +48,7 @@ To root the phylogentic tree, two genomes from the outgroup *Yersinia pseudotube
 
 ---
 
-# [Introducing the Phylogeny](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?c=branch_major&d=tree&m=div)
+# [Introducing Phylogenetics](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?c=branch_major&d=tree&m=div)
 
 The ability to differentiate strains of *Y. pestis* is at the core of genomics research. Numerous taxonomic systems have developed to identify unique lineages of plague using biochemical and molecular characteristics.
 ### Branch Taxonomy
@@ -70,7 +83,7 @@ Model selection was performed using [Modelfinder](https://doi.org/10.1038/nmeth.
 
 ---
 
-# [Rates and Dates](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?branches=hide&c=branch_major&d=tree&l=scatter&regression=show&scatterY=div)
+# [Molecular Clock](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?branches=hide&c=branch_major&d=tree&l=scatter&regression=show&scatterY=div)
 
 One of the great curiosities of *Y. pestis* is that different lineages evolve, or accumulate mutations, at drastically different speeds. This makes modelling *Y. pestis* extremely challenging with regards to the molecular clock.
 
@@ -78,13 +91,13 @@ An organism with little to no rate variation can be explained using a simple lin
 
 A statistical measure of this model is *R<sup>2</sup>*, where values close to 1.0 are a good fit, and values close to 0 are a poor fit.
 
-In contrast, samples of *Y. pestis* do not cluster around the regression line and instead are dispersed far above and below the line. The *R<sup>2</sup>* statistic is 0.09, which is very close to 0, indicating a simple linear model is a poor fit for the data. Thus, a **Strict Clock Model** for all of *Y. pestis* is inappropriate and a more complex **Relaxed Clock Model** is often used instead.
+In contrast, samples of *Y. pestis* do not cluster around the regression line and instead are dispersed far above and below the line. The *R<sup>2</sup>* statistic is 0.09, which is very close to 0, indicating a simple linear model is a poor fit for the data. Thus, a **Strict Clock Model** is inappropriate to apply to all *Y. pestis*.
 
 ---
 
-# [Clade Clock](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/1.PRE?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=country&transmissions=hide)
+# [Clade Clock](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/1.PRE?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=blank)
 
-However, there are cases where the *Strict Clock Model* works exceptionally well for *Y. pestis*. Some clades have been hypothesized to show strong temporal signal, particularly those associated with ancient epidemics.
+There are cases where the **Strict Clock Model** works exceptionally well for *Y. pestis*. Some clades have been hypothesized to show strong temporal signal, particularly those associated with ancient epidemics.
 
 This graph visualizes clade **1.PRE**, which is associated with European plague in the Medieval and Early Modern Period. The *R<sup>2</sup>* statistic is 0.93, close to 1.0, indicating the model is a very good fit to the data.
 
