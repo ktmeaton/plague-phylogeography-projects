@@ -14,7 +14,7 @@ Plague has an impressively long and expansive history as a human pathogen. The e
 
 2. [Molecular Clock](https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main?n=3)
 
-3. [Geographic Dispersal](https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main?n=5)
+3. [Geographic Dispersal](https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main?n=6)
 
 "
 
@@ -24,12 +24,15 @@ Plague has an impressively long and expansive history as a human pathogen. The e
 To Convert This Local Narrative to Remote
 Dataset local url:  https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/
 Dataset remote url: https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main
-cat plague-phylogeography-projects_main_local.md | \
-  sed 's/http:\/\/localhost:4000\/plague-phylogeography-projects/https:\/\/nextstrain.org\/community\/ktmeaton\/plague-phylogeography-projects@main/g' \
-  > plague-phylogeography-projects_main.md
 
 Narrative Local url: https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main
 Narrative remote url: https://nextstrain.org/community/narratives/ktmeaton/plague-phylogeography-projects@main/main
+
+cat plague-phylogeography-projects_main_local.md | \
+  sed 's/http:\/\/localhost:4000\/plague-phylogeography-projects/https:\/\/nextstrain.org\/community\/ktmeaton\/plague-phylogeography-projects@main/g' | \
+  sed 's/http:\/\/localhost:4000\/narratives\/plague-phylogeography-projects\/main\/local/https:\/\/nextstrain.org\/community\/narratives\/ktmeaton\/plague-phylogeography-projects@main\/main/g' \
+  > plague-phylogeography-projects_main.md
+
 -->
 
 # [The Field of Plague Genomics](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?c=continent&d=map&p=full&transmissions=show)
@@ -102,16 +105,22 @@ There are cases where the **Strict Clock Model** works exceptionally well for *Y
 This graph visualizes clade **1.PRE**, which is associated with European plague in the Medieval and Early Modern Period. The *R<sup>2</sup>* statistic is 0.93, close to 1.0, indicating the model is a very good fit to the data.
 
 Clades that fit this model well are the:
-- [Late Neolithic Bronze Age (LNBA)](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/0.PRE?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=country&transmissions=hide)
-- [Roman and Justinian Plague](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/0.ANT4?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=country&transmissions=hide)
-- [Medieval and Early Modern Period](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/1.PRE?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=country&transmissions=hide)
+- [Late Neolithic Bronze Age (LNBA)](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/0.PRE?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=blank)
+- [Roman and Justinian Plague](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/0.ANT4?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=blank)
+- [Medieval and Early Modern Period](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/1.PRE?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=blank)
 
 The remaining clades of plague do not fit this model well. Some examples are the:
-- [20th and 21st Century Pandemic](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/1.ORI?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=country&transmissions=hide)
-- [Avirulent Pestoides Plague](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/0.PE?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=country&transmissions=hide)
+- [20th and 21st Century Pandemic](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/1.ORI?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=blank)
+- [Avirulent Pestoides Plague](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/0.PE?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=blank)
 
 Sometimes this model even predicts that evolution can go backwards!
-- [2.MED](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/2.MED?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=country&transmissions=hide)
+- [2.MED](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/2.MED?branches=hide&c=branch_major&l=scatter&p=grid&regression=show&scatterY=div&tl=blank)
+
+---
+
+# [Model Testing](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/all?branches=hide&c=branch_major&d=tree&l=scatter&regression=show&scatterY=div)
+
+A placeholder slide for Bayesian testing of **Relaxed Clock Models**.
 
 ---
 
@@ -121,22 +130,19 @@ Another great curiosity of plague is its geographic history with regards to orig
 
 The oldest, or most basal, clade of *Y. pestis* is **0.PE** which is associated with the Late Neolithic and Bronze Age. This clade has been isolated from skeletal remains from all across Eurasia.
 
-In this analysis, the geographic location of ancestral nodes in the tree has been estimated to the level of province. Locations that are estimated with high confidence (>=0.95) are indicated by the color purple, while low confidence is indicated by a white/grey color.
+In this analysis, the geographic location of ancestral nodes in the tree has been estimated to the level of state. Locations that are estimated with high confidence (>=0.95) are indicated by the color purple, while low confidence is indicated by a white/grey color.
 
 The majority of ancestral locations cannot be confidently estimated given the sparseness of the data with regards to the geographic breadth.
 
-One event has high confidence, and that is a migration from Germany (Bavaria) to Russia (Altai Krai). However, when ancestral location is [estimated at the country level](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/0.PRE?branchLabel=Country&c=country_conf_category&f_branch_major=0.PRE&p=grid&tl=country), the migration pattern changes substantially. This result is likely due to sampling biases present in the data.
-
-
-However, this result has almost no intepretative value due to sampling biases present in the data. For example, if ancestral location is [estimated at the country level](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/0.PRE?branchLabel=Country&c=country_conf_category&f_branch_major=0.PRE&p=grid&tl=country), the pattern changes substantially.
+One event has high confidence, and that is a migration from Germany (Bavaria) to Russia (Altai Krai). However, this is likely an artifact of sampling bias, given that 50% of samples in this clade derive from Russia, and 25% are from Germany. Given the data, there is an X% probability of observing this result simply by chance.
 
 # [Plague of Justinian](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/0.ANT4?branchLabel=Country%20Confidence&c=country_conf_category&ci&tl=country&legend=closed)
 
-Similar to the Late Neolithic Bronze Age (LNBA) plague, the spread of plague during the Roman period and the Plague of Justinian are highly uncertain. The only migration event that is confidently estimate across multiple geographic resolutions is between Germany and France. However, given that ~40% of this clade's samples derive from Germany, it is highly possible that this is an artifact of sampling bias as well.
+Similar to the Late Neolithic Bronze Age (LNBA) plague, the spread of plague during the Roman period and the Plague of Justinian are highly uncertain. The only migration event that is confidently estimated is between Germany and France. However, given that ~40% of this clade's samples derive from Germany, it is highly possible that this is an artifact of sampling bias as well.
 
-# [Medieval and Early Modern Plague](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/1.PRE?branchLabel=Province%20Confidence&c=clade_rtt_dist&ci&legend=closed&p=grid&tl=country&transmissions=hide)
+# [Medieval and Early Modern Plague](https://nextstrain.org/community/ktmeaton/plague-phylogeography-projects@main/main/full/1.PRE?branchLabel=Branch%20Support&c=clade_rtt_dist&legend=closed&m=div&p=grid&tl=country_date_strain&transmissions=hide)
 
-Within this clade, plague can be grouped into 3 clusters. 
+Within this clade, plague can be grouped into 3 clusters. This phylogeny is colored by distance to the clade root and branches are labelled with their UFboot support value.
 
 ---
 ## 14th Century (Blue)
