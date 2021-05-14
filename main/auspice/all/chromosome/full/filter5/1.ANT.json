@@ -179,6 +179,11 @@
         "type": "continuous"
       },
       {
+        "key": "host_human",
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
         "key": "node_name",
         "title": "Node Name",
         "type": "categorical"
@@ -246,7 +251,12 @@
       },
       {
         "key": "rate_sub",
-        "title": "Substitution Rate",
+        "title": "Substitutions Per Site Per Year",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitutions Per Year",
         "type": "continuous"
       },
       {
@@ -265,104 +275,43 @@
         "type": "categorical"
       },
       {
-        "key": "rate_geo_time",
-        "title": "Geographic Rate Time",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "1.ANT",
-            "#ff964f"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Branch Major Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lon",
-        "title": "Province Longitude",
-        "type": "continuous"
-      },
-      {
         "key": "node_name",
         "title": "Node Name",
         "type": "categorical"
       },
       {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitutions Per Site Per Year",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
         "type": "continuous"
       },
       {
@@ -381,14 +330,99 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
+        "key": "province_lon",
+        "title": "Province Longitude",
         "type": "continuous"
       },
       {
-        "key": "rate_sub",
-        "title": "Substitution Rate",
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Major Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
       },
       {
         "key": "province",
@@ -402,14 +436,81 @@
         "type": "categorical"
       },
       {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitutions Per Year",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
       },
       {
         "key": "continent",
         "title": "Continent",
         "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "1.ANT1",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Minor Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
+        "type": "continuous"
       },
       {
         "key": "country",
@@ -431,94 +532,13 @@
         "type": "categorical"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
         "type": "continuous"
       },
       {
-        "key": "blank",
-        "title": "Blank",
-        "type": "categorical"
-      },
-      {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor",
-        "scale": [
-          [
-            "1.ANT1",
-            "#ff8a48"
-          ]
-        ],
-        "title": "Branch Minor",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Branch Minor Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
+        "key": "province_lat",
+        "title": "Province Latitude",
         "type": "continuous"
       }
     ],
@@ -587,7 +607,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-04"
+    "updated": "2021-05-13"
   },
   "tree": {
     "branch_attrs": {
@@ -613,18 +633,19 @@
         "Country Confidence": 0.39,
         "Country Date Strain": "NA",
         "Country Lat": 1.5333553999999998,
-        "Country Lat Confidence": 0.38903465693178574,
+        "Country Lat Confidence": 0.3890346570037173,
         "Country Lon": 32.2166578,
-        "Country Lon Confidence": 0.38903465693178574,
+        "Country Lon Confidence": 0.3890346570037173,
         "Date Bp Mean": "NA",
         "Date Err": "NA",
         "Date Mean": "NA",
         "Geometry Size": 1.0,
+        "Host Human": "NA",
         "Node Name": "NODE443",
         "Node Type": "internal",
         "Num Date": 1954.0,
         "Num Date Confidence": [
-          1919.0,
+          1922.0,
           1954.0
         ],
         "Province": "Nairobi",
@@ -632,12 +653,13 @@
         "Province Confidence": 0.47,
         "Province Date Strain": "NA",
         "Province Lat": -1.30316895,
-        "Province Lat Confidence": 0.4742002665594836,
+        "Province Lat Confidence": 0.4742002841237992,
         "Province Lon": 36.826061224105075,
-        "Province Lon Confidence": 0.4742002665594836,
+        "Province Lon Confidence": 0.4742002841237992,
         "Rate Geo Sub": 0.0,
         "Rate Geo Time": 0.0,
-        "Rate Sub": 0.17660527214196453,
+        "Rate Sub": 4.181809080442509e-08,
+        "Rate Sub Year": 0.17685280418481256,
         "Root Rtt Dist": 7.92136e-05,
         "Strain": "NA"
       }
@@ -767,7 +789,10 @@
             "value": 0.0
           },
           "rate_sub": {
-            "value": 0.20994038070466456
+            "value": 4.970451721718306e-08
+          },
+          "rate_sub_year": {
+            "value": 0.21020527435415445
           },
           "root_rtt_dist": {
             "value": 8.29601e-05
@@ -801,18 +826,19 @@
             "Country Confidence": 0.39,
             "Country Date Strain": "NA",
             "Country Lat": 1.5333553999999998,
-            "Country Lat Confidence": 0.38903465693178574,
+            "Country Lat Confidence": 0.3890346570037173,
             "Country Lon": 32.2166578,
-            "Country Lon Confidence": 0.38903465693178574,
+            "Country Lon Confidence": 0.3890346570037173,
             "Date Bp Mean": "NA",
             "Date Err": "NA",
             "Date Mean": "NA",
             "Geometry Size": 1.0,
+            "Host Human": "NA",
             "Node Name": "NODE443",
             "Node Type": "internal",
             "Num Date": 1954.0,
             "Num Date Confidence": [
-              1919.0,
+              1922.0,
               1954.0
             ],
             "Province": "Nairobi",
@@ -820,12 +846,13 @@
             "Province Confidence": 0.47,
             "Province Date Strain": "NA",
             "Province Lat": -1.30316895,
-            "Province Lat Confidence": 0.4742002665594836,
+            "Province Lat Confidence": 0.4742002841237992,
             "Province Lon": 36.826061224105075,
-            "Province Lon Confidence": 0.4742002665594836,
+            "Province Lon Confidence": 0.4742002841237992,
             "Rate Geo Sub": 0.0,
             "Rate Geo Time": 0.0,
-            "Rate Sub": 0.17660527214196453,
+            "Rate Sub": 4.181809080442509e-08,
+            "Rate Sub Year": 0.17685280418481256,
             "Root Rtt Dist": 7.92136e-05,
             "Strain": "NA"
           }
@@ -911,6 +938,9 @@
                 "value": 2004.0
               },
               "div": 1.42868e-05,
+              "host_human": {
+                "value": "Human"
+              },
               "node_name": {
                 "value": "GCA_000169615.1_ASM16961v1_genomic"
               },
@@ -938,13 +968,13 @@
               },
               "province_lat": {
                 "confidence": {
-                  "1.5333553999999998": 0.4030746409256924
+                  "1.5333553999999998": 0.4030746663812974
                 },
                 "value": 1.5333553999999998
               },
               "province_lon": {
                 "confidence": {
-                  "32.2166578": 0.4030746409256924
+                  "32.2166578": 0.4030746663812974
                 },
                 "value": 32.2166578
               },
@@ -955,6 +985,9 @@
                 "value": 12.035406655542634
               },
               "rate_sub": {
+                "value": 5.1823999999999995e-08
+              },
+              "rate_sub_year": {
                 "value": 0.219168774752
               },
               "root_rtt_dist": {
@@ -989,18 +1022,19 @@
                 "Country Confidence": 1.0,
                 "Country Date Strain": "NA",
                 "Country Lat": -2.9814344,
-                "Country Lat Confidence": 0.9982166662469556,
+                "Country Lat Confidence": 0.9982166661883904,
                 "Country Lon": 23.822263600000007,
-                "Country Lon Confidence": 0.9982166662469556,
+                "Country Lon Confidence": 0.9982166661883904,
                 "Date Bp Mean": "NA",
                 "Date Err": "NA",
                 "Date Mean": "NA",
                 "Geometry Size": 1.0,
+                "Host Human": "NA",
                 "Node Name": "NODE444",
                 "Node Type": "internal",
                 "Num Date": 1954.0,
                 "Num Date Confidence": [
-                  1919.0,
+                  1922.0,
                   1954.0
                 ],
                 "Province": "Nairobi",
@@ -1008,12 +1042,13 @@
                 "Province Confidence": 0.4,
                 "Province Date Strain": "NA",
                 "Province Lat": -1.30316895,
-                "Province Lat Confidence": 0.4030746409256925,
+                "Province Lat Confidence": 0.4030746663812973,
                 "Province Lon": 36.826061224105075,
-                "Province Lon Confidence": 0.4030746409256925,
+                "Province Lon Confidence": 0.4030746663812973,
                 "Rate Geo Sub": 0.0,
                 "Rate Geo Time": 0.0,
                 "Rate Sub": 0.0,
+                "Rate Sub Year": 0.0,
                 "Root Rtt Dist": 7.92372e-05,
                 "Strain": "NA"
               }
@@ -1099,6 +1134,9 @@
                     "value": 1965.0
                   },
                   "div": 1.2661499999999999e-05,
+                  "host_human": {
+                    "value": "Human"
+                  },
                   "node_name": {
                     "value": "GCA_000013825.1_ASM1382v1_genomic"
                   },
@@ -1126,13 +1164,13 @@
                   },
                   "province_lat": {
                     "confidence": {
-                      "-2.9814344": 0.34282034820904234
+                      "-2.9814344": 0.3428203787331999
                     },
                     "value": -2.9814344
                   },
                   "province_lon": {
                     "confidence": {
-                      "23.822263600000007": 0.34282034820904234
+                      "23.822263600000007": 0.3428203787331999
                     },
                     "value": 23.822263600000007
                   },
@@ -1143,6 +1181,9 @@
                     "value": 132.4447942860734
                   },
                   "rate_sub": {
+                    "value": 8.566363636363636e-08
+                  },
+                  "rate_sub_year": {
                     "value": 0.3622799132181818
                   },
                   "root_rtt_dist": {
@@ -1260,13 +1301,13 @@
                   },
                   "province_lat": {
                     "confidence": {
-                      "-2.9814344": 0.34282034820904234
+                      "-2.9814344": 0.3428203787331999
                     },
                     "value": -2.9814344
                   },
                   "province_lon": {
                     "confidence": {
-                      "23.822263600000007": 0.34282034820904234
+                      "23.822263600000007": 0.3428203787331999
                     },
                     "value": 23.822263600000007
                   },
@@ -1277,6 +1318,9 @@
                     "value": 0.0
                   },
                   "rate_sub": {
+                    "value": 0.0
+                  },
+                  "rate_sub_year": {
                     "value": 0.0
                   },
                   "root_rtt_dist": {
@@ -1334,13 +1378,13 @@
               },
               "country_lat": {
                 "confidence": {
-                  "-2.9814344": 0.9982166662469556
+                  "-2.9814344": 0.9982166661883904
                 },
                 "value": -2.9814344
               },
               "country_lon": {
                 "confidence": {
-                  "23.822263600000007": 0.9982166662469556
+                  "23.822263600000007": 0.9982166661883904
                 },
                 "value": 23.822263600000007
               },
@@ -1353,7 +1397,7 @@
               },
               "num_date": {
                 "confidence": [
-                  1919.0,
+                  1922.0,
                   1954.0
                 ],
                 "value": 1954.0
@@ -1369,13 +1413,13 @@
               },
               "province_lat": {
                 "confidence": {
-                  "-1.30316895": 0.4030746409256925
+                  "-1.30316895": 0.4030746663812973
                 },
                 "value": -1.30316895
               },
               "province_lon": {
                 "confidence": {
-                  "36.826061224105075": 0.4030746409256925
+                  "36.826061224105075": 0.4030746663812973
                 },
                 "value": 36.826061224105075
               },
@@ -1386,6 +1430,9 @@
                 "value": 0.0
               },
               "rate_sub": {
+                "value": 0.0
+              },
+              "rate_sub_year": {
                 "value": 0.0
               },
               "root_rtt_dist": {
@@ -1440,13 +1487,13 @@
           },
           "country_lat": {
             "confidence": {
-              "1.5333553999999998": 0.38903465693178574
+              "1.5333553999999998": 0.3890346570037173
             },
             "value": 1.5333553999999998
           },
           "country_lon": {
             "confidence": {
-              "32.2166578": 0.38903465693178574
+              "32.2166578": 0.3890346570037173
             },
             "value": 32.2166578
           },
@@ -1459,7 +1506,7 @@
           },
           "num_date": {
             "confidence": [
-              1919.0,
+              1922.0,
               1954.0
             ],
             "value": 1954.0
@@ -1475,13 +1522,13 @@
           },
           "province_lat": {
             "confidence": {
-              "-1.30316895": 0.4742002665594836
+              "-1.30316895": 0.4742002841237992
             },
             "value": -1.30316895
           },
           "province_lon": {
             "confidence": {
-              "36.826061224105075": 0.4742002665594836
+              "36.826061224105075": 0.4742002841237992
             },
             "value": 36.826061224105075
           },
@@ -1492,7 +1539,10 @@
             "value": 0.0
           },
           "rate_sub": {
-            "value": 0.17660527214196453
+            "value": 4.181809080442509e-08
+          },
+          "rate_sub_year": {
+            "value": 0.17685280418481256
           },
           "root_rtt_dist": {
             "value": 7.92136e-05
@@ -1506,7 +1556,7 @@
         "value": 44
       },
       "branch_length_time": {
-        "value": 359
+        "value": 358
       },
       "branch_major": {
         "confidence": {
@@ -1546,13 +1596,13 @@
       },
       "country_lat": {
         "confidence": {
-          "1.4419683": 0.4429970814289036
+          "1.4419683": 0.4429970813971484
         },
         "value": 1.4419683
       },
       "country_lon": {
         "confidence": {
-          "38.4313975": 0.4429970814289036
+          "38.4313975": 0.4429970813971484
         },
         "value": 38.4313975
       },
@@ -1565,10 +1615,10 @@
       },
       "num_date": {
         "confidence": [
-          1567.0,
-          1768.0
+          1579.0,
+          1766.0
         ],
-        "value": 1674.0
+        "value": 1675.0
       },
       "province": {
         "confidence": {
@@ -1581,13 +1631,13 @@
       },
       "province_lat": {
         "confidence": {
-          "-1.30316895": 0.5581585028809507
+          "-1.30316895": 0.5581585088777333
         },
         "value": -1.30316895
       },
       "province_lon": {
         "confidence": {
-          "36.826061224105075": 0.5581585028809507
+          "36.826061224105075": 0.5581585088777333
         },
         "value": 36.826061224105075
       },
@@ -1595,10 +1645,13 @@
         "value": 166.6382913833904
       },
       "rate_geo_time": {
-        "value": 20.485283896177968
+        "value": 20.52526427747391
       },
       "rate_sub": {
-        "value": 0.12293263286675676
+        "value": 2.912501814851629e-08
+      },
+      "rate_sub_year": {
+        "value": 0.12317255600185394
       },
       "root_rtt_dist": {
         "value": 6.7518e-05
