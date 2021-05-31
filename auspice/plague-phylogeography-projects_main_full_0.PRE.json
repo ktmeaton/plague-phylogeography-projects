@@ -54,6 +54,21 @@
         "type": "categorical"
       },
       {
+        "key": "branch_major_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Major Joint Confidence",
+        "type": "categorical"
+      },
+      {
         "key": "branch_minor",
         "scale": [
           [
@@ -81,6 +96,21 @@
           ]
         ],
         "title": "Branch Minor Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Minor Joint Confidence",
         "type": "categorical"
       },
       {
@@ -164,6 +194,21 @@
           ]
         ],
         "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Country Joint Confidence",
         "type": "categorical"
       },
       {
@@ -273,6 +318,21 @@
         "type": "categorical"
       },
       {
+        "key": "province_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Province Joint Confidence",
+        "type": "categorical"
+      },
+      {
         "key": "root_rtt_dist",
         "title": "Root Distance",
         "type": "continuous"
@@ -303,9 +363,102 @@
         "type": "categorical"
       },
       {
-        "key": "node_name",
-        "title": "Node Name",
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Support Confidence",
         "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "0.PRE2",
+            "#8000ff"
+          ],
+          [
+            "0.PRE1",
+            "#7018ff"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "Lithuania",
+            "#7215ff"
+          ],
+          [
+            "Estonia",
+            "#652afe"
+          ],
+          [
+            "Germany",
+            "#573ffd"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Minor Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitutions Per Site Per Year",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitutions Per Year",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
       },
       {
         "key": "country_conf_category",
@@ -323,73 +476,28 @@
         "type": "categorical"
       },
       {
-        "key": "date_mean",
-        "title": "Collection Date",
-        "type": "continuous"
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
       },
       {
-        "key": "rate_sub",
-        "title": "Substitutions Per Site Per Year",
-        "type": "continuous"
+        "key": "country_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Country Joint Confidence",
+        "type": "categorical"
       },
       {
         "key": "strain",
         "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#8000ff"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lon",
-        "title": "Province Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Substitutions",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "Host Human",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "blank",
-        "title": "Blank",
         "type": "categorical"
       },
       {
@@ -408,7 +516,27 @@
         "type": "categorical"
       },
       {
-        "key": "province_conf_category",
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major_joint_conf_category",
         "scale": [
           [
             "LOW",
@@ -419,13 +547,13 @@
             "#8000ff"
           ]
         ],
-        "title": "Province Confidence",
+        "title": "Branch Major Joint Confidence",
         "type": "categorical"
       },
       {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
       },
       {
         "key": "biosample_accession",
@@ -433,24 +561,24 @@
         "type": "categorical"
       },
       {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
+        "key": "date_mean",
+        "title": "Collection Date",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#8000ff"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
+        "key": "rate_geo_time",
+        "title": "Geographic Rate Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Substitutions",
+        "type": "continuous"
       },
       {
         "key": "province",
@@ -484,18 +612,43 @@
         "type": "categorical"
       },
       {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
+        "key": "branch_minor_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Minor Joint Confidence",
         "type": "categorical"
       },
       {
-        "key": "rate_sub_year",
-        "title": "Substitutions Per Year",
-        "type": "continuous"
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#8000ff"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
       },
       {
         "key": "rate_geo_sub",
         "title": "Geographic Rate Substitutions",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
         "type": "continuous"
       },
       {
@@ -504,33 +657,33 @@
         "type": "continuous"
       },
       {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor",
+        "key": "province_joint_conf_category",
         "scale": [
           [
-            "0.PRE2",
-            "#8000ff"
+            "LOW",
+            "#FFFFFF"
           ],
           [
-            "0.PRE1",
-            "#7018ff"
+            "HIGH",
+            "#8000ff"
           ]
         ],
-        "title": "Branch Minor",
+        "title": "Province Joint Confidence",
         "type": "categorical"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
         "type": "continuous"
       },
       {
-        "key": "branch_support",
-        "title": "Branch Support",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
         "type": "continuous"
       },
       {
@@ -545,7 +698,7 @@
         "type": "categorical"
       },
       {
-        "key": "branch_minor_conf_category",
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -556,41 +709,8 @@
             "#8000ff"
           ]
         ],
-        "title": "Branch Minor Confidence",
+        "title": "Province Confidence",
         "type": "categorical"
-      },
-      {
-        "key": "rate_geo_time",
-        "title": "Geographic Rate Time",
-        "type": "continuous"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "Russia",
-            "#8000ff"
-          ],
-          [
-            "Lithuania",
-            "#7215ff"
-          ],
-          [
-            "Estonia",
-            "#652afe"
-          ],
-          [
-            "Germany",
-            "#573ffd"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (BP)",
-        "type": "continuous"
       },
       {
         "key": "province_lat",
@@ -679,7 +799,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-05-13"
+    "updated": "2021-05-31"
   },
   "tree": {
     "branch_attrs": {
@@ -692,9 +812,11 @@
         "Branch Major": "0.PRE",
         "Branch Major Conf Category": "HIGH",
         "Branch Major Confidence": 1.0,
+        "Branch Major Joint Conf Category": "HIGH",
         "Branch Minor": "0.PRE1",
         "Branch Minor Conf Category": "HIGH",
         "Branch Minor Confidence": 1.0,
+        "Branch Minor Joint Conf Category": "HIGH",
         "Branch Number": "NA",
         "Branch Support": 100.0,
         "Branch Support Conf Category": "HIGH",
@@ -704,6 +826,7 @@
         "Country Conf Category": "HIGH",
         "Country Confidence": 0.99,
         "Country Date Strain": "NA",
+        "Country Joint Conf Category": "HIGH",
         "Country Lat": 64.6863136,
         "Country Lat Confidence": 0.986388636084316,
         "Country Lon": 97.7453061,
@@ -724,6 +847,7 @@
         "Province Conf Category": "LOW",
         "Province Confidence": 0.46,
         "Province Date Strain": "NA",
+        "Province Joint Conf Category": "LOW",
         "Province Lat": 55.9156048,
         "Province Lat Confidence": 0.4627656261764074,
         "Province Lon": 25.03115989218585,
@@ -759,6 +883,9 @@
           "branch_major_conf_category": {
             "value": "HIGH"
           },
+          "branch_major_joint_conf_category": {
+            "value": "HIGH"
+          },
           "branch_minor": {
             "confidence": {
               "0.PRE2": 1.0
@@ -766,6 +893,9 @@
             "value": "0.PRE2"
           },
           "branch_minor_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_minor_joint_conf_category": {
             "value": "HIGH"
           },
           "branch_number": {
@@ -794,6 +924,9 @@
           },
           "country_date_strain": {
             "value": "Russia (-2876:-2677) RISE509"
+          },
+          "country_joint_conf_category": {
+            "value": "HIGH"
           },
           "country_lat": {
             "confidence": {
@@ -845,6 +978,9 @@
           "province_date_strain": {
             "value": "Russia (-2876:-2677) RISE509"
           },
+          "province_joint_conf_category": {
+            "value": "HIGH"
+          },
           "province_lat": {
             "confidence": {
               "63.3233807": 1.0
@@ -888,9 +1024,11 @@
             "Branch Major": "0.PRE",
             "Branch Major Conf Category": "HIGH",
             "Branch Major Confidence": 1.0,
+            "Branch Major Joint Conf Category": "HIGH",
             "Branch Minor": "0.PRE1",
             "Branch Minor Conf Category": "HIGH",
             "Branch Minor Confidence": 1.0,
+            "Branch Minor Joint Conf Category": "HIGH",
             "Branch Number": "NA",
             "Branch Support": 100.0,
             "Branch Support Conf Category": "HIGH",
@@ -900,6 +1038,7 @@
             "Country Conf Category": "HIGH",
             "Country Confidence": 0.99,
             "Country Date Strain": "NA",
+            "Country Joint Conf Category": "HIGH",
             "Country Lat": 64.6863136,
             "Country Lat Confidence": 0.986388636084316,
             "Country Lon": 97.7453061,
@@ -920,6 +1059,7 @@
             "Province Conf Category": "LOW",
             "Province Confidence": 0.46,
             "Province Date Strain": "NA",
+            "Province Joint Conf Category": "LOW",
             "Province Lat": 55.9156048,
             "Province Lat Confidence": 0.4627656261764074,
             "Province Lon": 25.03115989218585,
@@ -955,6 +1095,9 @@
               "branch_major_conf_category": {
                 "value": "HIGH"
               },
+              "branch_major_joint_conf_category": {
+                "value": "HIGH"
+              },
               "branch_minor": {
                 "confidence": {
                   "0.PRE1": 1.0
@@ -962,6 +1105,9 @@
                 "value": "0.PRE1"
               },
               "branch_minor_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_minor_joint_conf_category": {
                 "value": "HIGH"
               },
               "branch_number": {
@@ -990,6 +1136,9 @@
               },
               "country_date_strain": {
                 "value": "Lithuania (-2621:-2472) Gyvakarai1"
+              },
+              "country_joint_conf_category": {
+                "value": "HIGH"
               },
               "country_lat": {
                 "confidence": {
@@ -1041,6 +1190,9 @@
               "province_date_strain": {
                 "value": "Lithuania (-2621:-2472) Gyvakarai1"
               },
+              "province_joint_conf_category": {
+                "value": "HIGH"
+              },
               "province_lat": {
                 "confidence": {
                   "55.9156048": 1.0
@@ -1084,9 +1236,11 @@
                 "Branch Major": "0.PRE",
                 "Branch Major Conf Category": "HIGH",
                 "Branch Major Confidence": 1.0,
+                "Branch Major Joint Conf Category": "HIGH",
                 "Branch Minor": "0.PRE1",
                 "Branch Minor Conf Category": "HIGH",
                 "Branch Minor Confidence": 1.0,
+                "Branch Minor Joint Conf Category": "HIGH",
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
@@ -1096,6 +1250,7 @@
                 "Country Conf Category": "HIGH",
                 "Country Confidence": 0.99,
                 "Country Date Strain": "NA",
+                "Country Joint Conf Category": "HIGH",
                 "Country Lat": 64.6863136,
                 "Country Lat Confidence": 0.9856170531226418,
                 "Country Lon": 97.7453061,
@@ -1116,6 +1271,7 @@
                 "Province Conf Category": "LOW",
                 "Province Confidence": 0.45,
                 "Province Date Strain": "NA",
+                "Province Joint Conf Category": "LOW",
                 "Province Lat": 58.31950685,
                 "Province Lat Confidence": 0.44804062340522893,
                 "Province Lon": 24.30261214859043,
@@ -1151,6 +1307,9 @@
                   "branch_major_conf_category": {
                     "value": "HIGH"
                   },
+                  "branch_major_joint_conf_category": {
+                    "value": "HIGH"
+                  },
                   "branch_minor": {
                     "confidence": {
                       "0.PRE1": 1.0
@@ -1158,6 +1317,9 @@
                     "value": "0.PRE1"
                   },
                   "branch_minor_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_minor_joint_conf_category": {
                     "value": "HIGH"
                   },
                   "branch_number": {
@@ -1186,6 +1348,9 @@
                   },
                   "country_date_strain": {
                     "value": "Estonia (-2574:-2340) KunilaII"
+                  },
+                  "country_joint_conf_category": {
+                    "value": "HIGH"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1237,6 +1402,9 @@
                   "province_date_strain": {
                     "value": "Estonia (-2574:-2340) KunilaII"
                   },
+                  "province_joint_conf_category": {
+                    "value": "HIGH"
+                  },
                   "province_lat": {
                     "confidence": {
                       "58.31950685": 1.0
@@ -1280,9 +1448,11 @@
                     "Branch Major": "0.PRE",
                     "Branch Major Conf Category": "HIGH",
                     "Branch Major Confidence": 1.0,
+                    "Branch Major Joint Conf Category": "HIGH",
                     "Branch Minor": "0.PRE1",
                     "Branch Minor Conf Category": "HIGH",
                     "Branch Minor Confidence": 1.0,
+                    "Branch Minor Joint Conf Category": "HIGH",
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
@@ -1292,6 +1462,7 @@
                     "Country Conf Category": "HIGH",
                     "Country Confidence": 0.99,
                     "Country Date Strain": "NA",
+                    "Country Joint Conf Category": "HIGH",
                     "Country Lat": 64.6863136,
                     "Country Lat Confidence": 0.9922328429518996,
                     "Country Lon": 97.7453061,
@@ -1312,6 +1483,7 @@
                     "Province Conf Category": "LOW",
                     "Province Confidence": 0.38,
                     "Province Date Strain": "NA",
+                    "Province Joint Conf Category": "LOW",
                     "Province Lat": 56.6370122,
                     "Province Lat Confidence": 0.3828050633446795,
                     "Province Lon": 104.719221,
@@ -1336,9 +1508,11 @@
                         "Branch Major": "0.PRE",
                         "Branch Major Conf Category": "HIGH",
                         "Branch Major Confidence": 1.0,
+                        "Branch Major Joint Conf Category": "HIGH",
                         "Branch Minor": "0.PRE1",
                         "Branch Minor Conf Category": "HIGH",
                         "Branch Minor Confidence": 1.0,
+                        "Branch Minor Joint Conf Category": "HIGH",
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
@@ -1348,6 +1522,7 @@
                         "Country Conf Category": "HIGH",
                         "Country Confidence": 1.0,
                         "Country Date Strain": "NA",
+                        "Country Joint Conf Category": "HIGH",
                         "Country Lat": 64.6863136,
                         "Country Lat Confidence": 0.9999746605876118,
                         "Country Lon": 97.7453061,
@@ -1368,6 +1543,7 @@
                         "Province Conf Category": "HIGH",
                         "Province Confidence": 1.0,
                         "Province Date Strain": "NA",
+                        "Province Joint Conf Category": "HIGH",
                         "Province Lat": 56.6370122,
                         "Province Lat Confidence": 0.998608601877048,
                         "Province Lon": 104.719221,
@@ -1403,6 +1579,9 @@
                           "branch_major_conf_category": {
                             "value": "HIGH"
                           },
+                          "branch_major_joint_conf_category": {
+                            "value": "HIGH"
+                          },
                           "branch_minor": {
                             "confidence": {
                               "0.PRE1": 1.0
@@ -1410,6 +1589,9 @@
                             "value": "0.PRE1"
                           },
                           "branch_minor_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "branch_minor_joint_conf_category": {
                             "value": "HIGH"
                           },
                           "branch_number": {
@@ -1438,6 +1620,9 @@
                           },
                           "country_date_strain": {
                             "value": "Russia (-2838:-2495) GLZ001"
+                          },
+                          "country_joint_conf_category": {
+                            "value": "HIGH"
                           },
                           "country_lat": {
                             "confidence": {
@@ -1488,6 +1673,9 @@
                           },
                           "province_date_strain": {
                             "value": "Russia (-2838:-2495) GLZ001"
+                          },
+                          "province_joint_conf_category": {
+                            "value": "HIGH"
                           },
                           "province_lat": {
                             "confidence": {
@@ -1543,6 +1731,9 @@
                           "branch_major_conf_category": {
                             "value": "HIGH"
                           },
+                          "branch_major_joint_conf_category": {
+                            "value": "HIGH"
+                          },
                           "branch_minor": {
                             "confidence": {
                               "0.PRE1": 1.0
@@ -1550,6 +1741,9 @@
                             "value": "0.PRE1"
                           },
                           "branch_minor_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "branch_minor_joint_conf_category": {
                             "value": "HIGH"
                           },
                           "branch_number": {
@@ -1578,6 +1772,9 @@
                           },
                           "country_date_strain": {
                             "value": "Russia (-2569:-2467) GLZ002"
+                          },
+                          "country_joint_conf_category": {
+                            "value": "HIGH"
                           },
                           "country_lat": {
                             "confidence": {
@@ -1629,6 +1826,9 @@
                           "province_date_strain": {
                             "value": "Russia (-2569:-2467) GLZ002"
                           },
+                          "province_joint_conf_category": {
+                            "value": "HIGH"
+                          },
                           "province_lat": {
                             "confidence": {
                               "56.6370122": 1.0
@@ -1679,6 +1879,9 @@
                       "branch_major_conf_category": {
                         "value": "HIGH"
                       },
+                      "branch_major_joint_conf_category": {
+                        "value": "HIGH"
+                      },
                       "branch_minor": {
                         "confidence": {
                           "0.PRE1": 1.0
@@ -1686,6 +1889,9 @@
                         "value": "0.PRE1"
                       },
                       "branch_minor_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_minor_joint_conf_category": {
                         "value": "HIGH"
                       },
                       "branch_support": {
@@ -1704,6 +1910,9 @@
                         "value": "Russia"
                       },
                       "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_joint_conf_category": {
                         "value": "HIGH"
                       },
                       "country_lat": {
@@ -1739,6 +1948,9 @@
                         "value": "Irkutsk Oblast"
                       },
                       "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_joint_conf_category": {
                         "value": "HIGH"
                       },
                       "province_lat": {
@@ -1781,9 +1993,11 @@
                         "Branch Major": "0.PRE",
                         "Branch Major Conf Category": "HIGH",
                         "Branch Major Confidence": 1.0,
+                        "Branch Major Joint Conf Category": "HIGH",
                         "Branch Minor": "0.PRE1",
                         "Branch Minor Conf Category": "HIGH",
                         "Branch Minor Confidence": 1.0,
+                        "Branch Minor Joint Conf Category": "HIGH",
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
@@ -1793,6 +2007,7 @@
                         "Country Conf Category": "LOW",
                         "Country Confidence": 0.59,
                         "Country Date Strain": "NA",
+                        "Country Joint Conf Category": "LOW",
                         "Country Lat": 64.6863136,
                         "Country Lat Confidence": 0.5949598092010859,
                         "Country Lon": 97.7453061,
@@ -1813,6 +2028,7 @@
                         "Province Conf Category": "HIGH",
                         "Province Confidence": 0.99,
                         "Province Date Strain": "NA",
+                        "Province Joint Conf Category": "HIGH",
                         "Province Lat": 48.9467562,
                         "Province Lat Confidence": 0.9944982532408418,
                         "Province Lon": 11.4038717,
@@ -1848,6 +2064,9 @@
                           "branch_major_conf_category": {
                             "value": "HIGH"
                           },
+                          "branch_major_joint_conf_category": {
+                            "value": "HIGH"
+                          },
                           "branch_minor": {
                             "confidence": {
                               "0.PRE1": 1.0
@@ -1855,6 +2074,9 @@
                             "value": "0.PRE1"
                           },
                           "branch_minor_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "branch_minor_joint_conf_category": {
                             "value": "HIGH"
                           },
                           "branch_number": {
@@ -1883,6 +2105,9 @@
                           },
                           "country_date_strain": {
                             "value": "Germany (-2396:-2148) 1343UnTal85"
+                          },
+                          "country_joint_conf_category": {
+                            "value": "HIGH"
                           },
                           "country_lat": {
                             "confidence": {
@@ -1934,6 +2159,9 @@
                           "province_date_strain": {
                             "value": "Germany (-2396:-2148) 1343UnTal85"
                           },
+                          "province_joint_conf_category": {
+                            "value": "HIGH"
+                          },
                           "province_lat": {
                             "confidence": {
                               "48.9467562": 1.0
@@ -1977,9 +2205,11 @@
                             "Branch Major": "0.PRE",
                             "Branch Major Conf Category": "HIGH",
                             "Branch Major Confidence": 1.0,
+                            "Branch Major Joint Conf Category": "HIGH",
                             "Branch Minor": "0.PRE1",
                             "Branch Minor Conf Category": "HIGH",
                             "Branch Minor Confidence": 1.0,
+                            "Branch Minor Joint Conf Category": "HIGH",
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
@@ -1989,6 +2219,7 @@
                             "Country Conf Category": "LOW",
                             "Country Confidence": 0.6,
                             "Country Date Strain": "NA",
+                            "Country Joint Conf Category": "LOW",
                             "Country Lat": 64.6863136,
                             "Country Lat Confidence": 0.5950014557256221,
                             "Country Lon": 97.7453061,
@@ -2009,6 +2240,7 @@
                             "Province Conf Category": "HIGH",
                             "Province Confidence": 0.99,
                             "Province Date Strain": "NA",
+                            "Province Joint Conf Category": "HIGH",
                             "Province Lat": 48.9467562,
                             "Province Lat Confidence": 0.9933627366483152,
                             "Province Lon": 11.4038717,
@@ -2044,6 +2276,9 @@
                               "branch_major_conf_category": {
                                 "value": "HIGH"
                               },
+                              "branch_major_joint_conf_category": {
+                                "value": "HIGH"
+                              },
                               "branch_minor": {
                                 "confidence": {
                                   "0.PRE1": 1.0
@@ -2051,6 +2286,9 @@
                                 "value": "0.PRE1"
                               },
                               "branch_minor_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "branch_minor_joint_conf_category": {
                                 "value": "HIGH"
                               },
                               "branch_number": {
@@ -2079,6 +2317,9 @@
                               },
                               "country_date_strain": {
                                 "value": "Germany (-2007:-1882) Post6"
+                              },
+                              "country_joint_conf_category": {
+                                "value": "HIGH"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2129,6 +2370,9 @@
                               },
                               "province_date_strain": {
                                 "value": "Germany (-2007:-1882) Post6"
+                              },
+                              "province_joint_conf_category": {
+                                "value": "HIGH"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2184,6 +2428,9 @@
                               "branch_major_conf_category": {
                                 "value": "HIGH"
                               },
+                              "branch_major_joint_conf_category": {
+                                "value": "HIGH"
+                              },
                               "branch_minor": {
                                 "confidence": {
                                   "0.PRE1": 1.0
@@ -2191,6 +2438,9 @@
                                 "value": "0.PRE1"
                               },
                               "branch_minor_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "branch_minor_joint_conf_category": {
                                 "value": "HIGH"
                               },
                               "branch_number": {
@@ -2219,6 +2469,9 @@
                               },
                               "country_date_strain": {
                                 "value": "Russia (-1746:-1626) RISE505"
+                              },
+                              "country_joint_conf_category": {
+                                "value": "HIGH"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2270,6 +2523,9 @@
                               "province_date_strain": {
                                 "value": "Russia (-1746:-1626) RISE505"
                               },
+                              "province_joint_conf_category": {
+                                "value": "HIGH"
+                              },
                               "province_lat": {
                                 "confidence": {
                                   "52.6932243": 1.0
@@ -2320,6 +2576,9 @@
                           "branch_major_conf_category": {
                             "value": "HIGH"
                           },
+                          "branch_major_joint_conf_category": {
+                            "value": "HIGH"
+                          },
                           "branch_minor": {
                             "confidence": {
                               "0.PRE1": 1.0
@@ -2327,6 +2586,9 @@
                             "value": "0.PRE1"
                           },
                           "branch_minor_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "branch_minor_joint_conf_category": {
                             "value": "HIGH"
                           },
                           "branch_support": {
@@ -2345,6 +2607,9 @@
                             "value": "Russia"
                           },
                           "country_conf_category": {
+                            "value": "LOW"
+                          },
+                          "country_joint_conf_category": {
                             "value": "LOW"
                           },
                           "country_lat": {
@@ -2380,6 +2645,9 @@
                             "value": "Bavaria"
                           },
                           "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_joint_conf_category": {
                             "value": "HIGH"
                           },
                           "province_lat": {
@@ -2429,6 +2697,9 @@
                       "branch_major_conf_category": {
                         "value": "HIGH"
                       },
+                      "branch_major_joint_conf_category": {
+                        "value": "HIGH"
+                      },
                       "branch_minor": {
                         "confidence": {
                           "0.PRE1": 1.0
@@ -2436,6 +2707,9 @@
                         "value": "0.PRE1"
                       },
                       "branch_minor_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_minor_joint_conf_category": {
                         "value": "HIGH"
                       },
                       "branch_support": {
@@ -2454,6 +2728,9 @@
                         "value": "Russia"
                       },
                       "country_conf_category": {
+                        "value": "LOW"
+                      },
+                      "country_joint_conf_category": {
                         "value": "LOW"
                       },
                       "country_lat": {
@@ -2489,6 +2766,9 @@
                         "value": "Bavaria"
                       },
                       "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_joint_conf_category": {
                         "value": "HIGH"
                       },
                       "province_lat": {
@@ -2538,6 +2818,9 @@
                   "branch_major_conf_category": {
                     "value": "HIGH"
                   },
+                  "branch_major_joint_conf_category": {
+                    "value": "HIGH"
+                  },
                   "branch_minor": {
                     "confidence": {
                       "0.PRE1": 1.0
@@ -2545,6 +2828,9 @@
                     "value": "0.PRE1"
                   },
                   "branch_minor_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_minor_joint_conf_category": {
                     "value": "HIGH"
                   },
                   "branch_support": {
@@ -2563,6 +2849,9 @@
                     "value": "Russia"
                   },
                   "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_joint_conf_category": {
                     "value": "HIGH"
                   },
                   "country_lat": {
@@ -2598,6 +2887,9 @@
                     "value": "Irkutsk Oblast"
                   },
                   "province_conf_category": {
+                    "value": "LOW"
+                  },
+                  "province_joint_conf_category": {
                     "value": "LOW"
                   },
                   "province_lat": {
@@ -2647,6 +2939,9 @@
               "branch_major_conf_category": {
                 "value": "HIGH"
               },
+              "branch_major_joint_conf_category": {
+                "value": "HIGH"
+              },
               "branch_minor": {
                 "confidence": {
                   "0.PRE1": 1.0
@@ -2654,6 +2949,9 @@
                 "value": "0.PRE1"
               },
               "branch_minor_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_minor_joint_conf_category": {
                 "value": "HIGH"
               },
               "branch_support": {
@@ -2672,6 +2970,9 @@
                 "value": "Russia"
               },
               "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_joint_conf_category": {
                 "value": "HIGH"
               },
               "country_lat": {
@@ -2707,6 +3008,9 @@
                 "value": "P\u00e4rnu maakond"
               },
               "province_conf_category": {
+                "value": "LOW"
+              },
+              "province_joint_conf_category": {
                 "value": "LOW"
               },
               "province_lat": {
@@ -2756,6 +3060,9 @@
           "branch_major_conf_category": {
             "value": "HIGH"
           },
+          "branch_major_joint_conf_category": {
+            "value": "HIGH"
+          },
           "branch_minor": {
             "confidence": {
               "0.PRE1": 1.0
@@ -2763,6 +3070,9 @@
             "value": "0.PRE1"
           },
           "branch_minor_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_minor_joint_conf_category": {
             "value": "HIGH"
           },
           "branch_support": {
@@ -2781,6 +3091,9 @@
             "value": "Russia"
           },
           "country_conf_category": {
+            "value": "HIGH"
+          },
+          "country_joint_conf_category": {
             "value": "HIGH"
           },
           "country_lat": {
@@ -2816,6 +3129,9 @@
             "value": "Panevezys County"
           },
           "province_conf_category": {
+            "value": "LOW"
+          },
+          "province_joint_conf_category": {
             "value": "LOW"
           },
           "province_lat": {
@@ -2865,6 +3181,9 @@
       "branch_major_conf_category": {
         "value": "HIGH"
       },
+      "branch_major_joint_conf_category": {
+        "value": "HIGH"
+      },
       "branch_minor": {
         "confidence": {
           "0.PRE2": 0.43
@@ -2872,6 +3191,9 @@
         "value": "0.PRE2"
       },
       "branch_minor_conf_category": {
+        "value": "LOW"
+      },
+      "branch_minor_joint_conf_category": {
         "value": "LOW"
       },
       "branch_support": {
@@ -2890,6 +3212,9 @@
         "value": "Russia"
       },
       "country_conf_category": {
+        "value": "HIGH"
+      },
+      "country_joint_conf_category": {
         "value": "HIGH"
       },
       "country_lat": {
@@ -2925,6 +3250,9 @@
         "value": "Krasnoyarsk Krai"
       },
       "province_conf_category": {
+        "value": "LOW"
+      },
+      "province_joint_conf_category": {
         "value": "LOW"
       },
       "province_lat": {
