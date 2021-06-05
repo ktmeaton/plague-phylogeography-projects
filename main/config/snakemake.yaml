@@ -14,6 +14,7 @@ sqlite_select_command_asm : SELECT
                               (BioSampleComment LIKE '%KEEP%Assembly%Modern%'
                               AND length(AssemblyFTPGenbank) > 0
                               AND length(BioSampleCollectionDate) > 0)
+                              AND length(BioSampleGeographicLocation) > 0
                               OR (BioSampleComment LIKE '%KEEP%Assembly%Modern%Outgroup%')
 
 sqlite_select_command_sra : SELECT

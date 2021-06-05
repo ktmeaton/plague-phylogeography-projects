@@ -8,6 +8,16 @@
         "type": "continuous"
       },
       {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
         "key": "branch_major",
         "scale": [
           [
@@ -17,6 +27,11 @@
         ],
         "title": "Branch Major",
         "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
       },
       {
         "key": "country",
@@ -97,55 +112,18 @@
         "type": "continuous"
       },
       {
-        "key": "rate_beast",
-        "title": "Substitution Rate Subs/Site (BEAST)",
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
-        "key": "rate_subs_beast",
-        "title": "Substitution Rate Subs (BEAST)",
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
         "type": "continuous"
       },
       {
         "key": "strain",
         "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "Host Human",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_subs_beast",
-        "title": "Substitution Rate Subs (BEAST)",
-        "type": "continuous"
-      },
-      {
-        "key": "province",
-        "scale": [
-          [
-            "Qinghai",
-            "#642bfe"
-          ],
-          [
-            "Xinjiang",
-            "#09aaee"
-          ],
-          [
-            "Gansu",
-            "#17cce4"
-          ],
-          [
-            "Tibet",
-            "#40ecd4"
-          ],
-          [
-            "Yunnan",
-            "#ff9951"
-          ]
-        ],
-        "title": "Province",
         "type": "categorical"
       },
       {
@@ -154,6 +132,95 @@
         "type": "categorical"
       },
       {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Qinghai",
+            "#642bfe"
+          ],
+          [
+            "Xinjiang",
+            "#09aaee"
+          ],
+          [
+            "Gansu",
+            "#17cce4"
+          ],
+          [
+            "Tibet",
+            "#40ecd4"
+          ],
+          [
+            "Yunnan",
+            "#ff9951"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "1.IN",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
         "key": "province_lat",
         "title": "Province Latitude",
         "type": "continuous"
@@ -174,35 +241,9 @@
         "type": "categorical"
       },
       {
-        "key": "rate_beast",
-        "title": "Substitution Rate Subs/Site (BEAST)",
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
         "type": "continuous"
-      },
-      {
-        "key": "province_lon",
-        "title": "Province Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "China",
-            "#4a53fc"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
       },
       {
         "key": "date_bp",
@@ -210,20 +251,9 @@
         "type": "categorical"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "1.IN",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
       }
     ],
     "display_defaults": {
@@ -291,14 +321,17 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-06-04"
+    "updated": "2021-06-05"
   },
   "tree": {
     "branch_attrs": {
       "labels": {
         "Biovar": "NA",
-        "Branch Length": 2.5088855464182416,
+        "Branch Length": 29.914839362053907,
+        "Branch Length Sub": 6.0,
+        "Branch Length Time": 30.0,
         "Branch Major": "NA",
+        "Branch Support": 72.0,
         "Country": "NA",
         "Country Lat": "NA",
         "Country Lon": "NA",
@@ -314,8 +347,8 @@
         "Province": "NA",
         "Province Lat": "NA",
         "Province Lon": "NA",
-        "Rate Beast": 4.5050414555183486e-08,
-        "Rate Subs Beast": 0.19052261809449736,
+        "Rate Sub": 4.5050414555183486e-08,
+        "Rate Sub Year": 0.0,
         "Strain": "NA"
       }
     },
@@ -324,8 +357,11 @@
         "branch_attrs": {
           "labels": {
             "Biovar": "NA",
-            "Branch Length": 1.9365408410212837,
+            "Branch Length": 20.864338518757766,
+            "Branch Length Sub": 7.0,
+            "Branch Length Time": 21.0,
             "Branch Major": "NA",
+            "Branch Support": 38.0,
             "Country": "NA",
             "Country Lat": "NA",
             "Country Lon": "NA",
@@ -341,8 +377,8 @@
             "Province": "NA",
             "Province Lat": "NA",
             "Province Lon": "NA",
-            "Rate Beast": 8.137054172954673e-08,
-            "Rate Subs Beast": 0.34412399528734267,
+            "Rate Sub": 8.137054172954673e-08,
+            "Rate Sub Year": 0.0,
             "Strain": "NA"
           }
         },
@@ -354,8 +390,17 @@
               "biovar": {
                 "value": "Antiqua"
               },
+              "branch_length_sub": {
+                "value": 92.0
+              },
+              "branch_length_time": {
+                "value": 147.0
+              },
               "branch_major": {
                 "value": "1.IN"
+              },
+              "branch_support": {
+                "value": 100.0
               },
               "country": {
                 "value": "China"
@@ -369,7 +414,7 @@
               "date_bp": {
                 "value": "-15"
               },
-              "div": 72.28752173654468,
+              "div": 167.7914298355078,
               "host_human": {
                 "value": "Non-Human"
               },
@@ -392,11 +437,11 @@
               "province_lon": {
                 "value": 102.0
               },
-              "rate_beast": {
+              "rate_sub": {
                 "value": 1.4772453259242483e-07
               },
-              "rate_subs_beast": {
-                "value": 0.6247415253375587
+              "rate_sub_year": {
+                "value": 1.0
               },
               "strain": {
                 "value": "D106004"
@@ -407,8 +452,11 @@
             "branch_attrs": {
               "labels": {
                 "Biovar": "NA",
-                "Branch Length": 11.931072524114384,
+                "Branch Length": 40.940037018473866,
+                "Branch Length Sub": 26.0,
+                "Branch Length Time": 41.0,
                 "Branch Major": "NA",
+                "Branch Support": 99.0,
                 "Country": "NA",
                 "Country Lat": "NA",
                 "Country Lon": "NA",
@@ -424,8 +472,8 @@
                 "Province": "NA",
                 "Province Lat": "NA",
                 "Province Lon": "NA",
-                "Rate Beast": 1.5206762523699407e-07,
-                "Rate Subs Beast": 0.6431088897545212,
+                "Rate Sub": 1.5206762523699407e-07,
+                "Rate Sub Year": 1.0,
                 "Strain": "NA"
               }
             },
@@ -437,8 +485,17 @@
                   "biovar": {
                     "value": "Antiqua"
                   },
+                  "branch_length_sub": {
+                    "value": 15.0
+                  },
+                  "branch_length_time": {
+                    "value": 12.0
+                  },
                   "branch_major": {
                     "value": "1.IN"
+                  },
+                  "branch_support": {
+                    "value": 100.0
                   },
                   "country": {
                     "value": "China"
@@ -452,7 +509,7 @@
                   "date_bp": {
                     "value": "-64"
                   },
-                  "div": 23.287521736544676,
+                  "div": 73.66664662762254,
                   "host_human": {
                     "value": "Non-Human"
                   },
@@ -475,11 +532,11 @@
                   "province_lon": {
                     "value": 102.0
                   },
-                  "rate_beast": {
+                  "rate_sub": {
                     "value": 2.9586044159128873e-07
                   },
-                  "rate_subs_beast": {
-                    "value": 1.251222801812836
+                  "rate_sub_year": {
+                    "value": 1.0
                   },
                   "strain": {
                     "value": "YN472"
@@ -490,8 +547,11 @@
                 "branch_attrs": {
                   "labels": {
                     "Biovar": "NA",
-                    "Branch Length": 0.4112796179847251,
+                    "Branch Length": 8.29126561787787,
+                    "Branch Length Sub": 1.0,
+                    "Branch Length Time": 8.0,
                     "Branch Major": "NA",
+                    "Branch Support": 18.0,
                     "Country": "NA",
                     "Country Lat": "NA",
                     "Country Lon": "NA",
@@ -507,8 +567,8 @@
                     "Province": "NA",
                     "Province Lat": "NA",
                     "Province Lon": "NA",
-                    "Rate Beast": 3.445340603742268e-08,
-                    "Rate Subs Beast": 0.14570683056605216,
+                    "Rate Sub": 3.445340603742268e-08,
+                    "Rate Sub Year": 0.0,
                     "Strain": "NA"
                   }
                 },
@@ -517,8 +577,11 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
-                        "Branch Length": 0.43913186539122506,
+                        "Branch Length": 7.493011579329429,
+                        "Branch Length Sub": 3.0,
+                        "Branch Length Time": 7.0,
                         "Branch Major": "NA",
+                        "Branch Support": 82.0,
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
@@ -534,8 +597,8 @@
                         "Province": "NA",
                         "Province Lat": "NA",
                         "Province Lon": "NA",
-                        "Rate Beast": 9.058555948321083e-08,
-                        "Rate Subs Beast": 0.383095208439328,
+                        "Rate Sub": 9.058555948321083e-08,
+                        "Rate Sub Year": 0.0,
                         "Strain": "NA"
                       }
                     },
@@ -547,8 +610,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 1.0
+                          },
+                          "branch_length_time": {
+                            "value": 6.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -562,7 +634,7 @@
                           "date_bp": {
                             "value": "-67"
                           },
-                          "div": 20.287521736544676,
+                          "div": 83.24534370651223,
                           "host_human": {
                             "value": "Non-Human"
                           },
@@ -585,11 +657,11 @@
                           "province_lon": {
                             "value": 102.0
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 3.85669668227446e-08
                           },
-                          "rate_subs_beast": {
-                            "value": 0.16310348225613555
+                          "rate_sub_year": {
+                            "value": 0.0
                           },
                           "strain": {
                             "value": "YN1065"
@@ -603,8 +675,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 22.0
+                          },
+                          "branch_length_time": {
+                            "value": 9.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -618,7 +699,7 @@
                           "date_bp": {
                             "value": "-67"
                           },
-                          "div": 20.287521736544676,
+                          "div": 86.4564114649228,
                           "host_human": {
                             "value": "Non-Human"
                           },
@@ -641,11 +722,11 @@
                           "province_lon": {
                             "value": 102.0
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 5.790366506701187e-07
                           },
-                          "rate_subs_beast": {
-                            "value": 2.448802741275698
+                          "rate_sub_year": {
+                            "value": 2.0
                           },
                           "strain": {
                             "value": "F1954001"
@@ -655,7 +736,16 @@
                     ],
                     "name": "NODE4",
                     "node_attrs": {
-                      "div": 14.718024848511618,
+                      "branch_length_sub": {
+                        "value": 3.0
+                      },
+                      "branch_length_time": {
+                        "value": 7.0
+                      },
+                      "branch_support": {
+                        "value": 82.0
+                      },
+                      "div": 77.58865273443894,
                       "node_type": {
                         "value": "internal"
                       },
@@ -666,11 +756,11 @@
                         ],
                         "value": 1948.3608094273234
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 9.058555948321083e-08
                       },
-                      "rate_subs_beast": {
-                        "value": 0.383095208439328
+                      "rate_sub_year": {
+                        "value": 0.0
                       }
                     }
                   },
@@ -678,8 +768,11 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
-                        "Branch Length": 2.251033548527701,
+                        "Branch Length": 15.378100118004413,
+                        "Branch Length Sub": 1.0,
+                        "Branch Length Time": 15.0,
                         "Branch Major": "NA",
+                        "Branch Support": 68.0,
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
@@ -695,8 +788,8 @@
                         "Province": "NA",
                         "Province Lat": "NA",
                         "Province Lon": "NA",
-                        "Rate Beast": 1.586897917391056e-08,
-                        "Rate Subs Beast": 0.0671114680864268,
+                        "Rate Sub": 1.586897917391056e-08,
+                        "Rate Sub Year": 0.0,
                         "Strain": "NA"
                       }
                     },
@@ -708,8 +801,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 148.0
+                          },
+                          "branch_length_time": {
+                            "value": 17.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -723,7 +825,7 @@
                           "date_bp": {
                             "value": "-39"
                           },
-                          "div": 48.287521736544676,
+                          "div": 102.33361829191406,
                           "host_human": {
                             "value": "Non-Human"
                           },
@@ -746,11 +848,11 @@
                           "province_lon": {
                             "value": 102.0
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 2.0792529366303853e-06
                           },
-                          "rate_subs_beast": {
-                            "value": 8.79336443579769
+                          "rate_sub_year": {
+                            "value": 9.0
                           },
                           "strain": {
                             "value": "D182038"
@@ -761,8 +863,11 @@
                         "branch_attrs": {
                           "labels": {
                             "Biovar": "NA",
-                            "Branch Length": 17.077225105804295,
+                            "Branch Length": 11.313840977160057,
+                            "Branch Length Sub": 1.0,
+                            "Branch Length Time": 11.0,
                             "Branch Major": "NA",
+                            "Branch Support": 17.0,
                             "Country": "NA",
                             "Country Lat": "NA",
                             "Country Lon": "NA",
@@ -778,8 +883,8 @@
                             "Province": "NA",
                             "Province Lat": "NA",
                             "Province Lon": "NA",
-                            "Rate Beast": 2.4489612578361175e-08,
-                            "Rate Subs Beast": 0.10356897157592208,
+                            "Rate Sub": 2.4489612578361175e-08,
+                            "Rate Sub Year": 0.0,
                             "Strain": "NA"
                           }
                         },
@@ -788,8 +893,11 @@
                             "branch_attrs": {
                               "labels": {
                                 "Biovar": "NA",
-                                "Branch Length": 3.2190872344890593,
+                                "Branch Length": 4.601587636255432,
+                                "Branch Length Sub": 1.0,
+                                "Branch Length Time": 5.0,
                                 "Branch Major": "NA",
+                                "Branch Support": 12.0,
                                 "Country": "NA",
                                 "Country Lat": "NA",
                                 "Country Lon": "NA",
@@ -805,8 +913,8 @@
                                 "Province": "NA",
                                 "Province Lat": "NA",
                                 "Province Lon": "NA",
-                                "Rate Beast": 5.036614809182327e-08,
-                                "Rate Subs Beast": 0.2130033761628336,
+                                "Rate Sub": 5.036614809182327e-08,
+                                "Rate Sub Year": 0.0,
                                 "Strain": "NA"
                               }
                             },
@@ -818,8 +926,17 @@
                                   "biovar": {
                                     "value": "Antiqua"
                                   },
+                                  "branch_length_sub": {
+                                    "value": 6.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 7.0
+                                  },
                                   "branch_major": {
                                     "value": "1.IN"
+                                  },
+                                  "branch_support": {
+                                    "value": 100.0
                                   },
                                   "country": {
                                     "value": "China"
@@ -833,7 +950,7 @@
                                   "date_bp": {
                                     "value": "-44"
                                   },
-                                  "div": 43.287521736544676,
+                                  "div": 108.73645625412765,
                                   "host_human": {
                                     "value": "Non-Human"
                                   },
@@ -856,11 +973,11 @@
                                   "province_lon": {
                                     "value": 102.0
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 1.7707999285112752e-07
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 0.7488886436067177
+                                  "rate_sub_year": {
+                                    "value": 1.0
                                   },
                                   "strain": {
                                     "value": "E1977001"
@@ -874,8 +991,17 @@
                                   "biovar": {
                                     "value": "Antiqua"
                                   },
+                                  "branch_length_sub": {
+                                    "value": 6.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 8.0
+                                  },
                                   "branch_major": {
                                     "value": "1.IN"
+                                  },
+                                  "branch_support": {
+                                    "value": 100.0
                                   },
                                   "country": {
                                     "value": "China"
@@ -889,7 +1015,7 @@
                                   "date_bp": {
                                     "value": "-44"
                                   },
-                                  "div": 43.287521736544676,
+                                  "div": 108.90175892840504,
                                   "host_human": {
                                     "value": "Non-Human"
                                   },
@@ -912,11 +1038,11 @@
                                   "province_lon": {
                                     "value": 102.0
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 1.8552406036307783e-07
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 0.7845994326333717
+                                  "rate_sub_year": {
+                                    "value": 1.0
                                   },
                                   "strain": {
                                     "value": "YN1683"
@@ -926,7 +1052,16 @@
                             ],
                             "name": "NODE7",
                             "node_attrs": {
-                              "div": 36.82623887194145,
+                              "branch_length_sub": {
+                                "value": 1.0
+                              },
+                              "branch_length_time": {
+                                "value": 5.0
+                              },
+                              "branch_support": {
+                                "value": 12.0
+                              },
+                              "div": 101.3891698865294,
                               "node_type": {
                                 "value": "internal"
                               },
@@ -937,11 +1072,11 @@
                                 ],
                                 "value": 1971.7296915863221
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 5.036614809182327e-08
                               },
-                              "rate_subs_beast": {
-                                "value": 0.2130033761628336
+                              "rate_sub_year": {
+                                "value": 0.0
                               }
                             }
                           },
@@ -949,8 +1084,11 @@
                             "branch_attrs": {
                               "labels": {
                                 "Biovar": "NA",
-                                "Branch Length": 3.239092039516109,
+                                "Branch Length": 5.113517200883899,
+                                "Branch Length Sub": 1.0,
+                                "Branch Length Time": 5.0,
                                 "Branch Major": "NA",
+                                "Branch Support": 4.0,
                                 "Country": "NA",
                                 "Country Lat": "NA",
                                 "Country Lon": "NA",
@@ -966,8 +1104,8 @@
                                 "Province": "NA",
                                 "Province Lat": "NA",
                                 "Province Lon": "NA",
-                                "Rate Beast": 4.2263582431161806e-08,
-                                "Rate Subs Beast": 0.17873683193246154,
+                                "Rate Sub": 4.2263582431161806e-08,
+                                "Rate Sub Year": 0.0,
                                 "Strain": "NA"
                               }
                             },
@@ -976,8 +1114,11 @@
                                 "branch_attrs": {
                                   "labels": {
                                     "Biovar": "NA",
-                                    "Branch Length": 2.755665278492998,
+                                    "Branch Length": 4.658086461562862,
+                                    "Branch Length Sub": 1.0,
+                                    "Branch Length Time": 5.0,
                                     "Branch Major": "NA",
+                                    "Branch Support": 12.0,
                                     "Country": "NA",
                                     "Country Lat": "NA",
                                     "Country Lon": "NA",
@@ -993,8 +1134,8 @@
                                     "Province": "NA",
                                     "Province Lat": "NA",
                                     "Province Lon": "NA",
-                                    "Rate Beast": 4.2081226138433146e-08,
-                                    "Rate Subs Beast": 0.17796562929959533,
+                                    "Rate Sub": 4.2081226138433146e-08,
+                                    "Rate Sub Year": 0.0,
                                     "Strain": "NA"
                                   }
                                 },
@@ -1006,8 +1147,17 @@
                                       "biovar": {
                                         "value": "Antiqua"
                                       },
+                                      "branch_length_sub": {
+                                        "value": 5.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 11.0
+                                      },
                                       "branch_major": {
                                         "value": "1.IN"
+                                      },
+                                      "branch_support": {
+                                        "value": 100.0
                                       },
                                       "country": {
                                         "value": "China"
@@ -1021,7 +1171,7 @@
                                       "date_bp": {
                                         "value": "-39"
                                       },
-                                      "div": 48.287521736544676,
+                                      "div": 117.4591228829815,
                                       "host_human": {
                                         "value": "Non-Human"
                                       },
@@ -1044,11 +1194,11 @@
                                       "province_lon": {
                                         "value": 102.0
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 1.180527333014773e-07
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 0.49925657829981107
+                                      "rate_sub_year": {
+                                        "value": 0.0
                                       },
                                       "strain": {
                                         "value": "CMCC84038"
@@ -1062,8 +1212,17 @@
                                       "biovar": {
                                         "value": "Antiqua"
                                       },
+                                      "branch_length_sub": {
+                                        "value": 11.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 10.0
+                                      },
                                       "branch_major": {
                                         "value": "1.IN"
+                                      },
+                                      "branch_support": {
+                                        "value": 100.0
                                       },
                                       "country": {
                                         "value": "China"
@@ -1077,7 +1236,7 @@
                                       "date_bp": {
                                         "value": "-42"
                                       },
-                                      "div": 45.287521736544676,
+                                      "div": 116.22882182428226,
                                       "host_human": {
                                         "value": "Non-Human"
                                       },
@@ -1100,11 +1259,11 @@
                                       "province_lon": {
                                         "value": 102.0
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 2.796839976739937e-07
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 1.1828110351950916
+                                      "rate_sub_year": {
+                                        "value": 1.0
                                       },
                                       "strain": {
                                         "value": "CMCC84033"
@@ -1114,7 +1273,16 @@
                                 ],
                                 "name": "NODE9",
                                 "node_attrs": {
-                                  "div": 39.6019089554615,
+                                  "branch_length_sub": {
+                                    "value": 1.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 5.0
+                                  },
+                                  "branch_support": {
+                                    "value": 12.0
+                                  },
+                                  "div": 106.55918591272074,
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -1125,11 +1293,11 @@
                                     ],
                                     "value": 1972.963167810541
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 4.2081226138433146e-08
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 0.17796562929959533
+                                  "rate_sub_year": {
+                                    "value": 0.0
                                   }
                                 }
                               },
@@ -1137,8 +1305,11 @@
                                 "branch_attrs": {
                                   "labels": {
                                     "Biovar": "NA",
-                                    "Branch Length": 1.1363343830131143,
+                                    "Branch Length": 4.415377095515372,
+                                    "Branch Length Sub": 1.0,
+                                    "Branch Length Time": 4.0,
                                     "Branch Major": "NA",
+                                    "Branch Support": 11.0,
                                     "Country": "NA",
                                     "Country Lat": "NA",
                                     "Country Lon": "NA",
@@ -1154,8 +1325,8 @@
                                     "Province": "NA",
                                     "Province Lat": "NA",
                                     "Province Lon": "NA",
-                                    "Rate Beast": 4.4310448023783185e-08,
-                                    "Rate Subs Beast": 0.18739322711648543,
+                                    "Rate Sub": 4.4310448023783185e-08,
+                                    "Rate Sub Year": 0.0,
                                     "Strain": "NA"
                                   }
                                 },
@@ -1167,8 +1338,17 @@
                                       "biovar": {
                                         "value": "Antiqua"
                                       },
+                                      "branch_length_sub": {
+                                        "value": 17.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 14.0
+                                      },
                                       "branch_major": {
                                         "value": "1.IN"
+                                      },
+                                      "branch_support": {
+                                        "value": 100.0
                                       },
                                       "country": {
                                         "value": "China"
@@ -1182,7 +1362,7 @@
                                       "date_bp": {
                                         "value": "-37"
                                       },
-                                      "div": 50.287521736544676,
+                                      "div": 120.51003533067565,
                                       "host_human": {
                                         "value": "Non-Human"
                                       },
@@ -1205,11 +1385,11 @@
                                       "province_lon": {
                                         "value": 102.0
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 2.860997775342558e-07
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 1.209943996970566
+                                      "rate_sub_year": {
+                                        "value": 1.0
                                       },
                                       "strain": {
                                         "value": "CMCC84046"
@@ -1223,8 +1403,17 @@
                                       "biovar": {
                                         "value": "Antiqua"
                                       },
+                                      "branch_length_sub": {
+                                        "value": 8.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 9.0
+                                      },
                                       "branch_major": {
                                         "value": "1.IN"
+                                      },
+                                      "branch_support": {
+                                        "value": 100.0
                                       },
                                       "country": {
                                         "value": "China"
@@ -1238,7 +1427,7 @@
                                       "date_bp": {
                                         "value": "-42"
                                       },
-                                      "div": 45.287521736544676,
+                                      "div": 115.39499357619036,
                                       "host_human": {
                                         "value": "Non-Human"
                                       },
@@ -1261,11 +1450,11 @@
                                       "province_lon": {
                                         "value": 102.0
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 2.1891045846885387e-07
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 0.925793782089713
+                                      "rate_sub_year": {
+                                        "value": 1.0
                                       },
                                       "strain": {
                                         "value": "E1979001"
@@ -1275,7 +1464,16 @@
                                 ],
                                 "name": "NODE10",
                                 "node_attrs": {
-                                  "div": 37.98257805998161,
+                                  "branch_length_sub": {
+                                    "value": 1.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 4.0
+                                  },
+                                  "branch_support": {
+                                    "value": 11.0
+                                  },
+                                  "div": 106.31647654667324,
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -1286,18 +1484,27 @@
                                     ],
                                     "value": 1972.7713182339342
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 4.4310448023783185e-08
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 0.18739322711648543
+                                  "rate_sub_year": {
+                                    "value": 0.0
                                   }
                                 }
                               }
                             ],
                             "name": "NODE8",
                             "node_attrs": {
-                              "div": 36.8462436769685,
+                              "branch_length_sub": {
+                                "value": 1.0
+                              },
+                              "branch_length_time": {
+                                "value": 5.0
+                              },
+                              "branch_support": {
+                                "value": 4.0
+                              },
+                              "div": 101.90109945115788,
                               "node_type": {
                                 "value": "internal"
                               },
@@ -1308,18 +1515,27 @@
                                 ],
                                 "value": 1969.6442989640536
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 4.2263582431161806e-08
                               },
-                              "rate_subs_beast": {
-                                "value": 0.17873683193246154
+                              "rate_sub_year": {
+                                "value": 0.0
                               }
                             }
                           }
                         ],
                         "name": "NODE6",
                         "node_attrs": {
-                          "div": 33.60715163745239,
+                          "branch_length_sub": {
+                            "value": 1.0
+                          },
+                          "branch_length_time": {
+                            "value": 11.0
+                          },
+                          "branch_support": {
+                            "value": 17.0
+                          },
+                          "div": 96.78758225027397,
                           "node_type": {
                             "value": "internal"
                           },
@@ -1330,18 +1546,27 @@
                             ],
                             "value": 1963.6019572022242
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 2.4489612578361175e-08
                           },
-                          "rate_subs_beast": {
-                            "value": 0.10356897157592208
+                          "rate_sub_year": {
+                            "value": 0.0
                           }
                         }
                       }
                     ],
                     "name": "NODE5",
                     "node_attrs": {
-                      "div": 16.529926531648094,
+                      "branch_length_sub": {
+                        "value": 1.0
+                      },
+                      "branch_length_time": {
+                        "value": 15.0
+                      },
+                      "branch_support": {
+                        "value": 68.0
+                      },
+                      "div": 85.47374127311392,
                       "node_type": {
                         "value": "internal"
                       },
@@ -1352,18 +1577,27 @@
                         ],
                         "value": 1961.0187682422277
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 1.586897917391056e-08
                       },
-                      "rate_subs_beast": {
-                        "value": 0.0671114680864268
+                      "rate_sub_year": {
+                        "value": 0.0
                       }
                     }
                   }
                 ],
                 "name": "NODE3",
                 "node_attrs": {
-                  "div": 14.278892983120393,
+                  "branch_length_sub": {
+                    "value": 1.0
+                  },
+                  "branch_length_time": {
+                    "value": 8.0
+                  },
+                  "branch_support": {
+                    "value": 18.0
+                  },
+                  "div": 70.0956411551095,
                   "node_type": {
                     "value": "internal"
                   },
@@ -1374,18 +1608,27 @@
                     ],
                     "value": 1943.4222733812858
                   },
-                  "rate_beast": {
+                  "rate_sub": {
                     "value": 3.445340603742268e-08
                   },
-                  "rate_subs_beast": {
-                    "value": 0.14570683056605216
+                  "rate_sub_year": {
+                    "value": 0.0
                   }
                 }
               }
             ],
             "name": "NODE2",
             "node_attrs": {
-              "div": 13.867613365135668,
+              "branch_length_sub": {
+                "value": 26.0
+              },
+              "branch_length_time": {
+                "value": 41.0
+              },
+              "branch_support": {
+                "value": 99.0
+              },
+              "div": 61.804375537231635,
               "node_type": {
                 "value": "internal"
               },
@@ -1396,18 +1639,27 @@
                 ],
                 "value": 1936.040338928215
               },
-              "rate_beast": {
+              "rate_sub": {
                 "value": 1.5206762523699407e-07
               },
-              "rate_subs_beast": {
-                "value": 0.6431088897545212
+              "rate_sub_year": {
+                "value": 1.0
               }
             }
           }
         ],
         "name": "NODE1",
         "node_attrs": {
-          "div": 1.9365408410212837,
+          "branch_length_sub": {
+            "value": 7.0
+          },
+          "branch_length_time": {
+            "value": 21.0
+          },
+          "branch_support": {
+            "value": 38.0
+          },
+          "div": 20.864338518757766,
           "node_type": {
             "value": "internal"
           },
@@ -1418,11 +1670,11 @@
             ],
             "value": 1923.2831733958312
           },
-          "rate_beast": {
+          "rate_sub": {
             "value": 8.137054172954673e-08
           },
-          "rate_subs_beast": {
-            "value": 0.34412399528734267
+          "rate_sub_year": {
+            "value": 0.0
           }
         }
       },
@@ -1430,8 +1682,11 @@
         "branch_attrs": {
           "labels": {
             "Biovar": "NA",
-            "Branch Length": 2.5088855464182416,
+            "Branch Length": 29.914839362053907,
+            "Branch Length Sub": 6.0,
+            "Branch Length Time": 30.0,
             "Branch Major": "NA",
+            "Branch Support": 72.0,
             "Country": "NA",
             "Country Lat": "NA",
             "Country Lon": "NA",
@@ -1447,8 +1702,8 @@
             "Province": "NA",
             "Province Lat": "NA",
             "Province Lon": "NA",
-            "Rate Beast": 4.5050414555183486e-08,
-            "Rate Subs Beast": 0.19052261809449736,
+            "Rate Sub": 4.5050414555183486e-08,
+            "Rate Sub Year": 0.0,
             "Strain": "NA"
           }
         },
@@ -1457,8 +1712,11 @@
             "branch_attrs": {
               "labels": {
                 "Biovar": "NA",
-                "Branch Length": 7.871988040029052,
+                "Branch Length": 18.71623996210831,
+                "Branch Length Sub": 10.0,
+                "Branch Length Time": 19.0,
                 "Branch Major": "NA",
+                "Branch Support": 92.0,
                 "Country": "NA",
                 "Country Lat": "NA",
                 "Country Lon": "NA",
@@ -1474,8 +1732,8 @@
                 "Province": "NA",
                 "Province Lat": "NA",
                 "Province Lon": "NA",
-                "Rate Beast": 1.2415449297106814e-07,
-                "Rate Subs Beast": 0.5250615179149584,
+                "Rate Sub": 1.2415449297106814e-07,
+                "Rate Sub Year": 1.0,
                 "Strain": "NA"
               }
             },
@@ -1484,8 +1742,11 @@
                 "branch_attrs": {
                   "labels": {
                     "Biovar": "NA",
-                    "Branch Length": 10.99821295641847,
+                    "Branch Length": 24.970624310314594,
+                    "Branch Length Sub": 5.0,
+                    "Branch Length Time": 25.0,
                     "Branch Major": "NA",
+                    "Branch Support": 100.0,
                     "Country": "NA",
                     "Country Lat": "NA",
                     "Country Lon": "NA",
@@ -1501,8 +1762,8 @@
                     "Province": "NA",
                     "Province Lat": "NA",
                     "Province Lon": "NA",
-                    "Rate Beast": 5.0412475031386387e-08,
-                    "Rate Subs Beast": 0.2131992973302861,
+                    "Rate Sub": 5.0412475031386387e-08,
+                    "Rate Sub Year": 0.0,
                     "Strain": "NA"
                   }
                 },
@@ -1514,8 +1775,17 @@
                       "biovar": {
                         "value": "Antiqua"
                       },
+                      "branch_length_sub": {
+                        "value": 15.0
+                      },
+                      "branch_length_time": {
+                        "value": 9.0
+                      },
                       "branch_major": {
                         "value": "1.IN"
+                      },
+                      "branch_support": {
+                        "value": 100.0
                       },
                       "country": {
                         "value": "China"
@@ -1529,7 +1799,7 @@
                       "date_bp": {
                         "value": "-57"
                       },
-                      "div": 30.287521736544676,
+                      "div": 82.46105646823143,
                       "host_human": {
                         "value": "Non-Human"
                       },
@@ -1552,11 +1822,11 @@
                       "province_lon": {
                         "value": 95.95211573241954
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 3.9223974606828764e-07
                       },
-                      "rate_subs_beast": {
-                        "value": 1.658820325617903
+                      "rate_sub_year": {
+                        "value": 2.0
                       },
                       "strain": {
                         "value": "CMCC10012"
@@ -1567,8 +1837,11 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
-                        "Branch Length": 15.427082434499347,
+                        "Branch Length": 11.82543817331294,
+                        "Branch Length Sub": 1.0,
+                        "Branch Length Time": 12.0,
                         "Branch Major": "NA",
+                        "Branch Support": 82.0,
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
@@ -1584,8 +1857,8 @@
                         "Province": "NA",
                         "Province Lat": "NA",
                         "Province Lon": "NA",
-                        "Rate Beast": 1.8130007576223094e-08,
-                        "Rate Subs Beast": 0.07667357878058993,
+                        "Rate Sub": 1.8130007576223094e-08,
+                        "Rate Sub Year": 0.0,
                         "Strain": "NA"
                       }
                     },
@@ -1597,8 +1870,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 1.0
+                          },
+                          "branch_length_time": {
+                            "value": 6.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -1612,7 +1894,7 @@
                           "date_bp": {
                             "value": "-50"
                           },
-                          "div": 37.287521736544676,
+                          "div": 91.86692235646912,
                           "host_human": {
                             "value": "Human"
                           },
@@ -1635,11 +1917,11 @@
                           "province_lon": {
                             "value": 95.95211573241954
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 3.303071943449735e-08
                           },
-                          "rate_subs_beast": {
-                            "value": 0.13969014949899386
+                          "rate_sub_year": {
+                            "value": 0.0
                           },
                           "strain": {
                             "value": "710317"
@@ -1650,8 +1932,11 @@
                         "branch_attrs": {
                           "labels": {
                             "Biovar": "NA",
-                            "Branch Length": 15.340297348568555,
+                            "Branch Length": 16.681714639723086,
+                            "Branch Length Sub": 3.0,
+                            "Branch Length Time": 17.0,
                             "Branch Major": "NA",
+                            "Branch Support": 100.0,
                             "Country": "NA",
                             "Country Lat": "NA",
                             "Country Lon": "NA",
@@ -1667,8 +1952,8 @@
                             "Province": "NA",
                             "Province Lat": "NA",
                             "Province Lon": "NA",
-                            "Rate Beast": 3.966943958571265e-08,
-                            "Rate Subs Beast": 0.1677659476130582,
+                            "Rate Sub": 3.966943958571265e-08,
+                            "Rate Sub Year": 0.0,
                             "Strain": "NA"
                           }
                         },
@@ -1680,8 +1965,17 @@
                               "biovar": {
                                 "value": "Antiqua"
                               },
+                              "branch_length_sub": {
+                                "value": 2.0
+                              },
+                              "branch_length_time": {
+                                "value": 23.0
+                              },
                               "branch_major": {
                                 "value": "1.IN"
+                              },
+                              "branch_support": {
+                                "value": 100.0
                               },
                               "country": {
                                 "value": "China"
@@ -1695,7 +1989,7 @@
                               "date_bp": {
                                 "value": "-17"
                               },
-                              "div": 70.28752173654468,
+                              "div": 124.97650510515915,
                               "host_human": {
                                 "value": "Human"
                               },
@@ -1718,11 +2012,11 @@
                               "province_lon": {
                                 "value": 95.95211573241954
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 2.4519875100978765e-08
                               },
-                              "rate_subs_beast": {
-                                "value": 0.10369695474979909
+                              "rate_sub_year": {
+                                "value": 0.0
                               },
                               "strain": {
                                 "value": "5"
@@ -1736,8 +2030,17 @@
                               "biovar": {
                                 "value": "Antiqua"
                               },
+                              "branch_length_sub": {
+                                "value": 4.0
+                              },
+                              "branch_length_time": {
+                                "value": 7.0
+                              },
                               "branch_major": {
                                 "value": "1.IN"
+                              },
+                              "branch_support": {
+                                "value": 100.0
                               },
                               "country": {
                                 "value": "China"
@@ -1751,7 +2054,7 @@
                               "date_bp": {
                                 "value": "-33"
                               },
-                              "div": 54.287521736544676,
+                              "div": 108.97650510515916,
                               "host_human": {
                                 "value": "Non-Human"
                               },
@@ -1774,11 +2077,11 @@
                               "province_lon": {
                                 "value": 95.95211573241954
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 1.2300710476226053e-07
                               },
-                              "rate_subs_beast": {
-                                "value": 0.5202091007358665
+                              "rate_sub_year": {
+                                "value": 1.0
                               },
                               "strain": {
                                 "value": "CMCC05013"
@@ -1788,7 +2091,16 @@
                         ],
                         "name": "NODE15",
                         "node_attrs": {
-                          "div": 52.146466325933666,
+                          "branch_length_sub": {
+                            "value": 3.0
+                          },
+                          "branch_length_time": {
+                            "value": 17.0
+                          },
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "div": 102.10885644751284,
                           "node_type": {
                             "value": "internal"
                           },
@@ -1799,18 +2111,27 @@
                             ],
                             "value": 1981.1323513423538
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 3.966943958571265e-08
                           },
-                          "rate_subs_beast": {
-                            "value": 0.1677659476130582
+                          "rate_sub_year": {
+                            "value": 0.0
                           }
                         }
                       }
                     ],
                     "name": "NODE14",
                     "node_attrs": {
-                      "div": 36.80616897736511,
+                      "branch_length_sub": {
+                        "value": 1.0
+                      },
+                      "branch_length_time": {
+                        "value": 12.0
+                      },
+                      "branch_support": {
+                        "value": 82.0
+                      },
+                      "div": 85.42714180778975,
                       "node_type": {
                         "value": "internal"
                       },
@@ -1821,18 +2142,27 @@
                         ],
                         "value": 1966.2599437194776
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 1.8130007576223094e-08
                       },
-                      "rate_subs_beast": {
-                        "value": 0.07667357878058993
+                      "rate_sub_year": {
+                        "value": 0.0
                       }
                     }
                   }
                 ],
                 "name": "NODE13",
                 "node_attrs": {
-                  "div": 21.379086542865764,
+                  "branch_length_sub": {
+                    "value": 5.0
+                  },
+                  "branch_length_time": {
+                    "value": 25.0
+                  },
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "div": 73.6017036344768,
                   "node_type": {
                     "value": "internal"
                   },
@@ -1843,11 +2173,11 @@
                     ],
                     "value": 1954.4953109894095
                   },
-                  "rate_beast": {
+                  "rate_sub": {
                     "value": 5.0412475031386387e-08
                   },
-                  "rate_subs_beast": {
-                    "value": 0.2131992973302861
+                  "rate_sub_year": {
+                    "value": 0.0
                   }
                 }
               },
@@ -1855,8 +2185,11 @@
                 "branch_attrs": {
                   "labels": {
                     "Biovar": "NA",
-                    "Branch Length": 6.773010252688813,
+                    "Branch Length": 16.64609946582205,
+                    "Branch Length Sub": 13.0,
+                    "Branch Length Time": 17.0,
                     "Branch Major": "NA",
+                    "Branch Support": 100.0,
                     "Country": "NA",
                     "Country Lat": "NA",
                     "Country Lon": "NA",
@@ -1872,8 +2205,8 @@
                     "Province": "NA",
                     "Province Lat": "NA",
                     "Province Lon": "NA",
-                    "Rate Beast": 1.8852658475260927e-07,
-                    "Rate Subs Beast": 0.7972974025240903,
+                    "Rate Sub": 1.8852658475260927e-07,
+                    "Rate Sub Year": 1.0,
                     "Strain": "NA"
                   }
                 },
@@ -1882,8 +2215,11 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
-                        "Branch Length": 26.208255914693634,
+                        "Branch Length": 32.28484891334343,
+                        "Branch Length Sub": 2.0,
+                        "Branch Length Time": 32.0,
                         "Branch Major": "NA",
+                        "Branch Support": 100.0,
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
@@ -1899,8 +2235,8 @@
                         "Province": "NA",
                         "Province Lat": "NA",
                         "Province Lon": "NA",
-                        "Rate Beast": 1.356404068949607e-08,
-                        "Rate Subs Beast": 0.05736365735186645,
+                        "Rate Sub": 1.356404068949607e-08,
+                        "Rate Sub Year": 0.0,
                         "Strain": "NA"
                       }
                     },
@@ -1912,8 +2248,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 7.0
+                          },
+                          "branch_length_time": {
+                            "value": 14.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -1927,7 +2272,7 @@
                           "date_bp": {
                             "value": "-30"
                           },
-                          "div": 57.287521736544676,
+                          "div": 111.35099343106215,
                           "host_human": {
                             "value": "Non-Human"
                           },
@@ -1950,11 +2295,11 @@
                           "province_lon": {
                             "value": 95.95211573241954
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 1.1342452478133788e-07
                           },
-                          "rate_subs_beast": {
-                            "value": 0.47968343090370646
+                          "rate_sub_year": {
+                            "value": 0.0
                           },
                           "strain": {
                             "value": "D1991004"
@@ -1965,8 +2310,11 @@
                         "branch_attrs": {
                           "labels": {
                             "Biovar": "NA",
-                            "Branch Length": 4.006579187987459,
+                            "Branch Length": 8.212275808068815,
+                            "Branch Length Sub": 2.0,
+                            "Branch Length Time": 8.0,
                             "Branch Major": "NA",
+                            "Branch Support": 100.0,
                             "Country": "NA",
                             "Country Lat": "NA",
                             "Country Lon": "NA",
@@ -1982,8 +2330,8 @@
                             "Province": "NA",
                             "Province Lat": "NA",
                             "Province Lon": "NA",
-                            "Rate Beast": 6.624904311448367e-08,
-                            "Rate Subs Beast": 0.28017369573737666,
+                            "Rate Sub": 6.624904311448367e-08,
+                            "Rate Sub Year": 0.0,
                             "Strain": "NA"
                           }
                         },
@@ -1995,8 +2343,17 @@
                               "biovar": {
                                 "value": "Antiqua"
                               },
+                              "branch_length_sub": {
+                                "value": 3.0
+                              },
+                              "branch_length_time": {
+                                "value": 12.0
+                              },
                               "branch_major": {
                                 "value": "1.IN"
+                              },
+                              "branch_support": {
+                                "value": 100.0
                               },
                               "country": {
                                 "value": "China"
@@ -2010,7 +2367,7 @@
                               "date_bp": {
                                 "value": "-24"
                               },
-                              "div": 63.28752173654467,
+                              "div": 117.35099343106215,
                               "host_human": {
                                 "value": "Non-Human"
                               },
@@ -2033,11 +2390,11 @@
                               "province_lon": {
                                 "value": 95.95211573241954
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 6.549358521931762e-08
                               },
-                              "rate_subs_beast": {
-                                "value": 0.2769787902638457
+                              "rate_sub_year": {
+                                "value": 0.0
                               },
                               "strain": {
                                 "value": "970754"
@@ -2051,8 +2408,17 @@
                               "biovar": {
                                 "value": "Antiqua"
                               },
+                              "branch_length_sub": {
+                                "value": 3.0
+                              },
+                              "branch_length_time": {
+                                "value": 6.0
+                              },
                               "branch_major": {
                                 "value": "1.IN"
+                              },
+                              "branch_support": {
+                                "value": 100.0
                               },
                               "country": {
                                 "value": "China"
@@ -2066,7 +2432,7 @@
                               "date_bp": {
                                 "value": "-30"
                               },
-                              "div": 57.28752173654467,
+                              "div": 111.35099343106215,
                               "host_human": {
                                 "value": "Non-Human"
                               },
@@ -2089,11 +2455,11 @@
                               "province_lon": {
                                 "value": 95.95211573241954
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 1.4838642268099168e-07
                               },
-                              "rate_subs_beast": {
-                                "value": 0.6275407233873366
+                              "rate_sub_year": {
+                                "value": 1.0
                               },
                               "strain": {
                                 "value": "CMCC27002"
@@ -2103,7 +2469,16 @@
                         ],
                         "name": "NODE18",
                         "node_attrs": {
-                          "div": 47.36871894181719,
+                          "branch_length_sub": {
+                            "value": 2.0
+                          },
+                          "branch_length_time": {
+                            "value": 8.0
+                          },
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "div": 105.7743035113965,
                           "node_type": {
                             "value": "internal"
                           },
@@ -2114,18 +2489,27 @@
                             ],
                             "value": 1985.4233100803342
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 6.624904311448367e-08
                           },
-                          "rate_subs_beast": {
-                            "value": 0.28017369573737666
+                          "rate_sub_year": {
+                            "value": 0.0
                           }
                         }
                       }
                     ],
                     "name": "NODE17",
                     "node_attrs": {
-                      "div": 43.36213975382974,
+                      "branch_length_sub": {
+                        "value": 2.0
+                      },
+                      "branch_length_time": {
+                        "value": 32.0
+                      },
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "div": 97.56202770332769,
                       "node_type": {
                         "value": "internal"
                       },
@@ -2136,11 +2520,11 @@
                         ],
                         "value": 1977.2110342722656
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 1.356404068949607e-08
                       },
-                      "rate_subs_beast": {
-                        "value": 0.05736365735186645
+                      "rate_sub_year": {
+                        "value": 0.0
                       }
                     }
                   },
@@ -2148,8 +2532,11 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
-                        "Branch Length": 1.2878748232688153,
+                        "Branch Length": 5.597430184204462,
+                        "Branch Length Sub": 2.0,
+                        "Branch Length Time": 6.0,
                         "Branch Major": "NA",
+                        "Branch Support": 100.0,
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
@@ -2165,8 +2552,8 @@
                         "Province": "NA",
                         "Province Lat": "NA",
                         "Province Lon": "NA",
-                        "Rate Beast": 9.749484953755401e-08,
-                        "Rate Subs Beast": 0.41231527318957056,
+                        "Rate Sub": 9.749484953755401e-08,
+                        "Rate Sub Year": 0.0,
                         "Strain": "NA"
                       }
                     },
@@ -2178,8 +2565,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 1.0
+                          },
+                          "branch_length_time": {
+                            "value": 2.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -2193,7 +2589,7 @@
                           "date_bp": {
                             "value": "-67"
                           },
-                          "div": 20.287521736544676,
+                          "div": 72.91068198275231,
                           "host_human": {
                             "value": "Non-Human"
                           },
@@ -2216,11 +2612,11 @@
                           "province_lon": {
                             "value": 95.95211573241954
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 5.874602208739838e-08
                           },
-                          "rate_subs_beast": {
-                            "value": 0.2484426845177723
+                          "rate_sub_year": {
+                            "value": 0.0
                           },
                           "strain": {
                             "value": "CMCC03001"
@@ -2231,8 +2627,11 @@
                         "branch_attrs": {
                           "labels": {
                             "Biovar": "NA",
-                            "Branch Length": 2.518089286854959,
+                            "Branch Length": 3.8306381434927994,
+                            "Branch Length Sub": 1.0,
+                            "Branch Length Time": 4.0,
                             "Branch Major": "NA",
+                            "Branch Support": 51.0,
                             "Country": "NA",
                             "Country Lat": "NA",
                             "Country Lon": "NA",
@@ -2248,8 +2647,8 @@
                             "Province": "NA",
                             "Province Lat": "NA",
                             "Province Lon": "NA",
-                            "Rate Beast": 3.919962569899037e-08,
-                            "Rate Subs Beast": 0.16577905864434878,
+                            "Rate Sub": 3.919962569899037e-08,
+                            "Rate Sub Year": 0.0,
                             "Strain": "NA"
                           }
                         },
@@ -2261,8 +2660,17 @@
                               "biovar": {
                                 "value": "Antiqua"
                               },
+                              "branch_length_sub": {
+                                "value": 3.0
+                              },
+                              "branch_length_time": {
+                                "value": 7.0
+                              },
                               "branch_major": {
                                 "value": "1.IN"
+                              },
+                              "branch_support": {
+                                "value": 100.0
                               },
                               "country": {
                                 "value": "China"
@@ -2276,7 +2684,7 @@
                               "date_bp": {
                                 "value": "-57"
                               },
-                              "div": 30.287521736544676,
+                              "div": 81.25167494546774,
                               "host_human": {
                                 "value": "Non-Human"
                               },
@@ -2299,11 +2707,11 @@
                               "province_lon": {
                                 "value": 95.95211573241954
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 1.1783238784806136e-07
                               },
-                              "rate_subs_beast": {
-                                "value": 0.4983247157834606
+                              "rate_sub_year": {
+                                "value": 0.0
                               },
                               "strain": {
                                 "value": "D1964002"
@@ -2314,8 +2722,11 @@
                             "branch_attrs": {
                               "labels": {
                                 "Biovar": "NA",
-                                "Branch Length": 7.068646459518192,
+                                "Branch Length": 3.7065763602655846,
+                                "Branch Length Sub": 1.0,
+                                "Branch Length Time": 4.0,
                                 "Branch Major": "NA",
+                                "Branch Support": 15.0,
                                 "Country": "NA",
                                 "Country Lat": "NA",
                                 "Country Lon": "NA",
@@ -2331,8 +2742,8 @@
                                 "Province": "NA",
                                 "Province Lat": "NA",
                                 "Province Lon": "NA",
-                                "Rate Beast": 3.8979945800256646e-08,
-                                "Rate Subs Beast": 0.16485001082397377,
+                                "Rate Sub": 3.8979945800256646e-08,
+                                "Rate Sub Year": 0.0,
                                 "Strain": "NA"
                               }
                             },
@@ -2344,8 +2755,17 @@
                                   "biovar": {
                                     "value": "Antiqua"
                                   },
+                                  "branch_length_sub": {
+                                    "value": 13.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 8.0
+                                  },
                                   "branch_major": {
                                     "value": "1.IN"
+                                  },
+                                  "branch_support": {
+                                    "value": 100.0
                                   },
                                   "country": {
                                     "value": "China"
@@ -2359,7 +2779,7 @@
                                   "date_bp": {
                                     "value": "-57"
                                   },
-                                  "div": 30.287521736544676,
+                                  "div": 85.99407330461315,
                                   "host_human": {
                                     "value": "Non-Human"
                                   },
@@ -2382,11 +2802,11 @@
                                   "province_lon": {
                                     "value": 95.95211573241954
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 4.132415260260227e-07
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 1.7476389112336006
+                                  "rate_sub_year": {
+                                    "value": 2.0
                                   },
                                   "strain": {
                                     "value": "D1964001"
@@ -2397,8 +2817,11 @@
                                 "branch_attrs": {
                                   "labels": {
                                     "Biovar": "NA",
-                                    "Branch Length": 2.334463837234928,
+                                    "Branch Length": 4.3947656982389285,
+                                    "Branch Length Sub": 1.0,
+                                    "Branch Length Time": 4.0,
                                     "Branch Major": "NA",
+                                    "Branch Support": 27.0,
                                     "Country": "NA",
                                     "Country Lat": "NA",
                                     "Country Lon": "NA",
@@ -2414,8 +2837,8 @@
                                     "Province": "NA",
                                     "Province Lat": "NA",
                                     "Province Lon": "NA",
-                                    "Rate Beast": 3.833811216806064e-08,
-                                    "Rate Subs Beast": 0.16213563349372093,
+                                    "Rate Sub": 3.833811216806064e-08,
+                                    "Rate Sub Year": 0.0,
                                     "Strain": "NA"
                                   }
                                 },
@@ -2427,8 +2850,17 @@
                                       "biovar": {
                                         "value": "Antiqua"
                                       },
+                                      "branch_length_sub": {
+                                        "value": 3.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 24.0
+                                      },
                                       "branch_major": {
                                         "value": "1.IN"
+                                      },
+                                      "branch_support": {
+                                        "value": 100.0
                                       },
                                       "country": {
                                         "value": "China"
@@ -2442,7 +2874,7 @@
                                       "date_bp": {
                                         "value": "-39"
                                       },
-                                      "div": 48.287521736544676,
+                                      "div": 106.87891507474578,
                                       "host_human": {
                                         "value": "Human"
                                       },
@@ -2465,11 +2897,11 @@
                                       "province_lon": {
                                         "value": 101.9999999
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 3.1930966527614506e-08
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 0.13503918668000145
+                                      "rate_sub_year": {
+                                        "value": 0.0
                                       },
                                       "strain": {
                                         "value": "D1982001"
@@ -2483,8 +2915,17 @@
                                       "biovar": {
                                         "value": "Antiqua"
                                       },
+                                      "branch_length_sub": {
+                                        "value": 3.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 7.0
+                                      },
                                       "branch_major": {
                                         "value": "1.IN"
+                                      },
+                                      "branch_support": {
+                                        "value": 100.0
                                       },
                                       "country": {
                                         "value": "China"
@@ -2498,7 +2939,7 @@
                                       "date_bp": {
                                         "value": "-56"
                                       },
-                                      "div": 31.287521736544676,
+                                      "div": 89.98476509353728,
                                       "host_human": {
                                         "value": "Non-Human"
                                       },
@@ -2521,11 +2962,11 @@
                                       "province_lon": {
                                         "value": 95.95211573241954
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 1.027853037295072e-07
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 0.4346891224318514
+                                      "rate_sub_year": {
+                                        "value": 0.0
                                       },
                                       "strain": {
                                         "value": "CMCC02041"
@@ -2535,7 +2976,16 @@
                                 ],
                                 "name": "NODE22",
                                 "node_attrs": {
-                                  "div": 30.362958246013,
+                                  "branch_length_sub": {
+                                    "value": 1.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 4.0
+                                  },
+                                  "branch_support": {
+                                    "value": 27.0
+                                  },
+                                  "div": 82.80658917618604,
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -2546,18 +2996,27 @@
                                     ],
                                     "value": 1960.3218614460363
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 3.833811216806064e-08
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 0.16213563349372093
+                                  "rate_sub_year": {
+                                    "value": 0.0
                                   }
                                 }
                               }
                             ],
                             "name": "NODE21",
                             "node_attrs": {
-                              "div": 28.028494408778073,
+                              "branch_length_sub": {
+                                "value": 1.0
+                              },
+                              "branch_length_time": {
+                                "value": 4.0
+                              },
+                              "branch_support": {
+                                "value": 15.0
+                              },
+                              "div": 78.41182347794711,
                               "node_type": {
                                 "value": "internal"
                               },
@@ -2568,18 +3027,27 @@
                                 ],
                                 "value": 1957.394255685931
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 3.8979945800256646e-08
                               },
-                              "rate_subs_beast": {
-                                "value": 0.16485001082397377
+                              "rate_sub_year": {
+                                "value": 0.0
                               }
                             }
                           }
                         ],
                         "name": "NODE20",
                         "node_attrs": {
-                          "div": 20.95984794925988,
+                          "branch_length_sub": {
+                            "value": 1.0
+                          },
+                          "branch_length_time": {
+                            "value": 4.0
+                          },
+                          "branch_support": {
+                            "value": 51.0
+                          },
+                          "div": 74.70524711768152,
                           "node_type": {
                             "value": "internal"
                           },
@@ -2590,18 +3058,27 @@
                             ],
                             "value": 1955.4481011276469
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 3.919962569899037e-08
                           },
-                          "rate_subs_beast": {
-                            "value": 0.16577905864434878
+                          "rate_sub_year": {
+                            "value": 0.0
                           }
                         }
                       }
                     ],
                     "name": "NODE19",
                     "node_attrs": {
-                      "div": 18.441758662404922,
+                      "branch_length_sub": {
+                        "value": 2.0
+                      },
+                      "branch_length_time": {
+                        "value": 6.0
+                      },
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "div": 70.87460897418872,
                       "node_type": {
                         "value": "internal"
                       },
@@ -2612,18 +3089,27 @@
                         ],
                         "value": 1950.5069972603676
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 9.749484953755401e-08
                       },
-                      "rate_subs_beast": {
-                        "value": 0.41231527318957056
+                      "rate_sub_year": {
+                        "value": 0.0
                       }
                     }
                   }
                 ],
                 "name": "NODE16",
                 "node_attrs": {
-                  "div": 17.153883839136107,
+                  "branch_length_sub": {
+                    "value": 13.0
+                  },
+                  "branch_length_time": {
+                    "value": 17.0
+                  },
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "div": 65.27717878998426,
                   "node_type": {
                     "value": "internal"
                   },
@@ -2634,18 +3120,27 @@
                     ],
                     "value": 1945.1239366840184
                   },
-                  "rate_beast": {
+                  "rate_sub": {
                     "value": 1.8852658475260927e-07
                   },
-                  "rate_subs_beast": {
-                    "value": 0.7972974025240903
+                  "rate_sub_year": {
+                    "value": 1.0
                   }
                 }
               }
             ],
             "name": "NODE12",
             "node_attrs": {
-              "div": 10.380873586447294,
+              "branch_length_sub": {
+                "value": 10.0
+              },
+              "branch_length_time": {
+                "value": 19.0
+              },
+              "branch_support": {
+                "value": 92.0
+              },
+              "div": 48.631079324162215,
               "node_type": {
                 "value": "internal"
               },
@@ -2656,11 +3151,11 @@
                 ],
                 "value": 1934.0853070346475
               },
-              "rate_beast": {
+              "rate_sub": {
                 "value": 1.2415449297106814e-07
               },
-              "rate_subs_beast": {
-                "value": 0.5250615179149584
+              "rate_sub_year": {
+                "value": 1.0
               }
             }
           },
@@ -2668,8 +3163,11 @@
             "branch_attrs": {
               "labels": {
                 "Biovar": "NA",
-                "Branch Length": 5.433782258160804,
+                "Branch Length": 17.123256251543463,
+                "Branch Length Sub": 2.0,
+                "Branch Length Time": 17.0,
                 "Branch Major": "NA",
+                "Branch Support": 41.0,
                 "Country": "NA",
                 "Country Lat": "NA",
                 "Country Lon": "NA",
@@ -2685,8 +3183,8 @@
                 "Province": "NA",
                 "Province Lat": "NA",
                 "Province Lon": "NA",
-                "Rate Beast": 2.127399608600392e-08,
-                "Rate Subs Beast": 0.08996981429932702,
+                "Rate Sub": 2.127399608600392e-08,
+                "Rate Sub Year": 0.0,
                 "Strain": "NA"
               }
             },
@@ -2695,8 +3193,11 @@
                 "branch_attrs": {
                   "labels": {
                     "Biovar": "NA",
-                    "Branch Length": 11.588880135350891,
+                    "Branch Length": 14.916699556652503,
+                    "Branch Length Sub": 5.0,
+                    "Branch Length Time": 15.0,
                     "Branch Major": "NA",
+                    "Branch Support": 99.0,
                     "Country": "NA",
                     "Country Lat": "NA",
                     "Country Lon": "NA",
@@ -2712,8 +3213,8 @@
                     "Province": "NA",
                     "Province Lat": "NA",
                     "Province Lon": "NA",
-                    "Rate Beast": 7.834872251356157e-08,
-                    "Rate Subs Beast": 0.3313444256846582,
+                    "Rate Sub": 7.834872251356157e-08,
+                    "Rate Sub Year": 0.0,
                     "Strain": "NA"
                   }
                 },
@@ -2725,8 +3226,17 @@
                       "biovar": {
                         "value": "Antiqua"
                       },
+                      "branch_length_sub": {
+                        "value": 12.0
+                      },
+                      "branch_length_time": {
+                        "value": 9.0
+                      },
                       "branch_major": {
                         "value": "1.IN"
+                      },
+                      "branch_support": {
+                        "value": 100.0
                       },
                       "country": {
                         "value": "China"
@@ -2740,7 +3250,7 @@
                       "date_bp": {
                         "value": "-67"
                       },
-                      "div": 20.287521736544676,
+                      "div": 71.21358965439194,
                       "host_human": {
                         "value": "Non-Human"
                       },
@@ -2763,11 +3273,11 @@
                       "province_lon": {
                         "value": 95.95211573241954
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 3.154124871405166e-07
                       },
-                      "rate_subs_beast": {
-                        "value": 1.3339103185409844
+                      "rate_sub_year": {
+                        "value": 1.0
                       },
                       "strain": {
                         "value": "CMCC11001"
@@ -2778,8 +3288,11 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
-                        "Branch Length": 5.732885145683632,
+                        "Branch Length": 18.65626045715884,
+                        "Branch Length Sub": 1.0,
+                        "Branch Length Time": 19.0,
                         "Branch Major": "NA",
+                        "Branch Support": 82.0,
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
@@ -2795,8 +3308,8 @@
                         "Province": "NA",
                         "Province Lat": "NA",
                         "Province Lon": "NA",
-                        "Rate Beast": 1.6059307901559492e-08,
-                        "Rate Subs Beast": 0.06791638692786944,
+                        "Rate Sub": 1.6059307901559492e-08,
+                        "Rate Sub Year": 0.0,
                         "Strain": "NA"
                       }
                     },
@@ -2808,8 +3321,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 18.0
+                          },
+                          "branch_length_time": {
+                            "value": 18.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -2823,7 +3345,7 @@
                           "date_bp": {
                             "value": "-43"
                           },
-                          "div": 44.287521736544676,
+                          "div": 98.95149064915361,
                           "host_human": {
                             "value": "Non-Human"
                           },
@@ -2846,11 +3368,11 @@
                           "province_lon": {
                             "value": 95.95211573241954
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 2.3402955700835176e-07
                           },
-                          "rate_subs_beast": {
-                            "value": 0.9897339314849064
+                          "rate_sub_year": {
+                            "value": 1.0
                           },
                           "strain": {
                             "value": "780441"
@@ -2864,8 +3386,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 17.0
+                          },
+                          "branch_length_time": {
+                            "value": 25.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -2879,7 +3410,7 @@
                           "date_bp": {
                             "value": "-36"
                           },
-                          "div": 51.287521736544676,
+                          "div": 105.89271313687999,
                           "host_human": {
                             "value": "Non-Human"
                           },
@@ -2902,11 +3433,11 @@
                           "province_lon": {
                             "value": 85.4633464
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 1.5901656072925965e-07
                           },
-                          "rate_subs_beast": {
-                            "value": 0.6724966189469905
+                          "rate_sub_year": {
+                            "value": 1.0
                           },
                           "strain": {
                             "value": "K21985002"
@@ -2916,7 +3447,16 @@
                     ],
                     "name": "NODE25",
                     "node_attrs": {
-                      "div": 25.264433085613568,
+                      "branch_length_sub": {
+                        "value": 1.0
+                      },
+                      "branch_length_time": {
+                        "value": 19.0
+                      },
+                      "branch_support": {
+                        "value": 82.0
+                      },
+                      "div": 80.61105562740872,
                       "node_type": {
                         "value": "internal"
                       },
@@ -2927,18 +3467,27 @@
                         ],
                         "value": 1963.4206711299312
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 1.6059307901559492e-08
                       },
-                      "rate_subs_beast": {
-                        "value": 0.06791638692786944
+                      "rate_sub_year": {
+                        "value": 0.0
                       }
                     }
                   }
                 ],
                 "name": "NODE24",
                 "node_attrs": {
-                  "div": 19.531547939929936,
+                  "branch_length_sub": {
+                    "value": 5.0
+                  },
+                  "branch_length_time": {
+                    "value": 15.0
+                  },
+                  "branch_support": {
+                    "value": 99.0
+                  },
+                  "div": 61.954795170249874,
                   "node_type": {
                     "value": "internal"
                   },
@@ -2949,11 +3498,11 @@
                     ],
                     "value": 1944.4103098545559
                   },
-                  "rate_beast": {
+                  "rate_sub": {
                     "value": 7.834872251356157e-08
                   },
-                  "rate_subs_beast": {
-                    "value": 0.3313444256846582
+                  "rate_sub_year": {
+                    "value": 0.0
                   }
                 }
               },
@@ -2961,8 +3510,11 @@
                 "branch_attrs": {
                   "labels": {
                     "Biovar": "NA",
-                    "Branch Length": 5.320306090959633,
+                    "Branch Length": 18.96802959838811,
+                    "Branch Length Sub": 1.0,
+                    "Branch Length Time": 19.0,
                     "Branch Major": "NA",
+                    "Branch Support": 44.0,
                     "Country": "NA",
                     "Country Lat": "NA",
                     "Country Lon": "NA",
@@ -2978,8 +3530,8 @@
                     "Province": "NA",
                     "Province Lat": "NA",
                     "Province Lon": "NA",
-                    "Rate Beast": 1.643626278752091e-08,
-                    "Rate Subs Beast": 0.06951056608217909,
+                    "Rate Sub": 1.643626278752091e-08,
+                    "Rate Sub Year": 0.0,
                     "Strain": "NA"
                   }
                 },
@@ -2988,8 +3540,11 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
-                        "Branch Length": 8.796163484759276,
+                        "Branch Length": 12.873502041665233,
+                        "Branch Length Sub": 3.0,
+                        "Branch Length Time": 13.0,
                         "Branch Major": "NA",
+                        "Branch Support": 100.0,
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
@@ -3005,8 +3560,8 @@
                         "Province": "NA",
                         "Province Lat": "NA",
                         "Province Lon": "NA",
-                        "Rate Beast": 5.68041041697645e-08,
-                        "Rate Subs Beast": 0.2402301233361427,
+                        "Rate Sub": 5.68041041697645e-08,
+                        "Rate Sub Year": 0.0,
                         "Strain": "NA"
                       }
                     },
@@ -3018,8 +3573,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 9.0
+                          },
+                          "branch_length_time": {
+                            "value": 9.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -3033,7 +3597,7 @@
                           "date_bp": {
                             "value": "-57"
                           },
-                          "div": 30.287521736544676,
+                          "div": 88.1510789356716,
                           "host_human": {
                             "value": "Human"
                           },
@@ -3056,11 +3620,11 @@
                           "province_lon": {
                             "value": 95.95211573241954
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 2.217293885820518e-07
                           },
-                          "rate_subs_beast": {
-                            "value": 0.9377153137935782
+                          "rate_sub_year": {
+                            "value": 1.0
                           },
                           "strain": {
                             "value": "CMCC640047"
@@ -3074,8 +3638,17 @@
                           "biovar": {
                             "value": "Antiqua"
                           },
+                          "branch_length_sub": {
+                            "value": 16.0
+                          },
+                          "branch_length_time": {
+                            "value": 20.0
+                          },
                           "branch_major": {
                             "value": "1.IN"
+                          },
+                          "branch_support": {
+                            "value": 100.0
                           },
                           "country": {
                             "value": "China"
@@ -3089,7 +3662,7 @@
                           "date_bp": {
                             "value": "-46"
                           },
-                          "div": 41.287521736544676,
+                          "div": 99.26757015712141,
                           "host_human": {
                             "value": "Non-Human"
                           },
@@ -3112,11 +3685,11 @@
                           "province_lon": {
                             "value": 95.95211573241954
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 1.8968978257886317e-07
                           },
-                          "rate_subs_beast": {
-                            "value": 0.802216680124705
+                          "rate_sub_year": {
+                            "value": 1.0
                           },
                           "strain": {
                             "value": "C1975003"
@@ -3126,7 +3699,16 @@
                     ],
                     "name": "NODE27",
                     "node_attrs": {
-                      "div": 22.059137380297955,
+                      "branch_length_sub": {
+                        "value": 3.0
+                      },
+                      "branch_length_time": {
+                        "value": 13.0
+                      },
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "div": 78.87962725365071,
                       "node_type": {
                         "value": "internal"
                       },
@@ -3137,11 +3719,11 @@
                         ],
                         "value": 1955.0591503119142
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 5.68041041697645e-08
                       },
-                      "rate_subs_beast": {
-                        "value": 0.2402301233361427
+                      "rate_sub_year": {
+                        "value": 0.0
                       }
                     }
                   },
@@ -3149,8 +3731,11 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
-                        "Branch Length": 21.866143795098296,
+                        "Branch Length": 16.026023849056088,
+                        "Branch Length Sub": 1.0,
+                        "Branch Length Time": 16.0,
                         "Branch Major": "NA",
+                        "Branch Support": 40.0,
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
@@ -3166,8 +3751,8 @@
                         "Province": "NA",
                         "Province Lat": "NA",
                         "Province Lon": "NA",
-                        "Rate Beast": 2.1948087562071748e-08,
-                        "Rate Subs Beast": 0.0928206132125825,
+                        "Rate Sub": 2.1948087562071748e-08,
+                        "Rate Sub Year": 0.0,
                         "Strain": "NA"
                       }
                     },
@@ -3176,8 +3761,11 @@
                         "branch_attrs": {
                           "labels": {
                             "Biovar": "NA",
-                            "Branch Length": 3.2979005836085307,
+                            "Branch Length": 23.08553377711102,
+                            "Branch Length Sub": 12.0,
+                            "Branch Length Time": 23.0,
                             "Branch Major": "NA",
+                            "Branch Support": 100.0,
                             "Country": "NA",
                             "Country Lat": "NA",
                             "Country Lon": "NA",
@@ -3193,8 +3781,8 @@
                             "Province": "NA",
                             "Province Lat": "NA",
                             "Province Lon": "NA",
-                            "Rate Beast": 1.2295743273987125e-07,
-                            "Rate Subs Beast": 0.519999032885324,
+                            "Rate Sub": 1.2295743273987125e-07,
+                            "Rate Sub Year": 1.0,
                             "Strain": "NA"
                           }
                         },
@@ -3206,8 +3794,17 @@
                               "biovar": {
                                 "value": "Antiqua"
                               },
+                              "branch_length_sub": {
+                                "value": 9.0
+                              },
+                              "branch_length_time": {
+                                "value": 6.0
+                              },
                               "branch_major": {
                                 "value": "1.IN"
+                              },
+                              "branch_support": {
+                                "value": 100.0
                               },
                               "country": {
                                 "value": "China"
@@ -3221,7 +3818,7 @@
                               "date_bp": {
                                 "value": "-45"
                               },
-                              "div": 42.287521736544676,
+                              "div": 111.00328803034584,
                               "host_human": {
                                 "value": "Non-Human"
                               },
@@ -3244,11 +3841,11 @@
                               "province_lon": {
                                 "value": 90.8749807
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 3.4441213260298243e-07
                               },
-                              "rate_subs_beast": {
-                                "value": 1.4565526611670079
+                              "rate_sub_year": {
+                                "value": 1.0
                               },
                               "strain": {
                                 "value": "Z176003"
@@ -3259,8 +3856,11 @@
                             "branch_attrs": {
                               "labels": {
                                 "Biovar": "NA",
-                                "Branch Length": 3.300803393188417,
+                                "Branch Length": 4.494797904133911,
+                                "Branch Length Sub": 1.0,
+                                "Branch Length Time": 4.0,
                                 "Branch Major": "NA",
+                                "Branch Support": 40.0,
                                 "Country": "NA",
                                 "Country Lat": "NA",
                                 "Country Lon": "NA",
@@ -3276,8 +3876,8 @@
                                 "Province": "NA",
                                 "Province Lat": "NA",
                                 "Province Lon": "NA",
-                                "Rate Beast": 4.721989065846135e-08,
-                                "Rate Subs Beast": 0.19969754514391758,
+                                "Rate Sub": 4.721989065846135e-08,
+                                "Rate Sub Year": 0.0,
                                 "Strain": "NA"
                               }
                             },
@@ -3289,8 +3889,17 @@
                                   "biovar": {
                                     "value": "Antiqua"
                                   },
+                                  "branch_length_sub": {
+                                    "value": 2.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 5.0
+                                  },
                                   "branch_major": {
                                     "value": "1.IN"
+                                  },
+                                  "branch_support": {
+                                    "value": 100.0
                                   },
                                   "country": {
                                     "value": "China"
@@ -3304,7 +3913,7 @@
                                   "date_bp": {
                                     "value": "-45"
                                   },
-                                  "div": 42.287521736544676,
+                                  "div": 114.1991642745332,
                                   "host_human": {
                                     "value": "Non-Human"
                                   },
@@ -3327,11 +3936,11 @@
                                   "province_lon": {
                                     "value": 90.8749807
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 9.522805661447322e-08
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 0.4027287837721555
+                                  "rate_sub_year": {
+                                    "value": 0.0
                                   },
                                   "strain": {
                                     "value": "30017"
@@ -3342,8 +3951,11 @@
                                 "branch_attrs": {
                                   "labels": {
                                     "Biovar": "NA",
-                                    "Branch Length": 11.008552774776096,
+                                    "Branch Length": 9.722884831815753,
+                                    "Branch Length Sub": 1.0,
+                                    "Branch Length Time": 10.0,
                                     "Branch Major": "NA",
+                                    "Branch Support": 68.0,
                                     "Country": "NA",
                                     "Country Lat": "NA",
                                     "Country Lon": "NA",
@@ -3359,8 +3971,8 @@
                                     "Province": "NA",
                                     "Province Lat": "NA",
                                     "Province Lon": "NA",
-                                    "Rate Beast": 2.0075148162022468e-08,
-                                    "Rate Subs Beast": 0.08489976894171289,
+                                    "Rate Sub": 2.0075148162022468e-08,
+                                    "Rate Sub Year": 0.0,
                                     "Strain": "NA"
                                   }
                                 },
@@ -3372,8 +3984,17 @@
                                       "biovar": {
                                         "value": "Antiqua"
                                       },
+                                      "branch_length_sub": {
+                                        "value": 13.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 11.0
+                                      },
                                       "branch_major": {
                                         "value": "1.IN"
+                                      },
+                                      "branch_support": {
+                                        "value": 100.0
                                       },
                                       "country": {
                                         "value": "China"
@@ -3387,7 +4008,7 @@
                                       "date_bp": {
                                         "value": "-31"
                                       },
-                                      "div": 56.287521736544676,
+                                      "div": 130.19324285050962,
                                       "host_human": {
                                         "value": "Non-Human"
                                       },
@@ -3410,11 +4031,11 @@
                                       "province_lon": {
                                         "value": 90.8749807
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 2.858667317691941e-07
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 1.2089584235916353
+                                      "rate_sub_year": {
+                                        "value": 1.0
                                       },
                                       "strain": {
                                         "value": "CMCC31004"
@@ -3425,8 +4046,11 @@
                                     "branch_attrs": {
                                       "labels": {
                                         "Biovar": "NA",
-                                        "Branch Length": 5.831127240269739,
+                                        "Branch Length": 11.488342587061503,
+                                        "Branch Length Sub": 1.0,
+                                        "Branch Length Time": 11.0,
                                         "Branch Major": "NA",
+                                        "Branch Support": 73.0,
                                         "Country": "NA",
                                         "Country Lat": "NA",
                                         "Country Lon": "NA",
@@ -3442,8 +4066,8 @@
                                         "Province": "NA",
                                         "Province Lat": "NA",
                                         "Province Lon": "NA",
-                                        "Rate Beast": 2.0691200998661712e-08,
-                                        "Rate Subs Beast": 0.08750511676103825,
+                                        "Rate Sub": 2.0691200998661712e-08,
+                                        "Rate Sub Year": 0.0,
                                         "Strain": "NA"
                                       }
                                     },
@@ -3455,8 +4079,17 @@
                                           "biovar": {
                                             "value": "Orientalis"
                                           },
+                                          "branch_length_sub": {
+                                            "value": 1.0
+                                          },
+                                          "branch_length_time": {
+                                            "value": 7.0
+                                          },
                                           "branch_major": {
                                             "value": "1.IN"
+                                          },
+                                          "branch_support": {
+                                            "value": 100.0
                                           },
                                           "country": {
                                             "value": "China"
@@ -3470,7 +4103,7 @@
                                           "date_bp": {
                                             "value": "-27"
                                           },
-                                          "div": 60.287521736544676,
+                                          "div": 137.82080140568436,
                                           "host_human": {
                                             "value": "Human"
                                           },
@@ -3493,11 +4126,11 @@
                                           "province_lon": {
                                             "value": 90.8749807
                                           },
-                                          "rate_beast": {
+                                          "rate_sub": {
                                             "value": 3.1649324780841635e-08
                                           },
-                                          "rate_subs_beast": {
-                                            "value": 0.1338480961320078
+                                          "rate_sub_year": {
+                                            "value": 0.0
                                           },
                                           "strain": {
                                             "value": "S19940051"
@@ -3511,8 +4144,17 @@
                                           "biovar": {
                                             "value": "Orientalis"
                                           },
+                                          "branch_length_sub": {
+                                            "value": 1.0
+                                          },
+                                          "branch_length_time": {
+                                            "value": 21.0
+                                          },
                                           "branch_major": {
                                             "value": "1.IN"
+                                          },
+                                          "branch_support": {
+                                            "value": 100.0
                                           },
                                           "country": {
                                             "value": "China"
@@ -3526,7 +4168,7 @@
                                           "date_bp": {
                                             "value": "-13"
                                           },
-                                          "div": 74.28752173654468,
+                                          "div": 151.90919177440284,
                                           "host_human": {
                                             "value": "Non-Human"
                                           },
@@ -3535,8 +4177,8 @@
                                           },
                                           "num_date": {
                                             "confidence": [
-                                              0,
-                                              0
+                                              2008.0,
+                                              2008.0
                                             ],
                                             "value": 2008.0
                                           },
@@ -3549,11 +4191,11 @@
                                           "province_lon": {
                                             "value": 90.8749807
                                           },
-                                          "rate_beast": {
+                                          "rate_sub": {
                                             "value": 9.252434825688147e-09
                                           },
-                                          "rate_subs_beast": {
-                                            "value": 0.039129453616448095
+                                          "rate_sub_year": {
+                                            "value": 0.0
                                           },
                                           "strain": {
                                             "value": "S20080153"
@@ -3563,7 +4205,16 @@
                                     ],
                                     "name": "NODE32",
                                     "node_attrs": {
-                                      "div": 58.56750168247976,
+                                      "branch_length_sub": {
+                                        "value": 1.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 11.0
+                                      },
+                                      "branch_support": {
+                                        "value": 73.0
+                                      },
+                                      "div": 130.82370816116375,
                                       "node_type": {
                                         "value": "internal"
                                       },
@@ -3574,18 +4225,27 @@
                                         ],
                                         "value": 1989.4921036349726
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 2.0691200998661712e-08
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 0.08750511676103825
+                                      "rate_sub_year": {
+                                        "value": 0.0
                                       }
                                     }
                                   }
                                 ],
                                 "name": "NODE31",
                                 "node_attrs": {
-                                  "div": 52.73637444221002,
+                                  "branch_length_sub": {
+                                    "value": 1.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 10.0
+                                  },
+                                  "branch_support": {
+                                    "value": 68.0
+                                  },
+                                  "div": 119.33536557410224,
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -3596,18 +4256,27 @@
                                     ],
                                     "value": 1980.9602384389207
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 2.0075148162022468e-08
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 0.08489976894171289
+                                  "rate_sub_year": {
+                                    "value": 0.0
                                   }
                                 }
                               }
                             ],
                             "name": "NODE30",
                             "node_attrs": {
-                              "div": 41.72782166743392,
+                              "branch_length_sub": {
+                                "value": 1.0
+                              },
+                              "branch_length_time": {
+                                "value": 4.0
+                              },
+                              "branch_support": {
+                                "value": 40.0
+                              },
+                              "div": 109.6124807422865,
                               "node_type": {
                                 "value": "internal"
                               },
@@ -3618,18 +4287,27 @@
                                 ],
                                 "value": 1972.1655460223258
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 4.721989065846135e-08
                               },
-                              "rate_subs_beast": {
-                                "value": 0.19969754514391758
+                              "rate_sub_year": {
+                                "value": 0.0
                               }
                             }
                           }
                         ],
                         "name": "NODE29",
                         "node_attrs": {
-                          "div": 38.427018274245505,
+                          "branch_length_sub": {
+                            "value": 12.0
+                          },
+                          "branch_length_time": {
+                            "value": 23.0
+                          },
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "div": 105.11768283815259,
                           "node_type": {
                             "value": "internal"
                           },
@@ -3640,11 +4318,11 @@
                             ],
                             "value": 1967.779184150859
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 1.2295743273987125e-07
                           },
-                          "rate_subs_beast": {
-                            "value": 0.519999032885324
+                          "rate_sub_year": {
+                            "value": 1.0
                           }
                         }
                       },
@@ -3652,8 +4330,11 @@
                         "branch_attrs": {
                           "labels": {
                             "Biovar": "NA",
-                            "Branch Length": 8.520716803950737,
+                            "Branch Length": 26.873601164120103,
+                            "Branch Length Sub": 6.0,
+                            "Branch Length Time": 27.0,
                             "Branch Major": "NA",
+                            "Branch Support": 100.0,
                             "Country": "NA",
                             "Country Lat": "NA",
                             "Country Lon": "NA",
@@ -3669,8 +4350,8 @@
                             "Province": "NA",
                             "Province Lat": "NA",
                             "Province Lon": "NA",
-                            "Rate Beast": 5.422988325131873e-08,
-                            "Rate Subs Beast": 0.22934349079838554,
+                            "Rate Sub": 5.422988325131873e-08,
+                            "Rate Sub Year": 0.0,
                             "Strain": "NA"
                           }
                         },
@@ -3682,8 +4363,17 @@
                               "biovar": {
                                 "value": "Orientalis"
                               },
+                              "branch_length_sub": {
+                                "value": 6.0
+                              },
+                              "branch_length_time": {
+                                "value": 34.0
+                              },
                               "branch_major": {
                                 "value": "1.IN"
+                              },
+                              "branch_support": {
+                                "value": 100.0
                               },
                               "country": {
                                 "value": "China"
@@ -3697,7 +4387,7 @@
                               "date_bp": {
                                 "value": "-14"
                               },
-                              "div": 73.28752173654468,
+                              "div": 143.13153224006697,
                               "host_human": {
                                 "value": "Non-Human"
                               },
@@ -3720,11 +4410,11 @@
                               "province_lon": {
                                 "value": 90.8749807
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 4.336365604818812e-08
                               },
-                              "rate_subs_beast": {
-                                "value": 0.18338915106608028
+                              "rate_sub_year": {
+                                "value": 0.0
                               },
                               "strain": {
                                 "value": "S20070086"
@@ -3735,8 +4425,11 @@
                             "branch_attrs": {
                               "labels": {
                                 "Biovar": "NA",
-                                "Branch Length": 3.2065241051319973,
+                                "Branch Length": 8.759183314246785,
+                                "Branch Length Sub": 9.0,
+                                "Branch Length Time": 9.0,
                                 "Branch Major": "NA",
+                                "Branch Support": 100.0,
                                 "Country": "NA",
                                 "Country Lat": "NA",
                                 "Country Lon": "NA",
@@ -3752,8 +4445,8 @@
                                 "Province": "NA",
                                 "Province Lat": "NA",
                                 "Province Lon": "NA",
-                                "Rate Beast": 2.454977673704429e-07,
-                                "Rate Subs Beast": 1.0382341169908054,
+                                "Rate Sub": 2.454977673704429e-07,
+                                "Rate Sub Year": 1.0,
                                 "Strain": "NA"
                               }
                             },
@@ -3765,8 +4458,17 @@
                                   "biovar": {
                                     "value": "Antiqua"
                                   },
+                                  "branch_length_sub": {
+                                    "value": 6.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 7.0
+                                  },
                                   "branch_major": {
                                     "value": "1.IN"
+                                  },
+                                  "branch_support": {
+                                    "value": 100.0
                                   },
                                   "country": {
                                     "value": "China"
@@ -3780,7 +4482,7 @@
                                   "date_bp": {
                                     "value": "-32"
                                   },
-                                  "div": 55.287521736544676,
+                                  "div": 125.1435210839943,
                                   "host_human": {
                                     "value": "Human"
                                   },
@@ -3803,11 +4505,11 @@
                                   "province_lon": {
                                     "value": 95.95211573241954
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 1.8634607901803753e-07
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 0.7880758300830245
+                                  "rate_sub_year": {
+                                    "value": 1.0
                                   },
                                   "strain": {
                                     "value": "C1989001"
@@ -3818,8 +4520,11 @@
                                 "branch_attrs": {
                                   "labels": {
                                     "Biovar": "NA",
-                                    "Branch Length": 9.000596259469429,
+                                    "Branch Length": 5.693744771843105,
+                                    "Branch Length Sub": 3.0,
+                                    "Branch Length Time": 6.0,
                                     "Branch Major": "NA",
+                                    "Branch Support": 100.0,
                                     "Country": "NA",
                                     "Country Lat": "NA",
                                     "Country Lon": "NA",
@@ -3835,8 +4540,8 @@
                                     "Province": "NA",
                                     "Province Lat": "NA",
                                     "Province Lon": "NA",
-                                    "Rate Beast": 1.3600540742801983e-07,
-                                    "Rate Subs Beast": 0.5751801965430238,
+                                    "Rate Sub": 1.3600540742801983e-07,
+                                    "Rate Sub Year": 1.0,
                                     "Strain": "NA"
                                   }
                                 },
@@ -3848,8 +4553,17 @@
                                       "biovar": {
                                         "value": "Orientalis"
                                       },
+                                      "branch_length_sub": {
+                                        "value": 2.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 12.0
+                                      },
                                       "branch_major": {
                                         "value": "1.IN"
+                                      },
+                                      "branch_support": {
+                                        "value": 100.0
                                       },
                                       "country": {
                                         "value": "China"
@@ -3863,7 +4577,7 @@
                                       "date_bp": {
                                         "value": "-22"
                                       },
-                                      "div": 65.28752173654468,
+                                      "div": 135.14325172677886,
                                       "host_human": {
                                         "value": "Non-Human"
                                       },
@@ -3886,11 +4600,11 @@
                                       "province_lon": {
                                         "value": 90.8749807
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 4.5286373187318956e-08
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 0.19152051027374423
+                                      "rate_sub_year": {
+                                        "value": 0.0
                                       },
                                       "strain": {
                                         "value": "S19990068"
@@ -3901,8 +4615,11 @@
                                     "branch_attrs": {
                                       "labels": {
                                         "Biovar": "NA",
-                                        "Branch Length": 1.1791863509123246,
+                                        "Branch Length": 3.492499630461372,
+                                        "Branch Length Sub": 2.0,
+                                        "Branch Length Time": 3.0,
                                         "Branch Major": "NA",
+                                        "Branch Support": 100.0,
                                         "Country": "NA",
                                         "Country Lat": "NA",
                                         "Country Lon": "NA",
@@ -3918,8 +4635,8 @@
                                         "Province": "NA",
                                         "Province Lat": "NA",
                                         "Province Lon": "NA",
-                                        "Rate Beast": 1.0928508342156742e-07,
-                                        "Rate Subs Beast": 0.4621773277279839,
+                                        "Rate Sub": 1.0928508342156742e-07,
+                                        "Rate Sub Year": 0.0,
                                         "Strain": "NA"
                                       }
                                     },
@@ -3931,8 +4648,17 @@
                                           "biovar": {
                                             "value": "Orientalis"
                                           },
+                                          "branch_length_sub": {
+                                            "value": 2.0
+                                          },
+                                          "branch_length_time": {
+                                            "value": 8.0
+                                          },
                                           "branch_major": {
                                             "value": "1.IN"
+                                          },
+                                          "branch_support": {
+                                            "value": 100.0
                                           },
                                           "country": {
                                             "value": "China"
@@ -3946,7 +4672,7 @@
                                           "date_bp": {
                                             "value": "-22"
                                           },
-                                          "div": 65.28752173654468,
+                                          "div": 135.1438703339574,
                                           "host_human": {
                                             "value": "Non-Human"
                                           },
@@ -3969,11 +4695,11 @@
                                           "province_lon": {
                                             "value": 90.8749807
                                           },
-                                          "rate_beast": {
+                                          "rate_sub": {
                                             "value": 6.137969981454249e-08
                                           },
-                                          "rate_subs_beast": {
-                                            "value": 0.259580765726282
+                                          "rate_sub_year": {
+                                            "value": 0.0
                                           },
                                           "strain": {
                                             "value": "S19990078"
@@ -3984,8 +4710,11 @@
                                         "branch_attrs": {
                                           "labels": {
                                             "Biovar": "NA",
-                                            "Branch Length": 1.9217402341270589,
+                                            "Branch Length": 3.903385126939335,
+                                            "Branch Length Sub": 6.0,
+                                            "Branch Length Time": 4.0,
                                             "Branch Major": "NA",
+                                            "Branch Support": 100.0,
                                             "Country": "NA",
                                             "Country Lat": "NA",
                                             "Country Lon": "NA",
@@ -4001,8 +4730,8 @@
                                             "Province": "NA",
                                             "Province Lat": "NA",
                                             "Province Lon": "NA",
-                                            "Rate Beast": 3.756432311872824e-07,
-                                            "Rate Subs Beast": 1.5886320377276735,
+                                            "Rate Sub": 3.756432311872824e-07,
+                                            "Rate Sub Year": 2.0,
                                             "Strain": "NA"
                                           }
                                         },
@@ -4014,8 +4743,17 @@
                                               "biovar": {
                                                 "value": "Orientalis"
                                               },
+                                              "branch_length_sub": {
+                                                "value": 0.0
+                                              },
+                                              "branch_length_time": {
+                                                "value": 4.0
+                                              },
                                               "branch_major": {
                                                 "value": "1.IN"
+                                              },
+                                              "branch_support": {
+                                                "value": 100.0
                                               },
                                               "country": {
                                                 "value": "China"
@@ -4029,7 +4767,7 @@
                                               "date_bp": {
                                                 "value": "-22"
                                               },
-                                              "div": 65.28752173654466,
+                                              "div": 135.14360097674196,
                                               "host_human": {
                                                 "value": "Non-Human"
                                               },
@@ -4052,11 +4790,11 @@
                                               "province_lon": {
                                                 "value": 90.8749807
                                               },
-                                              "rate_beast": {
+                                              "rate_sub": {
                                                 "value": 2.465518622461861e-08
                                               },
-                                              "rate_subs_beast": {
-                                                "value": 0.10426919875216212
+                                              "rate_sub_year": {
+                                                "value": 0.0
                                               },
                                               "strain": {
                                                 "value": "S19990082"
@@ -4070,8 +4808,17 @@
                                               "biovar": {
                                                 "value": "Orientalis"
                                               },
+                                              "branch_length_sub": {
+                                                "value": 0.0
+                                              },
+                                              "branch_length_time": {
+                                                "value": 1.0
+                                              },
                                               "branch_major": {
                                                 "value": "1.IN"
+                                              },
+                                              "branch_support": {
+                                                "value": 100.0
                                               },
                                               "country": {
                                                 "value": "China"
@@ -4085,7 +4832,7 @@
                                               "date_bp": {
                                                 "value": "-25"
                                               },
-                                              "div": 62.28752173654467,
+                                              "div": 132.14360097674196,
                                               "host_human": {
                                                 "value": "Non-Human"
                                               },
@@ -4108,11 +4855,11 @@
                                               "province_lon": {
                                                 "value": 90.8749807
                                               },
-                                              "rate_beast": {
+                                              "rate_sub": {
                                                 "value": 6.832302581415898e-08
                                               },
-                                              "rate_subs_beast": {
-                                                "value": 0.28894477182460815
+                                              "rate_sub_year": {
+                                                "value": 0.0
                                               },
                                               "strain": {
                                                 "value": "S19960067"
@@ -4122,7 +4869,16 @@
                                         ],
                                         "name": "NODE37",
                                         "node_attrs": {
-                                          "div": 58.95788144422851,
+                                          "branch_length_sub": {
+                                            "value": 6.0
+                                          },
+                                          "branch_length_time": {
+                                            "value": 4.0
+                                          },
+                                          "branch_support": {
+                                            "value": 100.0
+                                          },
+                                          "div": 130.75456306865226,
                                           "node_type": {
                                             "value": "internal"
                                           },
@@ -4133,18 +4889,27 @@
                                             ],
                                             "value": 1994.6109620919103
                                           },
-                                          "rate_beast": {
+                                          "rate_sub": {
                                             "value": 3.756432311872824e-07
                                           },
-                                          "rate_subs_beast": {
-                                            "value": 1.5886320377276735
+                                          "rate_sub_year": {
+                                            "value": 2.0
                                           }
                                         }
                                       }
                                     ],
                                     "name": "NODE36",
                                     "node_attrs": {
-                                      "div": 57.036141210101455,
+                                      "branch_length_sub": {
+                                        "value": 2.0
+                                      },
+                                      "branch_length_time": {
+                                        "value": 3.0
+                                      },
+                                      "branch_support": {
+                                        "value": 100.0
+                                      },
+                                      "div": 126.85117794171292,
                                       "node_type": {
                                         "value": "internal"
                                       },
@@ -4155,18 +4920,27 @@
                                         ],
                                         "value": 1990.7075950710434
                                       },
-                                      "rate_beast": {
+                                      "rate_sub": {
                                         "value": 1.0928508342156742e-07
                                       },
-                                      "rate_subs_beast": {
-                                        "value": 0.4621773277279839
+                                      "rate_sub_year": {
+                                        "value": 0.0
                                       }
                                     }
                                   }
                                 ],
                                 "name": "NODE35",
                                 "node_attrs": {
-                                  "div": 55.85695485918913,
+                                  "branch_length_sub": {
+                                    "value": 3.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 6.0
+                                  },
+                                  "branch_support": {
+                                    "value": 100.0
+                                  },
+                                  "div": 123.35867831125155,
                                   "node_type": {
                                     "value": "internal"
                                   },
@@ -4177,18 +4951,27 @@
                                     ],
                                     "value": 1987.2151572272571
                                   },
-                                  "rate_beast": {
+                                  "rate_sub": {
                                     "value": 1.3600540742801983e-07
                                   },
-                                  "rate_subs_beast": {
-                                    "value": 0.5751801965430238
+                                  "rate_sub_year": {
+                                    "value": 1.0
                                   }
                                 }
                               }
                             ],
                             "name": "NODE34",
                             "node_attrs": {
-                              "div": 46.856358599719705,
+                              "branch_length_sub": {
+                                "value": 9.0
+                              },
+                              "branch_length_time": {
+                                "value": 9.0
+                              },
+                              "branch_support": {
+                                "value": 100.0
+                              },
+                              "div": 117.66493353940845,
                               "node_type": {
                                 "value": "internal"
                               },
@@ -4199,18 +4982,27 @@
                                 ],
                                 "value": 1981.521412455414
                               },
-                              "rate_beast": {
+                              "rate_sub": {
                                 "value": 2.454977673704429e-07
                               },
-                              "rate_subs_beast": {
-                                "value": 1.0382341169908054
+                              "rate_sub_year": {
+                                "value": 1.0
                               }
                             }
                           }
                         ],
                         "name": "NODE33",
                         "node_attrs": {
-                          "div": 43.64983449458771,
+                          "branch_length_sub": {
+                            "value": 6.0
+                          },
+                          "branch_length_time": {
+                            "value": 27.0
+                          },
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "div": 108.90575022516167,
                           "node_type": {
                             "value": "internal"
                           },
@@ -4221,18 +5013,27 @@
                             ],
                             "value": 1972.797249724671
                           },
-                          "rate_beast": {
+                          "rate_sub": {
                             "value": 5.422988325131873e-08
                           },
-                          "rate_subs_beast": {
-                            "value": 0.22934349079838554
+                          "rate_sub_year": {
+                            "value": 0.0
                           }
                         }
                       }
                     ],
                     "name": "NODE28",
                     "node_attrs": {
-                      "div": 35.129117690636974,
+                      "branch_length_sub": {
+                        "value": 1.0
+                      },
+                      "branch_length_time": {
+                        "value": 16.0
+                      },
+                      "branch_support": {
+                        "value": 40.0
+                      },
+                      "div": 82.03214906104157,
                       "node_type": {
                         "value": "internal"
                       },
@@ -4243,18 +5044,27 @@
                         ],
                         "value": 1956.1473815148227
                       },
-                      "rate_beast": {
+                      "rate_sub": {
                         "value": 2.1948087562071748e-08
                       },
-                      "rate_subs_beast": {
-                        "value": 0.0928206132125825
+                      "rate_sub_year": {
+                        "value": 0.0
                       }
                     }
                   }
                 ],
                 "name": "NODE26",
                 "node_attrs": {
-                  "div": 13.262973895538678,
+                  "branch_length_sub": {
+                    "value": 1.0
+                  },
+                  "branch_length_time": {
+                    "value": 19.0
+                  },
+                  "branch_support": {
+                    "value": 44.0
+                  },
+                  "div": 66.00612521198548,
                   "node_type": {
                     "value": "internal"
                   },
@@ -4265,18 +5075,27 @@
                     ],
                     "value": 1946.2545667813583
                   },
-                  "rate_beast": {
+                  "rate_sub": {
                     "value": 1.643626278752091e-08
                   },
-                  "rate_subs_beast": {
-                    "value": 0.06951056608217909
+                  "rate_sub_year": {
+                    "value": 0.0
                   }
                 }
               }
             ],
             "name": "NODE23",
             "node_attrs": {
-              "div": 7.942667804579045,
+              "branch_length_sub": {
+                "value": 2.0
+              },
+              "branch_length_time": {
+                "value": 17.0
+              },
+              "branch_support": {
+                "value": 41.0
+              },
+              "div": 47.03809561359737,
               "node_type": {
                 "value": "internal"
               },
@@ -4287,18 +5106,27 @@
                 ],
                 "value": 1931.8388588559917
               },
-              "rate_beast": {
+              "rate_sub": {
                 "value": 2.127399608600392e-08
               },
-              "rate_subs_beast": {
-                "value": 0.08996981429932702
+              "rate_sub_year": {
+                "value": 0.0
               }
             }
           }
         ],
         "name": "NODE11",
         "node_attrs": {
-          "div": 2.5088855464182416,
+          "branch_length_sub": {
+            "value": 6.0
+          },
+          "branch_length_time": {
+            "value": 30.0
+          },
+          "branch_support": {
+            "value": 72.0
+          },
+          "div": 29.914839362053907,
           "node_type": {
             "value": "internal"
           },
@@ -4309,17 +5137,26 @@
             ],
             "value": 1917.7471242297859
           },
-          "rate_beast": {
+          "rate_sub": {
             "value": 4.5050414555183486e-08
           },
-          "rate_subs_beast": {
-            "value": 0.19052261809449736
+          "rate_sub_year": {
+            "value": 0.0
           }
         }
       }
     ],
     "name": "NODE0",
     "node_attrs": {
+      "branch_length_sub": {
+        "value": 0.0
+      },
+      "branch_length_time": {
+        "value": 0.0
+      },
+      "branch_support": {
+        "value": 100.0
+      },
       "div": 0,
       "node_type": {
         "value": "internal"
@@ -4331,10 +5168,10 @@
         ],
         "value": 1824.653130788105
       },
-      "rate_beast": {
+      "rate_sub": {
         "value": 0.0
       },
-      "rate_subs_beast": {
+      "rate_sub_year": {
         "value": 0.0
       }
     }

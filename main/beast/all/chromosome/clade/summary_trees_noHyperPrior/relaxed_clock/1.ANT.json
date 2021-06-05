@@ -8,6 +8,16 @@
         "type": "continuous"
       },
       {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
         "key": "branch_major",
         "scale": [
           [
@@ -17,6 +27,11 @@
         ],
         "title": "Branch Major",
         "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
       },
       {
         "key": "country",
@@ -89,39 +104,18 @@
         "type": "continuous"
       },
       {
-        "key": "rate_beast",
-        "title": "Substitution Rate Subs/Site (BEAST)",
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
-        "key": "rate_subs_beast",
-        "title": "Substitution Rate Subs (BEAST)",
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
         "type": "continuous"
       },
       {
         "key": "strain",
         "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "Host Human",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_subs_beast",
-        "title": "Substitution Rate Subs (BEAST)",
-        "type": "continuous"
-      },
-      {
-        "key": "province",
-        "scale": [
-          [
-            "Nairobi",
-            "#ff9f54"
-          ]
-        ],
-        "title": "Province",
         "type": "categorical"
       },
       {
@@ -130,33 +124,18 @@
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "branch_support",
+        "title": "Branch Support",
         "type": "continuous"
       },
       {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#ff964f"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_beast",
-        "title": "Substitution Rate Subs/Site (BEAST)",
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
         "type": "continuous"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
@@ -165,9 +144,20 @@
         "type": "continuous"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "province_lon",
+        "title": "Province Longitude",
         "type": "continuous"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Nairobi",
+            "#ff9f54"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
       },
       {
         "key": "country",
@@ -189,16 +179,6 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp",
-        "title": "date_bp",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
         "key": "branch_major",
         "scale": [
           [
@@ -208,6 +188,56 @@
         ],
         "title": "Branch Major",
         "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff964f"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "date_bp",
+        "title": "date_bp",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
       }
     ],
     "display_defaults": {
@@ -267,14 +297,17 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-06-04"
+    "updated": "2021-06-05"
   },
   "tree": {
     "branch_attrs": {
       "labels": {
         "Biovar": "NA",
-        "Branch Length": 203.94626239162324,
+        "Branch Length": 191.4174971593692,
+        "Branch Length Sub": 52.0,
+        "Branch Length Time": 191.0,
         "Branch Major": "NA",
+        "Branch Support": 100.0,
         "Country": "NA",
         "Country Lat": "NA",
         "Country Lon": "NA",
@@ -290,8 +323,8 @@
         "Province": "NA",
         "Province Lat": "NA",
         "Province Lon": "NA",
-        "Rate Beast": 6.444323199846839e-08,
-        "Rate Subs Beast": 0.2725367435582587,
+        "Rate Sub": 6.444323199846839e-08,
+        "Rate Sub Year": 0.0,
         "Strain": "NA"
       }
     },
@@ -303,8 +336,17 @@
           "biovar": {
             "value": "Antiqua"
           },
+          "branch_length_sub": {
+            "value": 62.0
+          },
+          "branch_length_time": {
+            "value": 226.0
+          },
           "branch_major": {
             "value": "1.ANT"
+          },
+          "branch_support": {
+            "value": 100.0
           },
           "country": {
             "value": "Kenya"
@@ -318,7 +360,7 @@
           "date_bp": {
             "value": "-36"
           },
-          "div": 236.99177080272398,
+          "div": 226.08977195628,
           "node_type": {
             "value": "terminal"
           },
@@ -338,11 +380,11 @@
           "province_lon": {
             "value": 36.826061224105075
           },
-          "rate_beast": {
+          "rate_sub": {
             "value": 6.444323199846839e-08
           },
-          "rate_subs_beast": {
-            "value": 0.2725367435582587
+          "rate_sub_year": {
+            "value": 0.0
           },
           "strain": {
             "value": "Nairobi"
@@ -353,8 +395,11 @@
         "branch_attrs": {
           "labels": {
             "Biovar": "NA",
-            "Branch Length": 203.94626239162324,
+            "Branch Length": 191.4174971593692,
+            "Branch Length Sub": 52.0,
+            "Branch Length Time": 191.0,
             "Branch Major": "NA",
+            "Branch Support": 100.0,
             "Country": "NA",
             "Country Lat": "NA",
             "Country Lon": "NA",
@@ -370,8 +415,8 @@
             "Province": "NA",
             "Province Lat": "NA",
             "Province Lon": "NA",
-            "Rate Beast": 6.444323199846839e-08,
-            "Rate Subs Beast": 0.2725367435582587,
+            "Rate Sub": 6.444323199846839e-08,
+            "Rate Sub Year": 0.0,
             "Strain": "NA"
           }
         },
@@ -383,8 +428,17 @@
               "biovar": {
                 "value": "Antiqua"
               },
+              "branch_length_sub": {
+                "value": 4.0
+              },
+              "branch_length_time": {
+                "value": 2.0
+              },
               "branch_major": {
                 "value": "1.ANT"
+              },
+              "branch_support": {
+                "value": 100.0
               },
               "country": {
                 "value": "Democratic Republic of the Congo"
@@ -398,7 +452,7 @@
               "date_bp": {
                 "value": "-67"
               },
-              "div": 205.99177080272398,
+              "div": 193.59531042012304,
               "node_type": {
                 "value": "terminal"
               },
@@ -409,11 +463,11 @@
                 ],
                 "value": 1954.0
               },
-              "rate_beast": {
+              "rate_sub": {
                 "value": 4.756260904174731e-07
               },
-              "rate_subs_beast": {
-                "value": 2.0114693477323544
+              "rate_sub_year": {
+                "value": 2.0
               },
               "strain": {
                 "value": "FDAARGOS_601"
@@ -424,8 +478,11 @@
             "branch_attrs": {
               "labels": {
                 "Biovar": "NA",
-                "Branch Length": 0.7797200425570381,
+                "Branch Length": 3.2365086358896122,
+                "Branch Length Sub": 3.0,
+                "Branch Length Time": 3.0,
                 "Branch Major": "NA",
+                "Branch Support": 40.0,
                 "Country": "NA",
                 "Country Lat": "NA",
                 "Country Lon": "NA",
@@ -441,8 +498,8 @@
                 "Province": "NA",
                 "Province Lat": "NA",
                 "Province Lon": "NA",
-                "Rate Beast": 2.51785034076706e-07,
-                "Rate Subs Beast": 1.0648235840437292,
+                "Rate Sub": 2.51785034076706e-07,
+                "Rate Sub Year": 1.0,
                 "Strain": "NA"
               }
             },
@@ -454,8 +511,17 @@
                   "biovar": {
                     "value": "Antiqua"
                   },
+                  "branch_length_sub": {
+                    "value": 6.0
+                  },
+                  "branch_length_time": {
+                    "value": 13.0
+                  },
                   "branch_major": {
                     "value": "1.ANT"
+                  },
+                  "branch_support": {
+                    "value": 100.0
                   },
                   "country": {
                     "value": "Democratic Republic of the Congo"
@@ -469,7 +535,7 @@
                   "date_bp": {
                     "value": "-56"
                   },
-                  "div": 216.99177080272398,
+                  "div": 207.37632872915935,
                   "host_human": {
                     "value": "Human"
                   },
@@ -483,11 +549,11 @@
                     ],
                     "value": 1965.0
                   },
-                  "rate_beast": {
+                  "rate_sub": {
                     "value": 1.1590698501489705e-07
                   },
-                  "rate_subs_beast": {
-                    "value": 0.4901819985125311
+                  "rate_sub_year": {
+                    "value": 0.0
                   },
                   "strain": {
                     "value": "Antiqua"
@@ -501,8 +567,17 @@
                   "biovar": {
                     "value": "Antiqua"
                   },
+                  "branch_length_sub": {
+                    "value": 14.0
+                  },
+                  "branch_length_time": {
+                    "value": 52.0
+                  },
                   "branch_major": {
                     "value": "1.ANT"
+                  },
+                  "branch_support": {
+                    "value": 100.0
                   },
                   "country": {
                     "value": "Uganda"
@@ -516,7 +591,7 @@
                   "date_bp": {
                     "value": "-17"
                   },
-                  "div": 255.99177080272398,
+                  "div": 246.1822071826755,
                   "host_human": {
                     "value": "Human"
                   },
@@ -525,16 +600,16 @@
                   },
                   "num_date": {
                     "confidence": [
-                      0,
-                      0
+                      2004.0,
+                      2004.0
                     ],
                     "value": 2004.0
                   },
-                  "rate_beast": {
+                  "rate_sub": {
                     "value": 6.444323199846839e-08
                   },
-                  "rate_subs_beast": {
-                    "value": 0.2725367435582587
+                  "rate_sub_year": {
+                    "value": 0.0
                   },
                   "strain": {
                     "value": "UG05-0454"
@@ -544,7 +619,16 @@
             ],
             "name": "NODE2",
             "node_attrs": {
-              "div": 204.72598243418028,
+              "branch_length_sub": {
+                "value": 3.0
+              },
+              "branch_length_time": {
+                "value": 3.0
+              },
+              "branch_support": {
+                "value": 40.0
+              },
+              "div": 194.6540057952588,
               "node_type": {
                 "value": "internal"
               },
@@ -555,18 +639,27 @@
                 ],
                 "value": 1954.9690506762945
               },
-              "rate_beast": {
+              "rate_sub": {
                 "value": 2.51785034076706e-07
               },
-              "rate_subs_beast": {
-                "value": 1.0648235840437292
+              "rate_sub_year": {
+                "value": 1.0
               }
             }
           }
         ],
         "name": "NODE1",
         "node_attrs": {
-          "div": 203.94626239162324,
+          "branch_length_sub": {
+            "value": 52.0
+          },
+          "branch_length_time": {
+            "value": 191.0
+          },
+          "branch_support": {
+            "value": 100.0
+          },
+          "div": 191.4174971593692,
           "node_type": {
             "value": "internal"
           },
@@ -577,17 +670,26 @@
             ],
             "value": 1950.32772520309
           },
-          "rate_beast": {
+          "rate_sub": {
             "value": 6.444323199846839e-08
           },
-          "rate_subs_beast": {
-            "value": 0.2725367435582587
+          "rate_sub_year": {
+            "value": 0.0
           }
         }
       }
     ],
     "name": "NODE0",
     "node_attrs": {
+      "branch_length_sub": {
+        "value": 0.0
+      },
+      "branch_length_time": {
+        "value": 0.0
+      },
+      "branch_support": {
+        "value": 100.0
+      },
       "div": 0,
       "node_type": {
         "value": "internal"
@@ -599,10 +701,10 @@
         ],
         "value": 1758.9102280437203
       },
-      "rate_beast": {
+      "rate_sub": {
         "value": 0.0
       },
-      "rate_subs_beast": {
+      "rate_sub_year": {
         "value": 0.0
       }
     }
