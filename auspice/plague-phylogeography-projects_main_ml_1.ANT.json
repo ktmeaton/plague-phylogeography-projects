@@ -135,6 +135,11 @@
         "type": "categorical"
       },
       {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
         "key": "clade_rtt_dist",
         "title": "Clade Root Distance",
         "type": "continuous"
@@ -335,27 +340,23 @@
         "type": "categorical"
       },
       {
-        "key": "country",
-        "scale": [
-          [
-            "Kenya",
-            "#d0e083"
-          ],
-          [
-            "Uganda",
-            "#ddd579"
-          ],
-          [
-            "Democratic Republic of the Congo",
-            "#ebc970"
-          ]
-        ],
-        "title": "Country",
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate (km/sub/site)",
         "type": "continuous"
       },
       {
@@ -374,8 +375,47 @@
         "type": "categorical"
       },
       {
-        "key": "host_human",
-        "title": "Host Human",
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Kenya",
+            "#d0e083"
+          ],
+          [
+            "Uganda",
+            "#ddd579"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#ebc970"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Minor Joint Confidence",
         "type": "categorical"
       },
       {
@@ -394,11 +434,6 @@
         "type": "categorical"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
         "key": "province_joint_conf_category",
         "scale": [
           [
@@ -414,8 +449,43 @@
         "type": "categorical"
       },
       {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Major Joint Confidence",
+        "type": "categorical"
+      },
+      {
         "key": "blank",
         "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
         "type": "categorical"
       },
       {
@@ -430,9 +500,69 @@
         "type": "categorical"
       },
       {
-        "key": "rate_geo_year",
-        "title": "Geographic Rate (km/year)",
+        "key": "host_human",
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
         "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff964f"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
       },
       {
         "key": "province",
@@ -443,27 +573,6 @@
           ]
         ],
         "title": "Province",
-        "type": "categorical"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "1.ANT",
-            "#ff964f"
-          ]
-        ],
-        "title": "Branch Major",
         "type": "categorical"
       },
       {
@@ -482,34 +591,40 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
         "key": "rate_sub",
         "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
-        "key": "strain",
-        "title": "Strain",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Major",
         "type": "categorical"
+      },
+      {
+        "key": "rate_geo_year",
+        "title": "Geographic Rate (km/year)",
+        "type": "continuous"
       },
       {
         "key": "branch_major_conf_category",
@@ -527,126 +642,6 @@
         "type": "categorical"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major_joint_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Branch Major Joint Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate (km/sub/site)",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_minor_joint_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff964f"
-          ]
-        ],
-        "title": "Branch Minor Joint Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#ff964f"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
         "key": "country_conf_category",
         "scale": [
           [
@@ -659,6 +654,21 @@
           ]
         ],
         "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
         "type": "categorical"
       }
     ],
@@ -748,6 +758,7 @@
         "Branch Number": "NA",
         "Branch Support": 100.0,
         "Branch Support Conf Category": "HIGH",
+        "Branch Support Conf Char": "*",
         "Clade Rtt Dist": 2.21269e-05,
         "Continent": "NA",
         "Country": "Uganda",
@@ -812,7 +823,7 @@
             "value": "HIGH"
           },
           "branch_major_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "branch_minor": {
             "confidence": {
@@ -824,16 +835,16 @@
             "value": "HIGH"
           },
           "branch_minor_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "branch_number": {
             "value": "1.0"
           },
           "branch_support": {
-            "value": 100.0
+            "value": 0.0
           },
           "branch_support_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "clade_rtt_dist": {
             "value": 2.58734e-05
@@ -854,7 +865,7 @@
             "value": "Kenya (1985.0) Nairobi"
           },
           "country_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "country_lat": {
             "confidence": {
@@ -904,7 +915,7 @@
             "value": "Kenya (1985.0) Nairobi"
           },
           "province_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "province_lat": {
             "confidence": {
@@ -957,6 +968,7 @@
             "Branch Number": "NA",
             "Branch Support": 100.0,
             "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
             "Clade Rtt Dist": 2.21269e-05,
             "Continent": "NA",
             "Country": "Uganda",
@@ -1021,7 +1033,7 @@
                 "value": "HIGH"
               },
               "branch_major_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "branch_minor": {
                 "confidence": {
@@ -1033,16 +1045,16 @@
                 "value": "HIGH"
               },
               "branch_minor_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "branch_number": {
                 "value": "1.0"
               },
               "branch_support": {
-                "value": 100.0
+                "value": 0.0
               },
               "branch_support_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "clade_rtt_dist": {
                 "value": 2.47181e-05
@@ -1063,7 +1075,7 @@
                 "value": "Uganda (2004.0) UG05-0454"
               },
               "country_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "country_lat": {
                 "confidence": {
@@ -1169,6 +1181,7 @@
                 "Branch Number": "NA",
                 "Branch Support": 78.0,
                 "Branch Support Conf Category": "LOW",
+                "Branch Support Conf Char": "",
                 "Clade Rtt Dist": 2.21505e-05,
                 "Continent": "NA",
                 "Country": "Democratic Republic of the Congo",
@@ -1233,7 +1246,7 @@
                     "value": "HIGH"
                   },
                   "branch_major_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_minor": {
                     "confidence": {
@@ -1245,16 +1258,16 @@
                     "value": "HIGH"
                   },
                   "branch_minor_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_number": {
                     "value": "1.0"
                   },
                   "branch_support": {
-                    "value": 100.0
+                    "value": 0.0
                   },
                   "branch_support_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "clade_rtt_dist": {
                     "value": 2.30928e-05
@@ -1275,7 +1288,7 @@
                     "value": "Democratic Republic of the Congo (1965.0) Antiqua"
                   },
                   "country_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1385,7 +1398,7 @@
                     "value": "HIGH"
                   },
                   "branch_major_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_minor": {
                     "confidence": {
@@ -1397,16 +1410,16 @@
                     "value": "HIGH"
                   },
                   "branch_minor_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_number": {
                     "value": "1.0"
                   },
                   "branch_support": {
-                    "value": 100.0
+                    "value": 0.0
                   },
                   "branch_support_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "clade_rtt_dist": {
                     "value": 2.2174100000000002e-05
@@ -1427,7 +1440,7 @@
                     "value": "Democratic Republic of the Congo (1954.0) FDAARGOS_601"
                   },
                   "country_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1671,6 +1684,9 @@
           "branch_support_conf_category": {
             "value": "HIGH"
           },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
           "clade_rtt_dist": {
             "value": 2.21269e-05
           },
@@ -1791,6 +1807,9 @@
       },
       "branch_support_conf_category": {
         "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
       },
       "clade_rtt_dist": {
         "value": 1.04313e-05

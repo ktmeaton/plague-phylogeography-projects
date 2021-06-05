@@ -8,6 +8,11 @@
         "type": "continuous"
       },
       {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
         "key": "branch_length_sub",
         "title": "Branch Length Subs",
         "type": "continuous"
@@ -32,6 +37,26 @@
         "key": "branch_support",
         "title": "Branch Support",
         "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
       },
       {
         "key": "country",
@@ -67,7 +92,31 @@
         "type": "continuous"
       },
       {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
         "key": "host_human",
+        "scale": [
+          [
+            "Human",
+            "#CBB742"
+          ],
+          [
+            "Non-Human",
+            "#60B6F2"
+          ],
+          [
+            "NA",
+            "#D6D6D6"
+          ]
+        ],
         "title": "Host Human",
         "type": "categorical"
       },
@@ -141,6 +190,74 @@
         "key": "strain",
         "title": "Strain",
         "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "Lithuania",
+            "#7215ff"
+          ],
+          [
+            "Estonia",
+            "#652afe"
+          ],
+          [
+            "Germany",
+            "#573ffd"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "scale": [
+          [
+            "Human",
+            "#CBB742"
+          ],
+          [
+            "Non-Human",
+            "#60B6F2"
+          ],
+          [
+            "NA",
+            "#D6D6D6"
+          ]
+        ],
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "0.PRE",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
       },
       {
         "key": "biovar",
@@ -148,18 +265,43 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support",
-        "title": "Branch Support",
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
         "type": "continuous"
       },
       {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
         "type": "continuous"
       },
       {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
         "type": "continuous"
       },
       {
@@ -168,9 +310,44 @@
         "type": "continuous"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "province_lat",
+        "title": "Province Latitude",
         "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#8000ff"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
       },
       {
         "key": "province",
@@ -202,90 +379,6 @@
         ],
         "title": "Province",
         "type": "categorical"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "Russia",
-            "#8000ff"
-          ],
-          [
-            "Lithuania",
-            "#7215ff"
-          ],
-          [
-            "Estonia",
-            "#652afe"
-          ],
-          [
-            "Germany",
-            "#573ffd"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "0.PRE",
-            "#8000ff"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "Host Human",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#8000ff"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
-        "key": "date_bp",
-        "title": "date_bp",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
       }
     ],
     "display_defaults": {
@@ -375,16 +468,19 @@
     "branch_attrs": {
       "labels": {
         "Biovar": "NA",
+        "Blank": " ",
         "Branch Length": 79.56791016764281,
         "Branch Length Sub": 197.0,
         "Branch Length Time": 80.0,
         "Branch Major": "NA",
         "Branch Support": 69.0,
+        "Branch Support Conf Category": "LOW",
+        "Branch Support Conf Char": "",
         "Country": "NA",
         "Country Lat": "NA",
         "Country Lon": "NA",
-        "Date": "NA",
-        "Date Bp": "NA",
+        "Date Bp Mean": "NA",
+        "Date Mean": "NA",
         "Host Human": "NA",
         "Node Type": "internal",
         "Num Date": -2765.2792348056732,
@@ -418,7 +514,10 @@
             "value": "0.PRE"
           },
           "branch_support": {
-            "value": 100.0
+            "value": 0.0
+          },
+          "branch_support_conf_category": {
+            "value": "LOW"
           },
           "country": {
             "value": "Russia"
@@ -429,8 +528,11 @@
           "country_lon": {
             "value": 97.7453061
           },
-          "date_bp": {
-            "value": "[-4897:-4698]"
+          "date_bp_mean": {
+            "value": 4797.5
+          },
+          "date_mean": {
+            "value": -2776.5
           },
           "div": 57.46126647262722,
           "host_human": {
@@ -470,16 +572,19 @@
         "branch_attrs": {
           "labels": {
             "Biovar": "NA",
+            "Blank": " ",
             "Branch Length": 79.56791016764281,
             "Branch Length Sub": 197.0,
             "Branch Length Time": 80.0,
             "Branch Major": "NA",
             "Branch Support": 69.0,
+            "Branch Support Conf Category": "LOW",
+            "Branch Support Conf Char": "",
             "Country": "NA",
             "Country Lat": "NA",
             "Country Lon": "NA",
-            "Date": "NA",
-            "Date Bp": "NA",
+            "Date Bp Mean": "NA",
+            "Date Mean": "NA",
             "Host Human": "NA",
             "Node Type": "internal",
             "Num Date": -2765.2792348056732,
@@ -513,7 +618,10 @@
                 "value": "0.PRE"
               },
               "branch_support": {
-                "value": 100.0
+                "value": 0.0
+              },
+              "branch_support_conf_category": {
+                "value": "LOW"
               },
               "country": {
                 "value": "Lithuania"
@@ -524,8 +632,11 @@
               "country_lon": {
                 "value": 23.7499997
               },
-              "date_bp": {
-                "value": "[-4642:-4493]"
+              "date_bp_mean": {
+                "value": 4567.5
+              },
+              "date_mean": {
+                "value": -2546.5
               },
               "div": 316.57041457092294,
               "host_human": {
@@ -565,16 +676,19 @@
             "branch_attrs": {
               "labels": {
                 "Biovar": "NA",
+                "Blank": " ",
                 "Branch Length": 79.94705441147322,
                 "Branch Length Sub": 176.0,
                 "Branch Length Time": 80.0,
                 "Branch Major": "NA",
                 "Branch Support": 99.0,
+                "Branch Support Conf Category": "HIGH",
+                "Branch Support Conf Char": "*",
                 "Country": "NA",
                 "Country Lat": "NA",
                 "Country Lon": "NA",
-                "Date": "NA",
-                "Date Bp": "NA",
+                "Date Bp Mean": "NA",
+                "Date Mean": "NA",
                 "Host Human": "NA",
                 "Node Type": "internal",
                 "Num Date": -2712.824062286952,
@@ -608,7 +722,10 @@
                     "value": "0.PRE"
                   },
                   "branch_support": {
-                    "value": 100.0
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
                   },
                   "country": {
                     "value": "Estonia"
@@ -619,8 +736,11 @@
                   "country_lon": {
                     "value": 25.3319078
                   },
-                  "date_bp": {
-                    "value": "[-4595:-4361]"
+                  "date_bp_mean": {
+                    "value": 4478.0
+                  },
+                  "date_mean": {
+                    "value": -2457.0
                   },
                   "div": 416.0512774256473,
                   "host_human": {
@@ -660,16 +780,19 @@
                 "branch_attrs": {
                   "labels": {
                     "Biovar": "NA",
+                    "Blank": " ",
                     "Branch Length": 28.28177989843278,
                     "Branch Length Sub": 40.0,
                     "Branch Length Time": 28.0,
                     "Branch Major": "NA",
                     "Branch Support": 100.0,
+                    "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
                     "Country": "NA",
                     "Country Lat": "NA",
                     "Country Lon": "NA",
-                    "Date": "NA",
-                    "Date Bp": "NA",
+                    "Date Bp Mean": "NA",
+                    "Date Mean": "NA",
                     "Host Human": "NA",
                     "Node Type": "internal",
                     "Num Date": -2685.107703591237,
@@ -690,16 +813,19 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
+                        "Blank": " ",
                         "Branch Length": 12.573572828536275,
                         "Branch Length Sub": 39.0,
                         "Branch Length Time": 13.0,
                         "Branch Major": "NA",
                         "Branch Support": 100.0,
+                        "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
-                        "Date": "NA",
-                        "Date Bp": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Mean": "NA",
                         "Host Human": "NA",
                         "Node Type": "internal",
                         "Num Date": -2672.730651739452,
@@ -733,7 +859,10 @@
                             "value": "0.PRE"
                           },
                           "branch_support": {
-                            "value": 100.0
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
                           },
                           "country": {
                             "value": "Russia"
@@ -744,8 +873,11 @@
                           "country_lon": {
                             "value": 97.7453061
                           },
-                          "date_bp": {
-                            "value": "[-4590:-4488]"
+                          "date_bp_mean": {
+                            "value": 4539.0
+                          },
+                          "date_mean": {
+                            "value": -2518.0
                           },
                           "div": 355.1009690455368,
                           "host_human": {
@@ -798,7 +930,10 @@
                             "value": "0.PRE"
                           },
                           "branch_support": {
-                            "value": 100.0
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
                           },
                           "country": {
                             "value": "Russia"
@@ -809,8 +944,11 @@
                           "country_lon": {
                             "value": 97.7453061
                           },
-                          "date_bp": {
-                            "value": "[-4859:-4516]"
+                          "date_bp_mean": {
+                            "value": 4687.5
+                          },
+                          "date_mean": {
+                            "value": -2666.5
                           },
                           "div": 206.60096904553657,
                           "host_human": {
@@ -858,6 +996,12 @@
                       "branch_support": {
                         "value": 100.0
                       },
+                      "branch_support_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_support_conf_char": {
+                        "value": "*"
+                      },
                       "div": 200.37031730608507,
                       "node_type": {
                         "value": "internal"
@@ -881,16 +1025,19 @@
                     "branch_attrs": {
                       "labels": {
                         "Biovar": "NA",
+                        "Blank": " ",
                         "Branch Length": 245.88360922367275,
                         "Branch Length Sub": 62.0,
                         "Branch Length Time": 246.0,
                         "Branch Major": "NA",
                         "Branch Support": 100.0,
+                        "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
                         "Country": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
-                        "Date": "NA",
-                        "Date Bp": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Mean": "NA",
                         "Host Human": "NA",
                         "Node Type": "internal",
                         "Num Date": -2439.513699675111,
@@ -924,7 +1071,10 @@
                             "value": "0.PRE"
                           },
                           "branch_support": {
-                            "value": 100.0
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
                           },
                           "country": {
                             "value": "Germany"
@@ -935,8 +1085,11 @@
                           "country_lon": {
                             "value": 10.4234469
                           },
-                          "date_bp": {
-                            "value": "[-4417:-4169]"
+                          "date_bp_mean": {
+                            "value": 4293.0
+                          },
+                          "date_mean": {
+                            "value": -2272.0
                           },
                           "div": 601.1940533763351,
                           "host_human": {
@@ -976,16 +1129,19 @@
                         "branch_attrs": {
                           "labels": {
                             "Biovar": "NA",
+                            "Blank": " ",
                             "Branch Length": 240.4816503405375,
                             "Branch Length Sub": 244.0,
                             "Branch Length Time": 240.0,
                             "Branch Major": "NA",
                             "Branch Support": 100.0,
+                            "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
                             "Country": "NA",
                             "Country Lat": "NA",
                             "Country Lon": "NA",
-                            "Date": "NA",
-                            "Date Bp": "NA",
+                            "Date Bp Mean": "NA",
+                            "Date Mean": "NA",
                             "Host Human": "NA",
                             "Node Type": "internal",
                             "Num Date": -2199.0320493345744,
@@ -1019,7 +1175,10 @@
                                 "value": "0.PRE"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
                               },
                               "country": {
                                 "value": "Germany"
@@ -1030,8 +1189,11 @@
                               "country_lon": {
                                 "value": 10.4234469
                               },
-                              "date_bp": {
-                                "value": "[-4028:-3903]"
+                              "date_bp_mean": {
+                                "value": 3965.5
+                              },
+                              "date_mean": {
+                                "value": -1944.5
                               },
                               "div": 928.6940533763336,
                               "host_human": {
@@ -1084,7 +1246,10 @@
                                 "value": "0.PRE"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
                               },
                               "country": {
                                 "value": "Russia"
@@ -1095,8 +1260,11 @@
                               "country_lon": {
                                 "value": 97.7453061
                               },
-                              "date_bp": {
-                                "value": "[-3767:-3647]"
+                              "date_bp_mean": {
+                                "value": 3707.0
+                              },
+                              "date_mean": {
+                                "value": -1686.0
                               },
                               "div": 1187.1940533763332,
                               "host_human": {
@@ -1144,6 +1312,12 @@
                           "branch_support": {
                             "value": 100.0
                           },
+                          "branch_support_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "branch_support_conf_char": {
+                            "value": "*"
+                          },
                           "div": 674.162004041759,
                           "node_type": {
                             "value": "internal"
@@ -1174,6 +1348,12 @@
                       },
                       "branch_support": {
                         "value": 100.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_support_conf_char": {
+                        "value": "*"
                       },
                       "div": 433.6803537012215,
                       "node_type": {
@@ -1206,6 +1386,12 @@
                   "branch_support": {
                     "value": 100.0
                   },
+                  "branch_support_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
+                  },
                   "div": 187.7967444775488,
                   "node_type": {
                     "value": "internal"
@@ -1236,6 +1422,12 @@
               },
               "branch_support": {
                 "value": 99.0
+              },
+              "branch_support_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_support_conf_char": {
+                "value": "*"
               },
               "div": 159.51496457911603,
               "node_type": {
@@ -1268,6 +1460,9 @@
           "branch_support": {
             "value": 69.0
           },
+          "branch_support_conf_category": {
+            "value": "LOW"
+          },
           "div": 79.56791016764281,
           "node_type": {
             "value": "internal"
@@ -1298,6 +1493,12 @@
       },
       "branch_support": {
         "value": 100.0
+      },
+      "branch_support_conf_category": {
+        "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
       },
       "div": 0,
       "node_type": {

@@ -135,6 +135,11 @@
         "type": "categorical"
       },
       {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
         "key": "clade_rtt_dist",
         "title": "Clade Root Distance",
         "type": "continuous"
@@ -339,23 +344,23 @@
         "type": "categorical"
       },
       {
-        "key": "country",
-        "scale": [
-          [
-            "Russia",
-            "#8000ff"
-          ],
-          [
-            "Mongolia",
-            "#149df1"
-          ]
-        ],
-        "title": "Country",
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate (km/sub/site)",
         "type": "continuous"
       },
       {
@@ -374,8 +379,43 @@
         "type": "categorical"
       },
       {
-        "key": "host_human",
-        "title": "Host Human",
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "Mongolia",
+            "#149df1"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Branch Minor Joint Confidence",
         "type": "categorical"
       },
       {
@@ -394,11 +434,6 @@
         "type": "categorical"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
         "key": "province_joint_conf_category",
         "scale": [
           [
@@ -414,8 +449,43 @@
         "type": "categorical"
       },
       {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Branch Major Joint Confidence",
+        "type": "categorical"
+      },
+      {
         "key": "blank",
         "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
         "type": "categorical"
       },
       {
@@ -430,9 +500,69 @@
         "type": "categorical"
       },
       {
-        "key": "rate_geo_year",
-        "title": "Geographic Rate (km/year)",
+        "key": "host_human",
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
         "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
       },
       {
         "key": "province",
@@ -454,27 +584,6 @@
         "type": "categorical"
       },
       {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "4.ANT",
-            "#4df3ce"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
         "key": "branch_minor_conf_category",
         "scale": [
           [
@@ -490,34 +599,40 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
         "key": "rate_sub",
         "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
-        "key": "strain",
-        "title": "Strain",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "4.ANT",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Branch Major",
         "type": "categorical"
+      },
+      {
+        "key": "rate_geo_year",
+        "title": "Geographic Rate (km/year)",
+        "type": "continuous"
       },
       {
         "key": "branch_major_conf_category",
@@ -535,126 +650,6 @@
         "type": "categorical"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#4df3ce"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major_joint_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#4df3ce"
-          ]
-        ],
-        "title": "Branch Major Joint Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate (km/sub/site)",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_minor_joint_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#4df3ce"
-          ]
-        ],
-        "title": "Branch Minor Joint Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#4df3ce"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
         "key": "country_conf_category",
         "scale": [
           [
@@ -667,6 +662,21 @@
           ]
         ],
         "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
         "type": "categorical"
       }
     ],
@@ -752,6 +762,7 @@
         "Branch Number": "NA",
         "Branch Support": 100.0,
         "Branch Support Conf Category": "HIGH",
+        "Branch Support Conf Char": "*",
         "Clade Rtt Dist": 5.052300000000001e-06,
         "Continent": "NA",
         "Country": "Russia",
@@ -812,6 +823,7 @@
             "Branch Number": "NA",
             "Branch Support": 100.0,
             "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
             "Clade Rtt Dist": 5.6536e-06,
             "Continent": "NA",
             "Country": "Russia",
@@ -876,7 +888,7 @@
                 "value": "HIGH"
               },
               "branch_major_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "branch_minor": {
                 "confidence": {
@@ -888,16 +900,16 @@
                 "value": "HIGH"
               },
               "branch_minor_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "branch_number": {
                 "value": "4.0"
               },
               "branch_support": {
-                "value": 100.0
+                "value": 0.0
               },
               "branch_support_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "clade_rtt_dist": {
                 "value": 6.1247e-06
@@ -918,7 +930,7 @@
                 "value": "Russia (1987.0) I-3223"
               },
               "country_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "country_lat": {
                 "confidence": {
@@ -971,7 +983,7 @@
                 "value": "Russia (1987.0) I-3223"
               },
               "province_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "province_lat": {
                 "confidence": {
@@ -1028,7 +1040,7 @@
                 "value": "HIGH"
               },
               "branch_major_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "branch_minor": {
                 "confidence": {
@@ -1040,16 +1052,16 @@
                 "value": "HIGH"
               },
               "branch_minor_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "branch_number": {
                 "value": "4.0"
               },
               "branch_support": {
-                "value": 100.0
+                "value": 0.0
               },
               "branch_support_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "clade_rtt_dist": {
                 "value": 6.360300000000001e-06
@@ -1070,7 +1082,7 @@
                 "value": "Russia (1984.0) I-3113"
               },
               "country_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "country_lat": {
                 "confidence": {
@@ -1123,7 +1135,7 @@
                 "value": "Russia (1984.0) I-3113"
               },
               "province_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "province_lat": {
                 "confidence": {
@@ -1195,6 +1207,9 @@
           },
           "branch_support_conf_category": {
             "value": "HIGH"
+          },
+          "branch_support_conf_char": {
+            "value": "*"
           },
           "clade_rtt_dist": {
             "value": 5.6536e-06
@@ -1297,6 +1312,7 @@
             "Branch Number": "NA",
             "Branch Support": 100.0,
             "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
             "Clade Rtt Dist": 5.052300000000001e-06,
             "Continent": "NA",
             "Country": "Russia",
@@ -1361,7 +1377,7 @@
                 "value": "HIGH"
               },
               "branch_major_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "branch_minor": {
                 "confidence": {
@@ -1373,16 +1389,16 @@
                 "value": "HIGH"
               },
               "branch_minor_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "branch_number": {
                 "value": "4.0"
               },
               "branch_support": {
-                "value": 100.0
+                "value": 0.0
               },
               "branch_support_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "clade_rtt_dist": {
                 "value": 9.1932e-06
@@ -1403,7 +1419,7 @@
                 "value": "Mongolia (2002.0) MGJZ12"
               },
               "country_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "country_lat": {
                 "confidence": {
@@ -1456,7 +1472,7 @@
                 "value": "Mongolia (2002.0) MGJZ12"
               },
               "province_joint_conf_category": {
-                "value": "HIGH"
+                "value": "LOW"
               },
               "province_lat": {
                 "confidence": {
@@ -1509,6 +1525,7 @@
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
+                "Branch Support Conf Char": "*",
                 "Clade Rtt Dist": 6.465700000000001e-06,
                 "Continent": "NA",
                 "Country": "Russia",
@@ -1569,6 +1586,7 @@
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
                     "Clade Rtt Dist": 8.151300000000001e-06,
                     "Continent": "NA",
                     "Country": "Russia",
@@ -1633,7 +1651,7 @@
                         "value": "HIGH"
                       },
                       "branch_major_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_minor": {
                         "confidence": {
@@ -1645,16 +1663,16 @@
                         "value": "HIGH"
                       },
                       "branch_minor_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_number": {
                         "value": "4.0"
                       },
                       "branch_support": {
-                        "value": 100.0
+                        "value": 0.0
                       },
                       "branch_support_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "clade_rtt_dist": {
                         "value": 9.329100000000002e-06
@@ -1675,7 +1693,7 @@
                         "value": "Russia (2012.0) M-1944"
                       },
                       "country_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1728,7 +1746,7 @@
                         "value": "Russia (2012.0) M-1944"
                       },
                       "province_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1785,7 +1803,7 @@
                         "value": "HIGH"
                       },
                       "branch_major_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_minor": {
                         "confidence": {
@@ -1797,16 +1815,16 @@
                         "value": "HIGH"
                       },
                       "branch_minor_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_number": {
                         "value": "4.0"
                       },
                       "branch_support": {
-                        "value": 100.0
+                        "value": 0.0
                       },
                       "branch_support_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "clade_rtt_dist": {
                         "value": 8.671500000000002e-06
@@ -1827,7 +1845,7 @@
                         "value": "Russia (1977.0) I-2638"
                       },
                       "country_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1880,7 +1898,7 @@
                         "value": "Russia (1977.0) I-2638"
                       },
                       "province_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1952,6 +1970,9 @@
                   },
                   "branch_support_conf_category": {
                     "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
                   },
                   "clade_rtt_dist": {
                     "value": 8.151300000000001e-06
@@ -2054,6 +2075,7 @@
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
                     "Clade Rtt Dist": 7.5229000000000004e-06,
                     "Continent": "NA",
                     "Country": "Russia",
@@ -2118,7 +2140,7 @@
                         "value": "HIGH"
                       },
                       "branch_major_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_minor": {
                         "confidence": {
@@ -2130,16 +2152,16 @@
                         "value": "HIGH"
                       },
                       "branch_minor_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_number": {
                         "value": "4.0"
                       },
                       "branch_support": {
-                        "value": 100.0
+                        "value": 0.0
                       },
                       "branch_support_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "clade_rtt_dist": {
                         "value": 1.3647600000000001e-05
@@ -2160,7 +2182,7 @@
                         "value": "Mongolia (1988.0) I-3244"
                       },
                       "country_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "country_lat": {
                         "confidence": {
@@ -2213,7 +2235,7 @@
                         "value": "Mongolia (1988.0) I-3244"
                       },
                       "province_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "province_lat": {
                         "confidence": {
@@ -2266,6 +2288,7 @@
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
                         "Clade Rtt Dist": 7.994e-06,
                         "Continent": "NA",
                         "Country": "Russia",
@@ -2330,7 +2353,7 @@
                             "value": "HIGH"
                           },
                           "branch_major_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "branch_minor": {
                             "confidence": {
@@ -2342,16 +2365,16 @@
                             "value": "HIGH"
                           },
                           "branch_minor_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "branch_number": {
                             "value": "4.0"
                           },
                           "branch_support": {
-                            "value": 100.0
+                            "value": 0.0
                           },
                           "branch_support_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "clade_rtt_dist": {
                             "value": 8.0176e-06
@@ -2372,7 +2395,7 @@
                             "value": "Russia (2012.0) 1454"
                           },
                           "country_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "country_lat": {
                             "confidence": {
@@ -2425,7 +2448,7 @@
                             "value": "Russia (2012.0) 1454"
                           },
                           "province_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "province_lat": {
                             "confidence": {
@@ -2478,6 +2501,7 @@
                             "Branch Number": "NA",
                             "Branch Support": 62.0,
                             "Branch Support Conf Category": "LOW",
+                            "Branch Support Conf Char": "",
                             "Clade Rtt Dist": 8.0176e-06,
                             "Continent": "NA",
                             "Country": "Russia",
@@ -2542,7 +2566,7 @@
                                 "value": "HIGH"
                               },
                               "branch_major_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_minor": {
                                 "confidence": {
@@ -2554,16 +2578,16 @@
                                 "value": "HIGH"
                               },
                               "branch_minor_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_number": {
                                 "value": "4.0"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
                               },
                               "branch_support_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "clade_rtt_dist": {
                                 "value": 8.488699999999999e-06
@@ -2584,7 +2608,7 @@
                                 "value": "Russia (2014.0) 517"
                               },
                               "country_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2637,7 +2661,7 @@
                                 "value": "Russia (2014.0) 517"
                               },
                               "province_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2690,6 +2714,7 @@
                                 "Branch Number": "NA",
                                 "Branch Support": 45.0,
                                 "Branch Support Conf Category": "LOW",
+                                "Branch Support Conf Char": "",
                                 "Clade Rtt Dist": 8.041199999999998e-06,
                                 "Continent": "NA",
                                 "Country": "Russia",
@@ -2754,7 +2779,7 @@
                                     "value": "HIGH"
                                   },
                                   "branch_major_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_minor": {
                                     "confidence": {
@@ -2766,16 +2791,16 @@
                                     "value": "HIGH"
                                   },
                                   "branch_minor_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_number": {
                                     "value": "4.0"
                                   },
                                   "branch_support": {
-                                    "value": 100.0
+                                    "value": 0.0
                                   },
                                   "branch_support_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "clade_rtt_dist": {
                                     "value": 8.064799999999998e-06
@@ -2796,7 +2821,7 @@
                                     "value": "Russia (2015.0) 337"
                                   },
                                   "country_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -2846,7 +2871,7 @@
                                     "value": "Russia (2015.0) 337"
                                   },
                                   "province_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -2899,6 +2924,7 @@
                                     "Branch Number": "NA",
                                     "Branch Support": 49.0,
                                     "Branch Support Conf Category": "LOW",
+                                    "Branch Support Conf Char": "",
                                     "Clade Rtt Dist": 8.064799999999998e-06,
                                     "Continent": "NA",
                                     "Country": "Russia",
@@ -2963,7 +2989,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -2975,16 +3001,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "4.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 8.088399999999997e-06
@@ -3005,7 +3031,7 @@
                                         "value": "Russia (2015.0) 338"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -3058,7 +3084,7 @@
                                         "value": "Russia (2015.0) 338"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -3115,7 +3141,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -3127,16 +3153,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "4.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 8.088399999999997e-06
@@ -3157,7 +3183,7 @@
                                         "value": "Russia (2015.0) 349"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -3210,7 +3236,7 @@
                                         "value": "Russia (2015.0) 349"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -3646,6 +3672,9 @@
                       "branch_support_conf_category": {
                         "value": "HIGH"
                       },
+                      "branch_support_conf_char": {
+                        "value": "*"
+                      },
                       "clade_rtt_dist": {
                         "value": 7.994e-06
                       },
@@ -3766,6 +3795,9 @@
                   },
                   "branch_support_conf_category": {
                     "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
                   },
                   "clade_rtt_dist": {
                     "value": 7.5229000000000004e-06
@@ -3888,6 +3920,9 @@
               "branch_support_conf_category": {
                 "value": "HIGH"
               },
+              "branch_support_conf_char": {
+                "value": "*"
+              },
               "clade_rtt_dist": {
                 "value": 6.465700000000001e-06
               },
@@ -4009,6 +4044,9 @@
           "branch_support_conf_category": {
             "value": "HIGH"
           },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
           "clade_rtt_dist": {
             "value": 5.052300000000001e-06
           },
@@ -4129,6 +4167,9 @@
       },
       "branch_support_conf_category": {
         "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
       },
       "clade_rtt_dist": {
         "value": 2.8268e-06

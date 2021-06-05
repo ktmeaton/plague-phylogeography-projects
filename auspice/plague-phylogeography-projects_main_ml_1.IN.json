@@ -143,6 +143,11 @@
         "type": "categorical"
       },
       {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
         "key": "clade_rtt_dist",
         "title": "Clade Root Distance",
         "type": "continuous"
@@ -351,19 +356,23 @@
         "type": "categorical"
       },
       {
-        "key": "country",
-        "scale": [
-          [
-            "China",
-            "#4a53fc"
-          ]
-        ],
-        "title": "Country",
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate (km/sub/site)",
         "type": "continuous"
       },
       {
@@ -382,8 +391,39 @@
         "type": "categorical"
       },
       {
-        "key": "host_human",
-        "title": "Host Human",
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Branch Minor Joint Confidence",
         "type": "categorical"
       },
       {
@@ -402,11 +442,6 @@
         "type": "categorical"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
         "key": "province_joint_conf_category",
         "scale": [
           [
@@ -422,8 +457,43 @@
         "type": "categorical"
       },
       {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Branch Major Joint Confidence",
+        "type": "categorical"
+      },
+      {
         "key": "blank",
         "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
         "type": "categorical"
       },
       {
@@ -446,9 +516,69 @@
         "type": "categorical"
       },
       {
-        "key": "rate_geo_year",
-        "title": "Geographic Rate (km/year)",
+        "key": "host_human",
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
         "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
       },
       {
         "key": "province",
@@ -478,27 +608,6 @@
         "type": "categorical"
       },
       {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "1.IN",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
         "key": "branch_minor_conf_category",
         "scale": [
           [
@@ -514,34 +623,40 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
         "key": "rate_sub",
         "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
-        "key": "strain",
-        "title": "Strain",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "1.IN",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Branch Major",
         "type": "categorical"
+      },
+      {
+        "key": "rate_geo_year",
+        "title": "Geographic Rate (km/year)",
+        "type": "continuous"
       },
       {
         "key": "branch_major_conf_category",
@@ -559,126 +674,6 @@
         "type": "categorical"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major_joint_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Branch Major Joint Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate (km/sub/site)",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_minor_joint_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Branch Minor Joint Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
         "key": "country_conf_category",
         "scale": [
           [
@@ -691,6 +686,21 @@
           ]
         ],
         "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
         "type": "categorical"
       }
     ],
@@ -780,6 +790,7 @@
         "Branch Number": "NA",
         "Branch Support": 34.0,
         "Branch Support Conf Category": "LOW",
+        "Branch Support Conf Char": "",
         "Clade Rtt Dist": 2.36e-08,
         "Continent": "NA",
         "Country": "China",
@@ -844,7 +855,7 @@
             "value": "HIGH"
           },
           "branch_major_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "branch_minor": {
             "confidence": {
@@ -856,16 +867,16 @@
             "value": "HIGH"
           },
           "branch_minor_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "branch_number": {
             "value": "1.0"
           },
           "branch_support": {
-            "value": 100.0
+            "value": 0.0
           },
           "branch_support_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "clade_rtt_dist": {
             "value": 1.4134e-06
@@ -886,7 +897,7 @@
             "value": "China (1954.0) CMCC11001"
           },
           "country_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "country_lat": {
             "confidence": {
@@ -939,7 +950,7 @@
             "value": "China (1954.0) CMCC11001"
           },
           "province_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "province_lat": {
             "confidence": {
@@ -992,6 +1003,7 @@
             "Branch Number": "NA",
             "Branch Support": 34.0,
             "Branch Support Conf Category": "LOW",
+            "Branch Support Conf Char": "",
             "Clade Rtt Dist": 2.36e-08,
             "Continent": "NA",
             "Country": "China",
@@ -1052,6 +1064,7 @@
                 "Branch Number": "NA",
                 "Branch Support": 40.0,
                 "Branch Support Conf Category": "LOW",
+                "Branch Support Conf Char": "",
                 "Clade Rtt Dist": 4.72e-08,
                 "Continent": "NA",
                 "Country": "China",
@@ -1116,7 +1129,7 @@
                     "value": "HIGH"
                   },
                   "branch_major_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_minor": {
                     "confidence": {
@@ -1128,16 +1141,16 @@
                     "value": "HIGH"
                   },
                   "branch_minor_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_number": {
                     "value": "1.0"
                   },
                   "branch_support": {
-                    "value": 100.0
+                    "value": 0.0
                   },
                   "branch_support_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "clade_rtt_dist": {
                     "value": 2.1673e-06
@@ -1158,7 +1171,7 @@
                     "value": "China (1978.0) 780441"
                   },
                   "country_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1211,7 +1224,7 @@
                     "value": "China (1978.0) 780441"
                   },
                   "province_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "province_lat": {
                     "confidence": {
@@ -1268,7 +1281,7 @@
                     "value": "HIGH"
                   },
                   "branch_major_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_minor": {
                     "confidence": {
@@ -1280,16 +1293,16 @@
                     "value": "HIGH"
                   },
                   "branch_minor_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_number": {
                     "value": "1.0"
                   },
                   "branch_support": {
-                    "value": 100.0
+                    "value": 0.0
                   },
                   "branch_support_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "clade_rtt_dist": {
                     "value": 3.3451e-06
@@ -1310,7 +1323,7 @@
                     "value": "China (1985.0) K21985002"
                   },
                   "country_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1363,7 +1376,7 @@
                     "value": "China (1985.0) K21985002"
                   },
                   "province_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "province_lat": {
                     "confidence": {
@@ -1537,6 +1550,7 @@
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
+                "Branch Support Conf Char": "*",
                 "Clade Rtt Dist": 4.947e-07,
                 "Continent": "NA",
                 "Country": "China",
@@ -1597,6 +1611,7 @@
                     "Branch Number": "NA",
                     "Branch Support": 28.0,
                     "Branch Support Conf Category": "LOW",
+                    "Branch Support Conf Char": "",
                     "Clade Rtt Dist": 5.183e-07,
                     "Continent": "NA",
                     "Country": "China",
@@ -1657,6 +1672,7 @@
                         "Branch Number": "NA",
                         "Branch Support": 46.0,
                         "Branch Support Conf Category": "LOW",
+                        "Branch Support Conf Char": "",
                         "Clade Rtt Dist": 5.419e-07,
                         "Continent": "NA",
                         "Country": "China",
@@ -1717,6 +1733,7 @@
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
                             "Clade Rtt Dist": 7.775e-07,
                             "Continent": "NA",
                             "Country": "China",
@@ -1781,7 +1798,7 @@
                                 "value": "HIGH"
                               },
                               "branch_major_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_minor": {
                                 "confidence": {
@@ -1793,16 +1810,16 @@
                                 "value": "HIGH"
                               },
                               "branch_minor_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_number": {
                                 "value": "1.0"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
                               },
                               "branch_support_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "clade_rtt_dist": {
                                 "value": 4.311e-06
@@ -1823,7 +1840,7 @@
                                 "value": "China (1975.0) C1975003"
                               },
                               "country_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -1876,7 +1893,7 @@
                                 "value": "China (1975.0) C1975003"
                               },
                               "province_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -1933,7 +1950,7 @@
                                 "value": "HIGH"
                               },
                               "branch_major_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_minor": {
                                 "confidence": {
@@ -1945,16 +1962,16 @@
                                 "value": "HIGH"
                               },
                               "branch_minor_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_number": {
                                 "value": "1.0"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
                               },
                               "branch_support_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "clade_rtt_dist": {
                                 "value": 1.7198e-06
@@ -1975,7 +1992,7 @@
                                 "value": "China (1964.0) CMCC640047"
                               },
                               "country_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2028,7 +2045,7 @@
                                 "value": "China (1964.0) CMCC640047"
                               },
                               "province_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2100,6 +2117,9 @@
                           },
                           "branch_support_conf_category": {
                             "value": "HIGH"
+                          },
+                          "branch_support_conf_char": {
+                            "value": "*"
                           },
                           "clade_rtt_dist": {
                             "value": 7.775e-07
@@ -2202,6 +2222,7 @@
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
                             "Clade Rtt Dist": 1.4842e-06,
                             "Continent": "NA",
                             "Country": "China",
@@ -2266,7 +2287,7 @@
                                 "value": "HIGH"
                               },
                               "branch_major_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_minor": {
                                 "confidence": {
@@ -2278,16 +2299,16 @@
                                 "value": "HIGH"
                               },
                               "branch_minor_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_number": {
                                 "value": "1.0"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
                               },
                               "branch_support_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "clade_rtt_dist": {
                                 "value": 2.8976e-06
@@ -2308,7 +2329,7 @@
                                 "value": "China (2007.0) S20070086"
                               },
                               "country_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2361,7 +2382,7 @@
                                 "value": "China (2007.0) S20070086"
                               },
                               "province_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2414,6 +2435,7 @@
                                 "Branch Number": "NA",
                                 "Branch Support": 100.0,
                                 "Branch Support Conf Category": "HIGH",
+                                "Branch Support Conf Char": "*",
                                 "Clade Rtt Dist": 2.662e-06,
                                 "Continent": "NA",
                                 "Country": "China",
@@ -2478,7 +2500,7 @@
                                     "value": "HIGH"
                                   },
                                   "branch_major_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_minor": {
                                     "confidence": {
@@ -2490,16 +2512,16 @@
                                     "value": "HIGH"
                                   },
                                   "branch_minor_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
                                   },
                                   "branch_support": {
-                                    "value": 100.0
+                                    "value": 0.0
                                   },
                                   "branch_support_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "clade_rtt_dist": {
                                     "value": 3.6043e-06
@@ -2520,7 +2542,7 @@
                                     "value": "China (1989.0) C1989001"
                                   },
                                   "country_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -2573,7 +2595,7 @@
                                     "value": "China (1989.0) C1989001"
                                   },
                                   "province_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -2626,6 +2648,7 @@
                                     "Branch Number": "NA",
                                     "Branch Support": 100.0,
                                     "Branch Support Conf Category": "HIGH",
+                                    "Branch Support Conf Char": "*",
                                     "Clade Rtt Dist": 3.1331e-06,
                                     "Continent": "NA",
                                     "Country": "China",
@@ -2690,7 +2713,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -2702,16 +2725,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 3.6042e-06
@@ -2732,7 +2755,7 @@
                                         "value": "China (1999.0) S19990068"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -2785,7 +2808,7 @@
                                         "value": "China (1999.0) S19990068"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -2838,6 +2861,7 @@
                                         "Branch Number": "NA",
                                         "Branch Support": 100.0,
                                         "Branch Support Conf Category": "HIGH",
+                                        "Branch Support Conf Char": "*",
                                         "Clade Rtt Dist": 3.3687e-06,
                                         "Continent": "NA",
                                         "Country": "China",
@@ -2902,7 +2926,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -2914,16 +2938,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 3.8398e-06
@@ -2944,7 +2968,7 @@
                                             "value": "China (1999.0) S19990078"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -2997,7 +3021,7 @@
                                             "value": "China (1999.0) S19990078"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -3050,6 +3074,7 @@
                                             "Branch Number": "NA",
                                             "Branch Support": 100.0,
                                             "Branch Support Conf Category": "HIGH",
+                                            "Branch Support Conf Char": "*",
                                             "Clade Rtt Dist": 4.311e-06,
                                             "Continent": "NA",
                                             "Country": "China",
@@ -3114,7 +3139,7 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_major_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_minor": {
                                                 "confidence": {
@@ -3126,16 +3151,16 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_minor_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_number": {
                                                 "value": "1.0"
                                               },
                                               "branch_support": {
-                                                "value": 100.0
+                                                "value": 0.0
                                               },
                                               "branch_support_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "clade_rtt_dist": {
                                                 "value": 4.3346e-06
@@ -3156,7 +3181,7 @@
                                                 "value": "China (1999.0) S19990082"
                                               },
                                               "country_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -3209,7 +3234,7 @@
                                                 "value": "China (1999.0) S19990082"
                                               },
                                               "province_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -3266,7 +3291,7 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_major_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_minor": {
                                                 "confidence": {
@@ -3278,16 +3303,16 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_minor_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_number": {
                                                 "value": "1.0"
                                               },
                                               "branch_support": {
-                                                "value": 100.0
+                                                "value": 0.0
                                               },
                                               "branch_support_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "clade_rtt_dist": {
                                                 "value": 4.3346e-06
@@ -3308,7 +3333,7 @@
                                                 "value": "China (1996.0) S19960067"
                                               },
                                               "country_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -3361,7 +3386,7 @@
                                                 "value": "China (1996.0) S19960067"
                                               },
                                               "province_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -3433,6 +3458,9 @@
                                           },
                                           "branch_support_conf_category": {
                                             "value": "HIGH"
+                                          },
+                                          "branch_support_conf_char": {
+                                            "value": "*"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 4.311e-06
@@ -3555,6 +3583,9 @@
                                       "branch_support_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "branch_support_conf_char": {
+                                        "value": "*"
+                                      },
                                       "clade_rtt_dist": {
                                         "value": 3.3687e-06
                                       },
@@ -3675,6 +3706,9 @@
                                   },
                                   "branch_support_conf_category": {
                                     "value": "HIGH"
+                                  },
+                                  "branch_support_conf_char": {
+                                    "value": "*"
                                   },
                                   "clade_rtt_dist": {
                                     "value": 3.1331e-06
@@ -3797,6 +3831,9 @@
                               "branch_support_conf_category": {
                                 "value": "HIGH"
                               },
+                              "branch_support_conf_char": {
+                                "value": "*"
+                              },
                               "clade_rtt_dist": {
                                 "value": 2.662e-06
                               },
@@ -3917,6 +3954,9 @@
                           },
                           "branch_support_conf_category": {
                             "value": "HIGH"
+                          },
+                          "branch_support_conf_char": {
+                            "value": "*"
                           },
                           "clade_rtt_dist": {
                             "value": 1.4842e-06
@@ -4140,6 +4180,7 @@
                         "Branch Number": "NA",
                         "Branch Support": 45.0,
                         "Branch Support Conf Category": "LOW",
+                        "Branch Support Conf Char": "",
                         "Clade Rtt Dist": 5.419e-07,
                         "Continent": "NA",
                         "Country": "China",
@@ -4200,6 +4241,7 @@
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
                             "Clade Rtt Dist": 1.9553e-06,
                             "Continent": "NA",
                             "Country": "China",
@@ -4264,7 +4306,7 @@
                                 "value": "HIGH"
                               },
                               "branch_major_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_minor": {
                                 "confidence": {
@@ -4276,16 +4318,16 @@
                                 "value": "HIGH"
                               },
                               "branch_minor_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_number": {
                                 "value": "1.0"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
                               },
                               "branch_support_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "clade_rtt_dist": {
                                 "value": 3.6042e-06
@@ -4306,7 +4348,7 @@
                                 "value": "China (1990.0) CMCC31004"
                               },
                               "country_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -4359,7 +4401,7 @@
                                 "value": "China (1990.0) CMCC31004"
                               },
                               "province_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -4412,6 +4454,7 @@
                                 "Branch Number": "NA",
                                 "Branch Support": 52.0,
                                 "Branch Support Conf Category": "LOW",
+                                "Branch Support Conf Char": "",
                                 "Clade Rtt Dist": 1.9789000000000002e-06,
                                 "Continent": "NA",
                                 "Country": "China",
@@ -4476,7 +4519,7 @@
                                     "value": "HIGH"
                                   },
                                   "branch_major_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_minor": {
                                     "confidence": {
@@ -4488,16 +4531,16 @@
                                     "value": "HIGH"
                                   },
                                   "branch_minor_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
                                   },
                                   "branch_support": {
-                                    "value": 100.0
+                                    "value": 0.0
                                   },
                                   "branch_support_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "clade_rtt_dist": {
                                     "value": 2.2145e-06
@@ -4518,7 +4561,7 @@
                                     "value": "China (1976.0) 30017"
                                   },
                                   "country_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -4571,7 +4614,7 @@
                                     "value": "China (1976.0) 30017"
                                   },
                                   "province_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -4624,6 +4667,7 @@
                                     "Branch Number": "NA",
                                     "Branch Support": 35.0,
                                     "Branch Support Conf Category": "LOW",
+                                    "Branch Support Conf Char": "",
                                     "Clade Rtt Dist": 2.0025000000000003e-06,
                                     "Continent": "NA",
                                     "Country": "China",
@@ -4688,7 +4732,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -4700,16 +4744,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 3.1803000000000003e-06
@@ -4730,7 +4774,7 @@
                                         "value": "China (1976.0) Z176003"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -4783,7 +4827,7 @@
                                         "value": "China (1976.0) Z176003"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -4836,6 +4880,7 @@
                                         "Branch Number": "NA",
                                         "Branch Support": 48.0,
                                         "Branch Support Conf Category": "LOW",
+                                        "Branch Support Conf Char": "",
                                         "Clade Rtt Dist": 2.0261000000000004e-06,
                                         "Continent": "NA",
                                         "Country": "China",
@@ -4900,7 +4945,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -4912,16 +4957,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 2.0497000000000005e-06
@@ -4942,7 +4987,7 @@
                                             "value": "China (2008.0) S20080153"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -4995,7 +5040,7 @@
                                             "value": "China (2008.0) S20080153"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -5052,7 +5097,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -5064,16 +5109,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 2.0497000000000005e-06
@@ -5094,7 +5139,7 @@
                                             "value": "China (1994.0) S19940051"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -5147,7 +5192,7 @@
                                             "value": "China (1994.0) S19940051"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -5583,6 +5628,9 @@
                           "branch_support_conf_category": {
                             "value": "HIGH"
                           },
+                          "branch_support_conf_char": {
+                            "value": "*"
+                          },
                           "clade_rtt_dist": {
                             "value": 1.9553e-06
                           },
@@ -5684,6 +5732,7 @@
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
                             "Clade Rtt Dist": 1.4842e-06,
                             "Continent": "NA",
                             "Country": "China",
@@ -5744,6 +5793,7 @@
                                 "Branch Number": "NA",
                                 "Branch Support": 100.0,
                                 "Branch Support Conf Category": "HIGH",
+                                "Branch Support Conf Char": "*",
                                 "Clade Rtt Dist": 2.1909e-06,
                                 "Continent": "NA",
                                 "Country": "China",
@@ -5804,6 +5854,7 @@
                                     "Branch Number": "NA",
                                     "Branch Support": 100.0,
                                     "Branch Support Conf Category": "HIGH",
+                                    "Branch Support Conf Char": "*",
                                     "Clade Rtt Dist": 2.662e-06,
                                     "Continent": "NA",
                                     "Country": "China",
@@ -5868,7 +5919,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -5880,16 +5931,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 3.1331e-06
@@ -5910,7 +5961,7 @@
                                         "value": "China (2004.0) 5"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -5963,7 +6014,7 @@
                                         "value": "China (2004.0) 5"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -6020,7 +6071,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -6032,16 +6083,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 3.1331e-06
@@ -6062,7 +6113,7 @@
                                         "value": "China (1988.0) CMCC05013"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -6115,7 +6166,7 @@
                                         "value": "China (1988.0) CMCC05013"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -6187,6 +6238,9 @@
                                   },
                                   "branch_support_conf_category": {
                                     "value": "HIGH"
+                                  },
+                                  "branch_support_conf_char": {
+                                    "value": "*"
                                   },
                                   "clade_rtt_dist": {
                                     "value": 2.662e-06
@@ -6289,6 +6343,7 @@
                                     "Branch Number": "NA",
                                     "Branch Support": 80.0,
                                     "Branch Support Conf Category": "LOW",
+                                    "Branch Support Conf Char": "",
                                     "Clade Rtt Dist": 2.2145e-06,
                                     "Continent": "NA",
                                     "Country": "China",
@@ -6353,7 +6408,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -6365,16 +6420,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 2.2381000000000002e-06
@@ -6395,7 +6450,7 @@
                                         "value": "China (1971.0) 710317"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -6448,7 +6503,7 @@
                                         "value": "China (1971.0) 710317"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -6505,7 +6560,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -6517,16 +6572,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 4.099e-06
@@ -6547,7 +6602,7 @@
                                         "value": "China (1964.0) CMCC10012"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -6600,7 +6655,7 @@
                                         "value": "China (1964.0) CMCC10012"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -6794,6 +6849,9 @@
                               "branch_support_conf_category": {
                                 "value": "HIGH"
                               },
+                              "branch_support_conf_char": {
+                                "value": "*"
+                              },
                               "clade_rtt_dist": {
                                 "value": 2.1909e-06
                               },
@@ -6895,6 +6953,7 @@
                                 "Branch Number": "NA",
                                 "Branch Support": 100.0,
                                 "Branch Support Conf Category": "HIGH",
+                                "Branch Support Conf Char": "*",
                                 "Clade Rtt Dist": 2.662e-06,
                                 "Continent": "NA",
                                 "Country": "China",
@@ -6955,6 +7014,7 @@
                                     "Branch Number": "NA",
                                     "Branch Support": 100.0,
                                     "Branch Support Conf Category": "HIGH",
+                                    "Branch Support Conf Char": "*",
                                     "Clade Rtt Dist": 2.8976e-06,
                                     "Continent": "NA",
                                     "Country": "China",
@@ -7019,7 +7079,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -7031,16 +7091,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 4.0754e-06
@@ -7061,7 +7121,7 @@
                                         "value": "China (1991.0) D1991004"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -7114,7 +7174,7 @@
                                         "value": "China (1991.0) D1991004"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -7167,6 +7227,7 @@
                                         "Branch Number": "NA",
                                         "Branch Support": 100.0,
                                         "Branch Support Conf Category": "HIGH",
+                                        "Branch Support Conf Char": "*",
                                         "Clade Rtt Dist": 3.1332e-06,
                                         "Continent": "NA",
                                         "Country": "China",
@@ -7231,7 +7292,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -7243,16 +7304,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 3.8399e-06
@@ -7273,7 +7334,7 @@
                                             "value": "China (1997.0) 970754"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -7326,7 +7387,7 @@
                                             "value": "China (1997.0) 970754"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -7383,7 +7444,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -7395,16 +7456,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 3.6043e-06
@@ -7425,7 +7486,7 @@
                                             "value": "China (1991.0) CMCC27002"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -7478,7 +7539,7 @@
                                             "value": "China (1991.0) CMCC27002"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -7550,6 +7611,9 @@
                                       },
                                       "branch_support_conf_category": {
                                         "value": "HIGH"
+                                      },
+                                      "branch_support_conf_char": {
+                                        "value": "*"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 3.1332e-06
@@ -7672,6 +7736,9 @@
                                   "branch_support_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "branch_support_conf_char": {
+                                    "value": "*"
+                                  },
                                   "clade_rtt_dist": {
                                     "value": 2.8976e-06
                                   },
@@ -7773,6 +7840,7 @@
                                     "Branch Number": "NA",
                                     "Branch Support": 100.0,
                                     "Branch Support Conf Category": "HIGH",
+                                    "Branch Support Conf Char": "*",
                                     "Clade Rtt Dist": 2.8976e-06,
                                     "Continent": "NA",
                                     "Country": "China",
@@ -7833,6 +7901,7 @@
                                         "Branch Number": "NA",
                                         "Branch Support": 26.0,
                                         "Branch Support Conf Category": "LOW",
+                                        "Branch Support Conf Char": "",
                                         "Clade Rtt Dist": 2.9212e-06,
                                         "Continent": "NA",
                                         "Country": "China",
@@ -7897,7 +7966,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -7909,16 +7978,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 4.5701000000000005e-06
@@ -7939,7 +8008,7 @@
                                             "value": "China (1964.0) D1964001"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -7992,7 +8061,7 @@
                                             "value": "China (1964.0) D1964001"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -8049,7 +8118,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -8061,16 +8130,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 3.6279e-06
@@ -8091,7 +8160,7 @@
                                             "value": "China (1982.0) D1982001"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -8144,7 +8213,7 @@
                                             "value": "China (1982.0) D1982001"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -8318,6 +8387,7 @@
                                         "Branch Number": "NA",
                                         "Branch Support": 14.0,
                                         "Branch Support Conf Category": "LOW",
+                                        "Branch Support Conf Char": "",
                                         "Clade Rtt Dist": 2.9212e-06,
                                         "Continent": "NA",
                                         "Country": "China",
@@ -8382,7 +8452,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -8394,16 +8464,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 2.9448e-06
@@ -8424,7 +8494,7 @@
                                             "value": "China (1954.0) CMCC03001"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -8477,7 +8547,7 @@
                                             "value": "China (1954.0) CMCC03001"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -8530,6 +8600,7 @@
                                             "Branch Number": "NA",
                                             "Branch Support": 37.0,
                                             "Branch Support Conf Category": "LOW",
+                                            "Branch Support Conf Char": "",
                                             "Clade Rtt Dist": 2.9448e-06,
                                             "Continent": "NA",
                                             "Country": "China",
@@ -8594,7 +8665,7 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_major_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_minor": {
                                                 "confidence": {
@@ -8606,16 +8677,16 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_minor_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_number": {
                                                 "value": "1.0"
                                               },
                                               "branch_support": {
-                                                "value": 100.0
+                                                "value": 0.0
                                               },
                                               "branch_support_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "clade_rtt_dist": {
                                                 "value": 3.4159e-06
@@ -8636,7 +8707,7 @@
                                                 "value": "China (1965.0) CMCC02041"
                                               },
                                               "country_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -8689,7 +8760,7 @@
                                                 "value": "China (1965.0) CMCC02041"
                                               },
                                               "province_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -8746,7 +8817,7 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_major_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_minor": {
                                                 "confidence": {
@@ -8758,16 +8829,16 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_minor_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_number": {
                                                 "value": "1.0"
                                               },
                                               "branch_support": {
-                                                "value": 100.0
+                                                "value": 0.0
                                               },
                                               "branch_support_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "clade_rtt_dist": {
                                                 "value": 3.4159e-06
@@ -8788,7 +8859,7 @@
                                                 "value": "China (1964.0) D1964002"
                                               },
                                               "country_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -8841,7 +8912,7 @@
                                                 "value": "China (1964.0) D1964002"
                                               },
                                               "province_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -9156,6 +9227,9 @@
                                   "branch_support_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "branch_support_conf_char": {
+                                    "value": "*"
+                                  },
                                   "clade_rtt_dist": {
                                     "value": 2.8976e-06
                                   },
@@ -9277,6 +9351,9 @@
                               "branch_support_conf_category": {
                                 "value": "HIGH"
                               },
+                              "branch_support_conf_char": {
+                                "value": "*"
+                              },
                               "clade_rtt_dist": {
                                 "value": 2.662e-06
                               },
@@ -9397,6 +9474,9 @@
                           },
                           "branch_support_conf_category": {
                             "value": "HIGH"
+                          },
+                          "branch_support_conf_char": {
+                            "value": "*"
                           },
                           "clade_rtt_dist": {
                             "value": 1.4842e-06
@@ -9741,6 +9821,7 @@
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
                     "Clade Rtt Dist": 9.658e-07,
                     "Continent": "NA",
                     "Country": "China",
@@ -9805,7 +9886,7 @@
                         "value": "HIGH"
                       },
                       "branch_major_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_minor": {
                         "confidence": {
@@ -9817,16 +9898,16 @@
                         "value": "HIGH"
                       },
                       "branch_minor_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_number": {
                         "value": "1.0"
                       },
                       "branch_support": {
-                        "value": 100.0
+                        "value": 0.0
                       },
                       "branch_support_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "clade_rtt_dist": {
                         "value": 1.91099e-05
@@ -9847,7 +9928,7 @@
                         "value": "China (2006.0) D106004"
                       },
                       "country_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "country_lat": {
                         "confidence": {
@@ -9900,7 +9981,7 @@
                         "value": "China (2006.0) D106004"
                       },
                       "province_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "province_lat": {
                         "confidence": {
@@ -9953,6 +10034,7 @@
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
                         "Clade Rtt Dist": 1.2013999999999998e-06,
                         "Continent": "NA",
                         "Country": "China",
@@ -10013,6 +10095,7 @@
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
                             "Clade Rtt Dist": 2.8661999999999998e-06,
                             "Continent": "NA",
                             "Country": "China",
@@ -10073,6 +10156,7 @@
                                 "Branch Number": "NA",
                                 "Branch Support": 51.0,
                                 "Branch Support Conf Category": "LOW",
+                                "Branch Support Conf Char": "",
                                 "Clade Rtt Dist": 3.1017999999999997e-06,
                                 "Continent": "NA",
                                 "Country": "China",
@@ -10137,7 +10221,7 @@
                                     "value": "HIGH"
                                   },
                                   "branch_major_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_minor": {
                                     "confidence": {
@@ -10149,16 +10233,16 @@
                                     "value": "HIGH"
                                   },
                                   "branch_minor_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
                                   },
                                   "branch_support": {
-                                    "value": 100.0
+                                    "value": 0.0
                                   },
                                   "branch_support_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "clade_rtt_dist": {
                                     "value": 4.9863e-06
@@ -10179,7 +10263,7 @@
                                     "value": "China (1954.0) F1954001"
                                   },
                                   "country_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -10232,7 +10316,7 @@
                                     "value": "China (1954.0) F1954001"
                                   },
                                   "province_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -10289,7 +10373,7 @@
                                     "value": "HIGH"
                                   },
                                   "branch_major_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_minor": {
                                     "confidence": {
@@ -10301,16 +10385,16 @@
                                     "value": "HIGH"
                                   },
                                   "branch_minor_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
                                   },
                                   "branch_support": {
-                                    "value": 100.0
+                                    "value": 0.0
                                   },
                                   "branch_support_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "clade_rtt_dist": {
                                     "value": 3.1519e-06
@@ -10331,7 +10415,7 @@
                                     "value": "China (1954.0) YN1065"
                                   },
                                   "country_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -10384,7 +10468,7 @@
                                     "value": "China (1954.0) YN1065"
                                   },
                                   "province_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -10558,6 +10642,7 @@
                                 "Branch Number": "NA",
                                 "Branch Support": 23.0,
                                 "Branch Support Conf Category": "LOW",
+                                "Branch Support Conf Char": "",
                                 "Clade Rtt Dist": 2.8898e-06,
                                 "Continent": "NA",
                                 "Country": "China",
@@ -10618,6 +10703,7 @@
                                     "Branch Number": "NA",
                                     "Branch Support": 15.0,
                                     "Branch Support Conf Category": "LOW",
+                                    "Branch Support Conf Char": "",
                                     "Clade Rtt Dist": 2.9134e-06,
                                     "Continent": "NA",
                                     "Country": "China",
@@ -10682,7 +10768,7 @@
                                         "value": "HIGH"
                                       },
                                       "branch_major_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_minor": {
                                         "confidence": {
@@ -10694,16 +10780,16 @@
                                         "value": "HIGH"
                                       },
                                       "branch_minor_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
                                       },
                                       "branch_support": {
-                                        "value": 100.0
+                                        "value": 0.0
                                       },
                                       "branch_support_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "clade_rtt_dist": {
                                         "value": 6.211299999999999e-06
@@ -10724,7 +10810,7 @@
                                         "value": "China (1984.0) CMCC84046"
                                       },
                                       "country_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "country_lat": {
                                         "confidence": {
@@ -10777,7 +10863,7 @@
                                         "value": "China (1984.0) CMCC84046"
                                       },
                                       "province_joint_conf_category": {
-                                        "value": "HIGH"
+                                        "value": "LOW"
                                       },
                                       "province_lat": {
                                         "confidence": {
@@ -10830,6 +10916,7 @@
                                         "Branch Number": "NA",
                                         "Branch Support": 31.0,
                                         "Branch Support Conf Category": "LOW",
+                                        "Branch Support Conf Char": "",
                                         "Clade Rtt Dist": 2.937e-06,
                                         "Continent": "NA",
                                         "Country": "China",
@@ -10894,7 +10981,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -10906,16 +10993,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 4.5859e-06
@@ -10936,7 +11023,7 @@
                                             "value": "China (1979.0) CMCC84033"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -10989,7 +11076,7 @@
                                             "value": "China (1979.0) CMCC84033"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -11046,7 +11133,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -11058,16 +11145,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 4.5859e-06
@@ -11088,7 +11175,7 @@
                                             "value": "China (1957.0) YN472"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -11141,7 +11228,7 @@
                                             "value": "China (1957.0) YN472"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -11436,6 +11523,7 @@
                                     "Branch Number": "NA",
                                     "Branch Support": 3.0,
                                     "Branch Support Conf Category": "LOW",
+                                    "Branch Support Conf Char": "",
                                     "Clade Rtt Dist": 2.9134e-06,
                                     "Continent": "NA",
                                     "Country": "China",
@@ -11496,6 +11584,7 @@
                                         "Branch Number": "NA",
                                         "Branch Support": 48.0,
                                         "Branch Support Conf Category": "LOW",
+                                        "Branch Support Conf Char": "",
                                         "Clade Rtt Dist": 2.937e-06,
                                         "Continent": "NA",
                                         "Country": "China",
@@ -11560,7 +11649,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -11572,16 +11661,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 3.6437e-06
@@ -11602,7 +11691,7 @@
                                             "value": "China (1977.0) E1977001"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -11655,7 +11744,7 @@
                                             "value": "China (1977.0) E1977001"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -11712,7 +11801,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -11724,16 +11813,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 4.1148e-06
@@ -11754,7 +11843,7 @@
                                             "value": "China (1979.0) E1979001"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -11807,7 +11896,7 @@
                                             "value": "China (1979.0) E1979001"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -11981,6 +12070,7 @@
                                         "Branch Number": "NA",
                                         "Branch Support": 19.0,
                                         "Branch Support Conf Category": "LOW",
+                                        "Branch Support Conf Char": "",
                                         "Clade Rtt Dist": 2.9648999999999998e-06,
                                         "Continent": "NA",
                                         "Country": "China",
@@ -12045,7 +12135,7 @@
                                             "value": "HIGH"
                                           },
                                           "branch_major_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_minor": {
                                             "confidence": {
@@ -12057,16 +12147,16 @@
                                             "value": "HIGH"
                                           },
                                           "branch_minor_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
                                           },
                                           "branch_support": {
-                                            "value": 100.0
+                                            "value": 0.0
                                           },
                                           "branch_support_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "clade_rtt_dist": {
                                             "value": 2.48639e-05
@@ -12087,7 +12177,7 @@
                                             "value": "China (1982.0) D182038"
                                           },
                                           "country_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "country_lat": {
                                             "confidence": {
@@ -12140,7 +12230,7 @@
                                             "value": "China (1982.0) D182038"
                                           },
                                           "province_joint_conf_category": {
-                                            "value": "HIGH"
+                                            "value": "LOW"
                                           },
                                           "province_lat": {
                                             "confidence": {
@@ -12193,6 +12283,7 @@
                                             "Branch Number": "NA",
                                             "Branch Support": 27.0,
                                             "Branch Support Conf Category": "LOW",
+                                            "Branch Support Conf Char": "",
                                             "Clade Rtt Dist": 3.0171999999999997e-06,
                                             "Continent": "NA",
                                             "Country": "China",
@@ -12257,7 +12348,7 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_major_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_minor": {
                                                 "confidence": {
@@ -12269,16 +12360,16 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_minor_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_number": {
                                                 "value": "1.0"
                                               },
                                               "branch_support": {
-                                                "value": 100.0
+                                                "value": 0.0
                                               },
                                               "branch_support_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "clade_rtt_dist": {
                                                 "value": 3.9595e-06
@@ -12299,7 +12390,7 @@
                                                 "value": "China (1982.0) CMCC84038"
                                               },
                                               "country_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -12352,7 +12443,7 @@
                                                 "value": "China (1982.0) CMCC84038"
                                               },
                                               "province_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -12409,7 +12500,7 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_major_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_minor": {
                                                 "confidence": {
@@ -12421,16 +12512,16 @@
                                                 "value": "HIGH"
                                               },
                                               "branch_minor_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "branch_number": {
                                                 "value": "1.0"
                                               },
                                               "branch_support": {
-                                                "value": 100.0
+                                                "value": 0.0
                                               },
                                               "branch_support_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "clade_rtt_dist": {
                                                 "value": 3.7238999999999996e-06
@@ -12451,7 +12542,7 @@
                                                 "value": "China (1977.0) YN1683"
                                               },
                                               "country_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "country_lat": {
                                                 "confidence": {
@@ -12504,7 +12595,7 @@
                                                 "value": "China (1977.0) YN1683"
                                               },
                                               "province_joint_conf_category": {
-                                                "value": "HIGH"
+                                                "value": "LOW"
                                               },
                                               "province_lat": {
                                                 "confidence": {
@@ -13061,6 +13152,9 @@
                           "branch_support_conf_category": {
                             "value": "HIGH"
                           },
+                          "branch_support_conf_char": {
+                            "value": "*"
+                          },
                           "clade_rtt_dist": {
                             "value": 2.8661999999999998e-06
                           },
@@ -13181,6 +13275,9 @@
                       },
                       "branch_support_conf_category": {
                         "value": "HIGH"
+                      },
+                      "branch_support_conf_char": {
+                        "value": "*"
                       },
                       "clade_rtt_dist": {
                         "value": 1.2013999999999998e-06
@@ -13303,6 +13400,9 @@
                   "branch_support_conf_category": {
                     "value": "HIGH"
                   },
+                  "branch_support_conf_char": {
+                    "value": "*"
+                  },
                   "clade_rtt_dist": {
                     "value": 9.658e-07
                   },
@@ -13423,6 +13523,9 @@
               },
               "branch_support_conf_category": {
                 "value": "HIGH"
+              },
+              "branch_support_conf_char": {
+                "value": "*"
               },
               "clade_rtt_dist": {
                 "value": 4.947e-07
@@ -13665,6 +13768,9 @@
       },
       "branch_support_conf_category": {
         "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
       },
       "clade_rtt_dist": {
         "value": 0

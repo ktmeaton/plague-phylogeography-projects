@@ -135,6 +135,11 @@
         "type": "categorical"
       },
       {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
         "key": "clade_rtt_dist",
         "title": "Clade Root Distance",
         "type": "continuous"
@@ -359,35 +364,23 @@
         "type": "categorical"
       },
       {
-        "key": "country",
-        "scale": [
-          [
-            "Germany",
-            "#573ffd"
-          ],
-          [
-            "Kyrgyzstan",
-            "#07bcea"
-          ],
-          [
-            "England",
-            "#14c9e5"
-          ],
-          [
-            "Spain",
-            "#22d5e0"
-          ],
-          [
-            "France",
-            "#2fe0db"
-          ]
-        ],
-        "title": "Country",
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "rate_geo_sub",
+        "title": "Geographic Rate (km/sub/site)",
         "type": "continuous"
       },
       {
@@ -406,8 +399,55 @@
         "type": "categorical"
       },
       {
-        "key": "host_human",
-        "title": "Host Human",
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Germany",
+            "#573ffd"
+          ],
+          [
+            "Kyrgyzstan",
+            "#07bcea"
+          ],
+          [
+            "England",
+            "#14c9e5"
+          ],
+          [
+            "Spain",
+            "#22d5e0"
+          ],
+          [
+            "France",
+            "#2fe0db"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#1996f3"
+          ]
+        ],
+        "title": "Branch Minor Joint Confidence",
         "type": "categorical"
       },
       {
@@ -426,11 +466,6 @@
         "type": "categorical"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
         "key": "province_joint_conf_category",
         "scale": [
           [
@@ -446,8 +481,43 @@
         "type": "categorical"
       },
       {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major_joint_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#1996f3"
+          ]
+        ],
+        "title": "Branch Major Joint Confidence",
+        "type": "categorical"
+      },
+      {
         "key": "blank",
         "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
         "type": "categorical"
       },
       {
@@ -462,9 +532,69 @@
         "type": "categorical"
       },
       {
-        "key": "rate_geo_year",
-        "title": "Geographic Rate (km/year)",
+        "key": "host_human",
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
         "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#1996f3"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#1996f3"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
       },
       {
         "key": "province",
@@ -494,27 +624,6 @@
         "type": "categorical"
       },
       {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "0.ANT",
-            "#1996f3"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
         "key": "branch_minor_conf_category",
         "scale": [
           [
@@ -530,34 +639,40 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
         "key": "rate_sub",
         "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
-        "key": "strain",
-        "title": "Strain",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "0.ANT",
+            "#1996f3"
+          ]
+        ],
+        "title": "Branch Major",
         "type": "categorical"
+      },
+      {
+        "key": "rate_geo_year",
+        "title": "Geographic Rate (km/year)",
+        "type": "continuous"
       },
       {
         "key": "branch_major_conf_category",
@@ -575,126 +690,6 @@
         "type": "categorical"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#1996f3"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major_joint_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#1996f3"
-          ]
-        ],
-        "title": "Branch Major Joint Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_geo_sub",
-        "title": "Geographic Rate (km/sub/site)",
-        "type": "continuous"
-      },
-      {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_minor_joint_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#1996f3"
-          ]
-        ],
-        "title": "Branch Minor Joint Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#1996f3"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
         "key": "country_conf_category",
         "scale": [
           [
@@ -707,6 +702,21 @@
           ]
         ],
         "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
         "type": "categorical"
       }
     ],
@@ -812,6 +822,7 @@
         "Branch Number": "NA",
         "Branch Support": 100.0,
         "Branch Support Conf Category": "HIGH",
+        "Branch Support Conf Char": "*",
         "Clade Rtt Dist": 1.39651e-05,
         "Continent": "NA",
         "Country": "England",
@@ -876,7 +887,7 @@
             "value": "HIGH"
           },
           "branch_major_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "branch_minor": {
             "confidence": {
@@ -888,16 +899,16 @@
             "value": "HIGH"
           },
           "branch_minor_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "branch_number": {
             "value": "0.0"
           },
           "branch_support": {
-            "value": 100.0
+            "value": 0.0
           },
           "branch_support_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "clade_rtt_dist": {
             "value": 6.5943000000000005e-06
@@ -918,7 +929,7 @@
             "value": "Kyrgyzstan (214:261) DA101"
           },
           "country_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "country_lat": {
             "confidence": {
@@ -971,7 +982,7 @@
             "value": "Kyrgyzstan (214:261) DA101"
           },
           "province_joint_conf_category": {
-            "value": "HIGH"
+            "value": "LOW"
           },
           "province_lat": {
             "confidence": {
@@ -1024,6 +1035,7 @@
             "Branch Number": "NA",
             "Branch Support": 100.0,
             "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
             "Clade Rtt Dist": 1.39651e-05,
             "Continent": "NA",
             "Country": "England",
@@ -1084,6 +1096,7 @@
                 "Branch Number": "NA",
                 "Branch Support": 79.0,
                 "Branch Support Conf Category": "LOW",
+                "Branch Support Conf Char": "",
                 "Clade Rtt Dist": 1.3988699999999999e-05,
                 "Continent": "NA",
                 "Country": "England",
@@ -1148,7 +1161,7 @@
                     "value": "HIGH"
                   },
                   "branch_major_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_minor": {
                     "confidence": {
@@ -1160,16 +1173,16 @@
                     "value": "HIGH"
                   },
                   "branch_minor_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_number": {
                     "value": "0.0"
                   },
                   "branch_support": {
-                    "value": 100.0
+                    "value": 0.0
                   },
                   "branch_support_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "clade_rtt_dist": {
                     "value": 1.4459799999999998e-05
@@ -1190,7 +1203,7 @@
                     "value": "England (500:650) EDI004"
                   },
                   "country_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "country_lat": {
                     "confidence": {
@@ -1243,7 +1256,7 @@
                     "value": "England (500:650) EDI004"
                   },
                   "province_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "province_lat": {
                     "confidence": {
@@ -1296,6 +1309,7 @@
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
                     "Clade Rtt Dist": 1.4655099999999998e-05,
                     "Continent": "NA",
                     "Country": "England",
@@ -1360,7 +1374,7 @@
                         "value": "HIGH"
                       },
                       "branch_major_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_minor": {
                         "confidence": {
@@ -1372,16 +1386,16 @@
                         "value": "HIGH"
                       },
                       "branch_minor_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_number": {
                         "value": "0.0"
                       },
                       "branch_support": {
-                        "value": 100.0
+                        "value": 0.0
                       },
                       "branch_support_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "clade_rtt_dist": {
                         "value": 1.4678699999999997e-05
@@ -1402,7 +1416,7 @@
                         "value": "England (474:637) EDI001"
                       },
                       "country_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1455,7 +1469,7 @@
                         "value": "England (474:637) EDI001"
                       },
                       "province_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1512,7 +1526,7 @@
                         "value": "HIGH"
                       },
                       "branch_major_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_minor": {
                         "confidence": {
@@ -1524,16 +1538,16 @@
                         "value": "HIGH"
                       },
                       "branch_minor_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "branch_number": {
                         "value": "0.0"
                       },
                       "branch_support": {
-                        "value": 100.0
+                        "value": 0.0
                       },
                       "branch_support_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "clade_rtt_dist": {
                         "value": 1.73845e-05
@@ -1554,7 +1568,7 @@
                         "value": "England (500:650) EDI003"
                       },
                       "country_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "country_lat": {
                         "confidence": {
@@ -1607,7 +1621,7 @@
                         "value": "England (500:650) EDI003"
                       },
                       "province_joint_conf_category": {
-                        "value": "HIGH"
+                        "value": "LOW"
                       },
                       "province_lat": {
                         "confidence": {
@@ -1679,6 +1693,9 @@
                   },
                   "branch_support_conf_category": {
                     "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
                   },
                   "clade_rtt_dist": {
                     "value": 1.4655099999999998e-05
@@ -1902,6 +1919,7 @@
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
+                "Branch Support Conf Char": "*",
                 "Clade Rtt Dist": 1.4763699999999999e-05,
                 "Continent": "NA",
                 "Country": "Germany",
@@ -1966,7 +1984,7 @@
                     "value": "HIGH"
                   },
                   "branch_major_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_minor": {
                     "confidence": {
@@ -1978,16 +1996,16 @@
                     "value": "HIGH"
                   },
                   "branch_minor_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "branch_number": {
                     "value": "0.0"
                   },
                   "branch_support": {
-                    "value": 100.0
+                    "value": 0.0
                   },
                   "branch_support_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "clade_rtt_dist": {
                     "value": 1.6177099999999998e-05
@@ -2008,7 +2026,7 @@
                     "value": "Spain (432:610) VAL001"
                   },
                   "country_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "country_lat": {
                     "confidence": {
@@ -2061,7 +2079,7 @@
                     "value": "Spain (432:610) VAL001"
                   },
                   "province_joint_conf_category": {
-                    "value": "HIGH"
+                    "value": "LOW"
                   },
                   "province_lat": {
                     "confidence": {
@@ -2114,6 +2132,7 @@
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
                     "Clade Rtt Dist": 1.51447e-05,
                     "Continent": "NA",
                     "Country": "Germany",
@@ -2174,6 +2193,7 @@
                         "Branch Number": "NA",
                         "Branch Support": 81.0,
                         "Branch Support Conf Category": "LOW",
+                        "Branch Support Conf Char": "",
                         "Clade Rtt Dist": 1.5168299999999998e-05,
                         "Continent": "NA",
                         "Country": "Germany",
@@ -2238,7 +2258,7 @@
                             "value": "HIGH"
                           },
                           "branch_major_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "branch_minor": {
                             "confidence": {
@@ -2250,16 +2270,16 @@
                             "value": "HIGH"
                           },
                           "branch_minor_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "branch_number": {
                             "value": "0.0"
                           },
                           "branch_support": {
-                            "value": 100.0
+                            "value": 0.0
                           },
                           "branch_support_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "clade_rtt_dist": {
                             "value": 1.97114e-05
@@ -2280,7 +2300,7 @@
                             "value": "Germany (434:600) PET004"
                           },
                           "country_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "country_lat": {
                             "confidence": {
@@ -2333,7 +2353,7 @@
                             "value": "Germany (434:600) PET004"
                           },
                           "province_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "province_lat": {
                             "confidence": {
@@ -2386,6 +2406,7 @@
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
                             "Clade Rtt Dist": 1.9364e-05,
                             "Continent": "NA",
                             "Country": "France",
@@ -2450,7 +2471,7 @@
                                 "value": "HIGH"
                               },
                               "branch_major_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_minor": {
                                 "confidence": {
@@ -2462,16 +2483,16 @@
                                 "value": "HIGH"
                               },
                               "branch_minor_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_number": {
                                 "value": "0.0"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
                               },
                               "branch_support_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "clade_rtt_dist": {
                                 "value": 2.23203e-05
@@ -2492,7 +2513,7 @@
                                 "value": "France (650:880) LSD001"
                               },
                               "country_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2545,7 +2566,7 @@
                                 "value": "France (650:880) LSD001"
                               },
                               "province_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2602,7 +2623,7 @@
                                 "value": "HIGH"
                               },
                               "branch_major_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_minor": {
                                 "confidence": {
@@ -2614,16 +2635,16 @@
                                 "value": "HIGH"
                               },
                               "branch_minor_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_number": {
                                 "value": "0.0"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
                               },
                               "branch_support_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "clade_rtt_dist": {
                                 "value": 2.14841e-05
@@ -2644,7 +2665,7 @@
                                 "value": "France (650:880) LSD020"
                               },
                               "country_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -2697,7 +2718,7 @@
                                 "value": "France (650:880) LSD020"
                               },
                               "province_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -2769,6 +2790,9 @@
                           },
                           "branch_support_conf_category": {
                             "value": "HIGH"
+                          },
+                          "branch_support_conf_char": {
+                            "value": "*"
                           },
                           "clade_rtt_dist": {
                             "value": 1.9364e-05
@@ -2992,6 +3016,7 @@
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
                         "Clade Rtt Dist": 1.53803e-05,
                         "Continent": "NA",
                         "Country": "Germany",
@@ -3056,7 +3081,7 @@
                             "value": "HIGH"
                           },
                           "branch_major_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "branch_minor": {
                             "confidence": {
@@ -3068,16 +3093,16 @@
                             "value": "HIGH"
                           },
                           "branch_minor_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "branch_number": {
                             "value": "0.0"
                           },
                           "branch_support": {
-                            "value": 100.0
+                            "value": 0.0
                           },
                           "branch_support_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "clade_rtt_dist": {
                             "value": 1.54039e-05
@@ -3098,7 +3123,7 @@
                             "value": "Germany (426:571) AE1175"
                           },
                           "country_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "country_lat": {
                             "confidence": {
@@ -3151,7 +3176,7 @@
                             "value": "Germany (426:571) AE1175"
                           },
                           "province_joint_conf_category": {
-                            "value": "HIGH"
+                            "value": "LOW"
                           },
                           "province_lat": {
                             "confidence": {
@@ -3204,6 +3229,7 @@
                             "Branch Number": "NA",
                             "Branch Support": 65.0,
                             "Branch Support Conf Category": "LOW",
+                            "Branch Support Conf Char": "",
                             "Clade Rtt Dist": 1.54304e-05,
                             "Continent": "NA",
                             "Country": "Germany",
@@ -3268,7 +3294,7 @@
                                 "value": "HIGH"
                               },
                               "branch_major_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_minor": {
                                 "confidence": {
@@ -3280,16 +3306,16 @@
                                 "value": "HIGH"
                               },
                               "branch_minor_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "branch_number": {
                                 "value": "0.0"
                               },
                               "branch_support": {
-                                "value": 100.0
+                                "value": 0.0
                               },
                               "branch_support_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "clade_rtt_dist": {
                                 "value": 1.5454e-05
@@ -3310,7 +3336,7 @@
                                 "value": "Germany (433:599) UNT003"
                               },
                               "country_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "country_lat": {
                                 "confidence": {
@@ -3363,7 +3389,7 @@
                                 "value": "Germany (433:599) UNT003"
                               },
                               "province_joint_conf_category": {
-                                "value": "HIGH"
+                                "value": "LOW"
                               },
                               "province_lat": {
                                 "confidence": {
@@ -3416,6 +3442,7 @@
                                 "Branch Number": "NA",
                                 "Branch Support": 60.0,
                                 "Branch Support Conf Category": "LOW",
+                                "Branch Support Conf Char": "",
                                 "Clade Rtt Dist": 1.54967e-05,
                                 "Continent": "NA",
                                 "Country": "Germany",
@@ -3480,7 +3507,7 @@
                                     "value": "HIGH"
                                   },
                                   "branch_major_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_minor": {
                                     "confidence": {
@@ -3492,16 +3519,16 @@
                                     "value": "HIGH"
                                   },
                                   "branch_minor_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_number": {
                                     "value": "0.0"
                                   },
                                   "branch_support": {
-                                    "value": 100.0
+                                    "value": 0.0
                                   },
                                   "branch_support_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "clade_rtt_dist": {
                                     "value": 1.62034e-05
@@ -3522,7 +3549,7 @@
                                     "value": "Germany (428:595) DIT003"
                                   },
                                   "country_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -3575,7 +3602,7 @@
                                     "value": "Germany (428:595) DIT003"
                                   },
                                   "province_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -3632,7 +3659,7 @@
                                     "value": "HIGH"
                                   },
                                   "branch_major_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_minor": {
                                     "confidence": {
@@ -3644,16 +3671,16 @@
                                     "value": "HIGH"
                                   },
                                   "branch_minor_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "branch_number": {
                                     "value": "0.0"
                                   },
                                   "branch_support": {
-                                    "value": 100.0
+                                    "value": 0.0
                                   },
                                   "branch_support_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "clade_rtt_dist": {
                                     "value": 1.98615e-05
@@ -3674,7 +3701,7 @@
                                     "value": "Germany (419:537) UNT004"
                                   },
                                   "country_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "country_lat": {
                                     "confidence": {
@@ -3727,7 +3754,7 @@
                                     "value": "Germany (419:537) UNT004"
                                   },
                                   "province_joint_conf_category": {
-                                    "value": "HIGH"
+                                    "value": "LOW"
                                   },
                                   "province_lat": {
                                     "confidence": {
@@ -4042,6 +4069,9 @@
                       "branch_support_conf_category": {
                         "value": "HIGH"
                       },
+                      "branch_support_conf_char": {
+                        "value": "*"
+                      },
                       "clade_rtt_dist": {
                         "value": 1.53803e-05
                       },
@@ -4162,6 +4192,9 @@
                   },
                   "branch_support_conf_category": {
                     "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
                   },
                   "clade_rtt_dist": {
                     "value": 1.51447e-05
@@ -4284,6 +4317,9 @@
               "branch_support_conf_category": {
                 "value": "HIGH"
               },
+              "branch_support_conf_char": {
+                "value": "*"
+              },
               "clade_rtt_dist": {
                 "value": 1.4763699999999999e-05
               },
@@ -4405,6 +4441,9 @@
           "branch_support_conf_category": {
             "value": "HIGH"
           },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
           "clade_rtt_dist": {
             "value": 1.39651e-05
           },
@@ -4525,6 +4564,9 @@
       },
       "branch_support_conf_category": {
         "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
       },
       "clade_rtt_dist": {
         "value": 3.1827e-06

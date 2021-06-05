@@ -8,6 +8,11 @@
         "type": "continuous"
       },
       {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
         "key": "branch_length_sub",
         "title": "Branch Length Subs",
         "type": "continuous"
@@ -32,6 +37,26 @@
         "key": "branch_support",
         "title": "Branch Support",
         "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
       },
       {
         "key": "country",
@@ -63,7 +88,31 @@
         "type": "continuous"
       },
       {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
         "key": "host_human",
+        "scale": [
+          [
+            "Human",
+            "#CBB742"
+          ],
+          [
+            "Non-Human",
+            "#60B6F2"
+          ],
+          [
+            "NA",
+            "#D6D6D6"
+          ]
+        ],
         "title": "Host Human",
         "type": "categorical"
       },
@@ -117,6 +166,70 @@
         "key": "strain",
         "title": "Strain",
         "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Kenya",
+            "#d0e083"
+          ],
+          [
+            "Uganda",
+            "#ddd579"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#ebc970"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "scale": [
+          [
+            "Human",
+            "#CBB742"
+          ],
+          [
+            "Non-Human",
+            "#60B6F2"
+          ],
+          [
+            "NA",
+            "#D6D6D6"
+          ]
+        ],
+        "title": "Host Human",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
       },
       {
         "key": "biovar",
@@ -124,23 +237,33 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support",
-        "title": "Branch Support",
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff964f"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
         "type": "continuous"
       },
       {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
         "type": "continuous"
       },
       {
@@ -149,64 +272,33 @@
         "type": "continuous"
       },
       {
-        "key": "province",
-        "scale": [
-          [
-            "Nairobi",
-            "#ff9f54"
-          ]
-        ],
-        "title": "Province",
-        "type": "categorical"
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
       },
       {
-        "key": "country",
-        "scale": [
-          [
-            "Kenya",
-            "#d0e083"
-          ],
-          [
-            "Uganda",
-            "#ddd579"
-          ],
-          [
-            "Democratic Republic of the Congo",
-            "#ebc970"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_major",
-        "scale": [
-          [
-            "1.ANT",
-            "#ff964f"
-          ]
-        ],
-        "title": "Branch Major",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "Host Human",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
+        "key": "country_lon",
+        "title": "Country Longitude",
         "type": "continuous"
       },
       {
         "key": "province_lat",
         "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
         "type": "continuous"
       },
       {
@@ -225,19 +317,20 @@
         "type": "categorical"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
-        "key": "date_bp",
-        "title": "date_bp",
+        "key": "strain",
+        "title": "Strain",
         "type": "categorical"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
+        "key": "province",
+        "scale": [
+          [
+            "Nairobi",
+            "#ff9f54"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
       }
     ],
     "display_defaults": {
@@ -303,16 +396,19 @@
     "branch_attrs": {
       "labels": {
         "Biovar": "NA",
+        "Blank": " ",
         "Branch Length": 191.4174971593692,
         "Branch Length Sub": 52.0,
         "Branch Length Time": 191.0,
         "Branch Major": "NA",
         "Branch Support": 100.0,
+        "Branch Support Conf Category": "HIGH",
+        "Branch Support Conf Char": "*",
         "Country": "NA",
         "Country Lat": "NA",
         "Country Lon": "NA",
-        "Date": "NA",
-        "Date Bp": "NA",
+        "Date Bp Mean": "NA",
+        "Date Mean": "NA",
         "Host Human": "NA",
         "Node Type": "internal",
         "Num Date": 1950.32772520309,
@@ -346,7 +442,10 @@
             "value": "1.ANT"
           },
           "branch_support": {
-            "value": 100.0
+            "value": 0.0
+          },
+          "branch_support_conf_category": {
+            "value": "LOW"
           },
           "country": {
             "value": "Kenya"
@@ -357,8 +456,11 @@
           "country_lon": {
             "value": 38.4313975
           },
-          "date_bp": {
-            "value": "-36"
+          "date_bp_mean": {
+            "value": 36.0
+          },
+          "date_mean": {
+            "value": 1985.0
           },
           "div": 226.08977195628,
           "node_type": {
@@ -395,16 +497,19 @@
         "branch_attrs": {
           "labels": {
             "Biovar": "NA",
+            "Blank": " ",
             "Branch Length": 191.4174971593692,
             "Branch Length Sub": 52.0,
             "Branch Length Time": 191.0,
             "Branch Major": "NA",
             "Branch Support": 100.0,
+            "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
             "Country": "NA",
             "Country Lat": "NA",
             "Country Lon": "NA",
-            "Date": "NA",
-            "Date Bp": "NA",
+            "Date Bp Mean": "NA",
+            "Date Mean": "NA",
             "Host Human": "NA",
             "Node Type": "internal",
             "Num Date": 1950.32772520309,
@@ -438,7 +543,10 @@
                 "value": "1.ANT"
               },
               "branch_support": {
-                "value": 100.0
+                "value": 0.0
+              },
+              "branch_support_conf_category": {
+                "value": "LOW"
               },
               "country": {
                 "value": "Democratic Republic of the Congo"
@@ -449,8 +557,11 @@
               "country_lon": {
                 "value": 23.822263600000007
               },
-              "date_bp": {
-                "value": "-67"
+              "date_bp_mean": {
+                "value": 67.0
+              },
+              "date_mean": {
+                "value": 1954.0
               },
               "div": 193.59531042012304,
               "node_type": {
@@ -478,16 +589,19 @@
             "branch_attrs": {
               "labels": {
                 "Biovar": "NA",
+                "Blank": " ",
                 "Branch Length": 3.2365086358896122,
                 "Branch Length Sub": 3.0,
                 "Branch Length Time": 3.0,
                 "Branch Major": "NA",
                 "Branch Support": 40.0,
+                "Branch Support Conf Category": "LOW",
+                "Branch Support Conf Char": "",
                 "Country": "NA",
                 "Country Lat": "NA",
                 "Country Lon": "NA",
-                "Date": "NA",
-                "Date Bp": "NA",
+                "Date Bp Mean": "NA",
+                "Date Mean": "NA",
                 "Host Human": "NA",
                 "Node Type": "internal",
                 "Num Date": 1954.9690506762945,
@@ -521,7 +635,10 @@
                     "value": "1.ANT"
                   },
                   "branch_support": {
-                    "value": 100.0
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
                   },
                   "country": {
                     "value": "Democratic Republic of the Congo"
@@ -532,8 +649,11 @@
                   "country_lon": {
                     "value": 23.822263600000007
                   },
-                  "date_bp": {
-                    "value": "-56"
+                  "date_bp_mean": {
+                    "value": 56.0
+                  },
+                  "date_mean": {
+                    "value": 1965.0
                   },
                   "div": 207.37632872915935,
                   "host_human": {
@@ -577,7 +697,10 @@
                     "value": "1.ANT"
                   },
                   "branch_support": {
-                    "value": 100.0
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
                   },
                   "country": {
                     "value": "Uganda"
@@ -588,8 +711,11 @@
                   "country_lon": {
                     "value": 32.2166578
                   },
-                  "date_bp": {
-                    "value": "-17"
+                  "date_bp_mean": {
+                    "value": 17.0
+                  },
+                  "date_mean": {
+                    "value": 2004.0
                   },
                   "div": 246.1822071826755,
                   "host_human": {
@@ -628,6 +754,9 @@
               "branch_support": {
                 "value": 40.0
               },
+              "branch_support_conf_category": {
+                "value": "LOW"
+              },
               "div": 194.6540057952588,
               "node_type": {
                 "value": "internal"
@@ -659,6 +788,12 @@
           "branch_support": {
             "value": 100.0
           },
+          "branch_support_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
           "div": 191.4174971593692,
           "node_type": {
             "value": "internal"
@@ -689,6 +824,12 @@
       },
       "branch_support": {
         "value": 100.0
+      },
+      "branch_support_conf_category": {
+        "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
       },
       "div": 0,
       "node_type": {
