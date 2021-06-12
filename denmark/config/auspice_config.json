@@ -1,6 +1,6 @@
 {
-  "title": "Plague Denmark",
-  "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main/denmark",
+  "title": "Plague Phylogeography Denmark",
+  "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/denmark",
   "maintainers": [
     {
       "name": "Katherine Eaton",
@@ -9,40 +9,80 @@
   ],
   "colorings": [
     {
-      "key": "scf",
-      "title": "sCF",
-      "type": "continuous"
-    },
-    {
       "key": "biosample_accession",
       "title": "BioSample Accession",
       "type": "categorical"
-    },
+    }, 
     {
-      "key": "biosample_comment",
-      "title": "BioSample Comment",
+      "key": "blank",
+      "title": "Blank",
       "type": "categorical"
-    },
+    },    
     {
-      "key": "biovar",
-      "title": "Biovar",
-      "type": "categorical"
-    },
+      "key": "branch_length_sub",
+      "title": "Branch Length Subs",
+      "type": "continuous"
+    },    
+    {
+      "key": "branch_length_time",
+      "title": "Branch Length Time",
+      "type": "continuous"
+    },      
     {
       "key": "branch_major",
       "title": "Branch Major",
       "type": "categorical"
     },
     {
+      "key": "branch_major_conf_category",
+      "title": "Branch Major Confidence",
+      "type": "categorical"
+    },      
+    {
+      "key": "branch_major_joint_conf_category",
+      "title": "Branch Major Joint Confidence",
+      "type": "categorical"
+    },          
+    {
       "key": "branch_minor",
       "title": "Branch Minor",
       "type": "categorical"
     },
     {
+      "key": "branch_minor_conf_category",
+      "title": "Branch Minor Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "branch_minor_joint_conf_category",
+      "title": "Branch Minor Joint Confidence",
+      "type": "categorical"
+    },        
+    {
       "key": "branch_number",
       "title": "Branch Number",
       "type": "categorical"
     },
+    {
+      "key": "branch_support",
+      "title": "Branch Support",
+      "type": "continuous"
+    },     
+    {
+      "key": "branch_support_conf_category",
+      "title": "Branch Support Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "branch_support_conf_char",
+      "title": "Branch Support Confidence Character",
+      "type": "categorical"
+    },       
+    {
+      "key": "clade_rtt_dist",
+      "title": "Clade Root Distance",
+      "type": "continuous"
+    },        
     {
       "key": "continent",
       "title": "Continent",
@@ -54,10 +94,55 @@
       "type": "categorical"
     },
     {
-      "key": "date_bp",
-      "title": "Collection Date (BP)",
+      "key": "country_lat",
+      "title": "Country Latitude",
+      "type": "continuous"
+    }, 
+    {
+      "key": "country_lon",
+      "title": "Country Longitude",
+      "type": "continuous"
+    },    
+    {
+      "key": "country_conf_category",
+      "title": "Country Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "country_joint_conf_category",
+      "title": "Country Joint Confidence",
+      "type": "categorical"
+    },      
+    {
+      "key": "country_date_strain",
+      "title": "Country Date Strain",
+      "type": "categorical"
+    },        
+    {
+      "key": "date_bp_mean",
+      "title": "Collection Date (Years BP)",
       "type": "continuous"
     },
+    {
+      "key": "date_mean",
+      "title": "Collection Date (Calendar Year)",
+      "type": "continuous"
+    },
+    {
+      "key": "date_err",
+      "title": "Collection Date Uncertainty",
+      "type": "continuous"
+    },  
+    {
+      "key": "host_human",
+      "title": "Host Human",
+      "type": "categorical"
+    },       
+    {
+      "key": "node_name",
+      "title": "Node Name",
+      "type": "categorical"
+    },    
     {
       "key": "node_type",
       "title": "Node Type",
@@ -69,90 +154,65 @@
       "type": "categorical"
     },
     {
-      "key": "rate",
-      "title": "Substitution Rate",
+      "key": "province_date_strain",
+      "title": "Province Date Strain",
+      "type": "categorical"
+    },     
+    {
+      "key": "province_lat",
+      "title": "Province Latitude",
+      "type": "continuous"
+    }, 
+    {
+      "key": "province_lon",
+      "title": "Province Longitude",
+      "type": "continuous"
+    },        
+    {
+      "key": "province_conf_category",
+      "title": "Province Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "province_joint_conf_category",
+      "title": "Province Joint Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "root_rtt_dist",
+      "title": "Root Distance",
+      "type": "continuous"
+    },          
+    {
+      "key": "rate_sub",
+      "title": "Substitution Rate (subs/site/year)",
+      "type": "continuous"
+    },  
+    {
+      "key": "rate_sub_year",
+      "title": "Substitution Rate (subs/year)",
+      "type": "continuous"
+    },         
+    {
+      "key": "rate_geo_sub",
+      "title": "Geographic Rate (km/sub/site)",
       "type": "continuous"
     },
     {
-      "key": "rate_fold_change",
-      "title": "Substitution Rate Fold Change",
+      "key": "rate_geo_year",
+      "title": "Geographic Rate (km/year)",
       "type": "continuous"
-    },
-    {
-      "key": "raw_date",
-      "title": "Collection Date",
-      "type": "continuous"
-    },
+    },     
     {
       "key": "strain",
       "title": "Strain",
       "type": "categorical"
-    },
-    {
-      "key": "ufboot",
-      "title": "Ultrafast Bootstrap",
-      "type": "continuous"
-    },
-    {
-    "key": "chrom_cov",
-    "title": "Chromosome Coverage",
-    "type": "continuous"
-    },
-    {
-      "key": "pcd1_cov",
-      "title": "pCD1 Coverage",
-      "type": "continuous"
-    },
-    {
-      "key": "pmt1_cov",
-      "title": "pMT1 Coverage",
-      "type": "continuous"
-    },
-    {
-      "key": "ppcp1_cov",
-      "title": "pPCP1 Coverage",
-      "type": "continuous"
-    },
-    {
-      "key": "pla_cov",
-      "title": "pla Coverage",
-      "type": "continuous"
-    },
-    {
-    "key": "chrom_dep",
-    "title": "Chromosome Depth",
-    "type": "continuous"
-    },
-    {
-      "key": "pcd1_dep",
-      "title": "pCD1 Depth",
-      "type": "continuous"
-    },
-    {
-      "key": "pmt1_dep",
-      "title": "pMT1 Depth",
-      "type": "continuous"
-    },
-    {
-      "key": "ppcp1_dep",
-      "title": "pPCP1 Depth",
-      "type": "continuous"
-    },
-    {
-      "key": "pla_dep",
-      "title": "pla Depth",
-      "type": "continuous"
-    },
-    {
-      "key": "ppcp1_pla_dep_ratio",
-      "title": "pPCP1 pla Depth Ratio",
-      "type": "continuous"
     }
   ],
   "filters": [
     "country",
     "province",
-    "biovar",
+    "continent",
     "branch_major",
     "branch_minor"
   ],
@@ -167,9 +227,11 @@
   ],
   "display_defaults": {
     "color_by": "branch_major",
-    "distance_measure": "div",
+    "distance_measure": "num_date",
     "geo_resolution": "province",
     "map_triplicate": true,
-    "branch_label": "none"
+    "branch_label": "none",
+    "transmission_lines": true,
+    "layout": "rect"
   }
 }

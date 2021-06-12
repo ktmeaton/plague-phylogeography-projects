@@ -11,10 +11,11 @@ sqlite_select_command_asm : SELECT
                             LEFT JOIN Assembly
                               ON AssemblyBioSampleAccession = BioSampleAccession
                             WHERE
-                              BioSampleComment LIKE '%KEEP%Assembly%Modern%'
+                              (BioSampleComment LIKE '%KEEP%Assembly%Modern%'
                               AND length(AssemblyFTPGenbank) > 0
-                              AND length(BioSampleCollectionDate) > 0
+                              AND length(BioSampleCollectionDate) > 0)
                               AND length(BioSampleGeographicLocation) > 0
+                              OR (BioSampleComment LIKE '%KEEP%Assembly%Modern%Outgroup%')
 
 sqlite_select_command_sra : SELECT
                               BioSampleAccession,
@@ -28,6 +29,7 @@ sqlite_select_command_sra : SELECT
                                SRAComment NOT LIKE "%REMOVE%")
                               AND length(BioSampleCollectionDate) > 0
                               AND length(BioSampleGeographicLocation) > 0
+                              AND BioSampleBranch LIKE "%1.PRE%" 
 
 sqlite_select_command_local : SELECT
                               BioSampleAccession
@@ -46,10 +48,9 @@ sqlite_select_command_ref : SELECT
                               (BioSampleComment LIKE '%Assembly%Modern%Reference%')
 
 # Dataset size
-max_datasets_assembly : 1000
+max_datasets_assembly : 0
 max_datasets_sra : 1000
 reads_origin :
-  - "assembly"
   - "sra"
   - "local"
 
@@ -61,6 +62,9 @@ reference_locus : "AL590842"
 reference_locus_name : "chromosome"
 reference_locus_start : "0"
 reference_locus_end : "4653728"
+reference_date_bp : "29"
+reference_lat : "38.7251776"
+reference_lon : "-105.607716"
 
 # Eager param
 eager_rev: "2.2.1"
@@ -80,7 +84,7 @@ snippy_base_qual : 20
 snippy_map_qual : 30
 snippy_min_frac : 0.9
 snippy_mask_char : "X"
-snippy_missing_data : 1
+snippy_missing_data : 5
 snippy_snp_density : 10
 # Make this an empty string if removing singletons
 #snippy_keep_singleton: ""
@@ -92,21 +96,33 @@ snippy_multi_plot_missing_data:
   - 3
   - 4
   - 5
-#  - 6
-#  - 7
-#  - 8
-#  - 9
-#  - 10
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 
 # IQTREE
 #iqtree_model: "-m MFP"
 iqtree_model : "-m K3Pu+F+I"
-iqtree_seed : "47321424" # keeping it consistent in a config file allows for checkpointing
+iqtree_seed : "521985475123" # keeping it consistent in a config file allows for checkpointing
+
 # Outgroup Option #1: Reference
-#iqtree_outgroup : "Reference"
+iqtree_outgroup : "Reference"
+
 # Outgroup Option #2: Basal modern clade
 #iqtree_outgroup : "GCA_000323485.1_ASM32348v1_genomic,GCA_000323845.1_ASM32384v1_genomic"
+
 # Outgroup Option #3: Basal ancient clade
-iqtree_outgroup : "SAMEA3541826,SAMEA3541827"
-iqtree_other : "--ufboot 1000 --polytomy"
+#iqtree_outgroup : "SAMEA3541826"
+
+# Outgroup Option #4: Outgroup
+#iqtree_outgroup : "GCA_900637475.1_51108_B01_genomic,GCA_000834295.1_ASM83429v1_genomic"
+iqtree_other : "--ufboot 1000"
 iqtree_runs : 10
+
+mugration_attribute:
+  - branch_major
+  - branch_minor
+  - country
+  - province
