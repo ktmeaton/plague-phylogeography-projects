@@ -1,0 +1,48 @@
+
+LEAST-SQUARE METHODS TO ESTIMATE RATES AND DATES - v.1.9.9 
+
+
+Input files:
+  i                                               Input tree file : /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter30/iqtree.treefile
+  d                                               Input date file : /2/scratch/keaton/plague-phylogeography/results/lsd/all/chromosome/full/filter30/lsd.dates.txt
+  p                                                Partition file : No
+  g                                       File contains outgroups : /2/scratch/keaton/plague-phylogeography/results/lsd/all/chromosome/full/filter30/lsd.outgroups.txt
+  G                       Remove outgroups in the estimating tree : Yes
+Output file:
+  o                                                  Output file  : /2/scratch/keaton/plague-phylogeography/results/lsd/all/chromosome/full/filter30/lsd
+Parameters:
+  a                                                     Root date : No
+  z                                                     Tips date : No
+  c                                              With constraints : Yes
+  t                                      Lower bound for the rate : 1e-10
+  v                                                With variances : Yes, use variances based on estimated branch lengths
+  b                              Adjusted parameter for variances : To estimate
+  r                                             Estimate the root : On the branch given by the outgroups
+  w                                       Given substitution rate : No
+  n                                             Multiple data set : No
+  f                                  Compute confidence intervals : Yes, sampling 100 times
+  q                  Standard deviation of lognormal relaxed clock: 0.2 (for computing confidence intervals)
+  s                                               Sequence length : 4289810
+  e                                          Exclude outlier tips : No
+  u                Min internal branch length of time scaled tree : 0
+  U                Min external branch length of time scaled tree : 0
+  l                        Collapsed internal branch length limit : 1.16555e-07
+  D                                            Output date format : Based on input date format
+  E  Estimate rates for external and internal branches separately : No
+
+  h to print Help 
+  y to accept or type a letter to change an option (x = Exit) 
+Tree 1 
+Parameter to adjust variances was set to 2.33111e-06 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+*RESULTS:
+- Dating results:
+ rate 4.06209e-08, tMRCA -693.116 , objective function 1.34312e-05
+- Results of the second run with variances based on results of the first run:
+ rate 4.43823e-08, tMRCA -700.591, objective function 2.04856e-05
+- Results with confidence intervals:
+ rate 4.43823e-08 [3.68717e-08; 5.83617e-08], tMRCA -700.591 [-725.525; -690.798], objective function 2.04856e-05
+
+*********************************************************
+
+TOTAL ELAPSED TIME: 0.08 seconds
