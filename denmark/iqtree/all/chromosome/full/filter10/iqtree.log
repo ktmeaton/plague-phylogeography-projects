@@ -1,0 +1,1211 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Mar 30 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    info113 (SSE3, 252 GB RAM)
+Command: iqtree -s /2/scratch/keaton/plague-phylogeography/results/snippy_multi/all/chromosome/full/filter10/snippy-multi.snps.aln -m MFP --threads-max 10 -nt 10 -o Reference -seed 521985475123 --runs 10 -fconst 1126877,1014147,1025167,1123742 --ufboot 1000 -redo -pre /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree
+Seed:    2000534989 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jun 16 12:38:20 2021
+Kernel:  SSE2 - 10 threads (48 CPU cores detected)
+
+Reading alignment file /2/scratch/keaton/plague-phylogeography/results/snippy_multi/all/chromosome/full/filter10/snippy-multi.snps.aln ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 50 sequences with 202 columns, 200 distinct patterns
+123 parsimony-informative, 79 singleton sites, 0 constant sites
+                 Gap/Ambiguity  Composition  p-value
+   1  D51               15.35%    passed     51.33%
+   2  D62               27.23%    passed     24.07%
+   3  D71                3.96%    passed     22.93%
+   4  D72                7.92%    passed     90.84%
+   5  D75                2.97%    passed     93.44%
+   6  P187              22.77%    passed     74.18%
+   7  P212              17.82%    passed     69.58%
+   8  P387              16.83%    passed     73.55%
+   9  R36                5.94%    passed     77.02%
+  10  Reference          0.00%    failed      3.76%
+  11  SAMEA3713711       3.47%    failed      0.58%
+  12  SAMEA3713712       1.49%    failed      0.33%
+  13  SAMEA3713713       0.00%    failed      0.26%
+  14  SAMEA3713714       2.48%    failed      0.59%
+  15  SAMEA3713715       0.50%    failed      1.83%
+  16  SAMEA3937653       2.48%    passed      9.44%
+  17  SAMEA3937654       1.49%    passed      9.58%
+  18  SAMEA5054089       2.97%    passed     56.10%
+  19  SAMEA5054090       1.98%    passed     45.93%
+  20  SAMEA5054092       0.99%    passed      9.61%
+  21  SAMEA5054093      19.80%    failed      2.96%
+  22  SAMEA5818798       1.49%    passed     15.96%
+  23  SAMEA5818799       0.00%    passed     12.64%
+  24  SAMEA5818800       0.00%    passed      6.63%
+  25  SAMEA5818801       0.50%    passed     13.99%
+  26  SAMEA5818803       0.50%    passed     80.67%
+  27  SAMEA5818805       0.00%    passed     77.54%
+  28  SAMEA5818806       0.00%    passed     11.09%
+  29  SAMEA5818808      17.82%    passed     61.34%
+  30  SAMEA5818809       0.50%    passed     39.82%
+  31  SAMEA5818811       9.41%    failed      4.44%
+  32  SAMEA5818815       0.50%    passed     89.36%
+  33  SAMEA5818817       1.98%    passed     35.84%
+  34  SAMEA5818818       2.48%    passed     94.75%
+  35  SAMEA5818821       0.50%    passed     86.36%
+  36  SAMEA5818822      11.39%    passed     73.60%
+  37  SAMEA5818825      10.89%    passed     95.35%
+  38  SAMEA5818826       0.00%    passed     80.16%
+  39  SAMEA5818828       0.50%    passed     86.36%
+  40  SAMEA5818829       0.50%    passed     74.62%
+  41  SAMEA5818830       0.50%    passed     71.10%
+  42  SAMEA6637002       0.00%    passed     77.54%
+  43  SAMEA6637004       0.50%    passed     96.28%
+  44  SAMEA6651390       0.00%    passed     77.54%
+  45  SAMEA7293135       0.50%    failed      2.44%
+  46  SAMEA7293136       8.42%    passed     33.56%
+  47  SAMEA7313236_38    6.44%    failed      0.19%
+  48  SAMEA7313243_45   28.71%    passed     46.17%
+  49  SAMEA7313246_49    0.00%    passed     70.39%
+  50  SAMN00715800       1.98%    passed      6.24%
+****  TOTAL              5.29%  10 sequences failed composition chi2 test (p-value<5%; df=3)
+INFO: 4289933 const sites added into alignment
+NOTE: minimal branch length is reduced to 0.000000023309 for long alignment
+NOTE: SAMEA6637002 is identical to SAMEA5818805 but kept for subsequent analysis
+NOTE: 1 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: SAMEA6651390 (identical to SAMEA5818805) is ignored but added at the end
+Alignment was printed to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -5946190.118
+Optimal log-likelihood: -5946189.677
+Rate parameters:  A-C: 0.52053  A-G: 1.76160  A-T: 0.23378  C-G: 0.20169  C-T: 1.59932  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.029 sec)
+Time for fast ML tree search: 0.137 seconds
+
+NOTE: ModelFinder requires 4 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 4290135) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  1  GTR+F         5946356.733  103 11892919.467 11892919.472 11894286.465
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  2  GTR+F+I       5945677.429  104 11891562.858 11891562.863 11892943.128
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  3  GTR+F+G4      5946244.332  104 11892696.664 11892696.669 11894076.934
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  4  GTR+F+I+G4    5946188.193  105 11892586.385 11892586.391 11893979.927
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  5  GTR+F+R2      5946319.290  105 11892848.580 11892848.585 11894242.122
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  6  GTR+F+R3      5946286.384  107 11892786.768 11892786.774 11894206.854
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  7  GTR+F+R4      5946264.866  109 11892747.731 11892747.737 11894194.360
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  8  GTR+F+R5      5946249.500  111 11892721.000 11892721.006 11894194.173
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  9  GTR+F+R6      5946237.178  113 11892700.355 11892700.361 11894200.072
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 15  SYM+I         5950915.790  101 11902033.580 11902033.585 11903374.035
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 28  TVM+F+I       5945677.456  103 11891560.913 11891560.918 11892927.911
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 41  TVMe+I        5950915.790  100 11902031.580 11902031.584 11903358.763
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 54  TIM3+F+I      5945686.556  102 11891577.111 11891577.116 11892930.838
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 67  TIM3e+I       5950924.638  99  11902047.276 11902047.280 11903361.187
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 80  TIM2+F+I      5945687.963  102 11891579.926 11891579.931 11892933.652
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 93  TIM2e+I       5950927.266  99  11902052.532 11902052.536 11903366.443
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+106  TIM+F+I       5945679.496  102 11891562.992 11891562.997 11892916.718
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+119  TIMe+I        5950918.201  99  11902034.401 11902034.406 11903348.312
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+132  TPM3u+F+I     5945686.686  101 11891575.371 11891575.376 11892915.826
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+145  TPM3+F+I      5945686.600  101 11891575.201 11891575.205 11892915.655
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+158  TPM2u+F+I     5945688.004  101 11891578.009 11891578.014 11892918.463
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+171  TPM2+F+I      5945688.004  101 11891578.009 11891578.014 11892918.463
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+184  K3Pu+F+I      5945679.551  101 11891561.101 11891561.106 11892901.556
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+197  K3P+I         5950918.294  98  11902032.588 11902032.592 11903333.227
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+210  TN+F+I        5945688.667  101 11891579.334 11891579.339 11892919.789
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+223  TNe+I         5950927.536  98  11902051.072 11902051.077 11903351.712
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+236  HKY+F+I       5945688.752  100 11891577.504 11891577.509 11892904.687
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+249  K2P+I         5950927.648  97  11902049.296 11902049.301 11903336.664
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+262  F81+F+I       5945738.882  99  11891675.765 11891675.769 11892989.676
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+275  JC+I          5950978.055  96  11902148.111 11902148.115 11903422.206
+Akaike Information Criterion:           TVM+F+I
+Corrected Akaike Information Criterion: TVM+F+I
+Bayesian Information Criterion:         K3Pu+F+I
+Best-fit model: K3Pu+F+I chosen according to BIC
+
+All model information printed to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.model.gz
+CPU time for ModelFinder: 43.529 seconds (0h:0m:43s)
+Wall-clock time for ModelFinder: 32.225 seconds (0h:0m:32s)
+
+---> START RUN NUMBER 1 (seed: 2000534989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.003 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000534989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946364.179
+2. Current log-likelihood: -5945698.246
+3. Current log-likelihood: -5945690.431
+4. Current log-likelihood: -5945684.525
+5. Current log-likelihood: -5945682.142
+6. Current log-likelihood: -5945681.542
+7. Current log-likelihood: -5945680.140
+8. Current log-likelihood: -5945679.817
+Optimal log-likelihood: -5945679.786
+Rate parameters:  A-C: 1.00000  A-G: 2.55275  A-T: 0.42139  C-G: 0.42139  C-T: 2.55275  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 8 rounds (0.066 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.011704 sec (of wall-clock time) 0.079988 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.033227 sec (of wall-clock time) 0.124981 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5957242.123
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.530 second
+Computing log-likelihood of 98 initial trees ... 0.508 seconds
+Current best score: -5945674.672
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.647
+Iteration 10 / LogL: -5945676.935 / Time: 0h:0m:33s
+Iteration 20 / LogL: -5945679.432 / Time: 0h:0m:34s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.647 / CPU time: 3.386
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945673.676 / Time: 0h:0m:36s (0h:0m:12s left)
+Iteration 40 / LogL: -5945673.663 / Time: 0h:0m:37s (0h:0m:9s left)
+Iteration 50 / LogL: -5945681.309 / Time: 0h:0m:38s (0h:0m:7s left)
+Log-likelihood cutoff on original alignment: -5945705.256
+Iteration 60 / LogL: -5945673.740 / Time: 0h:0m:40s (0h:0m:6s left)
+Iteration 70 / LogL: -5945673.928 / Time: 0h:0m:41s (0h:0m:4s left)
+Iteration 80 / LogL: -5945694.337 / Time: 0h:0m:43s (0h:0m:3s left)
+Iteration 90 / LogL: -5945673.663 / Time: 0h:0m:44s (0h:0m:1s left)
+Iteration 100 / LogL: -5945674.510 / Time: 0h:0m:45s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -5945705.256
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.994
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:46s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.647
+Optimal log-likelihood: -5945673.642
+Rate parameters:  A-C: 1.00000  A-G: 2.55328  A-T: 0.43904  C-G: 0.43904  C-T: 2.55328  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 1 rounds (0.014 sec)
+BEST SCORE FOUND : -5945673.642
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 102
+CPU time used for tree search: 128.833 sec (0h:2m:8s)
+Wall-clock time used for tree search: 15.000 sec (0h:0m:14s)
+Total CPU time used: 160.459 sec (0h:2m:40s)
+Total wall-clock time used: 46.941 sec (0h:0m:46s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 653 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945677.105
+
+---> START RUN NUMBER 2 (seed: 2000535989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000535989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946366.494
+2. Current log-likelihood: -5945699.232
+3. Current log-likelihood: -5945691.967
+4. Current log-likelihood: -5945685.998
+5. Current log-likelihood: -5945683.646
+6. Current log-likelihood: -5945683.005
+7. Current log-likelihood: -5945682.412
+8. Current log-likelihood: -5945681.107
+Optimal log-likelihood: -5945681.039
+Rate parameters:  A-C: 1.00000  A-G: 2.45377  A-T: 0.39888  C-G: 0.39888  C-T: 2.45377  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 8 rounds (0.066 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009806 sec (of wall-clock time) 0.070990 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.033512 sec (of wall-clock time) 0.117982 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5957242.123
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.512 second
+Computing log-likelihood of 98 initial trees ... 0.506 seconds
+Current best score: -5945674.218
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.768
+Iteration 10 / LogL: -5945673.788 / Time: 0h:0m:33s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 13: -5945673.698
+Iteration 20 / LogL: -5945679.439 / Time: 0h:0m:34s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.698 / CPU time: 3.435
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945701.922 / Time: 0h:0m:35s (0h:0m:14s left)
+Iteration 40 / LogL: -5945674.025 / Time: 0h:0m:37s (0h:0m:11s left)
+Iteration 50 / LogL: -5945673.772 / Time: 0h:0m:38s (0h:0m:10s left)
+Log-likelihood cutoff on original alignment: -5945709.391
+Iteration 60 / LogL: -5945689.952 / Time: 0h:0m:40s (0h:0m:8s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 63: -5945673.668
+Iteration 70 / LogL: -5945674.433 / Time: 0h:0m:41s (0h:0m:14s left)
+Iteration 80 / LogL: -5945674.327 / Time: 0h:0m:43s (0h:0m:13s left)
+Iteration 90 / LogL: -5945675.395 / Time: 0h:0m:44s (0h:0m:11s left)
+Iteration 100 / LogL: -5945673.943 / Time: 0h:0m:46s (0h:0m:9s left)
+Log-likelihood cutoff on original alignment: -5945709.391
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 108: -5945673.614
+Iteration 110 / LogL: -5945674.151 / Time: 0h:0m:48s (0h:0m:15s left)
+Iteration 120 / LogL: -5945674.123 / Time: 0h:0m:49s (0h:0m:13s left)
+Iteration 130 / LogL: -5945674.656 / Time: 0h:0m:51s (0h:0m:12s left)
+Iteration 140 / LogL: -5945676.054 / Time: 0h:0m:52s (0h:0m:10s left)
+Iteration 150 / LogL: -5945674.100 / Time: 0h:0m:53s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -5945709.391
+Iteration 160 / LogL: -5945673.899 / Time: 0h:0m:55s (0h:0m:7s left)
+Iteration 170 / LogL: -5945685.551 / Time: 0h:0m:57s (0h:0m:5s left)
+Iteration 180 / LogL: -5945674.215 / Time: 0h:0m:58s (0h:0m:4s left)
+Iteration 190 / LogL: -5945675.345 / Time: 0h:1m:0s (0h:0m:2s left)
+Iteration 200 / LogL: -5945674.037 / Time: 0h:1m:1s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -5945709.391
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+TREE SEARCH COMPLETED AFTER 209 ITERATIONS / Time: 0h:1m:3s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.614
+2. Current log-likelihood: -5945673.603
+Optimal log-likelihood: -5945673.594
+Rate parameters:  A-C: 1.00000  A-G: 2.52771  A-T: 0.43618  C-G: 0.43618  C-T: 2.52771  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 2 rounds (0.026 sec)
+BEST SCORE FOUND : -5945673.594
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 209
+CPU time used for tree search: 271.662 sec (0h:4m:31s)
+Wall-clock time used for tree search: 32.279 sec (0h:0m:32s)
+Total CPU time used: 302.998 sec (0h:5m:2s)
+Total wall-clock time used: 63.772 sec (0h:1m:3s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 642 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945676.948
+
+---> START RUN NUMBER 3 (seed: 2000536989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000536989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946379.327
+2. Current log-likelihood: -5945697.857
+3. Current log-likelihood: -5945689.090
+4. Current log-likelihood: -5945682.701
+5. Current log-likelihood: -5945680.569
+6. Current log-likelihood: -5945679.861
+7. Current log-likelihood: -5945679.501
+8. Current log-likelihood: -5945679.058
+9. Current log-likelihood: -5945678.096
+Optimal log-likelihood: -5945678.082
+Rate parameters:  A-C: 1.00000  A-G: 2.46512  A-T: 0.43059  C-G: 0.43059  C-T: 2.46512  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 9 rounds (0.077 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009841 sec (of wall-clock time) 0.069989 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.038905 sec (of wall-clock time) 0.137979 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5957242.123
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.522 second
+Computing log-likelihood of 98 initial trees ... 0.530 seconds
+Current best score: -5945674.128
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.754
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -5945673.698
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -5945673.647
+Iteration 10 / LogL: -5945677.096 / Time: 0h:0m:33s
+Iteration 20 / LogL: -5945677.984 / Time: 0h:0m:34s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.647 / CPU time: 3.487
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945673.677 / Time: 0h:0m:36s (0h:0m:12s left)
+Iteration 40 / LogL: -5945674.286 / Time: 0h:0m:37s (0h:0m:10s left)
+Iteration 50 / LogL: -5945673.920 / Time: 0h:0m:38s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -5945708.636
+Iteration 60 / LogL: -5945685.690 / Time: 0h:0m:40s (0h:0m:7s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 67: -5945673.627
+Iteration 70 / LogL: -5945673.987 / Time: 0h:0m:42s (0h:0m:15s left)
+Iteration 80 / LogL: -5945674.018 / Time: 0h:0m:43s (0h:0m:13s left)
+Iteration 90 / LogL: -5945681.231 / Time: 0h:0m:44s (0h:0m:11s left)
+Iteration 100 / LogL: -5945675.883 / Time: 0h:0m:46s (0h:0m:10s left)
+Log-likelihood cutoff on original alignment: -5945708.636
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+Iteration 110 / LogL: -5945673.826 / Time: 0h:0m:47s (0h:0m:13s left)
+Iteration 120 / LogL: -5945675.724 / Time: 0h:0m:49s (0h:0m:12s left)
+Iteration 130 / LogL: -5945685.680 / Time: 0h:0m:50s (0h:0m:10s left)
+UPDATE BEST LOG-LIKELIHOOD: -5945673.622
+Iteration 140 / LogL: -5945673.931 / Time: 0h:0m:52s (0h:0m:9s left)
+Iteration 150 / LogL: -5945674.375 / Time: 0h:0m:53s (0h:0m:7s left)
+Log-likelihood cutoff on original alignment: -5945708.636
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 158: -5945673.564
+Iteration 160 / LogL: -5945674.091 / Time: 0h:0m:55s (0h:0m:15s left)
+Iteration 170 / LogL: -5945673.965 / Time: 0h:0m:57s (0h:0m:13s left)
+Iteration 180 / LogL: -5945673.792 / Time: 0h:0m:58s (0h:0m:12s left)
+Iteration 190 / LogL: -5945678.360 / Time: 0h:0m:59s (0h:0m:10s left)
+Iteration 200 / LogL: -5945678.260 / Time: 0h:1m:1s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -5945708.636
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 210 / LogL: -5945673.934 / Time: 0h:1m:3s (0h:0m:13s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -5945673.549
+Iteration 220 / LogL: -5945674.088 / Time: 0h:1m:4s (0h:0m:12s left)
+Iteration 230 / LogL: -5945673.841 / Time: 0h:1m:6s (0h:0m:10s left)
+Iteration 240 / LogL: -5945673.954 / Time: 0h:1m:7s (0h:0m:9s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 243: -5945673.524
+Iteration 250 / LogL: -5945673.868 / Time: 0h:1m:9s (0h:0m:14s left)
+Log-likelihood cutoff on original alignment: -5945708.636
+Iteration 260 / LogL: -5945673.907 / Time: 0h:1m:11s (0h:0m:13s left)
+Iteration 270 / LogL: -5945675.662 / Time: 0h:1m:13s (0h:0m:11s left)
+Iteration 280 / LogL: -5945673.874 / Time: 0h:1m:14s (0h:0m:9s left)
+Iteration 290 / LogL: -5945673.846 / Time: 0h:1m:16s (0h:0m:8s left)
+Iteration 300 / LogL: -5945675.760 / Time: 0h:1m:17s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -5945708.636
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 310 / LogL: -5945673.806 / Time: 0h:1m:19s (0h:0m:14s left)
+Iteration 320 / LogL: -5945674.077 / Time: 0h:1m:21s (0h:0m:12s left)
+BETTER TREE FOUND at iteration 326: -5945673.520
+Iteration 330 / LogL: -5945673.740 / Time: 0h:1m:23s (0h:0m:15s left)
+Iteration 340 / LogL: -5945675.506 / Time: 0h:1m:24s (0h:0m:13s left)
+Iteration 350 / LogL: -5945674.043 / Time: 0h:1m:26s (0h:0m:12s left)
+Log-likelihood cutoff on original alignment: -5945708.636
+Iteration 360 / LogL: -5945673.791 / Time: 0h:1m:28s (0h:0m:10s left)
+Iteration 370 / LogL: -5945673.968 / Time: 0h:1m:30s (0h:0m:8s left)
+Iteration 380 / LogL: -5945673.979 / Time: 0h:1m:31s (0h:0m:7s left)
+Iteration 390 / LogL: -5945674.156 / Time: 0h:1m:33s (0h:0m:5s left)
+Iteration 400 / LogL: -5945673.885 / Time: 0h:1m:35s (0h:0m:4s left)
+Log-likelihood cutoff on original alignment: -5945710.169
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 410 / LogL: -5945674.223 / Time: 0h:1m:37s (0h:0m:14s left)
+Iteration 420 / LogL: -5945673.733 / Time: 0h:1m:38s (0h:0m:12s left)
+TREE SEARCH COMPLETED AFTER 427 ITERATIONS / Time: 0h:1m:40s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.520
+Optimal log-likelihood: -5945673.515
+Rate parameters:  A-C: 1.00000  A-G: 2.61439  A-T: 0.44826  C-G: 0.44826  C-T: 2.61439  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 1 rounds (0.014 sec)
+BEST SCORE FOUND : -5945673.515
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 427
+CPU time used for tree search: 549.166 sec (0h:9m:9s)
+Wall-clock time used for tree search: 68.976 sec (0h:1m:8s)
+Total CPU time used: 580.652 sec (0h:9m:40s)
+Total wall-clock time used: 100.514 sec (0h:1m:40s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 746 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945676.939
+
+---> START RUN NUMBER 4 (seed: 2000537989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000537989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946364.227
+2. Current log-likelihood: -5945698.293
+3. Current log-likelihood: -5945690.474
+4. Current log-likelihood: -5945684.567
+5. Current log-likelihood: -5945682.185
+6. Current log-likelihood: -5945681.585
+7. Current log-likelihood: -5945680.185
+8. Current log-likelihood: -5945679.859
+Optimal log-likelihood: -5945679.828
+Rate parameters:  A-C: 1.00000  A-G: 2.55214  A-T: 0.42117  C-G: 0.42117  C-T: 2.55214  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 8 rounds (0.069 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009948 sec (of wall-clock time) 0.070989 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.032305 sec (of wall-clock time) 0.120981 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5957242.123
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.536 second
+Computing log-likelihood of 98 initial trees ... 0.549 seconds
+Current best score: -5945674.060
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.790
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -5945673.747
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -5945673.539
+Iteration 10 / LogL: -5945673.740 / Time: 0h:0m:30s
+Iteration 20 / LogL: -5945676.845 / Time: 0h:0m:31s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.539 / CPU time: 3.698
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945674.335 / Time: 0h:0m:33s (0h:0m:13s left)
+UPDATE BEST LOG-LIKELIHOOD: -5945673.532
+Iteration 40 / LogL: -5945673.843 / Time: 0h:0m:34s (0h:0m:10s left)
+Iteration 50 / LogL: -5945675.579 / Time: 0h:0m:35s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -5945698.132
+Iteration 60 / LogL: -5945674.288 / Time: 0h:0m:37s (0h:0m:6s left)
+Iteration 70 / LogL: -5945673.908 / Time: 0h:0m:38s (0h:0m:5s left)
+Iteration 80 / LogL: -5945678.198 / Time: 0h:0m:40s (0h:0m:3s left)
+Iteration 90 / LogL: -5945674.041 / Time: 0h:0m:41s (0h:0m:1s left)
+Iteration 100 / LogL: -5945674.050 / Time: 0h:0m:42s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -5945699.207
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+TREE SEARCH COMPLETED AFTER 104 ITERATIONS / Time: 0h:0m:43s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.531
+Optimal log-likelihood: -5945673.530
+Rate parameters:  A-C: 1.00000  A-G: 2.56896  A-T: 0.44255  C-G: 0.44255  C-T: 2.56896  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 1 rounds (0.016 sec)
+BEST SCORE FOUND : -5945673.530
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 104
+CPU time used for tree search: 132.473 sec (0h:2m:12s)
+Wall-clock time used for tree search: 15.480 sec (0h:0m:15s)
+Total CPU time used: 161.145 sec (0h:2m:41s)
+Total wall-clock time used: 44.046 sec (0h:0m:44s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 622 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945676.932
+
+---> START RUN NUMBER 5 (seed: 2000538989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000538989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946366.494
+2. Current log-likelihood: -5945699.233
+3. Current log-likelihood: -5945691.968
+4. Current log-likelihood: -5945685.999
+5. Current log-likelihood: -5945683.647
+6. Current log-likelihood: -5945683.007
+7. Current log-likelihood: -5945682.415
+8. Current log-likelihood: -5945681.108
+Optimal log-likelihood: -5945681.040
+Rate parameters:  A-C: 1.00000  A-G: 2.45360  A-T: 0.39889  C-G: 0.39889  C-T: 2.45360  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 8 rounds (0.069 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009858 sec (of wall-clock time) 0.070989 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.038661 sec (of wall-clock time) 0.127980 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5955605.614
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.527 second
+Computing log-likelihood of 98 initial trees ... 0.527 seconds
+Current best score: -5945674.314
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.809
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -5945673.723
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -5945673.582
+Iteration 10 / LogL: -5945676.671 / Time: 0h:0m:34s
+Iteration 20 / LogL: -5945679.470 / Time: 0h:0m:35s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.582 / CPU time: 3.504
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945673.766 / Time: 0h:0m:36s (0h:0m:12s left)
+Iteration 40 / LogL: -5945674.182 / Time: 0h:0m:37s (0h:0m:10s left)
+Iteration 50 / LogL: -5945675.735 / Time: 0h:0m:39s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -5945702.363
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 54: -5945673.556
+Iteration 60 / LogL: -5945673.882 / Time: 0h:0m:41s (0h:0m:15s left)
+Iteration 70 / LogL: -5945677.457 / Time: 0h:0m:42s (0h:0m:13s left)
+Iteration 80 / LogL: -5945676.070 / Time: 0h:0m:43s (0h:0m:11s left)
+Iteration 90 / LogL: -5945673.972 / Time: 0h:0m:45s (0h:0m:9s left)
+Iteration 100 / LogL: -5945687.174 / Time: 0h:0m:46s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -5945702.099
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 110 / LogL: -5945690.877 / Time: 0h:0m:48s (0h:0m:13s left)
+Iteration 120 / LogL: -5945674.115 / Time: 0h:0m:49s (0h:0m:12s left)
+Iteration 130 / LogL: -5945675.471 / Time: 0h:0m:51s (0h:0m:10s left)
+Iteration 140 / LogL: -5945674.096 / Time: 0h:0m:52s (0h:0m:9s left)
+Iteration 150 / LogL: -5945674.089 / Time: 0h:0m:54s (0h:0m:7s left)
+Log-likelihood cutoff on original alignment: -5945702.099
+TREE SEARCH COMPLETED AFTER 155 ITERATIONS / Time: 0h:0m:55s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.556
+Optimal log-likelihood: -5945673.551
+Rate parameters:  A-C: 1.00000  A-G: 2.50091  A-T: 0.43864  C-G: 0.43864  C-T: 2.50091  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 1 rounds (0.014 sec)
+BEST SCORE FOUND : -5945673.551
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 155
+CPU time used for tree search: 198.584 sec (0h:3m:18s)
+Wall-clock time used for tree search: 23.457 sec (0h:0m:23s)
+Total CPU time used: 230.573 sec (0h:3m:50s)
+Total wall-clock time used: 55.621 sec (0h:0m:55s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 673 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945677.112
+
+---> START RUN NUMBER 6 (seed: 2000539989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000539989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946378.227
+2. Current log-likelihood: -5945697.758
+3. Current log-likelihood: -5945688.998
+4. Current log-likelihood: -5945682.609
+5. Current log-likelihood: -5945680.477
+6. Current log-likelihood: -5945679.769
+7. Current log-likelihood: -5945679.409
+8. Current log-likelihood: -5945678.966
+9. Current log-likelihood: -5945678.004
+Optimal log-likelihood: -5945677.990
+Rate parameters:  A-C: 1.00000  A-G: 2.46515  A-T: 0.43055  C-G: 0.43055  C-T: 2.46515  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 9 rounds (0.076 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009815 sec (of wall-clock time) 0.070990 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.032381 sec (of wall-clock time) 0.121982 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5956975.616
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.568 second
+Computing log-likelihood of 98 initial trees ... 0.531 seconds
+Current best score: -5945674.223
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.667
+Iteration 10 / LogL: -5945673.669 / Time: 0h:0m:33s
+Iteration 20 / LogL: -5945677.031 / Time: 0h:0m:35s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.667 / CPU time: 3.422
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945673.972 / Time: 0h:0m:36s (0h:0m:12s left)
+Iteration 40 / LogL: -5945673.863 / Time: 0h:0m:37s (0h:0m:10s left)
+BETTER TREE FOUND at iteration 46: -5945673.659
+Iteration 50 / LogL: -5945673.953 / Time: 0h:0m:39s (0h:0m:15s left)
+Log-likelihood cutoff on original alignment: -5945708.506
+Iteration 60 / LogL: -5945675.844 / Time: 0h:0m:41s (0h:0m:14s left)
+Iteration 70 / LogL: -5945675.357 / Time: 0h:0m:42s (0h:0m:12s left)
+Iteration 80 / LogL: -5945674.047 / Time: 0h:0m:43s (0h:0m:10s left)
+Iteration 90 / LogL: -5945678.171 / Time: 0h:0m:45s (0h:0m:8s left)
+Iteration 100 / LogL: -5945674.043 / Time: 0h:0m:46s (0h:0m:7s left)
+Log-likelihood cutoff on original alignment: -5945708.556
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 110 / LogL: -5945746.146 / Time: 0h:0m:48s (0h:0m:14s left)
+Iteration 120 / LogL: -5945677.698 / Time: 0h:0m:50s (0h:0m:12s left)
+Iteration 130 / LogL: -5945674.197 / Time: 0h:0m:51s (0h:0m:10s left)
+Iteration 140 / LogL: -5945673.942 / Time: 0h:0m:53s (0h:0m:9s left)
+TREE SEARCH COMPLETED AFTER 147 ITERATIONS / Time: 0h:0m:54s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.658
+2. Current log-likelihood: -5945673.644
+Optimal log-likelihood: -5945673.638
+Rate parameters:  A-C: 1.00000  A-G: 2.64187  A-T: 0.46052  C-G: 0.46052  C-T: 2.64187  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 2 rounds (0.020 sec)
+BEST SCORE FOUND : -5945673.638
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 147
+CPU time used for tree search: 194.498 sec (0h:3m:14s)
+Wall-clock time used for tree search: 22.554 sec (0h:0m:22s)
+Total CPU time used: 226.506 sec (0h:3m:46s)
+Total wall-clock time used: 54.561 sec (0h:0m:54s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 659 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945677.121
+
+---> START RUN NUMBER 7 (seed: 2000540989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000540989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946381.884
+2. Current log-likelihood: -5945699.080
+3. Current log-likelihood: -5945691.026
+4. Current log-likelihood: -5945684.522
+5. Current log-likelihood: -5945682.378
+6. Current log-likelihood: -5945681.628
+7. Current log-likelihood: -5945681.259
+8. Current log-likelihood: -5945680.781
+9. Current log-likelihood: -5945680.003
+10. Current log-likelihood: -5945679.743
+Optimal log-likelihood: -5945679.734
+Rate parameters:  A-C: 1.00000  A-G: 2.36111  A-T: 0.40524  C-G: 0.40524  C-T: 2.36111  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 10 rounds (0.082 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009877 sec (of wall-clock time) 0.071989 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.038447 sec (of wall-clock time) 0.137979 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5956493.411
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.531 second
+Computing log-likelihood of 98 initial trees ... 0.527 seconds
+Current best score: -5945674.276
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.991
+BETTER TREE FOUND at iteration 2: -5945673.987
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -5945673.891
+Iteration 10 / LogL: -5945676.768 / Time: 0h:0m:33s
+Iteration 20 / LogL: -5945679.312 / Time: 0h:0m:34s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.891 / CPU time: 3.356
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945675.978 / Time: 0h:0m:36s (0h:0m:12s left)
+Iteration 40 / LogL: -5945674.176 / Time: 0h:0m:37s (0h:0m:10s left)
+Iteration 50 / LogL: -5945674.070 / Time: 0h:0m:38s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -5945700.919
+Iteration 60 / LogL: -5945674.292 / Time: 0h:0m:40s (0h:0m:6s left)
+Iteration 70 / LogL: -5945674.439 / Time: 0h:0m:41s (0h:0m:5s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 71: -5945673.829
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 74: -5945673.768
+Iteration 80 / LogL: -5945674.230 / Time: 0h:0m:42s (0h:0m:14s left)
+Iteration 90 / LogL: -5945674.091 / Time: 0h:0m:44s (0h:0m:12s left)
+Iteration 100 / LogL: -5945685.730 / Time: 0h:0m:45s (0h:0m:10s left)
+Log-likelihood cutoff on original alignment: -5945701.972
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.993
+Iteration 110 / LogL: -5945674.142 / Time: 0h:0m:47s (0h:0m:13s left)
+Iteration 120 / LogL: -5945673.914 / Time: 0h:0m:49s (0h:0m:12s left)
+Iteration 130 / LogL: -5945678.538 / Time: 0h:0m:50s (0h:0m:10s left)
+Iteration 140 / LogL: -5945674.435 / Time: 0h:0m:51s (0h:0m:9s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 144: -5945673.682
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 147: -5945673.588
+Iteration 150 / LogL: -5945674.031 / Time: 0h:0m:53s (0h:0m:14s left)
+Log-likelihood cutoff on original alignment: -5945702.442
+Iteration 160 / LogL: -5945674.575 / Time: 0h:0m:55s (0h:0m:13s left)
+Iteration 170 / LogL: -5945684.904 / Time: 0h:0m:56s (0h:0m:11s left)
+Iteration 180 / LogL: -5945681.003 / Time: 0h:0m:58s (0h:0m:10s left)
+Iteration 190 / LogL: -5945674.050 / Time: 0h:0m:59s (0h:0m:8s left)
+Iteration 200 / LogL: -5945673.834 / Time: 0h:1m:1s (0h:0m:7s left)
+Log-likelihood cutoff on original alignment: -5945703.035
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Iteration 210 / LogL: -5945673.971 / Time: 0h:1m:3s (0h:0m:13s left)
+Iteration 220 / LogL: -5945679.982 / Time: 0h:1m:4s (0h:0m:12s left)
+Iteration 230 / LogL: -5945681.194 / Time: 0h:1m:6s (0h:0m:10s left)
+Iteration 240 / LogL: -5945674.062 / Time: 0h:1m:7s (0h:0m:9s left)
+TREE SEARCH COMPLETED AFTER 248 ITERATIONS / Time: 0h:1m:9s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.587
+2. Current log-likelihood: -5945673.575
+3. Current log-likelihood: -5945673.565
+Optimal log-likelihood: -5945673.556
+Rate parameters:  A-C: 1.00000  A-G: 2.52464  A-T: 0.44622  C-G: 0.44622  C-T: 2.52464  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 3 rounds (0.029 sec)
+BEST SCORE FOUND : -5945673.556
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 248
+CPU time used for tree search: 314.358 sec (0h:5m:14s)
+Wall-clock time used for tree search: 37.788 sec (0h:0m:37s)
+Total CPU time used: 346.287 sec (0h:5m:46s)
+Total wall-clock time used: 69.465 sec (0h:1m:9s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 728 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945677.038
+
+---> START RUN NUMBER 8 (seed: 2000541989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000541989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946367.087
+2. Current log-likelihood: -5945699.244
+3. Current log-likelihood: -5945691.976
+4. Current log-likelihood: -5945686.007
+5. Current log-likelihood: -5945683.655
+6. Current log-likelihood: -5945683.015
+7. Current log-likelihood: -5945682.420
+8. Current log-likelihood: -5945681.117
+Optimal log-likelihood: -5945681.048
+Rate parameters:  A-C: 1.00000  A-G: 2.45399  A-T: 0.39877  C-G: 0.39877  C-T: 2.45399  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 8 rounds (0.070 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009858 sec (of wall-clock time) 0.070989 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.037868 sec (of wall-clock time) 0.146978 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5955597.171
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.525 second
+Computing log-likelihood of 98 initial trees ... 0.521 seconds
+Current best score: -5945674.306
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.905
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -5945673.747
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -5945673.711
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 7: -5945673.575
+Iteration 10 / LogL: -5945673.723 / Time: 0h:0m:33s
+Iteration 20 / LogL: -5945676.898 / Time: 0h:0m:34s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.575 / CPU time: 3.512
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945695.806 / Time: 0h:0m:35s (0h:0m:13s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 36: -5945673.527
+Iteration 40 / LogL: -5945674.220 / Time: 0h:0m:37s (0h:0m:15s left)
+Iteration 50 / LogL: -5945673.709 / Time: 0h:0m:38s (0h:0m:13s left)
+Log-likelihood cutoff on original alignment: -5945702.202
+BETTER TREE FOUND at iteration 57: -5945673.525
+Iteration 60 / LogL: -5945685.344 / Time: 0h:0m:40s (0h:0m:15s left)
+Iteration 70 / LogL: -5945673.855 / Time: 0h:0m:41s (0h:0m:13s left)
+Iteration 80 / LogL: -5945673.715 / Time: 0h:0m:43s (0h:0m:11s left)
+Iteration 90 / LogL: -5945746.069 / Time: 0h:0m:44s (0h:0m:10s left)
+Iteration 100 / LogL: -5945701.942 / Time: 0h:0m:45s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -5945702.202
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Iteration 110 / LogL: -5945674.580 / Time: 0h:0m:47s (0h:0m:13s left)
+Iteration 120 / LogL: -5945673.922 / Time: 0h:0m:48s (0h:0m:12s left)
+Iteration 130 / LogL: -5945681.325 / Time: 0h:0m:50s (0h:0m:10s left)
+Iteration 140 / LogL: -5945673.894 / Time: 0h:0m:51s (0h:0m:8s left)
+Iteration 150 / LogL: -5945674.303 / Time: 0h:0m:53s (0h:0m:7s left)
+Log-likelihood cutoff on original alignment: -5945702.571
+TREE SEARCH COMPLETED AFTER 158 ITERATIONS / Time: 0h:0m:54s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.525
+Optimal log-likelihood: -5945673.522
+Rate parameters:  A-C: 1.00000  A-G: 2.51282  A-T: 0.43321  C-G: 0.43321  C-T: 2.51282  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 1 rounds (0.014 sec)
+BEST SCORE FOUND : -5945673.522
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 158
+CPU time used for tree search: 197.868 sec (0h:3m:17s)
+Wall-clock time used for tree search: 23.434 sec (0h:0m:23s)
+Total CPU time used: 229.382 sec (0h:3m:49s)
+Total wall-clock time used: 54.932 sec (0h:0m:54s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 623 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945677.039
+
+---> START RUN NUMBER 9 (seed: 2000542989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000542989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946364.228
+2. Current log-likelihood: -5945698.294
+3. Current log-likelihood: -5945690.474
+4. Current log-likelihood: -5945684.567
+5. Current log-likelihood: -5945682.185
+6. Current log-likelihood: -5945681.585
+7. Current log-likelihood: -5945680.185
+8. Current log-likelihood: -5945679.859
+Optimal log-likelihood: -5945679.828
+Rate parameters:  A-C: 1.00000  A-G: 2.55225  A-T: 0.42119  C-G: 0.42119  C-T: 2.55225  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 8 rounds (0.070 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009823 sec (of wall-clock time) 0.070989 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.037475 sec (of wall-clock time) 0.144978 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5957242.123
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.524 second
+Computing log-likelihood of 98 initial trees ... 0.545 seconds
+Current best score: -5945674.114
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.690
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -5945673.646
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -5945673.610
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 8: -5945673.545
+Iteration 10 / LogL: -5945673.802 / Time: 0h:0m:33s
+Iteration 20 / LogL: -5945679.650 / Time: 0h:0m:34s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.545 / CPU time: 3.574
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945673.956 / Time: 0h:0m:35s (0h:0m:13s left)
+Iteration 40 / LogL: -5945675.534 / Time: 0h:0m:37s (0h:0m:11s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 50: -5945673.524
+Iteration 50 / LogL: -5945673.524 / Time: 0h:0m:38s (0h:0m:16s left)
+Log-likelihood cutoff on original alignment: -5945710.932
+Iteration 60 / LogL: -5945683.482 / Time: 0h:0m:40s (0h:0m:14s left)
+Iteration 70 / LogL: -5945678.382 / Time: 0h:0m:41s (0h:0m:12s left)
+Iteration 80 / LogL: -5945673.806 / Time: 0h:0m:43s (0h:0m:11s left)
+Iteration 90 / LogL: -5945674.058 / Time: 0h:0m:44s (0h:0m:9s left)
+Iteration 100 / LogL: -5945674.002 / Time: 0h:0m:46s (0h:0m:7s left)
+Log-likelihood cutoff on original alignment: -5945710.932
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.991
+Iteration 110 / LogL: -5945673.907 / Time: 0h:0m:48s (0h:0m:14s left)
+Iteration 120 / LogL: -5945674.085 / Time: 0h:0m:49s (0h:0m:12s left)
+Iteration 130 / LogL: -5945673.699 / Time: 0h:0m:50s (0h:0m:10s left)
+Iteration 140 / LogL: -5945677.372 / Time: 0h:0m:52s (0h:0m:9s left)
+Iteration 150 / LogL: -5945673.928 / Time: 0h:0m:53s (0h:0m:7s left)
+Log-likelihood cutoff on original alignment: -5945710.932
+TREE SEARCH COMPLETED AFTER 151 ITERATIONS / Time: 0h:0m:54s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.524
+Optimal log-likelihood: -5945673.524
+Rate parameters:  A-C: 1.00000  A-G: 2.56445  A-T: 0.44372  C-G: 0.44372  C-T: 2.56445  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 1 rounds (0.014 sec)
+BEST SCORE FOUND : -5945673.524
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 151
+CPU time used for tree search: 199.557 sec (0h:3m:19s)
+Wall-clock time used for tree search: 23.496 sec (0h:0m:23s)
+Total CPU time used: 230.743 sec (0h:3m:50s)
+Total wall-clock time used: 54.769 sec (0h:0m:54s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 668 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945676.930
+
+---> START RUN NUMBER 10 (seed: 2000543989)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 2000543989)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5946366.494
+2. Current log-likelihood: -5945699.233
+3. Current log-likelihood: -5945691.968
+4. Current log-likelihood: -5945685.998
+5. Current log-likelihood: -5945683.647
+6. Current log-likelihood: -5945683.006
+7. Current log-likelihood: -5945682.413
+8. Current log-likelihood: -5945681.108
+Optimal log-likelihood: -5945681.040
+Rate parameters:  A-C: 1.00000  A-G: 2.45378  A-T: 0.39887  C-G: 0.39887  C-T: 2.45378  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 8 rounds (0.070 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.009835 sec (of wall-clock time) 0.070990 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.037677 sec (of wall-clock time) 0.133980 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5957242.123
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.538 second
+Computing log-likelihood of 98 initial trees ... 0.547 seconds
+Current best score: -5945674.135
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5945673.899
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -5945673.721
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -5945673.614
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 8: -5945673.579
+Iteration 10 / LogL: -5945676.759 / Time: 0h:0m:33s
+Iteration 20 / LogL: -5945676.806 / Time: 0h:0m:34s
+Finish initializing candidate tree set (20)
+Current best tree score: -5945673.579 / CPU time: 3.552
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5945673.800 / Time: 0h:0m:35s (0h:0m:13s left)
+Iteration 40 / LogL: -5945673.920 / Time: 0h:0m:37s (0h:0m:11s left)
+Iteration 50 / LogL: -5945675.639 / Time: 0h:0m:38s (0h:0m:9s left)
+Log-likelihood cutoff on original alignment: -5945711.093
+Iteration 60 / LogL: -5945674.537 / Time: 0h:0m:40s (0h:0m:7s left)
+Iteration 70 / LogL: -5945673.914 / Time: 0h:0m:41s (0h:0m:6s left)
+Iteration 80 / LogL: -5945681.199 / Time: 0h:0m:43s (0h:0m:4s left)
+Iteration 90 / LogL: -5945674.029 / Time: 0h:0m:44s (0h:0m:2s left)
+Iteration 100 / LogL: -5945673.820 / Time: 0h:0m:46s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -5945711.159
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+TREE SEARCH COMPLETED AFTER 109 ITERATIONS / Time: 0h:0m:48s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5945673.578
+Optimal log-likelihood: -5945673.574
+Rate parameters:  A-C: 1.00000  A-G: 2.50504  A-T: 0.44026  C-G: 0.44026  C-T: 2.50504  G-T: 1.00000
+Base frequencies:  A: 0.263  C: 0.236  G: 0.239  T: 0.262
+Proportion of invariable sites: 1.000
+Parameters optimization took 1 rounds (0.014 sec)
+BEST SCORE FOUND : -5945673.574
+Creating bootstrap support values...
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 109
+CPU time used for tree search: 146.132 sec (0h:2m:26s)
+Wall-clock time used for tree search: 17.047 sec (0h:0m:17s)
+Total CPU time used: 177.415 sec (0h:2m:57s)
+Total wall-clock time used: 48.455 sec (0h:0m:48s)
+
+Computing bootstrap consensus tree...
+Reading input file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex...
+49 taxa and 631 splits.
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Reading input trees file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Log-likelihood of consensus tree: -5945676.949
+
+---> SUMMARIZE RESULTS FROM 10 RUNS
+
+Run 3 gave best log-likelihood: -5945673.515
+Split supports printed to NEXUS file /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+Consensus tree written to /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+Total CPU time for 10 runs: 2649.179 seconds.
+Total wall-clock time for 10 runs: 595.198 seconds.
+
+
+Analysis results written to: 
+  IQ-TREE report:                /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.iqtree
+  Maximum-likelihood tree:       /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.treefile
+  Trees from independent runs:   /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.runtrees
+  Likelihood distances:          /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.splits.nex
+  Consensus tree:                /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.contree
+  Screen log file:               /2/scratch/keaton/plague-phylogeography/results/iqtree/all/chromosome/full/filter10/iqtree.log
+
+Date and Time: Wed Jun 16 12:49:47 2021
