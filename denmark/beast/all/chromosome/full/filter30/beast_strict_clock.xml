@@ -366,11 +366,18 @@
 	
 	
 
-	<!-- The unique patterns from 1 to end                                       -->
-	<!-- npatterns=355                                                           -->
-	<patterns id="patterns" from="1" strip="false">
-		<alignment idref="alignment"/>
-	</patterns>
+	<mergePatterns id="patterns">
+		<patterns from="1" every="1">
+			<alignment idref="alignment"/>
+		</patterns>
+
+		<constantPatterns>
+			<alignment idref="alignment"/>
+			<counts>
+				<parameter value="1126849 1014112 1025137 1123712"/>
+			</counts>
+		</constantPatterns>
+	</mergePatterns>
 	
 
 	<!-- A prior assumption that the population size has remained constant       -->
