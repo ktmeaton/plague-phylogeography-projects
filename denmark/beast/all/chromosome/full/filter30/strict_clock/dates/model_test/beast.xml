@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+
+    <data id="original-dna" spec="Alignment" name="original-dna">
+                        <sequence id="seq_D51" spec="Sequence" taxon="D51" totalcount="4" value="CC-GTCTCCNAN-NCNTNGCANCG-NNN-T---NNAGGNNCC-NN-GGCNTTNN-NNNCACGAANG-NNAACN-GNCCNCANC-GC-N---NTNGCTANAGGNCGCTCCN-NCCNANGNCNGNCTNT-G-NCGT-NCGGAT-CC-NTTNG-CCCTGCGGGAGT--GAGCAAATCNNTGTCGCCGCCTCTGATNNAGT-NCCCCAGAGAA-NGGNNAG-TGANTTTGGANNATAAN-GGGGAAGTANNNTTTCANACACCGGNNTCNGGTCGTGA-GTGNAGGTACANNGGCCCNGNCGGGTATGC-GTGGTGAANCANTGC----NCGNCGAGTGGGCCCGGCGTTCNCGGT-TGG"/>
+                        <sequence id="seq_D62" spec="Sequence" taxon="D62" totalcount="4" value="CCGGCCTCCGN-NCCGNNNCGNNNNN---NCA-NNANGNCNCNNGNNNN-TNNNN--NCACNAGCN---NACN-GNNCGNNCC-GCANNN-GT-GCTCNAGGCCGCCNCNNGNN-ANGNTCGCCC-C-G-GCGN--CGGAT-CCNTATNG-CNCG-NGANGGNNNGAGCAAATCN-TGTCGCNGCNNCGNGTGC-GCNGCC-CNGAG-N-NGGCNAN-CNANGTTNNANCNTNNNGGNGGAANTGN-C-ATNA-NCANCNNNNTN-GGTCG-N--ANG-AGGTGCGNGNNCNCGG-CNNGNNTGCNG-GGTGTAC-GNTNCNN-GNCGNNNAGGGGGNCCGG-NNNNGCGGTNGNG"/>
+                        <sequence id="seq_D71" spec="Sequence" taxon="D71" totalcount="4" value="CCGGTCTCCGCNNCCNCCGCGGCGCGTGATCACNNAGGNCCCCTGAGGCCTTNTCGTNCACGAGTNTN-GACAGGGCCGCCCCGGCACATNGTNGCTCGAGGCCACCCCA-GTCCATGCCCGCCCCCNGNGCNTNTCGGATNCCCTATNG-CCCGTCGAGGGTAANAGCAAATCTGTNTNGCCGCCTCGAGTGCAGCNGNCCCAGANAANTGGCCAGCCTACGTTGGATCGTAAAGGGGGAAGTGGGCGATCAAACACCGGNCTCCGGTNGTGGGGGGGAGGANCNAGGGCCCGGGCGGGCGTGCGGTNGTGTACCGCTNCNCNGACGCCGAGNGGGCCCGGCGTTCGCGGTGGGG"/>
+                        <sequence id="seq_D72" spec="Sequence" taxon="D72" totalcount="4" value="CC-GTCTCCGCN--CGTCNCGNCGNGNN-TNNCACAGNNCCCNTNNN---TTNTCGTNCACNAGCTN--NNC-NGGNCGCCTCNGTNNNT-GANGTGA-AGGCNGCTNCN-GCCCA-GNCCGTTCNC-A-GTGT-NCGGATNCNCGTT-GNCNCGTCGANGGTAAGAGCAAATCTNTGTCGC-NTCTCGGNTNCAGC-GCCCCAGAGNNNNGGCCAGATGANGTTGGANNGTAAANGGGGAAGTG-NNGATNAANCANCGTNNTANTGTCGNANGG-GNAGGNGTAAGNNTCCNGNCGGGCNNGC-GNNGTGTATCGCTGCN--NAAANCGAATGGGCCCGGNGTTCGCGGTGGAG"/>
+                        <sequence id="seq_D75" spec="Sequence" taxon="D75" totalcount="4" value="CC-GTCTCAGCG-TCGTCNCG-CGCGNN-TCNCACAGGCCCCCTGAGGCCTTCNCGTACACGAGTGNNTAACAGGGCCGCNTCGACACNTNGATNTGAGAGGCCGCTCCANGCCCATGCCCGTTCCC-GNGCGT-TNGGATNCCCGAT-G-NCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCNGCCCCAGAGAANNGGCCAGATGACGTTGGATTGTAAAGGGGGAAGTNGACTATCGGACACNGTGCTCTGGTCGTGANATGGAGAAGCGAGGGCCCGGGCGGGCGTGCGGTGTTGTATCGCTGCNT-GAAACCGAATGGGCCCGGCGNNNGCGGTGGGG"/>
+                        <sequence id="seq_P187" spec="Sequence" taxon="P187" totalcount="4" value="CC-ANCNCCGCNNCNGTC-NGNNN-----T-----ANNN-NNN---NNN-NN---NN----GAGCN----NNNNGG-CGCCN--GC--NN-NANGCTA-AGGNCGCTNNN-NCCCA-GTCNGNTC-C-G-GCGN--CGGAT-CCCNAT-G-CCCG-CGAGGGTAAGAGCAAANN--TGTNNCCGNNTCGGNT-CNGN-GCCCCATAGAN--GGCCAGNN-ANGTTGNAT-GTAANNGGGGAAGTGN-CNAT-AANCACCNT-NTCNGGTCG-GN--NG-AGNTGCAAG--CNNAGNCNGGNGTGCNGNGNTNTATNGNNN----NACGCNGAGNGGG-CCGGCNTTCGCGGTCNNG"/>
+                        <sequence id="seq_P212" spec="Sequence" taxon="P212" totalcount="4" value="CC-NTCTCCGCA-C-GTC-CGNNN-----T--NNNAGNNCCN---NNNN-TN------NANNAGCN--N-AN-NGGNCNCCTCNGN-----NANGCGA-AGGCCGCT-CA-GCCNANGNNCNNTT-C-G-GTGT-NCGGAT-NNNGAT-G-CNCNTCGAGGGTAAGAGCAAATCNNTGTCGCNGCCTCGGNT-AGGN-GCCNNAGAGAN--GGNNAGNTNANGTTGGAT-GT-G--GGGGAANTN-NCNATNAA-AANCNG--TCNGATCGNNANGNG-AGGTGCANGNNNNCGG-CGNGCATGCNANGGTGTANNGCTNC---NNCGN-GAGTGGGCCCGGCGNNCGCAGTGGGG"/>
+                        <sequence id="seq_P387" spec="Sequence" taxon="P387" totalcount="4" value="CCNGTCCCCGCN-CNGCCNCG-NN--NN-N--N--AGGN-CN--------TTN----NCANGTGCNN---ACNNGG-CNTCTNNNC---N--TNGCNC-AGGCCNCC-NA-GCCNANGCTNGTTC-C-G-GCGT--NGGAT-CCNTAT-G-CNNGNCGANGATNNGAGCNNNTCN-NNNNNCNNNNTCGAATNCAG--NNNNCAGAGNN--GG-CAANCNTNGTTNGA--GTAAN-GGGGAAGTG--CTATNAAACACCGN--TCNGGTCGNGN-GNANAGGNGCANANNT-CGGNCNNNTGCGC-AN-NTNTANNNCTGN----ACGCNNAGGGGGCCCGGNNCCCTCGGTGGGG"/>
+                        <sequence id="seq_R36" spec="Sequence" taxon="R36" totalcount="4" value="CCGGTCTCCNCGGCCGCCGCGGCGCGTGNTCACACAGGCCCCCTGAGGCCTTCNCGTACACGAGCGTCTGACAGGNCCGCCCNGGCACATCGTTGCTNGAGGCCGCCCCA-GCCCATGNCCGCCCCTNGNGCGTTTCGGATNCCCTATNGCCCAGTNGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCTNGTGAAGCNGCCCCAGAGAACTNTNCAGCCGACNTTGGATCGTAAAGGGGGAAGTGGGCGATCAAACANCGGGCTACNGTCGNGGGGGGGAANAGCNAGGGCCCGGGNGGCCGTGCNGTGGTGTACCNCTGCC-GGACGCCGAGNNGGCCCGGTATTCGCGGTGGGG"/>
+                        <sequence id="seq_SAMEA3713711" spec="Sequence" taxon="SAMEA3713711" totalcount="4" value="CCTGTCTTCGCGGTTGTCGTGTCGCGTGATCATACAGGCCCCCNGANGCCTTNNNGTNNACGAGCGT-TAACAGGGTTTCCTCGGNACATCGATTTGACGNNCTGTTACANGCCCAATCCTGTTCCCAGCTCTTGACNNNNNCACGTTAGAATCGT--AGGGTAATAGCNNN----NNN--------AGGANGCAGCATTCCTNGAGAACTGGACAGNTGAA-TCGGGGTGTCAGANAAGAGNTGGACGAGCAANCGTCGTGNTCTGGTCGCGANGNGGTGGNGCAAGGGCTAGAACGGGCGTGCGGTAGTNTATCGATATCTGGNAGAAGGGTGGGTGTTGCGTTCGAGGCGGGG"/>
+                        <sequence id="seq_SAMEA3713712" spec="Sequence" taxon="SAMEA3713712" totalcount="4" value="CCTGTCTTCGCGGTTGTCGTGTCGCGTGATCATACAGGCCCCCTGAGGCCTTCTCGTACACGAGNGTCTAACAGGGTTTCCNCGGCACATCGATTTGACGNNCTGTTACACGCCCAATCCTGTTCCCAGCTCTTGACNNGAGCACGTTAGAATCGTNNAGGGTAAT---------------------AGGA-GCAGCATTCCTGGAGAACTGGAGAGATGAAGTCGGGGTGTNAGAGAAGAGNTGGACGAGCAAACGTCGTGATCTGGTCGCGAGGTNGTGGTGCAAGGGCTAGAACGGGCGTGCGGTAGTATATCGATATCTGGTAGAAGGGTGGGTGTTGCGTTTGAGGCGGGG"/>
+                        <sequence id="seq_SAMEA3713713" spec="Sequence" taxon="SAMEA3713713" totalcount="4" value="CCTGTCTTCGCGGTTGTCGTGTCGCGTGATCATACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTAACAGGGTTTCCTCGGCACATCGATTTGACGNNCTGTTACACGCCCAATCCTGTTCCCAGCTCTTGACNANNGCACGTTAGAATCGT--AGGGTAAT---------------------AGGACGCAGCATTCCTGGAGAACTGGACAGNTGAAGTCGGGTTGTCAGAGAAGAGGTGGACGAGCAAACGTCGTGATCTGGTCGCGAGGTGGTGGTGCAAGGGCTAGAACGGGCGTGCGGTAGTATATTGATATCTGGTAGAAGGGTGGGTGTTGCGTTTGAGGCGGGG"/>
+                        <sequence id="seq_SAMEA3713714" spec="Sequence" taxon="SAMEA3713714" totalcount="4" value="CNTGTCTTCGCGGTTGTCGTGTCGCGTGATCATACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGT-TAACAGGGTTTCCTCGGCACATCGATTTGACGTNCNGTTACACGCCCAATCCTGTTCCCAGCTCTTNACAANNGCACGTTAGANTCNT--AGGGTAAT-------------------N-AGGANGCAGCATTCCNGGAGANCTNGACNGATGNAGNCGGGGTNTNAGAGAAGAGGTGGACGAGCAAACGTCNTGATCNGGTCGCGAGNNGGTNGTGCAAGGGCTAGAACGGGCGTGCGGTAGTATATCGATATCTGGTAGAAGGGTGGGTGTTGCGTT-GAGGCGGGG"/>
+                        <sequence id="seq_SAMEA3713715" spec="Sequence" taxon="SAMEA3713715" totalcount="4" value="CCTGTCTTCGCGGTTGTCGTGTCGCGTGATCATACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTAACAGGGTCTCCTNGGCACATCGATTTGACGNNCTGTTACACGCCCAATCCTGTTCCCAGCTCTTGACNAGAGCACGTTAGAATCGTNNAGGGTAAT-------------------N-AGGACGCAGCATTCCTGGAGAACTGGACAGATGAAGTCGGGGTGTCAGAGAAGAGGTGGACGAGCAAACGTCGTGATCTGGTCGCGAGGTGGTGGTGCAAGGGCTAGAACGGGCGTGCGGTAGTATATCGATATCTGGTAGAAGGGTGGGTCCTGCGTTNGAGGCGGGG"/>
+                        <sequence id="seq_SAMEA3937653" spec="Sequence" taxon="SAMEA3937653" totalcount="4" value="CCGGTCTCCGCGGCCGCCGCGGCGCGTGATCNCACNGNCCNNCTGAGGCCTTCTCGNNCANGAGCGTCTG--NNGGCCGCCCC-GCACATCGTTGCTCGAGGCNGCCCCACG-CAATGCCCGCCCCCGGCGCGTTTCGGATACCCTATCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGGTGCAGCGGCNCCAGAGAACTGGCCNG-CGA-NTTGGATCGTAAAGGGGGAAGTGGG-GATCAAACACCGGGNTCCGGTCGNGGGGGGGAGGTGCGAGNNCCCGGGCGGGCGTGCGGTGGTGTACCGCTGCCCGGACG-CNAGGGGGCCCGGCGTTCG-GGTGNGG"/>
+                        <sequence id="seq_SAMEA3937654" spec="Sequence" taxon="SAMEA3937654" totalcount="4" value="CCGGTCTCCGCGGCCGCCGCGGCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCTTCTG--NGGGCCGCCCC-ACACATCGTTGCTCGAGGCCGCCCCACGNCCATGCCCGCCCCCGGCGCGTTTCGGATACCCTATCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGGTGCAGCGGCCCCAGAGAACTGTCCAG-CGA--TTGGATCGTAAAGGGGGAAGTGGG-GATCAAACACCGGGCTCCGGTCGNGGGGGGGAGGTGCGAGGGCCCGGGCTGGCGTGCGGTGGCGTACCGCTGCCCGGACG-CGAGGGGGCCCGGCGTTCGNGGTGGGG"/>
+                        <sequence id="seq_SAMEA5054089" spec="Sequence" taxon="SAMEA5054089" totalcount="4" value="CCGGTCTCCGCGGCCGCCGCGGCGCGNGATCACNNAGNCCNNCTGAGGCNTNCTCGTANNCGAGCGTCTNACAGNGCCGCCCCGACANNNCNTTGCTCGAGGCCGCCCCACGCNCATGNCCGCCCCCGGCGCNTTTCGGATACCCTATCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCNCNGCCTCTGGTGCANCGGCTCCAGAGAACTGTCCAGCCGACGTTGGATCGTAAAGGGGNAAGTGGGTGATCAAACACCGGGCTCCGGTCGTAGGGGGGAGGAGCGAGGNTCCNGGCGGGCGTGCGATGGTGTACCGCTGCCCGGACGCCGAGGGGGCCNGGCGTTCGCGGTGGAG"/>
+                        <sequence id="seq_SAMEA5054090" spec="Sequence" taxon="SAMEA5054090" totalcount="4" value="CCGGTCTCAGCGGCCGCNGCGGCGCGTGATCACACAGGCCCNNTGANGCCTTCTCGTANACGAGCGTCTGACAGGGCCGCCCCGACACATCGTTGCTCNAGGCCGCCCCACACCCATGCCCGCCCCCNGCGCGTTTCGGATACCNTATCGCCCCGTCNAGNGTAAGAGCAAATCTGTGTCGCCGCCTCGGGTGCAGCGGCCCCAGAGGACTNTCCAGCCGACGTTGGATCGTAAAGTGGGAAGTGGGTGATCAAACACCNGGCTCCGGTNGTGGGGGGGAGGTGCGANGGCCCGGGCNGGCGTGCGGTGGTGTANCGCTGCCCGGACGCNGAGNGGGCCCGGTGTTCNCGGTGGGG"/>
+                        <sequence id="seq_SAMEA5054092" spec="Sequence" taxon="SAMEA5054092" totalcount="4" value="CCGGTCTCCGCGGCCGCCGCGGCGCGTGATCACACANGCCCCCTGAGGNCTTCTCGTACACGAGNGTCTGACAGGGCCGCCCCGGCACATCGTTGCTCNAGNCCGCC-CACGCCCATGCCCGCCCCCGGCGCGTTTCGGATACCCTATCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCNGCCTCGGGTGCAGCGGCCCCAGAGAACTGGCCAGCCGACGTTAGATCGTAAAGGGGGAAGTGGGCGATCAAACANNGGGCTCCGATCGTGG-GGGGAGGTGCGAGGGCCCGGGC-GGCGTGCGGTGGTGTACCGCCGCCNGGACGCCGAGGGGGCCCGGCGTTCGCGGTGGGG"/>
+                        <sequence id="seq_SAMEA5054093" spec="Sequence" taxon="SAMEA5054093" totalcount="4" value="CCGGNCTCCGCGGCCGCCGCGGNNTGNGNNTGCNCAGGNCTGNNNNNNNNCNCN--NNNNNNAGNGTCTGA-NNGGCCGCCCCGNCNNAACGTTGCTCNAGGCCNCCCCANNCC-ATGCCCNNCCCCGGNGCGNTNCGGATACCCNATCGCNCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGNGTGCAGNGG-CCCAGAGNNNTGGCNAGCCGACG-TNGATNGTAANGGGGGAANTGNNN-ATNN-ACANCNGNCT-CGNTCGTGNGNGGGANNNGCGANGGCNCGGNC-NNNGNGCGG---TGTANNNNNGC-CGGACGNNGAGGGGGCCCGGCNTTNGCGGTNGGG"/>
+                        <sequence id="seq_SAMEA5818798" spec="Sequence" taxon="SAMEA5818798" totalcount="4" value="C-TGTCTTCGCGGTTGTCGTGTCGCNTGATCACACAGGCNCCCNGAGGCCTTCTCGTACACGAGCGNCTAACAGGGTTNCCTCGGCACATCGATTTGACGNNCTGTTACACGCCCAATCCTGTTCCCAGCTCNNGTCNANNGCACGTTCGACTCGTNNNGGGTAAT---------------------AGGACGCAGCATTCCCAGAGAACT-GCCAGATGNAGTCGGGGTGTAAAGGANGAAGTGGACGAGCAAACGCCGTGCTCNGGTCGCGAGGTGGTGGTGCAAGAACTAGAACGGGCGTGCGGTAGTGTATCGATACCTGGTAGAAGGGTGGGTCCTGCGTTTGAGGCGGGG"/>
+                        <sequence id="seq_SAMEA5818799" spec="Sequence" taxon="SAMEA5818799" totalcount="4" value="CCTGTCTTCGCGGTTGTCGTGTCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTAACAGGGTTTCCTCGGCACATCGATTTGACGTACTGTTACACGCCCAATCCTGTTCCCAGCTCGAGTCAANAGCACGTTCGACTCGTNNAGGGTAAT-------------------NNAGGACGCAGCATTCCCAGAGAACTGGCCAGATGAAGTCGGGGTGTAAAGGAAGAAGTGGACGAGCAAACGCCGTGCTCTGGTCGCGAGGTGGTGGTGCAAGGGCTAGAACGGGCGTGCGGTAGTGTATCGATACCTGGTAGAAGGGTGGGTCCTGCGTTNGAGGCGGGG"/>
+                        <sequence id="seq_SAMEA5818800" spec="Sequence" taxon="SAMEA5818800" totalcount="4" value="CCTGTCTTCGCGGTTGTCGTGTCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTAACAGGGTTTCCTCGGCACATCGATTTGACGGGCTGTTACACGCCCAATCCTGTTCCCAGCTCGTGTCAANNGCACGTTCGACTCGTTTAGGGTAAT---------------------AGGATGCAGCATTCCCAGAGAACTGGCCAGATGAAGTCGGGGTGTAAAGGAAGAAGTGGACGAGCAAACGCCGTGCTCTGGTCGCGAGGTGGTGGTGCAAGGGCTAGAACGGGCGTGCGGTAGTGTATCGATACCTGGTAGAAGGGTGGGTCCTGCGTTTGAGGCGGGG"/>
+                        <sequence id="seq_SAMEA5818801" spec="Sequence" taxon="SAMEA5818801" totalcount="4" value="CNTGTCTTCGCGGTTGTCGTGTCGCNNGNTCNCNNNGGNNNNNNGANGCNTNCTCGNANNNGAGCGTCTAACAGGGTTTCCTCGGCNCNNCGATTTGACGNNCTGTTACACGCCCAATCCTGTTCCCAGCTCGNGTCAAGAGCACGTTCGACTCGTNNNGGGTAAT-------------------NNAGGACGCAGCATTCCCAGANANCTGGCCAGATGAAGTCGGGGTGTAAAGGAAGAAGTGGACGAGCAAANGCCGTGCTCTGGTCGCGAGGTGGTGGTGCAAGGGCTAGAACGGGCGTGCGGTAGTGTATCGATACCTGGTAGAANNGTGGGTCCTGCGTTNGAGGCGGGG"/>
+                        <sequence id="seq_SAMEA5818803" spec="Sequence" taxon="SAMEA5818803" totalcount="4" value="CNTGTCTCCGAGNTCGTCACATCNCGTGNTCNCACNGNNNNNNTGAGGCCTNCTCGTACACTAACGCCCAACAGTGCCGCATCTGNACATCGATGCGAGAGGCCGCTCCATGCTCATGCCCGTTCCCAGCGCGTTTCGGATGCCAGTTCACCCCTNCGGGAGTNNGAGCAAATCTGTGTCGCCGCCNCGGATTCAGTGGCCCCAGAGAACTGGCCAGATGACTTTGGATTATAAAGGGGGAAGTGAACGTTCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTACAAGGGCCCGGGCGGGCGTGCGGTGGTGACTCACTGCCTGNAAGCCNAGTGGGCCCGGCGTTCGCGGTGTGG"/>
+                        <sequence id="seq_SAMEA5818805" spec="Sequence" taxon="SAMEA5818805" totalcount="4" value="CCTGTCTCCGCGGTCGTCGCGTCGCNTGANCNCACAGNCCNNCTGAGGCCTNCTCNNNCACGAGCGTCTAACAGGGCCGCCTCGGCNNATCGATGTGAGAGGCCGCTCCACGCCCATGCCCGTTCCCNGCGCGTTTCGGATGCCCGTTCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGAACTGGCCNGATGACGTTGGATTGTAAAGGGGGAAGTGGACGATCAAACACCCTGCTCTGGTCGTGAGGTGGAGGTGCAAGGGCCCGGGCGGGCGTGCGGTGGTGTATCGCTGCATGGAAGCCNAGTGGGCCCGGCGTTCGCGGTGGGG"/>
+                        <sequence id="seq_SAMEA5818806" spec="Sequence" taxon="SAMEA5818806" totalcount="4" value="CCGGTCTCCGCGGCCGCTGCGGCGCGTGANCACACAGGCCCCCTGAGGNNTTCTCGTACACGAGCGTCTGACAGGGCCGCCCCGGCACNTCGTTGCTCGAGGCCGCCCCACGCCCATGCCCGCCCCCGGCGCGTTTCGGATACCCTATCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGGTGCAGCGGCCCCAGAGAACTGGCCAGCCGACGTTGGATCGTNAAGGGGGAAGTGGGCGATCAAACACCGGGCTCCGGTCGTGGGGGGGAGGTGCGAGGGCCCGGGCGGGCGTGCGGTGGTGTACCGCTGCCCGGACGCCGAGGGGGCCCGGCGTTCGCGGTGGGG"/>
+                        <sequence id="seq_SAMEA5818808" spec="Sequence" taxon="SAMEA5818808" totalcount="4" value="C-TGTNTCNGAGGTCGNCGCATCGCGNGNNCACGANGGNNNNNNGANGCNTNNNCGTANNNGNNCG-NNANCAGGNCCNCCNCNGCNCGNCG-TGCGNNAGGN-GCNCCACGCCNANGCCCGTTNCNNN-GCNTTT-GGATNCCCG-TCGCNCC--CG-G-GNNNGAGCAAATCTGNNTCGCCGCCTNGGANGCAGTGGCCCCA-TAATTT-GCC-G-TGACNNNGGATTATAAAGNGGGAAATNGACGTTCAAA-NCCGTGCTCNGGNNNTGAGGNGGANGTG-AANGGCCNNGGNGGGCNTGCGGTGGNGTATCACTGCCTNNAAGCCNNGNGGGCCCNGCGNNNGCNGTGTGG"/>
+                        <sequence id="seq_SAMEA5818809" spec="Sequence" taxon="SAMEA5818809" totalcount="4" value="C-GGTCTCCGCGGCCGCCGCGGNNCGTGATCNCACNNNNCCNNTGANGCCTNCTCGTACACGAGCGTCTGACAGGGCCGCCCCNGCACANCGTTGCTCGAGGCCGCCCCACGCCCATGCCCTCCCCCAGCGCGTTTNGGATACCCTATCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCATCGGCCCCNNAGAACTNGCCNGCCGACGTTGGATCGTAAAGGGGAAAGTGGGCGATCAAACNCCGGTCTCTGGACGTGGNGGGGANGTGCAAGGGCCCGGGAGAGCGTTCGGTGGTGTACCGCTGCCCGGACGCCNAGGGTGCCCGGCGTTCGCGGTGGGG"/>
+                        <sequence id="seq_SAMEA5818811" spec="Sequence" taxon="SAMEA5818811" totalcount="4" value="C-GGTCTCNGCGGCCGCCGCGGCGCGTGATCACACAGGCCCCCTGAGGCCTTNTCGTACACGAGCNTCTGACAGGGCCNCCCCGGCACATCGTTGCTNGAGGNCGCCCCACGNCNATGCCCGCCCCNGNCGC-TTT-GGATACCCTANCGCCNCNNCNNGGNNAAGNNNAAATCTGTGTCGCCGCCTCGGGTGCAGCGGCCCCNNNN-NCN-GCC-GCCGACNNNGNNNCGTNNAGNGGGAAGTGGGCGATCAAA-NCCGGGCTCCGGTCGTGGGGGGGANGNGCGAGGGCCCNGGNGGGCGNGCGGTGNTGTACCGCTGCNCGGNCGCCGNGGGGGCCCGGCGTTCGCGGTNNGG"/>
+                        <sequence id="seq_SAMEA5818815" spec="Sequence" taxon="SAMEA5818815" totalcount="4" value="ATTGTCTCCGCGGTCGTCGCGTCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGNNTAACAGGGCCGCCNCGGNACATCGATGCGAGAGGCCGCTCCACGCCCATGCCCGTTCTCAGAGCGTTTCGGATACCCGATCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGAACTGGCCAGATGACGTTGTATTGTAAAGGGGGAAGTGGACGATTAACCACAGTGCCCTGGTCGTGAGGTGAAGGTGCAAGGGCCCGGGCGGGCGTGCGGTGGTGTATCGCTGCCCGGAAGCCNAGTGGGCCCGTCGTTCGCGGTGGGA"/>
+                        <sequence id="seq_SAMEA5818817" spec="Sequence" taxon="SAMEA5818817" totalcount="4" value="CCTGTTTCCGCGGCCTCCGCGTCGCGTGATCACACAGGCNCCNTGAGGCCTTCTCGTACACGAGCNNNNAACAGNGCCGCCTCGGCACATCGTTGCNCNAGGCCGCCCTACGNCCATGCCCGTTCCCNGCGCGTTTTGGATACCCTAGCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGNNCTNGCCAGACGACGTTGGATCGTAAAGGGGGAAGTGGGTGATCAAACANCNTGCTCTGGTCGTGAGGTGGAGGNGCACGGGCCCGG-CNGGCGTGCGGTGGTGTATCGCTGCCCGGACGCCTAGGGGGCCCGGCGTTCGCGNTGGGG"/>
+                        <sequence id="seq_SAMEA5818818" spec="Sequence" taxon="SAMEA5818818" totalcount="4" value="CNTGTCTCNGAGNTCGTCGCATNNCGTGNTCNCACAGNNCNNNTGAGGCCTNCNNGNNCACGAACGTCCAACAGGGCCGCANCTGCANATCGNTGCGAGAGGNCGCTCCACGCCCATGCCCGTTCCCNNCGCNTNTCGGATGCCCGTTCGCCCC-NCGNGNGTGCGAGCAAATCTGTGTCGCCGCCTCGGATGCAGNGGCCCCA-AGAACTGGCC-GATGACG-NGGA-TATNNAGGGGGAAGTGGACGTTCAAANNCCGTGCTCTGGTCGTGAGGTGGAGGNACAAGGGCCCNGGCGGGCGNGCGGTGGTGNNTCACTGCCTGNAAGCCNAGTAGGCCCGGCGTTNGCGGTGTGG"/>
+                        <sequence id="seq_SAMEA5818821" spec="Sequence" taxon="SAMEA5818821" totalcount="4" value="C-TGTCTCCGAGNTCGTCGCATCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAACGTCCAACAGGGCCNCATCTGCACATCGNTGCGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGC-TTTCGGATGCCCGTTCGCCCC-NCGNGAGTNNGAGCAAATCTGTGTCGCCGCCTCGGATGCAGTGGCCCCANAGAACTGGCCNGATGACGNTGGATTATAAAGGGGGAAGTGGACGTTCAAA-NCCGTGCTCTGGTCGTGAGGTGGAGGTACAAGGGCCCGGGCGGGCGTGCGGTGGTGANTCACTGCCCGNAAGCCGAGTAGGCCCGGCGTTCGCGGTGTGG"/>
+                        <sequence id="seq_SAMEA5818822" spec="Sequence" taxon="SAMEA5818822" totalcount="4" value="N-TGTCTCCGAGTNCGTCGCNTCGCGTGNNCNCACAGNNCNNCTGAGGCCTNCTCGNNNACGAACGTCNAACAGNGCCNCATCTGCGTATCGNTGCGAGAGGNNGCNCCACGCCCATGCCCGTTCCNAGCGC-TTT-GGATGCCCGTTC-CNCC-NCGNGNNTNAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGTGGCCCNNGNNAACT-GCC-GATGACG-TGGANTNTAGAGGGGGNAGTGGACGTNCAAA--CCGTGCTCTGGTNNTGAGGTGGAGGTACAAGGGCCNNGGCGGGCGTGCGGTGGNGNNTCACTGCCTGAAAGCCNNGTAGGCCCGNCGTTCGCGGTGNGG"/>
+                        <sequence id="seq_SAMEA5818825" spec="Sequence" taxon="SAMEA5818825" totalcount="4" value="N-TGTCTCCGAGNTCGTCGCATCGCGTGATCACACAGGCCCCNTGAGGCCTNNTCGTACACGANCNTACAACAGGGCCNCANCTGNACATCGNTGCGAGAGGCNGCNCCACGNC-ATGCCCGTTCCNA-CGCNTTT-GGATNCCCGNTCGCCCCNNCGNGNNTNNGAGCAAATCTGTGTCGCCGCCTCGGATGCAGNGGCCCCN--N--NT-GCCNGATGACGNNGGNNTNTNAAGGGGGAAGTGGACGTTCAAANNCCGTGCTCNGGTCGTGANGTGGAGGNANAAGGGNCCNGGCGGGCNNGCGGTGGNGN-TCACTGC-TGNAAGCCNNGTAGACCCGNCGTTNGCGGTGTGG"/>
+                        <sequence id="seq_SAMEA5818826" spec="Sequence" taxon="SAMEA5818826" totalcount="4" value="C-TGTCTCCGAGNTCGTCGCATCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAACGTCCAACAGGGCCGCATCTGCACATCGATGCGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGCGTTTCGGATGCCCGTTCGCCCCTGCGNGAGTNNGAGCAAATCTGTGTCGCCGCCTCGGATGCAGTGGCCCCAGAGAACTGGCCAGATGACGTTGGATTATAAAGGGGGAAGTGGACGTTCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTACAAGGGCCCGGGCGGGCGTGCGGTGGTGAATCACTGCCTGGAAGCCGAGTAGGCCCGGCGTTCGCGGTGTGG"/>
+                        <sequence id="seq_SAMEA5818828" spec="Sequence" taxon="SAMEA5818828" totalcount="4" value="C-TGTCTCCGAGNTCGTCGCATCGCGTGANCNCACAGNCCNNCTGAGGCCTNCTCGTNNACGAACNTCCAACAGGGCCGCATCTGCNNATCGATGCGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGCNTTTCGGATGCCCGTTCGCCCCNNCG-GNGTNNGAGCAAATCTGTGTCGCCGCCTCGGATGCAGTGGCCCCAGAGAACTGGCCNGATGACG-TGGANTATAAAGGGGGAAGTGGACGTTCAAA--CCGTGCTCTGGTCGTGAGGTGGAGGTACAAGGGCCCGGGCGGGCGNGCGGTGGTGN-TCACTGCCTGNAAGCCGNGTAGGCCCGGCGTTCGCGGTGTGG"/>
+                        <sequence id="seq_SAMEA5818829" spec="Sequence" taxon="SAMEA5818829" totalcount="4" value="CNTGTCTCCGAGNTCGTCGCATCGCGTGATCNCACAGNCCCNCTGAGGCCTNCTCNTNCACGAACGTCCAACAGGGCCGCATCTGCANATCGATGCGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGCGTTTCGGATGCCCGTTCGCCCCNNCGNGAGTNNGAGCAAATCTGTGTCGCCGCCTCGGATGCAGTGGCCCCAGAGAACTGGCCAGATGACGNTGGATTATNAAGGGGGAAGTGGACGTTCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTACAAGGGCCCGGGCGGGCGTGCGGTGGTGANTCACTGCCTGNAAGCCNAGTAGGCCCGGCGTTCGCGGTGNGG"/>
+                        <sequence id="seq_SAMEA5818830" spec="Sequence" taxon="SAMEA5818830" totalcount="4" value="C-TGTCTCNGAGTTCGTCGCATCGCNTGANCNCNCNGNCNNNCTGAGGCNTNCTCNNNNACGAACGTCNAACAGGGCCGCATCTGCNNATCGATGCGAGAGGCCGCTCCACGCCCATGCCCGTTCCCNGCGCGTTTCGGATGCCCGTTCGCCCCNNCG-GAGTNNGAGCAAATCTGTGTCGCCGCCTCGGATGCAGTGGCCCCAGAGANCTNGCC-GATGACGNTGGATTATAAAGGGGGAAGTGGACGTTCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTACAAGGGCCCGGGCGGGCGTGCGGTGGTGAATCACTGCCTGNAAGCCNAGTAGACCCGGCGTTCGCGGTGTGG"/>
+                        <sequence id="seq_SAMEA6637002" spec="Sequence" taxon="SAMEA6637002" totalcount="4" value="CCTGTCTCCGCGGTCGTCGCGTCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGNCTAACAGGGCCGCCTCGGCACATCGATGTGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGCGTTTCGGATGCCCGTTCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGAACTGGCCAGATGACGTTGGATTGTAAAGGGGGAAGTGGACGATCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTGCAAGGGCCCGGGCGGGCGTGCGGTGGTGTATCGCTGCCTGGAAGCCGGGTGGGCCCGGCGTTCGCGGTGGGG"/>
+                        <sequence id="seq_SAMEA6637004" spec="Sequence" taxon="SAMEA6637004" totalcount="4" value="CCTGTCTCCGCGGTCGTCGCGTCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGNCTAACAGGGCCGCCTCGGCACATTGATGTGAGAGGCCGCTCCACGCCCATGCCCGTTCCCNGCGCNTTTCGGATGCCCGTTCNCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGAACTNGCCAGATGACGTTGGATTGTAAAGGGGGAAGTGGACGATCAAA-ACCGTGCTCTGGTCGTGAGGTGGAGGTGCAAGGGCCCGGGCGGGCGTGCGGTGTTGTATCGCTGCCTAGAAACCGAATGGGCCCGGCGTTCGCGGTGGGG"/>
+                        <sequence id="seq_SAMEA6651390" spec="Sequence" taxon="SAMEA6651390" totalcount="4" value="CNTGTCTCCGCGGTCGTCGCGTCGCGTGANCACACAGGNNNNNNGANGNCTNCTCGNNCNNGAGCGTCTAACANGGCCGCCTCGGCNNATCGATGTGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGCGTTTCGGATGCCCGTTCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGAACTNGCCAGATGACGTTGGATTGTAAAGGGGGAAGTGGACGATCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTGCAAGGGCCCGGGCGGGCGTGCGGTGGTGTATCGCTGCCTGGAAGCCNGGTGGGCCCGGCGTTCGCGGTGGGG"/>
+                        <sequence id="seq_SAMEA7293135" spec="Sequence" taxon="SAMEA7293135" totalcount="4" value="CCTGTCTTCGCGGTTGTCGTGTTACAATGCNNCNNGACTTNGTAAGAAATNCTCTAAGTGTGAGCGNCTAAGCAGGTTTCCTCGGCNNNNCGATTTGANGNNCTGTTACACGCCCGATCCTGTTCCCAGCTCTTGACAANNGCACGTTAGAATCGTNNAAGGTAATTATTGCCTGCCACGATGC-TGAGGACGCAGCNTTCCCAGAGAACTAGACAGATGAAGGCGGGGTGTCAAAGAAGAGGGGGACGAGCAAACGTCGTGATCTGGTTACGAAGTGGTGGTGCAAGGGCTAGAACNGGCGTGCGGTAGTATATCGATATCTGGTAGANNGGTGGGTCCTGCGTTTGAGGCGGGG"/>
+                        <sequence id="seq_SAMEA7293136" spec="Sequence" taxon="SAMEA7293136" totalcount="4" value="CCGGTCTCCGCGGCCGCCGCGGCGNGTGNTNACACAGGCCCCNTGANGCNTTN--GTACACGAGCGTCTNACAGGGCCGCCCCGGCANATCATTNCTC-AGGCCGCCCCACGCCNATGCCCGCCCCCAGCGCGTTNCGGATAANCTATCGCCCCGTCGAGGGCAAGAGCAAATCTGTGTCGCCGCCTNGGATGCAGCGG-CCCAGANAACTGGCGANCCNACGTTGGATCGTAANGNGGGAAGTGGGCGATCAAACACCGGGCTNCGGTCGTGG-GGGGAGGTGCAANGNCNCGG-C-GNCGTGCGGNGNTGTANCGCNGCNCGGACGNCGAGGGGGNCCGGCGTTCNCGTTGGGG"/>
+                        <sequence id="seq_SAMEA7313236_38" spec="Sequence" taxon="SAMEA7313236_38" totalcount="4" value="CCTGTCTTCCCNGTTGTCGTGTCGCGTGATCACACAGNCCCCCTGAGGCCTTCTCGTACACGAGNGTCTATCAGGATTTCCCTGGCACATCGTATTGAGG--TTGTTACTCGCCCAATNCTGCTCCCAGCTCTTGACNNNNNCACGTTAGANNCGTNNAGGGTAAT---------N------NN---CGGACGCAGCATTCCCAGAGAACGAGAGAGACGAAGTNGGGGTGTCAAATAAGTGGGGGANGAGCAAACGNCGTGATCTGGTNNNGAGGTAGNGGTGCAAGGGNTAGNACGGGCGTGTAGGAGTATATCGATATNTGNTAGNAGGGTGNGTNNTGTGTTNNAGGNCGNG"/>
+                        <sequence id="seq_SAMEA7313243_45" spec="Sequence" taxon="SAMEA7313243_45" totalcount="4" value="CNTGNCTTNGCNGTTGCCNTGNCGCGTGANCACACAGGNNCCCTGAN---TTNNNGTACACNAGNGTCTAACAGGGTTTCCNCNGCN-ATNGAT-TGNCGNNNTNNTNCACGNNCANTNNTGTNCCNNGCTCNTNTCNA-NNCNNGTNCGNCNCNN--AGGGTAAN---NNN-------------NNNGNANGCAGCNNNNTNNGNNNNNTGGCCGGNTGANGNNGGNNN-TNNAGNNNGAANTGNA-GATCANACNTCGNG-TCTGGTCGNGNGNNGGTNGNGNAAGGGNTANNACNGGNNTGCGNN-GNGTATCGNTNCCTGGTAGNAGGGNGGGNCCNGCGN-NGANGCCG-G"/>
+                        <sequence id="seq_SAMEA7313246_49" spec="Sequence" taxon="SAMEA7313246_49" totalcount="4" value="CCTGCCTCCGCGGTCGTCGCGTCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTAACAGGGCCGCCTCGGCACATCGATGTGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGCGTTTCGGATGCCCGTTCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGAACTGGCCAGATGACGTTGGATTGTAAAGGGGGAAGTGGACGATCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTGCAAGGGCCCGGGCGGGCGTGCGGTGGTGTATCGCTGCCTGGAAGCCGGGTGGGCCCGGCGTTCGCGGTGGGG"/>
+                        <sequence id="seq_SAMN00715800" spec="Sequence" taxon="SAMN00715800" totalcount="4" value="NCGGTCTCCGCGGCCGCCGCGGCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTGACAGGGCCGCCCCGGCACATCGTTGCTCGAGGCCGCCCCACGCCCATGCCCGCCCCCGGCGCGTTTCGGATACCCTATCGCCCCGTCGNGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGGTGCAGCGGCCCNN-NNAACTNGCCAGCCGACGNTGGATCGGAAAGGGGGAAGTGGGCGATCAANCNCCGGGCTCCGGTCGTGGGGGGGAGGTGCGAGGGCCCNGGCGGGCGTGCGGTGGTGTACCGCTGCCCGGACGCCGAGGGGGCCCGGCGTTCGCGGTGGGG"/>
+                    </data>
+    <data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="1126849 1014112 1025137 1123712"/>	
+
+    
+
+
+    
+
+
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="mcmc" spec="MCMC" chainLength="100000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:dna" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="traitsetDate" spec="beast.evolution.tree.TraitSet" traitname="date-backward">
+                D51=691.0,
+SAMEA5818803=388.0,
+SAMEA5818818=461.0,
+SAMEA5818828=461.0,
+SAMEA5818821=461.0,
+SAMEA5818825=461.0,
+SAMEA5818830=461.0,
+SAMEA5818829=461.0,
+SAMEA5818826=461.0,
+SAMEA5818822=461.0,
+SAMEA5818808=477.5,
+D72=691.0,
+D75=691.0,
+SAMEA6637004=494.5,
+SAMEA5818805=465.0,
+SAMEA3713711=300.0,
+SAMEA3713714=300.0,
+SAMEA3713712=300.0,
+SAMEA3713713=300.0,
+SAMEA3713715=300.0,
+SAMEA7293135=371.0,
+SAMEA7313236_38=253.5,
+SAMEA7313243_45=471.0,
+SAMEA5818798=423.5,
+SAMEA5818799=423.5,
+SAMEA5818801=423.5,
+SAMEA5818800=423.5,
+SAMEA7313246_49=471.0,
+SAMEA6637002=473.5,
+SAMEA6651390=565.0,
+SAMEA5818815=515.5,
+P212=691.0,
+P187=691.0,
+SAMEA5818817=496.0,
+P387=691.0,
+SAMEA5818809=684.5,
+SAMEA7293136=671.0,
+D71=691.0,
+R36=691.0,
+SAMEA5818811=679.0,
+SAMEA3937653=661.0,
+SAMEA5054093=687.0,
+SAMEA3937654=640.0,
+SAMEA5054089=671.0,
+SAMEA5054090=671.0,
+SAMEA5054092=691.0,
+SAMN00715800=672.0,
+D62=691.0,
+SAMEA5818806=671.0                <taxa id="TaxonSet.dna" spec="TaxonSet">
+                    <alignment idref="dna"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.dna"/>
+        </tree>
+        <parameter id="clockRate.c:dna" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="freqParameter.s:dna" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+        <parameter id="rateAC.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAG.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAT.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateCG.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateGT.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="popSize.t:dna" spec="parameter.RealParameter" name="stateNode">0.3</parameter>
+    </state>
+
+    <init id="RandomTree.t:dna" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:dna" taxa="@dna">
+        <populationModel id="ConstantPopulation0.t:dna" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:dna" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="CoalescentConstant.t:dna" spec="Coalescent">
+                <populationModel id="ConstantPopulation.t:dna" spec="ConstantPopulation" popSize="@popSize.t:dna"/>
+                <treeIntervals id="TreeIntervals.t:dna" spec="TreeIntervals" tree="@Tree.t:dna"/>
+            </distribution>
+            <prior id="ClockPrior.c:dna" name="distribution" x="@clockRate.c:dna">
+                <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
+            </prior>
+            <prior id="FrequenciesPrior.s:dna" name="distribution" x="@freqParameter.s:dna">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="PopSizePrior.t:dna" name="distribution" x="@popSize.t:dna">
+                <OneOnX id="OneOnX.1" name="distr"/>
+            </prior>
+            <prior id="RateACPrior.s:dna" name="distribution" x="@rateAC.s:dna">
+                <Gamma id="Gamma.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateAGPrior.s:dna" name="distribution" x="@rateAG.s:dna">
+                <Gamma id="Gamma.1" name="distr">
+                    <parameter id="RealParameter.3" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.4" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateATPrior.s:dna" name="distribution" x="@rateAT.s:dna">
+                <Gamma id="Gamma.2" name="distr">
+                    <parameter id="RealParameter.5" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateCGPrior.s:dna" name="distribution" x="@rateCG.s:dna">
+                <Gamma id="Gamma.3" name="distr">
+                    <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.8" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateGTPrior.s:dna" name="distribution" x="@rateGT.s:dna">
+                <Gamma id="Gamma.5" name="distr">
+                    <parameter id="RealParameter.11" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.12" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <distribution id="D51.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="D51.leaf" spec="TaxonSet">
+                    <taxon id="D51" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.0" name="distr">
+                    <parameter id="param.1" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.2" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">115.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="D62.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="D62.leaf" spec="TaxonSet">
+                    <taxon id="D62" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.01" name="distr">
+                    <parameter id="param.11" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.21" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">115.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="D71.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="D71.leaf" spec="TaxonSet">
+                    <taxon id="D71" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.02" name="distr">
+                    <parameter id="param.12" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.22" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">115.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="D72.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="D72.leaf" spec="TaxonSet">
+                    <taxon id="D72" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.03" name="distr">
+                    <parameter id="param.13" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.23" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">115.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="D75.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="D75.leaf" spec="TaxonSet">
+                    <taxon id="D75" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.04" name="distr">
+                    <parameter id="param.14" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.24" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">115.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="P187.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="P187.leaf" spec="TaxonSet">
+                    <taxon id="P187" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.05" name="distr">
+                    <parameter id="param.15" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.25" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">115.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="P212.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="P212.leaf" spec="TaxonSet">
+                    <taxon id="P212" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.06" name="distr">
+                    <parameter id="param.16" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.26" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">115.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="P387.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="P387.leaf" spec="TaxonSet">
+                    <taxon id="P387" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.07" name="distr">
+                    <parameter id="param.17" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.27" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">115.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="R36.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="R36.leaf" spec="TaxonSet">
+                    <taxon id="R36" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.08" name="distr">
+                    <parameter id="param.18" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.28" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">115.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA3937653.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA3937653.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA3937653" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.09" name="distr">
+                    <parameter id="param.19" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">661.0</parameter>
+                    <parameter id="param.29" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">30.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA3937654.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA3937654.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA3937654" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.010" name="distr">
+                    <parameter id="param.110" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">640.0</parameter>
+                    <parameter id="param.210" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">9.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5054089.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5054089.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5054089" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.011" name="distr">
+                    <parameter id="param.111" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">671.0</parameter>
+                    <parameter id="param.211" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">25.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5054090.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5054090.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5054090" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.012" name="distr">
+                    <parameter id="param.112" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">671.0</parameter>
+                    <parameter id="param.212" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">25.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5054092.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5054092.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5054092" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.013" name="distr">
+                    <parameter id="param.113" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">691.0</parameter>
+                    <parameter id="param.213" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">30.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5054093.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5054093.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5054093" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.014" name="distr">
+                    <parameter id="param.114" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">687.0</parameter>
+                    <parameter id="param.214" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">27.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818798.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818798.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818798" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.015" name="distr">
+                    <parameter id="param.115" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">423.5</parameter>
+                    <parameter id="param.215" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">18.75</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818799.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818799.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818799" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.016" name="distr">
+                    <parameter id="param.116" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">423.5</parameter>
+                    <parameter id="param.216" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">18.75</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818800.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818800.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818800" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.017" name="distr">
+                    <parameter id="param.117" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">423.5</parameter>
+                    <parameter id="param.217" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">18.75</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818801.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818801.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818801" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.018" name="distr">
+                    <parameter id="param.118" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">423.5</parameter>
+                    <parameter id="param.218" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">18.75</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818803.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818803.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818803" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.019" name="distr">
+                    <parameter id="param.119" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">388.0</parameter>
+                    <parameter id="param.219" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">7.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818805.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818805.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818805" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.020" name="distr">
+                    <parameter id="param.120" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">465.0</parameter>
+                    <parameter id="param.220" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">35.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818806.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818806.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818806" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.021" name="distr">
+                    <parameter id="param.121" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">671.0</parameter>
+                    <parameter id="param.221" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">25.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818808.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818808.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818808" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.022" name="distr">
+                    <parameter id="param.122" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">477.5</parameter>
+                    <parameter id="param.222" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">44.25</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818809.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818809.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818809" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.023" name="distr">
+                    <parameter id="param.123" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">684.5</parameter>
+                    <parameter id="param.223" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">26.75</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818811.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818811.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818811" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.024" name="distr">
+                    <parameter id="param.124" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">679.0</parameter>
+                    <parameter id="param.224" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">25.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818815.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818815.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818815" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.025" name="distr">
+                    <parameter id="param.125" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">515.5</parameter>
+                    <parameter id="param.225" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">15.25</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818817.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818817.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818817" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.026" name="distr">
+                    <parameter id="param.126" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">496.0</parameter>
+                    <parameter id="param.226" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">52.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818818.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818818.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818818" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.027" name="distr">
+                    <parameter id="param.127" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">461.0</parameter>
+                    <parameter id="param.227" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">37.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818821.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818821.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818821" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.028" name="distr">
+                    <parameter id="param.128" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">461.0</parameter>
+                    <parameter id="param.228" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">37.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818822.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818822.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818822" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.029" name="distr">
+                    <parameter id="param.129" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">461.0</parameter>
+                    <parameter id="param.229" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">37.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818825.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818825.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818825" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.030" name="distr">
+                    <parameter id="param.130" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">461.0</parameter>
+                    <parameter id="param.230" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">37.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818826.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818826.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818826" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.031" name="distr">
+                    <parameter id="param.131" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">461.0</parameter>
+                    <parameter id="param.231" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">37.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818828.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818828.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818828" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.032" name="distr">
+                    <parameter id="param.132" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">461.0</parameter>
+                    <parameter id="param.232" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">37.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818829.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818829.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818829" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.033" name="distr">
+                    <parameter id="param.133" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">461.0</parameter>
+                    <parameter id="param.233" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">37.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA5818830.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA5818830.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA5818830" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.034" name="distr">
+                    <parameter id="param.134" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">461.0</parameter>
+                    <parameter id="param.234" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">37.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA6637002.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA6637002.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA6637002" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.035" name="distr">
+                    <parameter id="param.135" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">473.5</parameter>
+                    <parameter id="param.235" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">42.25</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA6637004.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA6637004.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA6637004" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.036" name="distr">
+                    <parameter id="param.136" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">494.5</parameter>
+                    <parameter id="param.236" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">42.75</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA6651390.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA6651390.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA6651390" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.037" name="distr">
+                    <parameter id="param.137" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">565.0</parameter>
+                    <parameter id="param.237" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">10.5</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA7293135.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA7293135.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA7293135" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.038" name="distr">
+                    <parameter id="param.138" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">371.0</parameter>
+                    <parameter id="param.238" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">75.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA7293136.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA7293136.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA7293136" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.039" name="distr">
+                    <parameter id="param.139" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">671.0</parameter>
+                    <parameter id="param.239" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">25.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA7313236_38.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA7313236_38.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA7313236_38" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.040" name="distr">
+                    <parameter id="param.140" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">253.5</parameter>
+                    <parameter id="param.240" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">2.75</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA7313243_45.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA7313243_45.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA7313243_45" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.041" name="distr">
+                    <parameter id="param.141" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">471.0</parameter>
+                    <parameter id="param.241" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">75.0</parameter>
+                </Normal>
+            </distribution>
+            <distribution id="SAMEA7313246_49.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
+                <taxonset id="SAMEA7313246_49.leaf" spec="TaxonSet">
+                    <taxon id="SAMEA7313246_49" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.042" name="distr">
+                    <parameter id="param.142" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">471.0</parameter>
+                    <parameter id="param.242" spec="parameter.RealParameter" lower="0.0" name="sigma" upper="0.0">75.0</parameter>
+                </Normal>
+            </distribution>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.dna" spec="ThreadedTreeLikelihood" data="@dna" tree="@Tree.t:dna">
+                <siteModel id="SiteModel.s:dna" spec="SiteModel">
+                    <parameter id="mutationRate.s:dna" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="gammaShape.s:dna" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
+                    <parameter id="proportionInvariant.s:dna" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="gtr.s:dna" spec="GTR" rateAC="@rateAC.s:dna" rateAG="@rateAG.s:dna" rateAT="@rateAT.s:dna" rateCG="@rateCG.s:dna" rateGT="@rateGT.s:dna">
+                        <parameter id="rateCT.s:dna" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <frequencies id="estimatedFreqs.s:dna" spec="Frequencies" frequencies="@freqParameter.s:dna"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:dna" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:dna"/>
+            </distribution>
+        </distribution>
+    </distribution>
+
+    <operator id="TipDatesRandomWalker.D51.leaf" spec="TipDatesRandomWalker" taxonset="@D51.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818803.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818803.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818818.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818818.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818828.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818828.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818821.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818821.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818825.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818825.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818830.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818830.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818829.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818829.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818826.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818826.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818822.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818822.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818808.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818808.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.D72.leaf" spec="TipDatesRandomWalker" taxonset="@D72.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.D75.leaf" spec="TipDatesRandomWalker" taxonset="@D75.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA6637004.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA6637004.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818805.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818805.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA7293135.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA7293135.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA7313236_38.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA7313236_38.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA7313243_45.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA7313243_45.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818798.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818798.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818799.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818799.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818801.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818801.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818800.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818800.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA7313246_49.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA7313246_49.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA6637002.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA6637002.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA6651390.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA6651390.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818815.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818815.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.P212.leaf" spec="TipDatesRandomWalker" taxonset="@P212.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.P187.leaf" spec="TipDatesRandomWalker" taxonset="@P187.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818817.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818817.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.P387.leaf" spec="TipDatesRandomWalker" taxonset="@P387.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818809.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818809.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA7293136.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA7293136.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.D71.leaf" spec="TipDatesRandomWalker" taxonset="@D71.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.R36.leaf" spec="TipDatesRandomWalker" taxonset="@R36.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818811.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818811.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA3937653.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA3937653.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5054093.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5054093.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA3937654.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA3937654.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5054089.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5054089.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5054090.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5054090.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5054092.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5054092.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.D62.leaf" spec="TipDatesRandomWalker" taxonset="@D62.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="TipDatesRandomWalker.SAMEA5818806.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818806.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
+
+    <operator id="StrictClockRateScaler.c:dna" spec="ScaleOperator" parameter="@clockRate.c:dna" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="strictClockUpDownOperator.c:dna" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:dna"/>
+        <down idref="Tree.t:dna"/>
+    </operator>
+
+    <operator id="FrequenciesExchanger.s:dna" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:dna"/>
+    </operator>
+
+    <operator id="RateACScaler.s:dna" spec="ScaleOperator" parameter="@rateAC.s:dna" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateAGScaler.s:dna" spec="ScaleOperator" parameter="@rateAG.s:dna" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateATScaler.s:dna" spec="ScaleOperator" parameter="@rateAT.s:dna" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateCGScaler.s:dna" spec="ScaleOperator" parameter="@rateCG.s:dna" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateGTScaler.s:dna" spec="ScaleOperator" parameter="@rateGT.s:dna" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="CoalescentConstantTreeScaler.t:dna" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:dna" weight="3.0"/>
+
+    <operator id="CoalescentConstantTreeRootScaler.t:dna" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:dna" weight="3.0"/>
+
+    <operator id="CoalescentConstantUniformOperator.t:dna" spec="Uniform" tree="@Tree.t:dna" weight="30.0"/>
+
+    <operator id="CoalescentConstantSubtreeSlide.t:dna" spec="SubtreeSlide" tree="@Tree.t:dna" weight="15.0"/>
+
+    <operator id="CoalescentConstantNarrow.t:dna" spec="Exchange" tree="@Tree.t:dna" weight="15.0"/>
+
+    <operator id="CoalescentConstantWide.t:dna" spec="Exchange" isNarrow="false" tree="@Tree.t:dna" weight="3.0"/>
+
+    <operator id="CoalescentConstantWilsonBalding.t:dna" spec="WilsonBalding" tree="@Tree.t:dna" weight="3.0"/>
+
+    <operator id="PopSizeScaler.t:dna" spec="ScaleOperator" parameter="@popSize.t:dna" scaleFactor="0.75" weight="3.0"/>
+
+    <logger id="tracelog" spec="Logger" fileName="beast.log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.dna"/>
+        <log id="TreeHeight.t:dna" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:dna"/>
+        <log idref="D51.leaf.prior"/>
+        <log idref="SAMEA5818803.leaf.prior"/>
+        <log idref="SAMEA5818818.leaf.prior"/>
+        <log idref="SAMEA5818828.leaf.prior"/>
+        <log idref="SAMEA5818821.leaf.prior"/>
+        <log idref="SAMEA5818825.leaf.prior"/>
+        <log idref="SAMEA5818830.leaf.prior"/>
+        <log idref="SAMEA5818829.leaf.prior"/>
+        <log idref="SAMEA5818826.leaf.prior"/>
+        <log idref="SAMEA5818822.leaf.prior"/>
+        <log idref="SAMEA5818808.leaf.prior"/>
+        <log idref="D72.leaf.prior"/>
+        <log idref="D75.leaf.prior"/>
+        <log idref="SAMEA6637004.leaf.prior"/>
+        <log idref="SAMEA5818805.leaf.prior"/>
+        <log idref="SAMEA7293135.leaf.prior"/>
+        <log idref="SAMEA7313236_38.leaf.prior"/>
+        <log idref="SAMEA7313243_45.leaf.prior"/>
+        <log idref="SAMEA5818798.leaf.prior"/>
+        <log idref="SAMEA5818799.leaf.prior"/>
+        <log idref="SAMEA5818801.leaf.prior"/>
+        <log idref="SAMEA5818800.leaf.prior"/>
+        <log idref="SAMEA7313246_49.leaf.prior"/>
+        <log idref="SAMEA6637002.leaf.prior"/>
+        <log idref="SAMEA6651390.leaf.prior"/>
+        <log idref="SAMEA5818815.leaf.prior"/>
+        <log idref="P212.leaf.prior"/>
+        <log idref="P187.leaf.prior"/>
+        <log idref="SAMEA5818817.leaf.prior"/>
+        <log idref="P387.leaf.prior"/>
+        <log idref="SAMEA5818809.leaf.prior"/>
+        <log idref="SAMEA7293136.leaf.prior"/>
+        <log idref="D71.leaf.prior"/>
+        <log idref="R36.leaf.prior"/>
+        <log idref="SAMEA5818811.leaf.prior"/>
+        <log idref="SAMEA3937653.leaf.prior"/>
+        <log idref="SAMEA5054093.leaf.prior"/>
+        <log idref="SAMEA3937654.leaf.prior"/>
+        <log idref="SAMEA5054089.leaf.prior"/>
+        <log idref="SAMEA5054090.leaf.prior"/>
+        <log idref="SAMEA5054092.leaf.prior"/>
+        <log idref="D62.leaf.prior"/>
+        <log idref="SAMEA5818806.leaf.prior"/>
+        <log idref="clockRate.c:dna"/>
+        <log idref="freqParameter.s:dna"/>
+        <log idref="rateAC.s:dna"/>
+        <log idref="rateAG.s:dna"/>
+        <log idref="rateAT.s:dna"/>
+        <log idref="rateCG.s:dna"/>
+        <log idref="rateGT.s:dna"/>
+        <log idref="popSize.t:dna"/>
+        <log idref="CoalescentConstant.t:dna"/>
+    </logger>
+
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:dna" spec="Logger" fileName="beast.trees" logEvery="10000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:dna" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dna"/>
+    </logger>
+
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+
+</run>
+
+</beast>
