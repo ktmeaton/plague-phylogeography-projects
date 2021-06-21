@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
 
 
-    <data
-id="dna"
-spec="Alignment"
-name="alignment">
+    <data id="original-dna" spec="Alignment" name="original-dna">
                         <sequence id="seq_D51" spec="Sequence" taxon="D51" totalcount="4" value="CC-GTCTCCNAN-NCNTNGCANCG-NNN-T---NNAGGNNCC-NN-GGCNTTNN-NNNCACGAANG-NNAACN-GNCCNCANC-GC-N---NTNGCTANAGGNCGCTCCN-NCCNANGNCNGNCTNT-G-NCGT-NCGGAT-CC-NTTNG-CCCTGCGGGAGT--GAGCAAATCNNTGTCGCCGCCTCTGATNNAGT-NCCCCAGAGAA-NGGNNAG-TGANTTTGGANNATAAN-GGGGAAGTANNNTTTCANACACCGGNNTCNGGTCGTGA-GTGNAGGTACANNGGCCCNGNCGGGTATGC-GTGGTGAANCANTGC----NCGNCGAGTGGGCCCGGCGTTCNCGGT-TGG"/>
                         <sequence id="seq_D62" spec="Sequence" taxon="D62" totalcount="4" value="CCGGCCTCCGN-NCCGNNNCGNNNNN---NCA-NNANGNCNCNNGNNNN-TNNNN--NCACNAGCN---NACN-GNNCGNNCC-GCANNN-GT-GCTCNAGGCCGCCNCNNGNN-ANGNTCGCCC-C-G-GCGN--CGGAT-CCNTATNG-CNCG-NGANGGNNNGAGCAAATCN-TGTCGCNGCNNCGNGTGC-GCNGCC-CNGAG-N-NGGCNAN-CNANGTTNNANCNTNNNGGNGGAANTGN-C-ATNA-NCANCNNNNTN-GGTCG-N--ANG-AGGTGCGNGNNCNCGG-CNNGNNTGCNG-GGTGTAC-GNTNCNN-GNCGNNNAGGGGGNCCGG-NNNNGCGGTNGNG"/>
                         <sequence id="seq_D71" spec="Sequence" taxon="D71" totalcount="4" value="CCGGTCTCCGCNNCCNCCGCGGCGCGTGATCACNNAGGNCCCCTGAGGCCTTNTCGTNCACGAGTNTN-GACAGGGCCGCCCCGGCACATNGTNGCTCGAGGCCACCCCA-GTCCATGCCCGCCCCCNGNGCNTNTCGGATNCCCTATNG-CCCGTCGAGGGTAANAGCAAATCTGTNTNGCCGCCTCGAGTGCAGCNGNCCCAGANAANTGGCCAGCCTACGTTGGATCGTAAAGGGGGAAGTGGGCGATCAAACACCGGNCTCCGGTNGTGGGGGGGAGGANCNAGGGCCCGGGCGGGCGTGCGGTNGTGTACCGCTNCNCNGACGCCGAGNGGGCCCGGCGTTCGCGGTGGGG"/>
@@ -55,7 +52,7 @@ name="alignment">
                         <sequence id="seq_SAMEA7313246_49" spec="Sequence" taxon="SAMEA7313246_49" totalcount="4" value="CCTGCCTCCGCGGTCGTCGCGTCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTAACAGGGCCGCCTCGGCACATCGATGTGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGCGTTTCGGATGCCCGTTCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGAACTGGCCAGATGACGTTGGATTGTAAAGGGGGAAGTGGACGATCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTGCAAGGGCCCGGGCGGGCGTGCGGTGGTGTATCGCTGCCTGGAAGCCGGGTGGGCCCGGCGTTCGCGGTGGGG"/>
                         <sequence id="seq_SAMN00715800" spec="Sequence" taxon="SAMN00715800" totalcount="4" value="NCGGTCTCCGCGGCCGCCGCGGCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTGACAGGGCCGCCCCGGCACATCGTTGCTCGAGGCCGCCCCACGCCCATGCCCGCCCCCGGCGCGTTTCGGATACCCTATCGCCCCGTCGNGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGGTGCAGCGGCCCNN-NNAACTNGCCAGCCGACGNTGGATCGGAAAGGGGGAAGTGGGCGATCAANCNCCGGGCTCCGGTCGTGGGGGGGAGGTGCGAGGGCCCNGGCGGGCGTGCGGTGGTGTACCGCTGCCCGGACGCCGAGGGGGCCCGGCGTTCGCGGTGGGG"/>
                     </data>
-
+    <data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="1126849 1014112 1025137 1123712"/>
 
     
 
@@ -138,13 +135,18 @@ SAMEA5818806=671.0
             </trait>
             <taxonset idref="TaxonSet.dna"/>
         </tree>
-        <parameter id="clockRate.c:dna" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
         <parameter id="rateAC.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateAG.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateAT.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateCG.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateGT.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="popSize.t:dna" spec="parameter.RealParameter" name="stateNode">0.3</parameter>
+        <parameter id="ucldMean.c:dna" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="ucldStdev.c:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:dna" spec="parameter.IntegerParameter" dimension="96">1</stateNode>
+        <parameter id="ucldMean.c:geo" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="ucldStdev.c:geo" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:geo" spec="parameter.IntegerParameter" dimension="0">1</stateNode>
         <parameter id="freqParameter.s:dna" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
     </state>
 
@@ -160,9 +162,6 @@ SAMEA5818806=671.0
                 <populationModel id="ConstantPopulation.t:dna" spec="ConstantPopulation" popSize="@popSize.t:dna"/>
                 <treeIntervals id="TreeIntervals.t:dna" spec="TreeIntervals" tree="@Tree.t:dna"/>
             </distribution>
-            <prior id="ClockPrior.c:dna" name="distribution" x="@clockRate.c:dna">
-                <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
-            </prior>
             <prior id="FrequenciesPrior.s:dna" name="distribution" x="@freqParameter.s:dna">
                 <Uniform id="Uniform.3" name="distr"/>
             </prior>
@@ -197,6 +196,24 @@ SAMEA5818806=671.0
                 <Gamma id="Gamma.5" name="distr">
                     <parameter id="RealParameter.11" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
                     <parameter id="RealParameter.12" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="MeanRatePrior.c:dna" name="distribution" x="@ucldMean.c:dna">
+                <Uniform id="Uniform.5" name="distr" upper="Infinity"/>
+            </prior>
+            <prior id="MeanRatePrior.c:geo" name="distribution" x="@ucldMean.c:geo">
+                <Uniform id="Uniform" name="distr" upper="Infinity"/>
+            </prior>
+            <prior id="ucldStdevPrior.c:dna" name="distribution" x="@ucldStdev.c:dna">
+                <Gamma id="Gamma.6" name="distr">
+                    <parameter id="RealParameter.21" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.22" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
+            <prior id="ucldStdevPrior.c:geo" name="distribution" x="@ucldStdev.c:geo">
+                <Gamma id="Gamma" name="distr">
+                    <parameter id="RealParameter" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter1" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
                 </Gamma>
             </prior>
             <distribution id="D51.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
@@ -650,7 +667,79 @@ SAMEA5818806=671.0
                         <frequencies id="estimatedFreqs.s:dna" spec="Frequencies" frequencies="@freqParameter.s:dna"/>
                     </substModel>
                 </siteModel>
-                <branchRateModel id="StrictClock.c:dna" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:dna"/>
+                <branchRateModel id="RelaxedClock.c:dna" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:dna" rateCategories="@rateCategories.c:dna" tree="@Tree.t:dna">
+                    <LogNormal id="LogNormalDistributionModel.c:dna" S="@ucldStdev.c:dna" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.20" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                </branchRateModel>
+            </distribution>
+            <distribution id="slocationtreeLikelihood.geo" spec="sphericalGeo.ApproxMultivariateTraitLikelihood" tree="@Tree.t:dna">
+                <data
+id="geo"
+spec="sphericalGeo.AlignmentFromTraitMap">
+                    <traitMap id="traitmap.s:geo" spec="sphericalGeo.TreeTraitMap" initByMean="true" randomizelower="-90 -180" randomizeupper="90 180" traitName="location" tree="@Tree.t:dna">
+                        <parameter id="location.s:geo" spec="sphericalGeo.LocationParameter" dimension="2" minordimension="2">0.0 0.0</parameter>
+                        D51=56.23564835 9.234625027778005,
+D62=55.37842625 9.13180637450161,
+D71=55.37842625 9.13180637450161,
+D72=55.37842625 9.13180637450161,
+D75=55.37842625 9.13180637450161,
+P187=56.23564835 9.234625027778005,
+P212=56.23564835 9.234625027778005,
+P387=56.23564835 9.234625027778005,
+R36=55.37842625 9.13180637450161,
+SAMEA3713711=44.0580563 6.0638505999999985,
+SAMEA3713712=44.0580563 6.0638505999999985,
+SAMEA3713713=44.0580563 6.0638505999999985,
+SAMEA3713714=44.0580563 6.0638505999999985,
+SAMEA3713715=44.0580563 6.0638505999999985,
+SAMEA3937653=41.8523094 1.5745043,
+SAMEA3937654=55.44821700000001 50.4763591,
+SAMEA5054089=51.6017723 5.444139099999999,
+SAMEA5054090=51.6017723 5.444139099999999,
+SAMEA5054092=59.9133301 10.7389701,
+SAMEA5054093=43.64878510000001 2.3435684,
+SAMEA5818798=51.4893335 -0.14405508452768728,
+SAMEA5818799=51.4893335 -0.14405508452768728,
+SAMEA5818800=51.4893335 -0.14405508452768728,
+SAMEA5818801=51.4893335 -0.14405508452768728,
+SAMEA5818803=52.84554920000001 13.2461296,
+SAMEA5818805=48.5908946 9.0399498,
+SAMEA5818806=55.44821700000001 50.4763591,
+SAMEA5818808=48.9467562 11.4038717,
+SAMEA5818809=48.9467562 11.4038717,
+SAMEA5818811=48.9467562 11.4038717,
+SAMEA5818815=52.2199774 0.4875777469166293,
+SAMEA5818817=48.9467562 11.4038717,
+SAMEA5818818=46.942756 8.4119773,
+SAMEA5818821=46.942756 8.4119773,
+SAMEA5818822=46.942756 8.4119773,
+SAMEA5818825=46.942756 8.4119773,
+SAMEA5818826=46.942756 8.4119773,
+SAMEA5818828=46.942756 8.4119773,
+SAMEA5818829=46.942756 8.4119773,
+SAMEA5818830=46.942756 8.4119773,
+SAMEA6637002=54.82269205 25.24953400167952,
+SAMEA6637004=54.82269205 25.24953400167952,
+SAMEA6651390=54.82269205 25.24953400167952,
+SAMEA7293135=43.39761470000001 45.6985005,
+SAMEA7293136=41.9808038 12.766231199999998,
+SAMEA7313236_38=47.6222451 40.7957942,
+SAMEA7313243_45=47.6222451 40.7957942,
+SAMEA7313246_49=54.24556 18.1099,
+SAMN00715800=51.4893335 -0.14405508452768728                    </traitMap>
+                    <userDataType id="LocationDataType.0" spec="sphericalGeo.LocationDataType"/>
+                </data>
+                <siteModel id="geoContSiteModel.s:geo" spec="SiteModel">
+                    <substModel id="sdiffusionModel.s:geo" spec="sphericalGeo.SphericalDiffusionModel" fast="true">
+                        <parameter id="sprecision.s:geo" spec="parameter.RealParameter" lower="0.0" name="precision">100.0</parameter>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="RelaxedClock.c:geo" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:geo" rateCategories="@rateCategories.c:geo" tree="@Tree.t:dna">
+                    <LogNormal id="LogNormalDistributionModel.c:geo" S="@ucldStdev.c:geo" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter2" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                </branchRateModel>
             </distribution>
         </distribution>
     </distribution>
@@ -741,13 +830,6 @@ SAMEA5818806=671.0
 
     <operator id="TipDatesRandomWalker.SAMEA5818806.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818806.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
 
-    <operator id="StrictClockRateScaler.c:dna" spec="ScaleOperator" parameter="@clockRate.c:dna" scaleFactor="0.75" weight="3.0"/>
-
-    <operator id="strictClockUpDownOperator.c:dna" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
-        <up idref="clockRate.c:dna"/>
-        <down idref="Tree.t:dna"/>
-    </operator>
-
     <operator id="RateACScaler.s:dna" spec="ScaleOperator" parameter="@rateAC.s:dna" scaleFactor="0.5" weight="0.1"/>
 
     <operator id="RateAGScaler.s:dna" spec="ScaleOperator" parameter="@rateAG.s:dna" scaleFactor="0.5" weight="0.1"/>
@@ -773,6 +855,36 @@ SAMEA5818806=671.0
     <operator id="CoalescentConstantWilsonBalding.t:dna" spec="WilsonBalding" tree="@Tree.t:dna" weight="3.0"/>
 
     <operator id="PopSizeScaler.t:dna" spec="ScaleOperator" parameter="@popSize.t:dna" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="ucldMeanScaler.c:dna" spec="ScaleOperator" parameter="@ucldMean.c:dna" scaleFactor="0.5" weight="1.0"/>
+
+    <operator id="ucldStdevScaler.c:dna" spec="ScaleOperator" parameter="@ucldStdev.c:dna" scaleFactor="0.5" weight="3.0"/>
+
+    <operator id="CategoriesRandomWalk.c:dna" spec="IntRandomWalkOperator" parameter="@rateCategories.c:dna" weight="10.0" windowSize="1"/>
+
+    <operator id="CategoriesSwapOperator.c:dna" spec="SwapOperator" intparameter="@rateCategories.c:dna" weight="10.0"/>
+
+    <operator id="CategoriesUniform.c:dna" spec="UniformOperator" parameter="@rateCategories.c:dna" weight="10.0"/>
+
+    <operator id="relaxedUpDownOperator.c:dna" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:dna"/>
+        <down idref="Tree.t:dna"/>
+    </operator>
+
+    <operator id="ucldMeanScaler.c:geo" spec="ScaleOperator" parameter="@ucldMean.c:geo" scaleFactor="0.5" weight="1.0"/>
+
+    <operator id="ucldStdevScaler.c:geo" spec="ScaleOperator" parameter="@ucldStdev.c:geo" scaleFactor="0.5" weight="3.0"/>
+
+    <operator id="CategoriesRandomWalk.c:geo" spec="IntRandomWalkOperator" parameter="@rateCategories.c:geo" weight="10.0" windowSize="1"/>
+
+    <operator id="CategoriesSwapOperator.c:geo" spec="SwapOperator" intparameter="@rateCategories.c:geo" weight="10.0"/>
+
+    <operator id="CategoriesUniform.c:geo" spec="UniformOperator" parameter="@rateCategories.c:geo" weight="10.0"/>
+
+    <operator id="relaxedUpDownOperator.c:geo" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:geo"/>
+        <down idref="Tree.t:dna"/>
+    </operator>
 
     <operator id="FrequenciesExchanger.s:dna" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
         <parameter idref="freqParameter.s:dna"/>
@@ -827,7 +939,6 @@ SAMEA5818806=671.0
         <log idref="SAMEA5054092.leaf.prior"/>
         <log idref="D62.leaf.prior"/>
         <log idref="SAMEA5818806.leaf.prior"/>
-        <log idref="clockRate.c:dna"/>
         <log idref="rateAC.s:dna"/>
         <log idref="rateAG.s:dna"/>
         <log idref="rateAT.s:dna"/>
@@ -836,6 +947,14 @@ SAMEA5818806=671.0
         <log idref="popSize.t:dna"/>
         <log idref="CoalescentConstant.t:dna"/>
         <log idref="Ingroup.prior"/>
+        <log idref="slocationtreeLikelihood.geo"/>
+        <log idref="sprecision.s:geo"/>
+        <log idref="ucldMean.c:dna"/>
+        <log idref="ucldStdev.c:dna"/>
+        <log id="rate.c:dna" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:dna" tree="@Tree.t:dna"/>
+        <log idref="ucldMean.c:geo"/>
+        <log idref="ucldStdev.c:geo"/>
+        <log id="rate.c:geo" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:geo" tree="@Tree.t:dna"/>
         <log idref="freqParameter.s:dna"/>
     </logger>
 
@@ -846,7 +965,9 @@ SAMEA5818806=671.0
     </logger>
 
     <logger id="treelog.t:dna" spec="Logger" fileName="beast.trees" logEvery="10000" mode="tree">
-        <log id="TreeWithMetaDataLogger.t:dna" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dna"/>
+        <log id="TreeWithMetaDataLogger.t:dna" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:dna" tree="@Tree.t:dna">
+            <metadata id="locationsgeo" spec="sphericalGeo.TraitFunction" likelihood="@slocationtreeLikelihood.geo">0.0</metadata>
+        </log>
     </logger>
 
     <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
