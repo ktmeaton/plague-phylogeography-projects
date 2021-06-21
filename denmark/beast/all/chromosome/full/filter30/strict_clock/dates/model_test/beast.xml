@@ -73,7 +73,18 @@
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
 
-<run id="mcmc" spec="MCMC" chainLength="100000000">
+<run spec="beast.inference.PathSampler"
+    chainLength="1000000"
+    alpha="0.3"
+    rootdir="/2/scratch/keaton/plague-phylogeography-projects/denmark/beast/all/chromosome/full/filter30/strict_clock/dates/model_test"
+    burnInPercentage="0"
+    preBurnin="100000"
+    deleteOldLogs="true"
+    nrOfSteps="100">
+    cd $(dir)
+    java -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml
+
+<mcmc id="mcmc" spec="MCMC" chainLength="100000000">
     <state id="state" spec="State" storeEvery="5000">
         <tree id="Tree.t:dna" spec="beast.evolution.tree.Tree" name="stateNode">
             <trait id="traitsetDate" spec="beast.evolution.tree.TraitSet" traitname="date-backward">
@@ -791,6 +802,7 @@ SAMEA5818806=671.0                <taxa id="TaxonSet.dna" spec="TaxonSet">
 
     <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
 
+</mcmc>
 </run>
 
 </beast>
