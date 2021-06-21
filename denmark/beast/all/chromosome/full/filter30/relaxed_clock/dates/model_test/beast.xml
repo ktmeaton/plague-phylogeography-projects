@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
 
 
-    <data
-id="dna"
-spec="Alignment"
-name="alignment">
+    <data id="original-dna" spec="Alignment" name="original-dna">   
                         <sequence id="seq_D51" spec="Sequence" taxon="D51" totalcount="4" value="CC-GTCTCCNAN-NCNTNGCANCG-NNN-T---NNAGGNNCC-NN-GGCNTTNN-NNNCACGAANG-NNAACN-GNCCNCANC-GC-N---NTNGCTANAGGNCGCTCCN-NCCNANGNCNGNCTNT-G-NCGT-NCGGAT-CC-NTTNG-CCCTGCGGGAGT--GAGCAAATCNNTGTCGCCGCCTCTGATNNAGT-NCCCCAGAGAA-NGGNNAG-TGANTTTGGANNATAAN-GGGGAAGTANNNTTTCANACACCGGNNTCNGGTCGTGA-GTGNAGGTACANNGGCCCNGNCGGGTATGC-GTGGTGAANCANTGC----NCGNCGAGTGGGCCCGGCGTTCNCGGT-TGG"/>
                         <sequence id="seq_D62" spec="Sequence" taxon="D62" totalcount="4" value="CCGGCCTCCGN-NCCGNNNCGNNNNN---NCA-NNANGNCNCNNGNNNN-TNNNN--NCACNAGCN---NACN-GNNCGNNCC-GCANNN-GT-GCTCNAGGCCGCCNCNNGNN-ANGNTCGCCC-C-G-GCGN--CGGAT-CCNTATNG-CNCG-NGANGGNNNGAGCAAATCN-TGTCGCNGCNNCGNGTGC-GCNGCC-CNGAG-N-NGGCNAN-CNANGTTNNANCNTNNNGGNGGAANTGN-C-ATNA-NCANCNNNNTN-GGTCG-N--ANG-AGGTGCGNGNNCNCGG-CNNGNNTGCNG-GGTGTAC-GNTNCNN-GNCGNNNAGGGGGNCCGG-NNNNGCGGTNGNG"/>
                         <sequence id="seq_D71" spec="Sequence" taxon="D71" totalcount="4" value="CCGGTCTCCGCNNCCNCCGCGGCGCGTGATCACNNAGGNCCCCTGAGGCCTTNTCGTNCACGAGTNTN-GACAGGGCCGCCCCGGCACATNGTNGCTCGAGGCCACCCCA-GTCCATGCCCGCCCCCNGNGCNTNTCGGATNCCCTATNG-CCCGTCGAGGGTAANAGCAAATCTGTNTNGCCGCCTCGAGTGCAGCNGNCCCAGANAANTGGCCAGCCTACGTTGGATCGTAAAGGGGGAAGTGGGCGATCAAACACCGGNCTCCGGTNGTGGGGGGGAGGANCNAGGGCCCGGGCGGGCGTGCGGTNGTGTACCGCTNCNCNGACGCCGAGNGGGCCCGGCGTTCGCGGTGGGG"/>
@@ -55,7 +52,7 @@ name="alignment">
                         <sequence id="seq_SAMEA7313246_49" spec="Sequence" taxon="SAMEA7313246_49" totalcount="4" value="CCTGCCTCCGCGGTCGTCGCGTCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTAACAGGGCCGCCTCGGCACATCGATGTGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGCGTTTCGGATGCCCGTTCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGAACTGGCCAGATGACGTTGGATTGTAAAGGGGGAAGTGGACGATCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTGCAAGGGCCCGGGCGGGCGTGCGGTGGTGTATCGCTGCCTGGAAGCCGGGTGGGCCCGGCGTTCGCGGTGGGG"/>
                         <sequence id="seq_SAMN00715800" spec="Sequence" taxon="SAMN00715800" totalcount="4" value="NCGGTCTCCGCGGCCGCCGCGGCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTGACAGGGCCGCCCCGGCACATCGTTGCTCGAGGCCGCCCCACGCCCATGCCCGCCCCCGGCGCGTTTCGGATACCCTATCGCCCCGTCGNGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGGTGCAGCGGCCCNN-NNAACTNGCCAGCCGACGNTGGATCGGAAAGGGGGAAGTGGGCGATCAANCNCCGGGCTCCGGTCGTGGGGGGGAGGTGCGAGGGCCCNGGCGGGCGTGCGGTGGTGTACCGCTGCCCGGACGCCGAGGGGGCCCGGCGTTCGCGGTGGGG"/>
                     </data>
-
+    <data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="1126849 1014112 1025137 1123712"/>
 
     
 
@@ -75,8 +72,18 @@ name="alignment">
 <map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
+<run spec="beast.inference.PathSampler"
+    chainLength="1000000"
+    alpha="0.3"
+    rootdir="/2/scratch/keaton/plague-phylogeography-projects/denmark/beast/all/chromosome/full/filter30/relaxed_clock/dates/model_test/"
+    burnInPercentage="0"
+    preBurnin="100000"
+    deleteOldLogs="true"
+    nrOfSteps="100">
+    cd $(dir)
+    java -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml  
 
-<run id="mcmc" spec="MCMC" chainLength="100000000">
+<mcmc id="mcmc" spec="MCMC" chainLength="100000000">
     <state id="state" spec="State" storeEvery="5000">
         <tree id="Tree.t:dna" spec="beast.evolution.tree.Tree" name="stateNode">
             <trait id="traitsetDate" spec="beast.evolution.tree.TraitSet" traitname="date-backward">
@@ -136,13 +143,15 @@ SAMEA5818806=671.0
             </trait>
             <taxonset idref="TaxonSet.dna"/>
         </tree>
-        <parameter id="clockRate.c:dna" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
         <parameter id="rateAC.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateAG.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateAT.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateCG.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateGT.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="popSize.t:dna" spec="parameter.RealParameter" name="stateNode">0.3</parameter>
+        <parameter id="ucldMean.c:dna" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="ucldStdev.c:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:dna" spec="parameter.IntegerParameter" dimension="96">1</stateNode>
         <parameter id="freqParameter.s:dna" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
     </state>
 
@@ -158,9 +167,6 @@ SAMEA5818806=671.0
                 <populationModel id="ConstantPopulation.t:dna" spec="ConstantPopulation" popSize="@popSize.t:dna"/>
                 <treeIntervals id="TreeIntervals.t:dna" spec="TreeIntervals" tree="@Tree.t:dna"/>
             </distribution>
-            <prior id="ClockPrior.c:dna" name="distribution" x="@clockRate.c:dna">
-                <Uniform id="Uniform.0" name="distr" upper="Infinity"/>
-            </prior>
             <prior id="FrequenciesPrior.s:dna" name="distribution" x="@freqParameter.s:dna">
                 <Uniform id="Uniform.3" name="distr"/>
             </prior>
@@ -195,6 +201,15 @@ SAMEA5818806=671.0
                 <Gamma id="Gamma.5" name="distr">
                     <parameter id="RealParameter.11" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
                     <parameter id="RealParameter.12" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="MeanRatePrior.c:dna" name="distribution" x="@ucldMean.c:dna">
+                <Uniform id="Uniform.5" name="distr" upper="Infinity"/>
+            </prior>
+            <prior id="ucldStdevPrior.c:dna" name="distribution" x="@ucldStdev.c:dna">
+                <Gamma id="Gamma.6" name="distr">
+                    <parameter id="RealParameter.21" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.22" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
                 </Gamma>
             </prior>
             <distribution id="D51.leaf.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tipsonly="true" tree="@Tree.t:dna">
@@ -648,7 +663,11 @@ SAMEA5818806=671.0
                         <frequencies id="estimatedFreqs.s:dna" spec="Frequencies" frequencies="@freqParameter.s:dna"/>
                     </substModel>
                 </siteModel>
-                <branchRateModel id="StrictClock.c:dna" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:dna"/>
+                <branchRateModel id="RelaxedClock.c:dna" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:dna" rateCategories="@rateCategories.c:dna" tree="@Tree.t:dna">
+                    <LogNormal id="LogNormalDistributionModel.c:dna" S="@ucldStdev.c:dna" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.20" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                </branchRateModel>
             </distribution>
         </distribution>
     </distribution>
@@ -739,13 +758,6 @@ SAMEA5818806=671.0
 
     <operator id="TipDatesRandomWalker.SAMEA5818806.leaf" spec="TipDatesRandomWalker" taxonset="@SAMEA5818806.leaf" tree="@Tree.t:dna" weight="1.0" windowSize="1.0"/>
 
-    <operator id="StrictClockRateScaler.c:dna" spec="ScaleOperator" parameter="@clockRate.c:dna" scaleFactor="0.75" weight="3.0"/>
-
-    <operator id="strictClockUpDownOperator.c:dna" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
-        <up idref="clockRate.c:dna"/>
-        <down idref="Tree.t:dna"/>
-    </operator>
-
     <operator id="RateACScaler.s:dna" spec="ScaleOperator" parameter="@rateAC.s:dna" scaleFactor="0.5" weight="0.1"/>
 
     <operator id="RateAGScaler.s:dna" spec="ScaleOperator" parameter="@rateAG.s:dna" scaleFactor="0.5" weight="0.1"/>
@@ -771,6 +783,21 @@ SAMEA5818806=671.0
     <operator id="CoalescentConstantWilsonBalding.t:dna" spec="WilsonBalding" tree="@Tree.t:dna" weight="3.0"/>
 
     <operator id="PopSizeScaler.t:dna" spec="ScaleOperator" parameter="@popSize.t:dna" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="ucldMeanScaler.c:dna" spec="ScaleOperator" parameter="@ucldMean.c:dna" scaleFactor="0.5" weight="1.0"/>
+
+    <operator id="ucldStdevScaler.c:dna" spec="ScaleOperator" parameter="@ucldStdev.c:dna" scaleFactor="0.5" weight="3.0"/>
+
+    <operator id="CategoriesRandomWalk.c:dna" spec="IntRandomWalkOperator" parameter="@rateCategories.c:dna" weight="10.0" windowSize="1"/>
+
+    <operator id="CategoriesSwapOperator.c:dna" spec="SwapOperator" intparameter="@rateCategories.c:dna" weight="10.0"/>
+
+    <operator id="CategoriesUniform.c:dna" spec="UniformOperator" parameter="@rateCategories.c:dna" weight="10.0"/>
+
+    <operator id="relaxedUpDownOperator.c:dna" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:dna"/>
+        <down idref="Tree.t:dna"/>
+    </operator>
 
     <operator id="FrequenciesExchanger.s:dna" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
         <parameter idref="freqParameter.s:dna"/>
@@ -825,7 +852,6 @@ SAMEA5818806=671.0
         <log idref="SAMEA5054092.leaf.prior"/>
         <log idref="D62.leaf.prior"/>
         <log idref="SAMEA5818806.leaf.prior"/>
-        <log idref="clockRate.c:dna"/>
         <log idref="rateAC.s:dna"/>
         <log idref="rateAG.s:dna"/>
         <log idref="rateAT.s:dna"/>
@@ -834,6 +860,9 @@ SAMEA5818806=671.0
         <log idref="popSize.t:dna"/>
         <log idref="CoalescentConstant.t:dna"/>
         <log idref="Ingroup.prior"/>
+        <log idref="ucldMean.c:dna"/>
+        <log idref="ucldStdev.c:dna"/>
+        <log id="rate.c:dna" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:dna" tree="@Tree.t:dna"/>
         <log idref="freqParameter.s:dna"/>
     </logger>
 
@@ -844,11 +873,12 @@ SAMEA5818806=671.0
     </logger>
 
     <logger id="treelog.t:dna" spec="Logger" fileName="beast.trees" logEvery="10000" mode="tree">
-        <log id="TreeWithMetaDataLogger.t:dna" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dna"/>
+        <log id="TreeWithMetaDataLogger.t:dna" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:dna" tree="@Tree.t:dna"/>
     </logger>
 
     <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
 
+</mcmc>
 </run>
 
 </beast>

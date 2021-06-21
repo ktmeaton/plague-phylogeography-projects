@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
 
 
-    <data
-id="dna"
-spec="Alignment"
-name="alignment">
+    <data id="original-dna" spec="Alignment" name="original-dna"> 
                         <sequence id="seq_D51" spec="Sequence" taxon="D51" totalcount="4" value="CC-GTCTCCNAN-NCNTNGCANCG-NNN-T---NNAGGNNCC-NN-GGCNTTNN-NNNCACGAANG-NNAACN-GNCCNCANC-GC-N---NTNGCTANAGGNCGCTCCN-NCCNANGNCNGNCTNT-G-NCGT-NCGGAT-CC-NTTNG-CCCTGCGGGAGT--GAGCAAATCNNTGTCGCCGCCTCTGATNNAGT-NCCCCAGAGAA-NGGNNAG-TGANTTTGGANNATAAN-GGGGAAGTANNNTTTCANACACCGGNNTCNGGTCGTGA-GTGNAGGTACANNGGCCCNGNCGGGTATGC-GTGGTGAANCANTGC----NCGNCGAGTGGGCCCGGCGTTCNCGGT-TGG"/>
                         <sequence id="seq_D62" spec="Sequence" taxon="D62" totalcount="4" value="CCGGCCTCCGN-NCCGNNNCGNNNNN---NCA-NNANGNCNCNNGNNNN-TNNNN--NCACNAGCN---NACN-GNNCGNNCC-GCANNN-GT-GCTCNAGGCCGCCNCNNGNN-ANGNTCGCCC-C-G-GCGN--CGGAT-CCNTATNG-CNCG-NGANGGNNNGAGCAAATCN-TGTCGCNGCNNCGNGTGC-GCNGCC-CNGAG-N-NGGCNAN-CNANGTTNNANCNTNNNGGNGGAANTGN-C-ATNA-NCANCNNNNTN-GGTCG-N--ANG-AGGTGCGNGNNCNCGG-CNNGNNTGCNG-GGTGTAC-GNTNCNN-GNCGNNNAGGGGGNCCGG-NNNNGCGGTNGNG"/>
                         <sequence id="seq_D71" spec="Sequence" taxon="D71" totalcount="4" value="CCGGTCTCCGCNNCCNCCGCGGCGCGTGATCACNNAGGNCCCCTGAGGCCTTNTCGTNCACGAGTNTN-GACAGGGCCGCCCCGGCACATNGTNGCTCGAGGCCACCCCA-GTCCATGCCCGCCCCCNGNGCNTNTCGGATNCCCTATNG-CCCGTCGAGGGTAANAGCAAATCTGTNTNGCCGCCTCGAGTGCAGCNGNCCCAGANAANTGGCCAGCCTACGTTGGATCGTAAAGGGGGAAGTGGGCGATCAAACACCGGNCTCCGGTNGTGGGGGGGAGGANCNAGGGCCCGGGCGGGCGTGCGGTNGTGTACCGCTNCNCNGACGCCGAGNGGGCCCGGCGTTCGCGGTGGGG"/>
@@ -55,7 +52,7 @@ name="alignment">
                         <sequence id="seq_SAMEA7313246_49" spec="Sequence" taxon="SAMEA7313246_49" totalcount="4" value="CCTGCCTCCGCGGTCGTCGCGTCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTAACAGGGCCGCCTCGGCACATCGATGTGAGAGGCCGCTCCACGCCCATGCCCGTTCCCAGCGCGTTTCGGATGCCCGTTCGCCCCGTCGAGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGATGCAGCGGCCCCAGAGAACTGGCCAGATGACGTTGGATTGTAAAGGGGGAAGTGGACGATCAAACACCGTGCTCTGGTCGTGAGGTGGAGGTGCAAGGGCCCGGGCGGGCGTGCGGTGGTGTATCGCTGCCTGGAAGCCGGGTGGGCCCGGCGTTCGCGGTGGGG"/>
                         <sequence id="seq_SAMN00715800" spec="Sequence" taxon="SAMN00715800" totalcount="4" value="NCGGTCTCCGCGGCCGCCGCGGCGCGTGATCACACAGGCCCCCTGAGGCCTTCTCGTACACGAGCGTCTGACAGGGCCGCCCCGGCACATCGTTGCTCGAGGCCGCCCCACGCCCATGCCCGCCCCCGGCGCGTTTCGGATACCCTATCGCCCCGTCGNGGGTAAGAGCAAATCTGTGTCGCCGCCTCGGGTGCAGCGGCCCNN-NNAACTNGCCAGCCGACGNTGGATCGGAAAGGGGGAAGTGGGCGATCAANCNCCGGGCTCCGGTCGTGGGGGGGAGGTGCGAGGGCCCNGGCGGGCGTGCGGTGGTGTACCGCTGCCCGGACGCCGAGGGGGCCCGGCGTTCGCGGTGGGG"/>
                     </data>
-
+    <data id="dna" spec="FilteredAlignment" filter="-" data="@original-dna" constantSiteWeights="1126849 1014112 1025137 1123712"/>
 
     
 
@@ -76,7 +73,18 @@ name="alignment">
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
 
-<run id="mcmc" spec="MCMC" chainLength="100000000">
+<run spec="beast.inference.PathSampler"
+    chainLength="1000000"
+    alpha="0.3"
+    rootdir="/2/scratch/keaton/plague-phylogeography-projects/denmark/beast/all/chromosome/full/filter30/strict_clock/dates/model_test/"
+    burnInPercentage="0"
+    preBurnin="100000"
+    deleteOldLogs="true"
+    nrOfSteps="100">
+    cd $(dir)
+    java -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml    
+
+<mcmc id="mcmc" spec="MCMC" chainLength="100000000">
     <state id="state" spec="State" storeEvery="5000">
         <tree id="Tree.t:dna" spec="beast.evolution.tree.Tree" name="stateNode">
             <trait id="traitsetDate" spec="beast.evolution.tree.TraitSet" traitname="date-backward">
@@ -849,6 +857,7 @@ SAMEA5818806=671.0
 
     <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
 
+</mcmc>
 </run>
 
 </beast>
