@@ -88,6 +88,11 @@
       "title": "Continent",
       "type": "categorical"
     },
+		{
+      "key": "continuous_geo",
+      "title": "Continuous Phylogeography",
+      "type": "categorical"
+		},
     {
       "key": "country",
       "title": "Country",
@@ -210,7 +215,7 @@
     }
   ],
   "filters": [
-    "country",
+		"country",
     "province",
     "continent",
     "branch_major",
@@ -222,8 +227,9 @@
     "entropy"
   ],
  "geo_resolutions": [
-  "country",
-  "province"
+	 "country",
+	 "province",
+	 "continuous_geo"
   ],
   "display_defaults": {
     "color_by": "branch_major",
