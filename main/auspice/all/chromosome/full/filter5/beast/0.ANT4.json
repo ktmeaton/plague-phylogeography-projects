@@ -23,6 +23,36 @@
         "type": "continuous"
       },
       {
+        "key": "branch_major",
+        "scale": [
+          [
+            "0.ANT",
+            "#0cc1e8"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "0.ANT4",
+            "#f1c36c"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
         "key": "branch_support",
         "title": "Branch Support",
         "type": "continuous"
@@ -54,6 +84,20 @@
       },
       {
         "key": "continent",
+        "scale": [
+          [
+            "Asia",
+            "#8000ff"
+          ],
+          [
+            "Europe",
+            "#ffb462"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
         "title": "Continent",
         "type": "categorical"
       },
@@ -61,24 +105,28 @@
         "key": "country",
         "scale": [
           [
-            "Spain",
-            "#9afca5"
-          ],
-          [
-            "Kyrgyzstan",
-            "#d0e083"
-          ],
-          [
-            "France",
-            "#f8bc66"
-          ],
-          [
             "England",
-            "#ff793f"
+            "#573ffd"
           ],
           [
             "Germany",
-            "#ff150b"
+            "#65fcc3"
+          ],
+          [
+            "France",
+            "#8dfead"
+          ],
+          [
+            "Kyrgyzstan",
+            "#ff793f"
+          ],
+          [
+            "Spain",
+            "#ff0000"
+          ],
+          [
+            "NA",
+            "#969696"
           ]
         ],
         "title": "Country",
@@ -157,28 +205,28 @@
         "key": "province",
         "scale": [
           [
-            "Valencia Community",
-            "#4061fa"
-          ],
-          [
-            "Centre-Loire Valley",
-            "#d8da7d"
-          ],
-          [
-            "East of England",
-            "#e1d377"
+            "Bavaria",
+            "#1acfe3"
           ],
           [
             "Issyk-Kul Region",
-            "#ff6131"
+            "#74feba"
           ],
           [
             "NA",
-            "#ff4d27"
+            "#969696"
           ],
           [
-            "Bavaria",
-            "#ff4623"
+            "Valencia Community",
+            "#f7bd67"
+          ],
+          [
+            "East of England",
+            "#ff8746"
+          ],
+          [
+            "Centre-Loire Valley",
+            "#ff7a3f"
           ]
         ],
         "title": "Province",
@@ -220,13 +268,38 @@
         "type": "categorical"
       },
       {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
         "type": "continuous"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
         "type": "continuous"
       },
       {
@@ -235,8 +308,22 @@
         "type": "continuous"
       },
       {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
+        "key": "continent",
+        "scale": [
+          [
+            "Asia",
+            "#8000ff"
+          ],
+          [
+            "Europe",
+            "#ffb462"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Continent",
         "type": "categorical"
       },
       {
@@ -245,24 +332,23 @@
         "type": "continuous"
       },
       {
-        "key": "node_name",
-        "title": "Node Name",
+        "key": "host_human",
+        "scale": [
+          [
+            "Human",
+            "#CBB742"
+          ],
+          [
+            "Non-Human",
+            "#60B6F2"
+          ],
+          [
+            "NA",
+            "#D6D6D6"
+          ]
+        ],
+        "title": "Host Human",
         "type": "categorical"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
-        "key": "state_prob",
-        "title": "state_prob",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
       },
       {
         "key": "clade_rtt_dist",
@@ -270,40 +356,90 @@
         "type": "continuous"
       },
       {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
         "key": "province",
         "scale": [
           [
-            "Valencia Community",
-            "#4061fa"
-          ],
-          [
-            "Centre-Loire Valley",
-            "#d8da7d"
-          ],
-          [
-            "East of England",
-            "#e1d377"
+            "Bavaria",
+            "#1acfe3"
           ],
           [
             "Issyk-Kul Region",
-            "#ff6131"
+            "#74feba"
           ],
           [
             "NA",
-            "#ff4d27"
+            "#969696"
           ],
           [
-            "Bavaria",
-            "#ff4623"
+            "Valencia Community",
+            "#f7bd67"
+          ],
+          [
+            "East of England",
+            "#ff8746"
+          ],
+          [
+            "Centre-Loire Valley",
+            "#ff7a3f"
           ]
         ],
         "title": "Province",
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
         "type": "continuous"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "0.ANT4",
+            "#f1c36c"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "0.ANT",
+            "#0cc1e8"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
       },
       {
         "key": "blank",
@@ -311,9 +447,9 @@
         "type": "categorical"
       },
       {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
       },
       {
         "key": "state_conf_category",
@@ -331,18 +467,54 @@
         "type": "categorical"
       },
       {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
         "type": "continuous"
       },
       {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "England",
+            "#573ffd"
+          ],
+          [
+            "Germany",
+            "#65fcc3"
+          ],
+          [
+            "France",
+            "#8dfead"
+          ],
+          [
+            "Kyrgyzstan",
+            "#ff793f"
+          ],
+          [
+            "Spain",
+            "#ff0000"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
         "type": "continuous"
       },
       {
@@ -351,60 +523,13 @@
         "type": "continuous"
       },
       {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#0cc1e8"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "Spain",
-            "#9afca5"
-          ],
-          [
-            "Kyrgyzstan",
-            "#d0e083"
-          ],
-          [
-            "France",
-            "#f8bc66"
-          ],
-          [
-            "England",
-            "#ff793f"
-          ],
-          [
-            "Germany",
-            "#ff150b"
-          ]
-        ],
-        "title": "Country",
+        "key": "node_name",
+        "title": "Node Name",
         "type": "categorical"
       },
       {
         "key": "branch_support_conf_char",
         "title": "Branch Support Confidence Character",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
         "type": "categorical"
       },
       {
@@ -423,37 +548,8 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "host_human",
-        "scale": [
-          [
-            "Human",
-            "#CBB742"
-          ],
-          [
-            "Non-Human",
-            "#60B6F2"
-          ],
-          [
-            "NA",
-            "#D6D6D6"
-          ]
-        ],
-        "title": "Host Human",
-        "type": "categorical"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
+        "key": "state_prob",
+        "title": "state_prob",
         "type": "continuous"
       }
     ],
@@ -547,12 +643,14 @@
         "Blank": " ",
         "Branch Length": 194.87200120935404,
         "Branch Length Sub": 43.65310247262303,
-        "Branch Support": 98.59557636183168,
+        "Branch Major": "NA",
+        "Branch Minor": "NA",
+        "Branch Support": 99.0,
         "Branch Support Conf Category": "HIGH",
         "Branch Support Conf Char": "*",
         "Clade Rtt Dist": "NA",
         "Continent": "NA",
-        "Country": "Germany",
+        "Country": "NA",
         "Country Date Strain": "NA",
         "Country Lat": "NA",
         "Country Lon": "NA",
@@ -575,7 +673,7 @@
         "Rate Sub Year": 0.22400910444659428,
         "Root Rtt Dist": "NA",
         "State Conf Category": "LOW",
-        "State Prob": 44.165552266614576,
+        "State Prob": 44.0,
         "State Rate": 0.0024611275453409786,
         "Strain": "NA"
       }
@@ -590,6 +688,12 @@
           },
           "branch_length_sub": {
             "value": 75.88161107650937
+          },
+          "branch_major": {
+            "value": "0.ANT"
+          },
+          "branch_minor": {
+            "value": "0.ANT4"
           },
           "branch_support": {
             "value": 0.0
@@ -683,12 +787,14 @@
             "Blank": " ",
             "Branch Length": 194.87200120935404,
             "Branch Length Sub": 43.65310247262303,
-            "Branch Support": 98.59557636183168,
+            "Branch Major": "NA",
+            "Branch Minor": "NA",
+            "Branch Support": 99.0,
             "Branch Support Conf Category": "HIGH",
             "Branch Support Conf Char": "*",
             "Clade Rtt Dist": "NA",
             "Continent": "NA",
-            "Country": "Germany",
+            "Country": "NA",
             "Country Date Strain": "NA",
             "Country Lat": "NA",
             "Country Lon": "NA",
@@ -711,7 +817,7 @@
             "Rate Sub Year": 0.22400910444659428,
             "Root Rtt Dist": "NA",
             "State Conf Category": "LOW",
-            "State Prob": 44.165552266614576,
+            "State Prob": 44.0,
             "State Rate": 0.0024611275453409786,
             "Strain": "NA"
           }
@@ -724,11 +830,13 @@
                 "Blank": " ",
                 "Branch Length": 151.51633567185036,
                 "Branch Length Sub": 1.9991153071750076,
-                "Branch Support": 99.98592613442764,
+                "Branch Major": "NA",
+                "Branch Minor": "NA",
+                "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
                 "Branch Support Conf Char": "*",
                 "Clade Rtt Dist": "NA",
-                "Continent": "NA",
+                "Continent": "Europe",
                 "Country": "England",
                 "Country Date Strain": "NA",
                 "Country Lat": "NA",
@@ -752,7 +860,7 @@
                 "Rate Sub Year": 0.01319405791006346,
                 "Root Rtt Dist": "NA",
                 "State Conf Category": "HIGH",
-                "State Prob": 99.52808872228354,
+                "State Prob": 100.0,
                 "State Rate": 0.0024540879622514276,
                 "Strain": "NA"
               }
@@ -767,6 +875,12 @@
                   },
                   "branch_length_sub": {
                     "value": 1.913006969753811
+                  },
+                  "branch_major": {
+                    "value": "0.ANT"
+                  },
+                  "branch_minor": {
+                    "value": "0.ANT4"
                   },
                   "branch_support": {
                     "value": 0.0
@@ -860,11 +974,13 @@
                     "Blank": " ",
                     "Branch Length": 22.08964695673265,
                     "Branch Length Sub": 1.2953423542342541,
-                    "Branch Support": 46.92819365639028,
+                    "Branch Major": "NA",
+                    "Branch Minor": "NA",
+                    "Branch Support": 47.0,
                     "Branch Support Conf Category": "LOW",
                     "Branch Support Conf Char": "",
                     "Clade Rtt Dist": "NA",
-                    "Continent": "NA",
+                    "Continent": "Europe",
                     "Country": "England",
                     "Country Date Strain": "NA",
                     "Country Lat": "NA",
@@ -888,7 +1004,7 @@
                     "Rate Sub Year": 0.058640247024837576,
                     "Root Rtt Dist": "NA",
                     "State Conf Category": "HIGH",
-                    "State Prob": 99.98105881238753,
+                    "State Prob": 100.0,
                     "State Rate": 0.002508619368047031,
                     "Strain": "NA"
                   }
@@ -903,6 +1019,12 @@
                       },
                       "branch_length_sub": {
                         "value": 12.765162335766021
+                      },
+                      "branch_major": {
+                        "value": "0.ANT"
+                      },
+                      "branch_minor": {
+                        "value": "0.ANT4"
                       },
                       "branch_support": {
                         "value": 0.0
@@ -999,6 +1121,12 @@
                       "branch_length_sub": {
                         "value": 2.0989209527577435
                       },
+                      "branch_major": {
+                        "value": "0.ANT"
+                      },
+                      "branch_minor": {
+                        "value": "0.ANT4"
+                      },
                       "branch_support": {
                         "value": 0.0
                       },
@@ -1091,10 +1219,13 @@
                     "value": 1.2953423542342541
                   },
                   "branch_support": {
-                    "value": 46.92819365639028
+                    "value": 47.0
                   },
                   "branch_support_conf_category": {
                     "value": "LOW"
+                  },
+                  "continent": {
+                    "value": "Europe"
                   },
                   "country": {
                     "value": "England"
@@ -1123,7 +1254,7 @@
                     "value": "HIGH"
                   },
                   "state_prob": {
-                    "value": 99.98105881238753
+                    "value": 100.0
                   },
                   "state_rate": {
                     "value": 0.002508619368047031
@@ -1137,13 +1268,16 @@
                 "value": 1.9991153071750076
               },
               "branch_support": {
-                "value": 99.98592613442764
+                "value": 100.0
               },
               "branch_support_conf_category": {
                 "value": "HIGH"
               },
               "branch_support_conf_char": {
                 "value": "*"
+              },
+              "continent": {
+                "value": "Europe"
               },
               "country": {
                 "value": "England"
@@ -1172,7 +1306,7 @@
                 "value": "HIGH"
               },
               "state_prob": {
-                "value": 99.52808872228354
+                "value": 100.0
               },
               "state_rate": {
                 "value": 0.0024540879622514276
@@ -1186,12 +1320,14 @@
                 "Blank": " ",
                 "Branch Length": 53.68098952263392,
                 "Branch Length Sub": 12.41692538579715,
+                "Branch Major": "NA",
+                "Branch Minor": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
                 "Branch Support Conf Char": "*",
                 "Clade Rtt Dist": "NA",
                 "Continent": "NA",
-                "Country": "Germany",
+                "Country": "NA",
                 "Country Date Strain": "NA",
                 "Country Lat": "NA",
                 "Country Lon": "NA",
@@ -1214,7 +1350,7 @@
                 "Rate Sub Year": 0.2313095473130522,
                 "Root Rtt Dist": "NA",
                 "State Conf Category": "LOW",
-                "State Prob": 70.08859128012918,
+                "State Prob": 70.0,
                 "State Rate": 0.0024539949985245783,
                 "Strain": "NA"
               }
@@ -1229,6 +1365,12 @@
                   },
                   "branch_length_sub": {
                     "value": 6.056319614632196
+                  },
+                  "branch_major": {
+                    "value": "0.ANT"
+                  },
+                  "branch_minor": {
+                    "value": "0.ANT4"
                   },
                   "branch_support": {
                     "value": 0.0
@@ -1322,11 +1464,13 @@
                     "Blank": " ",
                     "Branch Length": 22.810195375451144,
                     "Branch Length Sub": 5.887034221601823,
-                    "Branch Support": 99.97481518792314,
+                    "Branch Major": "NA",
+                    "Branch Minor": "NA",
+                    "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
                     "Branch Support Conf Char": "*",
                     "Clade Rtt Dist": "NA",
-                    "Continent": "NA",
+                    "Continent": "Europe",
                     "Country": "Germany",
                     "Country Date Strain": "NA",
                     "Country Lat": "NA",
@@ -1350,7 +1494,7 @@
                     "Rate Sub Year": 0.25808784732890033,
                     "Root Rtt Dist": "NA",
                     "State Conf Category": "HIGH",
-                    "State Prob": 98.4640803746073,
+                    "State Prob": 98.0,
                     "State Rate": 0.0024539487332186152,
                     "Strain": "NA"
                   }
@@ -1363,11 +1507,13 @@
                         "Blank": " ",
                         "Branch Length": 40.658299340664996,
                         "Branch Length Sub": 0.4127737824346823,
-                        "Branch Support": 92.88084620968579,
+                        "Branch Major": "NA",
+                        "Branch Minor": "NA",
+                        "Branch Support": 93.0,
                         "Branch Support Conf Category": "LOW",
                         "Branch Support Conf Char": "",
                         "Clade Rtt Dist": "NA",
-                        "Continent": "NA",
+                        "Continent": "Europe",
                         "Country": "Germany",
                         "Country Date Strain": "NA",
                         "Country Lat": "NA",
@@ -1391,7 +1537,7 @@
                         "Rate Sub Year": 0.010152263845965652,
                         "Root Rtt Dist": "NA",
                         "State Conf Category": "HIGH",
-                        "State Prob": 99.32291791276886,
+                        "State Prob": 99.0,
                         "State Rate": 0.002468828384769389,
                         "Strain": "NA"
                       }
@@ -1406,6 +1552,12 @@
                           },
                           "branch_length_sub": {
                             "value": 34.35488131954497
+                          },
+                          "branch_major": {
+                            "value": "0.ANT"
+                          },
+                          "branch_minor": {
+                            "value": "0.ANT4"
                           },
                           "branch_support": {
                             "value": 0.0
@@ -1499,11 +1651,13 @@
                             "Blank": " ",
                             "Branch Length": 224.4179333032049,
                             "Branch Length Sub": 19.15478188779207,
+                            "Branch Major": "NA",
+                            "Branch Minor": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
                             "Branch Support Conf Char": "*",
                             "Clade Rtt Dist": "NA",
-                            "Continent": "NA",
+                            "Continent": "Europe",
                             "Country": "France",
                             "Country Date Strain": "NA",
                             "Country Lat": "NA",
@@ -1527,7 +1681,7 @@
                             "Rate Sub Year": 0.08535316944529817,
                             "Root Rtt Dist": "NA",
                             "State Conf Category": "HIGH",
-                            "State Prob": 97.69484896520052,
+                            "State Prob": 98.0,
                             "State Rate": 0.0024539949985245783,
                             "Strain": "NA"
                           }
@@ -1542,6 +1696,12 @@
                               },
                               "branch_length_sub": {
                                 "value": 26.363890217657758
+                              },
+                              "branch_major": {
+                                "value": "0.ANT"
+                              },
+                              "branch_minor": {
+                                "value": "0.ANT4"
                               },
                               "branch_support": {
                                 "value": 0.0
@@ -1637,6 +1797,12 @@
                               },
                               "branch_length_sub": {
                                 "value": 19.306660877885484
+                              },
+                              "branch_major": {
+                                "value": "0.ANT"
+                              },
+                              "branch_minor": {
+                                "value": "0.ANT4"
                               },
                               "branch_support": {
                                 "value": 0.0
@@ -1738,6 +1904,9 @@
                           "branch_support_conf_char": {
                             "value": "*"
                           },
+                          "continent": {
+                            "value": "Europe"
+                          },
                           "country": {
                             "value": "France"
                           },
@@ -1765,7 +1934,7 @@
                             "value": "HIGH"
                           },
                           "state_prob": {
-                            "value": 97.69484896520052
+                            "value": 98.0
                           },
                           "state_rate": {
                             "value": 0.0024539949985245783
@@ -1779,10 +1948,13 @@
                         "value": 0.4127737824346823
                       },
                       "branch_support": {
-                        "value": 92.88084620968579
+                        "value": 93.0
                       },
                       "branch_support_conf_category": {
                         "value": "LOW"
+                      },
+                      "continent": {
+                        "value": "Europe"
                       },
                       "country": {
                         "value": "Germany"
@@ -1811,7 +1983,7 @@
                         "value": "HIGH"
                       },
                       "state_prob": {
-                        "value": 99.32291791276886
+                        "value": 99.0
                       },
                       "state_rate": {
                         "value": 0.002468828384769389
@@ -1825,11 +1997,13 @@
                         "Blank": " ",
                         "Branch Length": 9.250970651124362,
                         "Branch Length Sub": 4.780356648046809,
-                        "Branch Support": 99.98962978326247,
+                        "Branch Major": "NA",
+                        "Branch Minor": "NA",
+                        "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
                         "Branch Support Conf Char": "*",
                         "Clade Rtt Dist": "NA",
-                        "Continent": "NA",
+                        "Continent": "Europe",
                         "Country": "Germany",
                         "Country Date Strain": "NA",
                         "Country Lat": "NA",
@@ -1853,7 +2027,7 @@
                         "Rate Sub Year": 0.5167410889435483,
                         "Root Rtt Dist": "NA",
                         "State Conf Category": "HIGH",
-                        "State Prob": 99.97333096275224,
+                        "State Prob": 100.0,
                         "State Rate": 0.002453969826615266,
                         "Strain": "NA"
                       }
@@ -1868,6 +2042,12 @@
                           },
                           "branch_length_sub": {
                             "value": 69.53411134480776
+                          },
+                          "branch_major": {
+                            "value": "0.ANT"
+                          },
+                          "branch_minor": {
+                            "value": "0.ANT4"
                           },
                           "branch_support": {
                             "value": 0.0
@@ -1961,11 +2141,13 @@
                             "Blank": " ",
                             "Branch Length": 17.27012483442161,
                             "Branch Length Sub": 0.39027938742932883,
-                            "Branch Support": 85.16910860579844,
+                            "Branch Major": "NA",
+                            "Branch Minor": "NA",
+                            "Branch Support": 85.0,
                             "Branch Support Conf Category": "LOW",
                             "Branch Support Conf Char": "",
                             "Clade Rtt Dist": "NA",
-                            "Continent": "NA",
+                            "Continent": "Europe",
                             "Country": "Germany",
                             "Country Date Strain": "NA",
                             "Country Lat": "NA",
@@ -1989,7 +2171,7 @@
                             "Rate Sub Year": 0.022598527293297335,
                             "Root Rtt Dist": "NA",
                             "State Conf Category": "HIGH",
-                            "State Prob": 99.99652113411028,
+                            "State Prob": 100.0,
                             "State Rate": 0.0024845600457818846,
                             "Strain": "NA"
                           }
@@ -2004,6 +2186,12 @@
                               },
                               "branch_length_sub": {
                                 "value": 0.714125974056733
+                              },
+                              "branch_major": {
+                                "value": "0.ANT"
+                              },
+                              "branch_minor": {
+                                "value": "0.ANT4"
                               },
                               "branch_support": {
                                 "value": 0.0
@@ -2097,11 +2285,13 @@
                                 "Blank": " ",
                                 "Branch Length": 13.930256339109008,
                                 "Branch Length Sub": 0.4157375983546645,
-                                "Branch Support": 65.33162471667086,
+                                "Branch Major": "NA",
+                                "Branch Minor": "NA",
+                                "Branch Support": 65.0,
                                 "Branch Support Conf Category": "LOW",
                                 "Branch Support Conf Char": "",
                                 "Clade Rtt Dist": "NA",
-                                "Continent": "NA",
+                                "Continent": "Europe",
                                 "Country": "Germany",
                                 "Country Date Strain": "NA",
                                 "Country Lat": "NA",
@@ -2140,6 +2330,12 @@
                                   },
                                   "branch_length_sub": {
                                     "value": 5.529011878292887
+                                  },
+                                  "branch_major": {
+                                    "value": "0.ANT"
+                                  },
+                                  "branch_minor": {
+                                    "value": "0.ANT4"
                                   },
                                   "branch_support": {
                                     "value": 0.0
@@ -2236,6 +2432,12 @@
                                   "branch_length_sub": {
                                     "value": 0.17800383331840472
                                   },
+                                  "branch_major": {
+                                    "value": "0.ANT"
+                                  },
+                                  "branch_minor": {
+                                    "value": "0.ANT4"
+                                  },
                                   "branch_support": {
                                     "value": 0.0
                                   },
@@ -2328,10 +2530,13 @@
                                 "value": 0.4157375983546645
                               },
                               "branch_support": {
-                                "value": 65.33162471667086
+                                "value": 65.0
                               },
                               "branch_support_conf_category": {
                                 "value": "LOW"
+                              },
+                              "continent": {
+                                "value": "Europe"
                               },
                               "country": {
                                 "value": "Germany"
@@ -2374,10 +2579,13 @@
                             "value": 0.39027938742932883
                           },
                           "branch_support": {
-                            "value": 85.16910860579844
+                            "value": 85.0
                           },
                           "branch_support_conf_category": {
                             "value": "LOW"
+                          },
+                          "continent": {
+                            "value": "Europe"
                           },
                           "country": {
                             "value": "Germany"
@@ -2406,7 +2614,7 @@
                             "value": "HIGH"
                           },
                           "state_prob": {
-                            "value": 99.99652113411028
+                            "value": 100.0
                           },
                           "state_rate": {
                             "value": 0.0024845600457818846
@@ -2420,13 +2628,16 @@
                         "value": 4.780356648046809
                       },
                       "branch_support": {
-                        "value": 99.98962978326247
+                        "value": 100.0
                       },
                       "branch_support_conf_category": {
                         "value": "HIGH"
                       },
                       "branch_support_conf_char": {
                         "value": "*"
+                      },
+                      "continent": {
+                        "value": "Europe"
                       },
                       "country": {
                         "value": "Germany"
@@ -2455,7 +2666,7 @@
                         "value": "HIGH"
                       },
                       "state_prob": {
-                        "value": 99.97333096275224
+                        "value": 100.0
                       },
                       "state_rate": {
                         "value": 0.002453969826615266
@@ -2469,13 +2680,16 @@
                     "value": 5.887034221601823
                   },
                   "branch_support": {
-                    "value": 99.97481518792314
+                    "value": 100.0
                   },
                   "branch_support_conf_category": {
                     "value": "HIGH"
                   },
                   "branch_support_conf_char": {
                     "value": "*"
+                  },
+                  "continent": {
+                    "value": "Europe"
                   },
                   "country": {
                     "value": "Germany"
@@ -2504,7 +2718,7 @@
                     "value": "HIGH"
                   },
                   "state_prob": {
-                    "value": 98.4640803746073
+                    "value": 98.0
                   },
                   "state_rate": {
                     "value": 0.0024539487332186152
@@ -2525,9 +2739,6 @@
               },
               "branch_support_conf_char": {
                 "value": "*"
-              },
-              "country": {
-                "value": "Germany"
               },
               "div": 248.55299073198796,
               "node_name": {
@@ -2553,7 +2764,7 @@
                 "value": "LOW"
               },
               "state_prob": {
-                "value": 70.08859128012918
+                "value": 70.0
               },
               "state_rate": {
                 "value": 0.0024539949985245783
@@ -2567,16 +2778,13 @@
             "value": 43.65310247262303
           },
           "branch_support": {
-            "value": 98.59557636183168
+            "value": 99.0
           },
           "branch_support_conf_category": {
             "value": "HIGH"
           },
           "branch_support_conf_char": {
             "value": "*"
-          },
-          "country": {
-            "value": "Germany"
           },
           "div": 194.87200120935404,
           "node_name": {
@@ -2602,7 +2810,7 @@
             "value": "LOW"
           },
           "state_prob": {
-            "value": 44.165552266614576
+            "value": 44.0
           },
           "state_rate": {
             "value": 0.0024611275453409786
@@ -2623,9 +2831,6 @@
       },
       "branch_support_conf_char": {
         "value": "*"
-      },
-      "country": {
-        "value": "Kyrgyzstan"
       },
       "div": 0,
       "node_name": {
@@ -2651,7 +2856,7 @@
         "value": "LOW"
       },
       "state_prob": {
-        "value": 79.43734166901231
+        "value": 79.0
       },
       "state_rate": {
         "value": 0.0

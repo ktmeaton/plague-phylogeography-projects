@@ -23,6 +23,40 @@
         "type": "continuous"
       },
       {
+        "key": "branch_major",
+        "scale": [
+          [
+            "0.PRE",
+            "#8000ff"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "0.PRE1",
+            "#5542fd"
+          ],
+          [
+            "0.PRE2",
+            "#ff160b"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
         "key": "branch_support",
         "title": "Branch Support",
         "type": "continuous"
@@ -54,6 +88,16 @@
       },
       {
         "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#ffb462"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
         "title": "Continent",
         "type": "categorical"
       },
@@ -61,20 +105,24 @@
         "key": "country",
         "scale": [
           [
+            "Estonia",
+            "#3cead5"
+          ],
+          [
             "Russia",
-            "#14c9e5"
+            "#4af1d0"
+          ],
+          [
+            "Germany",
+            "#65fcc3"
           ],
           [
             "Lithuania",
             "#ebc970"
           ],
           [
-            "Estonia",
-            "#ff8b49"
-          ],
-          [
-            "Germany",
-            "#ff150b"
+            "NA",
+            "#969696"
           ]
         ],
         "title": "Country",
@@ -153,32 +201,32 @@
         "key": "province",
         "scale": [
           [
-            "Krasnoyarsk Krai",
-            "#6923fe"
-          ],
-          [
-            "Irkutsk Oblast",
-            "#6031fe"
-          ],
-          [
             "Altai Krai",
-            "#4e4dfc"
+            "#5b38fd"
           ],
           [
-            "Panevezys County",
-            "#62fbc4"
-          ],
-          [
-            "P\u00e4rnu maakond",
-            "#70febd"
-          ],
-          [
-            "NA",
-            "#ff4d27"
+            "Krasnoyarsk Krai",
+            "#15cae5"
           ],
           [
             "Bavaria",
-            "#ff4623"
+            "#1acfe3"
+          ],
+          [
+            "Irkutsk Oblast",
+            "#3eebd5"
+          ],
+          [
+            "NA",
+            "#969696"
+          ],
+          [
+            "Panevezys County",
+            "#86ffb1"
+          ],
+          [
+            "P\u00e4rnu maakond",
+            "#ff2a15"
           ]
         ],
         "title": "Province",
@@ -220,13 +268,38 @@
         "type": "categorical"
       },
       {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#8000ff"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
         "type": "continuous"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
         "type": "continuous"
       },
       {
@@ -235,8 +308,18 @@
         "type": "continuous"
       },
       {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
+        "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#ffb462"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Continent",
         "type": "categorical"
       },
       {
@@ -245,24 +328,23 @@
         "type": "continuous"
       },
       {
-        "key": "node_name",
-        "title": "Node Name",
+        "key": "host_human",
+        "scale": [
+          [
+            "Human",
+            "#CBB742"
+          ],
+          [
+            "Non-Human",
+            "#60B6F2"
+          ],
+          [
+            "NA",
+            "#D6D6D6"
+          ]
+        ],
+        "title": "Host Human",
         "type": "categorical"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
-        "key": "state_prob",
-        "title": "state_prob",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
       },
       {
         "key": "clade_rtt_dist",
@@ -270,44 +352,98 @@
         "type": "continuous"
       },
       {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
         "key": "province",
         "scale": [
           [
-            "Krasnoyarsk Krai",
-            "#6923fe"
-          ],
-          [
-            "Irkutsk Oblast",
-            "#6031fe"
-          ],
-          [
             "Altai Krai",
-            "#4e4dfc"
+            "#5b38fd"
           ],
           [
-            "Panevezys County",
-            "#62fbc4"
-          ],
-          [
-            "P\u00e4rnu maakond",
-            "#70febd"
-          ],
-          [
-            "NA",
-            "#ff4d27"
+            "Krasnoyarsk Krai",
+            "#15cae5"
           ],
           [
             "Bavaria",
-            "#ff4623"
+            "#1acfe3"
+          ],
+          [
+            "Irkutsk Oblast",
+            "#3eebd5"
+          ],
+          [
+            "NA",
+            "#969696"
+          ],
+          [
+            "Panevezys County",
+            "#86ffb1"
+          ],
+          [
+            "P\u00e4rnu maakond",
+            "#ff2a15"
           ]
         ],
         "title": "Province",
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
         "type": "continuous"
+      },
+      {
+        "key": "branch_minor",
+        "scale": [
+          [
+            "0.PRE1",
+            "#5542fd"
+          ],
+          [
+            "0.PRE2",
+            "#ff160b"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_major",
+        "scale": [
+          [
+            "0.PRE",
+            "#8000ff"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Branch Major",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
       },
       {
         "key": "blank",
@@ -315,9 +451,9 @@
         "type": "categorical"
       },
       {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
       },
       {
         "key": "state_conf_category",
@@ -335,18 +471,50 @@
         "type": "categorical"
       },
       {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
         "type": "continuous"
       },
       {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Estonia",
+            "#3cead5"
+          ],
+          [
+            "Russia",
+            "#4af1d0"
+          ],
+          [
+            "Germany",
+            "#65fcc3"
+          ],
+          [
+            "Lithuania",
+            "#ebc970"
+          ],
+          [
+            "NA",
+            "#969696"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
         "type": "continuous"
       },
       {
@@ -355,56 +523,13 @@
         "type": "continuous"
       },
       {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#8000ff"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "Russia",
-            "#14c9e5"
-          ],
-          [
-            "Lithuania",
-            "#ebc970"
-          ],
-          [
-            "Estonia",
-            "#ff8b49"
-          ],
-          [
-            "Germany",
-            "#ff150b"
-          ]
-        ],
-        "title": "Country",
+        "key": "node_name",
+        "title": "Node Name",
         "type": "categorical"
       },
       {
         "key": "branch_support_conf_char",
         "title": "Branch Support Confidence Character",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
         "type": "categorical"
       },
       {
@@ -423,37 +548,8 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "host_human",
-        "scale": [
-          [
-            "Human",
-            "#CBB742"
-          ],
-          [
-            "Non-Human",
-            "#60B6F2"
-          ],
-          [
-            "NA",
-            "#D6D6D6"
-          ]
-        ],
-        "title": "Host Human",
-        "type": "categorical"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
+        "key": "state_prob",
+        "title": "state_prob",
         "type": "continuous"
       }
     ],
@@ -547,12 +643,14 @@
         "Blank": " ",
         "Branch Length": 74.40967226600583,
         "Branch Length Sub": 116.24321698428564,
-        "Branch Support": 60.50177406093288,
+        "Branch Major": "NA",
+        "Branch Minor": "NA",
+        "Branch Support": 61.0,
         "Branch Support Conf Category": "LOW",
         "Branch Support Conf Char": "",
         "Clade Rtt Dist": "NA",
         "Continent": "NA",
-        "Country": "Russia",
+        "Country": "NA",
         "Country Date Strain": "NA",
         "Country Lat": "NA",
         "Country Lon": "NA",
@@ -575,7 +673,7 @@
         "Rate Sub Year": 1.5622057381025656,
         "Root Rtt Dist": "NA",
         "State Conf Category": "LOW",
-        "State Prob": 94.46362545605916,
+        "State Prob": 94.0,
         "State Rate": 0.0012152399160106804,
         "Strain": "NA"
       }
@@ -590,6 +688,12 @@
           },
           "branch_length_sub": {
             "value": 267.079819302129
+          },
+          "branch_major": {
+            "value": "0.PRE"
+          },
+          "branch_minor": {
+            "value": "0.PRE2"
           },
           "branch_support": {
             "value": 0.0
@@ -683,12 +787,14 @@
             "Blank": " ",
             "Branch Length": 74.40967226600583,
             "Branch Length Sub": 116.24321698428564,
-            "Branch Support": 60.50177406093288,
+            "Branch Major": "NA",
+            "Branch Minor": "NA",
+            "Branch Support": 61.0,
             "Branch Support Conf Category": "LOW",
             "Branch Support Conf Char": "",
             "Clade Rtt Dist": "NA",
             "Continent": "NA",
-            "Country": "Russia",
+            "Country": "NA",
             "Country Date Strain": "NA",
             "Country Lat": "NA",
             "Country Lon": "NA",
@@ -711,7 +817,7 @@
             "Rate Sub Year": 1.5622057381025656,
             "Root Rtt Dist": "NA",
             "State Conf Category": "LOW",
-            "State Prob": 94.46362545605916,
+            "State Prob": 94.0,
             "State Rate": 0.0012152399160106804,
             "Strain": "NA"
           }
@@ -726,6 +832,12 @@
               },
               "branch_length_sub": {
                 "value": 10.901882387651998
+              },
+              "branch_major": {
+                "value": "0.PRE"
+              },
+              "branch_minor": {
+                "value": "0.PRE1"
               },
               "branch_support": {
                 "value": 0.0
@@ -819,11 +931,13 @@
                 "Blank": " ",
                 "Branch Length": 51.57881042075542,
                 "Branch Length Sub": 116.55610259304959,
-                "Branch Support": 98.45852993681528,
+                "Branch Major": "NA",
+                "Branch Minor": "NA",
+                "Branch Support": 98.0,
                 "Branch Support Conf Category": "HIGH",
                 "Branch Support Conf Char": "*",
                 "Clade Rtt Dist": "NA",
-                "Continent": "NA",
+                "Continent": "Europe",
                 "Country": "Russia",
                 "Country Date Strain": "NA",
                 "Country Lat": "NA",
@@ -847,7 +961,7 @@
                 "Rate Sub Year": 2.259767172647843,
                 "Root Rtt Dist": "NA",
                 "State Conf Category": "HIGH",
-                "State Prob": 96.53475774902198,
+                "State Prob": 97.0,
                 "State Rate": 0.0011797395941526147,
                 "Strain": "NA"
               }
@@ -862,6 +976,12 @@
                   },
                   "branch_length_sub": {
                     "value": 11.121895119009995
+                  },
+                  "branch_major": {
+                    "value": "0.PRE"
+                  },
+                  "branch_minor": {
+                    "value": "0.PRE1"
                   },
                   "branch_support": {
                     "value": 0.0
@@ -955,11 +1075,13 @@
                     "Blank": " ",
                     "Branch Length": 29.81551628652801,
                     "Branch Length Sub": 24.84955670963802,
-                    "Branch Support": 99.9200005925882,
+                    "Branch Major": "NA",
+                    "Branch Minor": "NA",
+                    "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
                     "Branch Support Conf Char": "*",
                     "Clade Rtt Dist": "NA",
-                    "Continent": "NA",
+                    "Continent": "Europe",
                     "Country": "Russia",
                     "Country Date Strain": "NA",
                     "Country Lat": "NA",
@@ -983,7 +1105,7 @@
                     "Rate Sub Year": 0.833443783794754,
                     "Root Rtt Dist": "NA",
                     "State Conf Category": "HIGH",
-                    "State Prob": 98.69081420088514,
+                    "State Prob": 99.0,
                     "State Rate": 0.001178118595951564,
                     "Strain": "NA"
                   }
@@ -996,11 +1118,13 @@
                         "Blank": " ",
                         "Branch Length": 13.108865100595722,
                         "Branch Length Sub": 27.524549875248248,
-                        "Branch Support": 99.99925926474619,
+                        "Branch Major": "NA",
+                        "Branch Minor": "NA",
+                        "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
                         "Branch Support Conf Char": "*",
                         "Clade Rtt Dist": "NA",
-                        "Continent": "NA",
+                        "Continent": "Europe",
                         "Country": "Russia",
                         "Country Date Strain": "NA",
                         "Country Lat": "NA",
@@ -1024,7 +1148,7 @@
                         "Rate Sub Year": 2.0996897644478327,
                         "Root Rtt Dist": "NA",
                         "State Conf Category": "HIGH",
-                        "State Prob": 99.8851851851852,
+                        "State Prob": 100.0,
                         "State Rate": 0.0011779500898635557,
                         "Strain": "NA"
                       }
@@ -1039,6 +1163,12 @@
                           },
                           "branch_length_sub": {
                             "value": 8.656843267173166
+                          },
+                          "branch_major": {
+                            "value": "0.PRE"
+                          },
+                          "branch_minor": {
+                            "value": "0.PRE1"
                           },
                           "branch_support": {
                             "value": 0.0
@@ -1135,6 +1265,12 @@
                           "branch_length_sub": {
                             "value": 2.2005625364383885
                           },
+                          "branch_major": {
+                            "value": "0.PRE"
+                          },
+                          "branch_minor": {
+                            "value": "0.PRE1"
+                          },
                           "branch_support": {
                             "value": 0.0
                           },
@@ -1227,13 +1363,16 @@
                         "value": 27.524549875248248
                       },
                       "branch_support": {
-                        "value": 99.99925926474619
+                        "value": 100.0
                       },
                       "branch_support_conf_category": {
                         "value": "HIGH"
                       },
                       "branch_support_conf_char": {
                         "value": "*"
+                      },
+                      "continent": {
+                        "value": "Europe"
                       },
                       "country": {
                         "value": "Russia"
@@ -1262,7 +1401,7 @@
                         "value": "HIGH"
                       },
                       "state_prob": {
-                        "value": 99.8851851851852
+                        "value": 100.0
                       },
                       "state_rate": {
                         "value": 0.0011779500898635557
@@ -1276,12 +1415,14 @@
                         "Blank": " ",
                         "Branch Length": 348.7496315775745,
                         "Branch Length Sub": 53.01958233159638,
+                        "Branch Major": "NA",
+                        "Branch Minor": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
                         "Branch Support Conf Char": "*",
                         "Clade Rtt Dist": "NA",
                         "Continent": "NA",
-                        "Country": "Germany",
+                        "Country": "NA",
                         "Country Date Strain": "NA",
                         "Country Lat": "NA",
                         "Country Lon": "NA",
@@ -1304,7 +1445,7 @@
                         "Rate Sub Year": 0.15202763682290202,
                         "Root Rtt Dist": "NA",
                         "State Conf Category": "LOW",
-                        "State Prob": 89.01637765646181,
+                        "State Prob": 89.0,
                         "State Rate": 0.001177953189789171,
                         "Strain": "NA"
                       }
@@ -1319,6 +1460,12 @@
                           },
                           "branch_length_sub": {
                             "value": 53.214854432204184
+                          },
+                          "branch_major": {
+                            "value": "0.PRE"
+                          },
+                          "branch_minor": {
+                            "value": "0.PRE1"
                           },
                           "branch_support": {
                             "value": 0.0
@@ -1412,12 +1559,14 @@
                             "Blank": " ",
                             "Branch Length": 177.1676441311265,
                             "Branch Length Sub": 469.12309242767935,
+                            "Branch Major": "NA",
+                            "Branch Minor": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
                             "Branch Support Conf Char": "*",
                             "Clade Rtt Dist": "NA",
                             "Continent": "NA",
-                            "Country": "Germany",
+                            "Country": "NA",
                             "Country Date Strain": "NA",
                             "Country Lat": "NA",
                             "Country Lon": "NA",
@@ -1440,7 +1589,7 @@
                             "Rate Sub Year": 2.6479050095652275,
                             "Root Rtt Dist": "NA",
                             "State Conf Category": "LOW",
-                            "State Prob": 88.43119680594958,
+                            "State Prob": 88.0,
                             "State Rate": 0.001177953189789171,
                             "Strain": "NA"
                           }
@@ -1455,6 +1604,12 @@
                               },
                               "branch_length_sub": {
                                 "value": 38.59466251627405
+                              },
+                              "branch_major": {
+                                "value": "0.PRE"
+                              },
+                              "branch_minor": {
+                                "value": "0.PRE1"
                               },
                               "branch_support": {
                                 "value": 0.0
@@ -1550,6 +1705,12 @@
                               },
                               "branch_length_sub": {
                                 "value": 167.7595067480336
+                              },
+                              "branch_major": {
+                                "value": "0.PRE"
+                              },
+                              "branch_minor": {
+                                "value": "0.PRE1"
                               },
                               "branch_support": {
                                 "value": 0.0
@@ -1651,9 +1812,6 @@
                           "branch_support_conf_char": {
                             "value": "*"
                           },
-                          "country": {
-                            "value": "Germany"
-                          },
                           "div": 681.7212746819903,
                           "node_name": {
                             "value": "NODE6"
@@ -1678,7 +1836,7 @@
                             "value": "LOW"
                           },
                           "state_prob": {
-                            "value": 88.43119680594958
+                            "value": 88.0
                           },
                           "state_rate": {
                             "value": 0.001177953189789171
@@ -1699,9 +1857,6 @@
                       },
                       "branch_support_conf_char": {
                         "value": "*"
-                      },
-                      "country": {
-                        "value": "Germany"
                       },
                       "div": 504.5536305508638,
                       "node_name": {
@@ -1727,7 +1882,7 @@
                         "value": "LOW"
                       },
                       "state_prob": {
-                        "value": 89.01637765646181
+                        "value": 89.0
                       },
                       "state_rate": {
                         "value": 0.001177953189789171
@@ -1741,13 +1896,16 @@
                     "value": 24.84955670963802
                   },
                   "branch_support": {
-                    "value": 99.9200005925882
+                    "value": 100.0
                   },
                   "branch_support_conf_category": {
                     "value": "HIGH"
                   },
                   "branch_support_conf_char": {
                     "value": "*"
+                  },
+                  "continent": {
+                    "value": "Europe"
                   },
                   "country": {
                     "value": "Russia"
@@ -1776,7 +1934,7 @@
                     "value": "HIGH"
                   },
                   "state_prob": {
-                    "value": 98.69081420088514
+                    "value": 99.0
                   },
                   "state_rate": {
                     "value": 0.001178118595951564
@@ -1790,13 +1948,16 @@
                 "value": 116.55610259304959
               },
               "branch_support": {
-                "value": 98.45852993681528
+                "value": 98.0
               },
               "branch_support_conf_category": {
                 "value": "HIGH"
               },
               "branch_support_conf_char": {
                 "value": "*"
+              },
+              "continent": {
+                "value": "Europe"
               },
               "country": {
                 "value": "Russia"
@@ -1825,7 +1986,7 @@
                 "value": "HIGH"
               },
               "state_prob": {
-                "value": 96.53475774902198
+                "value": 97.0
               },
               "state_rate": {
                 "value": 0.0011797395941526147
@@ -1839,13 +2000,10 @@
             "value": 116.24321698428564
           },
           "branch_support": {
-            "value": 60.50177406093288
+            "value": 61.0
           },
           "branch_support_conf_category": {
             "value": "LOW"
-          },
-          "country": {
-            "value": "Russia"
           },
           "div": 74.40967226600583,
           "node_name": {
@@ -1871,7 +2029,7 @@
             "value": "LOW"
           },
           "state_prob": {
-            "value": 94.46362545605916
+            "value": 94.0
           },
           "state_rate": {
             "value": 0.0012152399160106804
@@ -1892,9 +2050,6 @@
       },
       "branch_support_conf_char": {
         "value": "*"
-      },
-      "country": {
-        "value": "Russia"
       },
       "div": 0,
       "node_name": {
@@ -1920,7 +2075,7 @@
         "value": "LOW"
       },
       "state_prob": {
-        "value": 92.39857482537165
+        "value": 92.0
       },
       "state_rate": {
         "value": 0.0
