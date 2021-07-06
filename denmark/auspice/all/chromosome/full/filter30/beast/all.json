@@ -305,56 +305,6 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "continuous_geo",
-        "title": "Continuous Phylogeography",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
         "key": "branch_support_conf_category",
         "scale": [
           [
@@ -368,6 +318,16 @@
         ],
         "title": "Branch Support Confidence",
         "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
       },
       {
         "key": "node_type",
@@ -385,24 +345,39 @@
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
         "type": "continuous"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
         "type": "continuous"
       },
       {
         "key": "rate_sub",
         "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "clade_rtt_dist",
+        "title": "Clade Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
       },
       {
         "key": "host_human",
@@ -424,13 +399,33 @@
         "type": "categorical"
       },
       {
-        "key": "clade_rtt_dist",
-        "title": "Clade Root Distance",
+        "key": "branch_support",
+        "title": "Branch Support",
         "type": "continuous"
       },
       {
-        "key": "blank",
-        "title": "Blank",
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
         "type": "categorical"
       },
       {
@@ -517,33 +512,13 @@
         "type": "categorical"
       },
       {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
+        "key": "continuous_geo",
+        "title": "Continuous Phylogeography",
         "type": "categorical"
       },
       {
         "key": "biosample_accession",
         "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_support_conf_char",
-        "title": "Branch Support Confidence Character",
         "type": "categorical"
       },
       {
@@ -600,6 +575,31 @@
         ],
         "title": "Country",
         "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
       }
     ],
     "display_defaults": {
@@ -767,7 +767,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Denmark",
-    "updated": "2021-06-23"
+    "updated": "2021-07-06"
   },
   "tree": {
     "branch_attrs": {
@@ -792,10 +792,10 @@
         "Host Human": "NA",
         "Node Name": "NODE1",
         "Node Type": "internal",
-        "Num Date": 1303.6167075059495,
+        "Num Date": 1304,
         "Num Date Confidence": [
-          1225.428194308397,
-          1366.4165869060655
+          1225,
+          1366
         ],
         "Province": "NA",
         "Province Date Strain": "NA",
@@ -863,10 +863,10 @@
           },
           "num_date": {
             "confidence": [
-              1229.490735448101,
-              1376.5690275528991
+              1229,
+              1377
             ],
-            "value": 1310.5783508586608
+            "value": 1311
           },
           "province": {
             "value": "Tatarstan"
@@ -917,10 +917,10 @@
             "Host Human": "NA",
             "Node Name": "NODE1",
             "Node Type": "internal",
-            "Num Date": 1303.6167075059495,
+            "Num Date": 1304,
             "Num Date Confidence": [
-              1225.428194308397,
-              1366.4165869060655
+              1225,
+              1366
             ],
             "Province": "NA",
             "Province Date Strain": "NA",
@@ -988,10 +988,10 @@
               },
               "num_date": {
                 "confidence": [
-                  1241.5516943702003,
-                  1402.9883670727636
+                  1242,
+                  1403
                 ],
-                "value": 1333.8102560097655
+                "value": 1334
               },
               "province": {
                 "value": "Region of Southern Denmark"
@@ -1042,10 +1042,10 @@
                 "Host Human": "NA",
                 "Node Name": "NODE2",
                 "Node Type": "internal",
-                "Num Date": 1305.5502467645229,
+                "Num Date": 1306,
                 "Num Date Confidence": [
-                  1224.3132703875458,
-                  1366.0071007700135
+                  1224,
+                  1366
                 ],
                 "Province": "NA",
                 "Province Date Strain": "NA",
@@ -1113,10 +1113,10 @@
                   },
                   "num_date": {
                     "confidence": [
-                      1254.3146875429386,
-                      1406.8064961563082
+                      1254,
+                      1407
                     ],
-                    "value": 1341.5351594882302
+                    "value": 1342
                   },
                   "province": {
                     "value": "Occitanie"
@@ -1167,10 +1167,10 @@
                     "Host Human": "NA",
                     "Node Name": "NODE3",
                     "Node Type": "internal",
-                    "Num Date": 1309.2528514954365,
+                    "Num Date": 1309,
                     "Num Date Confidence": [
-                      1236.8815040418592,
-                      1373.7378927693878
+                      1237,
+                      1374
                     ],
                     "Province": "NA",
                     "Province Date Strain": "NA",
@@ -1206,10 +1206,10 @@
                         "Host Human": "NA",
                         "Node Name": "NODE4",
                         "Node Type": "internal",
-                        "Num Date": 1321.8022603287554,
+                        "Num Date": 1322,
                         "Num Date Confidence": [
-                          1243.8778460326278,
-                          1383.290803368466
+                          1244,
+                          1383
                         ],
                         "Province": "NA",
                         "Province Date Strain": "NA",
@@ -1245,10 +1245,10 @@
                             "Host Human": "NA",
                             "Node Name": "NODE5",
                             "Node Type": "internal",
-                            "Num Date": 1334.4929992898526,
+                            "Num Date": 1334,
                             "Num Date Confidence": [
-                              1259.7723658381271,
-                              1388.1138957194742
+                              1260,
+                              1388
                             ],
                             "Province": "NA",
                             "Province Date Strain": "NA",
@@ -1316,10 +1316,10 @@
                               },
                               "num_date": {
                                 "confidence": [
-                                  1253.7265030399924,
-                                  1403.05730606952
+                                  1254,
+                                  1403
                                 ],
-                                "value": 1335.2169007651084
+                                "value": 1335
                               },
                               "province": {
                                 "value": "Catalonia"
@@ -1402,10 +1402,10 @@
                               },
                               "num_date": {
                                 "confidence": [
-                                  1275.7890933374267,
-                                  1393.5342872021429
+                                  1276,
+                                  1394
                                 ],
-                                "value": 1349.0
+                                "value": 1349
                               },
                               "province": {
                                 "value": "Greater London"
@@ -1454,10 +1454,10 @@
                           },
                           "num_date": {
                             "confidence": [
-                              1259.7723658381271,
-                              1388.1138957194742
+                              1260,
+                              1388
                             ],
-                            "value": 1334.4929992898526
+                            "value": 1334
                           },
                           "rate_sub": {
                             "value": 3.389125534332488e-08
@@ -1490,10 +1490,10 @@
                             "Host Human": "NA",
                             "Node Name": "NODE6",
                             "Node Type": "internal",
-                            "Num Date": 1329.0365929635595,
+                            "Num Date": 1329,
                             "Num Date Confidence": [
-                              1250.28914065461,
-                              1389.6451926556858
+                              1250,
+                              1390
                             ],
                             "Province": "NA",
                             "Province Date Strain": "NA",
@@ -1561,10 +1561,10 @@
                               },
                               "num_date": {
                                 "confidence": [
-                                  1253.123567723604,
-                                  1397.0089554508284
+                                  1253,
+                                  1397
                                 ],
-                                "value": 1331.9919498598754
+                                "value": 1332
                               },
                               "province": {
                                 "value": "Bavaria"
@@ -1615,10 +1615,10 @@
                                 "Host Human": "NA",
                                 "Node Name": "NODE7",
                                 "Node Type": "internal",
-                                "Num Date": 1331.0202546690132,
+                                "Num Date": 1331,
                                 "Num Date Confidence": [
-                                  1252.3392382627146,
-                                  1394.397163483706
+                                  1252,
+                                  1394
                                 ],
                                 "Province": "NA",
                                 "Province Date Strain": "NA",
@@ -1686,10 +1686,10 @@
                                   },
                                   "num_date": {
                                     "confidence": [
-                                      1263.893278783771,
-                                      1423.0170842089908
+                                      1264,
+                                      1423
                                     ],
-                                    "value": 1350.4423459141133
+                                    "value": 1350
                                   },
                                   "province": {
                                     "value": "Region of Southern Denmark"
@@ -1740,10 +1740,10 @@
                                     "Host Human": "NA",
                                     "Node Name": "NODE8",
                                     "Node Type": "internal",
-                                    "Num Date": 1340.5565188374433,
+                                    "Num Date": 1341,
                                     "Num Date Confidence": [
-                                      1260.3754595386351,
-                                      1400.4808626109595
+                                      1260,
+                                      1400
                                     ],
                                     "Province": "NA",
                                     "Province Date Strain": "NA",
@@ -1811,10 +1811,10 @@
                                       },
                                       "num_date": {
                                         "confidence": [
-                                          1282.2011904044327,
-                                          1447.8235303030958
+                                          1282,
+                                          1448
                                         ],
-                                        "value": 1369.733237162431
+                                        "value": 1370
                                       },
                                       "province": {
                                         "value": "Region of Southern Denmark"
@@ -1865,10 +1865,10 @@
                                         "Host Human": "NA",
                                         "Node Name": "NODE9",
                                         "Node Type": "internal",
-                                        "Num Date": 1352.2195637986315,
+                                        "Num Date": 1352,
                                         "Num Date Confidence": [
-                                          1274.5315205646534,
-                                          1411.8735114544006
+                                          1275,
+                                          1412
                                         ],
                                         "Province": "NA",
                                         "Province Date Strain": "NA",
@@ -1936,10 +1936,10 @@
                                           },
                                           "num_date": {
                                             "confidence": [
-                                              1289.0365590763893,
-                                              1433.2853067626265
+                                              1289,
+                                              1433
                                             ],
-                                            "value": 1370.4719291041533
+                                            "value": 1370
                                           },
                                           "province": {
                                             "value": "North Brabant"
@@ -1990,10 +1990,10 @@
                                             "Host Human": "NA",
                                             "Node Name": "NODE10",
                                             "Node Type": "internal",
-                                            "Num Date": 1362.808893078142,
+                                            "Num Date": 1363,
                                             "Num Date Confidence": [
-                                              1284.644549947253,
-                                              1420.478935663685
+                                              1285,
+                                              1420
                                             ],
                                             "Province": "NA",
                                             "Province Date Strain": "NA",
@@ -2061,10 +2061,10 @@
                                               },
                                               "num_date": {
                                                 "confidence": [
-                                                  1301.5484453986248,
-                                                  1434.8595287149717
+                                                  1302,
+                                                  1435
                                                 ],
-                                                "value": 1379.2309958113503
+                                                "value": 1379
                                               },
                                               "province": {
                                                 "value": "Tatarstan"
@@ -2147,10 +2147,10 @@
                                               },
                                               "num_date": {
                                                 "confidence": [
-                                                  1300.5687144113165,
-                                                  1443.212353142038
+                                                  1301,
+                                                  1443
                                                 ],
-                                                "value": 1379.1883758838974
+                                                "value": 1379
                                               },
                                               "province": {
                                                 "value": "North Brabant"
@@ -2202,10 +2202,10 @@
                                           },
                                           "num_date": {
                                             "confidence": [
-                                              1284.644549947253,
-                                              1420.478935663685
+                                              1285,
+                                              1420
                                             ],
-                                            "value": 1362.808893078142
+                                            "value": 1363
                                           },
                                           "rate_sub": {
                                             "value": 4.6712684477002794e-08
@@ -2239,10 +2239,10 @@
                                       },
                                       "num_date": {
                                         "confidence": [
-                                          1274.5315205646534,
-                                          1411.8735114544006
+                                          1275,
+                                          1412
                                         ],
-                                        "value": 1352.2195637986315
+                                        "value": 1352
                                       },
                                       "rate_sub": {
                                         "value": 5.192517648477381e-08
@@ -2276,10 +2276,10 @@
                                   },
                                   "num_date": {
                                     "confidence": [
-                                      1260.3754595386351,
-                                      1400.4808626109595
+                                      1260,
+                                      1400
                                     ],
-                                    "value": 1340.5565188374433
+                                    "value": 1341
                                   },
                                   "rate_sub": {
                                     "value": 4.4730078510645124e-08
@@ -2310,10 +2310,10 @@
                               },
                               "num_date": {
                                 "confidence": [
-                                  1252.3392382627146,
-                                  1394.397163483706
+                                  1252,
+                                  1394
                                 ],
-                                "value": 1331.0202546690132
+                                "value": 1331
                               },
                               "rate_sub": {
                                 "value": 4.477867898827673e-08
@@ -2344,10 +2344,10 @@
                           },
                           "num_date": {
                             "confidence": [
-                              1250.28914065461,
-                              1389.6451926556858
+                              1250,
+                              1390
                             ],
-                            "value": 1329.0365929635595
+                            "value": 1329
                           },
                           "rate_sub": {
                             "value": 4.317837464010935e-08
@@ -2378,10 +2378,10 @@
                       },
                       "num_date": {
                         "confidence": [
-                          1243.8778460326278,
-                          1383.290803368466
+                          1244,
+                          1383
                         ],
-                        "value": 1321.8022603287554
+                        "value": 1322
                       },
                       "rate_sub": {
                         "value": 3.066219093987545e-08
@@ -2414,10 +2414,10 @@
                         "Host Human": "NA",
                         "Node Name": "NODE11",
                         "Node Type": "internal",
-                        "Num Date": 1320.5086510503072,
+                        "Num Date": 1321,
                         "Num Date Confidence": [
-                          1244.775457133211,
-                          1386.7475712713917
+                          1245,
+                          1387
                         ],
                         "Province": "NA",
                         "Province Date Strain": "NA",
@@ -2485,10 +2485,10 @@
                           },
                           "num_date": {
                             "confidence": [
-                              1251.5805830752508,
-                              1399.8075884174386
+                              1252,
+                              1400
                             ],
-                            "value": 1332.3537362825573
+                            "value": 1332
                           },
                           "province": {
                             "value": "Oslo"
@@ -2539,10 +2539,10 @@
                             "Host Human": "NA",
                             "Node Name": "NODE12",
                             "Node Type": "internal",
-                            "Num Date": 1336.6857182452088,
+                            "Num Date": 1337,
                             "Num Date Confidence": [
-                              1255.10150424501,
-                              1400.1803099175197
+                              1255,
+                              1400
                             ],
                             "Province": "NA",
                             "Province Date Strain": "NA",
@@ -2610,10 +2610,10 @@
                               },
                               "num_date": {
                                 "confidence": [
-                                  1270.8623619017565,
-                                  1422.8651137333527
+                                  1271,
+                                  1423
                                 ],
-                                "value": 1354.474406938818
+                                "value": 1354
                               },
                               "province": {
                                 "value": "Lazio"
@@ -2664,10 +2664,10 @@
                                 "Host Human": "NA",
                                 "Node Name": "NODE13",
                                 "Node Type": "internal",
-                                "Num Date": 1345.9741801159373,
+                                "Num Date": 1346,
                                 "Num Date Confidence": [
-                                  1261.6165420401378,
-                                  1407.7629378093884
+                                  1262,
+                                  1408
                                 ],
                                 "Province": "NA",
                                 "Province Date Strain": "NA",
@@ -2735,10 +2735,10 @@
                                   },
                                   "num_date": {
                                     "confidence": [
-                                      1287.2398237979003,
-                                      1437.7904664767182
+                                      1287,
+                                      1438
                                     ],
-                                    "value": 1367.7087427790968
+                                    "value": 1368
                                   },
                                   "province": {
                                     "value": "Bavaria"
@@ -2789,10 +2789,10 @@
                                     "Host Human": "NA",
                                     "Node Name": "NODE14",
                                     "Node Type": "internal",
-                                    "Num Date": 1381.0602014673225,
+                                    "Num Date": 1381,
                                     "Num Date Confidence": [
-                                      1298.0404367435392,
-                                      1442.777811233683
+                                      1298,
+                                      1443
                                     ],
                                     "Province": "NA",
                                     "Province Date Strain": "NA",
@@ -2860,10 +2860,10 @@
                                       },
                                       "num_date": {
                                         "confidence": [
-                                          1338.7332181922923,
-                                          1502.5185458326744
+                                          1339,
+                                          1503
                                         ],
-                                        "value": 1428.5326537342273
+                                        "value": 1429
                                       },
                                       "province": {
                                         "value": "Central Denmark Region"
@@ -2914,10 +2914,10 @@
                                         "Host Human": "NA",
                                         "Node Name": "NODE15",
                                         "Node Type": "internal",
-                                        "Num Date": 1389.5144428787494,
+                                        "Num Date": 1390,
                                         "Num Date Confidence": [
-                                          1306.414130620896,
-                                          1452.7958154469259
+                                          1306,
+                                          1453
                                         ],
                                         "Province": "NA",
                                         "Province Date Strain": "NA",
@@ -2985,10 +2985,10 @@
                                           },
                                           "num_date": {
                                             "confidence": [
-                                              1341.1152012775774,
-                                              1508.648095367036
+                                              1341,
+                                              1509
                                             ],
-                                            "value": 1432.5988091410527
+                                            "value": 1433
                                           },
                                           "province": {
                                             "value": "Bavaria"
@@ -3039,10 +3039,10 @@
                                             "Host Human": "NA",
                                             "Node Name": "NODE16",
                                             "Node Type": "internal",
-                                            "Num Date": 1411.5729135075294,
+                                            "Num Date": 1412,
                                             "Num Date Confidence": [
-                                              1329.181219460269,
-                                              1474.8712468856766
+                                              1329,
+                                              1475
                                             ],
                                             "Province": "NA",
                                             "Province Date Strain": "NA",
@@ -3110,10 +3110,10 @@
                                               },
                                               "num_date": {
                                                 "confidence": [
-                                                  1351.0678864645738,
-                                                  1507.3859150127143
+                                                  1351,
+                                                  1507
                                                 ],
-                                                "value": 1433.4177186007887
+                                                "value": 1433
                                               },
                                               "province": {
                                                 "value": "Central Denmark Region"
@@ -3164,10 +3164,10 @@
                                                 "Host Human": "NA",
                                                 "Node Name": "NODE17",
                                                 "Node Type": "internal",
-                                                "Num Date": 1425.0760335880902,
+                                                "Num Date": 1425,
                                                 "Num Date Confidence": [
-                                                  1343.2122735995756,
-                                                  1488.044534677968
+                                                  1343,
+                                                  1488
                                                 ],
                                                 "Province": "NA",
                                                 "Province Date Strain": "NA",
@@ -3235,10 +3235,10 @@
                                                   },
                                                   "num_date": {
                                                     "confidence": [
-                                                      1369.223416154288,
-                                                      1523.6647312957957
+                                                      1369,
+                                                      1524
                                                     ],
-                                                    "value": 1456.7194932760574
+                                                    "value": 1457
                                                   },
                                                   "province": {
                                                     "value": "Central Denmark Region"
@@ -3289,10 +3289,10 @@
                                                     "Host Human": "NA",
                                                     "Node Name": "NODE18",
                                                     "Node Type": "internal",
-                                                    "Num Date": 1441.3157761749653,
+                                                    "Num Date": 1441,
                                                     "Num Date Confidence": [
-                                                      1362.4474772739618,
-                                                      1501.606156971753
+                                                      1362,
+                                                      1502
                                                     ],
                                                     "Province": "NA",
                                                     "Province Date Strain": "NA",
@@ -3360,10 +3360,10 @@
                                                       },
                                                       "num_date": {
                                                         "confidence": [
-                                                          1406.9320133881072,
-                                                          1555.4345680339381
+                                                          1407,
+                                                          1555
                                                         ],
-                                                        "value": 1490.7094246302213
+                                                        "value": 1491
                                                       },
                                                       "province": {
                                                         "value": "East of England"
@@ -3414,10 +3414,10 @@
                                                         "Host Human": "NA",
                                                         "Node Name": "NODE19",
                                                         "Node Type": "internal",
-                                                        "Num Date": 1455.9772500185052,
+                                                        "Num Date": 1456,
                                                         "Num Date Confidence": [
-                                                          1377.2699492799636,
-                                                          1512.8973799131686
+                                                          1377,
+                                                          1513
                                                         ],
                                                         "Province": "NA",
                                                         "Province Date Strain": "NA",
@@ -3453,10 +3453,10 @@
                                                             "Host Human": "NA",
                                                             "Node Name": "NODE20",
                                                             "Node Type": "internal",
-                                                            "Num Date": 1504.2759643191641,
+                                                            "Num Date": 1504,
                                                             "Num Date Confidence": [
-                                                              1423.5098870349966,
-                                                              1571.559326206605
+                                                              1424,
+                                                              1572
                                                             ],
                                                             "Province": "NA",
                                                             "Province Date Strain": "NA",
@@ -3524,10 +3524,10 @@
                                                               },
                                                               "num_date": {
                                                                 "confidence": [
-                                                                  1445.9243305983039,
-                                                                  1601.2512821467205
+                                                                  1446,
+                                                                  1601
                                                                 ],
-                                                                "value": 1531.6390160855008
+                                                                "value": 1532
                                                               },
                                                               "province": {
                                                                 "value": "Bavaria"
@@ -3578,10 +3578,10 @@
                                                                 "Host Human": "NA",
                                                                 "Node Name": "NODE21",
                                                                 "Node Type": "internal",
-                                                                "Num Date": 1533.6683681667143,
+                                                                "Num Date": 1534,
                                                                 "Num Date Confidence": [
-                                                                  1455.7245038796852,
-                                                                  1595.3154065489048
+                                                                  1456,
+                                                                  1595
                                                                 ],
                                                                 "Province": "NA",
                                                                 "Province Date Strain": "NA",
@@ -3617,10 +3617,10 @@
                                                                     "Host Human": "NA",
                                                                     "Node Name": "NODE22",
                                                                     "Node Type": "internal",
-                                                                    "Num Date": 1561.8815245638982,
+                                                                    "Num Date": 1562,
                                                                     "Num Date Confidence": [
-                                                                      1474.7622297396963,
-                                                                      1639.9049189377063
+                                                                      1475,
+                                                                      1640
                                                                     ],
                                                                     "Province": "NA",
                                                                     "Province Date Strain": "NA",
@@ -3688,10 +3688,10 @@
                                                                       },
                                                                       "num_date": {
                                                                         "confidence": [
-                                                                          1495.0805164258434,
-                                                                          1682.9174280998277
+                                                                          1495,
+                                                                          1683
                                                                         ],
-                                                                        "value": 1594.4321588270172
+                                                                        "value": 1594
                                                                       },
                                                                       "province": {
                                                                         "value": "Central Denmark Region"
@@ -3774,10 +3774,10 @@
                                                                       },
                                                                       "num_date": {
                                                                         "confidence": [
-                                                                          1553.6740354269887,
-                                                                          1684.6483650248517
+                                                                          1554,
+                                                                          1685
                                                                         ],
-                                                                        "value": 1631.1727690306318
+                                                                        "value": 1631
                                                                       },
                                                                       "province": {
                                                                         "value": "Brandenburg"
@@ -3829,10 +3829,10 @@
                                                                   },
                                                                   "num_date": {
                                                                     "confidence": [
-                                                                      1474.7622297396963,
-                                                                      1639.9049189377063
+                                                                      1475,
+                                                                      1640
                                                                     ],
-                                                                    "value": 1561.8815245638982
+                                                                    "value": 1562
                                                                   },
                                                                   "rate_sub": {
                                                                     "value": 3.53732956990984e-08
@@ -3865,10 +3865,10 @@
                                                                     "Host Human": "NA",
                                                                     "Node Name": "NODE23",
                                                                     "Node Type": "internal",
-                                                                    "Num Date": 1542.3379736579861,
+                                                                    "Num Date": 1542,
                                                                     "Num Date Confidence": [
-                                                                      1464.3185179097638,
-                                                                      1602.4934987760935
+                                                                      1464,
+                                                                      1602
                                                                     ],
                                                                     "Province": "NA",
                                                                     "Province Date Strain": "NA",
@@ -3936,10 +3936,10 @@
                                                                       },
                                                                       "num_date": {
                                                                         "confidence": [
-                                                                          1483.9514255138345,
-                                                                          1638.772991006945
+                                                                          1484,
+                                                                          1639
                                                                         ],
-                                                                        "value": 1570.6150390076857
+                                                                        "value": 1571
                                                                       },
                                                                       "province": {
                                                                         "value": "Nidwalden"
@@ -3990,10 +3990,10 @@
                                                                         "Host Human": "NA",
                                                                         "Node Name": "NODE24",
                                                                         "Node Type": "internal",
-                                                                        "Num Date": 1546.6888342029836,
+                                                                        "Num Date": 1547,
                                                                         "Num Date Confidence": [
-                                                                          1475.7663823895057,
-                                                                          1609.2549834464976
+                                                                          1476,
+                                                                          1609
                                                                         ],
                                                                         "Province": "NA",
                                                                         "Province Date Strain": "NA",
@@ -4029,10 +4029,10 @@
                                                                             "Host Human": "NA",
                                                                             "Node Name": "NODE25",
                                                                             "Node Type": "internal",
-                                                                            "Num Date": 1563.2814452046725,
+                                                                            "Num Date": 1563,
                                                                             "Num Date Confidence": [
-                                                                              1479.9171340504752,
-                                                                              1625.5723486371674
+                                                                              1480,
+                                                                              1626
                                                                             ],
                                                                             "Province": "NA",
                                                                             "Province Date Strain": "NA",
@@ -4100,10 +4100,10 @@
                                                                               },
                                                                               "num_date": {
                                                                                 "confidence": [
-                                                                                  1485.7675900968575,
-                                                                                  1635.5678775691167
+                                                                                  1486,
+                                                                                  1636
                                                                                 ],
-                                                                                "value": 1571.8896896445083
+                                                                                "value": 1572
                                                                               },
                                                                               "province": {
                                                                                 "value": "Nidwalden"
@@ -4186,10 +4186,10 @@
                                                                               },
                                                                               "num_date": {
                                                                                 "confidence": [
-                                                                                  1484.8230949707374,
-                                                                                  1633.4495232049637
+                                                                                  1485,
+                                                                                  1633
                                                                                 ],
-                                                                                "value": 1567.9808189877695
+                                                                                "value": 1568
                                                                               },
                                                                               "province": {
                                                                                 "value": "Nidwalden"
@@ -4241,10 +4241,10 @@
                                                                           },
                                                                           "num_date": {
                                                                             "confidence": [
-                                                                              1479.9171340504752,
-                                                                              1625.5723486371674
+                                                                              1480,
+                                                                              1626
                                                                             ],
-                                                                            "value": 1563.2814452046725
+                                                                            "value": 1563
                                                                           },
                                                                           "rate_sub": {
                                                                             "value": 4.657109911767006e-08
@@ -4277,10 +4277,10 @@
                                                                             "Host Human": "NA",
                                                                             "Node Name": "NODE26",
                                                                             "Node Type": "internal",
-                                                                            "Num Date": 1549.0800146416764,
+                                                                            "Num Date": 1549,
                                                                             "Num Date Confidence": [
-                                                                              1472.7942038395547,
-                                                                              1610.1073250251138
+                                                                              1473,
+                                                                              1610
                                                                             ],
                                                                             "Province": "NA",
                                                                             "Province Date Strain": "NA",
@@ -4316,10 +4316,10 @@
                                                                                 "Host Human": "NA",
                                                                                 "Node Name": "NODE27",
                                                                                 "Node Type": "internal",
-                                                                                "Num Date": 1557.7212567779136,
+                                                                                "Num Date": 1558,
                                                                                 "Num Date Confidence": [
-                                                                                  1482.5371238903224,
-                                                                                  1620.1782690094306
+                                                                                  1483,
+                                                                                  1620
                                                                                 ],
                                                                                 "Province": "NA",
                                                                                 "Province Date Strain": "NA",
@@ -4387,10 +4387,10 @@
                                                                                   },
                                                                                   "num_date": {
                                                                                     "confidence": [
-                                                                                      1478.84937309955,
-                                                                                      1629.1240234310465
+                                                                                      1479,
+                                                                                      1629
                                                                                     ],
-                                                                                    "value": 1562.6336786018837
+                                                                                    "value": 1563
                                                                                   },
                                                                                   "province": {
                                                                                     "value": "Nidwalden"
@@ -4473,10 +4473,10 @@
                                                                                   },
                                                                                   "num_date": {
                                                                                     "confidence": [
-                                                                                      1477.111702783912,
-                                                                                      1624.069984652133
+                                                                                      1477,
+                                                                                      1624
                                                                                     ],
-                                                                                    "value": 1559.5641433179558
+                                                                                    "value": 1560
                                                                                   },
                                                                                   "province": {
                                                                                     "value": "Nidwalden"
@@ -4525,10 +4525,10 @@
                                                                               },
                                                                               "num_date": {
                                                                                 "confidence": [
-                                                                                  1482.5371238903224,
-                                                                                  1620.1782690094306
+                                                                                  1483,
+                                                                                  1620
                                                                                 ],
-                                                                                "value": 1557.7212567779136
+                                                                                "value": 1558
                                                                               },
                                                                               "rate_sub": {
                                                                                 "value": 4.107571634026061e-08
@@ -4561,10 +4561,10 @@
                                                                                 "Host Human": "NA",
                                                                                 "Node Name": "NODE28",
                                                                                 "Node Type": "internal",
-                                                                                "Num Date": 1558.5130258552747,
+                                                                                "Num Date": 1559,
                                                                                 "Num Date Confidence": [
-                                                                                  1479.529904359553,
-                                                                                  1617.1720834711448
+                                                                                  1480,
+                                                                                  1617
                                                                                 ],
                                                                                 "Province": "NA",
                                                                                 "Province Date Strain": "NA",
@@ -4632,10 +4632,10 @@
                                                                                   },
                                                                                   "num_date": {
                                                                                     "confidence": [
-                                                                                      1481.569803559333,
-                                                                                      1629.7787346616662
+                                                                                      1482,
+                                                                                      1630
                                                                                     ],
-                                                                                    "value": 1564.7441128880648
+                                                                                    "value": 1565
                                                                                   },
                                                                                   "province": {
                                                                                     "value": "Nidwalden"
@@ -4686,10 +4686,10 @@
                                                                                     "Host Human": "NA",
                                                                                     "Node Name": "NODE29",
                                                                                     "Node Type": "internal",
-                                                                                    "Num Date": 1557.4662356158203,
+                                                                                    "Num Date": 1557,
                                                                                     "Num Date Confidence": [
-                                                                                      1470.687231731677,
-                                                                                      1620.5011267045945
+                                                                                      1471,
+                                                                                      1621
                                                                                     ],
                                                                                     "Province": "NA",
                                                                                     "Province Date Strain": "NA",
@@ -4757,10 +4757,10 @@
                                                                                       },
                                                                                       "num_date": {
                                                                                         "confidence": [
-                                                                                          1473.977439953623,
-                                                                                          1622.6454413500562
+                                                                                          1474,
+                                                                                          1623
                                                                                         ],
-                                                                                        "value": 1558.2191283200648
+                                                                                        "value": 1558
                                                                                       },
                                                                                       "province": {
                                                                                         "value": "Nidwalden"
@@ -4843,10 +4843,10 @@
                                                                                       },
                                                                                       "num_date": {
                                                                                         "confidence": [
-                                                                                          1478.1451406287654,
-                                                                                          1625.6247483718855
+                                                                                          1478,
+                                                                                          1626
                                                                                         ],
-                                                                                        "value": 1559.7436628071312
+                                                                                        "value": 1560
                                                                                       },
                                                                                       "province": {
                                                                                         "value": "Nidwalden"
@@ -4895,10 +4895,10 @@
                                                                                   },
                                                                                   "num_date": {
                                                                                     "confidence": [
-                                                                                      1470.687231731677,
-                                                                                      1620.5011267045945
+                                                                                      1471,
+                                                                                      1621
                                                                                     ],
-                                                                                    "value": 1557.4662356158203
+                                                                                    "value": 1557
                                                                                   },
                                                                                   "rate_sub": {
                                                                                     "value": 3.9881465901032467e-08
@@ -4929,10 +4929,10 @@
                                                                               },
                                                                               "num_date": {
                                                                                 "confidence": [
-                                                                                  1479.529904359553,
-                                                                                  1617.1720834711448
+                                                                                  1480,
+                                                                                  1617
                                                                                 ],
-                                                                                "value": 1558.5130258552747
+                                                                                "value": 1559
                                                                               },
                                                                               "rate_sub": {
                                                                                 "value": 4.535641485957626e-08
@@ -4963,10 +4963,10 @@
                                                                           },
                                                                           "num_date": {
                                                                             "confidence": [
-                                                                              1472.7942038395547,
-                                                                              1610.1073250251138
+                                                                              1473,
+                                                                              1610
                                                                             ],
-                                                                            "value": 1549.0800146416764
+                                                                            "value": 1549
                                                                           },
                                                                           "rate_sub": {
                                                                             "value": 4.129172505329977e-08
@@ -4997,10 +4997,10 @@
                                                                       },
                                                                       "num_date": {
                                                                         "confidence": [
-                                                                          1475.7663823895057,
-                                                                          1609.2549834464976
+                                                                          1476,
+                                                                          1609
                                                                         ],
-                                                                        "value": 1546.6888342029836
+                                                                        "value": 1547
                                                                       },
                                                                       "rate_sub": {
                                                                         "value": 4.252347935155633e-08
@@ -5034,10 +5034,10 @@
                                                                   },
                                                                   "num_date": {
                                                                     "confidence": [
-                                                                      1464.3185179097638,
-                                                                      1602.4934987760935
+                                                                      1464,
+                                                                      1602
                                                                     ],
-                                                                    "value": 1542.3379736579861
+                                                                    "value": 1542
                                                                   },
                                                                   "rate_sub": {
                                                                     "value": 4.849631064222164e-08
@@ -5071,10 +5071,10 @@
                                                               },
                                                               "num_date": {
                                                                 "confidence": [
-                                                                  1455.7245038796852,
-                                                                  1595.3154065489048
+                                                                  1456,
+                                                                  1595
                                                                 ],
-                                                                "value": 1533.6683681667143
+                                                                "value": 1534
                                                               },
                                                               "rate_sub": {
                                                                 "value": 5.7409046181536706e-08
@@ -5108,10 +5108,10 @@
                                                           },
                                                           "num_date": {
                                                             "confidence": [
-                                                              1423.5098870349966,
-                                                              1571.559326206605
+                                                              1424,
+                                                              1572
                                                             ],
-                                                            "value": 1504.2759643191641
+                                                            "value": 1504
                                                           },
                                                           "rate_sub": {
                                                             "value": 6.164304245732811e-08
@@ -5144,10 +5144,10 @@
                                                             "Host Human": "NA",
                                                             "Node Name": "NODE30",
                                                             "Node Type": "internal",
-                                                            "Num Date": 1463.5050932574738,
+                                                            "Num Date": 1464,
                                                             "Num Date Confidence": [
-                                                              1386.5633657060523,
-                                                              1520.340387143652
+                                                              1387,
+                                                              1520
                                                             ],
                                                             "Province": "NA",
                                                             "Province Date Strain": "NA",
@@ -5183,10 +5183,10 @@
                                                                 "Host Human": "NA",
                                                                 "Node Name": "NODE31",
                                                                 "Node Type": "internal",
-                                                                "Num Date": 1471.7809358850423,
+                                                                "Num Date": 1472,
                                                                 "Num Date Confidence": [
-                                                                  1391.220816332193,
-                                                                  1531.6985065560636
+                                                                  1391,
+                                                                  1532
                                                                 ],
                                                                 "Province": "NA",
                                                                 "Province Date Strain": "NA",
@@ -5254,10 +5254,10 @@
                                                                   },
                                                                   "num_date": {
                                                                     "confidence": [
-                                                                      1395.190576407712,
-                                                                      1555.38048814987
+                                                                      1395,
+                                                                      1555
                                                                     ],
-                                                                    "value": 1486.2567600489233
+                                                                    "value": 1486
                                                                   },
                                                                   "province": {
                                                                     "value": "Baden-W\u00fcrttemberg"
@@ -5308,10 +5308,10 @@
                                                                     "Host Human": "NA",
                                                                     "Node Name": "NODE32",
                                                                     "Node Type": "internal",
-                                                                    "Num Date": 1484.182781414039,
+                                                                    "Num Date": 1484,
                                                                     "Num Date Confidence": [
-                                                                      1404.5972599901431,
-                                                                      1548.584435915978
+                                                                      1405,
+                                                                      1549
                                                                     ],
                                                                     "Province": "NA",
                                                                     "Province Date Strain": "NA",
@@ -5379,10 +5379,10 @@
                                                                       },
                                                                       "num_date": {
                                                                         "confidence": [
-                                                                          1426.5260762729338,
-                                                                          1584.2820026386669
+                                                                          1427,
+                                                                          1584
                                                                         ],
-                                                                        "value": 1513.1764907661593
+                                                                        "value": 1513
                                                                       },
                                                                       "province": {
                                                                         "value": "Region of Southern Denmark"
@@ -5433,10 +5433,10 @@
                                                                         "Host Human": "NA",
                                                                         "Node Name": "NODE33",
                                                                         "Node Type": "internal",
-                                                                        "Num Date": 1496.2009895086878,
+                                                                        "Num Date": 1496,
                                                                         "Num Date Confidence": [
-                                                                          1411.7493382770838,
-                                                                          1562.155962046783
+                                                                          1412,
+                                                                          1562
                                                                         ],
                                                                         "Province": "NA",
                                                                         "Province Date Strain": "NA",
@@ -5504,10 +5504,10 @@
                                                                           },
                                                                           "num_date": {
                                                                             "confidence": [
-                                                                              1436.3843747376454,
-                                                                              1597.7574195928148
+                                                                              1436,
+                                                                              1598
                                                                             ],
-                                                                            "value": 1525.4048882291556
+                                                                            "value": 1525
                                                                           },
                                                                           "province": {
                                                                             "value": "Region of Southern Denmark"
@@ -5590,10 +5590,10 @@
                                                                           },
                                                                           "num_date": {
                                                                             "confidence": [
-                                                                              1416.5203511958293,
-                                                                              1572.308966691061
+                                                                              1417,
+                                                                              1572
                                                                             ],
-                                                                            "value": 1502.8718468272841
+                                                                            "value": 1503
                                                                           },
                                                                           "province": {
                                                                             "value": "Vilnius County"
@@ -5645,10 +5645,10 @@
                                                                       },
                                                                       "num_date": {
                                                                         "confidence": [
-                                                                          1411.7493382770838,
-                                                                          1562.155962046783
+                                                                          1412,
+                                                                          1562
                                                                         ],
-                                                                        "value": 1496.2009895086878
+                                                                        "value": 1496
                                                                       },
                                                                       "rate_sub": {
                                                                         "value": 4.697800789024744e-08
@@ -5682,10 +5682,10 @@
                                                                   },
                                                                   "num_date": {
                                                                     "confidence": [
-                                                                      1404.5972599901431,
-                                                                      1548.584435915978
+                                                                      1405,
+                                                                      1549
                                                                     ],
-                                                                    "value": 1484.182781414039
+                                                                    "value": 1484
                                                                   },
                                                                   "rate_sub": {
                                                                     "value": 5.423361814642355e-08
@@ -5716,10 +5716,10 @@
                                                               },
                                                               "num_date": {
                                                                 "confidence": [
-                                                                  1391.220816332193,
-                                                                  1531.6985065560636
+                                                                  1391,
+                                                                  1532
                                                                 ],
-                                                                "value": 1471.7809358850423
+                                                                "value": 1472
                                                               },
                                                               "rate_sub": {
                                                                 "value": 3.604255362786685e-08
@@ -5752,10 +5752,10 @@
                                                                 "Host Human": "NA",
                                                                 "Node Name": "NODE34",
                                                                 "Node Type": "internal",
-                                                                "Num Date": 1471.0946958772702,
+                                                                "Num Date": 1471,
                                                                 "Num Date Confidence": [
-                                                                  1394.3556624371583,
-                                                                  1527.101582561008
+                                                                  1394,
+                                                                  1527
                                                                 ],
                                                                 "Province": "NA",
                                                                 "Province Date Strain": "NA",
@@ -5823,10 +5823,10 @@
                                                                   },
                                                                   "num_date": {
                                                                     "confidence": [
-                                                                      1397.302767642459,
-                                                                      1530.6037639492945
+                                                                      1397,
+                                                                      1531
                                                                     ],
-                                                                    "value": 1475.078160353766
+                                                                    "value": 1475
                                                                   },
                                                                   "province": {
                                                                     "value": "Vilnius County"
@@ -5877,10 +5877,10 @@
                                                                     "Host Human": "NA",
                                                                     "Node Name": "NODE35",
                                                                     "Node Type": "internal",
-                                                                    "Num Date": 1483.289056954359,
+                                                                    "Num Date": 1483,
                                                                     "Num Date Confidence": [
-                                                                      1398.4126195235958,
-                                                                      1547.5547288294415
+                                                                      1398,
+                                                                      1548
                                                                     ],
                                                                     "Province": "NA",
                                                                     "Province Date Strain": "NA",
@@ -5916,10 +5916,10 @@
                                                                         "Host Human": "NA",
                                                                         "Node Name": "NODE36",
                                                                         "Node Type": "internal",
-                                                                        "Num Date": 1484.1871774300091,
+                                                                        "Num Date": 1484,
                                                                         "Num Date Confidence": [
-                                                                          1400.2320511753558,
-                                                                          1550.9233596854838
+                                                                          1400,
+                                                                          1551
                                                                         ],
                                                                         "Province": "NA",
                                                                         "Province Date Strain": "NA",
@@ -5987,10 +5987,10 @@
                                                                           },
                                                                           "num_date": {
                                                                             "confidence": [
-                                                                              1402.88909504847,
-                                                                              1562.3199897771638
+                                                                              1403,
+                                                                              1562
                                                                             ],
-                                                                            "value": 1487.4756508374335
+                                                                            "value": 1487
                                                                           },
                                                                           "province": {
                                                                             "value": "Vilnius County"
@@ -6073,10 +6073,10 @@
                                                                           },
                                                                           "num_date": {
                                                                             "confidence": [
-                                                                              1402.668209073879,
-                                                                              1563.7932574532558
+                                                                              1403,
+                                                                              1564
                                                                             ],
-                                                                            "value": 1490.0495340006619
+                                                                            "value": 1490
                                                                           },
                                                                           "province": {
                                                                             "value": "Pomeranian Voivodeship"
@@ -6125,10 +6125,10 @@
                                                                       },
                                                                       "num_date": {
                                                                         "confidence": [
-                                                                          1400.2320511753558,
-                                                                          1550.9233596854838
+                                                                          1400,
+                                                                          1551
                                                                         ],
-                                                                        "value": 1484.1871774300091
+                                                                        "value": 1484
                                                                       },
                                                                       "rate_sub": {
                                                                         "value": 3.8299241756427525e-08
@@ -6161,10 +6161,10 @@
                                                                         "Host Human": "NA",
                                                                         "Node Name": "NODE37",
                                                                         "Node Type": "internal",
-                                                                        "Num Date": 1572.7138851930674,
+                                                                        "Num Date": 1573,
                                                                         "Num Date Confidence": [
-                                                                          1493.174229244647,
-                                                                          1635.4503551295686
+                                                                          1493,
+                                                                          1635
                                                                         ],
                                                                         "Province": "NA",
                                                                         "Province Date Strain": "NA",
@@ -6232,10 +6232,10 @@
                                                                           },
                                                                           "num_date": {
                                                                             "confidence": [
-                                                                              1504.1593142916943,
-                                                                              1644.719136265721
+                                                                              1504,
+                                                                              1645
                                                                             ],
-                                                                            "value": 1584.9829382539742
+                                                                            "value": 1585
                                                                           },
                                                                           "province": {
                                                                             "value": "Greater London"
@@ -6286,10 +6286,10 @@
                                                                             "Host Human": "NA",
                                                                             "Node Name": "NODE38",
                                                                             "Node Type": "internal",
-                                                                            "Num Date": 1590.2084405216087,
+                                                                            "Num Date": 1590,
                                                                             "Num Date Confidence": [
-                                                                              1515.2497373235224,
-                                                                              1649.1425483631938
+                                                                              1515,
+                                                                              1649
                                                                             ],
                                                                             "Province": "NA",
                                                                             "Province Date Strain": "NA",
@@ -6325,10 +6325,10 @@
                                                                                 "Host Human": "NA",
                                                                                 "Node Name": "NODE39",
                                                                                 "Node Type": "internal",
-                                                                                "Num Date": 1597.5905379546377,
+                                                                                "Num Date": 1598,
                                                                                 "Num Date Confidence": [
-                                                                                  1525.6010916636617,
-                                                                                  1653.8067723391632
+                                                                                  1526,
+                                                                                  1654
                                                                                 ],
                                                                                 "Province": "NA",
                                                                                 "Province Date Strain": "NA",
@@ -6396,10 +6396,10 @@
                                                                                   },
                                                                                   "num_date": {
                                                                                     "confidence": [
-                                                                                      1527.8612142473023,
-                                                                                      1670.0701148969988
+                                                                                      1528,
+                                                                                      1670
                                                                                     ],
-                                                                                    "value": 1608.2263520656
+                                                                                    "value": 1608
                                                                                   },
                                                                                   "province": {
                                                                                     "value": "Greater London"
@@ -6450,10 +6450,10 @@
                                                                                     "Host Human": "NA",
                                                                                     "Node Name": "NODE40",
                                                                                     "Node Type": "internal",
-                                                                                    "Num Date": 1601.5162116636773,
+                                                                                    "Num Date": 1602,
                                                                                     "Num Date Confidence": [
-                                                                                      1520.0003274998942,
-                                                                                      1659.2485968501285
+                                                                                      1520,
+                                                                                      1659
                                                                                     ],
                                                                                     "Province": "NA",
                                                                                     "Province Date Strain": "NA",
@@ -6521,10 +6521,10 @@
                                                                                       },
                                                                                       "num_date": {
                                                                                         "confidence": [
-                                                                                          1527.5881415564709,
-                                                                                          1667.939013848138
+                                                                                          1528,
+                                                                                          1668
                                                                                         ],
-                                                                                        "value": 1608.5241581124417
+                                                                                        "value": 1609
                                                                                       },
                                                                                       "province": {
                                                                                         "value": "Greater London"
@@ -6607,10 +6607,10 @@
                                                                                       },
                                                                                       "num_date": {
                                                                                         "confidence": [
-                                                                                          1522.0250657749261,
-                                                                                          1661.468197312244
+                                                                                          1522,
+                                                                                          1661
                                                                                         ],
-                                                                                        "value": 1602.6335337109717
+                                                                                        "value": 1603
                                                                                       },
                                                                                       "province": {
                                                                                         "value": "Greater London"
@@ -6659,10 +6659,10 @@
                                                                                   },
                                                                                   "num_date": {
                                                                                     "confidence": [
-                                                                                      1520.0003274998942,
-                                                                                      1659.2485968501285
+                                                                                      1520,
+                                                                                      1659
                                                                                     ],
-                                                                                    "value": 1601.5162116636773
+                                                                                    "value": 1602
                                                                                   },
                                                                                   "rate_sub": {
                                                                                     "value": 4.498886700600201e-08
@@ -6693,10 +6693,10 @@
                                                                               },
                                                                               "num_date": {
                                                                                 "confidence": [
-                                                                                  1525.6010916636617,
-                                                                                  1653.8067723391632
+                                                                                  1526,
+                                                                                  1654
                                                                                 ],
-                                                                                "value": 1597.5905379546377
+                                                                                "value": 1598
                                                                               },
                                                                               "rate_sub": {
                                                                                 "value": 4.5260934512180504e-08
@@ -6729,10 +6729,10 @@
                                                                                 "Host Human": "NA",
                                                                                 "Node Name": "NODE41",
                                                                                 "Node Type": "internal",
-                                                                                "Num Date": 1617.2341321342167,
+                                                                                "Num Date": 1617,
                                                                                 "Num Date Confidence": [
-                                                                                  1535.0467034907467,
-                                                                                  1684.0442130681408
+                                                                                  1535,
+                                                                                  1684
                                                                                 ],
                                                                                 "Province": "NA",
                                                                                 "Province Date Strain": "NA",
@@ -6800,10 +6800,10 @@
                                                                                   },
                                                                                   "num_date": {
                                                                                     "confidence": [
-                                                                                      1528.4208229548756,
-                                                                                      1719.9057927103008
+                                                                                      1528,
+                                                                                      1720
                                                                                     ],
-                                                                                    "value": 1625.2680456718354
+                                                                                    "value": 1625
                                                                                   },
                                                                                   "province": {
                                                                                     "value": "Rostov Oblast"
@@ -6854,10 +6854,10 @@
                                                                                     "Host Human": "NA",
                                                                                     "Node Name": "NODE42",
                                                                                     "Node Type": "internal",
-                                                                                    "Num Date": 1674.38852892113,
+                                                                                    "Num Date": 1674,
                                                                                     "Num Date Confidence": [
-                                                                                      1598.0893493523472,
-                                                                                      1736.733289620224
+                                                                                      1598,
+                                                                                      1737
                                                                                     ],
                                                                                     "Province": "NA",
                                                                                     "Province Date Strain": "NA",
@@ -6893,10 +6893,10 @@
                                                                                         "Host Human": "NA",
                                                                                         "Node Name": "NODE43",
                                                                                         "Node Type": "internal",
-                                                                                        "Num Date": 1700.4848059322944,
+                                                                                        "Num Date": 1700,
                                                                                         "Num Date Confidence": [
-                                                                                          1624.7693762299339,
-                                                                                          1764.2130168990664
+                                                                                          1625,
+                                                                                          1764
                                                                                         ],
                                                                                         "Province": "NA",
                                                                                         "Province Date Strain": "NA",
@@ -6964,10 +6964,10 @@
                                                                                           },
                                                                                           "num_date": {
                                                                                             "confidence": [
-                                                                                              1759.9142689588477,
-                                                                                              1805.6798018813972
+                                                                                              1760,
+                                                                                              1806
                                                                                             ],
-                                                                                            "value": 1798.6685976542653
+                                                                                            "value": 1799
                                                                                           },
                                                                                           "province": {
                                                                                             "value": "Chechnya"
@@ -7050,10 +7050,10 @@
                                                                                           },
                                                                                           "num_date": {
                                                                                             "confidence": [
-                                                                                              1694.6324467852528,
-                                                                                              1805.6798018813972
+                                                                                              1695,
+                                                                                              1806
                                                                                             ],
-                                                                                            "value": 1767.599354547346
+                                                                                            "value": 1768
                                                                                           },
                                                                                           "province": {
                                                                                             "value": "Rostov Oblast"
@@ -7105,10 +7105,10 @@
                                                                                       },
                                                                                       "num_date": {
                                                                                         "confidence": [
-                                                                                          1624.7693762299339,
-                                                                                          1764.2130168990664
+                                                                                          1625,
+                                                                                          1764
                                                                                         ],
-                                                                                        "value": 1700.4848059322944
+                                                                                        "value": 1700
                                                                                       },
                                                                                       "rate_sub": {
                                                                                         "value": 4.129195072976313e-08
@@ -7141,10 +7141,10 @@
                                                                                         "Host Human": "NA",
                                                                                         "Node Name": "NODE44",
                                                                                         "Node Type": "internal",
-                                                                                        "Num Date": 1703.138044775398,
+                                                                                        "Num Date": 1703,
                                                                                         "Num Date Confidence": [
-                                                                                          1627.806063330744,
-                                                                                          1754.8133856387494
+                                                                                          1628,
+                                                                                          1755
                                                                                         ],
                                                                                         "Province": "NA",
                                                                                         "Province Date Strain": "NA",
@@ -7212,10 +7212,10 @@
                                                                                           },
                                                                                           "num_date": {
                                                                                             "confidence": [
-                                                                                              1647.7890933374267,
-                                                                                              1765.5342872021429
+                                                                                              1648,
+                                                                                              1766
                                                                                             ],
-                                                                                            "value": 1720.9999999999984
+                                                                                            "value": 1721
                                                                                           },
                                                                                           "province": {
                                                                                             "value": "Provence-Alpes-C\u00f4te d'Azur"
@@ -7266,10 +7266,10 @@
                                                                                             "Host Human": "NA",
                                                                                             "Node Name": "NODE45",
                                                                                             "Node Type": "internal",
-                                                                                            "Num Date": 1712.7351081342656,
+                                                                                            "Num Date": 1713,
                                                                                             "Num Date Confidence": [
-                                                                                              1639.300860909442,
-                                                                                              1760.756398191629
+                                                                                              1639,
+                                                                                              1761
                                                                                             ],
                                                                                             "Province": "NA",
                                                                                             "Province Date Strain": "NA",
@@ -7337,10 +7337,10 @@
                                                                                               },
                                                                                               "num_date": {
                                                                                                 "confidence": [
-                                                                                                  1647.7890933374267,
-                                                                                                  1765.5342872021429
+                                                                                                  1648,
+                                                                                                  1766
                                                                                                 ],
-                                                                                                "value": 1720.9999999999984
+                                                                                                "value": 1721
                                                                                               },
                                                                                               "province": {
                                                                                                 "value": "Provence-Alpes-C\u00f4te d'Azur"
@@ -7391,10 +7391,10 @@
                                                                                                 "Host Human": "NA",
                                                                                                 "Node Name": "NODE46",
                                                                                                 "Node Type": "internal",
-                                                                                                "Num Date": 1715.3565728296653,
+                                                                                                "Num Date": 1715,
                                                                                                 "Num Date Confidence": [
-                                                                                                  1640.6891240463885,
-                                                                                                  1761.4815840773779
+                                                                                                  1641,
+                                                                                                  1761
                                                                                                 ],
                                                                                                 "Province": "NA",
                                                                                                 "Province Date Strain": "NA",
@@ -7462,10 +7462,10 @@
                                                                                                   },
                                                                                                   "num_date": {
                                                                                                     "confidence": [
-                                                                                                      1647.7890933374267,
-                                                                                                      1765.5342872021429
+                                                                                                      1648,
+                                                                                                      1766
                                                                                                     ],
-                                                                                                    "value": 1720.9999999999984
+                                                                                                    "value": 1721
                                                                                                   },
                                                                                                   "province": {
                                                                                                     "value": "Provence-Alpes-C\u00f4te d'Azur"
@@ -7516,10 +7516,10 @@
                                                                                                     "Host Human": "NA",
                                                                                                     "Node Name": "NODE47",
                                                                                                     "Node Type": "internal",
-                                                                                                    "Num Date": 1719.1577322366345,
+                                                                                                    "Num Date": 1719,
                                                                                                     "Num Date Confidence": [
-                                                                                                      1646.3180866554465,
-                                                                                                      1764.07629368681
+                                                                                                      1646,
+                                                                                                      1764
                                                                                                     ],
                                                                                                     "Province": "NA",
                                                                                                     "Province Date Strain": "NA",
@@ -7587,10 +7587,10 @@
                                                                                                       },
                                                                                                       "num_date": {
                                                                                                         "confidence": [
-                                                                                                          1647.7890933374267,
-                                                                                                          1765.5342872021429
+                                                                                                          1648,
+                                                                                                          1766
                                                                                                         ],
-                                                                                                        "value": 1720.9999999999984
+                                                                                                        "value": 1721
                                                                                                       },
                                                                                                       "province": {
                                                                                                         "value": "Provence-Alpes-C\u00f4te d'Azur"
@@ -7673,10 +7673,10 @@
                                                                                                       },
                                                                                                       "num_date": {
                                                                                                         "confidence": [
-                                                                                                          1647.7890933374267,
-                                                                                                          1765.5342872021429
+                                                                                                          1648,
+                                                                                                          1766
                                                                                                         ],
-                                                                                                        "value": 1720.9999999999984
+                                                                                                        "value": 1721
                                                                                                       },
                                                                                                       "province": {
                                                                                                         "value": "Provence-Alpes-C\u00f4te d'Azur"
@@ -7725,10 +7725,10 @@
                                                                                                   },
                                                                                                   "num_date": {
                                                                                                     "confidence": [
-                                                                                                      1646.3180866554465,
-                                                                                                      1764.07629368681
+                                                                                                      1646,
+                                                                                                      1764
                                                                                                     ],
-                                                                                                    "value": 1719.1577322366345
+                                                                                                    "value": 1719
                                                                                                   },
                                                                                                   "rate_sub": {
                                                                                                     "value": 4.924978295275473e-08
@@ -7759,10 +7759,10 @@
                                                                                               },
                                                                                               "num_date": {
                                                                                                 "confidence": [
-                                                                                                  1640.6891240463885,
-                                                                                                  1761.4815840773779
+                                                                                                  1641,
+                                                                                                  1761
                                                                                                 ],
-                                                                                                "value": 1715.3565728296653
+                                                                                                "value": 1715
                                                                                               },
                                                                                               "rate_sub": {
                                                                                                 "value": 4.3624225063147686e-08
@@ -7796,10 +7796,10 @@
                                                                                           },
                                                                                           "num_date": {
                                                                                             "confidence": [
-                                                                                              1639.300860909442,
-                                                                                              1760.756398191629
+                                                                                              1639,
+                                                                                              1761
                                                                                             ],
-                                                                                            "value": 1712.7351081342656
+                                                                                            "value": 1713
                                                                                           },
                                                                                           "rate_sub": {
                                                                                             "value": 5.666354514477135e-08
@@ -7833,10 +7833,10 @@
                                                                                       },
                                                                                       "num_date": {
                                                                                         "confidence": [
-                                                                                          1627.806063330744,
-                                                                                          1754.8133856387494
+                                                                                          1628,
+                                                                                          1755
                                                                                         ],
-                                                                                        "value": 1703.138044775398
+                                                                                        "value": 1703
                                                                                       },
                                                                                       "rate_sub": {
                                                                                         "value": 4.4620869788917945e-08
@@ -7870,10 +7870,10 @@
                                                                                   },
                                                                                   "num_date": {
                                                                                     "confidence": [
-                                                                                      1598.0893493523472,
-                                                                                      1736.733289620224
+                                                                                      1598,
+                                                                                      1737
                                                                                     ],
-                                                                                    "value": 1674.38852892113
+                                                                                    "value": 1674
                                                                                   },
                                                                                   "rate_sub": {
                                                                                     "value": 5.238821244568008e-08
@@ -7904,10 +7904,10 @@
                                                                               },
                                                                               "num_date": {
                                                                                 "confidence": [
-                                                                                  1535.0467034907467,
-                                                                                  1684.0442130681408
+                                                                                  1535,
+                                                                                  1684
                                                                                 ],
-                                                                                "value": 1617.2341321342167
+                                                                                "value": 1617
                                                                               },
                                                                               "rate_sub": {
                                                                                 "value": 3.9237158302894734e-08
@@ -7938,10 +7938,10 @@
                                                                           },
                                                                           "num_date": {
                                                                             "confidence": [
-                                                                              1515.2497373235224,
-                                                                              1649.1425483631938
+                                                                              1515,
+                                                                              1649
                                                                             ],
-                                                                            "value": 1590.2084405216087
+                                                                            "value": 1590
                                                                           },
                                                                           "rate_sub": {
                                                                             "value": 5.55578413759498e-08
@@ -7975,10 +7975,10 @@
                                                                       },
                                                                       "num_date": {
                                                                         "confidence": [
-                                                                          1493.174229244647,
-                                                                          1635.4503551295686
+                                                                          1493,
+                                                                          1635
                                                                         ],
-                                                                        "value": 1572.7138851930674
+                                                                        "value": 1573
                                                                       },
                                                                       "rate_sub": {
                                                                         "value": 1.6901649117223964e-07
@@ -8009,10 +8009,10 @@
                                                                   },
                                                                   "num_date": {
                                                                     "confidence": [
-                                                                      1398.4126195235958,
-                                                                      1547.5547288294415
+                                                                      1398,
+                                                                      1548
                                                                     ],
-                                                                    "value": 1483.289056954359
+                                                                    "value": 1483
                                                                   },
                                                                   "rate_sub": {
                                                                     "value": 3.310358095950898e-08
@@ -8046,10 +8046,10 @@
                                                               },
                                                               "num_date": {
                                                                 "confidence": [
-                                                                  1394.3556624371583,
-                                                                  1527.101582561008
+                                                                  1394,
+                                                                  1527
                                                                 ],
-                                                                "value": 1471.0946958772702
+                                                                "value": 1471
                                                               },
                                                               "rate_sub": {
                                                                 "value": 5.1862476368148806e-08
@@ -8083,10 +8083,10 @@
                                                           },
                                                           "num_date": {
                                                             "confidence": [
-                                                              1386.5633657060523,
-                                                              1520.340387143652
+                                                              1387,
+                                                              1520
                                                             ],
-                                                            "value": 1463.5050932574738
+                                                            "value": 1464
                                                           },
                                                           "rate_sub": {
                                                             "value": 4.77950582575059e-08
@@ -8120,10 +8120,10 @@
                                                       },
                                                       "num_date": {
                                                         "confidence": [
-                                                          1377.2699492799636,
-                                                          1512.8973799131686
+                                                          1377,
+                                                          1513
                                                         ],
-                                                        "value": 1455.9772500185052
+                                                        "value": 1456
                                                       },
                                                       "rate_sub": {
                                                         "value": 5.5816803535677185e-08
@@ -8157,10 +8157,10 @@
                                                   },
                                                   "num_date": {
                                                     "confidence": [
-                                                      1362.4474772739618,
-                                                      1501.606156971753
+                                                      1362,
+                                                      1502
                                                     ],
-                                                    "value": 1441.3157761749653
+                                                    "value": 1441
                                                   },
                                                   "rate_sub": {
                                                     "value": 4.7786248141955656e-08
@@ -8194,10 +8194,10 @@
                                               },
                                               "num_date": {
                                                 "confidence": [
-                                                  1343.2122735995756,
-                                                  1488.044534677968
+                                                  1343,
+                                                  1488
                                                 ],
-                                                "value": 1425.0760335880902
+                                                "value": 1425
                                               },
                                               "rate_sub": {
                                                 "value": 4.903364368107797e-08
@@ -8231,10 +8231,10 @@
                                           },
                                           "num_date": {
                                             "confidence": [
-                                              1329.181219460269,
-                                              1474.8712468856766
+                                              1329,
+                                              1475
                                             ],
-                                            "value": 1411.5729135075294
+                                            "value": 1412
                                           },
                                           "rate_sub": {
                                             "value": 7.536126777463695e-08
@@ -8265,10 +8265,10 @@
                                       },
                                       "num_date": {
                                         "confidence": [
-                                          1306.414130620896,
-                                          1452.7958154469259
+                                          1306,
+                                          1453
                                         ],
-                                        "value": 1389.5144428787494
+                                        "value": 1390
                                       },
                                       "rate_sub": {
                                         "value": 4.48492817097763e-08
@@ -8302,10 +8302,10 @@
                                   },
                                   "num_date": {
                                     "confidence": [
-                                      1298.0404367435392,
-                                      1442.777811233683
+                                      1298,
+                                      1443
                                     ],
-                                    "value": 1381.0602014673225
+                                    "value": 1381
                                   },
                                   "rate_sub": {
                                     "value": 7.262175139925394e-08
@@ -8339,10 +8339,10 @@
                               },
                               "num_date": {
                                 "confidence": [
-                                  1261.6165420401378,
-                                  1407.7629378093884
+                                  1262,
+                                  1408
                                 ],
-                                "value": 1345.9741801159373
+                                "value": 1346
                               },
                               "rate_sub": {
                                 "value": 4.504668853194515e-08
@@ -8376,10 +8376,10 @@
                           },
                           "num_date": {
                             "confidence": [
-                              1255.10150424501,
-                              1400.1803099175197
+                              1255,
+                              1400
                             ],
-                            "value": 1336.6857182452088
+                            "value": 1337
                           },
                           "rate_sub": {
                             "value": 5.4656110964699626e-08
@@ -8410,10 +8410,10 @@
                       },
                       "num_date": {
                         "confidence": [
-                          1244.775457133211,
-                          1386.7475712713917
+                          1245,
+                          1387
                         ],
-                        "value": 1320.5086510503072
+                        "value": 1321
                       },
                       "rate_sub": {
                         "value": 4.020899802465165e-08
@@ -8444,10 +8444,10 @@
                   },
                   "num_date": {
                     "confidence": [
-                      1236.8815040418592,
-                      1373.7378927693878
+                      1237,
+                      1374
                     ],
-                    "value": 1309.2528514954365
+                    "value": 1309
                   },
                   "rate_sub": {
                     "value": 3.540968545374599e-08
@@ -8478,10 +8478,10 @@
               },
               "num_date": {
                 "confidence": [
-                  1224.3132703875458,
-                  1366.0071007700135
+                  1224,
+                  1366
                 ],
-                "value": 1305.5502467645229
+                "value": 1306
               },
               "rate_sub": {
                 "value": 3.86186926480064e-08
@@ -8515,10 +8515,10 @@
           },
           "num_date": {
             "confidence": [
-              1225.428194308397,
-              1366.4165869060655
+              1225,
+              1366
             ],
-            "value": 1303.6167075059495
+            "value": 1304
           },
           "rate_sub": {
             "value": 3.988931350757844e-08
@@ -8552,10 +8552,10 @@
       },
       "num_date": {
         "confidence": [
-          1215.2552047146366,
-          1360.5778479180024
+          1215,
+          1361
         ],
-        "value": 1295.3627021536897
+        "value": 1295
       },
       "rate_sub": {
         "value": 1.0
