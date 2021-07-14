@@ -19,10 +19,29 @@ sqlite_select_command_ref : SELECT
                               ON AssemblyBioSampleAccession = BioSampleAccession
                             WHERE
                               (BioSampleComment LIKE '%Assembly%Modern%Reference%')
+# Not used
+sqlite_select_command_asm : SELECT
+                              AssemblyFTPGenbank
+                            FROM
+                              BioSample
+                            LEFT JOIN Assembly
+                              ON AssemblyBioSampleAccession = BioSampleAccession
+                            WHERE
+                              (BioSampleComment LIKE 'None')
+
+sqlite_select_command_sra : SELECT
+                              BioSampleAccession,
+                              SRARunAccession
+                            FROM
+                              BioSample
+                            LEFT JOIN SRA
+                              ON SRABioSampleAccession = BioSampleAccession
+                            WHERE
+                              (BioSampleComment LIKE 'None')
 
 # Dataset size
-max_datasets_assembly : 1000
-max_datasets_sra : 1000
+max_datasets_assembly : 1
+max_datasets_sra : 1
 reads_origin :
   - "local"
 
