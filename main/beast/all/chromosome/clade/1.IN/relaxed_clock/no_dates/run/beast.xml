@@ -67,17 +67,7 @@ name="original-dna">
 <map name="OneOnX" >beast.math.distributions.OneOnX</map>
 
 
-<run spec="beast.inference.PathSampler"
-	chainLength="1000000"
-	alpha="0.3"
-	rootdir="/2/scratch/keaton/plague-phylogeography-projects/main/beast/all/chromosome/clade/1.IN/strict_clock/no_dates/model_test/"
-	burnInPercentage="0"
-	preBurnin="100000" deleteOldLogs="true"
-	nrOfSteps="100">
-	cd $(dir)
-	java -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml
-
-<mcmc id="mcmc" spec="MCMC" chainLength="100000000">
+<run id="mcmc" spec="MCMC" chainLength="100000000">
     <state id="state" spec="State" storeEvery="5000">
         <tree id="Tree.t:dna" spec="beast.evolution.tree.Tree" name="stateNode">
             <taxonset id="TaxonSet.dna" spec="TaxonSet">
@@ -91,6 +81,8 @@ name="original-dna">
         <parameter id="rateCG.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateGT.s:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="popSize.t:dna" spec="parameter.RealParameter" name="stateNode">0.3</parameter>
+        <parameter id="ucldStdev.c:dna" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:dna" spec="parameter.IntegerParameter" dimension="76">1</stateNode>
     </state>
 
     <init id="RandomTree.t:dna" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:dna" taxa="@dna">
@@ -141,6 +133,12 @@ name="original-dna">
                     <parameter id="RealParameter.12" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
                 </Gamma>
             </prior>
+            <prior id="ucldStdevPrior.c:dna" name="distribution" x="@ucldStdev.c:dna">
+                <Gamma id="Gamma.6" name="distr">
+                    <parameter id="RealParameter.14" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.15" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
         </distribution>
         <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
             <distribution id="treeLikelihood.dna" spec="ThreadedTreeLikelihood" data="@dna" tree="@Tree.t:dna">
@@ -153,8 +151,11 @@ name="original-dna">
                         <frequencies id="estimatedFreqs.s:dna" spec="Frequencies" frequencies="@freqParameter.s:dna"/>
                     </substModel>
                 </siteModel>
-                <branchRateModel id="StrictClock.c:dna" spec="beast.evolution.branchratemodel.StrictClockModel">
-                    <parameter id="clockRate.c:dna" spec="parameter.RealParameter" estimate="false" name="clock.rate">1.0</parameter>
+                <branchRateModel id="RelaxedClock.c:dna" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" rateCategories="@rateCategories.c:dna" tree="@Tree.t:dna">
+                    <LogNormal id="LogNormalDistributionModel.c:dna" S="@ucldStdev.c:dna" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.13" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                    <parameter id="ucldMean.c:dna" spec="parameter.RealParameter" estimate="false" name="clock.rate">1.0</parameter>
                 </branchRateModel>
             </distribution>
         </distribution>
@@ -190,6 +191,14 @@ name="original-dna">
 
     <operator id="PopSizeScaler.t:dna" spec="ScaleOperator" parameter="@popSize.t:dna" scaleFactor="0.75" weight="3.0"/>
 
+    <operator id="ucldStdevScaler.c:dna" spec="ScaleOperator" parameter="@ucldStdev.c:dna" scaleFactor="0.5" weight="3.0"/>
+
+    <operator id="CategoriesRandomWalk.c:dna" spec="IntRandomWalkOperator" parameter="@rateCategories.c:dna" weight="10.0" windowSize="1"/>
+
+    <operator id="CategoriesSwapOperator.c:dna" spec="SwapOperator" intparameter="@rateCategories.c:dna" weight="10.0"/>
+
+    <operator id="CategoriesUniform.c:dna" spec="UniformOperator" parameter="@rateCategories.c:dna" weight="10.0"/>
+
     <logger id="tracelog" spec="Logger" fileName="beast.log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
         <log idref="posterior"/>
         <log idref="likelihood"/>
@@ -204,6 +213,8 @@ name="original-dna">
         <log idref="rateGT.s:dna"/>
         <log idref="popSize.t:dna"/>
         <log idref="CoalescentConstant.t:dna"/>
+        <log idref="ucldStdev.c:dna"/>
+        <log id="rate.c:dna" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:dna" tree="@Tree.t:dna"/>
     </logger>
 
     <logger id="screenlog" spec="Logger" logEvery="100000">
@@ -213,7 +224,7 @@ name="original-dna">
     </logger>
 
     <logger id="treelog.t:dna" spec="Logger" fileName="beast.trees" logEvery="10000" mode="tree">
-        <log id="TreeWithMetaDataLogger.t:dna" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:dna"/>
+        <log id="TreeWithMetaDataLogger.t:dna" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:dna" tree="@Tree.t:dna"/>
     </logger>
 
     <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
