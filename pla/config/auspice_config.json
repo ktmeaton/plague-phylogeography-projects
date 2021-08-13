@@ -1,0 +1,237 @@
+{
+  "title": "Plague Phylogeography Main",
+  "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/pla",
+  "maintainers": [
+    {
+      "name": "Katherine Eaton",
+      "url": "https://ktmeaton.github.io"
+    }
+  ],
+  "colorings": [
+    {
+      "key": "biosample_accession",
+      "title": "BioSample Accession",
+      "type": "categorical"
+    }, 
+    {
+      "key": "blank",
+      "title": "Blank",
+      "type": "categorical"
+    },    
+    {
+      "key": "branch_length_sub",
+      "title": "Branch Length Subs",
+      "type": "continuous"
+    },    
+    {
+      "key": "branch_length_time",
+      "title": "Branch Length Time",
+      "type": "continuous"
+    },      
+    {
+      "key": "branch_major",
+      "title": "Branch Major",
+      "type": "categorical"
+    },
+    {
+      "key": "branch_major_conf_category",
+      "title": "Branch Major Confidence",
+      "type": "categorical"
+    },      
+    {
+      "key": "branch_major_joint_conf_category",
+      "title": "Branch Major Joint Confidence",
+      "type": "categorical"
+    },          
+    {
+      "key": "branch_minor",
+      "title": "Branch Minor",
+      "type": "categorical"
+    },
+    {
+      "key": "branch_minor_conf_category",
+      "title": "Branch Minor Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "branch_minor_joint_conf_category",
+      "title": "Branch Minor Joint Confidence",
+      "type": "categorical"
+    },        
+    {
+      "key": "branch_number",
+      "title": "Branch Number",
+      "type": "categorical"
+    },
+    {
+      "key": "branch_support",
+      "title": "Branch Support",
+      "type": "continuous"
+    },     
+    {
+      "key": "branch_support_conf_category",
+      "title": "Branch Support Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "branch_support_conf_char",
+      "title": "Branch Support Confidence Character",
+      "type": "categorical"
+    },       
+    {
+      "key": "clade_rtt_dist",
+      "title": "Clade Root Distance",
+      "type": "continuous"
+    },        
+    {
+      "key": "continent",
+      "title": "Continent",
+      "type": "categorical"
+    },
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "country_lat",
+      "title": "Country Latitude",
+      "type": "continuous"
+    }, 
+    {
+      "key": "country_lon",
+      "title": "Country Longitude",
+      "type": "continuous"
+    },    
+    {
+      "key": "country_conf_category",
+      "title": "Country Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "country_joint_conf_category",
+      "title": "Country Joint Confidence",
+      "type": "categorical"
+    },      
+    {
+      "key": "country_date_strain",
+      "title": "Country Date Strain",
+      "type": "categorical"
+    },        
+    {
+      "key": "date_bp_mean",
+      "title": "Collection Date (Years BP)",
+      "type": "continuous"
+    },
+    {
+      "key": "date_mean",
+      "title": "Collection Date (Calendar Year)",
+      "type": "continuous"
+    },
+    {
+      "key": "date_err",
+      "title": "Collection Date Uncertainty",
+      "type": "continuous"
+    },  
+    {
+      "key": "host_human",
+      "title": "Host Human",
+      "type": "categorical"
+    },       
+    {
+      "key": "node_name",
+      "title": "Node Name",
+      "type": "categorical"
+    },    
+    {
+      "key": "node_type",
+      "title": "Node Type",
+      "type": "categorical"
+    },
+    {
+      "key": "province",
+      "title": "Province",
+      "type": "categorical"
+    },
+    {
+      "key": "province_date_strain",
+      "title": "Province Date Strain",
+      "type": "categorical"
+    },     
+    {
+      "key": "province_lat",
+      "title": "Province Latitude",
+      "type": "continuous"
+    }, 
+    {
+      "key": "province_lon",
+      "title": "Province Longitude",
+      "type": "continuous"
+    },        
+    {
+      "key": "province_conf_category",
+      "title": "Province Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "province_joint_conf_category",
+      "title": "Province Joint Confidence",
+      "type": "categorical"
+    },    
+    {
+      "key": "root_rtt_dist",
+      "title": "Root Distance",
+      "type": "continuous"
+    },          
+    {
+      "key": "rate_sub",
+      "title": "Substitution Rate (subs/site/year)",
+      "type": "continuous"
+    },  
+    {
+      "key": "rate_sub_year",
+      "title": "Substitution Rate (subs/year)",
+      "type": "continuous"
+    },         
+    {
+      "key": "rate_geo_sub",
+      "title": "Geographic Rate (km/sub/site)",
+      "type": "continuous"
+    },
+    {
+      "key": "rate_geo_year",
+      "title": "Geographic Rate (km/year)",
+      "type": "continuous"
+    },     
+    {
+      "key": "strain",
+      "title": "Strain",
+      "type": "categorical"
+    }
+  ],
+  "filters": [
+    "country",
+    "province",
+    "continent",
+    "branch_major",
+    "branch_minor"
+  ],
+  "panels": [
+    "tree",
+    "map",
+    "entropy"
+  ],
+ "geo_resolutions": [
+  "country",
+  "province"
+  ],
+  "display_defaults": {
+    "color_by": "branch_major",
+    "distance_measure": "num_date",
+    "geo_resolution": "province",
+    "map_triplicate": true,
+    "branch_label": "none",
+    "transmission_lines": true,
+    "layout": "rect"
+  }
+}
