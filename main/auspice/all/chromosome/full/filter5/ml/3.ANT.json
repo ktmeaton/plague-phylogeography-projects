@@ -413,17 +413,7 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support_conf_char",
-        "title": "Branch Support Confidence Character",
-        "type": "categorical"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
+        "key": "country_conf_category",
         "scale": [
           [
             "LOW",
@@ -434,12 +424,78 @@
             "#3ae8d7"
           ]
         ],
-        "title": "Province Confidence",
+        "title": "Country Confidence",
         "type": "categorical"
       },
       {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
+        "key": "country_raw",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "Mongolia",
+            "#149df1"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
         "type": "continuous"
       },
       {
@@ -454,19 +510,30 @@
         "type": "categorical"
       },
       {
-        "key": "continent_conf_category",
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
         "scale": [
           [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#3ae8d7"
+            "Asia",
+            "#00b4ec"
           ]
         ],
-        "title": "Continent Confidence",
+        "title": "Continent",
         "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
       },
       {
         "key": "host_order",
@@ -488,35 +555,23 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "population_raw",
-        "scale": [
-          [
-            "3.ANT",
-            "#3ae8d7"
-          ]
-        ],
-        "title": "Population",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
         "type": "continuous"
       },
       {
-        "key": "continent_raw",
+        "key": "province_conf_category",
         "scale": [
           [
-            "Asia",
-            "#00b4ec"
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
           ]
         ],
-        "title": "Continent",
+        "title": "Province Confidence",
         "type": "categorical"
       },
       {
@@ -558,125 +613,14 @@
         "type": "categorical"
       },
       {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
+        "key": "country_lon",
+        "title": "Country Longitude",
         "type": "continuous"
       },
       {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
         "type": "continuous"
-      },
-      {
-        "key": "province",
-        "scale": [
-          [
-            "Qinghai",
-            "#642bfe"
-          ],
-          [
-            "Govi-Altai",
-            "#1a95f3"
-          ],
-          [
-            "Bayan-\u00d6lgii",
-            "#0da6ef"
-          ],
-          [
-            "Gansu",
-            "#1dd1e2"
-          ],
-          [
-            "Hovsgel",
-            "#21d5e0"
-          ],
-          [
-            "Zavkhan Province",
-            "#26d9df"
-          ],
-          [
-            "Dornogovi",
-            "#2adddd"
-          ]
-        ],
-        "title": "Province (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "host_human",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#3ae8d7"
-          ]
-        ],
-        "title": "Host Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#3ae8d7"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "scale": [
-          [
-            "Asia",
-            "#00b4ec"
-          ]
-        ],
-        "title": "Continent (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "population_rtt_dist",
-        "title": "Population Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
       },
       {
         "key": "population_conf_category",
@@ -694,19 +638,19 @@
         "type": "categorical"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
         "type": "continuous"
       },
       {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
       },
       {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
       },
       {
         "key": "country_date_strain",
@@ -714,8 +658,18 @@
         "type": "categorical"
       },
       {
-        "key": "blank",
-        "title": "Blank",
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
@@ -758,43 +712,8 @@
         "type": "categorical"
       },
       {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#3ae8d7"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "country_raw",
-        "scale": [
-          [
-            "China",
-            "#4a53fc"
-          ],
-          [
-            "Mongolia",
-            "#149df1"
-          ]
-        ],
-        "title": "Country",
+        "key": "blank",
+        "title": "Blank",
         "type": "categorical"
       },
       {
@@ -813,14 +732,105 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support",
-        "title": "Branch Support",
+        "key": "population_raw",
+        "scale": [
+          [
+            "3.ANT",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Qinghai",
+            "#642bfe"
+          ],
+          [
+            "Govi-Altai",
+            "#1a95f3"
+          ],
+          [
+            "Bayan-\u00d6lgii",
+            "#0da6ef"
+          ],
+          [
+            "Gansu",
+            "#1dd1e2"
+          ],
+          [
+            "Hovsgel",
+            "#21d5e0"
+          ],
+          [
+            "Zavkhan Province",
+            "#26d9df"
+          ],
+          [
+            "Dornogovi",
+            "#2adddd"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
         "type": "continuous"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
       }
     ],
     "display_defaults": {
@@ -900,7 +910,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-08-16"
+    "updated": "2021-08-18"
   },
   "tree": {
     "branch_attrs": {
@@ -943,6 +953,7 @@
         "Population": "3.ANT",
         "Population Conf Category": "HIGH",
         "Population Confidence": 1.0,
+        "Population Geo Dist": 1318.38292015,
         "Population Raw": "NA",
         "Population Rtt Dist": "NA",
         "Province": "Hovsgel",
@@ -954,6 +965,7 @@
         "Province Raw": "NA",
         "Rate Sub": 1.2466457055692182e-08,
         "Rate Sub Year": 0.0527218686013137,
+        "Root Geo Dist": 1429.89577187,
         "Root Rtt Dist": "NA",
         "Strain": "NA"
       }
@@ -1000,6 +1012,7 @@
             "Population": "3.ANT",
             "Population Conf Category": "HIGH",
             "Population Confidence": 1.0,
+            "Population Geo Dist": 0.0,
             "Population Raw": "NA",
             "Population Rtt Dist": "NA",
             "Province": "Qinghai",
@@ -1011,6 +1024,7 @@
             "Province Raw": "NA",
             "Rate Sub": 1.4133173365326936e-09,
             "Rate Sub Year": 0.005977057521295741,
+            "Root Geo Dist": 823.02714885,
             "Root Rtt Dist": "NA",
             "Strain": "NA"
           }
@@ -1118,6 +1132,9 @@
               "population_conf_category": {
                 "value": "HIGH"
               },
+              "population_geo_dist": {
+                "value": 0.0
+              },
               "population_raw": {
                 "value": "3.ANT"
               },
@@ -1150,6 +1167,9 @@
               },
               "rate_sub_year": {
                 "value": 0.028384810764970847
+              },
+              "root_geo_dist": {
+                "value": 823.02714885
               },
               "root_rtt_dist": {
                 "value": 5.8186e-05
@@ -1200,6 +1220,7 @@
                 "Population": "3.ANT",
                 "Population Conf Category": "HIGH",
                 "Population Confidence": 1.0,
+                "Population Geo Dist": 0.0,
                 "Population Raw": "NA",
                 "Population Rtt Dist": "NA",
                 "Province": "Gansu",
@@ -1211,6 +1232,7 @@
                 "Province Raw": "NA",
                 "Rate Sub": 1.0485638576288928e-08,
                 "Rate Sub Year": 0.04434479313170636,
+                "Root Geo Dist": 823.02714885,
                 "Root Rtt Dist": "NA",
                 "Strain": "NA"
               }
@@ -1318,6 +1340,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
                   "population_raw": {
                     "value": "3.ANT"
                   },
@@ -1350,6 +1375,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.05055719772600629
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
                   },
                   "root_rtt_dist": {
                     "value": 5.9336800000000004e-05
@@ -1400,6 +1428,7 @@
                     "Population": "3.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
+                    "Population Geo Dist": 0.0,
                     "Population Raw": "NA",
                     "Population Rtt Dist": "NA",
                     "Province": "Gansu",
@@ -1411,6 +1440,7 @@
                     "Province Raw": "NA",
                     "Rate Sub": 5.991511178135561e-09,
                     "Rate Sub Year": 0.025338687940430746,
+                    "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
                     "Strain": "NA"
                   }
@@ -1518,6 +1548,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "population_raw": {
                         "value": "3.ANT"
                       },
@@ -1550,6 +1583,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.04570018572599927
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       },
                       "root_rtt_dist": {
                         "value": 5.93369e-05
@@ -1661,6 +1697,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "population_raw": {
                         "value": "3.ANT"
                       },
@@ -1693,6 +1732,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.05370690285644975
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       },
                       "root_rtt_dist": {
                         "value": 5.93369e-05
@@ -1776,6 +1818,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
                   "province": {
                     "confidence": {
                       "Gansu": 1.0
@@ -1796,6 +1841,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.025338687940430746
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
                   }
                 }
               }
@@ -1873,6 +1921,9 @@
               "population_conf_category": {
                 "value": "HIGH"
               },
+              "population_geo_dist": {
+                "value": 0.0
+              },
               "province": {
                 "confidence": {
                   "Gansu": 1.0
@@ -1893,6 +1944,9 @@
               },
               "rate_sub_year": {
                 "value": 0.04434479313170636
+              },
+              "root_geo_dist": {
+                "value": 823.02714885
               }
             }
           }
@@ -1970,6 +2024,9 @@
           "population_conf_category": {
             "value": "HIGH"
           },
+          "population_geo_dist": {
+            "value": 0.0
+          },
           "province": {
             "confidence": {
               "Qinghai": 0.54
@@ -1990,6 +2047,9 @@
           },
           "rate_sub_year": {
             "value": 0.005977057521295741
+          },
+          "root_geo_dist": {
+            "value": 823.02714885
           }
         }
       },
@@ -2034,6 +2094,7 @@
             "Population": "3.ANT",
             "Population Conf Category": "HIGH",
             "Population Confidence": 1.0,
+            "Population Geo Dist": 1318.38292015,
             "Population Raw": "NA",
             "Population Rtt Dist": "NA",
             "Province": "Hovsgel",
@@ -2045,6 +2106,7 @@
             "Province Raw": "NA",
             "Rate Sub": 1.2466457055692182e-08,
             "Rate Sub Year": 0.0527218686013137,
+            "Root Geo Dist": 1429.89577187,
             "Root Rtt Dist": "NA",
             "Strain": "NA"
           }
@@ -2152,6 +2214,9 @@
               "population_conf_category": {
                 "value": "HIGH"
               },
+              "population_geo_dist": {
+                "value": 1318.38292015
+              },
               "population_raw": {
                 "value": "3.ANT"
               },
@@ -2184,6 +2249,9 @@
               },
               "rate_sub_year": {
                 "value": 0.04499701785601366
+              },
+              "root_geo_dist": {
+                "value": 1429.89577187
               },
               "root_rtt_dist": {
                 "value": 6.1955e-05
@@ -2234,6 +2302,7 @@
                 "Population": "3.ANT",
                 "Population Conf Category": "HIGH",
                 "Population Confidence": 1.0,
+                "Population Geo Dist": 1318.38292015,
                 "Population Raw": "NA",
                 "Population Rtt Dist": "NA",
                 "Province": "Govi-Altai",
@@ -2245,6 +2314,7 @@
                 "Province Raw": "NA",
                 "Rate Sub": 1.864811091232459e-08,
                 "Rate Sub Year": 0.0788646885630901,
+                "Root Geo Dist": 1429.89577187,
                 "Root Rtt Dist": "NA",
                 "Strain": "NA"
               }
@@ -2352,6 +2422,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 1318.38292015
+                  },
                   "population_raw": {
                     "value": "3.ANT"
                   },
@@ -2384,6 +2457,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.04339000517711963
+                  },
+                  "root_geo_dist": {
+                    "value": 1429.89577187
                   },
                   "root_rtt_dist": {
                     "value": 6.219059999999999e-05
@@ -2434,6 +2510,7 @@
                     "Population": "3.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
+                    "Population Geo Dist": 1318.38292015,
                     "Population Raw": "NA",
                     "Population Rtt Dist": "NA",
                     "Province": "Govi-Altai",
@@ -2445,6 +2522,7 @@
                     "Province Raw": "NA",
                     "Rate Sub": 7.349064442362308e-08,
                     "Rate Sub Year": 0.31079913735065556,
+                    "Root Geo Dist": 1429.89577187,
                     "Root Rtt Dist": "NA",
                     "Strain": "NA"
                   }
@@ -2491,6 +2569,7 @@
                         "Population": "3.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
+                        "Population Geo Dist": 1318.38292015,
                         "Population Raw": "NA",
                         "Population Rtt Dist": "NA",
                         "Province": "Govi-Altai",
@@ -2502,6 +2581,7 @@
                         "Province Raw": "NA",
                         "Rate Sub": 1.7967672427491785e-08,
                         "Rate Sub Year": 0.07598704752776066,
+                        "Root Geo Dist": 1429.89577187,
                         "Root Rtt Dist": "NA",
                         "Strain": "NA"
                       }
@@ -2609,6 +2689,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 1318.38292015
+                          },
                           "population_raw": {
                             "value": "3.ANT"
                           },
@@ -2641,6 +2724,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.17557579989602243
+                          },
+                          "root_geo_dist": {
+                            "value": 1429.89577187
                           },
                           "root_rtt_dist": {
                             "value": 6.45463e-05
@@ -2752,6 +2838,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 1318.38292015
+                          },
                           "population_raw": {
                             "value": "3.ANT"
                           },
@@ -2784,6 +2873,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.004822232611174459
+                          },
+                          "root_geo_dist": {
+                            "value": 1429.89577187
                           },
                           "root_rtt_dist": {
                             "value": 6.362760000000001e-05
@@ -2867,6 +2959,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 1318.38292015
+                      },
                       "province": {
                         "confidence": {
                           "Govi-Altai": 0.98
@@ -2887,6 +2982,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.07598704752776066
+                      },
+                      "root_geo_dist": {
+                        "value": 1429.89577187
                       }
                     }
                   },
@@ -2931,6 +3029,7 @@
                         "Population": "3.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
+                        "Population Geo Dist": 1318.38292015,
                         "Population Raw": "NA",
                         "Population Rtt Dist": "NA",
                         "Province": "Govi-Altai",
@@ -2942,6 +3041,7 @@
                         "Province Raw": "NA",
                         "Rate Sub": 0.0,
                         "Rate Sub Year": 0.0,
+                        "Root Geo Dist": 1429.89577187,
                         "Root Rtt Dist": "NA",
                         "Strain": "NA"
                       }
@@ -3049,6 +3149,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 1318.38292015
+                          },
                           "population_raw": {
                             "value": "3.ANT"
                           },
@@ -3081,6 +3184,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.09960674875018748
+                          },
+                          "root_geo_dist": {
+                            "value": 1429.89577187
                           },
                           "root_rtt_dist": {
                             "value": 6.478179999999999e-05
@@ -3131,6 +3237,7 @@
                             "Population": "3.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
+                            "Population Geo Dist": 1318.38292015,
                             "Population Raw": "NA",
                             "Population Rtt Dist": "NA",
                             "Province": "Dornogovi",
@@ -3142,6 +3249,7 @@
                             "Province Raw": "NA",
                             "Rate Sub": 5.229789931405493e-09,
                             "Rate Sub Year": 0.022117294139327108,
+                            "Root Geo Dist": 1429.89577187,
                             "Root Rtt Dist": "NA",
                             "Strain": "NA"
                           }
@@ -3249,6 +3357,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 1318.38292015
+                              },
                               "population_raw": {
                                 "value": "3.ANT"
                               },
@@ -3281,6 +3392,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.022915046194048817
+                              },
+                              "root_geo_dist": {
+                                "value": 1429.89577187
                               },
                               "root_rtt_dist": {
                                 "value": 6.195499999999999e-05
@@ -3392,6 +3506,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 1318.38292015
+                              },
                               "population_raw": {
                                 "value": "3.ANT"
                               },
@@ -3424,6 +3541,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.0572900475638945
+                              },
+                              "root_geo_dist": {
+                                "value": 1429.89577187
                               },
                               "root_rtt_dist": {
                                 "value": 6.266169999999997e-05
@@ -3507,6 +3627,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 1318.38292015
+                          },
                           "province": {
                             "confidence": {
                               "Dornogovi": 1.0
@@ -3527,6 +3650,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.022117294139327108
+                          },
+                          "root_geo_dist": {
+                            "value": 1429.89577187
                           }
                         }
                       }
@@ -3604,6 +3730,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 1318.38292015
+                      },
                       "province": {
                         "confidence": {
                           "Govi-Altai": 0.98
@@ -3624,6 +3753,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.0
+                      },
+                      "root_geo_dist": {
+                        "value": 1429.89577187
                       }
                     }
                   }
@@ -3701,6 +3833,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 1318.38292015
+                  },
                   "province": {
                     "confidence": {
                       "Govi-Altai": 0.97
@@ -3721,6 +3856,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.31079913735065556
+                  },
+                  "root_geo_dist": {
+                    "value": 1429.89577187
                   }
                 }
               }
@@ -3798,6 +3936,9 @@
               "population_conf_category": {
                 "value": "HIGH"
               },
+              "population_geo_dist": {
+                "value": 1318.38292015
+              },
               "province": {
                 "confidence": {
                   "Govi-Altai": 0.39
@@ -3818,6 +3959,9 @@
               },
               "rate_sub_year": {
                 "value": 0.0788646885630901
+              },
+              "root_geo_dist": {
+                "value": 1429.89577187
               }
             }
           }
@@ -3895,6 +4039,9 @@
           "population_conf_category": {
             "value": "HIGH"
           },
+          "population_geo_dist": {
+            "value": 1318.38292015
+          },
           "province": {
             "confidence": {
               "Hovsgel": 0.42
@@ -3915,6 +4062,9 @@
           },
           "rate_sub_year": {
             "value": 0.0527218686013137
+          },
+          "root_geo_dist": {
+            "value": 1429.89577187
           }
         }
       }
@@ -3992,6 +4142,9 @@
       "population_conf_category": {
         "value": "HIGH"
       },
+      "population_geo_dist": {
+        "value": 0.0
+      },
       "province": {
         "confidence": {
           "Qinghai": 0.32
@@ -4012,6 +4165,9 @@
       },
       "rate_sub_year": {
         "value": 0.022324138379565425
+      },
+      "root_geo_dist": {
+        "value": 823.02714885
       }
     }
   },

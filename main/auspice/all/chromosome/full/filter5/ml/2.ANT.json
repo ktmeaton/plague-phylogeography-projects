@@ -485,17 +485,7 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support_conf_char",
-        "title": "Branch Support Confidence Character",
-        "type": "categorical"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
+        "key": "country_conf_category",
         "scale": [
           [
             "LOW",
@@ -506,12 +496,90 @@
             "#97fca7"
           ]
         ],
-        "title": "Province Confidence",
+        "title": "Country Confidence",
         "type": "categorical"
       },
       {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
+        "key": "country_raw",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "Nepal",
+            "#3cead5"
+          ],
+          [
+            "India",
+            "#4af1d0"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#97fca7"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
         "type": "continuous"
       },
       {
@@ -526,19 +594,34 @@
         "type": "categorical"
       },
       {
-        "key": "continent_conf_category",
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
         "scale": [
           [
-            "LOW",
-            "#FFFFFF"
+            "Europe",
+            "#8000ff"
           ],
           [
-            "HIGH",
-            "#97fca7"
+            "Asia",
+            "#00b4ec"
           ]
         ],
-        "title": "Continent Confidence",
+        "title": "Continent",
         "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
       },
       {
         "key": "host_order",
@@ -572,39 +655,23 @@
         "type": "categorical"
       },
       {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "population_raw",
-        "scale": [
-          [
-            "2.ANT",
-            "#97fca7"
-          ]
-        ],
-        "title": "Population",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
         "type": "continuous"
       },
       {
-        "key": "continent_raw",
+        "key": "province_conf_category",
         "scale": [
           [
-            "Europe",
-            "#8000ff"
+            "LOW",
+            "#FFFFFF"
           ],
           [
-            "Asia",
-            "#00b4ec"
+            "HIGH",
+            "#97fca7"
           ]
         ],
-        "title": "Continent",
+        "title": "Province Confidence",
         "type": "categorical"
       },
       {
@@ -666,141 +733,14 @@
         "type": "categorical"
       },
       {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
+        "key": "country_lon",
+        "title": "Country Longitude",
         "type": "continuous"
       },
       {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
         "type": "continuous"
-      },
-      {
-        "key": "province",
-        "scale": [
-          [
-            "Qinghai",
-            "#642bfe"
-          ],
-          [
-            "Inner Mongolia",
-            "#2d7cf7"
-          ],
-          [
-            "Jilin",
-            "#34e4d9"
-          ],
-          [
-            "St. Petersberg",
-            "#38e7d7"
-          ],
-          [
-            "Zabaykalsky Krai",
-            "#3dead5"
-          ],
-          [
-            "Heilongjiang",
-            "#41edd3"
-          ],
-          [
-            "Tibet",
-            "#46efd1"
-          ],
-          [
-            "Gandaki Pradesh",
-            "#4bf2cf"
-          ],
-          [
-            "Maharashtra",
-            "#4ff4cd"
-          ],
-          [
-            "Himachal Pradesh",
-            "#54f6cb"
-          ]
-        ],
-        "title": "Province (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "host_human",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#97fca7"
-          ]
-        ],
-        "title": "Host Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#97fca7"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "scale": [
-          [
-            "Europe",
-            "#8000ff"
-          ],
-          [
-            "Asia",
-            "#00b4ec"
-          ]
-        ],
-        "title": "Continent (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "population_rtt_dist",
-        "title": "Population Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
       },
       {
         "key": "population_conf_category",
@@ -818,19 +758,19 @@
         "type": "categorical"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
         "type": "continuous"
       },
       {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
       },
       {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
       },
       {
         "key": "country_date_strain",
@@ -838,8 +778,18 @@
         "type": "categorical"
       },
       {
-        "key": "blank",
-        "title": "Blank",
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
@@ -894,51 +844,8 @@
         "type": "categorical"
       },
       {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#97fca7"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "country_raw",
-        "scale": [
-          [
-            "Russia",
-            "#8000ff"
-          ],
-          [
-            "China",
-            "#4a53fc"
-          ],
-          [
-            "Nepal",
-            "#3cead5"
-          ],
-          [
-            "India",
-            "#4af1d0"
-          ]
-        ],
-        "title": "Country",
+        "key": "blank",
+        "title": "Blank",
         "type": "categorical"
       },
       {
@@ -957,14 +864,117 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support",
-        "title": "Branch Support",
+        "key": "population_raw",
+        "scale": [
+          [
+            "2.ANT",
+            "#97fca7"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Qinghai",
+            "#642bfe"
+          ],
+          [
+            "Inner Mongolia",
+            "#2d7cf7"
+          ],
+          [
+            "Jilin",
+            "#34e4d9"
+          ],
+          [
+            "St. Petersberg",
+            "#38e7d7"
+          ],
+          [
+            "Zabaykalsky Krai",
+            "#3dead5"
+          ],
+          [
+            "Heilongjiang",
+            "#41edd3"
+          ],
+          [
+            "Tibet",
+            "#46efd1"
+          ],
+          [
+            "Gandaki Pradesh",
+            "#4bf2cf"
+          ],
+          [
+            "Maharashtra",
+            "#4ff4cd"
+          ],
+          [
+            "Himachal Pradesh",
+            "#54f6cb"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#97fca7"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
         "type": "continuous"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#97fca7"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
       }
     ],
     "display_defaults": {
@@ -1064,7 +1074,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-08-16"
+    "updated": "2021-08-18"
   },
   "tree": {
     "branch_attrs": {
@@ -1107,6 +1117,7 @@
         "Population": "2.ANT",
         "Population Conf Category": "HIGH",
         "Population Confidence": 1.0,
+        "Population Geo Dist": 0.0,
         "Population Raw": "NA",
         "Population Rtt Dist": "NA",
         "Province": "Qinghai",
@@ -1118,6 +1129,7 @@
         "Province Raw": "NA",
         "Rate Sub": 3.560716159807895e-09,
         "Rate Sub Year": 0.01505861759001125,
+        "Root Geo Dist": 823.02714885,
         "Root Rtt Dist": "NA",
         "Strain": "NA"
       }
@@ -1164,6 +1176,7 @@
             "Population": "2.ANT",
             "Population Conf Category": "HIGH",
             "Population Confidence": 1.0,
+            "Population Geo Dist": 0.0,
             "Population Raw": "NA",
             "Population Rtt Dist": "NA",
             "Province": "Inner Mongolia",
@@ -1175,6 +1188,7 @@
             "Province Raw": "NA",
             "Rate Sub": 0.0,
             "Rate Sub Year": 0.0,
+            "Root Geo Dist": 823.02714885,
             "Root Rtt Dist": "NA",
             "Strain": "NA"
           }
@@ -1221,6 +1235,7 @@
                 "Population": "2.ANT",
                 "Population Conf Category": "HIGH",
                 "Population Confidence": 1.0,
+                "Population Geo Dist": 0.0,
                 "Population Raw": "NA",
                 "Population Rtt Dist": "NA",
                 "Province": "Inner Mongolia",
@@ -1232,6 +1247,7 @@
                 "Province Raw": "NA",
                 "Rate Sub": 3.031418342423127e-09,
                 "Rate Sub Year": 0.012820165249104962,
+                "Root Geo Dist": 823.02714885,
                 "Root Rtt Dist": "NA",
                 "Strain": "NA"
               }
@@ -1278,6 +1294,7 @@
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
+                    "Population Geo Dist": 0.0,
                     "Population Raw": "NA",
                     "Population Rtt Dist": "NA",
                     "Province": "Inner Mongolia",
@@ -1289,6 +1306,7 @@
                     "Province Raw": "NA",
                     "Rate Sub": 7.118016019612639e-09,
                     "Rate Sub Year": 0.030102787312511772,
+                    "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
                     "Strain": "NA"
                   }
@@ -1396,6 +1414,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "population_raw": {
                         "value": "2.ANT"
                       },
@@ -1428,6 +1449,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.03234486060146882
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       },
                       "root_rtt_dist": {
                         "value": 6.785859999999999e-05
@@ -1539,6 +1563,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "population_raw": {
                         "value": "2.ANT"
                       },
@@ -1571,6 +1598,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.020331745443969342
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       },
                       "root_rtt_dist": {
                         "value": 6.757259999999997e-05
@@ -1654,6 +1684,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
                   "province": {
                     "confidence": {
                       "Inner Mongolia": 1.0
@@ -1674,6 +1707,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.030102787312511772
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
                   }
                 }
               },
@@ -1718,6 +1754,7 @@
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
+                    "Population Geo Dist": 0.0,
                     "Population Raw": "NA",
                     "Population Rtt Dist": "NA",
                     "Province": "Inner Mongolia",
@@ -1729,6 +1766,7 @@
                     "Province Raw": "NA",
                     "Rate Sub": 5.0797312041099165e-09,
                     "Rate Sub Year": 0.02148268107583884,
+                    "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
                     "Strain": "NA"
                   }
@@ -1836,6 +1874,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "population_raw": {
                         "value": "2.ANT"
                       },
@@ -1868,6 +1909,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.03202745809428196
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       },
                       "root_rtt_dist": {
                         "value": 6.7146e-05
@@ -1979,6 +2023,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "population_raw": {
                         "value": "2.ANT"
                       },
@@ -2011,6 +2058,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.023796346992225288
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       },
                       "root_rtt_dist": {
                         "value": 6.706239999999999e-05
@@ -2094,6 +2144,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
                   "province": {
                     "confidence": {
                       "Inner Mongolia": 1.0
@@ -2114,6 +2167,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.02148268107583884
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
                   }
                 }
               }
@@ -2191,6 +2247,9 @@
               "population_conf_category": {
                 "value": "HIGH"
               },
+              "population_geo_dist": {
+                "value": 0.0
+              },
               "province": {
                 "confidence": {
                   "Inner Mongolia": 1.0
@@ -2211,6 +2270,9 @@
               },
               "rate_sub_year": {
                 "value": 0.012820165249104962
+              },
+              "root_geo_dist": {
+                "value": 823.02714885
               }
             }
           },
@@ -2255,6 +2317,7 @@
                 "Population": "2.ANT",
                 "Population Conf Category": "HIGH",
                 "Population Confidence": 1.0,
+                "Population Geo Dist": 0.0,
                 "Population Raw": "NA",
                 "Population Rtt Dist": "NA",
                 "Province": "Inner Mongolia",
@@ -2266,6 +2329,7 @@
                 "Province Raw": "NA",
                 "Rate Sub": 0.0,
                 "Rate Sub Year": 0.0,
+                "Root Geo Dist": 823.02714885,
                 "Root Rtt Dist": "NA",
                 "Strain": "NA"
               }
@@ -2373,6 +2437,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
                   "population_raw": {
                     "value": "2.ANT"
                   },
@@ -2405,6 +2472,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.026367405478512674
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
                   },
                   "root_rtt_dist": {
                     "value": 6.95166e-05
@@ -2455,6 +2525,7 @@
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
+                    "Population Geo Dist": 0.0,
                     "Population Raw": "NA",
                     "Population Rtt Dist": "NA",
                     "Province": "Inner Mongolia",
@@ -2466,6 +2537,7 @@
                     "Province Raw": "NA",
                     "Rate Sub": 0.0,
                     "Rate Sub Year": 0.0,
+                    "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
                     "Strain": "NA"
                   }
@@ -2512,6 +2584,7 @@
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
+                        "Population Geo Dist": 0.0,
                         "Population Raw": "NA",
                         "Population Rtt Dist": "NA",
                         "Province": "Inner Mongolia",
@@ -2523,6 +2596,7 @@
                         "Province Raw": "NA",
                         "Rate Sub": 3.3938039254429296e-09,
                         "Rate Sub Year": 0.014352729393482843,
+                        "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
                         "Strain": "NA"
                       }
@@ -2630,6 +2704,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "population_raw": {
                             "value": "2.ANT"
                           },
@@ -2662,6 +2739,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.04352218929443082
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           },
                           "root_rtt_dist": {
                             "value": 6.99877e-05
@@ -2712,6 +2792,7 @@
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
+                            "Population Geo Dist": 0.0,
                             "Population Raw": "NA",
                             "Population Rtt Dist": "NA",
                             "Province": "Inner Mongolia",
@@ -2723,6 +2804,7 @@
                             "Province Raw": "NA",
                             "Rate Sub": 1.1423260856938178e-10,
                             "Rate Sub Year": 0.0004831008964355554,
+                            "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
                             "Strain": "NA"
                           }
@@ -2830,6 +2912,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "population_raw": {
                                 "value": "2.ANT"
                               },
@@ -2862,6 +2947,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.005669019269677624
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               },
                               "root_rtt_dist": {
                                 "value": 6.67134e-05
@@ -2912,6 +3000,7 @@
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
+                                "Population Geo Dist": 0.0,
                                 "Population Raw": "NA",
                                 "Population Rtt Dist": "NA",
                                 "Province": "Inner Mongolia",
@@ -2923,6 +3012,7 @@
                                 "Province Raw": "NA",
                                 "Rate Sub": 5.309408001007888e-10,
                                 "Rate Sub Year": 0.0022454006758246456,
+                                "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
                                 "Strain": "NA"
                               }
@@ -3030,6 +3120,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "population_raw": {
                                     "value": "2.ANT"
                                   },
@@ -3062,6 +3155,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.024042535589538977
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   },
                                   "root_rtt_dist": {
                                     "value": 6.720809999999999e-05
@@ -3173,6 +3269,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "population_raw": {
                                     "value": "2.ANT"
                                   },
@@ -3205,6 +3304,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.06692980422042223
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   },
                                   "root_rtt_dist": {
                                     "value": 6.791479999999999e-05
@@ -3285,6 +3387,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "province": {
                                 "confidence": {
                                   "Inner Mongolia": 1.0
@@ -3305,6 +3410,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.0022454006758246456
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               }
                             }
                           }
@@ -3379,6 +3487,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "province": {
                             "confidence": {
                               "Inner Mongolia": 1.0
@@ -3399,6 +3510,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.0004831008964355554
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           }
                         }
                       }
@@ -3476,6 +3590,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "province": {
                         "confidence": {
                           "Inner Mongolia": 1.0
@@ -3496,6 +3613,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.014352729393482843
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       }
                     }
                   },
@@ -3540,6 +3660,7 @@
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
+                        "Population Geo Dist": 0.0,
                         "Population Raw": "NA",
                         "Population Rtt Dist": "NA",
                         "Province": "Inner Mongolia",
@@ -3551,6 +3672,7 @@
                         "Province Raw": "NA",
                         "Rate Sub": 0.0,
                         "Rate Sub Year": 0.0,
+                        "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
                         "Strain": "NA"
                       }
@@ -3597,6 +3719,7 @@
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
+                            "Population Geo Dist": 3336.85563555,
                             "Population Raw": "NA",
                             "Population Rtt Dist": "NA",
                             "Province": "St. Petersberg",
@@ -3608,6 +3731,7 @@
                             "Province Raw": "NA",
                             "Rate Sub": 3.5375255529671474e-09,
                             "Rate Sub Year": 0.014960542241002258,
+                            "Root Geo Dist": 3257.92765865,
                             "Root Rtt Dist": "NA",
                             "Strain": "NA"
                           }
@@ -3715,6 +3839,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 3336.85563555
+                              },
                               "population_raw": {
                                 "value": "2.ANT"
                               },
@@ -3747,6 +3874,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.020228591246493153
+                              },
+                              "root_geo_dist": {
+                                "value": 3257.92765865
                               },
                               "root_rtt_dist": {
                                 "value": 6.83388e-05
@@ -3858,6 +3988,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 3336.85563555
+                              },
                               "population_raw": {
                                 "value": "2.ANT"
                               },
@@ -3890,6 +4023,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.02617378784077138
+                              },
+                              "root_geo_dist": {
+                                "value": 3257.92765865
                               },
                               "root_rtt_dist": {
                                 "value": 6.880989999999999e-05
@@ -3973,6 +4109,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 3336.85563555
+                          },
                           "province": {
                             "confidence": {
                               "St. Petersberg": 1.0
@@ -3993,6 +4132,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.014960542241002258
+                          },
+                          "root_geo_dist": {
+                            "value": 3257.92765865
                           }
                         }
                       },
@@ -4037,6 +4179,7 @@
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
+                            "Population Geo Dist": 0.0,
                             "Population Raw": "NA",
                             "Population Rtt Dist": "NA",
                             "Province": "Jilin",
@@ -4048,6 +4191,7 @@
                             "Province Raw": "NA",
                             "Rate Sub": 0.0,
                             "Rate Sub Year": 0.0,
+                            "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
                             "Strain": "NA"
                           }
@@ -4155,6 +4299,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "population_raw": {
                                 "value": "2.ANT"
                               },
@@ -4187,6 +4334,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.008389397748826712
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               },
                               "root_rtt_dist": {
                                 "value": 6.67134e-05
@@ -4237,6 +4387,7 @@
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
+                                "Population Geo Dist": 0.0,
                                 "Population Raw": "NA",
                                 "Population Rtt Dist": "NA",
                                 "Province": "Zabaykalsky Krai",
@@ -4248,6 +4399,7 @@
                                 "Province Raw": "NA",
                                 "Rate Sub": 0.0,
                                 "Rate Sub Year": 0.0,
+                                "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
                                 "Strain": "NA"
                               }
@@ -4355,6 +4507,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 3336.85563555
+                                  },
                                   "population_raw": {
                                     "value": "2.ANT"
                                   },
@@ -4387,6 +4542,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.008279824998961068
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 3257.92765865
                                   },
                                   "root_rtt_dist": {
                                     "value": 6.6949e-05
@@ -4437,6 +4595,7 @@
                                     "Population": "2.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
+                                    "Population Geo Dist": 0.0,
                                     "Population Raw": "NA",
                                     "Population Rtt Dist": "NA",
                                     "Province": "Heilongjiang",
@@ -4448,6 +4607,7 @@
                                     "Province Raw": "NA",
                                     "Rate Sub": 3.9769838133194455e-08,
                                     "Rate Sub Year": 0.16819054290941643,
+                                    "Root Geo Dist": 823.02714885,
                                     "Root Rtt Dist": "NA",
                                     "Strain": "NA"
                                   }
@@ -4555,6 +4715,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 0.0
+                                      },
                                       "population_raw": {
                                         "value": "2.ANT"
                                       },
@@ -4587,6 +4750,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.0
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 823.02714885
                                       },
                                       "root_rtt_dist": {
                                         "value": 0.0001166949
@@ -4692,6 +4858,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 0.0
+                                      },
                                       "population_raw": {
                                         "value": "2.ANT"
                                       },
@@ -4724,6 +4893,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.9823634920441178
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 823.02714885
                                       },
                                       "root_rtt_dist": {
                                         "value": 0.0001133971
@@ -4807,6 +4979,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "province": {
                                     "confidence": {
                                       "Heilongjiang": 1.0
@@ -4827,6 +5002,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.16819054290941643
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   }
                                 }
                               }
@@ -4904,6 +5082,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "province": {
                                 "confidence": {
                                   "Zabaykalsky Krai": 0.37
@@ -4924,6 +5105,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.0
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               }
                             }
                           }
@@ -4998,6 +5182,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "province": {
                             "confidence": {
                               "Jilin": 0.5
@@ -5018,6 +5205,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.0
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           }
                         }
                       }
@@ -5095,6 +5285,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "province": {
                         "confidence": {
                           "Inner Mongolia": 0.45
@@ -5115,6 +5308,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.0
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       }
                     }
                   }
@@ -5192,6 +5388,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
                   "province": {
                     "confidence": {
                       "Inner Mongolia": 1.0
@@ -5212,6 +5411,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.0
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
                   }
                 }
               }
@@ -5289,6 +5491,9 @@
               "population_conf_category": {
                 "value": "HIGH"
               },
+              "population_geo_dist": {
+                "value": 0.0
+              },
               "province": {
                 "confidence": {
                   "Inner Mongolia": 1.0
@@ -5309,6 +5514,9 @@
               },
               "rate_sub_year": {
                 "value": 0.0
+              },
+              "root_geo_dist": {
+                "value": 823.02714885
               }
             }
           }
@@ -5386,6 +5594,9 @@
           "population_conf_category": {
             "value": "HIGH"
           },
+          "population_geo_dist": {
+            "value": 0.0
+          },
           "province": {
             "confidence": {
               "Inner Mongolia": 1.0
@@ -5406,6 +5617,9 @@
           },
           "rate_sub_year": {
             "value": 0.0
+          },
+          "root_geo_dist": {
+            "value": 823.02714885
           }
         }
       },
@@ -5450,6 +5664,7 @@
             "Population": "2.ANT",
             "Population Conf Category": "HIGH",
             "Population Confidence": 1.0,
+            "Population Geo Dist": 0.0,
             "Population Raw": "NA",
             "Population Rtt Dist": "NA",
             "Province": "Qinghai",
@@ -5461,6 +5676,7 @@
             "Province Raw": "NA",
             "Rate Sub": 3.560716159807895e-09,
             "Rate Sub Year": 0.01505861759001125,
+            "Root Geo Dist": 823.02714885,
             "Root Rtt Dist": "NA",
             "Strain": "NA"
           }
@@ -5568,6 +5784,9 @@
               "population_conf_category": {
                 "value": "HIGH"
               },
+              "population_geo_dist": {
+                "value": 0.0
+              },
               "population_raw": {
                 "value": "2.ANT"
               },
@@ -5600,6 +5819,9 @@
               },
               "rate_sub_year": {
                 "value": 0.021702879649989106
+              },
+              "root_geo_dist": {
+                "value": 823.02714885
               },
               "root_rtt_dist": {
                 "value": 6.527639999999999e-05
@@ -5650,6 +5872,7 @@
                 "Population": "2.ANT",
                 "Population Conf Category": "HIGH",
                 "Population Confidence": 1.0,
+                "Population Geo Dist": 0.0,
                 "Population Raw": "NA",
                 "Population Rtt Dist": "NA",
                 "Province": "Tibet",
@@ -5661,6 +5884,7 @@
                 "Province Raw": "NA",
                 "Rate Sub": 4.041109729827842e-10,
                 "Rate Sub Year": 0.0017090249076195468,
+                "Root Geo Dist": 823.02714885,
                 "Root Rtt Dist": "NA",
                 "Strain": "NA"
               }
@@ -5707,6 +5931,7 @@
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
+                    "Population Geo Dist": 0.0,
                     "Population Raw": "NA",
                     "Population Rtt Dist": "NA",
                     "Province": "Tibet",
@@ -5718,6 +5943,7 @@
                     "Province Raw": "NA",
                     "Rate Sub": 1.9096477670877063e-10,
                     "Rate Sub Year": 0.0008076087552495085,
+                    "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
                     "Strain": "NA"
                   }
@@ -5764,6 +5990,7 @@
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
+                        "Population Geo Dist": 0.0,
                         "Population Raw": "NA",
                         "Population Rtt Dist": "NA",
                         "Province": "Tibet",
@@ -5775,6 +6002,7 @@
                         "Province Raw": "NA",
                         "Rate Sub": 6.7049219523858315e-09,
                         "Rate Sub Year": 0.028355772018991015,
+                        "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
                         "Strain": "NA"
                       }
@@ -5882,6 +6110,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "population_raw": {
                             "value": "2.ANT"
                           },
@@ -5914,6 +6145,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.016749860282152317
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           },
                           "root_rtt_dist": {
                             "value": 6.461689999999999e-05
@@ -5964,6 +6198,7 @@
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
+                            "Population Geo Dist": 0.0,
                             "Population Raw": "NA",
                             "Population Rtt Dist": "NA",
                             "Province": "Tibet",
@@ -5975,6 +6210,7 @@
                             "Province Raw": "NA",
                             "Rate Sub": 1.0980165912167978e-09,
                             "Rate Sub Year": 0.004643619769881777,
+                            "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
                             "Strain": "NA"
                           }
@@ -6082,6 +6318,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "population_raw": {
                                 "value": "2.ANT"
                               },
@@ -6114,6 +6353,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.05861115805049967
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               },
                               "root_rtt_dist": {
                                 "value": 6.487599999999998e-05
@@ -6225,6 +6467,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "population_raw": {
                                 "value": "2.ANT"
                               },
@@ -6257,6 +6502,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.02622572175940914
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               },
                               "root_rtt_dist": {
                                 "value": 6.464049999999999e-05
@@ -6337,6 +6585,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "province": {
                             "confidence": {
                               "Tibet": 1.0
@@ -6357,6 +6608,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.004643619769881777
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           }
                         }
                       }
@@ -6434,6 +6688,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "province": {
                         "confidence": {
                           "Tibet": 1.0
@@ -6454,6 +6711,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.028355772018991015
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       }
                     }
                   },
@@ -6498,6 +6758,7 @@
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
+                        "Population Geo Dist": 0.0,
                         "Population Raw": "NA",
                         "Population Rtt Dist": "NA",
                         "Province": "Tibet",
@@ -6509,6 +6770,7 @@
                         "Province Raw": "NA",
                         "Rate Sub": 8.026394993582973e-09,
                         "Rate Sub Year": 0.03394441101457177,
+                        "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
                         "Strain": "NA"
                       }
@@ -6616,6 +6878,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "population_raw": {
                             "value": "2.ANT"
                           },
@@ -6648,6 +6913,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.016872506296017827
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           },
                           "root_rtt_dist": {
                             "value": 6.485249999999999e-05
@@ -6698,6 +6966,7 @@
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
+                            "Population Geo Dist": 0.0,
                             "Population Raw": "NA",
                             "Population Rtt Dist": "NA",
                             "Province": "Tibet",
@@ -6709,6 +6978,7 @@
                             "Province Raw": "NA",
                             "Rate Sub": 2.1037430580936167e-09,
                             "Rate Sub Year": 0.008896935559497597,
+                            "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
                             "Strain": "NA"
                           }
@@ -6755,6 +7025,7 @@
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
+                                "Population Geo Dist": 0.0,
                                 "Population Raw": "NA",
                                 "Population Rtt Dist": "NA",
                                 "Province": "Tibet",
@@ -6766,6 +7037,7 @@
                                 "Province Raw": "NA",
                                 "Rate Sub": 0.0,
                                 "Rate Sub Year": 0.0,
+                                "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
                                 "Strain": "NA"
                               }
@@ -6873,6 +7145,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "population_raw": {
                                     "value": "2.ANT"
                                   },
@@ -6905,6 +7180,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.027804456770038316
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   },
                                   "root_rtt_dist": {
                                     "value": 6.489969999999997e-05
@@ -7016,6 +7294,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "population_raw": {
                                     "value": "2.ANT"
                                   },
@@ -7048,6 +7329,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.11120602552804375
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   },
                                   "root_rtt_dist": {
                                     "value": 6.560639999999998e-05
@@ -7128,6 +7412,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "province": {
                                 "confidence": {
                                   "Tibet": 1.0
@@ -7148,6 +7435,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.0
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               }
                             }
                           },
@@ -7192,6 +7482,7 @@
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
+                                "Population Geo Dist": 0.0,
                                 "Population Raw": "NA",
                                 "Population Rtt Dist": "NA",
                                 "Province": "Tibet",
@@ -7203,6 +7494,7 @@
                                 "Province Raw": "NA",
                                 "Rate Sub": 1.0491779957143746e-09,
                                 "Rate Sub Year": 0.00443707656331967,
+                                "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
                                 "Strain": "NA"
                               }
@@ -7310,6 +7602,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "population_raw": {
                                     "value": "2.ANT"
                                   },
@@ -7342,6 +7637,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.0039385156504032955
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   },
                                   "root_rtt_dist": {
                                     "value": 6.468769999999998e-05
@@ -7392,6 +7690,7 @@
                                     "Population": "2.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
+                                    "Population Geo Dist": 0.0,
                                     "Population Raw": "NA",
                                     "Population Rtt Dist": "NA",
                                     "Province": "Tibet",
@@ -7403,6 +7702,7 @@
                                     "Province Raw": "NA",
                                     "Rate Sub": 0.0,
                                     "Rate Sub Year": 0.0,
+                                    "Root Geo Dist": 823.02714885,
                                     "Root Rtt Dist": "NA",
                                     "Strain": "NA"
                                   }
@@ -7510,6 +7810,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 0.0
+                                      },
                                       "population_raw": {
                                         "value": "2.ANT"
                                       },
@@ -7542,6 +7845,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.040933704533876715
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 823.02714885
                                       },
                                       "root_rtt_dist": {
                                         "value": 6.492329999999998e-05
@@ -7592,6 +7898,7 @@
                                         "Population": "2.ANT",
                                         "Population Conf Category": "HIGH",
                                         "Population Confidence": 1.0,
+                                        "Population Geo Dist": 0.0,
                                         "Population Raw": "NA",
                                         "Population Rtt Dist": "NA",
                                         "Province": "Tibet",
@@ -7603,6 +7910,7 @@
                                         "Province Raw": "NA",
                                         "Rate Sub": 3.15773672303057e-08,
                                         "Rate Sub Year": 0.13354378059895136,
+                                        "Root Geo Dist": 823.02714885,
                                         "Root Rtt Dist": "NA",
                                         "Strain": "NA"
                                       }
@@ -7710,6 +8018,9 @@
                                           "population_conf_category": {
                                             "value": "HIGH"
                                           },
+                                          "population_geo_dist": {
+                                            "value": 0.0
+                                          },
                                           "population_raw": {
                                             "value": "2.ANT"
                                           },
@@ -7742,6 +8053,9 @@
                                           },
                                           "rate_sub_year": {
                                             "value": 0.09157694608554989
+                                          },
+                                          "root_geo_dist": {
+                                            "value": 823.02714885
                                           },
                                           "root_rtt_dist": {
                                             "value": 6.515889999999997e-05
@@ -7853,6 +8167,9 @@
                                           "population_conf_category": {
                                             "value": "HIGH"
                                           },
+                                          "population_geo_dist": {
+                                            "value": 0.0
+                                          },
                                           "population_raw": {
                                             "value": "2.ANT"
                                           },
@@ -7885,6 +8202,9 @@
                                           },
                                           "rate_sub_year": {
                                             "value": 0.07735714420583531
+                                          },
+                                          "root_geo_dist": {
+                                            "value": 823.02714885
                                           },
                                           "root_rtt_dist": {
                                             "value": 6.515889999999997e-05
@@ -7968,6 +8288,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 0.0
+                                      },
                                       "province": {
                                         "confidence": {
                                           "Tibet": 1.0
@@ -7988,6 +8311,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.13354378059895136
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 823.02714885
                                       }
                                     }
                                   }
@@ -8062,6 +8388,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "province": {
                                     "confidence": {
                                       "Tibet": 1.0
@@ -8082,6 +8411,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.0
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   }
                                 }
                               }
@@ -8156,6 +8488,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "province": {
                                 "confidence": {
                                   "Tibet": 1.0
@@ -8176,6 +8511,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.00443707656331967
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               }
                             }
                           }
@@ -8250,6 +8588,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "province": {
                             "confidence": {
                               "Tibet": 1.0
@@ -8270,6 +8611,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.008896935559497597
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           }
                         }
                       }
@@ -8347,6 +8691,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "province": {
                         "confidence": {
                           "Tibet": 1.0
@@ -8367,6 +8714,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.03394441101457177
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       }
                     }
                   }
@@ -8441,6 +8791,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
                   "province": {
                     "confidence": {
                       "Tibet": 1.0
@@ -8461,6 +8814,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.0008076087552495085
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
                   }
                 }
               },
@@ -8505,6 +8861,7 @@
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
+                    "Population Geo Dist": 0.0,
                     "Population Raw": "NA",
                     "Population Rtt Dist": "NA",
                     "Province": "Tibet",
@@ -8516,6 +8873,7 @@
                     "Province Raw": "NA",
                     "Rate Sub": 0.0,
                     "Rate Sub Year": 0.0,
+                    "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
                     "Strain": "NA"
                   }
@@ -8562,6 +8920,7 @@
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
+                        "Population Geo Dist": 0.0,
                         "Population Raw": "NA",
                         "Population Rtt Dist": "NA",
                         "Province": "Tibet",
@@ -8573,6 +8932,7 @@
                         "Province Raw": "NA",
                         "Rate Sub": 0.0,
                         "Rate Sub Year": 0.0,
+                        "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
                         "Strain": "NA"
                       }
@@ -8680,6 +9040,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "population_raw": {
                             "value": "2.ANT"
                           },
@@ -8712,6 +9075,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.01562774644495341
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           },
                           "root_rtt_dist": {
                             "value": 6.484199999999999e-05
@@ -8762,6 +9128,7 @@
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
+                            "Population Geo Dist": 0.0,
                             "Population Raw": "NA",
                             "Population Rtt Dist": "NA",
                             "Province": "Tibet",
@@ -8773,6 +9140,7 @@
                             "Province Raw": "NA",
                             "Rate Sub": 0.0,
                             "Rate Sub Year": 0.0,
+                            "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
                             "Strain": "NA"
                           }
@@ -8819,6 +9187,7 @@
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
+                                "Population Geo Dist": 0.0,
                                 "Population Raw": "NA",
                                 "Population Rtt Dist": "NA",
                                 "Province": "Tibet",
@@ -8830,6 +9199,7 @@
                                 "Province Raw": "NA",
                                 "Rate Sub": 6.126358860551e-09,
                                 "Rate Sub Year": 0.025908972004438514,
+                                "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
                                 "Strain": "NA"
                               }
@@ -8937,6 +9307,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "population_raw": {
                                     "value": "2.ANT"
                                   },
@@ -8969,6 +9342,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.02716435251356535
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   },
                                   "root_rtt_dist": {
                                     "value": 6.580789999999997e-05
@@ -9019,6 +9395,7 @@
                                     "Population": "2.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
+                                    "Population Geo Dist": 0.0,
                                     "Population Raw": "NA",
                                     "Population Rtt Dist": "NA",
                                     "Province": "Tibet",
@@ -9030,6 +9407,7 @@
                                     "Province Raw": "NA",
                                     "Rate Sub": 7.651630478327058e-09,
                                     "Rate Sub Year": 0.032359495152632006,
+                                    "Root Geo Dist": 823.02714885,
                                     "Root Rtt Dist": "NA",
                                     "Strain": "NA"
                                   }
@@ -9137,6 +9515,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 0.0
+                                      },
                                       "population_raw": {
                                         "value": "2.ANT"
                                       },
@@ -9169,6 +9550,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.0028793194185204526
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 823.02714885
                                       },
                                       "root_rtt_dist": {
                                         "value": 6.583149999999998e-05
@@ -9280,6 +9664,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 0.0
+                                      },
                                       "population_raw": {
                                         "value": "2.ANT"
                                       },
@@ -9312,6 +9699,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.055864938684866514
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 823.02714885
                                       },
                                       "root_rtt_dist": {
                                         "value": 6.627899999999998e-05
@@ -9395,6 +9785,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "province": {
                                     "confidence": {
                                       "Tibet": 1.0
@@ -9415,6 +9808,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.032359495152632006
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   }
                                 }
                               }
@@ -9492,6 +9888,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "province": {
                                 "confidence": {
                                   "Tibet": 1.0
@@ -9512,6 +9911,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.025908972004438514
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               }
                             }
                           },
@@ -9556,6 +9958,7 @@
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
+                                "Population Geo Dist": 0.0,
                                 "Population Raw": "NA",
                                 "Population Rtt Dist": "NA",
                                 "Province": "Tibet",
@@ -9567,6 +9970,7 @@
                                 "Province Raw": "NA",
                                 "Rate Sub": 0.0,
                                 "Rate Sub Year": 0.0,
+                                "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
                                 "Strain": "NA"
                               }
@@ -9613,6 +10017,7 @@
                                     "Population": "2.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
+                                    "Population Geo Dist": 2915.328702,
                                     "Population Raw": "NA",
                                     "Population Rtt Dist": "NA",
                                     "Province": "Gandaki Pradesh",
@@ -9624,6 +10029,7 @@
                                     "Province Raw": "NA",
                                     "Rate Sub": 1.8924292786776593e-08,
                                     "Rate Sub Year": 0.08003268877597132,
+                                    "Root Geo Dist": 2216.13922238,
                                     "Root Rtt Dist": "NA",
                                     "Strain": "NA"
                                   }
@@ -9731,6 +10137,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 2118.97103816
+                                      },
                                       "population_raw": {
                                         "value": "2.ANT"
                                       },
@@ -9763,6 +10172,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.09242246065666405
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 1382.46753999
                                       },
                                       "root_rtt_dist": {
                                         "value": 7.075469999999999e-05
@@ -9874,6 +10286,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 2915.328702
+                                      },
                                       "population_raw": {
                                         "value": "2.ANT"
                                       },
@@ -9906,6 +10321,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.060115769163927774
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 2216.13922238
                                       },
                                       "root_rtt_dist": {
                                         "value": 6.957689999999998e-05
@@ -9989,6 +10407,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 2915.328702
+                                  },
                                   "province": {
                                     "confidence": {
                                       "Gandaki Pradesh": 0.32
@@ -10009,6 +10430,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.08003268877597132
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 2216.13922238
                                   }
                                 }
                               },
@@ -10053,6 +10477,7 @@
                                     "Population": "2.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
+                                    "Population Geo Dist": 0.0,
                                     "Population Raw": "NA",
                                     "Population Rtt Dist": "NA",
                                     "Province": "Tibet",
@@ -10064,6 +10489,7 @@
                                     "Province Raw": "NA",
                                     "Rate Sub": 0.0,
                                     "Rate Sub Year": 0.0,
+                                    "Root Geo Dist": 823.02714885,
                                     "Root Rtt Dist": "NA",
                                     "Strain": "NA"
                                   }
@@ -10171,6 +10597,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 2915.328702
+                                      },
                                       "population_raw": {
                                         "value": "2.ANT"
                                       },
@@ -10203,6 +10632,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.20581738155926627
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 2216.13922238
                                       },
                                       "root_rtt_dist": {
                                         "value": 8.179639999999999e-05
@@ -10314,6 +10746,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 0.0
+                                      },
                                       "population_raw": {
                                         "value": "2.ANT"
                                       },
@@ -10346,6 +10781,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.01960295643381216
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 823.02714885
                                       },
                                       "root_rtt_dist": {
                                         "value": 6.6279e-05
@@ -10429,6 +10867,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "province": {
                                     "confidence": {
                                       "Tibet": 0.99
@@ -10449,6 +10890,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.0
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   }
                                 }
                               }
@@ -10526,6 +10970,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "province": {
                                 "confidence": {
                                   "Tibet": 0.99
@@ -10546,6 +10993,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.0
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               }
                             }
                           }
@@ -10620,6 +11070,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "province": {
                             "confidence": {
                               "Tibet": 1.0
@@ -10640,6 +11093,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.0
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           }
                         }
                       }
@@ -10717,6 +11173,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "province": {
                         "confidence": {
                           "Tibet": 1.0
@@ -10737,6 +11196,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.0
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       }
                     }
                   },
@@ -10781,6 +11243,7 @@
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
+                        "Population Geo Dist": 0.0,
                         "Population Raw": "NA",
                         "Population Rtt Dist": "NA",
                         "Province": "Tibet",
@@ -10792,6 +11255,7 @@
                         "Province Raw": "NA",
                         "Rate Sub": 2.7342956475306597e-09,
                         "Rate Sub Year": 0.011563604254380619,
+                        "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
                         "Strain": "NA"
                       }
@@ -10838,6 +11302,7 @@
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
+                            "Population Geo Dist": 0.0,
                             "Population Raw": "NA",
                             "Population Rtt Dist": "NA",
                             "Province": "Tibet",
@@ -10849,6 +11314,7 @@
                             "Province Raw": "NA",
                             "Rate Sub": 3.2840482115844435e-09,
                             "Rate Sub Year": 0.013888561723515347,
+                            "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
                             "Strain": "NA"
                           }
@@ -10956,6 +11422,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "population_raw": {
                                 "value": "2.ANT"
                               },
@@ -10988,6 +11457,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.002321804483712404
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               },
                               "root_rtt_dist": {
                                 "value": 6.416929999999998e-05
@@ -11099,6 +11571,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "population_raw": {
                                 "value": "2.ANT"
                               },
@@ -11131,6 +11606,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.002321804483712404
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               },
                               "root_rtt_dist": {
                                 "value": 6.416929999999998e-05
@@ -11214,6 +11692,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "province": {
                             "confidence": {
                               "Tibet": 1.0
@@ -11234,6 +11715,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.013888561723515347
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           }
                         }
                       },
@@ -11278,6 +11762,7 @@
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
+                            "Population Geo Dist": 0.0,
                             "Population Raw": "NA",
                             "Population Rtt Dist": "NA",
                             "Province": "Tibet",
@@ -11289,6 +11774,7 @@
                             "Province Raw": "NA",
                             "Rate Sub": 1.058417391174114e-08,
                             "Rate Sub Year": 0.04476150872179664,
+                            "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
                             "Strain": "NA"
                           }
@@ -11396,6 +11882,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "population_raw": {
                                 "value": "2.ANT"
                               },
@@ -11428,6 +11917,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.04644283757707146
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               },
                               "root_rtt_dist": {
                                 "value": 6.555909999999998e-05
@@ -11478,6 +11970,7 @@
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
+                                "Population Geo Dist": 0.0,
                                 "Population Raw": "NA",
                                 "Population Rtt Dist": "NA",
                                 "Province": "Tibet",
@@ -11489,6 +11982,7 @@
                                 "Province Raw": "NA",
                                 "Rate Sub": 1.4999173774325991e-09,
                                 "Rate Sub Year": 0.0063432975810654504,
+                                "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
                                 "Strain": "NA"
                               }
@@ -11596,6 +12090,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "population_raw": {
                                     "value": "2.ANT"
                                   },
@@ -11628,6 +12125,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.0027598208393936545
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   },
                                   "root_rtt_dist": {
                                     "value": 6.513519999999998e-05
@@ -11678,6 +12178,7 @@
                                     "Population": "2.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
+                                    "Population Geo Dist": 0.0,
                                     "Population Raw": "NA",
                                     "Population Rtt Dist": "NA",
                                     "Province": "Tibet",
@@ -11689,6 +12190,7 @@
                                     "Province Raw": "NA",
                                     "Rate Sub": 0.0,
                                     "Rate Sub Year": 0.0,
+                                    "Root Geo Dist": 823.02714885,
                                     "Root Rtt Dist": "NA",
                                     "Strain": "NA"
                                   }
@@ -11735,6 +12237,7 @@
                                         "Population": "2.ANT",
                                         "Population Conf Category": "HIGH",
                                         "Population Confidence": 1.0,
+                                        "Population Geo Dist": 0.0,
                                         "Population Raw": "NA",
                                         "Population Rtt Dist": "NA",
                                         "Province": "Tibet",
@@ -11746,6 +12249,7 @@
                                         "Province Raw": "NA",
                                         "Rate Sub": 1.2042905401957483e-09,
                                         "Rate Sub Year": 0.005093062714960759,
+                                        "Root Geo Dist": 823.02714885,
                                         "Root Rtt Dist": "NA",
                                         "Strain": "NA"
                                       }
@@ -11853,6 +12357,9 @@
                                           "population_conf_category": {
                                             "value": "HIGH"
                                           },
+                                          "population_geo_dist": {
+                                            "value": 0.0
+                                          },
                                           "population_raw": {
                                             "value": "2.ANT"
                                           },
@@ -11885,6 +12392,9 @@
                                           },
                                           "rate_sub_year": {
                                             "value": 0.0
+                                          },
+                                          "root_geo_dist": {
+                                            "value": 823.02714885
                                           },
                                           "root_rtt_dist": {
                                             "value": 6.515879999999998e-05
@@ -11996,6 +12506,9 @@
                                           "population_conf_category": {
                                             "value": "HIGH"
                                           },
+                                          "population_geo_dist": {
+                                            "value": 0.0
+                                          },
                                           "population_raw": {
                                             "value": "2.ANT"
                                           },
@@ -12028,6 +12541,9 @@
                                           },
                                           "rate_sub_year": {
                                             "value": 0.0
+                                          },
+                                          "root_geo_dist": {
+                                            "value": 823.02714885
                                           },
                                           "root_rtt_dist": {
                                             "value": 6.515879999999998e-05
@@ -12108,6 +12624,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 0.0
+                                      },
                                       "province": {
                                         "confidence": {
                                           "Tibet": 1.0
@@ -12128,6 +12647,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.005093062714960759
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 823.02714885
                                       }
                                     }
                                   },
@@ -12172,6 +12694,7 @@
                                         "Population": "2.ANT",
                                         "Population Conf Category": "HIGH",
                                         "Population Confidence": 1.0,
+                                        "Population Geo Dist": 0.0,
                                         "Population Raw": "NA",
                                         "Population Rtt Dist": "NA",
                                         "Province": "Tibet",
@@ -12183,6 +12706,7 @@
                                         "Province Raw": "NA",
                                         "Rate Sub": 0.0,
                                         "Rate Sub Year": 0.0,
+                                        "Root Geo Dist": 823.02714885,
                                         "Root Rtt Dist": "NA",
                                         "Strain": "NA"
                                       }
@@ -12229,6 +12753,7 @@
                                             "Population": "2.ANT",
                                             "Population Conf Category": "HIGH",
                                             "Population Confidence": 1.0,
+                                            "Population Geo Dist": 0.0,
                                             "Population Raw": "NA",
                                             "Population Rtt Dist": "NA",
                                             "Province": "Tibet",
@@ -12240,6 +12765,7 @@
                                             "Province Raw": "NA",
                                             "Rate Sub": 0.0,
                                             "Rate Sub Year": 0.0,
+                                            "Root Geo Dist": 823.02714885,
                                             "Root Rtt Dist": "NA",
                                             "Strain": "NA"
                                           }
@@ -12286,6 +12812,7 @@
                                                 "Population": "2.ANT",
                                                 "Population Conf Category": "HIGH",
                                                 "Population Confidence": 1.0,
+                                                "Population Geo Dist": 0.0,
                                                 "Population Raw": "NA",
                                                 "Population Rtt Dist": "NA",
                                                 "Province": "Tibet",
@@ -12297,6 +12824,7 @@
                                                 "Province Raw": "NA",
                                                 "Rate Sub": 0.0,
                                                 "Rate Sub Year": 0.0,
+                                                "Root Geo Dist": 823.02714885,
                                                 "Root Rtt Dist": "NA",
                                                 "Strain": "NA"
                                               }
@@ -12404,6 +12932,9 @@
                                                   "population_conf_category": {
                                                     "value": "HIGH"
                                                   },
+                                                  "population_geo_dist": {
+                                                    "value": 0.0
+                                                  },
                                                   "population_raw": {
                                                     "value": "2.ANT"
                                                   },
@@ -12436,6 +12967,9 @@
                                                   },
                                                   "rate_sub_year": {
                                                     "value": 0.10722897426555664
+                                                  },
+                                                  "root_geo_dist": {
+                                                    "value": 823.02714885
                                                   },
                                                   "root_rtt_dist": {
                                                     "value": 6.614829999999997e-05
@@ -12547,6 +13081,9 @@
                                                   "population_conf_category": {
                                                     "value": "HIGH"
                                                   },
+                                                  "population_geo_dist": {
+                                                    "value": 0.0
+                                                  },
                                                   "population_raw": {
                                                     "value": "2.ANT"
                                                   },
@@ -12579,6 +13116,9 @@
                                                   },
                                                   "rate_sub_year": {
                                                     "value": 0.039594959855667966
+                                                  },
+                                                  "root_geo_dist": {
+                                                    "value": 823.02714885
                                                   },
                                                   "root_rtt_dist": {
                                                     "value": 6.544159999999997e-05
@@ -12659,6 +13199,9 @@
                                               "population_conf_category": {
                                                 "value": "HIGH"
                                               },
+                                              "population_geo_dist": {
+                                                "value": 0.0
+                                              },
                                               "province": {
                                                 "confidence": {
                                                   "Tibet": 1.0
@@ -12679,6 +13222,9 @@
                                               },
                                               "rate_sub_year": {
                                                 "value": 0.0
+                                              },
+                                              "root_geo_dist": {
+                                                "value": 823.02714885
                                               }
                                             }
                                           },
@@ -12723,6 +13269,7 @@
                                                 "Population": "2.ANT",
                                                 "Population Conf Category": "HIGH",
                                                 "Population Confidence": 1.0,
+                                                "Population Geo Dist": 0.0,
                                                 "Population Raw": "NA",
                                                 "Population Rtt Dist": "NA",
                                                 "Province": "Tibet",
@@ -12734,6 +13281,7 @@
                                                 "Province Raw": "NA",
                                                 "Rate Sub": 2.8083547261585906e-08,
                                                 "Rate Sub Year": 0.11876807355687843,
+                                                "Root Geo Dist": 823.02714885,
                                                 "Root Rtt Dist": "NA",
                                                 "Strain": "NA"
                                               }
@@ -12841,6 +13389,9 @@
                                                   "population_conf_category": {
                                                     "value": "HIGH"
                                                   },
+                                                  "population_geo_dist": {
+                                                    "value": 0.0
+                                                  },
                                                   "population_raw": {
                                                     "value": "2.ANT"
                                                   },
@@ -12873,6 +13424,9 @@
                                                   },
                                                   "rate_sub_year": {
                                                     "value": 0.0499033564
+                                                  },
+                                                  "root_geo_dist": {
+                                                    "value": 823.02714885
                                                   },
                                                   "root_rtt_dist": {
                                                     "value": 6.591269999999997e-05
@@ -12923,6 +13477,7 @@
                                                     "Population": "2.ANT",
                                                     "Population Conf Category": "HIGH",
                                                     "Population Confidence": 1.0,
+                                                    "Population Geo Dist": 0.0,
                                                     "Population Raw": "NA",
                                                     "Population Rtt Dist": "NA",
                                                     "Province": "Tibet",
@@ -12934,6 +13489,7 @@
                                                     "Province Raw": "NA",
                                                     "Rate Sub": 0.0,
                                                     "Rate Sub Year": 0.0,
+                                                    "Root Geo Dist": 823.02714885,
                                                     "Root Rtt Dist": "NA",
                                                     "Strain": "NA"
                                                   }
@@ -13041,6 +13597,9 @@
                                                       "population_conf_category": {
                                                         "value": "HIGH"
                                                       },
+                                                      "population_geo_dist": {
+                                                        "value": 0.0
+                                                      },
                                                       "population_raw": {
                                                         "value": "2.ANT"
                                                       },
@@ -13073,6 +13632,9 @@
                                                       },
                                                       "rate_sub_year": {
                                                         "value": 0.0499033564
+                                                      },
+                                                      "root_geo_dist": {
+                                                        "value": 823.02714885
                                                       },
                                                       "root_rtt_dist": {
                                                         "value": 6.593629999999998e-05
@@ -13123,6 +13685,7 @@
                                                         "Population": "2.ANT",
                                                         "Population Conf Category": "HIGH",
                                                         "Population Confidence": 1.0,
+                                                        "Population Geo Dist": 0.0,
                                                         "Population Raw": "NA",
                                                         "Population Rtt Dist": "NA",
                                                         "Province": "Tibet",
@@ -13134,6 +13697,7 @@
                                                         "Province Raw": "NA",
                                                         "Rate Sub": 0.0,
                                                         "Rate Sub Year": 0.0,
+                                                        "Root Geo Dist": 823.02714885,
                                                         "Root Rtt Dist": "NA",
                                                         "Strain": "NA"
                                                       }
@@ -13241,6 +13805,9 @@
                                                           "population_conf_category": {
                                                             "value": "HIGH"
                                                           },
+                                                          "population_geo_dist": {
+                                                            "value": 0.0
+                                                          },
                                                           "population_raw": {
                                                             "value": "2.ANT"
                                                           },
@@ -13273,6 +13840,9 @@
                                                           },
                                                           "rate_sub_year": {
                                                             "value": 0.49818774439999997
+                                                          },
+                                                          "root_geo_dist": {
+                                                            "value": 823.02714885
                                                           },
                                                           "root_rtt_dist": {
                                                             "value": 6.617189999999998e-05
@@ -13384,6 +13954,9 @@
                                                           "population_conf_category": {
                                                             "value": "HIGH"
                                                           },
+                                                          "population_geo_dist": {
+                                                            "value": 0.0
+                                                          },
                                                           "population_raw": {
                                                             "value": "2.ANT"
                                                           },
@@ -13416,6 +13989,9 @@
                                                           },
                                                           "rate_sub_year": {
                                                             "value": 0.0
+                                                          },
+                                                          "root_geo_dist": {
+                                                            "value": 823.02714885
                                                           },
                                                           "root_rtt_dist": {
                                                             "value": 6.595989999999996e-05
@@ -13496,6 +14072,9 @@
                                                       "population_conf_category": {
                                                         "value": "HIGH"
                                                       },
+                                                      "population_geo_dist": {
+                                                        "value": 0.0
+                                                      },
                                                       "province": {
                                                         "confidence": {
                                                           "Tibet": 1.0
@@ -13516,6 +14095,9 @@
                                                       },
                                                       "rate_sub_year": {
                                                         "value": 0.0
+                                                      },
+                                                      "root_geo_dist": {
+                                                        "value": 823.02714885
                                                       }
                                                     }
                                                   }
@@ -13590,6 +14172,9 @@
                                                   "population_conf_category": {
                                                     "value": "HIGH"
                                                   },
+                                                  "population_geo_dist": {
+                                                    "value": 0.0
+                                                  },
                                                   "province": {
                                                     "confidence": {
                                                       "Tibet": 1.0
@@ -13610,6 +14195,9 @@
                                                   },
                                                   "rate_sub_year": {
                                                     "value": 0.0
+                                                  },
+                                                  "root_geo_dist": {
+                                                    "value": 823.02714885
                                                   }
                                                 }
                                               }
@@ -13687,6 +14275,9 @@
                                               "population_conf_category": {
                                                 "value": "HIGH"
                                               },
+                                              "population_geo_dist": {
+                                                "value": 0.0
+                                              },
                                               "province": {
                                                 "confidence": {
                                                   "Tibet": 1.0
@@ -13707,6 +14298,9 @@
                                               },
                                               "rate_sub_year": {
                                                 "value": 0.11876807355687843
+                                              },
+                                              "root_geo_dist": {
+                                                "value": 823.02714885
                                               }
                                             }
                                           }
@@ -13781,6 +14375,9 @@
                                           "population_conf_category": {
                                             "value": "HIGH"
                                           },
+                                          "population_geo_dist": {
+                                            "value": 0.0
+                                          },
                                           "province": {
                                             "confidence": {
                                               "Tibet": 1.0
@@ -13801,6 +14398,9 @@
                                           },
                                           "rate_sub_year": {
                                             "value": 0.0
+                                          },
+                                          "root_geo_dist": {
+                                            "value": 823.02714885
                                           }
                                         }
                                       },
@@ -13845,6 +14445,7 @@
                                             "Population": "2.ANT",
                                             "Population Conf Category": "HIGH",
                                             "Population Confidence": 1.0,
+                                            "Population Geo Dist": 0.0,
                                             "Population Raw": "NA",
                                             "Population Rtt Dist": "NA",
                                             "Province": "Tibet",
@@ -13856,6 +14457,7 @@
                                             "Province Raw": "NA",
                                             "Rate Sub": 2.617972380391387e-09,
                                             "Rate Sub Year": 0.011071661757968455,
+                                            "Root Geo Dist": 823.02714885,
                                             "Root Rtt Dist": "NA",
                                             "Strain": "NA"
                                           }
@@ -13963,6 +14565,9 @@
                                               "population_conf_category": {
                                                 "value": "HIGH"
                                               },
+                                              "population_geo_dist": {
+                                                "value": 0.0
+                                              },
                                               "population_raw": {
                                                 "value": "2.ANT"
                                               },
@@ -13995,6 +14600,9 @@
                                               },
                                               "rate_sub_year": {
                                                 "value": 0.003968520883035913
+                                              },
+                                              "root_geo_dist": {
+                                                "value": 823.02714885
                                               },
                                               "root_rtt_dist": {
                                                 "value": 6.520599999999997e-05
@@ -14045,6 +14653,7 @@
                                                 "Population": "2.ANT",
                                                 "Population Conf Category": "HIGH",
                                                 "Population Confidence": 1.0,
+                                                "Population Geo Dist": 0.0,
                                                 "Population Raw": "NA",
                                                 "Population Rtt Dist": "NA",
                                                 "Province": "Tibet",
@@ -14056,6 +14665,7 @@
                                                 "Province Raw": "NA",
                                                 "Rate Sub": 0.0,
                                                 "Rate Sub Year": 0.0,
+                                                "Root Geo Dist": 823.02714885,
                                                 "Root Rtt Dist": "NA",
                                                 "Strain": "NA"
                                               }
@@ -14102,6 +14712,7 @@
                                                     "Population": "2.ANT",
                                                     "Population Conf Category": "HIGH",
                                                     "Population Confidence": 1.0,
+                                                    "Population Geo Dist": 0.0,
                                                     "Population Raw": "NA",
                                                     "Population Rtt Dist": "NA",
                                                     "Province": "Tibet",
@@ -14113,6 +14724,7 @@
                                                     "Province Raw": "NA",
                                                     "Rate Sub": 1.6567100266056396e-09,
                                                     "Rate Sub Year": 0.007006389060097858,
+                                                    "Root Geo Dist": 823.02714885,
                                                     "Root Rtt Dist": "NA",
                                                     "Strain": "NA"
                                                   }
@@ -14220,6 +14832,9 @@
                                                       "population_conf_category": {
                                                         "value": "HIGH"
                                                       },
+                                                      "population_geo_dist": {
+                                                        "value": 0.0
+                                                      },
                                                       "population_raw": {
                                                         "value": "2.ANT"
                                                       },
@@ -14252,6 +14867,9 @@
                                                       },
                                                       "rate_sub_year": {
                                                         "value": 0.05240545484140278
+                                                      },
+                                                      "root_geo_dist": {
+                                                        "value": 823.02714885
                                                       },
                                                       "root_rtt_dist": {
                                                         "value": 6.525319999999998e-05
@@ -14363,6 +14981,9 @@
                                                       "population_conf_category": {
                                                         "value": "HIGH"
                                                       },
+                                                      "population_geo_dist": {
+                                                        "value": 0.0
+                                                      },
                                                       "population_raw": {
                                                         "value": "2.ANT"
                                                       },
@@ -14395,6 +15016,9 @@
                                                       },
                                                       "rate_sub_year": {
                                                         "value": 0.007178015232478694
+                                                      },
+                                                      "root_geo_dist": {
+                                                        "value": 823.02714885
                                                       },
                                                       "root_rtt_dist": {
                                                         "value": 6.525319999999998e-05
@@ -14475,6 +15099,9 @@
                                                   "population_conf_category": {
                                                     "value": "HIGH"
                                                   },
+                                                  "population_geo_dist": {
+                                                    "value": 0.0
+                                                  },
                                                   "province": {
                                                     "confidence": {
                                                       "Tibet": 1.0
@@ -14495,6 +15122,9 @@
                                                   },
                                                   "rate_sub_year": {
                                                     "value": 0.007006389060097858
+                                                  },
+                                                  "root_geo_dist": {
+                                                    "value": 823.02714885
                                                   }
                                                 }
                                               },
@@ -14539,6 +15169,7 @@
                                                     "Population": "2.ANT",
                                                     "Population Conf Category": "HIGH",
                                                     "Population Confidence": 1.0,
+                                                    "Population Geo Dist": 0.0,
                                                     "Population Raw": "NA",
                                                     "Population Rtt Dist": "NA",
                                                     "Province": "Tibet",
@@ -14550,6 +15181,7 @@
                                                     "Province Raw": "NA",
                                                     "Rate Sub": 0.0,
                                                     "Rate Sub Year": 0.0,
+                                                    "Root Geo Dist": 823.02714885,
                                                     "Root Rtt Dist": "NA",
                                                     "Strain": "NA"
                                                   }
@@ -14596,6 +15228,7 @@
                                                         "Population": "2.ANT",
                                                         "Population Conf Category": "HIGH",
                                                         "Population Confidence": 1.0,
+                                                        "Population Geo Dist": 0.0,
                                                         "Population Raw": "NA",
                                                         "Population Rtt Dist": "NA",
                                                         "Province": "Tibet",
@@ -14607,6 +15240,7 @@
                                                         "Province Raw": "NA",
                                                         "Rate Sub": 2.11308028987587e-08,
                                                         "Rate Sub Year": 0.08936423627753462,
+                                                        "Root Geo Dist": 823.02714885,
                                                         "Root Rtt Dist": "NA",
                                                         "Strain": "NA"
                                                       }
@@ -14714,6 +15348,9 @@
                                                           "population_conf_category": {
                                                             "value": "HIGH"
                                                           },
+                                                          "population_geo_dist": {
+                                                            "value": 0.0
+                                                          },
                                                           "population_raw": {
                                                             "value": "2.ANT"
                                                           },
@@ -14746,6 +15383,9 @@
                                                           },
                                                           "rate_sub_year": {
                                                             "value": 0.0
+                                                          },
+                                                          "root_geo_dist": {
+                                                            "value": 823.02714885
                                                           },
                                                           "root_rtt_dist": {
                                                             "value": 6.548879999999998e-05
@@ -14857,6 +15497,9 @@
                                                           "population_conf_category": {
                                                             "value": "HIGH"
                                                           },
+                                                          "population_geo_dist": {
+                                                            "value": 0.0
+                                                          },
                                                           "population_raw": {
                                                             "value": "2.ANT"
                                                           },
@@ -14889,6 +15532,9 @@
                                                           },
                                                           "rate_sub_year": {
                                                             "value": 0.0
+                                                          },
+                                                          "root_geo_dist": {
+                                                            "value": 823.02714885
                                                           },
                                                           "root_rtt_dist": {
                                                             "value": 6.548879999999998e-05
@@ -14972,6 +15618,9 @@
                                                       "population_conf_category": {
                                                         "value": "HIGH"
                                                       },
+                                                      "population_geo_dist": {
+                                                        "value": 0.0
+                                                      },
                                                       "province": {
                                                         "confidence": {
                                                           "Tibet": 1.0
@@ -14992,6 +15641,9 @@
                                                       },
                                                       "rate_sub_year": {
                                                         "value": 0.08936423627753462
+                                                      },
+                                                      "root_geo_dist": {
+                                                        "value": 823.02714885
                                                       }
                                                     }
                                                   },
@@ -15036,6 +15688,7 @@
                                                         "Population": "2.ANT",
                                                         "Population Conf Category": "HIGH",
                                                         "Population Confidence": 1.0,
+                                                        "Population Geo Dist": 0.0,
                                                         "Population Raw": "NA",
                                                         "Population Rtt Dist": "NA",
                                                         "Province": "Tibet",
@@ -15047,6 +15700,7 @@
                                                         "Province Raw": "NA",
                                                         "Rate Sub": 4.0923226602268974e-08,
                                                         "Rate Sub Year": 0.17306833577720254,
+                                                        "Root Geo Dist": 823.02714885,
                                                         "Root Rtt Dist": "NA",
                                                         "Strain": "NA"
                                                       }
@@ -15154,6 +15808,9 @@
                                                           "population_conf_category": {
                                                             "value": "HIGH"
                                                           },
+                                                          "population_geo_dist": {
+                                                            "value": 0.0
+                                                          },
                                                           "population_raw": {
                                                             "value": "2.ANT"
                                                           },
@@ -15186,6 +15843,9 @@
                                                           },
                                                           "rate_sub_year": {
                                                             "value": 0.2067187114787811
+                                                          },
+                                                          "root_geo_dist": {
+                                                            "value": 823.02714885
                                                           },
                                                           "root_rtt_dist": {
                                                             "value": 6.617179999999996e-05
@@ -15236,6 +15896,7 @@
                                                             "Population": "2.ANT",
                                                             "Population Conf Category": "HIGH",
                                                             "Population Confidence": 1.0,
+                                                            "Population Geo Dist": 0.0,
                                                             "Population Raw": "NA",
                                                             "Population Rtt Dist": "NA",
                                                             "Province": "Tibet",
@@ -15247,6 +15908,7 @@
                                                             "Province Raw": "NA",
                                                             "Rate Sub": 6.663617214720947e-09,
                                                             "Rate Sub Year": 0.02818109023554193,
+                                                            "Root Geo Dist": 823.02714885,
                                                             "Root Rtt Dist": "NA",
                                                             "Strain": "NA"
                                                           }
@@ -15354,6 +16016,9 @@
                                                               "population_conf_category": {
                                                                 "value": "HIGH"
                                                               },
+                                                              "population_geo_dist": {
+                                                                "value": 0.0
+                                                              },
                                                               "population_raw": {
                                                                 "value": "2.ANT"
                                                               },
@@ -15386,6 +16051,9 @@
                                                               },
                                                               "rate_sub_year": {
                                                                 "value": 0.09868719122846983
+                                                              },
+                                                              "root_geo_dist": {
+                                                                "value": 823.02714885
                                                               },
                                                               "root_rtt_dist": {
                                                                 "value": 6.595989999999996e-05
@@ -15497,6 +16165,9 @@
                                                               "population_conf_category": {
                                                                 "value": "HIGH"
                                                               },
+                                                              "population_geo_dist": {
+                                                                "value": 0.0
+                                                              },
                                                               "population_raw": {
                                                                 "value": "2.ANT"
                                                               },
@@ -15529,6 +16200,9 @@
                                                               },
                                                               "rate_sub_year": {
                                                                 "value": 0.009885474163802583
+                                                              },
+                                                              "root_geo_dist": {
+                                                                "value": 823.02714885
                                                               },
                                                               "root_rtt_dist": {
                                                                 "value": 6.574789999999996e-05
@@ -15609,6 +16283,9 @@
                                                           "population_conf_category": {
                                                             "value": "HIGH"
                                                           },
+                                                          "population_geo_dist": {
+                                                            "value": 0.0
+                                                          },
                                                           "province": {
                                                             "confidence": {
                                                               "Tibet": 1.0
@@ -15629,6 +16306,9 @@
                                                           },
                                                           "rate_sub_year": {
                                                             "value": 0.02818109023554193
+                                                          },
+                                                          "root_geo_dist": {
+                                                            "value": 823.02714885
                                                           }
                                                         }
                                                       }
@@ -15706,6 +16386,9 @@
                                                       "population_conf_category": {
                                                         "value": "HIGH"
                                                       },
+                                                      "population_geo_dist": {
+                                                        "value": 0.0
+                                                      },
                                                       "province": {
                                                         "confidence": {
                                                           "Tibet": 1.0
@@ -15726,6 +16409,9 @@
                                                       },
                                                       "rate_sub_year": {
                                                         "value": 0.17306833577720254
+                                                      },
+                                                      "root_geo_dist": {
+                                                        "value": 823.02714885
                                                       }
                                                     }
                                                   }
@@ -15800,6 +16486,9 @@
                                                   "population_conf_category": {
                                                     "value": "HIGH"
                                                   },
+                                                  "population_geo_dist": {
+                                                    "value": 0.0
+                                                  },
                                                   "province": {
                                                     "confidence": {
                                                       "Tibet": 1.0
@@ -15820,6 +16509,9 @@
                                                   },
                                                   "rate_sub_year": {
                                                     "value": 0.0
+                                                  },
+                                                  "root_geo_dist": {
+                                                    "value": 823.02714885
                                                   }
                                                 }
                                               }
@@ -15894,6 +16586,9 @@
                                               "population_conf_category": {
                                                 "value": "HIGH"
                                               },
+                                              "population_geo_dist": {
+                                                "value": 0.0
+                                              },
                                               "province": {
                                                 "confidence": {
                                                   "Tibet": 1.0
@@ -15914,6 +16609,9 @@
                                               },
                                               "rate_sub_year": {
                                                 "value": 0.0
+                                              },
+                                              "root_geo_dist": {
+                                                "value": 823.02714885
                                               }
                                             }
                                           }
@@ -15988,6 +16686,9 @@
                                           "population_conf_category": {
                                             "value": "HIGH"
                                           },
+                                          "population_geo_dist": {
+                                            "value": 0.0
+                                          },
                                           "province": {
                                             "confidence": {
                                               "Tibet": 1.0
@@ -16008,6 +16709,9 @@
                                           },
                                           "rate_sub_year": {
                                             "value": 0.011071661757968455
+                                          },
+                                          "root_geo_dist": {
+                                            "value": 823.02714885
                                           }
                                         }
                                       }
@@ -16082,6 +16786,9 @@
                                       "population_conf_category": {
                                         "value": "HIGH"
                                       },
+                                      "population_geo_dist": {
+                                        "value": 0.0
+                                      },
                                       "province": {
                                         "confidence": {
                                           "Tibet": 1.0
@@ -16102,6 +16809,9 @@
                                       },
                                       "rate_sub_year": {
                                         "value": 0.0
+                                      },
+                                      "root_geo_dist": {
+                                        "value": 823.02714885
                                       }
                                     }
                                   }
@@ -16176,6 +16886,9 @@
                                   "population_conf_category": {
                                     "value": "HIGH"
                                   },
+                                  "population_geo_dist": {
+                                    "value": 0.0
+                                  },
                                   "province": {
                                     "confidence": {
                                       "Tibet": 1.0
@@ -16196,6 +16909,9 @@
                                   },
                                   "rate_sub_year": {
                                     "value": 0.0
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 823.02714885
                                   }
                                 }
                               }
@@ -16270,6 +16986,9 @@
                               "population_conf_category": {
                                 "value": "HIGH"
                               },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
                               "province": {
                                 "confidence": {
                                   "Tibet": 1.0
@@ -16290,6 +17009,9 @@
                               },
                               "rate_sub_year": {
                                 "value": 0.0063432975810654504
+                              },
+                              "root_geo_dist": {
+                                "value": 823.02714885
                               }
                             }
                           }
@@ -16367,6 +17089,9 @@
                           "population_conf_category": {
                             "value": "HIGH"
                           },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
                           "province": {
                             "confidence": {
                               "Tibet": 1.0
@@ -16387,6 +17112,9 @@
                           },
                           "rate_sub_year": {
                             "value": 0.04476150872179664
+                          },
+                          "root_geo_dist": {
+                            "value": 823.02714885
                           }
                         }
                       }
@@ -16464,6 +17192,9 @@
                       "population_conf_category": {
                         "value": "HIGH"
                       },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
                       "province": {
                         "confidence": {
                           "Tibet": 1.0
@@ -16484,6 +17215,9 @@
                       },
                       "rate_sub_year": {
                         "value": 0.011563604254380619
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
                       }
                     }
                   }
@@ -16558,6 +17292,9 @@
                   "population_conf_category": {
                     "value": "HIGH"
                   },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
                   "province": {
                     "confidence": {
                       "Tibet": 1.0
@@ -16578,6 +17315,9 @@
                   },
                   "rate_sub_year": {
                     "value": 0.0
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
                   }
                 }
               }
@@ -16652,6 +17392,9 @@
               "population_conf_category": {
                 "value": "HIGH"
               },
+              "population_geo_dist": {
+                "value": 0.0
+              },
               "province": {
                 "confidence": {
                   "Tibet": 1.0
@@ -16672,6 +17415,9 @@
               },
               "rate_sub_year": {
                 "value": 0.0017090249076195468
+              },
+              "root_geo_dist": {
+                "value": 823.02714885
               }
             }
           }
@@ -16749,6 +17495,9 @@
           "population_conf_category": {
             "value": "HIGH"
           },
+          "population_geo_dist": {
+            "value": 0.0
+          },
           "province": {
             "confidence": {
               "Qinghai": 0.6
@@ -16769,6 +17518,9 @@
           },
           "rate_sub_year": {
             "value": 0.01505861759001125
+          },
+          "root_geo_dist": {
+            "value": 823.02714885
           }
         }
       }
@@ -16846,6 +17598,9 @@
       "population_conf_category": {
         "value": "HIGH"
       },
+      "population_geo_dist": {
+        "value": 0.0
+      },
       "province": {
         "confidence": {
           "Inner Mongolia": 0.5
@@ -16866,6 +17621,9 @@
       },
       "rate_sub_year": {
         "value": 0.03967125077993446
+      },
+      "root_geo_dist": {
+        "value": 823.02714885
       }
     }
   },
