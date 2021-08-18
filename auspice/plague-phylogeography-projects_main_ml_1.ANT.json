@@ -1,465 +1,1850 @@
 {
-  "alignment": null,
-  "generated_by": {
-    "program": "augur",
-    "version": "10.3.0"
+  "meta": {
+    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main",
+    "colorings": [
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Africa",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Africa",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Kenya",
+            "#d0e083"
+          ],
+          [
+            "Uganda",
+            "#ddd579"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#ebc970"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "Kenya",
+            "#d0e083"
+          ],
+          [
+            "Uganda",
+            "#ddd579"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#ebc970"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Nairobi",
+            "#ffa055"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "NA",
+            "#3f62fa"
+          ],
+          [
+            "Nairobi",
+            "#ffa055"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "Kenya",
+            "#d0e083"
+          ],
+          [
+            "Uganda",
+            "#ddd579"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#ebc970"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Africa",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Africa",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Kenya",
+            "#d0e083"
+          ],
+          [
+            "Uganda",
+            "#ddd579"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#ebc970"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "NA",
+            "#3f62fa"
+          ],
+          [
+            "Nairobi",
+            "#ffa055"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Nairobi",
+            "#ffa055"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      }
+    ],
+    "display_defaults": {
+      "branch_label": "none",
+      "color_by": "population",
+      "distance_measure": "num_date",
+      "geo_resolution": "province",
+      "layout": "rect",
+      "map_triplicate": true,
+      "transmission_lines": true
+    },
+    "filters": [
+      "continent",
+      "country",
+      "province",
+      "population",
+      "host_order"
+    ],
+    "geo_resolutions": [
+      {
+        "demes": {
+          "Democratic Republic of the Congo": {
+            "latitude": -2.9814344,
+            "longitude": 23.82226360000001
+          },
+          "Kenya": {
+            "latitude": 1.4419683,
+            "longitude": 38.4313975
+          },
+          "Uganda": {
+            "latitude": 1.5333553999999998,
+            "longitude": 32.2166578
+          }
+        },
+        "key": "country"
+      },
+      {
+        "demes": {
+          "Democratic Republic of the Congo": {
+            "latitude": -2.9814344,
+            "longitude": 23.82226360000001
+          },
+          "Nairobi": {
+            "latitude": -1.30316895,
+            "longitude": 36.826061224105075
+          },
+          "Uganda": {
+            "latitude": 1.5333553999999998,
+            "longitude": 32.2166578
+          }
+        },
+        "key": "province"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "name"
+      },
+      {
+        "name": "url"
+      }
+    ],
+    "panels": [
+      "tree",
+      "map"
+    ],
+    "title": "Plague Phylogeography Main",
+    "updated": "2021-08-18"
   },
-  "input_tree": null,
-  "nodes": {
-    "GCA_000013825.1_ASM1382v1_genomic": {
-      "biosample_accession": "SAMN02598369",
-      "blank": " ",
-      "branch_length": 9.423e-07,
-      "branch_length_sub": 4.0,
-      "branch_length_time": 11.0,
-      "branch_number": "1.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Africa",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Africa": 1.0
-      },
-      "continent_raw": "Africa",
-      "country": "Democratic Republic of the Congo",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Democratic Republic of the Congo": 1.0
-      },
-      "country_date_strain": "Democratic Republic of the Congo (1965.0) Antiqua",
-      "country_lat": -2.9814344,
-      "country_lon": 23.82226360000001,
-      "country_raw": "Democratic Republic of the Congo",
-      "date_bp_mean": 56.0,
-      "date_err": 0.0,
-      "date_mean": 1965.0,
-      "host_human": "Human",
-      "host_order": "Human",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Human": 1.0
-      },
-      "host_order_raw": "Human",
-      "node_name": "GCA_000013825.1_ASM1382v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1965.0,
-      "num_date_confidence": [
-        1965.0,
-        1965.0
-      ],
-      "population": "1.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "1.ANT": 1.0
-      },
-      "population_geo_dist": 9397.35942345,
-      "population_raw": "1.ANT",
-      "population_rtt_dist": 1.26615e-05,
-      "province": "Democratic Republic of the Congo",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Democratic Republic of the Congo": 0.34
-      },
-      "province_date_strain": "Democratic Republic of the Congo (1965.0) Antiqua",
-      "province_lat": -2.9814344,
-      "province_lon": 23.82226360000001,
-      "province_raw": "NA",
-      "rate_sub": 8.566363636363636e-08,
-      "rate_sub_year": 0.3622799132181818,
-      "root_geo_dist": 8596.75820251,
-      "root_rtt_dist": 8.01795e-05,
-      "strain": "Antiqua"
+  "tree": {
+    "branch_attrs": {
+      "labels": {
+        "Biosample Accession": "NA",
+        "Blank": " ",
+        "Branch Length": 1.16956e-05,
+        "Branch Length Sub": 49.0,
+        "Branch Length Time": 280.0,
+        "Branch Number": "NA",
+        "Branch Support": 100.0,
+        "Branch Support Conf Category": "HIGH",
+        "Branch Support Conf Char": "*",
+        "Continent": "Africa",
+        "Continent Conf Category": "HIGH",
+        "Continent Confidence": 1.0,
+        "Continent Raw": "NA",
+        "Country": "Uganda",
+        "Country Conf Category": "LOW",
+        "Country Confidence": 0.39,
+        "Country Date Strain": "NA",
+        "Country Lat": 1.5333553999999998,
+        "Country Lon": 32.2166578,
+        "Country Raw": "NA",
+        "Date Bp Mean": "NA",
+        "Date Err": "NA",
+        "Date Mean": "NA",
+        "Host Human": "NA",
+        "Host Order": "Human",
+        "Host Order Conf Category": "HIGH",
+        "Host Order Confidence": 0.99,
+        "Host Order Raw": "NA",
+        "Node Name": "NODE443",
+        "Node Type": "internal",
+        "Num Date": 1954.0,
+        "Num Date Confidence": [
+          1921.0,
+          1954.0
+        ],
+        "Population": "1.ANT",
+        "Population Conf Category": "HIGH",
+        "Population Confidence": 1.0,
+        "Population Geo Dist": 8346.88177051,
+        "Population Raw": "NA",
+        "Population Rtt Dist": "NA",
+        "Province": "Nairobi",
+        "Province Conf Category": "LOW",
+        "Province Confidence": 0.47,
+        "Province Date Strain": "NA",
+        "Province Lat": -1.30316895,
+        "Province Lon": 36.826061224105075,
+        "Province Raw": "NA",
+        "Rate Sub": 4.1794927689014515e-08,
+        "Rate Sub Year": 0.17675484509975592,
+        "Root Geo Dist": 7551.34389037,
+        "Root Rtt Dist": "NA",
+        "Strain": "NA"
+      }
     },
-    "GCA_000169615.1_ASM16961v1_genomic": {
-      "biosample_accession": "SAMN02404404",
-      "blank": " ",
-      "branch_length": 2.5912e-06,
-      "branch_length_sub": 11.0,
-      "branch_length_time": 50.0,
-      "branch_number": "1.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Africa",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Africa": 1.0
+    "children": [
+      {
+        "branch_attrs": {},
+        "name": "GCA_000835005.1_ASM83500v1_genomic",
+        "node_attrs": {
+          "biosample_accession": {
+            "value": "SAMN03256395"
+          },
+          "branch_length_sub": {
+            "value": 65.0
+          },
+          "branch_length_time": {
+            "value": 311.0
+          },
+          "branch_number": {
+            "value": "1.0"
+          },
+          "branch_support": {
+            "value": 0.0
+          },
+          "branch_support_conf_category": {
+            "value": "LOW"
+          },
+          "continent": {
+            "confidence": {
+              "Africa": 1.0
+            },
+            "value": "Africa"
+          },
+          "continent_conf_category": {
+            "value": "HIGH"
+          },
+          "continent_raw": {
+            "value": "Africa"
+          },
+          "country": {
+            "confidence": {
+              "Kenya": 1.0
+            },
+            "value": "Kenya"
+          },
+          "country_conf_category": {
+            "value": "HIGH"
+          },
+          "country_date_strain": {
+            "value": "Kenya (1985.0) Nairobi"
+          },
+          "country_lat": {
+            "value": 1.4419683
+          },
+          "country_lon": {
+            "value": 38.4313975
+          },
+          "country_raw": {
+            "value": "Kenya"
+          },
+          "date_bp_mean": {
+            "value": 36.0
+          },
+          "date_err": {
+            "value": 0.0
+          },
+          "date_mean": {
+            "value": 1985.0
+          },
+          "div": 1.54421e-05,
+          "host_order": {
+            "confidence": {
+              "Human": 0.81
+            },
+            "value": "Human"
+          },
+          "host_order_conf_category": {
+            "value": "LOW"
+          },
+          "node_name": {
+            "value": "GCA_000835005.1_ASM83500v1_genomic"
+          },
+          "node_type": {
+            "value": "terminal"
+          },
+          "num_date": {
+            "confidence": [
+              1985.0,
+              1985.0
+            ],
+            "value": 1985.0
+          },
+          "population": {
+            "confidence": {
+              "1.ANT": 1.0
+            },
+            "value": "1.ANT"
+          },
+          "population_conf_category": {
+            "value": "HIGH"
+          },
+          "population_geo_dist": {
+            "value": 7796.88827125
+          },
+          "population_raw": {
+            "value": "1.ANT"
+          },
+          "population_rtt_dist": {
+            "value": 1.54421e-05
+          },
+          "province": {
+            "confidence": {
+              "Nairobi": 1.0
+            },
+            "value": "Nairobi"
+          },
+          "province_conf_category": {
+            "value": "HIGH"
+          },
+          "province_date_strain": {
+            "value": "Kenya (1985.0) Nairobi"
+          },
+          "province_lat": {
+            "value": -1.30316895
+          },
+          "province_lon": {
+            "value": 36.826061224105075
+          },
+          "province_raw": {
+            "value": "Nairobi"
+          },
+          "rate_sub": {
+            "value": 4.9679731560033835e-08
+          },
+          "rate_sub_year": {
+            "value": 0.210100453381076
+          },
+          "root_geo_dist": {
+            "value": 7018.64412653
+          },
+          "root_rtt_dist": {
+            "value": 8.29601e-05
+          },
+          "strain": {
+            "value": "Nairobi"
+          }
+        }
       },
-      "continent_raw": "Africa",
-      "country": "Uganda",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Uganda": 1.0
+      {
+        "branch_attrs": {
+          "labels": {
+            "Biosample Accession": "NA",
+            "Blank": " ",
+            "Branch Length": 1.16956e-05,
+            "Branch Length Sub": 49.0,
+            "Branch Length Time": 280.0,
+            "Branch Number": "NA",
+            "Branch Support": 100.0,
+            "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
+            "Continent": "Africa",
+            "Continent Conf Category": "HIGH",
+            "Continent Confidence": 1.0,
+            "Continent Raw": "NA",
+            "Country": "Uganda",
+            "Country Conf Category": "LOW",
+            "Country Confidence": 0.39,
+            "Country Date Strain": "NA",
+            "Country Lat": 1.5333553999999998,
+            "Country Lon": 32.2166578,
+            "Country Raw": "NA",
+            "Date Bp Mean": "NA",
+            "Date Err": "NA",
+            "Date Mean": "NA",
+            "Host Human": "NA",
+            "Host Order": "Human",
+            "Host Order Conf Category": "HIGH",
+            "Host Order Confidence": 0.99,
+            "Host Order Raw": "NA",
+            "Node Name": "NODE443",
+            "Node Type": "internal",
+            "Num Date": 1954.0,
+            "Num Date Confidence": [
+              1921.0,
+              1954.0
+            ],
+            "Population": "1.ANT",
+            "Population Conf Category": "HIGH",
+            "Population Confidence": 1.0,
+            "Population Geo Dist": 8346.88177051,
+            "Population Raw": "NA",
+            "Population Rtt Dist": "NA",
+            "Province": "Nairobi",
+            "Province Conf Category": "LOW",
+            "Province Confidence": 0.47,
+            "Province Date Strain": "NA",
+            "Province Lat": -1.30316895,
+            "Province Lon": 36.826061224105075,
+            "Province Raw": "NA",
+            "Rate Sub": 4.1794927689014515e-08,
+            "Rate Sub Year": 0.17675484509975592,
+            "Root Geo Dist": 7551.34389037,
+            "Root Rtt Dist": "NA",
+            "Strain": "NA"
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {},
+            "name": "GCA_000169615.1_ASM16961v1_genomic",
+            "node_attrs": {
+              "biosample_accession": {
+                "value": "SAMN02404404"
+              },
+              "branch_length_sub": {
+                "value": 11.0
+              },
+              "branch_length_time": {
+                "value": 50.0
+              },
+              "branch_number": {
+                "value": "1.0"
+              },
+              "branch_support": {
+                "value": 0.0
+              },
+              "branch_support_conf_category": {
+                "value": "LOW"
+              },
+              "continent": {
+                "confidence": {
+                  "Africa": 1.0
+                },
+                "value": "Africa"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "continent_raw": {
+                "value": "Africa"
+              },
+              "country": {
+                "confidence": {
+                  "Uganda": 1.0
+                },
+                "value": "Uganda"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_date_strain": {
+                "value": "Uganda (2004.0) UG05-0454"
+              },
+              "country_lat": {
+                "value": 1.5333553999999998
+              },
+              "country_lon": {
+                "value": 32.2166578
+              },
+              "country_raw": {
+                "value": "Uganda"
+              },
+              "date_bp_mean": {
+                "value": 17.0
+              },
+              "date_err": {
+                "value": 0.0
+              },
+              "date_mean": {
+                "value": 2004.0
+              },
+              "div": 1.42868e-05,
+              "host_human": {
+                "value": "Human"
+              },
+              "host_order": {
+                "confidence": {
+                  "Human": 1.0
+                },
+                "value": "Human"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "host_order_raw": {
+                "value": "Human"
+              },
+              "node_name": {
+                "value": "GCA_000169615.1_ASM16961v1_genomic"
+              },
+              "node_type": {
+                "value": "terminal"
+              },
+              "num_date": {
+                "confidence": [
+                  2004.0,
+                  2004.0
+                ],
+                "value": 2004.0
+              },
+              "population": {
+                "confidence": {
+                  "1.ANT": 1.0
+                },
+                "value": "1.ANT"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 8346.88177051
+              },
+              "population_raw": {
+                "value": "1.ANT"
+              },
+              "population_rtt_dist": {
+                "value": 1.42868e-05
+              },
+              "province": {
+                "confidence": {
+                  "Uganda": 0.4
+                },
+                "value": "Uganda"
+              },
+              "province_conf_category": {
+                "value": "LOW"
+              },
+              "province_date_strain": {
+                "value": "Uganda (2004.0) UG05-0454"
+              },
+              "province_lat": {
+                "value": 1.5333553999999998
+              },
+              "province_lon": {
+                "value": 32.2166578
+              },
+              "rate_sub": {
+                "value": 5.1823999999999995e-08
+              },
+              "rate_sub_year": {
+                "value": 0.219168774752
+              },
+              "root_geo_dist": {
+                "value": 7551.34389037
+              },
+              "root_rtt_dist": {
+                "value": 8.180479999999999e-05
+              },
+              "strain": {
+                "value": "UG05-0454"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "Biosample Accession": "NA",
+                "Blank": " ",
+                "Branch Length": 2.36e-08,
+                "Branch Length Sub": 0.0,
+                "Branch Length Time": 0.0,
+                "Branch Number": "NA",
+                "Branch Support": 78.0,
+                "Branch Support Conf Category": "LOW",
+                "Branch Support Conf Char": "",
+                "Continent": "Africa",
+                "Continent Conf Category": "HIGH",
+                "Continent Confidence": 1.0,
+                "Continent Raw": "NA",
+                "Country": "Democratic Republic of the Congo",
+                "Country Conf Category": "HIGH",
+                "Country Confidence": 1.0,
+                "Country Date Strain": "NA",
+                "Country Lat": -2.9814344,
+                "Country Lon": 23.82226360000001,
+                "Country Raw": "NA",
+                "Date Bp Mean": "NA",
+                "Date Err": "NA",
+                "Date Mean": "NA",
+                "Host Human": "NA",
+                "Host Order": "Human",
+                "Host Order Conf Category": "HIGH",
+                "Host Order Confidence": 0.99,
+                "Host Order Raw": "NA",
+                "Node Name": "NODE444",
+                "Node Type": "internal",
+                "Num Date": 1954.0,
+                "Num Date Confidence": [
+                  1921.0,
+                  1954.0
+                ],
+                "Population": "1.ANT",
+                "Population Conf Category": "HIGH",
+                "Population Confidence": 1.0,
+                "Population Geo Dist": 9397.35942345,
+                "Population Raw": "NA",
+                "Population Rtt Dist": "NA",
+                "Province": "Nairobi",
+                "Province Conf Category": "LOW",
+                "Province Confidence": 0.4,
+                "Province Date Strain": "NA",
+                "Province Lat": -1.30316895,
+                "Province Lon": 36.826061224105075,
+                "Province Raw": "NA",
+                "Rate Sub": 0.0,
+                "Rate Sub Year": 0.0,
+                "Root Geo Dist": 8596.75820251,
+                "Root Rtt Dist": "NA",
+                "Strain": "NA"
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {},
+                "name": "GCA_000013825.1_ASM1382v1_genomic",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMN02598369"
+                  },
+                  "branch_length_sub": {
+                    "value": 4.0
+                  },
+                  "branch_length_time": {
+                    "value": 11.0
+                  },
+                  "branch_number": {
+                    "value": "1.0"
+                  },
+                  "branch_support": {
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Africa": 1.0
+                    },
+                    "value": "Africa"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "continent_raw": {
+                    "value": "Africa"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Democratic Republic of the Congo": 1.0
+                    },
+                    "value": "Democratic Republic of the Congo"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_date_strain": {
+                    "value": "Democratic Republic of the Congo (1965.0) Antiqua"
+                  },
+                  "country_lat": {
+                    "value": -2.9814344
+                  },
+                  "country_lon": {
+                    "value": 23.82226360000001
+                  },
+                  "country_raw": {
+                    "value": "Democratic Republic of the Congo"
+                  },
+                  "date_bp_mean": {
+                    "value": 56.0
+                  },
+                  "date_err": {
+                    "value": 0.0
+                  },
+                  "date_mean": {
+                    "value": 1965.0
+                  },
+                  "div": 1.2661499999999999e-05,
+                  "host_human": {
+                    "value": "Human"
+                  },
+                  "host_order": {
+                    "confidence": {
+                      "Human": 1.0
+                    },
+                    "value": "Human"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "host_order_raw": {
+                    "value": "Human"
+                  },
+                  "node_name": {
+                    "value": "GCA_000013825.1_ASM1382v1_genomic"
+                  },
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      1965.0,
+                      1965.0
+                    ],
+                    "value": 1965.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "1.ANT": 1.0
+                    },
+                    "value": "1.ANT"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 9397.35942345
+                  },
+                  "population_raw": {
+                    "value": "1.ANT"
+                  },
+                  "population_rtt_dist": {
+                    "value": 1.26615e-05
+                  },
+                  "province": {
+                    "confidence": {
+                      "Democratic Republic of the Congo": 0.34
+                    },
+                    "value": "Democratic Republic of the Congo"
+                  },
+                  "province_conf_category": {
+                    "value": "LOW"
+                  },
+                  "province_date_strain": {
+                    "value": "Democratic Republic of the Congo (1965.0) Antiqua"
+                  },
+                  "province_lat": {
+                    "value": -2.9814344
+                  },
+                  "province_lon": {
+                    "value": 23.82226360000001
+                  },
+                  "rate_sub": {
+                    "value": 8.566363636363636e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.3622799132181818
+                  },
+                  "root_geo_dist": {
+                    "value": 8596.75820251
+                  },
+                  "root_rtt_dist": {
+                    "value": 8.01795e-05
+                  },
+                  "strain": {
+                    "value": "Antiqua"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {},
+                "name": "GCA_003798225.1_ASM379822v1_genomic",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMN10228581"
+                  },
+                  "branch_length_sub": {
+                    "value": 0.0
+                  },
+                  "branch_length_time": {
+                    "value": 0.0
+                  },
+                  "branch_number": {
+                    "value": "1.0"
+                  },
+                  "branch_support": {
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Africa": 1.0
+                    },
+                    "value": "Africa"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "continent_raw": {
+                    "value": "Africa"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Democratic Republic of the Congo": 1.0
+                    },
+                    "value": "Democratic Republic of the Congo"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_date_strain": {
+                    "value": "Democratic Republic of the Congo (1954.0) FDAARGOS_601"
+                  },
+                  "country_lat": {
+                    "value": -2.9814344
+                  },
+                  "country_lon": {
+                    "value": 23.82226360000001
+                  },
+                  "country_raw": {
+                    "value": "Democratic Republic of the Congo"
+                  },
+                  "date_bp_mean": {
+                    "value": 67.0
+                  },
+                  "date_err": {
+                    "value": 0.0
+                  },
+                  "date_mean": {
+                    "value": 1954.0
+                  },
+                  "div": 1.1742799999999999e-05,
+                  "host_order": {
+                    "confidence": {
+                      "Human": 0.84
+                    },
+                    "value": "Human"
+                  },
+                  "host_order_conf_category": {
+                    "value": "LOW"
+                  },
+                  "node_name": {
+                    "value": "GCA_003798225.1_ASM379822v1_genomic"
+                  },
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      1954.0,
+                      1954.0
+                    ],
+                    "value": 1954.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "1.ANT": 1.0
+                    },
+                    "value": "1.ANT"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 9397.35942345
+                  },
+                  "population_raw": {
+                    "value": "1.ANT"
+                  },
+                  "population_rtt_dist": {
+                    "value": 1.17428e-05
+                  },
+                  "province": {
+                    "confidence": {
+                      "Democratic Republic of the Congo": 0.34
+                    },
+                    "value": "Democratic Republic of the Congo"
+                  },
+                  "province_conf_category": {
+                    "value": "LOW"
+                  },
+                  "province_date_strain": {
+                    "value": "Democratic Republic of the Congo (1954.0) FDAARGOS_601"
+                  },
+                  "province_lat": {
+                    "value": -2.9814344
+                  },
+                  "province_lon": {
+                    "value": 23.82226360000001
+                  },
+                  "rate_sub": {
+                    "value": 0.0
+                  },
+                  "rate_sub_year": {
+                    "value": 0.0
+                  },
+                  "root_geo_dist": {
+                    "value": 8596.75820251
+                  },
+                  "root_rtt_dist": {
+                    "value": 7.92608e-05
+                  },
+                  "strain": {
+                    "value": "FDAARGOS_601"
+                  }
+                }
+              }
+            ],
+            "name": "NODE444",
+            "node_attrs": {
+              "branch_length_sub": {
+                "value": 0.0
+              },
+              "branch_length_time": {
+                "value": 0.0
+              },
+              "branch_support": {
+                "value": 78.0
+              },
+              "branch_support_conf_category": {
+                "value": "LOW"
+              },
+              "continent": {
+                "confidence": {
+                  "Africa": 1.0
+                },
+                "value": "Africa"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "country": {
+                "confidence": {
+                  "Democratic Republic of the Congo": 1.0
+                },
+                "value": "Democratic Republic of the Congo"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_lat": {
+                "value": -2.9814344
+              },
+              "country_lon": {
+                "value": 23.82226360000001
+              },
+              "div": 1.17192e-05,
+              "host_order": {
+                "confidence": {
+                  "Human": 0.99
+                },
+                "value": "Human"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "node_name": {
+                "value": "NODE444"
+              },
+              "node_type": {
+                "value": "internal"
+              },
+              "num_date": {
+                "confidence": [
+                  1921.0,
+                  1954.0
+                ],
+                "value": 1954.0
+              },
+              "population": {
+                "confidence": {
+                  "1.ANT": 1.0
+                },
+                "value": "1.ANT"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 9397.35942345
+              },
+              "province": {
+                "confidence": {
+                  "Nairobi": 0.4
+                },
+                "value": "Nairobi"
+              },
+              "province_conf_category": {
+                "value": "LOW"
+              },
+              "province_lat": {
+                "value": -1.30316895
+              },
+              "province_lon": {
+                "value": 36.826061224105075
+              },
+              "rate_sub": {
+                "value": 0.0
+              },
+              "rate_sub_year": {
+                "value": 0.0
+              },
+              "root_geo_dist": {
+                "value": 8596.75820251
+              }
+            }
+          }
+        ],
+        "name": "NODE443",
+        "node_attrs": {
+          "branch_length_sub": {
+            "value": 49.0
+          },
+          "branch_length_time": {
+            "value": 280.0
+          },
+          "branch_support": {
+            "value": 100.0
+          },
+          "branch_support_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
+          "continent": {
+            "confidence": {
+              "Africa": 1.0
+            },
+            "value": "Africa"
+          },
+          "continent_conf_category": {
+            "value": "HIGH"
+          },
+          "country": {
+            "confidence": {
+              "Uganda": 0.39
+            },
+            "value": "Uganda"
+          },
+          "country_conf_category": {
+            "value": "LOW"
+          },
+          "country_lat": {
+            "value": 1.5333553999999998
+          },
+          "country_lon": {
+            "value": 32.2166578
+          },
+          "div": 1.16956e-05,
+          "host_order": {
+            "confidence": {
+              "Human": 0.99
+            },
+            "value": "Human"
+          },
+          "host_order_conf_category": {
+            "value": "HIGH"
+          },
+          "node_name": {
+            "value": "NODE443"
+          },
+          "node_type": {
+            "value": "internal"
+          },
+          "num_date": {
+            "confidence": [
+              1921.0,
+              1954.0
+            ],
+            "value": 1954.0
+          },
+          "population": {
+            "confidence": {
+              "1.ANT": 1.0
+            },
+            "value": "1.ANT"
+          },
+          "population_conf_category": {
+            "value": "HIGH"
+          },
+          "population_geo_dist": {
+            "value": 8346.88177051
+          },
+          "province": {
+            "confidence": {
+              "Nairobi": 0.47
+            },
+            "value": "Nairobi"
+          },
+          "province_conf_category": {
+            "value": "LOW"
+          },
+          "province_lat": {
+            "value": -1.30316895
+          },
+          "province_lon": {
+            "value": 36.826061224105075
+          },
+          "rate_sub": {
+            "value": 4.1794927689014515e-08
+          },
+          "rate_sub_year": {
+            "value": 0.17675484509975592
+          },
+          "root_geo_dist": {
+            "value": 7551.34389037
+          }
+        }
+      }
+    ],
+    "name": "NODE442",
+    "node_attrs": {
+      "branch_length_sub": {
+        "value": 44.0
       },
-      "country_date_strain": "Uganda (2004.0) UG05-0454",
-      "country_lat": 1.5333553999999998,
-      "country_lon": 32.2166578,
-      "country_raw": "Uganda",
-      "date_bp_mean": 17.0,
-      "date_err": 0.0,
-      "date_mean": 2004.0,
-      "host_human": "Human",
-      "host_order": "Human",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Human": 1.0
+      "branch_length_time": {
+        "value": 358.0
       },
-      "host_order_raw": "Human",
-      "node_name": "GCA_000169615.1_ASM16961v1_genomic",
-      "node_type": "terminal",
-      "num_date": 2004.0,
-      "num_date_confidence": [
-        2004.0,
-        2004.0
-      ],
-      "population": "1.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "1.ANT": 1.0
+      "branch_support": {
+        "value": 100.0
       },
-      "population_geo_dist": 8346.88177051,
-      "population_raw": "1.ANT",
-      "population_rtt_dist": 1.42868e-05,
-      "province": "Uganda",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Uganda": 0.4
+      "branch_support_conf_category": {
+        "value": "HIGH"
       },
-      "province_date_strain": "Uganda (2004.0) UG05-0454",
-      "province_lat": 1.5333553999999998,
-      "province_lon": 32.2166578,
-      "province_raw": "NA",
-      "rate_sub": 5.1823999999999995e-08,
-      "rate_sub_year": 0.219168774752,
-      "root_geo_dist": 7551.34389037,
-      "root_rtt_dist": 8.180479999999999e-05,
-      "strain": "UG05-0454"
-    },
-    "GCA_000835005.1_ASM83500v1_genomic": {
-      "biosample_accession": "SAMN03256395",
-      "blank": " ",
-      "branch_length": 1.54421e-05,
-      "branch_length_sub": 65.0,
-      "branch_length_time": 311.0,
-      "branch_number": "1.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Africa",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Africa": 1.0
+      "branch_support_conf_char": {
+        "value": "*"
       },
-      "continent_raw": "Africa",
-      "country": "Kenya",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Kenya": 1.0
+      "continent": {
+        "confidence": {
+          "Africa": 1.0
+        },
+        "value": "Africa"
       },
-      "country_date_strain": "Kenya (1985.0) Nairobi",
-      "country_lat": 1.4419683,
-      "country_lon": 38.4313975,
-      "country_raw": "Kenya",
-      "date_bp_mean": 36.0,
-      "date_err": 0.0,
-      "date_mean": 1985.0,
-      "host_human": "NA",
-      "host_order": "Human",
-      "host_order_conf_category": "LOW",
-      "host_order_confidence": {
-        "Human": 0.81
+      "continent_conf_category": {
+        "value": "HIGH"
       },
-      "host_order_raw": "NA",
-      "node_name": "GCA_000835005.1_ASM83500v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1985.0,
-      "num_date_confidence": [
-        1985.0,
-        1985.0
-      ],
-      "population": "1.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "1.ANT": 1.0
+      "country": {
+        "confidence": {
+          "Kenya": 0.44
+        },
+        "value": "Kenya"
       },
-      "population_geo_dist": 7796.88827125,
-      "population_raw": "1.ANT",
-      "population_rtt_dist": 1.54421e-05,
-      "province": "Nairobi",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Nairobi": 1.0
+      "country_conf_category": {
+        "value": "LOW"
       },
-      "province_date_strain": "Kenya (1985.0) Nairobi",
-      "province_lat": -1.30316895,
-      "province_lon": 36.826061224105075,
-      "province_raw": "Nairobi",
-      "rate_sub": 4.9679731560033835e-08,
-      "rate_sub_year": 0.210100453381076,
-      "root_geo_dist": 7018.64412653,
-      "root_rtt_dist": 8.29601e-05,
-      "strain": "Nairobi"
-    },
-    "GCA_003798225.1_ASM379822v1_genomic": {
-      "biosample_accession": "SAMN10228581",
-      "blank": " ",
-      "branch_length": 2.36e-08,
-      "branch_length_sub": 0.0,
-      "branch_length_time": 0.0,
-      "branch_number": "1.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Africa",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Africa": 1.0
+      "country_lat": {
+        "value": 1.4419683
       },
-      "continent_raw": "Africa",
-      "country": "Democratic Republic of the Congo",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Democratic Republic of the Congo": 1.0
+      "country_lon": {
+        "value": 38.4313975
       },
-      "country_date_strain": "Democratic Republic of the Congo (1954.0) FDAARGOS_601",
-      "country_lat": -2.9814344,
-      "country_lon": 23.82226360000001,
-      "country_raw": "Democratic Republic of the Congo",
-      "date_bp_mean": 67.0,
-      "date_err": 0.0,
-      "date_mean": 1954.0,
-      "host_human": "NA",
-      "host_order": "Human",
-      "host_order_conf_category": "LOW",
-      "host_order_confidence": {
-        "Human": 0.84
+      "div": 0,
+      "host_order": {
+        "confidence": {
+          "Human": 0.94
+        },
+        "value": "Human"
       },
-      "host_order_raw": "NA",
-      "node_name": "GCA_003798225.1_ASM379822v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1954.0,
-      "num_date_confidence": [
-        1954.0,
-        1954.0
-      ],
-      "population": "1.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "1.ANT": 1.0
+      "host_order_conf_category": {
+        "value": "LOW"
       },
-      "population_geo_dist": 9397.35942345,
-      "population_raw": "1.ANT",
-      "population_rtt_dist": 1.17428e-05,
-      "province": "Democratic Republic of the Congo",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Democratic Republic of the Congo": 0.34
+      "node_name": {
+        "value": "NODE442"
       },
-      "province_date_strain": "Democratic Republic of the Congo (1954.0) FDAARGOS_601",
-      "province_lat": -2.9814344,
-      "province_lon": 23.82226360000001,
-      "province_raw": "NA",
-      "rate_sub": 0.0,
-      "rate_sub_year": 0.0,
-      "root_geo_dist": 8596.75820251,
-      "root_rtt_dist": 7.92608e-05,
-      "strain": "FDAARGOS_601"
-    },
-    "NODE442": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 1.04313e-05,
-      "branch_length_sub": 44.0,
-      "branch_length_time": 358.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Africa",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Africa": 1.0
+      "node_type": {
+        "value": "internal"
       },
-      "continent_raw": "NA",
-      "country": "Kenya",
-      "country_conf_category": "LOW",
-      "country_confidence": {
-        "Kenya": 0.44
+      "num_date": {
+        "confidence": [
+          1593.0,
+          1790.0
+        ],
+        "value": 1675.0
       },
-      "country_date_strain": "NA",
-      "country_lat": 1.4419683,
-      "country_lon": 38.4313975,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Human",
-      "host_order_conf_category": "LOW",
-      "host_order_confidence": {
-        "Human": 0.94
+      "population": {
+        "confidence": {
+          "1.ANT": 1.0
+        },
+        "value": "1.ANT"
       },
-      "host_order_raw": "NA",
-      "node_name": "NODE442",
-      "node_type": "internal",
-      "num_date": 1675.0,
-      "num_date_confidence": [
-        1593.0,
-        1790.0
-      ],
-      "population": "1.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "1.ANT": 1.0
+      "population_conf_category": {
+        "value": "HIGH"
       },
-      "population_geo_dist": 7796.88827125,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Nairobi",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Nairobi": 0.56
+      "population_geo_dist": {
+        "value": 7796.88827125
       },
-      "province_date_strain": "NA",
-      "province_lat": -1.30316895,
-      "province_lon": 36.826061224105075,
-      "province_raw": "NA",
-      "rate_sub": 2.9104621282508434e-08,
-      "rate_sub_year": 0.12308629565661386,
-      "root_geo_dist": 7018.64412653,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE443": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 1.16956e-05,
-      "branch_length_sub": 49.0,
-      "branch_length_time": 280.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Africa",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Africa": 1.0
+      "province": {
+        "confidence": {
+          "Nairobi": 0.56
+        },
+        "value": "Nairobi"
       },
-      "continent_raw": "NA",
-      "country": "Uganda",
-      "country_conf_category": "LOW",
-      "country_confidence": {
-        "Uganda": 0.39
+      "province_conf_category": {
+        "value": "LOW"
       },
-      "country_date_strain": "NA",
-      "country_lat": 1.5333553999999998,
-      "country_lon": 32.2166578,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Human",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Human": 0.99
+      "province_lat": {
+        "value": -1.30316895
       },
-      "host_order_raw": "NA",
-      "node_name": "NODE443",
-      "node_type": "internal",
-      "num_date": 1954.0,
-      "num_date_confidence": [
-        1921.0,
-        1954.0
-      ],
-      "population": "1.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "1.ANT": 1.0
+      "province_lon": {
+        "value": 36.826061224105075
       },
-      "population_geo_dist": 8346.88177051,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Nairobi",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Nairobi": 0.47
+      "rate_sub": {
+        "value": 2.9104621282508434e-08
       },
-      "province_date_strain": "NA",
-      "province_lat": -1.30316895,
-      "province_lon": 36.826061224105075,
-      "province_raw": "NA",
-      "rate_sub": 4.1794927689014515e-08,
-      "rate_sub_year": 0.17675484509975592,
-      "root_geo_dist": 7551.34389037,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE444": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 2.36e-08,
-      "branch_length_sub": 0.0,
-      "branch_length_time": 0.0,
-      "branch_number": "NA",
-      "branch_support": 78.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Africa",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Africa": 1.0
+      "rate_sub_year": {
+        "value": 0.12308629565661386
       },
-      "continent_raw": "NA",
-      "country": "Democratic Republic of the Congo",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Democratic Republic of the Congo": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": -2.9814344,
-      "country_lon": 23.82226360000001,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Human",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Human": 0.99
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE444",
-      "node_type": "internal",
-      "num_date": 1954.0,
-      "num_date_confidence": [
-        1921.0,
-        1954.0
-      ],
-      "population": "1.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "1.ANT": 1.0
-      },
-      "population_geo_dist": 9397.35942345,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Nairobi",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Nairobi": 0.4
-      },
-      "province_date_strain": "NA",
-      "province_lat": -1.30316895,
-      "province_lon": 36.826061224105075,
-      "province_raw": "NA",
-      "rate_sub": 0.0,
-      "rate_sub_year": 0.0,
-      "root_geo_dist": 8596.75820251,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
+      "root_geo_dist": {
+        "value": 7018.64412653
+      }
     }
-  }
+  },
+  "version": "v2"
 }

@@ -1,1375 +1,4175 @@
 {
-  "alignment": null,
-  "generated_by": {
-    "program": "augur",
-    "version": "10.3.0"
+  "meta": {
+    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main",
+    "colorings": [
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "Mongolia",
+            "#149df1"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "Mongolia",
+            "#149df1"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "Rodentia",
+            "#525252"
+          ],
+          [
+            "Siphonaptera",
+            "#2ca02c"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "Rodentia",
+            "#525252"
+          ],
+          [
+            "Siphonaptera",
+            "#2ca02c"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "3.ANT",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "scale": [
+          [
+            "3.ANT",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Qinghai",
+            "#642bfe"
+          ],
+          [
+            "Govi-Altai",
+            "#1a95f3"
+          ],
+          [
+            "Bayan-\u00d6lgii",
+            "#0da6ef"
+          ],
+          [
+            "Gansu",
+            "#1dd1e2"
+          ],
+          [
+            "Hovsgel",
+            "#21d5e0"
+          ],
+          [
+            "Zavkhan Province",
+            "#26d9df"
+          ],
+          [
+            "Dornogovi",
+            "#2adddd"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "Qinghai",
+            "#642bfe"
+          ],
+          [
+            "NA",
+            "#3f62fa"
+          ],
+          [
+            "Govi-Altai",
+            "#1a95f3"
+          ],
+          [
+            "Bayan-\u00d6lgii",
+            "#0da6ef"
+          ],
+          [
+            "Gansu",
+            "#1dd1e2"
+          ],
+          [
+            "Hovsgel",
+            "#21d5e0"
+          ],
+          [
+            "Zavkhan Province",
+            "#26d9df"
+          ],
+          [
+            "Dornogovi",
+            "#2adddd"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "Mongolia",
+            "#149df1"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "3.ANT",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "Rodentia",
+            "#525252"
+          ],
+          [
+            "Siphonaptera",
+            "#2ca02c"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "Rodentia",
+            "#525252"
+          ],
+          [
+            "Siphonaptera",
+            "#2ca02c"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "Mongolia",
+            "#149df1"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "Qinghai",
+            "#642bfe"
+          ],
+          [
+            "NA",
+            "#3f62fa"
+          ],
+          [
+            "Govi-Altai",
+            "#1a95f3"
+          ],
+          [
+            "Bayan-\u00d6lgii",
+            "#0da6ef"
+          ],
+          [
+            "Gansu",
+            "#1dd1e2"
+          ],
+          [
+            "Hovsgel",
+            "#21d5e0"
+          ],
+          [
+            "Zavkhan Province",
+            "#26d9df"
+          ],
+          [
+            "Dornogovi",
+            "#2adddd"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "scale": [
+          [
+            "3.ANT",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Qinghai",
+            "#642bfe"
+          ],
+          [
+            "Govi-Altai",
+            "#1a95f3"
+          ],
+          [
+            "Bayan-\u00d6lgii",
+            "#0da6ef"
+          ],
+          [
+            "Gansu",
+            "#1dd1e2"
+          ],
+          [
+            "Hovsgel",
+            "#21d5e0"
+          ],
+          [
+            "Zavkhan Province",
+            "#26d9df"
+          ],
+          [
+            "Dornogovi",
+            "#2adddd"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      }
+    ],
+    "display_defaults": {
+      "branch_label": "none",
+      "color_by": "population",
+      "distance_measure": "num_date",
+      "geo_resolution": "province",
+      "layout": "rect",
+      "map_triplicate": true,
+      "transmission_lines": true
+    },
+    "filters": [
+      "continent",
+      "country",
+      "province",
+      "population",
+      "host_order"
+    ],
+    "geo_resolutions": [
+      {
+        "demes": {
+          "China": {
+            "latitude": 35.000074,
+            "longitude": 104.999927
+          },
+          "Mongolia": {
+            "latitude": 46.8250388,
+            "longitude": 103.8499736
+          }
+        },
+        "key": "country"
+      },
+      {
+        "demes": {
+          "Bayan-\u00d6lgii": {
+            "latitude": 48.5470083,
+            "longitude": 89.8549358
+          },
+          "Dornogovi": {
+            "latitude": 44.4179637,
+            "longitude": 109.7783753
+          },
+          "Gansu": {
+            "latitude": 38.0000001,
+            "longitude": 101.9999999
+          },
+          "Govi-Altai": {
+            "latitude": 45.3463139,
+            "longitude": 95.9325806
+          },
+          "Hovsgel": {
+            "latitude": 50.2206196,
+            "longitude": 99.9170492
+          },
+          "Qinghai": {
+            "latitude": 35.40709525,
+            "longitude": 95.95211573241954
+          },
+          "Zavkhan Province": {
+            "latitude": 48.82133605,
+            "longitude": 93.1017516702174
+          }
+        },
+        "key": "province"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "name"
+      },
+      {
+        "name": "url"
+      }
+    ],
+    "panels": [
+      "tree",
+      "map"
+    ],
+    "title": "Plague Phylogeography Main",
+    "updated": "2021-08-18"
   },
-  "input_tree": null,
-  "nodes": {
-    "GCA_000323505.1_ASM32350v1_genomic": {
-      "biosample_accession": "SAMN02403009",
-      "blank": " ",
-      "branch_length": 2.5912e-06,
-      "branch_length_sub": 11.0,
-      "branch_length_time": 386.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "China",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "China": 1.0
-      },
-      "country_date_strain": "China (2004.0) 7",
-      "country_lat": 35.000074,
-      "country_lon": 104.999927,
-      "country_raw": "China",
-      "date_bp_mean": 17.0,
-      "date_err": 0.0,
-      "date_mean": 2004.0,
-      "host_human": "Human",
-      "host_order": "Human",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Human": 1.0
-      },
-      "host_order_raw": "Human",
-      "node_name": "GCA_000323505.1_ASM32350v1_genomic",
-      "node_type": "terminal",
-      "num_date": 2004.0,
-      "num_date_confidence": [
-        2004.0,
-        2004.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 0.0,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 2.8268e-06,
-      "province": "Qinghai",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Qinghai": 1.0
-      },
-      "province_date_strain": "China (2004.0) 7",
-      "province_lat": 35.40709525,
-      "province_lon": 95.95211573241954,
-      "province_raw": "Qinghai",
-      "rate_sub": 6.71178836834021e-09,
-      "rate_sub_year": 0.028384810764970847,
-      "root_geo_dist": 823.02714885,
-      "root_rtt_dist": 5.8186e-05,
-      "strain": "7"
+  "tree": {
+    "branch_attrs": {
+      "labels": {
+        "Biosample Accession": "NA",
+        "Blank": " ",
+        "Branch Length": 4.0046e-06,
+        "Branch Length Sub": 17.0,
+        "Branch Length Time": 321.0,
+        "Branch Number": "NA",
+        "Branch Support": 100.0,
+        "Branch Support Conf Category": "HIGH",
+        "Branch Support Conf Char": "*",
+        "Continent": "Asia",
+        "Continent Conf Category": "HIGH",
+        "Continent Confidence": 1.0,
+        "Continent Raw": "NA",
+        "Country": "Mongolia",
+        "Country Conf Category": "HIGH",
+        "Country Confidence": 1.0,
+        "Country Date Strain": "NA",
+        "Country Lat": 46.8250388,
+        "Country Lon": 103.8499736,
+        "Country Raw": "NA",
+        "Date Bp Mean": "NA",
+        "Date Err": "NA",
+        "Date Mean": "NA",
+        "Host Human": "NA",
+        "Host Order": "Rodentia",
+        "Host Order Conf Category": "HIGH",
+        "Host Order Confidence": 0.99,
+        "Host Order Raw": "NA",
+        "Node Name": "NODE215",
+        "Node Type": "internal",
+        "Num Date": 1773.0,
+        "Num Date Confidence": [
+          1677.0,
+          1839.0
+        ],
+        "Population": "3.ANT",
+        "Population Conf Category": "HIGH",
+        "Population Confidence": 1.0,
+        "Population Geo Dist": 1318.38292015,
+        "Population Raw": "NA",
+        "Population Rtt Dist": "NA",
+        "Province": "Hovsgel",
+        "Province Conf Category": "LOW",
+        "Province Confidence": 0.42,
+        "Province Date Strain": "NA",
+        "Province Lat": 50.2206196,
+        "Province Lon": 99.9170492,
+        "Province Raw": "NA",
+        "Rate Sub": 1.2466457055692182e-08,
+        "Rate Sub Year": 0.0527218686013137,
+        "Root Geo Dist": 1429.89577187,
+        "Root Rtt Dist": "NA",
+        "Strain": "NA"
+      }
     },
-    "GCA_000323525.1_ASM32352v1_genomic": {
-      "biosample_accession": "SAMN02403010",
-      "blank": " ",
-      "branch_length": 9.423e-07,
-      "branch_length_sub": 4.0,
-      "branch_length_time": 87.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "China",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "China": 1.0
-      },
-      "country_date_strain": "China (1989.0) 71021",
-      "country_lat": 35.000074,
-      "country_lon": 104.999927,
-      "country_raw": "China",
-      "date_bp_mean": 32.0,
-      "date_err": 0.0,
-      "date_mean": 1989.0,
-      "host_human": "Non-Human",
-      "host_order": "Siphonaptera",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Siphonaptera": 1.0
-      },
-      "host_order_raw": "Siphonaptera",
-      "node_name": "GCA_000323525.1_ASM32352v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1989.0,
-      "num_date_confidence": [
-        1989.0,
-        1989.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 0.0,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 3.9777e-06,
-      "province": "Gansu",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Gansu": 1.0
-      },
-      "province_date_strain": "China (1989.0) 71021",
-      "province_lat": 38.0000001,
-      "province_lon": 101.9999999,
-      "province_raw": "Gansu",
-      "rate_sub": 1.0806130698791864e-08,
-      "rate_sub_year": 0.04570018572599927,
-      "root_geo_dist": 823.02714885,
-      "root_rtt_dist": 5.93369e-05,
-      "strain": "71021"
-    },
-    "GCA_000323765.1_ASM32376v1_genomic": {
-      "biosample_accession": "SAMN02403023",
-      "blank": " ",
-      "branch_length": 9.423e-07,
-      "branch_length_sub": 4.0,
-      "branch_length_time": 74.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "China",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "China": 1.0
-      },
-      "country_date_strain": "China (1976.0) C1976001",
-      "country_lat": 35.000074,
-      "country_lon": 104.999927,
-      "country_raw": "China",
-      "date_bp_mean": 45.0,
-      "date_err": 0.0,
-      "date_mean": 1976.0,
-      "host_human": "Non-Human",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 1.0
-      },
-      "host_order_raw": "Rodentia",
-      "node_name": "GCA_000323765.1_ASM32376v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1976.0,
-      "num_date_confidence": [
-        1976.0,
-        1976.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 0.0,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 3.9777e-06,
-      "province": "Gansu",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Gansu": 1.0
-      },
-      "province_date_strain": "China (1976.0) C1976001",
-      "province_lat": 38.0000001,
-      "province_lon": 101.9999999,
-      "province_raw": "Gansu",
-      "rate_sub": 1.2699375341136513e-08,
-      "rate_sub_year": 0.05370690285644975,
-      "root_geo_dist": 823.02714885,
-      "root_rtt_dist": 5.93369e-05,
-      "strain": "C1976001"
-    },
-    "GCA_000324325.1_ASM32432v1_genomic": {
-      "biosample_accession": "SAMN02403051",
-      "blank": " ",
-      "branch_length": 1.1778e-06,
-      "branch_length_sub": 5.0,
-      "branch_length_time": 99.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "China",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "China": 1.0
-      },
-      "country_date_strain": "China (1961.0) CMCC71001",
-      "country_lat": 35.000074,
-      "country_lon": 104.999927,
-      "country_raw": "China",
-      "date_bp_mean": 60.0,
-      "date_err": 0.0,
-      "date_mean": 1961.0,
-      "host_human": "Non-Human",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 1.0
-      },
-      "host_order_raw": "Rodentia",
-      "node_name": "GCA_000324325.1_ASM32432v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1961.0,
-      "num_date_confidence": [
-        1961.0,
-        1961.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 0.0,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 3.9776e-06,
-      "province": "Gansu",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Gansu": 1.0
-      },
-      "province_date_strain": "China (1961.0) CMCC71001",
-      "province_lat": 38.0000001,
-      "province_lon": 101.9999999,
-      "province_raw": "Gansu",
-      "rate_sub": 1.1954605385357892e-08,
-      "rate_sub_year": 0.05055719772600629,
-      "root_geo_dist": 823.02714885,
-      "root_rtt_dist": 5.9336800000000004e-05,
-      "strain": "CMCC71001"
-    },
-    "GCA_000325205.1_ASM32520v1_genomic": {
-      "biosample_accession": "SAMN02403094",
-      "blank": " ",
-      "branch_length": 9.423e-07,
-      "branch_length_sub": 4.0,
-      "branch_length_time": 23.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "Mongolia (2000.0) MGJZ11",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "Mongolia",
-      "date_bp_mean": 21.0,
-      "date_err": 0.0,
-      "date_mean": 2000.0,
-      "host_human": "Non-Human",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 1.0
-      },
-      "host_order_raw": "Rodentia",
-      "node_name": "GCA_000325205.1_ASM32520v1_genomic",
-      "node_type": "terminal",
-      "num_date": 2000.0,
-      "num_date_confidence": [
-        2000.0,
-        2000.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 9.1871e-06,
-      "province": "Bayan-\u00d6lgii",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Bayan-\u00d6lgii": 1.0
-      },
-      "province_date_strain": "Mongolia (2000.0) MGJZ11",
-      "province_lat": 48.5470083,
-      "province_lon": 89.8549358,
-      "province_raw": "Bayan-\u00d6lgii",
-      "rate_sub": 4.151613414870557e-08,
-      "rate_sub_year": 0.17557579989602243,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": 6.45463e-05,
-      "strain": "MGJZ11"
-    },
-    "GCA_000325245.1_ASM32524v1_genomic": {
-      "biosample_accession": "SAMN02403096",
-      "blank": " ",
-      "branch_length": 3.769e-06,
-      "branch_length_sub": 16.0,
-      "branch_length_time": 160.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "Mongolia (1980.0) MGJZ3",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "Mongolia",
-      "date_bp_mean": 41.0,
-      "date_err": 0.0,
-      "date_mean": 1980.0,
-      "host_human": "Non-Human",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 1.0
-      },
-      "host_order_raw": "Rodentia",
-      "node_name": "GCA_000325245.1_ASM32524v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1980.0,
-      "num_date_confidence": [
-        1980.0,
-        1980.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 9.4226e-06,
-      "province": "Govi-Altai",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Govi-Altai": 1.0
-      },
-      "province_date_strain": "Mongolia (1980.0) MGJZ3",
-      "province_lat": 45.3463139,
-      "province_lon": 95.9325806,
-      "province_raw": "Govi-Altai",
-      "rate_sub": 2.3552717092436135e-08,
-      "rate_sub_year": 0.09960674875018748,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": 6.478179999999999e-05,
-      "strain": "MGJZ3"
-    },
-    "GCA_000325265.1_ASM32526v1_genomic": {
-      "biosample_accession": "SAMN02403097",
-      "blank": " ",
-      "branch_length": 4.711e-07,
-      "branch_length_sub": 2.0,
-      "branch_length_time": 87.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "Mongolia (1997.0) MGJZ6",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "Mongolia",
-      "date_bp_mean": 24.0,
-      "date_err": 0.0,
-      "date_mean": 1997.0,
-      "host_human": "Non-Human",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 1.0
-      },
-      "host_order_raw": "Rodentia",
-      "node_name": "GCA_000325265.1_ASM32526v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1997.0,
-      "num_date_confidence": [
-        1997.0,
-        1997.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 6.5958000000000004e-06,
-      "province": "Dornogovi",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Dornogovi": 1.0
-      },
-      "province_date_strain": "Mongolia (1997.0) MGJZ6",
-      "province_lat": 44.4179637,
-      "province_lon": 109.7783753,
-      "province_raw": "Dornogovi",
-      "rate_sub": 5.4184240218715235e-09,
-      "rate_sub_year": 0.022915046194048817,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": 6.195499999999999e-05,
-      "strain": "MGJZ6"
-    },
-    "GCA_000325285.1_ASM32528v1_genomic": {
-      "biosample_accession": "SAMN02403098",
-      "blank": " ",
-      "branch_length": 1.1778e-06,
-      "branch_length_sub": 5.0,
-      "branch_length_time": 87.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "Mongolia (1997.0) MGJZ7",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "Mongolia",
-      "date_bp_mean": 24.0,
-      "date_err": 0.0,
-      "date_mean": 1997.0,
-      "host_human": "Non-Human",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 1.0
-      },
-      "host_order_raw": "Rodentia",
-      "node_name": "GCA_000325285.1_ASM32528v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1997.0,
-      "num_date_confidence": [
-        1997.0,
-        1997.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 7.3025e-06,
-      "province": "Dornogovi",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Dornogovi": 1.0
-      },
-      "province_date_strain": "Mongolia (1997.0) MGJZ7",
-      "province_lat": 44.4179637,
-      "province_lon": 109.7783753,
-      "province_raw": "Dornogovi",
-      "rate_sub": 1.3546635136829295e-08,
-      "rate_sub_year": 0.0572900475638945,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": 6.266169999999997e-05,
-      "strain": "MGJZ7"
-    },
-    "GCA_000325305.1_ASM32530v1_genomic": {
-      "biosample_accession": "SAMN02403099",
-      "blank": " ",
-      "branch_length": 2.36e-08,
-      "branch_length_sub": 0.0,
-      "branch_length_time": 21.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "Mongolia (1998.0) MGJZ9",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "Mongolia",
-      "date_bp_mean": 23.0,
-      "date_err": 0.0,
-      "date_mean": 1998.0,
-      "host_human": "Non-Human",
-      "host_order": "Siphonaptera",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Siphonaptera": 1.0
-      },
-      "host_order_raw": "Siphonaptera",
-      "node_name": "GCA_000325305.1_ASM32530v1_genomic",
-      "node_type": "terminal",
-      "num_date": 1998.0,
-      "num_date_confidence": [
-        1998.0,
-        1998.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 8.2684e-06,
-      "province": "Govi-Altai",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Govi-Altai": 1.0
-      },
-      "province_date_strain": "Mongolia (1998.0) MGJZ9",
-      "province_lat": 45.3463139,
-      "province_lon": 95.9325806,
-      "province_raw": "Govi-Altai",
-      "rate_sub": 1.1402508551881415e-09,
-      "rate_sub_year": 0.004822232611174459,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": 6.362760000000001e-05,
-      "strain": "MGJZ9"
-    },
-    "GCA_013391945.1_ASM1339194v1_genomic": {
-      "biosample_accession": "SAMN13880443",
-      "blank": " ",
-      "branch_length": 2.1201e-06,
-      "branch_length_sub": 9.0,
-      "branch_length_time": 207.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "Mongolia (2017.0) 3256",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "Mongolia",
-      "date_bp_mean": 4.0,
-      "date_err": 0.0,
-      "date_mean": 2017.0,
-      "host_human": "Non-Human",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 1.0
-      },
-      "host_order_raw": "Rodentia",
-      "node_name": "GCA_013391945.1_ASM1339194v1_genomic",
-      "node_type": "terminal",
-      "num_date": 2017.0,
-      "num_date_confidence": [
-        2017.0,
-        2017.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 6.8313999999999995e-06,
-      "province": "Zavkhan Province",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Zavkhan Province": 1.0
-      },
-      "province_date_strain": "Mongolia (2017.0) 3256",
-      "province_lat": 48.82133605,
-      "province_lon": 93.1017516702174,
-      "province_raw": "Zavkhan Province",
-      "rate_sub": 1.0259872241579558e-08,
-      "rate_sub_year": 0.04339000517711963,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": 6.219059999999999e-05,
-      "strain": "3256"
-    },
-    "GCA_013391965.1_ASM1339196v1_genomic": {
-      "biosample_accession": "SAMN13880442",
-      "blank": " ",
-      "branch_length": 2.5912e-06,
-      "branch_length_sub": 11.0,
-      "branch_length_time": 244.0,
-      "branch_number": "3.0",
-      "branch_support": 0.0,
-      "branch_support_conf_category": "LOW",
-      "branch_support_conf_char": "",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "Asia",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "Mongolia (2016.0) 3243",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "Mongolia",
-      "date_bp_mean": 5.0,
-      "date_err": 0.0,
-      "date_mean": 2016.0,
-      "host_human": "Non-Human",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 1.0
-      },
-      "host_order_raw": "Rodentia",
-      "node_name": "GCA_013391965.1_ASM1339196v1_genomic",
-      "node_type": "terminal",
-      "num_date": 2016.0,
-      "num_date_confidence": [
-        2016.0,
-        2016.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "3.ANT",
-      "population_rtt_dist": 6.5958000000000004e-06,
-      "province": "Hovsgel",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Hovsgel": 1.0
-      },
-      "province_date_strain": "Mongolia (2016.0) 3243",
-      "province_lat": 50.2206196,
-      "province_lon": 99.9170492,
-      "province_raw": "Hovsgel",
-      "rate_sub": 1.063986170479229e-08,
-      "rate_sub_year": 0.04499701785601366,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": 6.1955e-05,
-      "strain": "3243"
-    },
-    "NODE211": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 2.1201e-06,
-      "branch_length_sub": 9.0,
-      "branch_length_time": 402.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "China",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "China": 0.95
-      },
-      "country_date_strain": "NA",
-      "country_lat": 35.000074,
-      "country_lon": 104.999927,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "LOW",
-      "host_order_confidence": {
-        "Rodentia": 0.94
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE211",
-      "node_type": "internal",
-      "num_date": 1452.0,
-      "num_date_confidence": [
-        1263.0,
-        1588.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 0.0,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Qinghai",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Qinghai": 0.32
-      },
-      "province_date_strain": "NA",
-      "province_lat": 35.40709525,
-      "province_lon": 95.95211573241954,
-      "province_raw": "NA",
-      "rate_sub": 5.278699708440292e-09,
-      "rate_sub_year": 0.022324138379565425,
-      "root_geo_dist": 823.02714885,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE212": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 2.356e-07,
-      "branch_length_sub": 1.0,
-      "branch_length_time": 167.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "China",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "China": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": 35.000074,
-      "country_lon": 104.999927,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "LOW",
-      "host_order_confidence": {
-        "Rodentia": 0.82
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE212",
-      "node_type": "internal",
-      "num_date": 1618.0,
-      "num_date_confidence": [
-        1484.0,
-        1761.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 0.0,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Qinghai",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Qinghai": 0.54
-      },
-      "province_date_strain": "NA",
-      "province_lat": 35.40709525,
-      "province_lon": 95.95211573241954,
-      "province_raw": "NA",
-      "rate_sub": 1.4133173365326936e-09,
-      "rate_sub_year": 0.005977057521295741,
-      "root_geo_dist": 823.02714885,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE213": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 2.5642e-06,
-      "branch_length_sub": 11.0,
-      "branch_length_time": 245.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "China",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "China": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": 35.000074,
-      "country_lon": 104.999927,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 0.96
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE213",
-      "node_type": "internal",
-      "num_date": 1863.0,
-      "num_date_confidence": [
-        1783.0,
-        1920.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 0.0,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Gansu",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Gansu": 1.0
-      },
-      "province_date_strain": "NA",
-      "province_lat": 38.0000001,
-      "province_lon": 101.9999999,
-      "province_raw": "NA",
-      "rate_sub": 1.0485638576288928e-08,
-      "rate_sub_year": 0.04434479313170636,
-      "root_geo_dist": 823.02714885,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE214": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 2.356e-07,
-      "branch_length_sub": 1.0,
-      "branch_length_time": 39.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "China",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "China": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": 35.000074,
-      "country_lon": 104.999927,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "LOW",
-      "host_order_confidence": {
-        "Rodentia": 0.87
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE214",
-      "node_type": "internal",
-      "num_date": 1902.0,
-      "num_date_confidence": [
-        1858.0,
-        1941.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 0.0,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Gansu",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Gansu": 1.0
-      },
-      "province_date_strain": "NA",
-      "province_lat": 38.0000001,
-      "province_lon": 101.9999999,
-      "province_raw": "NA",
-      "rate_sub": 5.991511178135561e-09,
-      "rate_sub_year": 0.025338687940430746,
-      "root_geo_dist": 823.02714885,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE215": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 4.0046e-06,
-      "branch_length_sub": 17.0,
-      "branch_length_time": 321.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 0.99
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE215",
-      "node_type": "internal",
-      "num_date": 1773.0,
-      "num_date_confidence": [
-        1677.0,
-        1839.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Hovsgel",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Hovsgel": 0.42
-      },
-      "province_date_strain": "NA",
-      "province_lat": 50.2206196,
-      "province_lon": 99.9170492,
-      "province_raw": "NA",
-      "rate_sub": 1.2466457055692182e-08,
-      "rate_sub_year": 0.0527218686013137,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE216": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 7.067e-07,
-      "branch_length_sub": 3.0,
-      "branch_length_time": 38.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 0.99
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE216",
-      "node_type": "internal",
-      "num_date": 1811.0,
-      "num_date_confidence": [
-        1740.0,
-        1864.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Govi-Altai",
-      "province_conf_category": "LOW",
-      "province_confidence": {
-        "Govi-Altai": 0.39
-      },
-      "province_date_strain": "NA",
-      "province_lat": 45.3463139,
-      "province_lon": 95.9325806,
-      "province_raw": "NA",
-      "rate_sub": 1.864811091232459e-08,
-      "rate_sub_year": 0.0788646885630901,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE217": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 7.067e-07,
-      "branch_length_sub": 3.0,
-      "branch_length_time": 10.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 0.98
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE217",
-      "node_type": "internal",
-      "num_date": 1820.0,
-      "num_date_confidence": [
-        1763.0,
-        1872.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Govi-Altai",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Govi-Altai": 0.97
-      },
-      "province_date_strain": "NA",
-      "province_lat": 45.3463139,
-      "province_lon": 95.9325806,
-      "province_raw": "NA",
-      "rate_sub": 7.349064442362308e-08,
-      "rate_sub_year": 0.31079913735065556,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE218": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 2.8268e-06,
-      "branch_length_sub": 12.0,
-      "branch_length_time": 157.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "LOW",
-      "host_order_confidence": {
-        "Rodentia": 0.87
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE218",
-      "node_type": "internal",
-      "num_date": 1978.0,
-      "num_date_confidence": [
-        1945.0,
-        1998.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Govi-Altai",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Govi-Altai": 0.98
-      },
-      "province_date_strain": "NA",
-      "province_lat": 45.3463139,
-      "province_lon": 95.9325806,
-      "province_raw": "NA",
-      "rate_sub": 1.7967672427491785e-08,
-      "rate_sub_year": 0.07598704752776066,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE219": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 2.356e-07,
-      "branch_length_sub": 1.0,
-      "branch_length_time": 0.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 0.99
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE219",
-      "node_type": "internal",
-      "num_date": 1820.0,
-      "num_date_confidence": [
-        1763.0,
-        1872.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Govi-Altai",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Govi-Altai": 0.98
-      },
-      "province_date_strain": "NA",
-      "province_lat": 45.3463139,
-      "province_lon": 95.9325806,
-      "province_raw": "NA",
-      "rate_sub": 0.0,
-      "rate_sub_year": 0.0,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
-    },
-    "NODE220": {
-      "biosample_accession": "NA",
-      "blank": " ",
-      "branch_length": 4.711e-07,
-      "branch_length_sub": 2.0,
-      "branch_length_time": 90.0,
-      "branch_number": "NA",
-      "branch_support": 100.0,
-      "branch_support_conf_category": "HIGH",
-      "branch_support_conf_char": "*",
-      "continent": "Asia",
-      "continent_conf_category": "HIGH",
-      "continent_confidence": {
-        "Asia": 1.0
-      },
-      "continent_raw": "NA",
-      "country": "Mongolia",
-      "country_conf_category": "HIGH",
-      "country_confidence": {
-        "Mongolia": 1.0
-      },
-      "country_date_strain": "NA",
-      "country_lat": 46.8250388,
-      "country_lon": 103.8499736,
-      "country_raw": "NA",
-      "date_bp_mean": "NA",
-      "date_err": "NA",
-      "date_mean": "NA",
-      "host_human": "NA",
-      "host_order": "Rodentia",
-      "host_order_conf_category": "HIGH",
-      "host_order_confidence": {
-        "Rodentia": 1.0
-      },
-      "host_order_raw": "NA",
-      "node_name": "NODE220",
-      "node_type": "internal",
-      "num_date": 1911.0,
-      "num_date_confidence": [
-        1851.0,
-        1968.0
-      ],
-      "population": "3.ANT",
-      "population_conf_category": "HIGH",
-      "population_confidence": {
-        "3.ANT": 1.0
-      },
-      "population_geo_dist": 1318.38292015,
-      "population_raw": "NA",
-      "population_rtt_dist": "NA",
-      "province": "Dornogovi",
-      "province_conf_category": "HIGH",
-      "province_confidence": {
-        "Dornogovi": 1.0
-      },
-      "province_date_strain": "NA",
-      "province_lat": 44.4179637,
-      "province_lon": 109.7783753,
-      "province_raw": "NA",
-      "rate_sub": 5.229789931405493e-09,
-      "rate_sub_year": 0.022117294139327108,
-      "root_geo_dist": 1429.89577187,
-      "root_rtt_dist": "NA",
-      "strain": "NA"
+    "children": [
+      {
+        "branch_attrs": {
+          "labels": {
+            "Biosample Accession": "NA",
+            "Blank": " ",
+            "Branch Length": 2.356e-07,
+            "Branch Length Sub": 1.0,
+            "Branch Length Time": 167.0,
+            "Branch Number": "NA",
+            "Branch Support": 100.0,
+            "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
+            "Continent": "Asia",
+            "Continent Conf Category": "HIGH",
+            "Continent Confidence": 1.0,
+            "Continent Raw": "NA",
+            "Country": "China",
+            "Country Conf Category": "HIGH",
+            "Country Confidence": 1.0,
+            "Country Date Strain": "NA",
+            "Country Lat": 35.000074,
+            "Country Lon": 104.999927,
+            "Country Raw": "NA",
+            "Date Bp Mean": "NA",
+            "Date Err": "NA",
+            "Date Mean": "NA",
+            "Host Human": "NA",
+            "Host Order": "Rodentia",
+            "Host Order Conf Category": "LOW",
+            "Host Order Confidence": 0.82,
+            "Host Order Raw": "NA",
+            "Node Name": "NODE212",
+            "Node Type": "internal",
+            "Num Date": 1618.0,
+            "Num Date Confidence": [
+              1484.0,
+              1761.0
+            ],
+            "Population": "3.ANT",
+            "Population Conf Category": "HIGH",
+            "Population Confidence": 1.0,
+            "Population Geo Dist": 0.0,
+            "Population Raw": "NA",
+            "Population Rtt Dist": "NA",
+            "Province": "Qinghai",
+            "Province Conf Category": "LOW",
+            "Province Confidence": 0.54,
+            "Province Date Strain": "NA",
+            "Province Lat": 35.40709525,
+            "Province Lon": 95.95211573241954,
+            "Province Raw": "NA",
+            "Rate Sub": 1.4133173365326936e-09,
+            "Rate Sub Year": 0.005977057521295741,
+            "Root Geo Dist": 823.02714885,
+            "Root Rtt Dist": "NA",
+            "Strain": "NA"
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {},
+            "name": "GCA_000323505.1_ASM32350v1_genomic",
+            "node_attrs": {
+              "biosample_accession": {
+                "value": "SAMN02403009"
+              },
+              "branch_length_sub": {
+                "value": 11.0
+              },
+              "branch_length_time": {
+                "value": 386.0
+              },
+              "branch_number": {
+                "value": "3.0"
+              },
+              "branch_support": {
+                "value": 0.0
+              },
+              "branch_support_conf_category": {
+                "value": "LOW"
+              },
+              "continent": {
+                "confidence": {
+                  "Asia": 1.0
+                },
+                "value": "Asia"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "continent_raw": {
+                "value": "Asia"
+              },
+              "country": {
+                "confidence": {
+                  "China": 1.0
+                },
+                "value": "China"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_date_strain": {
+                "value": "China (2004.0) 7"
+              },
+              "country_lat": {
+                "value": 35.000074
+              },
+              "country_lon": {
+                "value": 104.999927
+              },
+              "country_raw": {
+                "value": "China"
+              },
+              "date_bp_mean": {
+                "value": 17.0
+              },
+              "date_err": {
+                "value": 0.0
+              },
+              "date_mean": {
+                "value": 2004.0
+              },
+              "div": 2.8267999999999998e-06,
+              "host_human": {
+                "value": "Human"
+              },
+              "host_order": {
+                "confidence": {
+                  "Human": 1.0
+                },
+                "value": "Human"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "host_order_raw": {
+                "value": "Human"
+              },
+              "node_name": {
+                "value": "GCA_000323505.1_ASM32350v1_genomic"
+              },
+              "node_type": {
+                "value": "terminal"
+              },
+              "num_date": {
+                "confidence": [
+                  2004.0,
+                  2004.0
+                ],
+                "value": 2004.0
+              },
+              "population": {
+                "confidence": {
+                  "3.ANT": 1.0
+                },
+                "value": "3.ANT"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 0.0
+              },
+              "population_raw": {
+                "value": "3.ANT"
+              },
+              "population_rtt_dist": {
+                "value": 2.8268e-06
+              },
+              "province": {
+                "confidence": {
+                  "Qinghai": 1.0
+                },
+                "value": "Qinghai"
+              },
+              "province_conf_category": {
+                "value": "HIGH"
+              },
+              "province_date_strain": {
+                "value": "China (2004.0) 7"
+              },
+              "province_lat": {
+                "value": 35.40709525
+              },
+              "province_lon": {
+                "value": 95.95211573241954
+              },
+              "province_raw": {
+                "value": "Qinghai"
+              },
+              "rate_sub": {
+                "value": 6.71178836834021e-09
+              },
+              "rate_sub_year": {
+                "value": 0.028384810764970847
+              },
+              "root_geo_dist": {
+                "value": 823.02714885
+              },
+              "root_rtt_dist": {
+                "value": 5.8186e-05
+              },
+              "strain": {
+                "value": "7"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "Biosample Accession": "NA",
+                "Blank": " ",
+                "Branch Length": 2.5642e-06,
+                "Branch Length Sub": 11.0,
+                "Branch Length Time": 245.0,
+                "Branch Number": "NA",
+                "Branch Support": 100.0,
+                "Branch Support Conf Category": "HIGH",
+                "Branch Support Conf Char": "*",
+                "Continent": "Asia",
+                "Continent Conf Category": "HIGH",
+                "Continent Confidence": 1.0,
+                "Continent Raw": "NA",
+                "Country": "China",
+                "Country Conf Category": "HIGH",
+                "Country Confidence": 1.0,
+                "Country Date Strain": "NA",
+                "Country Lat": 35.000074,
+                "Country Lon": 104.999927,
+                "Country Raw": "NA",
+                "Date Bp Mean": "NA",
+                "Date Err": "NA",
+                "Date Mean": "NA",
+                "Host Human": "NA",
+                "Host Order": "Rodentia",
+                "Host Order Conf Category": "HIGH",
+                "Host Order Confidence": 0.96,
+                "Host Order Raw": "NA",
+                "Node Name": "NODE213",
+                "Node Type": "internal",
+                "Num Date": 1863.0,
+                "Num Date Confidence": [
+                  1783.0,
+                  1920.0
+                ],
+                "Population": "3.ANT",
+                "Population Conf Category": "HIGH",
+                "Population Confidence": 1.0,
+                "Population Geo Dist": 0.0,
+                "Population Raw": "NA",
+                "Population Rtt Dist": "NA",
+                "Province": "Gansu",
+                "Province Conf Category": "HIGH",
+                "Province Confidence": 1.0,
+                "Province Date Strain": "NA",
+                "Province Lat": 38.0000001,
+                "Province Lon": 101.9999999,
+                "Province Raw": "NA",
+                "Rate Sub": 1.0485638576288928e-08,
+                "Rate Sub Year": 0.04434479313170636,
+                "Root Geo Dist": 823.02714885,
+                "Root Rtt Dist": "NA",
+                "Strain": "NA"
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {},
+                "name": "GCA_000324325.1_ASM32432v1_genomic",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMN02403051"
+                  },
+                  "branch_length_sub": {
+                    "value": 5.0
+                  },
+                  "branch_length_time": {
+                    "value": 99.0
+                  },
+                  "branch_number": {
+                    "value": "3.0"
+                  },
+                  "branch_support": {
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Asia": 1.0
+                    },
+                    "value": "Asia"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "continent_raw": {
+                    "value": "Asia"
+                  },
+                  "country": {
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "value": "China"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_date_strain": {
+                    "value": "China (1961.0) CMCC71001"
+                  },
+                  "country_lat": {
+                    "value": 35.000074
+                  },
+                  "country_lon": {
+                    "value": 104.999927
+                  },
+                  "country_raw": {
+                    "value": "China"
+                  },
+                  "date_bp_mean": {
+                    "value": 60.0
+                  },
+                  "date_err": {
+                    "value": 0.0
+                  },
+                  "date_mean": {
+                    "value": 1961.0
+                  },
+                  "div": 3.9776e-06,
+                  "host_human": {
+                    "value": "Non-Human"
+                  },
+                  "host_order": {
+                    "confidence": {
+                      "Rodentia": 1.0
+                    },
+                    "value": "Rodentia"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "host_order_raw": {
+                    "value": "Rodentia"
+                  },
+                  "node_name": {
+                    "value": "GCA_000324325.1_ASM32432v1_genomic"
+                  },
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      1961.0,
+                      1961.0
+                    ],
+                    "value": 1961.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "3.ANT": 1.0
+                    },
+                    "value": "3.ANT"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
+                  "population_raw": {
+                    "value": "3.ANT"
+                  },
+                  "population_rtt_dist": {
+                    "value": 3.9776e-06
+                  },
+                  "province": {
+                    "confidence": {
+                      "Gansu": 1.0
+                    },
+                    "value": "Gansu"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "province_date_strain": {
+                    "value": "China (1961.0) CMCC71001"
+                  },
+                  "province_lat": {
+                    "value": 38.0000001
+                  },
+                  "province_lon": {
+                    "value": 101.9999999
+                  },
+                  "province_raw": {
+                    "value": "Gansu"
+                  },
+                  "rate_sub": {
+                    "value": 1.1954605385357892e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.05055719772600629
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
+                  },
+                  "root_rtt_dist": {
+                    "value": 5.9336800000000004e-05
+                  },
+                  "strain": {
+                    "value": "CMCC71001"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "Biosample Accession": "NA",
+                    "Blank": " ",
+                    "Branch Length": 2.356e-07,
+                    "Branch Length Sub": 1.0,
+                    "Branch Length Time": 39.0,
+                    "Branch Number": "NA",
+                    "Branch Support": 100.0,
+                    "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
+                    "Continent": "Asia",
+                    "Continent Conf Category": "HIGH",
+                    "Continent Confidence": 1.0,
+                    "Continent Raw": "NA",
+                    "Country": "China",
+                    "Country Conf Category": "HIGH",
+                    "Country Confidence": 1.0,
+                    "Country Date Strain": "NA",
+                    "Country Lat": 35.000074,
+                    "Country Lon": 104.999927,
+                    "Country Raw": "NA",
+                    "Date Bp Mean": "NA",
+                    "Date Err": "NA",
+                    "Date Mean": "NA",
+                    "Host Human": "NA",
+                    "Host Order": "Rodentia",
+                    "Host Order Conf Category": "LOW",
+                    "Host Order Confidence": 0.87,
+                    "Host Order Raw": "NA",
+                    "Node Name": "NODE214",
+                    "Node Type": "internal",
+                    "Num Date": 1902.0,
+                    "Num Date Confidence": [
+                      1858.0,
+                      1941.0
+                    ],
+                    "Population": "3.ANT",
+                    "Population Conf Category": "HIGH",
+                    "Population Confidence": 1.0,
+                    "Population Geo Dist": 0.0,
+                    "Population Raw": "NA",
+                    "Population Rtt Dist": "NA",
+                    "Province": "Gansu",
+                    "Province Conf Category": "HIGH",
+                    "Province Confidence": 1.0,
+                    "Province Date Strain": "NA",
+                    "Province Lat": 38.0000001,
+                    "Province Lon": 101.9999999,
+                    "Province Raw": "NA",
+                    "Rate Sub": 5.991511178135561e-09,
+                    "Rate Sub Year": 0.025338687940430746,
+                    "Root Geo Dist": 823.02714885,
+                    "Root Rtt Dist": "NA",
+                    "Strain": "NA"
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {},
+                    "name": "GCA_000323525.1_ASM32352v1_genomic",
+                    "node_attrs": {
+                      "biosample_accession": {
+                        "value": "SAMN02403010"
+                      },
+                      "branch_length_sub": {
+                        "value": 4.0
+                      },
+                      "branch_length_time": {
+                        "value": 87.0
+                      },
+                      "branch_number": {
+                        "value": "3.0"
+                      },
+                      "branch_support": {
+                        "value": 0.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "LOW"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Asia": 1.0
+                        },
+                        "value": "Asia"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "continent_raw": {
+                        "value": "Asia"
+                      },
+                      "country": {
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "value": "China"
+                      },
+                      "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_date_strain": {
+                        "value": "China (1989.0) 71021"
+                      },
+                      "country_lat": {
+                        "value": 35.000074
+                      },
+                      "country_lon": {
+                        "value": 104.999927
+                      },
+                      "country_raw": {
+                        "value": "China"
+                      },
+                      "date_bp_mean": {
+                        "value": 32.0
+                      },
+                      "date_err": {
+                        "value": 0.0
+                      },
+                      "date_mean": {
+                        "value": 1989.0
+                      },
+                      "div": 3.9777e-06,
+                      "host_human": {
+                        "value": "Non-Human"
+                      },
+                      "host_order": {
+                        "confidence": {
+                          "Siphonaptera": 1.0
+                        },
+                        "value": "Siphonaptera"
+                      },
+                      "host_order_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "host_order_raw": {
+                        "value": "Siphonaptera"
+                      },
+                      "node_name": {
+                        "value": "GCA_000323525.1_ASM32352v1_genomic"
+                      },
+                      "node_type": {
+                        "value": "terminal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          1989.0,
+                          1989.0
+                        ],
+                        "value": 1989.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "3.ANT": 1.0
+                        },
+                        "value": "3.ANT"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
+                      "population_raw": {
+                        "value": "3.ANT"
+                      },
+                      "population_rtt_dist": {
+                        "value": 3.9777e-06
+                      },
+                      "province": {
+                        "confidence": {
+                          "Gansu": 1.0
+                        },
+                        "value": "Gansu"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_date_strain": {
+                        "value": "China (1989.0) 71021"
+                      },
+                      "province_lat": {
+                        "value": 38.0000001
+                      },
+                      "province_lon": {
+                        "value": 101.9999999
+                      },
+                      "province_raw": {
+                        "value": "Gansu"
+                      },
+                      "rate_sub": {
+                        "value": 1.0806130698791864e-08
+                      },
+                      "rate_sub_year": {
+                        "value": 0.04570018572599927
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
+                      },
+                      "root_rtt_dist": {
+                        "value": 5.93369e-05
+                      },
+                      "strain": {
+                        "value": "71021"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {},
+                    "name": "GCA_000323765.1_ASM32376v1_genomic",
+                    "node_attrs": {
+                      "biosample_accession": {
+                        "value": "SAMN02403023"
+                      },
+                      "branch_length_sub": {
+                        "value": 4.0
+                      },
+                      "branch_length_time": {
+                        "value": 74.0
+                      },
+                      "branch_number": {
+                        "value": "3.0"
+                      },
+                      "branch_support": {
+                        "value": 0.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "LOW"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Asia": 1.0
+                        },
+                        "value": "Asia"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "continent_raw": {
+                        "value": "Asia"
+                      },
+                      "country": {
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "value": "China"
+                      },
+                      "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_date_strain": {
+                        "value": "China (1976.0) C1976001"
+                      },
+                      "country_lat": {
+                        "value": 35.000074
+                      },
+                      "country_lon": {
+                        "value": 104.999927
+                      },
+                      "country_raw": {
+                        "value": "China"
+                      },
+                      "date_bp_mean": {
+                        "value": 45.0
+                      },
+                      "date_err": {
+                        "value": 0.0
+                      },
+                      "date_mean": {
+                        "value": 1976.0
+                      },
+                      "div": 3.9777e-06,
+                      "host_human": {
+                        "value": "Non-Human"
+                      },
+                      "host_order": {
+                        "confidence": {
+                          "Rodentia": 1.0
+                        },
+                        "value": "Rodentia"
+                      },
+                      "host_order_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "host_order_raw": {
+                        "value": "Rodentia"
+                      },
+                      "node_name": {
+                        "value": "GCA_000323765.1_ASM32376v1_genomic"
+                      },
+                      "node_type": {
+                        "value": "terminal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          1976.0,
+                          1976.0
+                        ],
+                        "value": 1976.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "3.ANT": 1.0
+                        },
+                        "value": "3.ANT"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
+                      "population_raw": {
+                        "value": "3.ANT"
+                      },
+                      "population_rtt_dist": {
+                        "value": 3.9777e-06
+                      },
+                      "province": {
+                        "confidence": {
+                          "Gansu": 1.0
+                        },
+                        "value": "Gansu"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_date_strain": {
+                        "value": "China (1976.0) C1976001"
+                      },
+                      "province_lat": {
+                        "value": 38.0000001
+                      },
+                      "province_lon": {
+                        "value": 101.9999999
+                      },
+                      "province_raw": {
+                        "value": "Gansu"
+                      },
+                      "rate_sub": {
+                        "value": 1.2699375341136513e-08
+                      },
+                      "rate_sub_year": {
+                        "value": 0.05370690285644975
+                      },
+                      "root_geo_dist": {
+                        "value": 823.02714885
+                      },
+                      "root_rtt_dist": {
+                        "value": 5.93369e-05
+                      },
+                      "strain": {
+                        "value": "C1976001"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE214",
+                "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 1.0
+                  },
+                  "branch_length_time": {
+                    "value": 39.0
+                  },
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Asia": 1.0
+                    },
+                    "value": "Asia"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country": {
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "value": "China"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_lat": {
+                    "value": 35.000074
+                  },
+                  "country_lon": {
+                    "value": 104.999927
+                  },
+                  "div": 3.0353999999999998e-06,
+                  "host_order": {
+                    "confidence": {
+                      "Rodentia": 0.87
+                    },
+                    "value": "Rodentia"
+                  },
+                  "host_order_conf_category": {
+                    "value": "LOW"
+                  },
+                  "node_name": {
+                    "value": "NODE214"
+                  },
+                  "node_type": {
+                    "value": "internal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      1858.0,
+                      1941.0
+                    ],
+                    "value": 1902.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "3.ANT": 1.0
+                    },
+                    "value": "3.ANT"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
+                  "province": {
+                    "confidence": {
+                      "Gansu": 1.0
+                    },
+                    "value": "Gansu"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "province_lat": {
+                    "value": 38.0000001
+                  },
+                  "province_lon": {
+                    "value": 101.9999999
+                  },
+                  "rate_sub": {
+                    "value": 5.991511178135561e-09
+                  },
+                  "rate_sub_year": {
+                    "value": 0.025338687940430746
+                  },
+                  "root_geo_dist": {
+                    "value": 823.02714885
+                  }
+                }
+              }
+            ],
+            "name": "NODE213",
+            "node_attrs": {
+              "branch_length_sub": {
+                "value": 11.0
+              },
+              "branch_length_time": {
+                "value": 245.0
+              },
+              "branch_support": {
+                "value": 100.0
+              },
+              "branch_support_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_support_conf_char": {
+                "value": "*"
+              },
+              "continent": {
+                "confidence": {
+                  "Asia": 1.0
+                },
+                "value": "Asia"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "country": {
+                "confidence": {
+                  "China": 1.0
+                },
+                "value": "China"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_lat": {
+                "value": 35.000074
+              },
+              "country_lon": {
+                "value": 104.999927
+              },
+              "div": 2.7998e-06,
+              "host_order": {
+                "confidence": {
+                  "Rodentia": 0.96
+                },
+                "value": "Rodentia"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "node_name": {
+                "value": "NODE213"
+              },
+              "node_type": {
+                "value": "internal"
+              },
+              "num_date": {
+                "confidence": [
+                  1783.0,
+                  1920.0
+                ],
+                "value": 1863.0
+              },
+              "population": {
+                "confidence": {
+                  "3.ANT": 1.0
+                },
+                "value": "3.ANT"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 0.0
+              },
+              "province": {
+                "confidence": {
+                  "Gansu": 1.0
+                },
+                "value": "Gansu"
+              },
+              "province_conf_category": {
+                "value": "HIGH"
+              },
+              "province_lat": {
+                "value": 38.0000001
+              },
+              "province_lon": {
+                "value": 101.9999999
+              },
+              "rate_sub": {
+                "value": 1.0485638576288928e-08
+              },
+              "rate_sub_year": {
+                "value": 0.04434479313170636
+              },
+              "root_geo_dist": {
+                "value": 823.02714885
+              }
+            }
+          }
+        ],
+        "name": "NODE212",
+        "node_attrs": {
+          "branch_length_sub": {
+            "value": 1.0
+          },
+          "branch_length_time": {
+            "value": 167.0
+          },
+          "branch_support": {
+            "value": 100.0
+          },
+          "branch_support_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
+          "continent": {
+            "confidence": {
+              "Asia": 1.0
+            },
+            "value": "Asia"
+          },
+          "continent_conf_category": {
+            "value": "HIGH"
+          },
+          "country": {
+            "confidence": {
+              "China": 1.0
+            },
+            "value": "China"
+          },
+          "country_conf_category": {
+            "value": "HIGH"
+          },
+          "country_lat": {
+            "value": 35.000074
+          },
+          "country_lon": {
+            "value": 104.999927
+          },
+          "div": 2.356e-07,
+          "host_order": {
+            "confidence": {
+              "Rodentia": 0.82
+            },
+            "value": "Rodentia"
+          },
+          "host_order_conf_category": {
+            "value": "LOW"
+          },
+          "node_name": {
+            "value": "NODE212"
+          },
+          "node_type": {
+            "value": "internal"
+          },
+          "num_date": {
+            "confidence": [
+              1484.0,
+              1761.0
+            ],
+            "value": 1618.0
+          },
+          "population": {
+            "confidence": {
+              "3.ANT": 1.0
+            },
+            "value": "3.ANT"
+          },
+          "population_conf_category": {
+            "value": "HIGH"
+          },
+          "population_geo_dist": {
+            "value": 0.0
+          },
+          "province": {
+            "confidence": {
+              "Qinghai": 0.54
+            },
+            "value": "Qinghai"
+          },
+          "province_conf_category": {
+            "value": "LOW"
+          },
+          "province_lat": {
+            "value": 35.40709525
+          },
+          "province_lon": {
+            "value": 95.95211573241954
+          },
+          "rate_sub": {
+            "value": 1.4133173365326936e-09
+          },
+          "rate_sub_year": {
+            "value": 0.005977057521295741
+          },
+          "root_geo_dist": {
+            "value": 823.02714885
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "Biosample Accession": "NA",
+            "Blank": " ",
+            "Branch Length": 4.0046e-06,
+            "Branch Length Sub": 17.0,
+            "Branch Length Time": 321.0,
+            "Branch Number": "NA",
+            "Branch Support": 100.0,
+            "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
+            "Continent": "Asia",
+            "Continent Conf Category": "HIGH",
+            "Continent Confidence": 1.0,
+            "Continent Raw": "NA",
+            "Country": "Mongolia",
+            "Country Conf Category": "HIGH",
+            "Country Confidence": 1.0,
+            "Country Date Strain": "NA",
+            "Country Lat": 46.8250388,
+            "Country Lon": 103.8499736,
+            "Country Raw": "NA",
+            "Date Bp Mean": "NA",
+            "Date Err": "NA",
+            "Date Mean": "NA",
+            "Host Human": "NA",
+            "Host Order": "Rodentia",
+            "Host Order Conf Category": "HIGH",
+            "Host Order Confidence": 0.99,
+            "Host Order Raw": "NA",
+            "Node Name": "NODE215",
+            "Node Type": "internal",
+            "Num Date": 1773.0,
+            "Num Date Confidence": [
+              1677.0,
+              1839.0
+            ],
+            "Population": "3.ANT",
+            "Population Conf Category": "HIGH",
+            "Population Confidence": 1.0,
+            "Population Geo Dist": 1318.38292015,
+            "Population Raw": "NA",
+            "Population Rtt Dist": "NA",
+            "Province": "Hovsgel",
+            "Province Conf Category": "LOW",
+            "Province Confidence": 0.42,
+            "Province Date Strain": "NA",
+            "Province Lat": 50.2206196,
+            "Province Lon": 99.9170492,
+            "Province Raw": "NA",
+            "Rate Sub": 1.2466457055692182e-08,
+            "Rate Sub Year": 0.0527218686013137,
+            "Root Geo Dist": 1429.89577187,
+            "Root Rtt Dist": "NA",
+            "Strain": "NA"
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {},
+            "name": "GCA_013391965.1_ASM1339196v1_genomic",
+            "node_attrs": {
+              "biosample_accession": {
+                "value": "SAMN13880442"
+              },
+              "branch_length_sub": {
+                "value": 11.0
+              },
+              "branch_length_time": {
+                "value": 244.0
+              },
+              "branch_number": {
+                "value": "3.0"
+              },
+              "branch_support": {
+                "value": 0.0
+              },
+              "branch_support_conf_category": {
+                "value": "LOW"
+              },
+              "continent": {
+                "confidence": {
+                  "Asia": 1.0
+                },
+                "value": "Asia"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "continent_raw": {
+                "value": "Asia"
+              },
+              "country": {
+                "confidence": {
+                  "Mongolia": 1.0
+                },
+                "value": "Mongolia"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_date_strain": {
+                "value": "Mongolia (2016.0) 3243"
+              },
+              "country_lat": {
+                "value": 46.8250388
+              },
+              "country_lon": {
+                "value": 103.8499736
+              },
+              "country_raw": {
+                "value": "Mongolia"
+              },
+              "date_bp_mean": {
+                "value": 5.0
+              },
+              "date_err": {
+                "value": 0.0
+              },
+              "date_mean": {
+                "value": 2016.0
+              },
+              "div": 6.5958e-06,
+              "host_human": {
+                "value": "Non-Human"
+              },
+              "host_order": {
+                "confidence": {
+                  "Rodentia": 1.0
+                },
+                "value": "Rodentia"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "host_order_raw": {
+                "value": "Rodentia"
+              },
+              "node_name": {
+                "value": "GCA_013391965.1_ASM1339196v1_genomic"
+              },
+              "node_type": {
+                "value": "terminal"
+              },
+              "num_date": {
+                "confidence": [
+                  2016.0,
+                  2016.0
+                ],
+                "value": 2016.0
+              },
+              "population": {
+                "confidence": {
+                  "3.ANT": 1.0
+                },
+                "value": "3.ANT"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 1318.38292015
+              },
+              "population_raw": {
+                "value": "3.ANT"
+              },
+              "population_rtt_dist": {
+                "value": 6.5958000000000004e-06
+              },
+              "province": {
+                "confidence": {
+                  "Hovsgel": 1.0
+                },
+                "value": "Hovsgel"
+              },
+              "province_conf_category": {
+                "value": "HIGH"
+              },
+              "province_date_strain": {
+                "value": "Mongolia (2016.0) 3243"
+              },
+              "province_lat": {
+                "value": 50.2206196
+              },
+              "province_lon": {
+                "value": 99.9170492
+              },
+              "province_raw": {
+                "value": "Hovsgel"
+              },
+              "rate_sub": {
+                "value": 1.063986170479229e-08
+              },
+              "rate_sub_year": {
+                "value": 0.04499701785601366
+              },
+              "root_geo_dist": {
+                "value": 1429.89577187
+              },
+              "root_rtt_dist": {
+                "value": 6.1955e-05
+              },
+              "strain": {
+                "value": "3243"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "Biosample Accession": "NA",
+                "Blank": " ",
+                "Branch Length": 7.067e-07,
+                "Branch Length Sub": 3.0,
+                "Branch Length Time": 38.0,
+                "Branch Number": "NA",
+                "Branch Support": 100.0,
+                "Branch Support Conf Category": "HIGH",
+                "Branch Support Conf Char": "*",
+                "Continent": "Asia",
+                "Continent Conf Category": "HIGH",
+                "Continent Confidence": 1.0,
+                "Continent Raw": "NA",
+                "Country": "Mongolia",
+                "Country Conf Category": "HIGH",
+                "Country Confidence": 1.0,
+                "Country Date Strain": "NA",
+                "Country Lat": 46.8250388,
+                "Country Lon": 103.8499736,
+                "Country Raw": "NA",
+                "Date Bp Mean": "NA",
+                "Date Err": "NA",
+                "Date Mean": "NA",
+                "Host Human": "NA",
+                "Host Order": "Rodentia",
+                "Host Order Conf Category": "HIGH",
+                "Host Order Confidence": 0.99,
+                "Host Order Raw": "NA",
+                "Node Name": "NODE216",
+                "Node Type": "internal",
+                "Num Date": 1811.0,
+                "Num Date Confidence": [
+                  1740.0,
+                  1864.0
+                ],
+                "Population": "3.ANT",
+                "Population Conf Category": "HIGH",
+                "Population Confidence": 1.0,
+                "Population Geo Dist": 1318.38292015,
+                "Population Raw": "NA",
+                "Population Rtt Dist": "NA",
+                "Province": "Govi-Altai",
+                "Province Conf Category": "LOW",
+                "Province Confidence": 0.39,
+                "Province Date Strain": "NA",
+                "Province Lat": 45.3463139,
+                "Province Lon": 95.9325806,
+                "Province Raw": "NA",
+                "Rate Sub": 1.864811091232459e-08,
+                "Rate Sub Year": 0.0788646885630901,
+                "Root Geo Dist": 1429.89577187,
+                "Root Rtt Dist": "NA",
+                "Strain": "NA"
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {},
+                "name": "GCA_013391945.1_ASM1339194v1_genomic",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMN13880443"
+                  },
+                  "branch_length_sub": {
+                    "value": 9.0
+                  },
+                  "branch_length_time": {
+                    "value": 207.0
+                  },
+                  "branch_number": {
+                    "value": "3.0"
+                  },
+                  "branch_support": {
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Asia": 1.0
+                    },
+                    "value": "Asia"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "continent_raw": {
+                    "value": "Asia"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Mongolia": 1.0
+                    },
+                    "value": "Mongolia"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_date_strain": {
+                    "value": "Mongolia (2017.0) 3256"
+                  },
+                  "country_lat": {
+                    "value": 46.8250388
+                  },
+                  "country_lon": {
+                    "value": 103.8499736
+                  },
+                  "country_raw": {
+                    "value": "Mongolia"
+                  },
+                  "date_bp_mean": {
+                    "value": 4.0
+                  },
+                  "date_err": {
+                    "value": 0.0
+                  },
+                  "date_mean": {
+                    "value": 2017.0
+                  },
+                  "div": 6.8314e-06,
+                  "host_human": {
+                    "value": "Non-Human"
+                  },
+                  "host_order": {
+                    "confidence": {
+                      "Rodentia": 1.0
+                    },
+                    "value": "Rodentia"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "host_order_raw": {
+                    "value": "Rodentia"
+                  },
+                  "node_name": {
+                    "value": "GCA_013391945.1_ASM1339194v1_genomic"
+                  },
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2017.0,
+                      2017.0
+                    ],
+                    "value": 2017.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "3.ANT": 1.0
+                    },
+                    "value": "3.ANT"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 1318.38292015
+                  },
+                  "population_raw": {
+                    "value": "3.ANT"
+                  },
+                  "population_rtt_dist": {
+                    "value": 6.8313999999999995e-06
+                  },
+                  "province": {
+                    "confidence": {
+                      "Zavkhan Province": 1.0
+                    },
+                    "value": "Zavkhan Province"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "province_date_strain": {
+                    "value": "Mongolia (2017.0) 3256"
+                  },
+                  "province_lat": {
+                    "value": 48.82133605
+                  },
+                  "province_lon": {
+                    "value": 93.1017516702174
+                  },
+                  "province_raw": {
+                    "value": "Zavkhan Province"
+                  },
+                  "rate_sub": {
+                    "value": 1.0259872241579558e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.04339000517711963
+                  },
+                  "root_geo_dist": {
+                    "value": 1429.89577187
+                  },
+                  "root_rtt_dist": {
+                    "value": 6.219059999999999e-05
+                  },
+                  "strain": {
+                    "value": "3256"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "Biosample Accession": "NA",
+                    "Blank": " ",
+                    "Branch Length": 7.067e-07,
+                    "Branch Length Sub": 3.0,
+                    "Branch Length Time": 10.0,
+                    "Branch Number": "NA",
+                    "Branch Support": 100.0,
+                    "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
+                    "Continent": "Asia",
+                    "Continent Conf Category": "HIGH",
+                    "Continent Confidence": 1.0,
+                    "Continent Raw": "NA",
+                    "Country": "Mongolia",
+                    "Country Conf Category": "HIGH",
+                    "Country Confidence": 1.0,
+                    "Country Date Strain": "NA",
+                    "Country Lat": 46.8250388,
+                    "Country Lon": 103.8499736,
+                    "Country Raw": "NA",
+                    "Date Bp Mean": "NA",
+                    "Date Err": "NA",
+                    "Date Mean": "NA",
+                    "Host Human": "NA",
+                    "Host Order": "Rodentia",
+                    "Host Order Conf Category": "HIGH",
+                    "Host Order Confidence": 0.98,
+                    "Host Order Raw": "NA",
+                    "Node Name": "NODE217",
+                    "Node Type": "internal",
+                    "Num Date": 1820.0,
+                    "Num Date Confidence": [
+                      1763.0,
+                      1872.0
+                    ],
+                    "Population": "3.ANT",
+                    "Population Conf Category": "HIGH",
+                    "Population Confidence": 1.0,
+                    "Population Geo Dist": 1318.38292015,
+                    "Population Raw": "NA",
+                    "Population Rtt Dist": "NA",
+                    "Province": "Govi-Altai",
+                    "Province Conf Category": "HIGH",
+                    "Province Confidence": 0.97,
+                    "Province Date Strain": "NA",
+                    "Province Lat": 45.3463139,
+                    "Province Lon": 95.9325806,
+                    "Province Raw": "NA",
+                    "Rate Sub": 7.349064442362308e-08,
+                    "Rate Sub Year": 0.31079913735065556,
+                    "Root Geo Dist": 1429.89577187,
+                    "Root Rtt Dist": "NA",
+                    "Strain": "NA"
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "Biosample Accession": "NA",
+                        "Blank": " ",
+                        "Branch Length": 2.8268e-06,
+                        "Branch Length Sub": 12.0,
+                        "Branch Length Time": 157.0,
+                        "Branch Number": "NA",
+                        "Branch Support": 100.0,
+                        "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
+                        "Continent": "Asia",
+                        "Continent Conf Category": "HIGH",
+                        "Continent Confidence": 1.0,
+                        "Continent Raw": "NA",
+                        "Country": "Mongolia",
+                        "Country Conf Category": "HIGH",
+                        "Country Confidence": 1.0,
+                        "Country Date Strain": "NA",
+                        "Country Lat": 46.8250388,
+                        "Country Lon": 103.8499736,
+                        "Country Raw": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Err": "NA",
+                        "Date Mean": "NA",
+                        "Host Human": "NA",
+                        "Host Order": "Rodentia",
+                        "Host Order Conf Category": "LOW",
+                        "Host Order Confidence": 0.87,
+                        "Host Order Raw": "NA",
+                        "Node Name": "NODE218",
+                        "Node Type": "internal",
+                        "Num Date": 1978.0,
+                        "Num Date Confidence": [
+                          1945.0,
+                          1998.0
+                        ],
+                        "Population": "3.ANT",
+                        "Population Conf Category": "HIGH",
+                        "Population Confidence": 1.0,
+                        "Population Geo Dist": 1318.38292015,
+                        "Population Raw": "NA",
+                        "Population Rtt Dist": "NA",
+                        "Province": "Govi-Altai",
+                        "Province Conf Category": "HIGH",
+                        "Province Confidence": 0.98,
+                        "Province Date Strain": "NA",
+                        "Province Lat": 45.3463139,
+                        "Province Lon": 95.9325806,
+                        "Province Raw": "NA",
+                        "Rate Sub": 1.7967672427491785e-08,
+                        "Rate Sub Year": 0.07598704752776066,
+                        "Root Geo Dist": 1429.89577187,
+                        "Root Rtt Dist": "NA",
+                        "Strain": "NA"
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "GCA_000325205.1_ASM32520v1_genomic",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMN02403094"
+                          },
+                          "branch_length_sub": {
+                            "value": 4.0
+                          },
+                          "branch_length_time": {
+                            "value": 23.0
+                          },
+                          "branch_number": {
+                            "value": "3.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Asia": 1.0
+                            },
+                            "value": "Asia"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "continent_raw": {
+                            "value": "Asia"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Mongolia": 1.0
+                            },
+                            "value": "Mongolia"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Mongolia (2000.0) MGJZ11"
+                          },
+                          "country_lat": {
+                            "value": 46.8250388
+                          },
+                          "country_lon": {
+                            "value": 103.8499736
+                          },
+                          "country_raw": {
+                            "value": "Mongolia"
+                          },
+                          "date_bp_mean": {
+                            "value": 21.0
+                          },
+                          "date_err": {
+                            "value": 0.0
+                          },
+                          "date_mean": {
+                            "value": 2000.0
+                          },
+                          "div": 9.1871e-06,
+                          "host_human": {
+                            "value": "Non-Human"
+                          },
+                          "host_order": {
+                            "confidence": {
+                              "Rodentia": 1.0
+                            },
+                            "value": "Rodentia"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "host_order_raw": {
+                            "value": "Rodentia"
+                          },
+                          "node_name": {
+                            "value": "GCA_000325205.1_ASM32520v1_genomic"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2000.0,
+                              2000.0
+                            ],
+                            "value": 2000.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "3.ANT": 1.0
+                            },
+                            "value": "3.ANT"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 1318.38292015
+                          },
+                          "population_raw": {
+                            "value": "3.ANT"
+                          },
+                          "population_rtt_dist": {
+                            "value": 9.1871e-06
+                          },
+                          "province": {
+                            "confidence": {
+                              "Bayan-\u00d6lgii": 1.0
+                            },
+                            "value": "Bayan-\u00d6lgii"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Mongolia (2000.0) MGJZ11"
+                          },
+                          "province_lat": {
+                            "value": 48.5470083
+                          },
+                          "province_lon": {
+                            "value": 89.8549358
+                          },
+                          "province_raw": {
+                            "value": "Bayan-\u00d6lgii"
+                          },
+                          "rate_sub": {
+                            "value": 4.151613414870557e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.17557579989602243
+                          },
+                          "root_geo_dist": {
+                            "value": 1429.89577187
+                          },
+                          "root_rtt_dist": {
+                            "value": 6.45463e-05
+                          },
+                          "strain": {
+                            "value": "MGJZ11"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {},
+                        "name": "GCA_000325305.1_ASM32530v1_genomic",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMN02403099"
+                          },
+                          "branch_length_sub": {
+                            "value": 0.0
+                          },
+                          "branch_length_time": {
+                            "value": 21.0
+                          },
+                          "branch_number": {
+                            "value": "3.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Asia": 1.0
+                            },
+                            "value": "Asia"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "continent_raw": {
+                            "value": "Asia"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Mongolia": 1.0
+                            },
+                            "value": "Mongolia"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Mongolia (1998.0) MGJZ9"
+                          },
+                          "country_lat": {
+                            "value": 46.8250388
+                          },
+                          "country_lon": {
+                            "value": 103.8499736
+                          },
+                          "country_raw": {
+                            "value": "Mongolia"
+                          },
+                          "date_bp_mean": {
+                            "value": 23.0
+                          },
+                          "date_err": {
+                            "value": 0.0
+                          },
+                          "date_mean": {
+                            "value": 1998.0
+                          },
+                          "div": 8.2684e-06,
+                          "host_human": {
+                            "value": "Non-Human"
+                          },
+                          "host_order": {
+                            "confidence": {
+                              "Siphonaptera": 1.0
+                            },
+                            "value": "Siphonaptera"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "host_order_raw": {
+                            "value": "Siphonaptera"
+                          },
+                          "node_name": {
+                            "value": "GCA_000325305.1_ASM32530v1_genomic"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              1998.0,
+                              1998.0
+                            ],
+                            "value": 1998.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "3.ANT": 1.0
+                            },
+                            "value": "3.ANT"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 1318.38292015
+                          },
+                          "population_raw": {
+                            "value": "3.ANT"
+                          },
+                          "population_rtt_dist": {
+                            "value": 8.2684e-06
+                          },
+                          "province": {
+                            "confidence": {
+                              "Govi-Altai": 1.0
+                            },
+                            "value": "Govi-Altai"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Mongolia (1998.0) MGJZ9"
+                          },
+                          "province_lat": {
+                            "value": 45.3463139
+                          },
+                          "province_lon": {
+                            "value": 95.9325806
+                          },
+                          "province_raw": {
+                            "value": "Govi-Altai"
+                          },
+                          "rate_sub": {
+                            "value": 1.1402508551881415e-09
+                          },
+                          "rate_sub_year": {
+                            "value": 0.004822232611174459
+                          },
+                          "root_geo_dist": {
+                            "value": 1429.89577187
+                          },
+                          "root_rtt_dist": {
+                            "value": 6.362760000000001e-05
+                          },
+                          "strain": {
+                            "value": "MGJZ9"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE218",
+                    "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 12.0
+                      },
+                      "branch_length_time": {
+                        "value": 157.0
+                      },
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_support_conf_char": {
+                        "value": "*"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Asia": 1.0
+                        },
+                        "value": "Asia"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country": {
+                        "confidence": {
+                          "Mongolia": 1.0
+                        },
+                        "value": "Mongolia"
+                      },
+                      "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_lat": {
+                        "value": 46.8250388
+                      },
+                      "country_lon": {
+                        "value": 103.8499736
+                      },
+                      "div": 8.244800000000001e-06,
+                      "host_order": {
+                        "confidence": {
+                          "Rodentia": 0.87
+                        },
+                        "value": "Rodentia"
+                      },
+                      "host_order_conf_category": {
+                        "value": "LOW"
+                      },
+                      "node_name": {
+                        "value": "NODE218"
+                      },
+                      "node_type": {
+                        "value": "internal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          1945.0,
+                          1998.0
+                        ],
+                        "value": 1978.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "3.ANT": 1.0
+                        },
+                        "value": "3.ANT"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 1318.38292015
+                      },
+                      "province": {
+                        "confidence": {
+                          "Govi-Altai": 0.98
+                        },
+                        "value": "Govi-Altai"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_lat": {
+                        "value": 45.3463139
+                      },
+                      "province_lon": {
+                        "value": 95.9325806
+                      },
+                      "rate_sub": {
+                        "value": 1.7967672427491785e-08
+                      },
+                      "rate_sub_year": {
+                        "value": 0.07598704752776066
+                      },
+                      "root_geo_dist": {
+                        "value": 1429.89577187
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "Biosample Accession": "NA",
+                        "Blank": " ",
+                        "Branch Length": 2.356e-07,
+                        "Branch Length Sub": 1.0,
+                        "Branch Length Time": 0.0,
+                        "Branch Number": "NA",
+                        "Branch Support": 100.0,
+                        "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
+                        "Continent": "Asia",
+                        "Continent Conf Category": "HIGH",
+                        "Continent Confidence": 1.0,
+                        "Continent Raw": "NA",
+                        "Country": "Mongolia",
+                        "Country Conf Category": "HIGH",
+                        "Country Confidence": 1.0,
+                        "Country Date Strain": "NA",
+                        "Country Lat": 46.8250388,
+                        "Country Lon": 103.8499736,
+                        "Country Raw": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Err": "NA",
+                        "Date Mean": "NA",
+                        "Host Human": "NA",
+                        "Host Order": "Rodentia",
+                        "Host Order Conf Category": "HIGH",
+                        "Host Order Confidence": 0.99,
+                        "Host Order Raw": "NA",
+                        "Node Name": "NODE219",
+                        "Node Type": "internal",
+                        "Num Date": 1820.0,
+                        "Num Date Confidence": [
+                          1763.0,
+                          1872.0
+                        ],
+                        "Population": "3.ANT",
+                        "Population Conf Category": "HIGH",
+                        "Population Confidence": 1.0,
+                        "Population Geo Dist": 1318.38292015,
+                        "Population Raw": "NA",
+                        "Population Rtt Dist": "NA",
+                        "Province": "Govi-Altai",
+                        "Province Conf Category": "HIGH",
+                        "Province Confidence": 0.98,
+                        "Province Date Strain": "NA",
+                        "Province Lat": 45.3463139,
+                        "Province Lon": 95.9325806,
+                        "Province Raw": "NA",
+                        "Rate Sub": 0.0,
+                        "Rate Sub Year": 0.0,
+                        "Root Geo Dist": 1429.89577187,
+                        "Root Rtt Dist": "NA",
+                        "Strain": "NA"
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "GCA_000325245.1_ASM32524v1_genomic",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMN02403096"
+                          },
+                          "branch_length_sub": {
+                            "value": 16.0
+                          },
+                          "branch_length_time": {
+                            "value": 160.0
+                          },
+                          "branch_number": {
+                            "value": "3.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Asia": 1.0
+                            },
+                            "value": "Asia"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "continent_raw": {
+                            "value": "Asia"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Mongolia": 1.0
+                            },
+                            "value": "Mongolia"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Mongolia (1980.0) MGJZ3"
+                          },
+                          "country_lat": {
+                            "value": 46.8250388
+                          },
+                          "country_lon": {
+                            "value": 103.8499736
+                          },
+                          "country_raw": {
+                            "value": "Mongolia"
+                          },
+                          "date_bp_mean": {
+                            "value": 41.0
+                          },
+                          "date_err": {
+                            "value": 0.0
+                          },
+                          "date_mean": {
+                            "value": 1980.0
+                          },
+                          "div": 9.4226e-06,
+                          "host_human": {
+                            "value": "Non-Human"
+                          },
+                          "host_order": {
+                            "confidence": {
+                              "Rodentia": 1.0
+                            },
+                            "value": "Rodentia"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "host_order_raw": {
+                            "value": "Rodentia"
+                          },
+                          "node_name": {
+                            "value": "GCA_000325245.1_ASM32524v1_genomic"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              1980.0,
+                              1980.0
+                            ],
+                            "value": 1980.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "3.ANT": 1.0
+                            },
+                            "value": "3.ANT"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 1318.38292015
+                          },
+                          "population_raw": {
+                            "value": "3.ANT"
+                          },
+                          "population_rtt_dist": {
+                            "value": 9.4226e-06
+                          },
+                          "province": {
+                            "confidence": {
+                              "Govi-Altai": 1.0
+                            },
+                            "value": "Govi-Altai"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Mongolia (1980.0) MGJZ3"
+                          },
+                          "province_lat": {
+                            "value": 45.3463139
+                          },
+                          "province_lon": {
+                            "value": 95.9325806
+                          },
+                          "province_raw": {
+                            "value": "Govi-Altai"
+                          },
+                          "rate_sub": {
+                            "value": 2.3552717092436135e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.09960674875018748
+                          },
+                          "root_geo_dist": {
+                            "value": 1429.89577187
+                          },
+                          "root_rtt_dist": {
+                            "value": 6.478179999999999e-05
+                          },
+                          "strain": {
+                            "value": "MGJZ3"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "Biosample Accession": "NA",
+                            "Blank": " ",
+                            "Branch Length": 4.711e-07,
+                            "Branch Length Sub": 2.0,
+                            "Branch Length Time": 90.0,
+                            "Branch Number": "NA",
+                            "Branch Support": 100.0,
+                            "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
+                            "Continent": "Asia",
+                            "Continent Conf Category": "HIGH",
+                            "Continent Confidence": 1.0,
+                            "Continent Raw": "NA",
+                            "Country": "Mongolia",
+                            "Country Conf Category": "HIGH",
+                            "Country Confidence": 1.0,
+                            "Country Date Strain": "NA",
+                            "Country Lat": 46.8250388,
+                            "Country Lon": 103.8499736,
+                            "Country Raw": "NA",
+                            "Date Bp Mean": "NA",
+                            "Date Err": "NA",
+                            "Date Mean": "NA",
+                            "Host Human": "NA",
+                            "Host Order": "Rodentia",
+                            "Host Order Conf Category": "HIGH",
+                            "Host Order Confidence": 1.0,
+                            "Host Order Raw": "NA",
+                            "Node Name": "NODE220",
+                            "Node Type": "internal",
+                            "Num Date": 1911.0,
+                            "Num Date Confidence": [
+                              1851.0,
+                              1968.0
+                            ],
+                            "Population": "3.ANT",
+                            "Population Conf Category": "HIGH",
+                            "Population Confidence": 1.0,
+                            "Population Geo Dist": 1318.38292015,
+                            "Population Raw": "NA",
+                            "Population Rtt Dist": "NA",
+                            "Province": "Dornogovi",
+                            "Province Conf Category": "HIGH",
+                            "Province Confidence": 1.0,
+                            "Province Date Strain": "NA",
+                            "Province Lat": 44.4179637,
+                            "Province Lon": 109.7783753,
+                            "Province Raw": "NA",
+                            "Rate Sub": 5.229789931405493e-09,
+                            "Rate Sub Year": 0.022117294139327108,
+                            "Root Geo Dist": 1429.89577187,
+                            "Root Rtt Dist": "NA",
+                            "Strain": "NA"
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {},
+                            "name": "GCA_000325265.1_ASM32526v1_genomic",
+                            "node_attrs": {
+                              "biosample_accession": {
+                                "value": "SAMN02403097"
+                              },
+                              "branch_length_sub": {
+                                "value": 2.0
+                              },
+                              "branch_length_time": {
+                                "value": 87.0
+                              },
+                              "branch_number": {
+                                "value": "3.0"
+                              },
+                              "branch_support": {
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "continent": {
+                                "confidence": {
+                                  "Asia": 1.0
+                                },
+                                "value": "Asia"
+                              },
+                              "continent_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "continent_raw": {
+                                "value": "Asia"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Mongolia": 1.0
+                                },
+                                "value": "Mongolia"
+                              },
+                              "country_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "country_date_strain": {
+                                "value": "Mongolia (1997.0) MGJZ6"
+                              },
+                              "country_lat": {
+                                "value": 46.8250388
+                              },
+                              "country_lon": {
+                                "value": 103.8499736
+                              },
+                              "country_raw": {
+                                "value": "Mongolia"
+                              },
+                              "date_bp_mean": {
+                                "value": 24.0
+                              },
+                              "date_err": {
+                                "value": 0.0
+                              },
+                              "date_mean": {
+                                "value": 1997.0
+                              },
+                              "div": 6.5958e-06,
+                              "host_human": {
+                                "value": "Non-Human"
+                              },
+                              "host_order": {
+                                "confidence": {
+                                  "Rodentia": 1.0
+                                },
+                                "value": "Rodentia"
+                              },
+                              "host_order_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "host_order_raw": {
+                                "value": "Rodentia"
+                              },
+                              "node_name": {
+                                "value": "GCA_000325265.1_ASM32526v1_genomic"
+                              },
+                              "node_type": {
+                                "value": "terminal"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  1997.0,
+                                  1997.0
+                                ],
+                                "value": 1997.0
+                              },
+                              "population": {
+                                "confidence": {
+                                  "3.ANT": 1.0
+                                },
+                                "value": "3.ANT"
+                              },
+                              "population_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "population_geo_dist": {
+                                "value": 1318.38292015
+                              },
+                              "population_raw": {
+                                "value": "3.ANT"
+                              },
+                              "population_rtt_dist": {
+                                "value": 6.5958000000000004e-06
+                              },
+                              "province": {
+                                "confidence": {
+                                  "Dornogovi": 1.0
+                                },
+                                "value": "Dornogovi"
+                              },
+                              "province_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "province_date_strain": {
+                                "value": "Mongolia (1997.0) MGJZ6"
+                              },
+                              "province_lat": {
+                                "value": 44.4179637
+                              },
+                              "province_lon": {
+                                "value": 109.7783753
+                              },
+                              "province_raw": {
+                                "value": "Dornogovi"
+                              },
+                              "rate_sub": {
+                                "value": 5.4184240218715235e-09
+                              },
+                              "rate_sub_year": {
+                                "value": 0.022915046194048817
+                              },
+                              "root_geo_dist": {
+                                "value": 1429.89577187
+                              },
+                              "root_rtt_dist": {
+                                "value": 6.195499999999999e-05
+                              },
+                              "strain": {
+                                "value": "MGJZ6"
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {},
+                            "name": "GCA_000325285.1_ASM32528v1_genomic",
+                            "node_attrs": {
+                              "biosample_accession": {
+                                "value": "SAMN02403098"
+                              },
+                              "branch_length_sub": {
+                                "value": 5.0
+                              },
+                              "branch_length_time": {
+                                "value": 87.0
+                              },
+                              "branch_number": {
+                                "value": "3.0"
+                              },
+                              "branch_support": {
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "continent": {
+                                "confidence": {
+                                  "Asia": 1.0
+                                },
+                                "value": "Asia"
+                              },
+                              "continent_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "continent_raw": {
+                                "value": "Asia"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Mongolia": 1.0
+                                },
+                                "value": "Mongolia"
+                              },
+                              "country_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "country_date_strain": {
+                                "value": "Mongolia (1997.0) MGJZ7"
+                              },
+                              "country_lat": {
+                                "value": 46.8250388
+                              },
+                              "country_lon": {
+                                "value": 103.8499736
+                              },
+                              "country_raw": {
+                                "value": "Mongolia"
+                              },
+                              "date_bp_mean": {
+                                "value": 24.0
+                              },
+                              "date_err": {
+                                "value": 0.0
+                              },
+                              "date_mean": {
+                                "value": 1997.0
+                              },
+                              "div": 7.3025e-06,
+                              "host_human": {
+                                "value": "Non-Human"
+                              },
+                              "host_order": {
+                                "confidence": {
+                                  "Rodentia": 1.0
+                                },
+                                "value": "Rodentia"
+                              },
+                              "host_order_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "host_order_raw": {
+                                "value": "Rodentia"
+                              },
+                              "node_name": {
+                                "value": "GCA_000325285.1_ASM32528v1_genomic"
+                              },
+                              "node_type": {
+                                "value": "terminal"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  1997.0,
+                                  1997.0
+                                ],
+                                "value": 1997.0
+                              },
+                              "population": {
+                                "confidence": {
+                                  "3.ANT": 1.0
+                                },
+                                "value": "3.ANT"
+                              },
+                              "population_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "population_geo_dist": {
+                                "value": 1318.38292015
+                              },
+                              "population_raw": {
+                                "value": "3.ANT"
+                              },
+                              "population_rtt_dist": {
+                                "value": 7.3025e-06
+                              },
+                              "province": {
+                                "confidence": {
+                                  "Dornogovi": 1.0
+                                },
+                                "value": "Dornogovi"
+                              },
+                              "province_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "province_date_strain": {
+                                "value": "Mongolia (1997.0) MGJZ7"
+                              },
+                              "province_lat": {
+                                "value": 44.4179637
+                              },
+                              "province_lon": {
+                                "value": 109.7783753
+                              },
+                              "province_raw": {
+                                "value": "Dornogovi"
+                              },
+                              "rate_sub": {
+                                "value": 1.3546635136829295e-08
+                              },
+                              "rate_sub_year": {
+                                "value": 0.0572900475638945
+                              },
+                              "root_geo_dist": {
+                                "value": 1429.89577187
+                              },
+                              "root_rtt_dist": {
+                                "value": 6.266169999999997e-05
+                              },
+                              "strain": {
+                                "value": "MGJZ7"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE220",
+                        "node_attrs": {
+                          "branch_length_sub": {
+                            "value": 2.0
+                          },
+                          "branch_length_time": {
+                            "value": 90.0
+                          },
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "branch_support_conf_char": {
+                            "value": "*"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Asia": 1.0
+                            },
+                            "value": "Asia"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Mongolia": 1.0
+                            },
+                            "value": "Mongolia"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_lat": {
+                            "value": 46.8250388
+                          },
+                          "country_lon": {
+                            "value": 103.8499736
+                          },
+                          "div": 6.1247e-06,
+                          "host_order": {
+                            "confidence": {
+                              "Rodentia": 1.0
+                            },
+                            "value": "Rodentia"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "node_name": {
+                            "value": "NODE220"
+                          },
+                          "node_type": {
+                            "value": "internal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              1851.0,
+                              1968.0
+                            ],
+                            "value": 1911.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "3.ANT": 1.0
+                            },
+                            "value": "3.ANT"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 1318.38292015
+                          },
+                          "province": {
+                            "confidence": {
+                              "Dornogovi": 1.0
+                            },
+                            "value": "Dornogovi"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_lat": {
+                            "value": 44.4179637
+                          },
+                          "province_lon": {
+                            "value": 109.7783753
+                          },
+                          "rate_sub": {
+                            "value": 5.229789931405493e-09
+                          },
+                          "rate_sub_year": {
+                            "value": 0.022117294139327108
+                          },
+                          "root_geo_dist": {
+                            "value": 1429.89577187
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE219",
+                    "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 1.0
+                      },
+                      "branch_length_time": {
+                        "value": 0.0
+                      },
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_support_conf_char": {
+                        "value": "*"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Asia": 1.0
+                        },
+                        "value": "Asia"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country": {
+                        "confidence": {
+                          "Mongolia": 1.0
+                        },
+                        "value": "Mongolia"
+                      },
+                      "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_lat": {
+                        "value": 46.8250388
+                      },
+                      "country_lon": {
+                        "value": 103.8499736
+                      },
+                      "div": 5.6536e-06,
+                      "host_order": {
+                        "confidence": {
+                          "Rodentia": 0.99
+                        },
+                        "value": "Rodentia"
+                      },
+                      "host_order_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "node_name": {
+                        "value": "NODE219"
+                      },
+                      "node_type": {
+                        "value": "internal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          1763.0,
+                          1872.0
+                        ],
+                        "value": 1820.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "3.ANT": 1.0
+                        },
+                        "value": "3.ANT"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 1318.38292015
+                      },
+                      "province": {
+                        "confidence": {
+                          "Govi-Altai": 0.98
+                        },
+                        "value": "Govi-Altai"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_lat": {
+                        "value": 45.3463139
+                      },
+                      "province_lon": {
+                        "value": 95.9325806
+                      },
+                      "rate_sub": {
+                        "value": 0.0
+                      },
+                      "rate_sub_year": {
+                        "value": 0.0
+                      },
+                      "root_geo_dist": {
+                        "value": 1429.89577187
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE217",
+                "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 3.0
+                  },
+                  "branch_length_time": {
+                    "value": 10.0
+                  },
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Asia": 1.0
+                    },
+                    "value": "Asia"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Mongolia": 1.0
+                    },
+                    "value": "Mongolia"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_lat": {
+                    "value": 46.8250388
+                  },
+                  "country_lon": {
+                    "value": 103.8499736
+                  },
+                  "div": 5.4180000000000005e-06,
+                  "host_order": {
+                    "confidence": {
+                      "Rodentia": 0.98
+                    },
+                    "value": "Rodentia"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "node_name": {
+                    "value": "NODE217"
+                  },
+                  "node_type": {
+                    "value": "internal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      1763.0,
+                      1872.0
+                    ],
+                    "value": 1820.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "3.ANT": 1.0
+                    },
+                    "value": "3.ANT"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 1318.38292015
+                  },
+                  "province": {
+                    "confidence": {
+                      "Govi-Altai": 0.97
+                    },
+                    "value": "Govi-Altai"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "province_lat": {
+                    "value": 45.3463139
+                  },
+                  "province_lon": {
+                    "value": 95.9325806
+                  },
+                  "rate_sub": {
+                    "value": 7.349064442362308e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.31079913735065556
+                  },
+                  "root_geo_dist": {
+                    "value": 1429.89577187
+                  }
+                }
+              }
+            ],
+            "name": "NODE216",
+            "node_attrs": {
+              "branch_length_sub": {
+                "value": 3.0
+              },
+              "branch_length_time": {
+                "value": 38.0
+              },
+              "branch_support": {
+                "value": 100.0
+              },
+              "branch_support_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_support_conf_char": {
+                "value": "*"
+              },
+              "continent": {
+                "confidence": {
+                  "Asia": 1.0
+                },
+                "value": "Asia"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "country": {
+                "confidence": {
+                  "Mongolia": 1.0
+                },
+                "value": "Mongolia"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_lat": {
+                "value": 46.8250388
+              },
+              "country_lon": {
+                "value": 103.8499736
+              },
+              "div": 4.7113e-06,
+              "host_order": {
+                "confidence": {
+                  "Rodentia": 0.99
+                },
+                "value": "Rodentia"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "node_name": {
+                "value": "NODE216"
+              },
+              "node_type": {
+                "value": "internal"
+              },
+              "num_date": {
+                "confidence": [
+                  1740.0,
+                  1864.0
+                ],
+                "value": 1811.0
+              },
+              "population": {
+                "confidence": {
+                  "3.ANT": 1.0
+                },
+                "value": "3.ANT"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 1318.38292015
+              },
+              "province": {
+                "confidence": {
+                  "Govi-Altai": 0.39
+                },
+                "value": "Govi-Altai"
+              },
+              "province_conf_category": {
+                "value": "LOW"
+              },
+              "province_lat": {
+                "value": 45.3463139
+              },
+              "province_lon": {
+                "value": 95.9325806
+              },
+              "rate_sub": {
+                "value": 1.864811091232459e-08
+              },
+              "rate_sub_year": {
+                "value": 0.0788646885630901
+              },
+              "root_geo_dist": {
+                "value": 1429.89577187
+              }
+            }
+          }
+        ],
+        "name": "NODE215",
+        "node_attrs": {
+          "branch_length_sub": {
+            "value": 17.0
+          },
+          "branch_length_time": {
+            "value": 321.0
+          },
+          "branch_support": {
+            "value": 100.0
+          },
+          "branch_support_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
+          "continent": {
+            "confidence": {
+              "Asia": 1.0
+            },
+            "value": "Asia"
+          },
+          "continent_conf_category": {
+            "value": "HIGH"
+          },
+          "country": {
+            "confidence": {
+              "Mongolia": 1.0
+            },
+            "value": "Mongolia"
+          },
+          "country_conf_category": {
+            "value": "HIGH"
+          },
+          "country_lat": {
+            "value": 46.8250388
+          },
+          "country_lon": {
+            "value": 103.8499736
+          },
+          "div": 4.0046e-06,
+          "host_order": {
+            "confidence": {
+              "Rodentia": 0.99
+            },
+            "value": "Rodentia"
+          },
+          "host_order_conf_category": {
+            "value": "HIGH"
+          },
+          "node_name": {
+            "value": "NODE215"
+          },
+          "node_type": {
+            "value": "internal"
+          },
+          "num_date": {
+            "confidence": [
+              1677.0,
+              1839.0
+            ],
+            "value": 1773.0
+          },
+          "population": {
+            "confidence": {
+              "3.ANT": 1.0
+            },
+            "value": "3.ANT"
+          },
+          "population_conf_category": {
+            "value": "HIGH"
+          },
+          "population_geo_dist": {
+            "value": 1318.38292015
+          },
+          "province": {
+            "confidence": {
+              "Hovsgel": 0.42
+            },
+            "value": "Hovsgel"
+          },
+          "province_conf_category": {
+            "value": "LOW"
+          },
+          "province_lat": {
+            "value": 50.2206196
+          },
+          "province_lon": {
+            "value": 99.9170492
+          },
+          "rate_sub": {
+            "value": 1.2466457055692182e-08
+          },
+          "rate_sub_year": {
+            "value": 0.0527218686013137
+          },
+          "root_geo_dist": {
+            "value": 1429.89577187
+          }
+        }
+      }
+    ],
+    "name": "NODE211",
+    "node_attrs": {
+      "branch_length_sub": {
+        "value": 9.0
+      },
+      "branch_length_time": {
+        "value": 402.0
+      },
+      "branch_support": {
+        "value": 100.0
+      },
+      "branch_support_conf_category": {
+        "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
+      },
+      "continent": {
+        "confidence": {
+          "Asia": 1.0
+        },
+        "value": "Asia"
+      },
+      "continent_conf_category": {
+        "value": "HIGH"
+      },
+      "country": {
+        "confidence": {
+          "China": 0.95
+        },
+        "value": "China"
+      },
+      "country_conf_category": {
+        "value": "HIGH"
+      },
+      "country_lat": {
+        "value": 35.000074
+      },
+      "country_lon": {
+        "value": 104.999927
+      },
+      "div": 0,
+      "host_order": {
+        "confidence": {
+          "Rodentia": 0.94
+        },
+        "value": "Rodentia"
+      },
+      "host_order_conf_category": {
+        "value": "LOW"
+      },
+      "node_name": {
+        "value": "NODE211"
+      },
+      "node_type": {
+        "value": "internal"
+      },
+      "num_date": {
+        "confidence": [
+          1263.0,
+          1588.0
+        ],
+        "value": 1452.0
+      },
+      "population": {
+        "confidence": {
+          "3.ANT": 1.0
+        },
+        "value": "3.ANT"
+      },
+      "population_conf_category": {
+        "value": "HIGH"
+      },
+      "population_geo_dist": {
+        "value": 0.0
+      },
+      "province": {
+        "confidence": {
+          "Qinghai": 0.32
+        },
+        "value": "Qinghai"
+      },
+      "province_conf_category": {
+        "value": "LOW"
+      },
+      "province_lat": {
+        "value": 35.40709525
+      },
+      "province_lon": {
+        "value": 95.95211573241954
+      },
+      "rate_sub": {
+        "value": 5.278699708440292e-09
+      },
+      "rate_sub_year": {
+        "value": 0.022324138379565425
+      },
+      "root_geo_dist": {
+        "value": 823.02714885
+      }
     }
-  }
+  },
+  "version": "v2"
 }
