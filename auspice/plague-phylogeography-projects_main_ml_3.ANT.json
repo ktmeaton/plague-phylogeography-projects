@@ -28,6 +28,11 @@
         "type": "continuous"
       },
       {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
         "key": "branch_number",
         "title": "Branch Number",
         "type": "categorical"
@@ -413,7 +418,55 @@
         "type": "categorical"
       },
       {
-        "key": "country_conf_category",
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "Rodentia",
+            "#525252"
+          ],
+          [
+            "Siphonaptera",
+            "#2ca02c"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "Mongolia",
+            "#149df1"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -424,7 +477,33 @@
             "#3ae8d7"
           ]
         ],
-        "title": "Country Confidence",
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "population_raw",
+        "scale": [
+          [
+            "3.ANT",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
         "type": "categorical"
       },
       {
@@ -443,8 +522,149 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "Qinghai",
+            "#642bfe"
+          ],
+          [
+            "NA",
+            "#3f62fa"
+          ],
+          [
+            "Govi-Altai",
+            "#1a95f3"
+          ],
+          [
+            "Bayan-\u00d6lgii",
+            "#0da6ef"
+          ],
+          [
+            "Gansu",
+            "#1dd1e2"
+          ],
+          [
+            "Hovsgel",
+            "#21d5e0"
+          ],
+          [
+            "Zavkhan Province",
+            "#26d9df"
+          ],
+          [
+            "Dornogovi",
+            "#2adddd"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
         "type": "continuous"
       },
       {
@@ -453,303 +673,23 @@
         "type": "continuous"
       },
       {
-        "key": "host_human",
-        "title": "host_human",
-        "type": "categorical"
-      },
-      {
-        "key": "continent",
-        "scale": [
-          [
-            "Asia",
-            "#00b4ec"
-          ]
-        ],
-        "title": "Continent (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#3ae8d7"
-          ]
-        ],
-        "title": "Host Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "root_geo_dist",
-        "title": "root_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "population",
-        "scale": [
-          [
-            "3.ANT",
-            "#3ae8d7"
-          ]
-        ],
-        "title": "Population (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "continent_raw",
-        "scale": [
-          [
-            "Asia",
-            "#00b4ec"
-          ]
-        ],
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "host_order",
-        "scale": [
-          [
-            "Human",
-            "#d62728"
-          ],
-          [
-            "Rodentia",
-            "#525252"
-          ],
-          [
-            "Siphonaptera",
-            "#2ca02c"
-          ]
-        ],
-        "title": "Host (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#3ae8d7"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order_raw",
-        "scale": [
-          [
-            "Human",
-            "#d62728"
-          ],
-          [
-            "Rodentia",
-            "#525252"
-          ],
-          [
-            "Siphonaptera",
-            "#2ca02c"
-          ],
-          [
-            "NA",
-            "#FFFFFF"
-          ]
-        ],
-        "title": "Host",
-        "type": "categorical"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "China",
-            "#4a53fc"
-          ],
-          [
-            "Mongolia",
-            "#149df1"
-          ]
-        ],
-        "title": "Country (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "population_geo_dist",
-        "title": "population_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "population_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#3ae8d7"
-          ]
-        ],
-        "title": "Population Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "population_rtt_dist",
-        "title": "Population Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
         "key": "branch_support",
         "title": "Branch Support",
         "type": "continuous"
       },
       {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support_conf_char",
-        "title": "Branch Support Confidence Character",
-        "type": "categorical"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_raw",
+        "key": "branch_support_conf_category",
         "scale": [
           [
-            "Qinghai",
-            "#642bfe"
-          ],
-          [
-            "NA",
-            "#3f62fa"
-          ],
-          [
-            "Govi-Altai",
-            "#1a95f3"
-          ],
-          [
-            "Bayan-\u00d6lgii",
-            "#0da6ef"
-          ],
-          [
-            "Gansu",
-            "#1dd1e2"
-          ],
-          [
-            "Hovsgel",
-            "#21d5e0"
-          ],
-          [
-            "Zavkhan Province",
-            "#26d9df"
-          ],
-          [
-            "Dornogovi",
-            "#2adddd"
-          ]
-        ],
-        "title": "Province",
-        "type": "categorical"
-      },
-      {
-        "key": "blank",
-        "title": "Blank",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
+            "LOW",
             "#FFFFFF"
           ],
           [
-            "terminal",
+            "HIGH",
             "#3ae8d7"
           ]
         ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "population_raw",
-        "scale": [
-          [
-            "3.ANT",
-            "#3ae8d7"
-          ]
-        ],
-        "title": "Population",
-        "type": "categorical"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "title": "Branch Support Confidence",
         "type": "categorical"
       },
       {
@@ -788,6 +728,36 @@
         "type": "categorical"
       },
       {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
         "key": "continent_conf_category",
         "scale": [
           [
@@ -803,13 +773,44 @@
         "type": "categorical"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "3.ANT",
+            "#3ae8d7"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
         "type": "continuous"
       },
       {
@@ -818,18 +819,27 @@
         "type": "continuous"
       },
       {
-        "key": "branch_support_conf_category",
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order",
         "scale": [
           [
-            "LOW",
-            "#FFFFFF"
+            "Human",
+            "#d62728"
           ],
           [
-            "HIGH",
-            "#3ae8d7"
+            "Rodentia",
+            "#525252"
+          ],
+          [
+            "Siphonaptera",
+            "#2ca02c"
           ]
         ],
-        "title": "Branch Support Confidence",
+        "title": "Host (Inferred)",
         "type": "categorical"
       }
     ],
@@ -847,7 +857,8 @@
       "country",
       "province",
       "population",
-      "host_order"
+      "host_order",
+      "branch_minor"
     ],
     "geo_resolutions": [
       {
@@ -910,7 +921,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-08-18"
+    "updated": "2021-08-19"
   },
   "tree": {
     "branch_attrs": {
@@ -920,6 +931,7 @@
         "Branch Length": 4.0046e-06,
         "Branch Length Sub": 17.0,
         "Branch Length Time": 321.0,
+        "Branch Minor": "NA",
         "Branch Number": "NA",
         "Branch Support": 100.0,
         "Branch Support Conf Category": "HIGH",
@@ -979,6 +991,7 @@
             "Branch Length": 2.356e-07,
             "Branch Length Sub": 1.0,
             "Branch Length Time": 167.0,
+            "Branch Minor": "NA",
             "Branch Number": "NA",
             "Branch Support": 100.0,
             "Branch Support Conf Category": "HIGH",
@@ -1042,6 +1055,9 @@
               },
               "branch_length_time": {
                 "value": 386.0
+              },
+              "branch_minor": {
+                "value": "3.ANT1"
               },
               "branch_number": {
                 "value": "3.0"
@@ -1187,6 +1203,7 @@
                 "Branch Length": 2.5642e-06,
                 "Branch Length Sub": 11.0,
                 "Branch Length Time": 245.0,
+                "Branch Minor": "NA",
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
@@ -1250,6 +1267,9 @@
                   },
                   "branch_length_time": {
                     "value": 99.0
+                  },
+                  "branch_minor": {
+                    "value": "3.ANT1"
                   },
                   "branch_number": {
                     "value": "3.0"
@@ -1395,6 +1415,7 @@
                     "Branch Length": 2.356e-07,
                     "Branch Length Sub": 1.0,
                     "Branch Length Time": 39.0,
+                    "Branch Minor": "NA",
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
@@ -1458,6 +1479,9 @@
                       },
                       "branch_length_time": {
                         "value": 87.0
+                      },
+                      "branch_minor": {
+                        "value": "3.ANT1"
                       },
                       "branch_number": {
                         "value": "3.0"
@@ -1607,6 +1631,9 @@
                       },
                       "branch_length_time": {
                         "value": 74.0
+                      },
+                      "branch_minor": {
+                        "value": "3.ANT1"
                       },
                       "branch_number": {
                         "value": "3.0"
@@ -2061,6 +2088,7 @@
             "Branch Length": 4.0046e-06,
             "Branch Length Sub": 17.0,
             "Branch Length Time": 321.0,
+            "Branch Minor": "NA",
             "Branch Number": "NA",
             "Branch Support": 100.0,
             "Branch Support Conf Category": "HIGH",
@@ -2124,6 +2152,9 @@
               },
               "branch_length_time": {
                 "value": 244.0
+              },
+              "branch_minor": {
+                "value": "3.ANT2"
               },
               "branch_number": {
                 "value": "3.0"
@@ -2269,6 +2300,7 @@
                 "Branch Length": 7.067e-07,
                 "Branch Length Sub": 3.0,
                 "Branch Length Time": 38.0,
+                "Branch Minor": "NA",
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
@@ -2332,6 +2364,9 @@
                   },
                   "branch_length_time": {
                     "value": 207.0
+                  },
+                  "branch_minor": {
+                    "value": "3.ANT2"
                   },
                   "branch_number": {
                     "value": "3.0"
@@ -2477,6 +2512,7 @@
                     "Branch Length": 7.067e-07,
                     "Branch Length Sub": 3.0,
                     "Branch Length Time": 10.0,
+                    "Branch Minor": "NA",
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
@@ -2536,6 +2572,7 @@
                         "Branch Length": 2.8268e-06,
                         "Branch Length Sub": 12.0,
                         "Branch Length Time": 157.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
@@ -2599,6 +2636,9 @@
                           },
                           "branch_length_time": {
                             "value": 23.0
+                          },
+                          "branch_minor": {
+                            "value": "3.ANT2"
                           },
                           "branch_number": {
                             "value": "3.0"
@@ -2748,6 +2788,9 @@
                           },
                           "branch_length_time": {
                             "value": 21.0
+                          },
+                          "branch_minor": {
+                            "value": "3.ANT2"
                           },
                           "branch_number": {
                             "value": "3.0"
@@ -2996,6 +3039,7 @@
                         "Branch Length": 2.356e-07,
                         "Branch Length Sub": 1.0,
                         "Branch Length Time": 0.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
@@ -3059,6 +3103,9 @@
                           },
                           "branch_length_time": {
                             "value": 160.0
+                          },
+                          "branch_minor": {
+                            "value": "3.ANT2"
                           },
                           "branch_number": {
                             "value": "3.0"
@@ -3204,6 +3251,7 @@
                             "Branch Length": 4.711e-07,
                             "Branch Length Sub": 2.0,
                             "Branch Length Time": 90.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
@@ -3267,6 +3315,9 @@
                               },
                               "branch_length_time": {
                                 "value": 87.0
+                              },
+                              "branch_minor": {
+                                "value": "3.ANT2"
                               },
                               "branch_number": {
                                 "value": "3.0"
@@ -3416,6 +3467,9 @@
                               },
                               "branch_length_time": {
                                 "value": 87.0
+                              },
+                              "branch_minor": {
+                                "value": "3.ANT2"
                               },
                               "branch_number": {
                                 "value": "3.0"

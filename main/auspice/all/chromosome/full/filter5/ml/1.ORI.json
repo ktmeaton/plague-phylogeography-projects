@@ -28,6 +28,11 @@
         "type": "continuous"
       },
       {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
         "key": "branch_number",
         "title": "Branch Number",
         "type": "categorical"
@@ -717,7 +722,115 @@
         "type": "categorical"
       },
       {
-        "key": "country_conf_category",
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "Rodentia",
+            "#525252"
+          ],
+          [
+            "Siphonaptera",
+            "#2ca02c"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ],
+          [
+            "Lagomorpha",
+            "#1f77b4"
+          ],
+          [
+            "Carnivora",
+            "#1f77b4"
+          ],
+          [
+            "Marsupialia",
+            "#1f77b4"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "China",
+            "#4a53fc"
+          ],
+          [
+            "India",
+            "#4af1d0"
+          ],
+          [
+            "Vietnam",
+            "#f8bc66"
+          ],
+          [
+            "Myanmar",
+            "#ffad5d"
+          ],
+          [
+            "United States of America",
+            "#ff9d53"
+          ],
+          [
+            "Peru",
+            "#ff8b49"
+          ],
+          [
+            "Canada",
+            "#ff793f"
+          ],
+          [
+            "Indonesia",
+            "#ff6634"
+          ],
+          [
+            "Madagascar",
+            "#ff532a"
+          ],
+          [
+            "Zimbabwe",
+            "#ff3f20"
+          ],
+          [
+            "Algeria",
+            "#ff2a15"
+          ],
+          [
+            "Brazil",
+            "#ff150b"
+          ],
+          [
+            "Bolivia",
+            "#ff0000"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -728,7 +841,33 @@
             "#ff0000"
           ]
         ],
-        "title": "Country Confidence",
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "population_raw",
+        "scale": [
+          [
+            "1.ORI",
+            "#ff0000"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
         "type": "categorical"
       },
       {
@@ -795,8 +934,257 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff0000"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ],
+          [
+            "Africa",
+            "#80ffb4"
+          ],
+          [
+            "North America",
+            "#ffb462"
+          ],
+          [
+            "South America",
+            "#ff0000"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff0000"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ],
+          [
+            "Africa",
+            "#80ffb4"
+          ],
+          [
+            "North America",
+            "#ffb462"
+          ],
+          [
+            "South America",
+            "#ff0000"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "NA",
+            "#3f62fa"
+          ],
+          [
+            "Gansu",
+            "#1dd1e2"
+          ],
+          [
+            "Maharashtra",
+            "#4ff4cd"
+          ],
+          [
+            "Yunnan",
+            "#ff9b52"
+          ],
+          [
+            "Kh\u00e1nh Ho\u00e0 Province",
+            "#ff954e"
+          ],
+          [
+            "L\u00e2m \u0110\u1ed3ng Province",
+            "#ff8f4b"
+          ],
+          [
+            "Ho Chi Minh City",
+            "#ff8947"
+          ],
+          [
+            "Guangxi Zhuang",
+            "#ff8344"
+          ],
+          [
+            "California",
+            "#ff7c40"
+          ],
+          [
+            "La Libertad",
+            "#ff763d"
+          ],
+          [
+            "Tamil Nadu",
+            "#ff7039"
+          ],
+          [
+            "Saskatchewan",
+            "#ff6936"
+          ],
+          [
+            "Arizona",
+            "#ff6232"
+          ],
+          [
+            "New Mexico",
+            "#ff5c2f"
+          ],
+          [
+            "Colorado",
+            "#ff552b"
+          ],
+          [
+            "Texas",
+            "#ff4e28"
+          ],
+          [
+            "Nevada",
+            "#ff4724"
+          ],
+          [
+            "Central Java",
+            "#ff4020"
+          ],
+          [
+            "Province de Fianarantsoa",
+            "#ff391d"
+          ],
+          [
+            "Kirov Oblast",
+            "#ff3219"
+          ],
+          [
+            "Gujarat",
+            "#ff2b16"
+          ],
+          [
+            "Fujian",
+            "#ff2412"
+          ],
+          [
+            "Midlands",
+            "#ff1d0e"
+          ],
+          [
+            "MSila",
+            "#ff160b"
+          ],
+          [
+            "State of Mato Grosso",
+            "#ff0e07"
+          ],
+          [
+            "La Paz",
+            "#ff0704"
+          ],
+          [
+            "Cajamarca",
+            "#ff0000"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff0000"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
         "type": "continuous"
       },
       {
@@ -805,483 +1193,23 @@
         "type": "continuous"
       },
       {
-        "key": "host_human",
-        "title": "host_human",
-        "type": "categorical"
-      },
-      {
-        "key": "continent",
-        "scale": [
-          [
-            "Europe",
-            "#8000ff"
-          ],
-          [
-            "Asia",
-            "#00b4ec"
-          ],
-          [
-            "Africa",
-            "#80ffb4"
-          ],
-          [
-            "North America",
-            "#ffb462"
-          ],
-          [
-            "South America",
-            "#ff0000"
-          ]
-        ],
-        "title": "Continent (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff0000"
-          ]
-        ],
-        "title": "Host Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "root_geo_dist",
-        "title": "root_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "population",
-        "scale": [
-          [
-            "1.ORI",
-            "#ff0000"
-          ]
-        ],
-        "title": "Population (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "continent_raw",
-        "scale": [
-          [
-            "Europe",
-            "#8000ff"
-          ],
-          [
-            "Asia",
-            "#00b4ec"
-          ],
-          [
-            "Africa",
-            "#80ffb4"
-          ],
-          [
-            "North America",
-            "#ffb462"
-          ],
-          [
-            "South America",
-            "#ff0000"
-          ]
-        ],
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "host_order",
-        "scale": [
-          [
-            "Human",
-            "#d62728"
-          ],
-          [
-            "Rodentia",
-            "#525252"
-          ],
-          [
-            "Siphonaptera",
-            "#2ca02c"
-          ],
-          [
-            "Lagomorpha",
-            "#1f77b4"
-          ],
-          [
-            "Carnivora",
-            "#1f77b4"
-          ],
-          [
-            "Marsupialia",
-            "#1f77b4"
-          ]
-        ],
-        "title": "Host (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff0000"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order_raw",
-        "scale": [
-          [
-            "Human",
-            "#d62728"
-          ],
-          [
-            "Rodentia",
-            "#525252"
-          ],
-          [
-            "Siphonaptera",
-            "#2ca02c"
-          ],
-          [
-            "NA",
-            "#FFFFFF"
-          ],
-          [
-            "Lagomorpha",
-            "#1f77b4"
-          ],
-          [
-            "Carnivora",
-            "#1f77b4"
-          ],
-          [
-            "Marsupialia",
-            "#1f77b4"
-          ]
-        ],
-        "title": "Host",
-        "type": "categorical"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "Russia",
-            "#8000ff"
-          ],
-          [
-            "China",
-            "#4a53fc"
-          ],
-          [
-            "India",
-            "#4af1d0"
-          ],
-          [
-            "Vietnam",
-            "#f8bc66"
-          ],
-          [
-            "Myanmar",
-            "#ffad5d"
-          ],
-          [
-            "United States of America",
-            "#ff9d53"
-          ],
-          [
-            "Peru",
-            "#ff8b49"
-          ],
-          [
-            "Canada",
-            "#ff793f"
-          ],
-          [
-            "Indonesia",
-            "#ff6634"
-          ],
-          [
-            "Madagascar",
-            "#ff532a"
-          ],
-          [
-            "Zimbabwe",
-            "#ff3f20"
-          ],
-          [
-            "Algeria",
-            "#ff2a15"
-          ],
-          [
-            "Brazil",
-            "#ff150b"
-          ],
-          [
-            "Bolivia",
-            "#ff0000"
-          ]
-        ],
-        "title": "Country (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "population_geo_dist",
-        "title": "population_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "population_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff0000"
-          ]
-        ],
-        "title": "Population Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "population_rtt_dist",
-        "title": "Population Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
         "key": "branch_support",
         "title": "Branch Support",
         "type": "continuous"
       },
       {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support_conf_char",
-        "title": "Branch Support Confidence Character",
-        "type": "categorical"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province_raw",
+        "key": "branch_support_conf_category",
         "scale": [
           [
-            "NA",
-            "#3f62fa"
-          ],
-          [
-            "Gansu",
-            "#1dd1e2"
-          ],
-          [
-            "Maharashtra",
-            "#4ff4cd"
-          ],
-          [
-            "Yunnan",
-            "#ff9b52"
-          ],
-          [
-            "Kh\u00e1nh Ho\u00e0 Province",
-            "#ff954e"
-          ],
-          [
-            "L\u00e2m \u0110\u1ed3ng Province",
-            "#ff8f4b"
-          ],
-          [
-            "Ho Chi Minh City",
-            "#ff8947"
-          ],
-          [
-            "Guangxi Zhuang",
-            "#ff8344"
-          ],
-          [
-            "California",
-            "#ff7c40"
-          ],
-          [
-            "La Libertad",
-            "#ff763d"
-          ],
-          [
-            "Tamil Nadu",
-            "#ff7039"
-          ],
-          [
-            "Saskatchewan",
-            "#ff6936"
-          ],
-          [
-            "Arizona",
-            "#ff6232"
-          ],
-          [
-            "New Mexico",
-            "#ff5c2f"
-          ],
-          [
-            "Colorado",
-            "#ff552b"
-          ],
-          [
-            "Texas",
-            "#ff4e28"
-          ],
-          [
-            "Nevada",
-            "#ff4724"
-          ],
-          [
-            "Central Java",
-            "#ff4020"
-          ],
-          [
-            "Province de Fianarantsoa",
-            "#ff391d"
-          ],
-          [
-            "Kirov Oblast",
-            "#ff3219"
-          ],
-          [
-            "Gujarat",
-            "#ff2b16"
-          ],
-          [
-            "Fujian",
-            "#ff2412"
-          ],
-          [
-            "Midlands",
-            "#ff1d0e"
-          ],
-          [
-            "MSila",
-            "#ff160b"
-          ],
-          [
-            "State of Mato Grosso",
-            "#ff0e07"
-          ],
-          [
-            "La Paz",
-            "#ff0704"
-          ],
-          [
-            "Cajamarca",
-            "#ff0000"
-          ]
-        ],
-        "title": "Province",
-        "type": "categorical"
-      },
-      {
-        "key": "blank",
-        "title": "Blank",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
+            "LOW",
             "#FFFFFF"
           ],
           [
-            "terminal",
+            "HIGH",
             "#ff0000"
           ]
         ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "population_raw",
-        "scale": [
-          [
-            "1.ORI",
-            "#ff0000"
-          ]
-        ],
-        "title": "Population",
-        "type": "categorical"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "title": "Branch Support Confidence",
         "type": "categorical"
       },
       {
@@ -1396,6 +1324,36 @@
         "type": "categorical"
       },
       {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff0000"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
         "key": "continent_conf_category",
         "scale": [
           [
@@ -1411,13 +1369,44 @@
         "type": "categorical"
       },
       {
-        "key": "country_lat",
-        "title": "Country Latitude",
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "1.ORI",
+            "#ff0000"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
         "type": "continuous"
       },
       {
@@ -1426,18 +1415,39 @@
         "type": "continuous"
       },
       {
-        "key": "branch_support_conf_category",
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order",
         "scale": [
           [
-            "LOW",
-            "#FFFFFF"
+            "Human",
+            "#d62728"
           ],
           [
-            "HIGH",
-            "#ff0000"
+            "Rodentia",
+            "#525252"
+          ],
+          [
+            "Siphonaptera",
+            "#2ca02c"
+          ],
+          [
+            "Lagomorpha",
+            "#1f77b4"
+          ],
+          [
+            "Carnivora",
+            "#1f77b4"
+          ],
+          [
+            "Marsupialia",
+            "#1f77b4"
           ]
         ],
-        "title": "Branch Support Confidence",
+        "title": "Host (Inferred)",
         "type": "categorical"
       }
     ],
@@ -1455,7 +1465,8 @@
       "country",
       "province",
       "population",
-      "host_order"
+      "host_order",
+      "branch_minor"
     ],
     "geo_resolutions": [
       {
@@ -1654,7 +1665,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-08-18"
+    "updated": "2021-08-19"
   },
   "tree": {
     "branch_attrs": {
@@ -1664,6 +1675,7 @@
         "Branch Length": 2.36e-08,
         "Branch Length Sub": 0.0,
         "Branch Length Time": 0.0,
+        "Branch Minor": "NA",
         "Branch Number": "NA",
         "Branch Support": 20.0,
         "Branch Support Conf Category": "LOW",
@@ -1723,6 +1735,7 @@
             "Branch Length": 3.0623e-06,
             "Branch Length Sub": 13.0,
             "Branch Length Time": 187.0,
+            "Branch Minor": "NA",
             "Branch Number": "NA",
             "Branch Support": 100.0,
             "Branch Support Conf Category": "HIGH",
@@ -1782,6 +1795,7 @@
                 "Branch Length": 5.377e-07,
                 "Branch Length Sub": 2.0,
                 "Branch Length Time": 25.0,
+                "Branch Minor": "NA",
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
@@ -1845,6 +1859,9 @@
                   },
                   "branch_length_time": {
                     "value": 193.0
+                  },
+                  "branch_minor": {
+                    "value": "1.ORI2"
                   },
                   "branch_number": {
                     "value": "1.0"
@@ -1984,6 +2001,7 @@
                     "Branch Length": 2.36e-08,
                     "Branch Length Sub": 0.0,
                     "Branch Length Time": 55.0,
+                    "Branch Minor": "NA",
                     "Branch Number": "NA",
                     "Branch Support": 42.0,
                     "Branch Support Conf Category": "LOW",
@@ -2047,6 +2065,9 @@
                       },
                       "branch_length_time": {
                         "value": 143.0
+                      },
+                      "branch_minor": {
+                        "value": "1.ORI2"
                       },
                       "branch_number": {
                         "value": "1.0"
@@ -2186,6 +2207,7 @@
                         "Branch Length": 2.36e-08,
                         "Branch Length Sub": 0.0,
                         "Branch Length Time": 0.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 37.0,
                         "Branch Support Conf Category": "LOW",
@@ -2249,6 +2271,9 @@
                           },
                           "branch_length_time": {
                             "value": 164.0
+                          },
+                          "branch_minor": {
+                            "value": "1.ORI2"
                           },
                           "branch_number": {
                             "value": "1.0"
@@ -2388,6 +2413,7 @@
                             "Branch Length": 5.307e-07,
                             "Branch Length Sub": 2.0,
                             "Branch Length Time": 36.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
@@ -2451,6 +2477,9 @@
                               },
                               "branch_length_time": {
                                 "value": 126.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI2"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -2591,6 +2620,9 @@
                               },
                               "branch_length_time": {
                                 "value": 126.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI2"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -3133,6 +3165,7 @@
                 "Branch Length": 1.4743e-06,
                 "Branch Length Sub": 6.0,
                 "Branch Length Time": 97.0,
+                "Branch Minor": "NA",
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
@@ -3196,6 +3229,9 @@
                   },
                   "branch_length_time": {
                     "value": 155.0
+                  },
+                  "branch_minor": {
+                    "value": "1.ORI2"
                   },
                   "branch_number": {
                     "value": "1.0"
@@ -3338,6 +3374,7 @@
                     "Branch Length": 2.356e-07,
                     "Branch Length Sub": 1.0,
                     "Branch Length Time": 50.0,
+                    "Branch Minor": "NA",
                     "Branch Number": "NA",
                     "Branch Support": 81.0,
                     "Branch Support Conf Category": "LOW",
@@ -3397,6 +3434,7 @@
                         "Branch Length": 6.906e-07,
                         "Branch Length Sub": 3.0,
                         "Branch Length Time": 68.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
@@ -3460,6 +3498,9 @@
                           },
                           "branch_length_time": {
                             "value": 44.0
+                          },
+                          "branch_minor": {
+                            "value": "1.ORI2"
                           },
                           "branch_number": {
                             "value": "1.0"
@@ -3605,6 +3646,7 @@
                             "Branch Length": 2.356e-07,
                             "Branch Length Sub": 1.0,
                             "Branch Length Time": 0.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 66.0,
                             "Branch Support Conf Category": "LOW",
@@ -3668,6 +3710,9 @@
                               },
                               "branch_length_time": {
                                 "value": 33.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI2"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -3817,6 +3862,9 @@
                               },
                               "branch_length_time": {
                                 "value": 42.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI2"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -4165,6 +4213,7 @@
                         "Branch Length": 2.36e-08,
                         "Branch Length Sub": 0.0,
                         "Branch Length Time": 16.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 67.0,
                         "Branch Support Conf Category": "LOW",
@@ -4228,6 +4277,9 @@
                           },
                           "branch_length_time": {
                             "value": 85.0
+                          },
+                          "branch_minor": {
+                            "value": "1.ORI2"
                           },
                           "branch_number": {
                             "value": "1.0"
@@ -4373,6 +4425,7 @@
                             "Branch Length": 2.356e-07,
                             "Branch Length Sub": 1.0,
                             "Branch Length Time": 16.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
@@ -4436,6 +4489,9 @@
                               },
                               "branch_length_time": {
                                 "value": 60.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI2"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -4581,6 +4637,7 @@
                                 "Branch Length": 2.36e-08,
                                 "Branch Length Sub": 0.0,
                                 "Branch Length Time": 0.0,
+                                "Branch Minor": "NA",
                                 "Branch Number": "NA",
                                 "Branch Support": 77.0,
                                 "Branch Support Conf Category": "LOW",
@@ -4644,6 +4701,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 69.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI2"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -4789,6 +4849,7 @@
                                     "Branch Length": 2.36e-08,
                                     "Branch Length Sub": 0.0,
                                     "Branch Length Time": 18.0,
+                                    "Branch Minor": "NA",
                                     "Branch Number": "NA",
                                     "Branch Support": 73.0,
                                     "Branch Support Conf Category": "LOW",
@@ -4852,6 +4913,9 @@
                                       },
                                       "branch_length_time": {
                                         "value": 44.0
+                                      },
+                                      "branch_minor": {
+                                        "value": "1.ORI2"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
@@ -5001,6 +5065,9 @@
                                       },
                                       "branch_length_time": {
                                         "value": 42.0
+                                      },
+                                      "branch_minor": {
+                                        "value": "1.ORI2"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
@@ -5855,6 +5922,7 @@
             "Branch Length": 2.36e-08,
             "Branch Length Sub": 0.0,
             "Branch Length Time": 0.0,
+            "Branch Minor": "NA",
             "Branch Number": "NA",
             "Branch Support": 20.0,
             "Branch Support Conf Category": "LOW",
@@ -5914,6 +5982,7 @@
                 "Branch Length": 1.1778e-06,
                 "Branch Length Sub": 5.0,
                 "Branch Length Time": 119.0,
+                "Branch Minor": "NA",
                 "Branch Number": "NA",
                 "Branch Support": 100.0,
                 "Branch Support Conf Category": "HIGH",
@@ -5973,6 +6042,7 @@
                     "Branch Length": 1.6935e-06,
                     "Branch Length Sub": 7.0,
                     "Branch Length Time": 56.0,
+                    "Branch Minor": "NA",
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
@@ -6036,6 +6106,9 @@
                       },
                       "branch_length_time": {
                         "value": 207.0
+                      },
+                      "branch_minor": {
+                        "value": "1.ORI1"
                       },
                       "branch_number": {
                         "value": "1.0"
@@ -6181,6 +6254,7 @@
                         "Branch Length": 7.067e-07,
                         "Branch Length Sub": 3.0,
                         "Branch Length Time": 0.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
@@ -6240,6 +6314,7 @@
                             "Branch Length": 2.36e-08,
                             "Branch Length Sub": 0.0,
                             "Branch Length Time": 0.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 33.0,
                             "Branch Support Conf Category": "LOW",
@@ -6303,6 +6378,9 @@
                               },
                               "branch_length_time": {
                                 "value": 278.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI1"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -6452,6 +6530,9 @@
                               },
                               "branch_length_time": {
                                 "value": 266.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI1"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -6697,6 +6778,7 @@
                             "Branch Length": 2.36e-08,
                             "Branch Length Sub": 0.0,
                             "Branch Length Time": 116.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 45.0,
                             "Branch Support Conf Category": "LOW",
@@ -6760,6 +6842,9 @@
                               },
                               "branch_length_time": {
                                 "value": 163.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI1"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -6905,6 +6990,7 @@
                                 "Branch Length": 5.15e-08,
                                 "Branch Length Sub": 0.0,
                                 "Branch Length Time": 55.0,
+                                "Branch Minor": "NA",
                                 "Branch Number": "NA",
                                 "Branch Support": 62.0,
                                 "Branch Support Conf Category": "LOW",
@@ -6968,6 +7054,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 108.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI1"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -7117,6 +7206,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 108.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI1"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -7668,6 +7760,7 @@
                     "Branch Length": 2.356e-07,
                     "Branch Length Sub": 1.0,
                     "Branch Length Time": 97.0,
+                    "Branch Minor": "NA",
                     "Branch Number": "NA",
                     "Branch Support": 100.0,
                     "Branch Support Conf Category": "HIGH",
@@ -7731,6 +7824,9 @@
                       },
                       "branch_length_time": {
                         "value": 215.0
+                      },
+                      "branch_minor": {
+                        "value": "1.ORI1"
                       },
                       "branch_number": {
                         "value": "1.0"
@@ -7876,6 +7972,7 @@
                         "Branch Length": 4.711e-07,
                         "Branch Length Sub": 2.0,
                         "Branch Length Time": 49.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
@@ -7935,6 +8032,7 @@
                             "Branch Length": 2.36e-08,
                             "Branch Length Sub": 0.0,
                             "Branch Length Time": 0.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 43.0,
                             "Branch Support Conf Category": "LOW",
@@ -7998,6 +8096,9 @@
                               },
                               "branch_length_time": {
                                 "value": 188.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI1"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -8143,6 +8244,7 @@
                                 "Branch Length": 2.096e-07,
                                 "Branch Length Sub": 1.0,
                                 "Branch Length Time": 7.0,
+                                "Branch Minor": "NA",
                                 "Branch Number": "NA",
                                 "Branch Support": 98.0,
                                 "Branch Support Conf Category": "HIGH",
@@ -8206,6 +8308,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 138.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI1"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -8351,6 +8456,7 @@
                                     "Branch Length": 2.356e-07,
                                     "Branch Length Sub": 1.0,
                                     "Branch Length Time": 0.0,
+                                    "Branch Minor": "NA",
                                     "Branch Number": "NA",
                                     "Branch Support": 100.0,
                                     "Branch Support Conf Category": "HIGH",
@@ -8414,6 +8520,9 @@
                                       },
                                       "branch_length_time": {
                                         "value": 187.0
+                                      },
+                                      "branch_minor": {
+                                        "value": "1.ORI1"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
@@ -8563,6 +8672,9 @@
                                       },
                                       "branch_length_time": {
                                         "value": 163.0
+                                      },
+                                      "branch_minor": {
+                                        "value": "1.ORI1"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
@@ -9014,6 +9126,7 @@
                             "Branch Length": 2.36e-08,
                             "Branch Length Sub": 0.0,
                             "Branch Length Time": 44.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 12.0,
                             "Branch Support Conf Category": "LOW",
@@ -9073,6 +9186,7 @@
                                 "Branch Length": 2.36e-08,
                                 "Branch Length Sub": 0.0,
                                 "Branch Length Time": 16.0,
+                                "Branch Minor": "NA",
                                 "Branch Number": "NA",
                                 "Branch Support": 31.0,
                                 "Branch Support Conf Category": "LOW",
@@ -9136,6 +9250,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 72.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI1"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -9285,6 +9402,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 129.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI1"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -9524,6 +9644,7 @@
                                 "Branch Length": 2.36e-08,
                                 "Branch Length Sub": 0.0,
                                 "Branch Length Time": 27.0,
+                                "Branch Minor": "NA",
                                 "Branch Number": "NA",
                                 "Branch Support": 24.0,
                                 "Branch Support Conf Category": "LOW",
@@ -9587,6 +9708,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 116.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI1"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -9732,6 +9856,7 @@
                                     "Branch Length": 2.356e-07,
                                     "Branch Length Sub": 1.0,
                                     "Branch Length Time": 0.0,
+                                    "Branch Minor": "NA",
                                     "Branch Number": "NA",
                                     "Branch Support": 100.0,
                                     "Branch Support Conf Category": "HIGH",
@@ -9795,6 +9920,9 @@
                                       },
                                       "branch_length_time": {
                                         "value": 116.0
+                                      },
+                                      "branch_minor": {
+                                        "value": "1.ORI1"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
@@ -9940,6 +10068,7 @@
                                         "Branch Length": 2.356e-07,
                                         "Branch Length Sub": 1.0,
                                         "Branch Length Time": 8.0,
+                                        "Branch Minor": "NA",
                                         "Branch Number": "NA",
                                         "Branch Support": 100.0,
                                         "Branch Support Conf Category": "HIGH",
@@ -9999,6 +10128,7 @@
                                             "Branch Length": 2.36e-08,
                                             "Branch Length Sub": 0.0,
                                             "Branch Length Time": 1.0,
+                                            "Branch Minor": "NA",
                                             "Branch Number": "NA",
                                             "Branch Support": 79.0,
                                             "Branch Support Conf Category": "LOW",
@@ -10062,6 +10192,9 @@
                                               },
                                               "branch_length_time": {
                                                 "value": 108.0
+                                              },
+                                              "branch_minor": {
+                                                "value": "1.ORI1"
                                               },
                                               "branch_number": {
                                                 "value": "1.0"
@@ -10207,6 +10340,7 @@
                                                 "Branch Length": 4.711e-07,
                                                 "Branch Length Sub": 2.0,
                                                 "Branch Length Time": 67.0,
+                                                "Branch Minor": "NA",
                                                 "Branch Number": "NA",
                                                 "Branch Support": 100.0,
                                                 "Branch Support Conf Category": "HIGH",
@@ -10270,6 +10404,9 @@
                                                   },
                                                   "branch_length_time": {
                                                     "value": 40.0
+                                                  },
+                                                  "branch_minor": {
+                                                    "value": "1.ORI1"
                                                   },
                                                   "branch_number": {
                                                     "value": "1.0"
@@ -10419,6 +10556,9 @@
                                                   },
                                                   "branch_length_time": {
                                                     "value": 40.0
+                                                  },
+                                                  "branch_minor": {
+                                                    "value": "1.ORI1"
                                                   },
                                                   "branch_number": {
                                                     "value": "1.0"
@@ -10767,6 +10907,7 @@
                                             "Branch Length": 2.356e-07,
                                             "Branch Length Sub": 1.0,
                                             "Branch Length Time": 9.0,
+                                            "Branch Minor": "NA",
                                             "Branch Number": "NA",
                                             "Branch Support": 100.0,
                                             "Branch Support Conf Category": "HIGH",
@@ -10826,6 +10967,7 @@
                                                 "Branch Length": 1.1778e-06,
                                                 "Branch Length Sub": 5.0,
                                                 "Branch Length Time": 89.0,
+                                                "Branch Minor": "NA",
                                                 "Branch Number": "NA",
                                                 "Branch Support": 100.0,
                                                 "Branch Support Conf Category": "HIGH",
@@ -10889,6 +11031,9 @@
                                                   },
                                                   "branch_length_time": {
                                                     "value": 11.0
+                                                  },
+                                                  "branch_minor": {
+                                                    "value": "1.ORI1"
                                                   },
                                                   "branch_number": {
                                                     "value": "1.0"
@@ -11038,6 +11183,9 @@
                                                   },
                                                   "branch_length_time": {
                                                     "value": 11.0
+                                                  },
+                                                  "branch_minor": {
+                                                    "value": "1.ORI1"
                                                   },
                                                   "branch_number": {
                                                     "value": "1.0"
@@ -11286,6 +11434,7 @@
                                                 "Branch Length": 1.1778e-06,
                                                 "Branch Length Sub": 5.0,
                                                 "Branch Length Time": 67.0,
+                                                "Branch Minor": "NA",
                                                 "Branch Number": "NA",
                                                 "Branch Support": 100.0,
                                                 "Branch Support Conf Category": "HIGH",
@@ -11349,6 +11498,9 @@
                                                   },
                                                   "branch_length_time": {
                                                     "value": 26.0
+                                                  },
+                                                  "branch_minor": {
+                                                    "value": "1.ORI1"
                                                   },
                                                   "branch_number": {
                                                     "value": "1.0"
@@ -11494,6 +11646,7 @@
                                                     "Branch Length": 7.067e-07,
                                                     "Branch Length Sub": 3.0,
                                                     "Branch Length Time": 28.0,
+                                                    "Branch Minor": "NA",
                                                     "Branch Number": "NA",
                                                     "Branch Support": 100.0,
                                                     "Branch Support Conf Category": "HIGH",
@@ -11557,6 +11710,9 @@
                                                       },
                                                       "branch_length_time": {
                                                         "value": 5.0
+                                                      },
+                                                      "branch_minor": {
+                                                        "value": "1.ORI1"
                                                       },
                                                       "branch_number": {
                                                         "value": "1.0"
@@ -11702,6 +11858,7 @@
                                                         "Branch Length": 2.36e-08,
                                                         "Branch Length Sub": 0.0,
                                                         "Branch Length Time": 0.0,
+                                                        "Branch Minor": "NA",
                                                         "Branch Number": "NA",
                                                         "Branch Support": 89.0,
                                                         "Branch Support Conf Category": "LOW",
@@ -11765,6 +11922,9 @@
                                                           },
                                                           "branch_length_time": {
                                                             "value": 5.0
+                                                          },
+                                                          "branch_minor": {
+                                                            "value": "1.ORI1"
                                                           },
                                                           "branch_number": {
                                                             "value": "1.0"
@@ -11914,6 +12074,9 @@
                                                           },
                                                           "branch_length_time": {
                                                             "value": 5.0
+                                                          },
+                                                          "branch_minor": {
+                                                            "value": "1.ORI1"
                                                           },
                                                           "branch_number": {
                                                             "value": "1.0"
@@ -13183,6 +13346,7 @@
                 "Branch Length": 2.36e-08,
                 "Branch Length Sub": 0.0,
                 "Branch Length Time": 0.0,
+                "Branch Minor": "NA",
                 "Branch Number": "NA",
                 "Branch Support": 12.0,
                 "Branch Support Conf Category": "LOW",
@@ -13242,6 +13406,7 @@
                     "Branch Length": 2.36e-08,
                     "Branch Length Sub": 0.0,
                     "Branch Length Time": 61.0,
+                    "Branch Minor": "NA",
                     "Branch Number": "NA",
                     "Branch Support": 20.0,
                     "Branch Support Conf Category": "LOW",
@@ -13301,6 +13466,7 @@
                         "Branch Length": 9.423e-07,
                         "Branch Length Sub": 4.0,
                         "Branch Length Time": 159.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
@@ -13364,6 +13530,9 @@
                           },
                           "branch_length_time": {
                             "value": 163.0
+                          },
+                          "branch_minor": {
+                            "value": "1.ORI1"
                           },
                           "branch_number": {
                             "value": "1.0"
@@ -13503,6 +13672,7 @@
                             "Branch Length": 2.8268e-06,
                             "Branch Length Sub": 12.0,
                             "Branch Length Time": 181.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
@@ -13566,6 +13736,9 @@
                               },
                               "branch_length_time": {
                                 "value": 0.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI1"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -13715,6 +13888,9 @@
                               },
                               "branch_length_time": {
                                 "value": 0.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI1"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -14066,6 +14242,7 @@
                         "Branch Length": 1.6489e-06,
                         "Branch Length Sub": 7.0,
                         "Branch Length Time": 113.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 100.0,
                         "Branch Support Conf Category": "HIGH",
@@ -14125,6 +14302,7 @@
                             "Branch Length": 2.36e-08,
                             "Branch Length Sub": 0.0,
                             "Branch Length Time": 18.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 80.0,
                             "Branch Support Conf Category": "LOW",
@@ -14188,6 +14366,9 @@
                               },
                               "branch_length_time": {
                                 "value": 246.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI3"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -14337,6 +14518,9 @@
                               },
                               "branch_length_time": {
                                 "value": 256.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI3"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -14579,6 +14763,7 @@
                             "Branch Length": 7.067e-07,
                             "Branch Length Sub": 3.0,
                             "Branch Length Time": 26.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
@@ -14642,6 +14827,9 @@
                               },
                               "branch_length_time": {
                                 "value": 169.0
+                              },
+                              "branch_minor": {
+                                "value": "1.ORI3"
                               },
                               "branch_number": {
                                 "value": "1.0"
@@ -14778,6 +14966,7 @@
                                 "Branch Length": 7.055e-07,
                                 "Branch Length Sub": 3.0,
                                 "Branch Length Time": 0.0,
+                                "Branch Minor": "NA",
                                 "Branch Number": "NA",
                                 "Branch Support": 100.0,
                                 "Branch Support Conf Category": "HIGH",
@@ -14841,6 +15030,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 169.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI3"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -14986,6 +15178,7 @@
                                     "Branch Length": 2.36e-08,
                                     "Branch Length Sub": 0.0,
                                     "Branch Length Time": 0.0,
+                                    "Branch Minor": "NA",
                                     "Branch Number": "NA",
                                     "Branch Support": 71.0,
                                     "Branch Support Conf Category": "LOW",
@@ -15049,6 +15242,9 @@
                                       },
                                       "branch_length_time": {
                                         "value": 184.0
+                                      },
+                                      "branch_minor": {
+                                        "value": "1.ORI3"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
@@ -15188,6 +15384,7 @@
                                         "Branch Length": 4.065e-07,
                                         "Branch Length Sub": 2.0,
                                         "Branch Length Time": 0.0,
+                                        "Branch Minor": "NA",
                                         "Branch Number": "NA",
                                         "Branch Support": 100.0,
                                         "Branch Support Conf Category": "HIGH",
@@ -15251,6 +15448,9 @@
                                           },
                                           "branch_length_time": {
                                             "value": 184.0
+                                          },
+                                          "branch_minor": {
+                                            "value": "1.ORI3"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
@@ -15390,6 +15590,7 @@
                                             "Branch Length": 1.5364e-06,
                                             "Branch Length Sub": 6.0,
                                             "Branch Length Time": 0.0,
+                                            "Branch Minor": "NA",
                                             "Branch Number": "NA",
                                             "Branch Support": 99.0,
                                             "Branch Support Conf Category": "HIGH",
@@ -15453,6 +15654,9 @@
                                               },
                                               "branch_length_time": {
                                                 "value": 237.0
+                                              },
+                                              "branch_minor": {
+                                                "value": "1.ORI3"
                                               },
                                               "branch_number": {
                                                 "value": "1.0"
@@ -15602,6 +15806,9 @@
                                               },
                                               "branch_length_time": {
                                                 "value": 237.0
+                                              },
+                                              "branch_minor": {
+                                                "value": "1.ORI3"
                                               },
                                               "branch_number": {
                                                 "value": "1.0"
@@ -16462,6 +16669,7 @@
                     "Branch Length": 2.36e-08,
                     "Branch Length Sub": 0.0,
                     "Branch Length Time": 0.0,
+                    "Branch Minor": "NA",
                     "Branch Number": "NA",
                     "Branch Support": 14.0,
                     "Branch Support Conf Category": "LOW",
@@ -16521,6 +16729,7 @@
                         "Branch Length": 2.36e-08,
                         "Branch Length Sub": 0.0,
                         "Branch Length Time": 54.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 23.0,
                         "Branch Support Conf Category": "LOW",
@@ -16584,6 +16793,9 @@
                           },
                           "branch_length_time": {
                             "value": 342.0
+                          },
+                          "branch_minor": {
+                            "value": "1.ORI1"
                           },
                           "branch_number": {
                             "value": "1.0"
@@ -16733,6 +16945,9 @@
                           },
                           "branch_length_time": {
                             "value": 336.0
+                          },
+                          "branch_minor": {
+                            "value": "1.ORI1"
                           },
                           "branch_number": {
                             "value": "1.0"
@@ -16978,6 +17193,7 @@
                         "Branch Length": 2.36e-08,
                         "Branch Length Sub": 0.0,
                         "Branch Length Time": 0.0,
+                        "Branch Minor": "NA",
                         "Branch Number": "NA",
                         "Branch Support": 21.0,
                         "Branch Support Conf Category": "LOW",
@@ -17041,6 +17257,9 @@
                           },
                           "branch_length_time": {
                             "value": 342.0
+                          },
+                          "branch_minor": {
+                            "value": "1.ORI1"
                           },
                           "branch_number": {
                             "value": "1.0"
@@ -17186,6 +17405,7 @@
                             "Branch Length": 4.711e-07,
                             "Branch Length Sub": 2.0,
                             "Branch Length Time": 0.0,
+                            "Branch Minor": "NA",
                             "Branch Number": "NA",
                             "Branch Support": 100.0,
                             "Branch Support Conf Category": "HIGH",
@@ -17245,6 +17465,7 @@
                                 "Branch Length": 2.36e-08,
                                 "Branch Length Sub": 0.0,
                                 "Branch Length Time": 0.0,
+                                "Branch Minor": "NA",
                                 "Branch Number": "NA",
                                 "Branch Support": 50.0,
                                 "Branch Support Conf Category": "LOW",
@@ -17308,6 +17529,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 438.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI1"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -17457,6 +17681,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 460.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI1"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -17699,6 +17926,7 @@
                                 "Branch Length": 2.36e-08,
                                 "Branch Length Sub": 0.0,
                                 "Branch Length Time": 0.0,
+                                "Branch Minor": "NA",
                                 "Branch Number": "NA",
                                 "Branch Support": 45.0,
                                 "Branch Support Conf Category": "LOW",
@@ -17762,6 +17990,9 @@
                                   },
                                   "branch_length_time": {
                                     "value": 410.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "1.ORI1"
                                   },
                                   "branch_number": {
                                     "value": "1.0"
@@ -17907,6 +18138,7 @@
                                     "Branch Length": 2.356e-07,
                                     "Branch Length Sub": 1.0,
                                     "Branch Length Time": 70.0,
+                                    "Branch Minor": "NA",
                                     "Branch Number": "NA",
                                     "Branch Support": 100.0,
                                     "Branch Support Conf Category": "HIGH",
@@ -17970,6 +18202,9 @@
                                       },
                                       "branch_length_time": {
                                         "value": 343.0
+                                      },
+                                      "branch_minor": {
+                                        "value": "1.ORI1"
                                       },
                                       "branch_number": {
                                         "value": "1.0"
@@ -18109,6 +18344,7 @@
                                         "Branch Length": 2.3556e-06,
                                         "Branch Length Sub": 10.0,
                                         "Branch Length Time": 163.0,
+                                        "Branch Minor": "NA",
                                         "Branch Number": "NA",
                                         "Branch Support": 100.0,
                                         "Branch Support Conf Category": "HIGH",
@@ -18172,6 +18408,9 @@
                                           },
                                           "branch_length_time": {
                                             "value": 220.0
+                                          },
+                                          "branch_minor": {
+                                            "value": "1.ORI1"
                                           },
                                           "branch_number": {
                                             "value": "1.0"
@@ -18317,6 +18556,7 @@
                                             "Branch Length": 1.1778e-06,
                                             "Branch Length Sub": 5.0,
                                             "Branch Length Time": 67.0,
+                                            "Branch Minor": "NA",
                                             "Branch Number": "NA",
                                             "Branch Support": 100.0,
                                             "Branch Support Conf Category": "HIGH",
@@ -18376,6 +18616,7 @@
                                                 "Branch Length": 2.36e-08,
                                                 "Branch Length Sub": 0.0,
                                                 "Branch Length Time": 0.0,
+                                                "Branch Minor": "NA",
                                                 "Branch Number": "NA",
                                                 "Branch Support": 8.0,
                                                 "Branch Support Conf Category": "LOW",
@@ -18439,6 +18680,9 @@
                                                   },
                                                   "branch_length_time": {
                                                     "value": 149.0
+                                                  },
+                                                  "branch_minor": {
+                                                    "value": "1.ORI1"
                                                   },
                                                   "branch_number": {
                                                     "value": "1.0"
@@ -18584,6 +18828,7 @@
                                                     "Branch Length": 2.36e-08,
                                                     "Branch Length Sub": 0.0,
                                                     "Branch Length Time": 0.0,
+                                                    "Branch Minor": "NA",
                                                     "Branch Number": "NA",
                                                     "Branch Support": 14.0,
                                                     "Branch Support Conf Category": "LOW",
@@ -18647,6 +18892,9 @@
                                                       },
                                                       "branch_length_time": {
                                                         "value": 149.0
+                                                      },
+                                                      "branch_minor": {
+                                                        "value": "1.ORI1"
                                                       },
                                                       "branch_number": {
                                                         "value": "1.0"
@@ -18792,6 +19040,7 @@
                                                         "Branch Length": 5.16e-08,
                                                         "Branch Length Sub": 0.0,
                                                         "Branch Length Time": 0.0,
+                                                        "Branch Minor": "NA",
                                                         "Branch Number": "NA",
                                                         "Branch Support": 9.0,
                                                         "Branch Support Conf Category": "LOW",
@@ -18855,6 +19104,9 @@
                                                           },
                                                           "branch_length_time": {
                                                             "value": 150.0
+                                                          },
+                                                          "branch_minor": {
+                                                            "value": "1.ORI1"
                                                           },
                                                           "branch_number": {
                                                             "value": "1.0"
@@ -19000,6 +19252,7 @@
                                                             "Branch Length": 4.067e-07,
                                                             "Branch Length Sub": 2.0,
                                                             "Branch Length Time": 0.0,
+                                                            "Branch Minor": "NA",
                                                             "Branch Number": "NA",
                                                             "Branch Support": 37.0,
                                                             "Branch Support Conf Category": "LOW",
@@ -19063,6 +19316,9 @@
                                                               },
                                                               "branch_length_time": {
                                                                 "value": 149.0
+                                                              },
+                                                              "branch_minor": {
+                                                                "value": "1.ORI1"
                                                               },
                                                               "branch_number": {
                                                                 "value": "1.0"
@@ -19212,6 +19468,9 @@
                                                               },
                                                               "branch_length_time": {
                                                                 "value": 152.0
+                                                              },
+                                                              "branch_minor": {
+                                                                "value": "1.ORI1"
                                                               },
                                                               "branch_number": {
                                                                 "value": "1.0"
@@ -19757,6 +20016,7 @@
                                                 "Branch Length": 2.356e-07,
                                                 "Branch Length Sub": 1.0,
                                                 "Branch Length Time": 31.0,
+                                                "Branch Minor": "NA",
                                                 "Branch Number": "NA",
                                                 "Branch Support": 14.0,
                                                 "Branch Support Conf Category": "LOW",
@@ -19816,6 +20076,7 @@
                                                     "Branch Length": 2.356e-07,
                                                     "Branch Length Sub": 1.0,
                                                     "Branch Length Time": 29.0,
+                                                    "Branch Minor": "NA",
                                                     "Branch Number": "NA",
                                                     "Branch Support": 13.0,
                                                     "Branch Support Conf Category": "LOW",
@@ -19875,6 +20136,7 @@
                                                         "Branch Length": 2.36e-08,
                                                         "Branch Length Sub": 0.0,
                                                         "Branch Length Time": 11.0,
+                                                        "Branch Minor": "NA",
                                                         "Branch Number": "NA",
                                                         "Branch Support": 26.0,
                                                         "Branch Support Conf Category": "LOW",
@@ -19938,6 +20200,9 @@
                                                           },
                                                           "branch_length_time": {
                                                             "value": 82.0
+                                                          },
+                                                          "branch_minor": {
+                                                            "value": "1.ORI1"
                                                           },
                                                           "branch_number": {
                                                             "value": "1.0"
@@ -20083,6 +20348,7 @@
                                                             "Branch Length": 1.1778e-06,
                                                             "Branch Length Sub": 5.0,
                                                             "Branch Length Time": 81.0,
+                                                            "Branch Minor": "NA",
                                                             "Branch Number": "NA",
                                                             "Branch Support": 100.0,
                                                             "Branch Support Conf Category": "HIGH",
@@ -20146,6 +20412,9 @@
                                                               },
                                                               "branch_length_time": {
                                                                 "value": 1.0
+                                                              },
+                                                              "branch_minor": {
+                                                                "value": "1.ORI1"
                                                               },
                                                               "branch_number": {
                                                                 "value": "1.0"
@@ -20295,6 +20564,9 @@
                                                               },
                                                               "branch_length_time": {
                                                                 "value": 1.0
+                                                              },
+                                                              "branch_minor": {
+                                                                "value": "1.ORI1"
                                                               },
                                                               "branch_number": {
                                                                 "value": "1.0"
@@ -20643,6 +20915,7 @@
                                                         "Branch Length": 2.36e-08,
                                                         "Branch Length Sub": 0.0,
                                                         "Branch Length Time": 4.0,
+                                                        "Branch Minor": "NA",
                                                         "Branch Number": "NA",
                                                         "Branch Support": 20.0,
                                                         "Branch Support Conf Category": "LOW",
@@ -20706,6 +20979,9 @@
                                                           },
                                                           "branch_length_time": {
                                                             "value": 89.0
+                                                          },
+                                                          "branch_minor": {
+                                                            "value": "1.ORI1"
                                                           },
                                                           "branch_number": {
                                                             "value": "1.0"
@@ -20851,6 +21127,7 @@
                                                             "Branch Length": 3.574e-07,
                                                             "Branch Length Sub": 2.0,
                                                             "Branch Length Time": 11.0,
+                                                            "Branch Minor": "NA",
                                                             "Branch Number": "NA",
                                                             "Branch Support": 56.0,
                                                             "Branch Support Conf Category": "LOW",
@@ -20914,6 +21191,9 @@
                                                               },
                                                               "branch_length_time": {
                                                                 "value": 78.0
+                                                              },
+                                                              "branch_minor": {
+                                                                "value": "1.ORI1"
                                                               },
                                                               "branch_number": {
                                                                 "value": "1.0"
@@ -21059,6 +21339,7 @@
                                                                 "Branch Length": 3.169e-07,
                                                                 "Branch Length Sub": 1.0,
                                                                 "Branch Length Time": 0.0,
+                                                                "Branch Minor": "NA",
                                                                 "Branch Number": "NA",
                                                                 "Branch Support": 71.0,
                                                                 "Branch Support Conf Category": "LOW",
@@ -21122,6 +21403,9 @@
                                                                   },
                                                                   "branch_length_time": {
                                                                     "value": 76.0
+                                                                  },
+                                                                  "branch_minor": {
+                                                                    "value": "1.ORI1"
                                                                   },
                                                                   "branch_number": {
                                                                     "value": "1.0"
@@ -21271,6 +21555,9 @@
                                                                   },
                                                                   "branch_length_time": {
                                                                     "value": 78.0
+                                                                  },
+                                                                  "branch_minor": {
+                                                                    "value": "1.ORI1"
                                                                   },
                                                                   "branch_number": {
                                                                     "value": "1.0"
@@ -21816,6 +22103,7 @@
                                                     "Branch Length": 2.36e-08,
                                                     "Branch Length Sub": 0.0,
                                                     "Branch Length Time": 4.0,
+                                                    "Branch Minor": "NA",
                                                     "Branch Number": "NA",
                                                     "Branch Support": 10.0,
                                                     "Branch Support Conf Category": "LOW",
@@ -21875,6 +22163,7 @@
                                                         "Branch Length": 2.36e-08,
                                                         "Branch Length Sub": 0.0,
                                                         "Branch Length Time": 20.0,
+                                                        "Branch Minor": "NA",
                                                         "Branch Number": "NA",
                                                         "Branch Support": 9.0,
                                                         "Branch Support Conf Category": "LOW",
@@ -21938,6 +22227,9 @@
                                                           },
                                                           "branch_length_time": {
                                                             "value": 98.0
+                                                          },
+                                                          "branch_minor": {
+                                                            "value": "1.ORI1"
                                                           },
                                                           "branch_number": {
                                                             "value": "1.0"
@@ -22083,6 +22375,7 @@
                                                             "Branch Length": 2.356e-07,
                                                             "Branch Length Sub": 1.0,
                                                             "Branch Length Time": 12.0,
+                                                            "Branch Minor": "NA",
                                                             "Branch Number": "NA",
                                                             "Branch Support": 15.0,
                                                             "Branch Support Conf Category": "LOW",
@@ -22142,6 +22435,7 @@
                                                                 "Branch Length": 2.356e-07,
                                                                 "Branch Length Sub": 1.0,
                                                                 "Branch Length Time": 11.0,
+                                                                "Branch Minor": "NA",
                                                                 "Branch Number": "NA",
                                                                 "Branch Support": 40.0,
                                                                 "Branch Support Conf Category": "LOW",
@@ -22205,6 +22499,9 @@
                                                                   },
                                                                   "branch_length_time": {
                                                                     "value": 75.0
+                                                                  },
+                                                                  "branch_minor": {
+                                                                    "value": "1.ORI1"
                                                                   },
                                                                   "branch_number": {
                                                                     "value": "1.0"
@@ -22350,6 +22647,7 @@
                                                                     "Branch Length": 2.356e-07,
                                                                     "Branch Length Sub": 1.0,
                                                                     "Branch Length Time": 17.0,
+                                                                    "Branch Minor": "NA",
                                                                     "Branch Number": "NA",
                                                                     "Branch Support": 37.0,
                                                                     "Branch Support Conf Category": "LOW",
@@ -22413,6 +22711,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 58.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -22562,6 +22863,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 58.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -22907,6 +23211,7 @@
                                                                 "Branch Length": 2.356e-07,
                                                                 "Branch Length Sub": 1.0,
                                                                 "Branch Length Time": 18.0,
+                                                                "Branch Minor": "NA",
                                                                 "Branch Number": "NA",
                                                                 "Branch Support": 83.0,
                                                                 "Branch Support Conf Category": "LOW",
@@ -22966,6 +23271,7 @@
                                                                     "Branch Length": 2.36e-08,
                                                                     "Branch Length Sub": 0.0,
                                                                     "Branch Length Time": 2.0,
+                                                                    "Branch Minor": "NA",
                                                                     "Branch Number": "NA",
                                                                     "Branch Support": 72.0,
                                                                     "Branch Support Conf Category": "LOW",
@@ -23029,6 +23335,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 66.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -23178,6 +23487,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 66.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -23423,6 +23735,7 @@
                                                                     "Branch Length": 2.356e-07,
                                                                     "Branch Length Sub": 1.0,
                                                                     "Branch Length Time": 18.0,
+                                                                    "Branch Minor": "NA",
                                                                     "Branch Number": "NA",
                                                                     "Branch Support": 97.0,
                                                                     "Branch Support Conf Category": "HIGH",
@@ -23486,6 +23799,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 50.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -23635,6 +23951,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 50.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -24183,6 +24502,7 @@
                                                         "Branch Length": 2.36e-08,
                                                         "Branch Length Sub": 0.0,
                                                         "Branch Length Time": 0.0,
+                                                        "Branch Minor": "NA",
                                                         "Branch Number": "NA",
                                                         "Branch Support": 10.0,
                                                         "Branch Support Conf Category": "LOW",
@@ -24242,6 +24562,7 @@
                                                             "Branch Length": 5.01e-08,
                                                             "Branch Length Sub": 0.0,
                                                             "Branch Length Time": 0.0,
+                                                            "Branch Minor": "NA",
                                                             "Branch Number": "NA",
                                                             "Branch Support": 10.0,
                                                             "Branch Support Conf Category": "LOW",
@@ -24301,6 +24622,7 @@
                                                                 "Branch Length": 4.616e-07,
                                                                 "Branch Length Sub": 2.0,
                                                                 "Branch Length Time": 31.0,
+                                                                "Branch Minor": "NA",
                                                                 "Branch Number": "NA",
                                                                 "Branch Support": 21.0,
                                                                 "Branch Support Conf Category": "LOW",
@@ -24364,6 +24686,9 @@
                                                                   },
                                                                   "branch_length_time": {
                                                                     "value": 87.0
+                                                                  },
+                                                                  "branch_minor": {
+                                                                    "value": "1.ORI1"
                                                                   },
                                                                   "branch_number": {
                                                                     "value": "1.0"
@@ -24509,6 +24834,7 @@
                                                                     "Branch Length": 5.01e-08,
                                                                     "Branch Length Sub": 0.0,
                                                                     "Branch Length Time": 0.0,
+                                                                    "Branch Minor": "NA",
                                                                     "Branch Number": "NA",
                                                                     "Branch Support": 28.0,
                                                                     "Branch Support Conf Category": "LOW",
@@ -24572,6 +24898,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 87.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -24721,6 +25050,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 87.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -25066,6 +25398,7 @@
                                                                 "Branch Length": 2.356e-07,
                                                                 "Branch Length Sub": 1.0,
                                                                 "Branch Length Time": 0.0,
+                                                                "Branch Minor": "NA",
                                                                 "Branch Number": "NA",
                                                                 "Branch Support": 17.0,
                                                                 "Branch Support Conf Category": "LOW",
@@ -25125,6 +25458,7 @@
                                                                     "Branch Length": 4.711e-07,
                                                                     "Branch Length Sub": 2.0,
                                                                     "Branch Length Time": 40.0,
+                                                                    "Branch Minor": "NA",
                                                                     "Branch Number": "NA",
                                                                     "Branch Support": 99.0,
                                                                     "Branch Support Conf Category": "HIGH",
@@ -25188,6 +25522,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 78.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -25337,6 +25674,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 78.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -25585,6 +25925,7 @@
                                                                     "Branch Length": 5.01e-08,
                                                                     "Branch Length Sub": 0.0,
                                                                     "Branch Length Time": 0.0,
+                                                                    "Branch Minor": "NA",
                                                                     "Branch Number": "NA",
                                                                     "Branch Support": 14.0,
                                                                     "Branch Support Conf Category": "LOW",
@@ -25644,6 +25985,7 @@
                                                                         "Branch Length": 2.43e-07,
                                                                         "Branch Length Sub": 1.0,
                                                                         "Branch Length Time": 0.0,
+                                                                        "Branch Minor": "NA",
                                                                         "Branch Number": "NA",
                                                                         "Branch Support": 42.0,
                                                                         "Branch Support Conf Category": "LOW",
@@ -25707,6 +26049,9 @@
                                                                           },
                                                                           "branch_length_time": {
                                                                             "value": 114.0
+                                                                          },
+                                                                          "branch_minor": {
+                                                                            "value": "1.ORI1"
                                                                           },
                                                                           "branch_number": {
                                                                             "value": "1.0"
@@ -25856,6 +26201,9 @@
                                                                           },
                                                                           "branch_length_time": {
                                                                             "value": 117.0
+                                                                          },
+                                                                          "branch_minor": {
+                                                                            "value": "1.ORI1"
                                                                           },
                                                                           "branch_number": {
                                                                             "value": "1.0"
@@ -26101,6 +26449,7 @@
                                                                         "Branch Length": 2.89e-07,
                                                                         "Branch Length Sub": 1.0,
                                                                         "Branch Length Time": 16.0,
+                                                                        "Branch Minor": "NA",
                                                                         "Branch Number": "NA",
                                                                         "Branch Support": 28.0,
                                                                         "Branch Support Conf Category": "LOW",
@@ -26164,6 +26513,9 @@
                                                                           },
                                                                           "branch_length_time": {
                                                                             "value": 102.0
+                                                                          },
+                                                                          "branch_minor": {
+                                                                            "value": "1.ORI1"
                                                                           },
                                                                           "branch_number": {
                                                                             "value": "1.0"
@@ -26313,6 +26665,9 @@
                                                                           },
                                                                           "branch_length_time": {
                                                                             "value": 102.0
+                                                                          },
+                                                                          "branch_minor": {
+                                                                            "value": "1.ORI1"
                                                                           },
                                                                           "branch_number": {
                                                                             "value": "1.0"
@@ -26858,6 +27213,7 @@
                                                             "Branch Length": 2.36e-08,
                                                             "Branch Length Sub": 0.0,
                                                             "Branch Length Time": 18.0,
+                                                            "Branch Minor": "NA",
                                                             "Branch Number": "NA",
                                                             "Branch Support": 12.0,
                                                             "Branch Support Conf Category": "LOW",
@@ -26917,6 +27273,7 @@
                                                                 "Branch Length": 2.36e-08,
                                                                 "Branch Length Sub": 0.0,
                                                                 "Branch Length Time": 20.0,
+                                                                "Branch Minor": "NA",
                                                                 "Branch Number": "NA",
                                                                 "Branch Support": 9.0,
                                                                 "Branch Support Conf Category": "LOW",
@@ -26980,6 +27337,9 @@
                                                                   },
                                                                   "branch_length_time": {
                                                                     "value": 79.0
+                                                                  },
+                                                                  "branch_minor": {
+                                                                    "value": "1.ORI1"
                                                                   },
                                                                   "branch_number": {
                                                                     "value": "1.0"
@@ -27125,6 +27485,7 @@
                                                                     "Branch Length": 2.356e-07,
                                                                     "Branch Length Sub": 1.0,
                                                                     "Branch Length Time": 0.0,
+                                                                    "Branch Minor": "NA",
                                                                     "Branch Number": "NA",
                                                                     "Branch Support": 35.0,
                                                                     "Branch Support Conf Category": "LOW",
@@ -27188,6 +27549,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 80.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -27333,6 +27697,7 @@
                                                                         "Branch Length": 1.8845e-06,
                                                                         "Branch Length Sub": 8.0,
                                                                         "Branch Length Time": 80.0,
+                                                                        "Branch Minor": "NA",
                                                                         "Branch Number": "NA",
                                                                         "Branch Support": 100.0,
                                                                         "Branch Support Conf Category": "HIGH",
@@ -27396,6 +27761,9 @@
                                                                           },
                                                                           "branch_length_time": {
                                                                             "value": 0.0
+                                                                          },
+                                                                          "branch_minor": {
+                                                                            "value": "1.ORI1"
                                                                           },
                                                                           "branch_number": {
                                                                             "value": "1.0"
@@ -27545,6 +27913,9 @@
                                                                           },
                                                                           "branch_length_time": {
                                                                             "value": 0.0
+                                                                          },
+                                                                          "branch_minor": {
+                                                                            "value": "1.ORI1"
                                                                           },
                                                                           "branch_number": {
                                                                             "value": "1.0"
@@ -27993,6 +28364,7 @@
                                                                 "Branch Length": 2.36e-08,
                                                                 "Branch Length Sub": 0.0,
                                                                 "Branch Length Time": 0.0,
+                                                                "Branch Minor": "NA",
                                                                 "Branch Number": "NA",
                                                                 "Branch Support": 10.0,
                                                                 "Branch Support Conf Category": "LOW",
@@ -28052,6 +28424,7 @@
                                                                     "Branch Length": 2.36e-08,
                                                                     "Branch Length Sub": 0.0,
                                                                     "Branch Length Time": 17.0,
+                                                                    "Branch Minor": "NA",
                                                                     "Branch Number": "NA",
                                                                     "Branch Support": 14.0,
                                                                     "Branch Support Conf Category": "LOW",
@@ -28115,6 +28488,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 83.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -28260,6 +28636,7 @@
                                                                         "Branch Length": 2.541e-07,
                                                                         "Branch Length Sub": 1.0,
                                                                         "Branch Length Time": 0.0,
+                                                                        "Branch Minor": "NA",
                                                                         "Branch Number": "NA",
                                                                         "Branch Support": 22.0,
                                                                         "Branch Support Conf Category": "LOW",
@@ -28323,6 +28700,9 @@
                                                                           },
                                                                           "branch_length_time": {
                                                                             "value": 83.0
+                                                                          },
+                                                                          "branch_minor": {
+                                                                            "value": "1.ORI1"
                                                                           },
                                                                           "branch_number": {
                                                                             "value": "1.0"
@@ -28472,6 +28852,9 @@
                                                                           },
                                                                           "branch_length_time": {
                                                                             "value": 83.0
+                                                                          },
+                                                                          "branch_minor": {
+                                                                            "value": "1.ORI1"
                                                                           },
                                                                           "branch_number": {
                                                                             "value": "1.0"
@@ -28817,6 +29200,7 @@
                                                                     "Branch Length": 2.36e-08,
                                                                     "Branch Length Sub": 0.0,
                                                                     "Branch Length Time": 0.0,
+                                                                    "Branch Minor": "NA",
                                                                     "Branch Number": "NA",
                                                                     "Branch Support": 10.0,
                                                                     "Branch Support Conf Category": "LOW",
@@ -28880,6 +29264,9 @@
                                                                       },
                                                                       "branch_length_time": {
                                                                         "value": 100.0
+                                                                      },
+                                                                      "branch_minor": {
+                                                                        "value": "1.ORI1"
                                                                       },
                                                                       "branch_number": {
                                                                         "value": "1.0"
@@ -29025,6 +29412,7 @@
                                                                         "Branch Length": 2.36e-08,
                                                                         "Branch Length Sub": 0.0,
                                                                         "Branch Length Time": 0.0,
+                                                                        "Branch Minor": "NA",
                                                                         "Branch Number": "NA",
                                                                         "Branch Support": 13.0,
                                                                         "Branch Support Conf Category": "LOW",
@@ -29084,6 +29472,7 @@
                                                                             "Branch Length": 2.36e-08,
                                                                             "Branch Length Sub": 0.0,
                                                                             "Branch Length Time": 0.0,
+                                                                            "Branch Minor": "NA",
                                                                             "Branch Number": "NA",
                                                                             "Branch Support": 11.0,
                                                                             "Branch Support Conf Category": "LOW",
@@ -29147,6 +29536,9 @@
                                                                               },
                                                                               "branch_length_time": {
                                                                                 "value": 101.0
+                                                                              },
+                                                                              "branch_minor": {
+                                                                                "value": "1.ORI1"
                                                                               },
                                                                               "branch_number": {
                                                                                 "value": "1.0"
@@ -29296,6 +29688,9 @@
                                                                               },
                                                                               "branch_length_time": {
                                                                                 "value": 101.0
+                                                                              },
+                                                                              "branch_minor": {
+                                                                                "value": "1.ORI1"
                                                                               },
                                                                               "branch_number": {
                                                                                 "value": "1.0"
@@ -29541,6 +29936,7 @@
                                                                             "Branch Length": 5.01e-08,
                                                                             "Branch Length Sub": 0.0,
                                                                             "Branch Length Time": 0.0,
+                                                                            "Branch Minor": "NA",
                                                                             "Branch Number": "NA",
                                                                             "Branch Support": 13.0,
                                                                             "Branch Support Conf Category": "LOW",
@@ -29600,6 +29996,7 @@
                                                                                 "Branch Length": 2.196e-07,
                                                                                 "Branch Length Sub": 1.0,
                                                                                 "Branch Length Time": 39.0,
+                                                                                "Branch Minor": "NA",
                                                                                 "Branch Number": "NA",
                                                                                 "Branch Support": 71.0,
                                                                                 "Branch Support Conf Category": "LOW",
@@ -29663,6 +30060,9 @@
                                                                                   },
                                                                                   "branch_length_time": {
                                                                                     "value": 61.0
+                                                                                  },
+                                                                                  "branch_minor": {
+                                                                                    "value": "1.ORI1"
                                                                                   },
                                                                                   "branch_number": {
                                                                                     "value": "1.0"
@@ -29808,6 +30208,7 @@
                                                                                     "Branch Length": 2.36e-08,
                                                                                     "Branch Length Sub": 0.0,
                                                                                     "Branch Length Time": 30.0,
+                                                                                    "Branch Minor": "NA",
                                                                                     "Branch Number": "NA",
                                                                                     "Branch Support": 64.0,
                                                                                     "Branch Support Conf Category": "LOW",
@@ -29871,6 +30272,9 @@
                                                                                       },
                                                                                       "branch_length_time": {
                                                                                         "value": 32.0
+                                                                                      },
+                                                                                      "branch_minor": {
+                                                                                        "value": "1.ORI1"
                                                                                       },
                                                                                       "branch_number": {
                                                                                         "value": "1.0"
@@ -30020,6 +30424,9 @@
                                                                                       },
                                                                                       "branch_length_time": {
                                                                                         "value": 32.0
+                                                                                      },
+                                                                                      "branch_minor": {
+                                                                                        "value": "1.ORI1"
                                                                                       },
                                                                                       "branch_number": {
                                                                                         "value": "1.0"
@@ -30365,6 +30772,7 @@
                                                                                 "Branch Length": 2.36e-08,
                                                                                 "Branch Length Sub": 0.0,
                                                                                 "Branch Length Time": 0.0,
+                                                                                "Branch Minor": "NA",
                                                                                 "Branch Number": "NA",
                                                                                 "Branch Support": 11.0,
                                                                                 "Branch Support Conf Category": "LOW",
@@ -30424,6 +30832,7 @@
                                                                                     "Branch Length": 2.356e-07,
                                                                                     "Branch Length Sub": 1.0,
                                                                                     "Branch Length Time": 0.0,
+                                                                                    "Branch Minor": "NA",
                                                                                     "Branch Number": "NA",
                                                                                     "Branch Support": 24.0,
                                                                                     "Branch Support Conf Category": "LOW",
@@ -30487,6 +30896,9 @@
                                                                                       },
                                                                                       "branch_length_time": {
                                                                                         "value": 101.0
+                                                                                      },
+                                                                                      "branch_minor": {
+                                                                                        "value": "1.ORI1"
                                                                                       },
                                                                                       "branch_number": {
                                                                                         "value": "1.0"
@@ -30636,6 +31048,9 @@
                                                                                       },
                                                                                       "branch_length_time": {
                                                                                         "value": 101.0
+                                                                                      },
+                                                                                      "branch_minor": {
+                                                                                        "value": "1.ORI1"
                                                                                       },
                                                                                       "branch_number": {
                                                                                         "value": "1.0"
@@ -30881,6 +31296,7 @@
                                                                                     "Branch Length": 5.01e-08,
                                                                                     "Branch Length Sub": 0.0,
                                                                                     "Branch Length Time": 0.0,
+                                                                                    "Branch Minor": "NA",
                                                                                     "Branch Number": "NA",
                                                                                     "Branch Support": 11.0,
                                                                                     "Branch Support Conf Category": "LOW",
@@ -30940,6 +31356,7 @@
                                                                                         "Branch Length": 9.423e-07,
                                                                                         "Branch Length Sub": 4.0,
                                                                                         "Branch Length Time": 90.0,
+                                                                                        "Branch Minor": "NA",
                                                                                         "Branch Number": "NA",
                                                                                         "Branch Support": 100.0,
                                                                                         "Branch Support Conf Category": "HIGH",
@@ -31003,6 +31420,9 @@
                                                                                           },
                                                                                           "branch_length_time": {
                                                                                             "value": 10.0
+                                                                                          },
+                                                                                          "branch_minor": {
+                                                                                            "value": "1.ORI1"
                                                                                           },
                                                                                           "branch_number": {
                                                                                             "value": "1.0"
@@ -31152,6 +31572,9 @@
                                                                                           },
                                                                                           "branch_length_time": {
                                                                                             "value": 10.0
+                                                                                          },
+                                                                                          "branch_minor": {
+                                                                                            "value": "1.ORI1"
                                                                                           },
                                                                                           "branch_number": {
                                                                                             "value": "1.0"
@@ -31400,6 +31823,7 @@
                                                                                         "Branch Length": 2.36e-08,
                                                                                         "Branch Length Sub": 0.0,
                                                                                         "Branch Length Time": 0.0,
+                                                                                        "Branch Minor": "NA",
                                                                                         "Branch Number": "NA",
                                                                                         "Branch Support": 3.0,
                                                                                         "Branch Support Conf Category": "LOW",
@@ -31459,6 +31883,7 @@
                                                                                             "Branch Length": 2.36e-08,
                                                                                             "Branch Length Sub": 0.0,
                                                                                             "Branch Length Time": 0.0,
+                                                                                            "Branch Minor": "NA",
                                                                                             "Branch Number": "NA",
                                                                                             "Branch Support": 15.0,
                                                                                             "Branch Support Conf Category": "LOW",
@@ -31518,6 +31943,7 @@
                                                                                                 "Branch Length": 3.608e-07,
                                                                                                 "Branch Length Sub": 2.0,
                                                                                                 "Branch Length Time": 63.0,
+                                                                                                "Branch Minor": "NA",
                                                                                                 "Branch Number": "NA",
                                                                                                 "Branch Support": 97.0,
                                                                                                 "Branch Support Conf Category": "HIGH",
@@ -31581,6 +32007,9 @@
                                                                                                   },
                                                                                                   "branch_length_time": {
                                                                                                     "value": 38.0
+                                                                                                  },
+                                                                                                  "branch_minor": {
+                                                                                                    "value": "1.ORI1"
                                                                                                   },
                                                                                                   "branch_number": {
                                                                                                     "value": "1.0"
@@ -31730,6 +32159,9 @@
                                                                                                   },
                                                                                                   "branch_length_time": {
                                                                                                     "value": 38.0
+                                                                                                  },
+                                                                                                  "branch_minor": {
+                                                                                                    "value": "1.ORI1"
                                                                                                   },
                                                                                                   "branch_number": {
                                                                                                     "value": "1.0"
@@ -31978,6 +32410,7 @@
                                                                                                 "Branch Length": 2.356e-07,
                                                                                                 "Branch Length Sub": 1.0,
                                                                                                 "Branch Length Time": 0.0,
+                                                                                                "Branch Minor": "NA",
                                                                                                 "Branch Number": "NA",
                                                                                                 "Branch Support": 50.0,
                                                                                                 "Branch Support Conf Category": "LOW",
@@ -32041,6 +32474,9 @@
                                                                                                   },
                                                                                                   "branch_length_time": {
                                                                                                     "value": 101.0
+                                                                                                  },
+                                                                                                  "branch_minor": {
+                                                                                                    "value": "1.ORI1"
                                                                                                   },
                                                                                                   "branch_number": {
                                                                                                     "value": "1.0"
@@ -32186,6 +32622,7 @@
                                                                                                     "Branch Length": 1.4134e-06,
                                                                                                     "Branch Length Sub": 6.0,
                                                                                                     "Branch Length Time": 99.0,
+                                                                                                    "Branch Minor": "NA",
                                                                                                     "Branch Number": "NA",
                                                                                                     "Branch Support": 100.0,
                                                                                                     "Branch Support Conf Category": "HIGH",
@@ -32249,6 +32686,9 @@
                                                                                                       },
                                                                                                       "branch_length_time": {
                                                                                                         "value": 2.0
+                                                                                                      },
+                                                                                                      "branch_minor": {
+                                                                                                        "value": "1.ORI1"
                                                                                                       },
                                                                                                       "branch_number": {
                                                                                                         "value": "1.0"
@@ -32398,6 +32838,9 @@
                                                                                                       },
                                                                                                       "branch_length_time": {
                                                                                                         "value": 2.0
+                                                                                                      },
+                                                                                                      "branch_minor": {
+                                                                                                        "value": "1.ORI1"
                                                                                                       },
                                                                                                       "branch_number": {
                                                                                                         "value": "1.0"
@@ -32846,6 +33289,7 @@
                                                                                             "Branch Length": 2.36e-08,
                                                                                             "Branch Length Sub": 0.0,
                                                                                             "Branch Length Time": 0.0,
+                                                                                            "Branch Minor": "NA",
                                                                                             "Branch Number": "NA",
                                                                                             "Branch Support": 8.0,
                                                                                             "Branch Support Conf Category": "LOW",
@@ -32909,6 +33353,9 @@
                                                                                               },
                                                                                               "branch_length_time": {
                                                                                                 "value": 101.0
+                                                                                              },
+                                                                                              "branch_minor": {
+                                                                                                "value": "1.ORI1"
                                                                                               },
                                                                                               "branch_number": {
                                                                                                 "value": "1.0"
@@ -33054,6 +33501,7 @@
                                                                                                 "Branch Length": 2.325e-07,
                                                                                                 "Branch Length Sub": 1.0,
                                                                                                 "Branch Length Time": 0.0,
+                                                                                                "Branch Minor": "NA",
                                                                                                 "Branch Number": "NA",
                                                                                                 "Branch Support": 13.0,
                                                                                                 "Branch Support Conf Category": "LOW",
@@ -33113,6 +33561,7 @@
                                                                                                     "Branch Length": 2.356e-07,
                                                                                                     "Branch Length Sub": 1.0,
                                                                                                     "Branch Length Time": 36.0,
+                                                                                                    "Branch Minor": "NA",
                                                                                                     "Branch Number": "NA",
                                                                                                     "Branch Support": 71.0,
                                                                                                     "Branch Support Conf Category": "LOW",
@@ -33176,6 +33625,9 @@
                                                                                                       },
                                                                                                       "branch_length_time": {
                                                                                                         "value": 61.0
+                                                                                                      },
+                                                                                                      "branch_minor": {
+                                                                                                        "value": "1.ORI1"
                                                                                                       },
                                                                                                       "branch_number": {
                                                                                                         "value": "1.0"
@@ -33325,6 +33777,9 @@
                                                                                                       },
                                                                                                       "branch_length_time": {
                                                                                                         "value": 61.0
+                                                                                                      },
+                                                                                                      "branch_minor": {
+                                                                                                        "value": "1.ORI1"
                                                                                                       },
                                                                                                       "branch_number": {
                                                                                                         "value": "1.0"
@@ -33570,6 +34025,7 @@
                                                                                                     "Branch Length": 2.207e-07,
                                                                                                     "Branch Length Sub": 1.0,
                                                                                                     "Branch Length Time": 0.0,
+                                                                                                    "Branch Minor": "NA",
                                                                                                     "Branch Number": "NA",
                                                                                                     "Branch Support": 13.0,
                                                                                                     "Branch Support Conf Category": "LOW",
@@ -33629,6 +34085,7 @@
                                                                                                         "Branch Length": 2.356e-07,
                                                                                                         "Branch Length Sub": 1.0,
                                                                                                         "Branch Length Time": 0.0,
+                                                                                                        "Branch Minor": "NA",
                                                                                                         "Branch Number": "NA",
                                                                                                         "Branch Support": 13.0,
                                                                                                         "Branch Support Conf Category": "LOW",
@@ -33692,6 +34149,9 @@
                                                                                                           },
                                                                                                           "branch_length_time": {
                                                                                                             "value": 97.0
+                                                                                                          },
+                                                                                                          "branch_minor": {
+                                                                                                            "value": "1.ORI1"
                                                                                                           },
                                                                                                           "branch_number": {
                                                                                                             "value": "1.0"
@@ -33837,6 +34297,7 @@
                                                                                                             "Branch Length": 2.921e-07,
                                                                                                             "Branch Length Sub": 1.0,
                                                                                                             "Branch Length Time": 33.0,
+                                                                                                            "Branch Minor": "NA",
                                                                                                             "Branch Number": "NA",
                                                                                                             "Branch Support": 46.0,
                                                                                                             "Branch Support Conf Category": "LOW",
@@ -33900,6 +34361,9 @@
                                                                                                               },
                                                                                                               "branch_length_time": {
                                                                                                                 "value": 63.0
+                                                                                                              },
+                                                                                                              "branch_minor": {
+                                                                                                                "value": "1.ORI1"
                                                                                                               },
                                                                                                               "branch_number": {
                                                                                                                 "value": "1.0"
@@ -34049,6 +34513,9 @@
                                                                                                               },
                                                                                                               "branch_length_time": {
                                                                                                                 "value": 63.0
+                                                                                                              },
+                                                                                                              "branch_minor": {
+                                                                                                                "value": "1.ORI1"
                                                                                                               },
                                                                                                               "branch_number": {
                                                                                                                 "value": "1.0"
@@ -34394,6 +34861,7 @@
                                                                                                         "Branch Length": 5.01e-08,
                                                                                                         "Branch Length Sub": 0.0,
                                                                                                         "Branch Length Time": 41.0,
+                                                                                                        "Branch Minor": "NA",
                                                                                                         "Branch Number": "NA",
                                                                                                         "Branch Support": 34.0,
                                                                                                         "Branch Support Conf Category": "LOW",
@@ -34457,6 +34925,9 @@
                                                                                                           },
                                                                                                           "branch_length_time": {
                                                                                                             "value": 57.0
+                                                                                                          },
+                                                                                                          "branch_minor": {
+                                                                                                            "value": "1.ORI1"
                                                                                                           },
                                                                                                           "branch_number": {
                                                                                                             "value": "1.0"
@@ -34602,6 +35073,7 @@
                                                                                                             "Branch Length": 2.248e-07,
                                                                                                             "Branch Length Sub": 1.0,
                                                                                                             "Branch Length Time": 16.0,
+                                                                                                            "Branch Minor": "NA",
                                                                                                             "Branch Number": "NA",
                                                                                                             "Branch Support": 58.0,
                                                                                                             "Branch Support Conf Category": "LOW",
@@ -34665,6 +35137,9 @@
                                                                                                               },
                                                                                                               "branch_length_time": {
                                                                                                                 "value": 39.0
+                                                                                                              },
+                                                                                                              "branch_minor": {
+                                                                                                                "value": "1.ORI1"
                                                                                                               },
                                                                                                               "branch_number": {
                                                                                                                 "value": "1.0"
@@ -34814,6 +35289,9 @@
                                                                                                               },
                                                                                                               "branch_length_time": {
                                                                                                                 "value": 43.0
+                                                                                                              },
+                                                                                                              "branch_minor": {
+                                                                                                                "value": "1.ORI1"
                                                                                                               },
                                                                                                               "branch_number": {
                                                                                                                 "value": "1.0"
