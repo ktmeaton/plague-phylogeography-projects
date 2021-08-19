@@ -410,28 +410,69 @@
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Support Confidence",
         "type": "categorical"
       },
       {
-        "key": "host_order_raw",
+        "key": "country_conf_category",
         "scale": [
           [
-            "Human",
-            "#d62728"
+            "LOW",
+            "#FFFFFF"
           ],
           [
-            "NA",
-            "#FFFFFF"
+            "HIGH",
+            "#8000ff"
           ]
         ],
-        "title": "Host",
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#8000ff"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ]
+        ],
+        "title": "Continent",
         "type": "categorical"
       },
       {
@@ -458,18 +499,44 @@
         "type": "categorical"
       },
       {
-        "key": "province_conf_category",
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
         "scale": [
           [
-            "LOW",
-            "#FFFFFF"
+            "Krasnoyarsk Krai",
+            "#8000ff"
           ],
           [
-            "HIGH",
-            "#8000ff"
+            "Panevezys County",
+            "#7b07ff"
+          ],
+          [
+            "P\u00e4rnu maakond",
+            "#760eff"
+          ],
+          [
+            "Irkutsk Oblast",
+            "#7216ff"
+          ],
+          [
+            "Bavaria",
+            "#6d1dff"
+          ],
+          [
+            "Altai Krai",
+            "#6924fe"
           ]
         ],
-        "title": "Province Confidence",
+        "title": "Province (Inferred)",
         "type": "categorical"
       },
       {
@@ -478,8 +545,29 @@
         "type": "continuous"
       },
       {
-        "key": "population_rtt_dist",
-        "title": "Population Root Distance",
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
         "type": "continuous"
       },
       {
@@ -491,11 +579,6 @@
           ]
         ],
         "title": "Population",
-        "type": "categorical"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
         "type": "categorical"
       },
       {
@@ -522,44 +605,18 @@
         "type": "categorical"
       },
       {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
       },
       {
-        "key": "branch_support_conf_char",
-        "title": "Branch Support Confidence Character",
-        "type": "categorical"
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
       },
       {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#8000ff"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "continent_raw",
-        "scale": [
-          [
-            "Europe",
-            "#8000ff"
-          ]
-        ],
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor",
-        "title": "Branch Minor",
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
         "type": "categorical"
       },
       {
@@ -578,14 +635,54 @@
         "type": "categorical"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
         "type": "continuous"
       },
       {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
       },
       {
         "key": "continent",
@@ -597,16 +694,6 @@
         ],
         "title": "Continent (Inferred)",
         "type": "categorical"
-      },
-      {
-        "key": "population_geo_dist",
-        "title": "population_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
       },
       {
         "key": "province_raw",
@@ -644,28 +731,44 @@
         "type": "categorical"
       },
       {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#8000ff"
-          ]
-        ],
-        "title": "Node Type",
+        "key": "blank",
+        "title": "Blank",
         "type": "categorical"
       },
       {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
+        "key": "province_lat",
+        "title": "Province Latitude",
         "type": "continuous"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "0.PRE",
+            "#8000ff"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
@@ -674,49 +777,13 @@
         "type": "continuous"
       },
       {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#8000ff"
-          ]
-        ],
-        "title": "Branch Support Confidence",
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
-        "key": "province",
-        "scale": [
-          [
-            "Krasnoyarsk Krai",
-            "#8000ff"
-          ],
-          [
-            "Panevezys County",
-            "#7b07ff"
-          ],
-          [
-            "P\u00e4rnu maakond",
-            "#760eff"
-          ],
-          [
-            "Irkutsk Oblast",
-            "#7216ff"
-          ],
-          [
-            "Bavaria",
-            "#6d1dff"
-          ],
-          [
-            "Altai Krai",
-            "#6924fe"
-          ]
-        ],
-        "title": "Province (Inferred)",
+        "key": "branch_number",
+        "title": "Branch Number",
         "type": "categorical"
       },
       {
@@ -735,96 +802,29 @@
         "type": "categorical"
       },
       {
-        "key": "host_human",
-        "title": "host_human",
-        "type": "categorical"
-      },
-      {
-        "key": "blank",
-        "title": "Blank",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "country_lat",
+        "title": "Country Latitude",
         "type": "continuous"
       },
       {
-        "key": "continent_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#8000ff"
-          ]
-        ],
-        "title": "Continent Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "root_geo_dist",
-        "title": "root_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "population",
-        "scale": [
-          [
-            "0.PRE",
-            "#8000ff"
-          ]
-        ],
-        "title": "Population (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order",
+        "key": "host_order_raw",
         "scale": [
           [
             "Human",
             "#d62728"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
           ]
         ],
-        "title": "Host (Inferred)",
+        "title": "Host",
         "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
       }
     ],
     "display_defaults": {

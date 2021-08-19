@@ -722,48 +722,85 @@
         "type": "categorical"
       },
       {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order_raw",
+        "key": "branch_support_conf_category",
         "scale": [
           [
-            "Human",
-            "#d62728"
-          ],
-          [
-            "Rodentia",
-            "#525252"
-          ],
-          [
-            "Siphonaptera",
-            "#2ca02c"
-          ],
-          [
-            "NA",
+            "LOW",
             "#FFFFFF"
           ],
           [
-            "Lagomorpha",
-            "#1f77b4"
-          ],
-          [
-            "Carnivora",
-            "#1f77b4"
-          ],
-          [
-            "Marsupialia",
-            "#1f77b4"
+            "HIGH",
+            "#ff0000"
           ]
         ],
-        "title": "Host",
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff0000"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#ff0000"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ],
+          [
+            "Africa",
+            "#80ffb4"
+          ],
+          [
+            "North America",
+            "#ffb462"
+          ],
+          [
+            "South America",
+            "#ff0000"
+          ]
+        ],
+        "title": "Continent",
         "type": "categorical"
       },
       {
@@ -830,18 +867,124 @@
         "type": "categorical"
       },
       {
-        "key": "province_conf_category",
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
         "scale": [
           [
-            "LOW",
-            "#FFFFFF"
+            "Gansu",
+            "#1dd1e2"
           ],
           [
-            "HIGH",
+            "Maharashtra",
+            "#4ff4cd"
+          ],
+          [
+            "Yunnan",
+            "#ff9b52"
+          ],
+          [
+            "Kh\u00e1nh Ho\u00e0 Province",
+            "#ff954e"
+          ],
+          [
+            "L\u00e2m \u0110\u1ed3ng Province",
+            "#ff8f4b"
+          ],
+          [
+            "Ho Chi Minh City",
+            "#ff8947"
+          ],
+          [
+            "Guangxi Zhuang",
+            "#ff8344"
+          ],
+          [
+            "California",
+            "#ff7c40"
+          ],
+          [
+            "La Libertad",
+            "#ff763d"
+          ],
+          [
+            "Tamil Nadu",
+            "#ff7039"
+          ],
+          [
+            "Saskatchewan",
+            "#ff6936"
+          ],
+          [
+            "Arizona",
+            "#ff6232"
+          ],
+          [
+            "New Mexico",
+            "#ff5c2f"
+          ],
+          [
+            "Colorado",
+            "#ff552b"
+          ],
+          [
+            "Texas",
+            "#ff4e28"
+          ],
+          [
+            "Nevada",
+            "#ff4724"
+          ],
+          [
+            "Central Java",
+            "#ff4020"
+          ],
+          [
+            "Province de Fianarantsoa",
+            "#ff391d"
+          ],
+          [
+            "Kirov Oblast",
+            "#ff3219"
+          ],
+          [
+            "Gujarat",
+            "#ff2b16"
+          ],
+          [
+            "Fujian",
+            "#ff2412"
+          ],
+          [
+            "Midlands",
+            "#ff1d0e"
+          ],
+          [
+            "MSila",
+            "#ff160b"
+          ],
+          [
+            "State of Mato Grosso",
+            "#ff0e07"
+          ],
+          [
+            "La Paz",
+            "#ff0704"
+          ],
+          [
+            "Cajamarca",
             "#ff0000"
           ]
         ],
-        "title": "Province Confidence",
+        "title": "Province (Inferred)",
         "type": "categorical"
       },
       {
@@ -850,8 +993,49 @@
         "type": "continuous"
       },
       {
-        "key": "population_rtt_dist",
-        "title": "Population Root Distance",
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "Rodentia",
+            "#525252"
+          ],
+          [
+            "Siphonaptera",
+            "#2ca02c"
+          ],
+          [
+            "Lagomorpha",
+            "#1f77b4"
+          ],
+          [
+            "Carnivora",
+            "#1f77b4"
+          ],
+          [
+            "Marsupialia",
+            "#1f77b4"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
         "type": "continuous"
       },
       {
@@ -863,11 +1047,6 @@
           ]
         ],
         "title": "Population",
-        "type": "categorical"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
         "type": "categorical"
       },
       {
@@ -934,60 +1113,18 @@
         "type": "categorical"
       },
       {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
       },
       {
-        "key": "branch_support_conf_char",
-        "title": "Branch Support Confidence Character",
-        "type": "categorical"
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
       },
       {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff0000"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "continent_raw",
-        "scale": [
-          [
-            "Europe",
-            "#8000ff"
-          ],
-          [
-            "Asia",
-            "#00b4ec"
-          ],
-          [
-            "Africa",
-            "#80ffb4"
-          ],
-          [
-            "North America",
-            "#ffb462"
-          ],
-          [
-            "South America",
-            "#ff0000"
-          ]
-        ],
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor",
-        "title": "Branch Minor",
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
         "type": "categorical"
       },
       {
@@ -1006,14 +1143,54 @@
         "type": "categorical"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff0000"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff0000"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
         "type": "continuous"
       },
       {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
       },
       {
         "key": "continent",
@@ -1041,16 +1218,6 @@
         ],
         "title": "Continent (Inferred)",
         "type": "categorical"
-      },
-      {
-        "key": "population_geo_dist",
-        "title": "population_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
       },
       {
         "key": "province_raw",
@@ -1168,28 +1335,44 @@
         "type": "categorical"
       },
       {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#ff0000"
-          ]
-        ],
-        "title": "Node Type",
+        "key": "blank",
+        "title": "Blank",
         "type": "categorical"
       },
       {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
+        "key": "province_lat",
+        "title": "Province Latitude",
         "type": "continuous"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "1.ORI",
+            "#ff0000"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
@@ -1198,129 +1381,13 @@
         "type": "continuous"
       },
       {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff0000"
-          ]
-        ],
-        "title": "Branch Support Confidence",
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
         "type": "categorical"
       },
       {
-        "key": "province",
-        "scale": [
-          [
-            "Gansu",
-            "#1dd1e2"
-          ],
-          [
-            "Maharashtra",
-            "#4ff4cd"
-          ],
-          [
-            "Yunnan",
-            "#ff9b52"
-          ],
-          [
-            "Kh\u00e1nh Ho\u00e0 Province",
-            "#ff954e"
-          ],
-          [
-            "L\u00e2m \u0110\u1ed3ng Province",
-            "#ff8f4b"
-          ],
-          [
-            "Ho Chi Minh City",
-            "#ff8947"
-          ],
-          [
-            "Guangxi Zhuang",
-            "#ff8344"
-          ],
-          [
-            "California",
-            "#ff7c40"
-          ],
-          [
-            "La Libertad",
-            "#ff763d"
-          ],
-          [
-            "Tamil Nadu",
-            "#ff7039"
-          ],
-          [
-            "Saskatchewan",
-            "#ff6936"
-          ],
-          [
-            "Arizona",
-            "#ff6232"
-          ],
-          [
-            "New Mexico",
-            "#ff5c2f"
-          ],
-          [
-            "Colorado",
-            "#ff552b"
-          ],
-          [
-            "Texas",
-            "#ff4e28"
-          ],
-          [
-            "Nevada",
-            "#ff4724"
-          ],
-          [
-            "Central Java",
-            "#ff4020"
-          ],
-          [
-            "Province de Fianarantsoa",
-            "#ff391d"
-          ],
-          [
-            "Kirov Oblast",
-            "#ff3219"
-          ],
-          [
-            "Gujarat",
-            "#ff2b16"
-          ],
-          [
-            "Fujian",
-            "#ff2412"
-          ],
-          [
-            "Midlands",
-            "#ff1d0e"
-          ],
-          [
-            "MSila",
-            "#ff160b"
-          ],
-          [
-            "State of Mato Grosso",
-            "#ff0e07"
-          ],
-          [
-            "La Paz",
-            "#ff0704"
-          ],
-          [
-            "Cajamarca",
-            "#ff0000"
-          ]
-        ],
-        "title": "Province (Inferred)",
+        "key": "branch_number",
+        "title": "Branch Number",
         "type": "categorical"
       },
       {
@@ -1339,88 +1406,12 @@
         "type": "categorical"
       },
       {
-        "key": "host_human",
-        "title": "host_human",
-        "type": "categorical"
-      },
-      {
-        "key": "blank",
-        "title": "Blank",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "country_lat",
+        "title": "Country Latitude",
         "type": "continuous"
       },
       {
-        "key": "continent_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff0000"
-          ]
-        ],
-        "title": "Continent Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "root_geo_dist",
-        "title": "root_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "population",
-        "scale": [
-          [
-            "1.ORI",
-            "#ff0000"
-          ]
-        ],
-        "title": "Population (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order",
+        "key": "host_order_raw",
         "scale": [
           [
             "Human",
@@ -1435,6 +1426,10 @@
             "#2ca02c"
           ],
           [
+            "NA",
+            "#FFFFFF"
+          ],
+          [
             "Lagomorpha",
             "#1f77b4"
           ],
@@ -1447,8 +1442,13 @@
             "#1f77b4"
           ]
         ],
-        "title": "Host (Inferred)",
+        "title": "Host",
         "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
       }
     ],
     "display_defaults": {
