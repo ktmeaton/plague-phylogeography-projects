@@ -13,8 +13,10 @@ sqlite_select_command_asm : SELECT
                             WHERE
                               (BioSampleComment LIKE '%KEEP%Assembly%Modern%'
                               AND length(AssemblyFTPGenbank) > 0
-                              AND length(BioSampleCollectionDate) > 0)
+                              AND length(BioSampleCollectionDate) > 0
                               AND length(BioSampleGeographicLocation) > 0
+                              AND AssemblySubmissionDate NOT LIKE "%2021%"
+                              )
                               OR (BioSampleComment LIKE '%KEEP%Assembly%Modern%Outgroup%')
 
 sqlite_select_command_sra : SELECT
@@ -29,6 +31,7 @@ sqlite_select_command_sra : SELECT
                                SRAComment NOT LIKE "%REMOVE%")
                               AND length(BioSampleCollectionDate) > 0
                               AND length(BioSampleGeographicLocation) > 0
+                              AND BioSampleSubmissionDate NOT LIKE "%2021%"
 
 sqlite_select_command_local : SELECT
                               BioSampleAccession
