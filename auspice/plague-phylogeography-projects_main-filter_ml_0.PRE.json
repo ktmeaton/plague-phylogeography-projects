@@ -1,0 +1,3260 @@
+{
+  "meta": {
+    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main",
+    "colorings": [
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "Lithuania",
+            "#6e1bff"
+          ],
+          [
+            "Estonia",
+            "#5e35fe"
+          ],
+          [
+            "Germany",
+            "#4c4ffc"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "Lithuania",
+            "#6e1bff"
+          ],
+          [
+            "Estonia",
+            "#5e35fe"
+          ],
+          [
+            "Germany",
+            "#4c4ffc"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#8000ff"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "0.PRE",
+            "#8000ff"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Krasnoyarsk Krai",
+            "#8000ff"
+          ],
+          [
+            "Panevezys County",
+            "#7a09ff"
+          ],
+          [
+            "P\u00e4rnu maakond",
+            "#7412ff"
+          ],
+          [
+            "Irkutsk Oblast",
+            "#6e1bff"
+          ],
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "Altai Krai",
+            "#632cfe"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "Krasnoyarsk Krai",
+            "#8000ff"
+          ],
+          [
+            "Panevezys County",
+            "#7a09ff"
+          ],
+          [
+            "P\u00e4rnu maakond",
+            "#7412ff"
+          ],
+          [
+            "Irkutsk Oblast",
+            "#6e1bff"
+          ],
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "Altai Krai",
+            "#632cfe"
+          ],
+          [
+            "NA",
+            "#4757fb"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "Krasnoyarsk Krai",
+            "#8000ff"
+          ],
+          [
+            "Panevezys County",
+            "#7a09ff"
+          ],
+          [
+            "P\u00e4rnu maakond",
+            "#7412ff"
+          ],
+          [
+            "Irkutsk Oblast",
+            "#6e1bff"
+          ],
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "Altai Krai",
+            "#632cfe"
+          ],
+          [
+            "NA",
+            "#4757fb"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Krasnoyarsk Krai",
+            "#8000ff"
+          ],
+          [
+            "Panevezys County",
+            "#7a09ff"
+          ],
+          [
+            "P\u00e4rnu maakond",
+            "#7412ff"
+          ],
+          [
+            "Irkutsk Oblast",
+            "#6e1bff"
+          ],
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "Altai Krai",
+            "#632cfe"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "Lithuania",
+            "#6e1bff"
+          ],
+          [
+            "Estonia",
+            "#5e35fe"
+          ],
+          [
+            "Germany",
+            "#4c4ffc"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "0.PRE",
+            "#8000ff"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "Lithuania",
+            "#6e1bff"
+          ],
+          [
+            "Estonia",
+            "#5e35fe"
+          ],
+          [
+            "Germany",
+            "#4c4ffc"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#8000ff"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#8000ff"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      }
+    ],
+    "display_defaults": {
+      "branch_label": "none",
+      "color_by": "population",
+      "distance_measure": "num_date",
+      "geo_resolution": "province",
+      "layout": "rect",
+      "map_triplicate": true,
+      "transmission_lines": true
+    },
+    "filters": [
+      "continent",
+      "country",
+      "province",
+      "population",
+      "host_order",
+      "branch_minor"
+    ],
+    "geo_resolutions": [
+      {
+        "demes": {
+          "Estonia": {
+            "latitude": 58.75237779999999,
+            "longitude": 25.3319078
+          },
+          "Germany": {
+            "latitude": 51.0834196,
+            "longitude": 10.4234469
+          },
+          "Lithuania": {
+            "latitude": 55.35000030000001,
+            "longitude": 23.7499997
+          },
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          }
+        },
+        "key": "country"
+      },
+      {
+        "demes": {
+          "Altai Krai": {
+            "latitude": 52.693224300000004,
+            "longitude": 82.69314240000001
+          },
+          "Bavaria": {
+            "latitude": 48.9467562,
+            "longitude": 11.4038717
+          },
+          "Irkutsk Oblast": {
+            "latitude": 56.6370122,
+            "longitude": 104.71922099999999
+          },
+          "Krasnoyarsk Krai": {
+            "latitude": 63.3233807,
+            "longitude": 97.09799740000001
+          },
+          "Panevezys County": {
+            "latitude": 55.9156048,
+            "longitude": 25.03115989218585
+          },
+          "P\u00e4rnu maakond": {
+            "latitude": 58.31950685,
+            "longitude": 24.30261214859043
+          }
+        },
+        "key": "province"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "name"
+      },
+      {
+        "name": "url"
+      }
+    ],
+    "panels": [
+      "tree",
+      "map"
+    ],
+    "title": "Plague Phylogeography Main",
+    "updated": "2021-08-26"
+  },
+  "tree": {
+    "branch_attrs": {
+      "labels": {
+        "Biosample Accession": "NA",
+        "Blank": " ",
+        "Branch Length": 1.29975e-05,
+        "Branch Length Sub": 55.0,
+        "Branch Length Time": 210.0,
+        "Branch Minor": "NA",
+        "Branch Number": "NA",
+        "Branch Support": 100.0,
+        "Branch Support Conf Category": "HIGH",
+        "Branch Support Conf Char": "*",
+        "Continent": "Europe",
+        "Continent Conf Category": "HIGH",
+        "Continent Confidence": 1.0,
+        "Continent Raw": "NA",
+        "Country": "Russia",
+        "Country Conf Category": "HIGH",
+        "Country Confidence": 0.98,
+        "Country Date Strain": "NA",
+        "Country Lat": 64.6863136,
+        "Country Lon": 97.7453061,
+        "Country Raw": "NA",
+        "Date Bp Mean": "NA",
+        "Date Err": "NA",
+        "Date Mean": "NA",
+        "Host Human": "NA",
+        "Host Order": "Human",
+        "Host Order Conf Category": "HIGH",
+        "Host Order Confidence": 1.0,
+        "Host Order Raw": "NA",
+        "Node Name": "NODE2",
+        "Node Type": "internal",
+        "Num Date": -2832.0,
+        "Num Date Confidence": [
+          -2956.0,
+          -2737.0
+        ],
+        "Population": "0.PRE",
+        "Population Conf Category": "HIGH",
+        "Population Confidence": 1.0,
+        "Population Geo Dist": 0.0,
+        "Population Raw": "NA",
+        "Population Rtt Dist": "NA",
+        "Province": "Panevezys County",
+        "Province Conf Category": "LOW",
+        "Province Confidence": 0.46,
+        "Province Date Strain": "NA",
+        "Province Lat": 55.9156048,
+        "Province Lon": 25.03115989218585,
+        "Province Raw": "NA",
+        "Rate Sub": 6.188431121416567e-08,
+        "Rate Sub Year": 0.2626878856967371,
+        "Root Geo Dist": 3257.92765865,
+        "Root Rtt Dist": "NA",
+        "Strain": "NA"
+      }
+    },
+    "children": [
+      {
+        "branch_attrs": {},
+        "name": "SAMEA3541827",
+        "node_attrs": {
+          "biosample_accession": {
+            "value": "SAMEA3541827"
+          },
+          "branch_length_sub": {
+            "value": 23.0
+          },
+          "branch_length_time": {
+            "value": 366.0
+          },
+          "branch_minor": {
+            "value": "0.PRE2"
+          },
+          "branch_number": {
+            "value": "0.0"
+          },
+          "branch_support": {
+            "value": 0.0
+          },
+          "branch_support_conf_category": {
+            "value": "LOW"
+          },
+          "continent": {
+            "confidence": {
+              "Europe": 1.0
+            },
+            "value": "Europe"
+          },
+          "continent_conf_category": {
+            "value": "HIGH"
+          },
+          "continent_raw": {
+            "value": "Europe"
+          },
+          "country": {
+            "confidence": {
+              "Russia": 1.0
+            },
+            "value": "Russia"
+          },
+          "country_conf_category": {
+            "value": "HIGH"
+          },
+          "country_date_strain": {
+            "value": "Russia (-2876:-2677) RISE509"
+          },
+          "country_lat": {
+            "value": 64.6863136
+          },
+          "country_lon": {
+            "value": 97.7453061
+          },
+          "country_raw": {
+            "value": "Russia"
+          },
+          "date_bp_mean": {
+            "value": 4797.5
+          },
+          "date_err": {
+            "value": 99.5
+          },
+          "date_mean": {
+            "value": -2776.5
+          },
+          "div": 5.5272e-06,
+          "host_human": {
+            "value": "Human"
+          },
+          "host_order": {
+            "confidence": {
+              "Human": 1.0
+            },
+            "value": "Human"
+          },
+          "host_order_conf_category": {
+            "value": "HIGH"
+          },
+          "host_order_raw": {
+            "value": "Human"
+          },
+          "node_name": {
+            "value": "SAMEA3541827"
+          },
+          "node_type": {
+            "value": "terminal"
+          },
+          "num_date": {
+            "confidence": [
+              -2861.0,
+              -2677.0
+            ],
+            "value": -2677.0
+          },
+          "population": {
+            "confidence": {
+              "0.PRE": 1.0
+            },
+            "value": "0.PRE"
+          },
+          "population_conf_category": {
+            "value": "HIGH"
+          },
+          "population_geo_dist": {
+            "value": 0.0
+          },
+          "population_raw": {
+            "value": "0.PRE"
+          },
+          "population_rtt_dist": {
+            "value": 5.5272e-06
+          },
+          "province": {
+            "confidence": {
+              "Krasnoyarsk Krai": 1.0
+            },
+            "value": "Krasnoyarsk Krai"
+          },
+          "province_conf_category": {
+            "value": "HIGH"
+          },
+          "province_date_strain": {
+            "value": "Russia (-2876:-2677) RISE509"
+          },
+          "province_lat": {
+            "value": 63.3233807
+          },
+          "province_lon": {
+            "value": 97.09799740000001
+          },
+          "province_raw": {
+            "value": "Krasnoyarsk Krai"
+          },
+          "rate_sub": {
+            "value": 1.5111465925929978e-08
+          },
+          "rate_sub_year": {
+            "value": 0.06414548301463793
+          },
+          "root_geo_dist": {
+            "value": 3257.92765865
+          },
+          "root_rtt_dist": {
+            "value": 9.0028e-06
+          },
+          "strain": {
+            "value": "RISE509"
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "Biosample Accession": "NA",
+            "Blank": " ",
+            "Branch Length": 1.29975e-05,
+            "Branch Length Sub": 55.0,
+            "Branch Length Time": 210.0,
+            "Branch Minor": "NA",
+            "Branch Number": "NA",
+            "Branch Support": 100.0,
+            "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
+            "Continent": "Europe",
+            "Continent Conf Category": "HIGH",
+            "Continent Confidence": 1.0,
+            "Continent Raw": "NA",
+            "Country": "Russia",
+            "Country Conf Category": "HIGH",
+            "Country Confidence": 0.98,
+            "Country Date Strain": "NA",
+            "Country Lat": 64.6863136,
+            "Country Lon": 97.7453061,
+            "Country Raw": "NA",
+            "Date Bp Mean": "NA",
+            "Date Err": "NA",
+            "Date Mean": "NA",
+            "Host Human": "NA",
+            "Host Order": "Human",
+            "Host Order Conf Category": "HIGH",
+            "Host Order Confidence": 1.0,
+            "Host Order Raw": "NA",
+            "Node Name": "NODE2",
+            "Node Type": "internal",
+            "Num Date": -2832.0,
+            "Num Date Confidence": [
+              -2956.0,
+              -2737.0
+            ],
+            "Population": "0.PRE",
+            "Population Conf Category": "HIGH",
+            "Population Confidence": 1.0,
+            "Population Geo Dist": 0.0,
+            "Population Raw": "NA",
+            "Population Rtt Dist": "NA",
+            "Province": "Panevezys County",
+            "Province Conf Category": "LOW",
+            "Province Confidence": 0.46,
+            "Province Date Strain": "NA",
+            "Province Lat": 55.9156048,
+            "Province Lon": 25.03115989218585,
+            "Province Raw": "NA",
+            "Rate Sub": 6.188431121416567e-08,
+            "Rate Sub Year": 0.2626878856967371,
+            "Root Geo Dist": 3257.92765865,
+            "Root Rtt Dist": "NA",
+            "Strain": "NA"
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {},
+            "name": "SAMEA104233046",
+            "node_attrs": {
+              "biosample_accession": {
+                "value": "SAMEA104233046"
+              },
+              "branch_length_sub": {
+                "value": 16.0
+              },
+              "branch_length_time": {
+                "value": 339.0
+              },
+              "branch_minor": {
+                "value": "0.PRE1"
+              },
+              "branch_number": {
+                "value": "0.0"
+              },
+              "branch_support": {
+                "value": 0.0
+              },
+              "branch_support_conf_category": {
+                "value": "LOW"
+              },
+              "continent": {
+                "confidence": {
+                  "Europe": 1.0
+                },
+                "value": "Europe"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "continent_raw": {
+                "value": "Europe"
+              },
+              "country": {
+                "confidence": {
+                  "Lithuania": 1.0
+                },
+                "value": "Lithuania"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_date_strain": {
+                "value": "Lithuania (-2621:-2472) Gyvakarai1"
+              },
+              "country_lat": {
+                "value": 55.35000030000001
+              },
+              "country_lon": {
+                "value": 23.7499997
+              },
+              "country_raw": {
+                "value": "Lithuania"
+              },
+              "date_bp_mean": {
+                "value": 4567.5
+              },
+              "date_err": {
+                "value": 74.5
+              },
+              "date_mean": {
+                "value": -2546.5
+              },
+              "div": 1.68788e-05,
+              "host_human": {
+                "value": "Human"
+              },
+              "host_order": {
+                "confidence": {
+                  "Human": 1.0
+                },
+                "value": "Human"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "host_order_raw": {
+                "value": "Human"
+              },
+              "node_name": {
+                "value": "SAMEA104233046"
+              },
+              "node_type": {
+                "value": "terminal"
+              },
+              "num_date": {
+                "confidence": [
+                  -2621.0,
+                  -2472.0
+                ],
+                "value": -2493.0
+              },
+              "population": {
+                "confidence": {
+                  "0.PRE": 1.0
+                },
+                "value": "0.PRE"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 3984.98290009
+              },
+              "population_raw": {
+                "value": "0.PRE"
+              },
+              "population_rtt_dist": {
+                "value": 1.6878800000000002e-05
+              },
+              "province": {
+                "confidence": {
+                  "Panevezys County": 1.0
+                },
+                "value": "Panevezys County"
+              },
+              "province_conf_category": {
+                "value": "HIGH"
+              },
+              "province_date_strain": {
+                "value": "Lithuania (-2621:-2472) Gyvakarai1"
+              },
+              "province_lat": {
+                "value": 55.9156048
+              },
+              "province_lon": {
+                "value": 25.03115989218585
+              },
+              "province_raw": {
+                "value": "Panevezys County"
+              },
+              "rate_sub": {
+                "value": 1.1451796120085563e-08
+              },
+              "rate_sub_year": {
+                "value": 0.04861083611005384
+              },
+              "root_geo_dist": {
+                "value": 5761.03455644
+              },
+              "root_rtt_dist": {
+                "value": 2.03544e-05
+              },
+              "strain": {
+                "value": "Gyvakarai1"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "Biosample Accession": "NA",
+                "Blank": " ",
+                "Branch Length": 1.35426e-05,
+                "Branch Length Sub": 57.0,
+                "Branch Length Time": 181.0,
+                "Branch Minor": "NA",
+                "Branch Number": "NA",
+                "Branch Support": 100.0,
+                "Branch Support Conf Category": "HIGH",
+                "Branch Support Conf Char": "*",
+                "Continent": "Europe",
+                "Continent Conf Category": "HIGH",
+                "Continent Confidence": 1.0,
+                "Continent Raw": "NA",
+                "Country": "Russia",
+                "Country Conf Category": "HIGH",
+                "Country Confidence": 0.97,
+                "Country Date Strain": "NA",
+                "Country Lat": 64.6863136,
+                "Country Lon": 97.7453061,
+                "Country Raw": "NA",
+                "Date Bp Mean": "NA",
+                "Date Err": "NA",
+                "Date Mean": "NA",
+                "Host Human": "NA",
+                "Host Order": "Human",
+                "Host Order Conf Category": "HIGH",
+                "Host Order Confidence": 1.0,
+                "Host Order Raw": "NA",
+                "Node Name": "NODE3",
+                "Node Type": "internal",
+                "Num Date": -2651.0,
+                "Num Date Confidence": [
+                  -2752.0,
+                  -2585.0
+                ],
+                "Population": "0.PRE",
+                "Population Conf Category": "HIGH",
+                "Population Confidence": 1.0,
+                "Population Geo Dist": 0.0,
+                "Population Raw": "NA",
+                "Population Rtt Dist": "NA",
+                "Province": "P\u00e4rnu maakond",
+                "Province Conf Category": "LOW",
+                "Province Confidence": 0.45,
+                "Province Date Strain": "NA",
+                "Province Lat": 58.31950685,
+                "Province Lon": 24.30261214859043,
+                "Province Raw": "NA",
+                "Rate Sub": 7.465765507508435e-08,
+                "Rate Sub Year": 0.3169084567311297,
+                "Root Geo Dist": 3257.92765865,
+                "Root Rtt Dist": "NA",
+                "Strain": "NA"
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {},
+                "name": "SAMEA104233047",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMEA104233047"
+                  },
+                  "branch_length_sub": {
+                    "value": 12.0
+                  },
+                  "branch_length_time": {
+                    "value": 239.0
+                  },
+                  "branch_minor": {
+                    "value": "0.PRE1"
+                  },
+                  "branch_number": {
+                    "value": "0.0"
+                  },
+                  "branch_support": {
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "value": "Europe"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "continent_raw": {
+                    "value": "Europe"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Estonia": 1.0
+                    },
+                    "value": "Estonia"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_date_strain": {
+                    "value": "Estonia (-2574:-2340) KunilaII"
+                  },
+                  "country_lat": {
+                    "value": 58.75237779999999
+                  },
+                  "country_lon": {
+                    "value": 25.3319078
+                  },
+                  "country_raw": {
+                    "value": "Estonia"
+                  },
+                  "date_bp_mean": {
+                    "value": 4478.0
+                  },
+                  "date_err": {
+                    "value": 117.0
+                  },
+                  "date_mean": {
+                    "value": -2457.0
+                  },
+                  "div": 2.92754e-05,
+                  "host_human": {
+                    "value": "Human"
+                  },
+                  "host_order": {
+                    "confidence": {
+                      "Human": 1.0
+                    },
+                    "value": "Human"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "host_order_raw": {
+                    "value": "Human"
+                  },
+                  "node_name": {
+                    "value": "SAMEA104233047"
+                  },
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      -2574.0,
+                      -2340.0
+                    ],
+                    "value": -2412.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "0.PRE": 1.0
+                    },
+                    "value": "0.PRE"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 3655.51389266
+                  },
+                  "population_raw": {
+                    "value": "0.PRE"
+                  },
+                  "population_rtt_dist": {
+                    "value": 2.92754e-05
+                  },
+                  "province": {
+                    "confidence": {
+                      "P\u00e4rnu maakond": 1.0
+                    },
+                    "value": "P\u00e4rnu maakond"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "province_date_strain": {
+                    "value": "Estonia (-2574:-2340) KunilaII"
+                  },
+                  "province_lat": {
+                    "value": 58.31950685
+                  },
+                  "province_lon": {
+                    "value": 24.30261214859043
+                  },
+                  "province_raw": {
+                    "value": "P\u00e4rnu maakond"
+                  },
+                  "rate_sub": {
+                    "value": 1.1451813458487019e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.04861090970848178
+                  },
+                  "root_geo_dist": {
+                    "value": 5619.04912409
+                  },
+                  "root_rtt_dist": {
+                    "value": 3.2751e-05
+                  },
+                  "strain": {
+                    "value": "KunilaII"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "Biosample Accession": "NA",
+                    "Blank": " ",
+                    "Branch Length": 9.346e-07,
+                    "Branch Length Sub": 4.0,
+                    "Branch Length Time": 0.0,
+                    "Branch Minor": "NA",
+                    "Branch Number": "NA",
+                    "Branch Support": 100.0,
+                    "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
+                    "Continent": "Europe",
+                    "Continent Conf Category": "HIGH",
+                    "Continent Confidence": 1.0,
+                    "Continent Raw": "NA",
+                    "Country": "Russia",
+                    "Country Conf Category": "HIGH",
+                    "Country Confidence": 0.98,
+                    "Country Date Strain": "NA",
+                    "Country Lat": 64.6863136,
+                    "Country Lon": 97.7453061,
+                    "Country Raw": "NA",
+                    "Date Bp Mean": "NA",
+                    "Date Err": "NA",
+                    "Date Mean": "NA",
+                    "Host Human": "NA",
+                    "Host Order": "Human",
+                    "Host Order Conf Category": "HIGH",
+                    "Host Order Confidence": 1.0,
+                    "Host Order Raw": "NA",
+                    "Node Name": "NODE4",
+                    "Node Type": "internal",
+                    "Num Date": -2651.0,
+                    "Num Date Confidence": [
+                      -2752.0,
+                      -2585.0
+                    ],
+                    "Population": "0.PRE",
+                    "Population Conf Category": "HIGH",
+                    "Population Confidence": 1.0,
+                    "Population Geo Dist": 0.0,
+                    "Population Raw": "NA",
+                    "Population Rtt Dist": "NA",
+                    "Province": "Irkutsk Oblast",
+                    "Province Conf Category": "LOW",
+                    "Province Confidence": 0.38,
+                    "Province Date Strain": "NA",
+                    "Province Lat": 56.6370122,
+                    "Province Lon": 104.71922099999999,
+                    "Province Raw": "NA",
+                    "Rate Sub": 0.0,
+                    "Rate Sub Year": 0.0,
+                    "Root Geo Dist": 3257.92765865,
+                    "Root Rtt Dist": "NA",
+                    "Strain": "NA"
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "Biosample Accession": "NA",
+                        "Blank": " ",
+                        "Branch Length": 1.8485e-06,
+                        "Branch Length Sub": 8.0,
+                        "Branch Length Time": 131.0,
+                        "Branch Minor": "NA",
+                        "Branch Number": "NA",
+                        "Branch Support": 100.0,
+                        "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
+                        "Continent": "Europe",
+                        "Continent Conf Category": "HIGH",
+                        "Continent Confidence": 1.0,
+                        "Continent Raw": "NA",
+                        "Country": "Russia",
+                        "Country Conf Category": "HIGH",
+                        "Country Confidence": 1.0,
+                        "Country Date Strain": "NA",
+                        "Country Lat": 64.6863136,
+                        "Country Lon": 97.7453061,
+                        "Country Raw": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Err": "NA",
+                        "Date Mean": "NA",
+                        "Host Human": "NA",
+                        "Host Order": "Human",
+                        "Host Order Conf Category": "HIGH",
+                        "Host Order Confidence": 1.0,
+                        "Host Order Raw": "NA",
+                        "Node Name": "NODE5",
+                        "Node Type": "internal",
+                        "Num Date": -2519.0,
+                        "Num Date Confidence": [
+                          -2602.0,
+                          -2495.0
+                        ],
+                        "Population": "0.PRE",
+                        "Population Conf Category": "HIGH",
+                        "Population Confidence": 1.0,
+                        "Population Geo Dist": 0.0,
+                        "Population Raw": "NA",
+                        "Population Rtt Dist": "NA",
+                        "Province": "Irkutsk Oblast",
+                        "Province Conf Category": "HIGH",
+                        "Province Confidence": 1.0,
+                        "Province Date Strain": "NA",
+                        "Province Lat": 56.6370122,
+                        "Province Lon": 104.71922099999999,
+                        "Province Raw": "NA",
+                        "Rate Sub": 1.4061953230787956e-08,
+                        "Rate Sub Year": 0.05969048843701979,
+                        "Root Geo Dist": 3257.92765865,
+                        "Root Rtt Dist": "NA",
+                        "Strain": "NA"
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMEA6812876",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMEA6812876"
+                          },
+                          "branch_length_sub": {
+                            "value": 2.0
+                          },
+                          "branch_length_time": {
+                            "value": 25.0
+                          },
+                          "branch_minor": {
+                            "value": "0.PRE1"
+                          },
+                          "branch_number": {
+                            "value": "0.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "value": "Europe"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "continent_raw": {
+                            "value": "Europe"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Russia": 1.0
+                            },
+                            "value": "Russia"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Russia (-2838:-2495) GLZ001"
+                          },
+                          "country_lat": {
+                            "value": 64.6863136
+                          },
+                          "country_lon": {
+                            "value": 97.7453061
+                          },
+                          "country_raw": {
+                            "value": "Russia"
+                          },
+                          "date_bp_mean": {
+                            "value": 4687.5
+                          },
+                          "date_err": {
+                            "value": 171.5
+                          },
+                          "date_mean": {
+                            "value": -2666.5
+                          },
+                          "div": 2.9842900000000002e-05,
+                          "host_human": {
+                            "value": "Human"
+                          },
+                          "host_order": {
+                            "confidence": {
+                              "Human": 1.0
+                            },
+                            "value": "Human"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "host_order_raw": {
+                            "value": "Human"
+                          },
+                          "node_name": {
+                            "value": "SAMEA6812876"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              -2598.0,
+                              -2495.0
+                            ],
+                            "value": -2495.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "0.PRE": 1.0
+                            },
+                            "value": "0.PRE"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
+                          "population_raw": {
+                            "value": "0.PRE"
+                          },
+                          "population_rtt_dist": {
+                            "value": 2.98429e-05
+                          },
+                          "province": {
+                            "confidence": {
+                              "Irkutsk Oblast": 1.0
+                            },
+                            "value": "Irkutsk Oblast"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Russia (-2838:-2495) GLZ001"
+                          },
+                          "province_lat": {
+                            "value": 56.6370122
+                          },
+                          "province_lon": {
+                            "value": 104.71922099999999
+                          },
+                          "province_raw": {
+                            "value": "Irkutsk Oblast"
+                          },
+                          "rate_sub": {
+                            "value": 2.0885073823129907e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.08865342083604592
+                          },
+                          "root_geo_dist": {
+                            "value": 3257.92765865
+                          },
+                          "root_rtt_dist": {
+                            "value": 3.3318499999999996e-05
+                          },
+                          "strain": {
+                            "value": "GLZ001"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMEA6812877",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMEA6812877"
+                          },
+                          "branch_length_sub": {
+                            "value": 0.0
+                          },
+                          "branch_length_time": {
+                            "value": 2.0
+                          },
+                          "branch_minor": {
+                            "value": "0.PRE1"
+                          },
+                          "branch_number": {
+                            "value": "0.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "value": "Europe"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "continent_raw": {
+                            "value": "Europe"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Russia": 1.0
+                            },
+                            "value": "Russia"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Russia (-2569:-2467) GLZ002"
+                          },
+                          "country_lat": {
+                            "value": 64.6863136
+                          },
+                          "country_lon": {
+                            "value": 97.7453061
+                          },
+                          "country_raw": {
+                            "value": "Russia"
+                          },
+                          "date_bp_mean": {
+                            "value": 4539.0
+                          },
+                          "date_err": {
+                            "value": 51.0
+                          },
+                          "date_mean": {
+                            "value": -2518.0
+                          },
+                          "div": 2.93467e-05,
+                          "host_human": {
+                            "value": "Human"
+                          },
+                          "host_order": {
+                            "confidence": {
+                              "Human": 1.0
+                            },
+                            "value": "Human"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "host_order_raw": {
+                            "value": "Human"
+                          },
+                          "node_name": {
+                            "value": "SAMEA6812877"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              -2569.0,
+                              -2495.0
+                            ],
+                            "value": -2517.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "0.PRE": 1.0
+                            },
+                            "value": "0.PRE"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
+                          "population_raw": {
+                            "value": "0.PRE"
+                          },
+                          "population_rtt_dist": {
+                            "value": 2.93467e-05
+                          },
+                          "province": {
+                            "confidence": {
+                              "Irkutsk Oblast": 1.0
+                            },
+                            "value": "Irkutsk Oblast"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Russia (-2569:-2467) GLZ002"
+                          },
+                          "province_lat": {
+                            "value": 56.6370122
+                          },
+                          "province_lon": {
+                            "value": 104.71922099999999
+                          },
+                          "province_raw": {
+                            "value": "Irkutsk Oblast"
+                          },
+                          "rate_sub": {
+                            "value": 1.1451795251647108e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.04861083242368718
+                          },
+                          "root_geo_dist": {
+                            "value": 3257.92765865
+                          },
+                          "root_rtt_dist": {
+                            "value": 3.28223e-05
+                          },
+                          "strain": {
+                            "value": "GLZ002"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE5",
+                    "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 8.0
+                      },
+                      "branch_length_time": {
+                        "value": 131.0
+                      },
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_support_conf_char": {
+                        "value": "*"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "value": "Europe"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country": {
+                        "confidence": {
+                          "Russia": 1.0
+                        },
+                        "value": "Russia"
+                      },
+                      "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_lat": {
+                        "value": 64.6863136
+                      },
+                      "country_lon": {
+                        "value": 97.7453061
+                      },
+                      "div": 2.93232e-05,
+                      "host_order": {
+                        "confidence": {
+                          "Human": 1.0
+                        },
+                        "value": "Human"
+                      },
+                      "host_order_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "node_name": {
+                        "value": "NODE5"
+                      },
+                      "node_type": {
+                        "value": "internal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          -2602.0,
+                          -2495.0
+                        ],
+                        "value": -2519.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "0.PRE": 1.0
+                        },
+                        "value": "0.PRE"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
+                      "province": {
+                        "confidence": {
+                          "Irkutsk Oblast": 1.0
+                        },
+                        "value": "Irkutsk Oblast"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_lat": {
+                        "value": 56.6370122
+                      },
+                      "province_lon": {
+                        "value": 104.71922099999999
+                      },
+                      "rate_sub": {
+                        "value": 1.4061953230787956e-08
+                      },
+                      "rate_sub_year": {
+                        "value": 0.05969048843701979
+                      },
+                      "root_geo_dist": {
+                        "value": 3257.92765865
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "Biosample Accession": "NA",
+                        "Blank": " ",
+                        "Branch Length": 1.09611e-05,
+                        "Branch Length Sub": 47.0,
+                        "Branch Length Time": 77.0,
+                        "Branch Minor": "NA",
+                        "Branch Number": "NA",
+                        "Branch Support": 100.0,
+                        "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
+                        "Continent": "Europe",
+                        "Continent Conf Category": "HIGH",
+                        "Continent Confidence": 1.0,
+                        "Continent Raw": "NA",
+                        "Country": "Russia",
+                        "Country Conf Category": "LOW",
+                        "Country Confidence": 0.55,
+                        "Country Date Strain": "NA",
+                        "Country Lat": 64.6863136,
+                        "Country Lon": 97.7453061,
+                        "Country Raw": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Err": "NA",
+                        "Date Mean": "NA",
+                        "Host Human": "NA",
+                        "Host Order": "Human",
+                        "Host Order Conf Category": "HIGH",
+                        "Host Order Confidence": 1.0,
+                        "Host Order Raw": "NA",
+                        "Node Name": "NODE6",
+                        "Node Type": "internal",
+                        "Num Date": -2574.0,
+                        "Num Date Confidence": [
+                          -2709.0,
+                          -2449.0
+                        ],
+                        "Population": "0.PRE",
+                        "Population Conf Category": "HIGH",
+                        "Population Confidence": 1.0,
+                        "Population Geo Dist": 0.0,
+                        "Population Raw": "NA",
+                        "Population Rtt Dist": "NA",
+                        "Province": "Bavaria",
+                        "Province Conf Category": "HIGH",
+                        "Province Confidence": 0.99,
+                        "Province Date Strain": "NA",
+                        "Province Lat": 48.9467562,
+                        "Province Lon": 11.4038717,
+                        "Province Raw": "NA",
+                        "Rate Sub": 1.422477561889733e-07,
+                        "Rate Sub Year": 0.6038164049215899,
+                        "Root Geo Dist": 3257.92765865,
+                        "Root Rtt Dist": "NA",
+                        "Strain": "NA"
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMEA104233049",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMEA104233049"
+                          },
+                          "branch_length_sub": {
+                            "value": 18.0
+                          },
+                          "branch_length_time": {
+                            "value": 377.0
+                          },
+                          "branch_minor": {
+                            "value": "0.PRE1"
+                          },
+                          "branch_number": {
+                            "value": "0.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "value": "Europe"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "continent_raw": {
+                            "value": "Europe"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Germany": 1.0
+                            },
+                            "value": "Germany"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Germany (-2396:-2148) 1343UnTal85"
+                          },
+                          "country_lat": {
+                            "value": 51.0834196
+                          },
+                          "country_lon": {
+                            "value": 10.4234469
+                          },
+                          "country_raw": {
+                            "value": "Germany"
+                          },
+                          "date_bp_mean": {
+                            "value": 4293.0
+                          },
+                          "date_err": {
+                            "value": 124.0
+                          },
+                          "date_mean": {
+                            "value": -2272.0
+                          },
+                          "div": 4.27583e-05,
+                          "host_human": {
+                            "value": "Human"
+                          },
+                          "host_order": {
+                            "confidence": {
+                              "Human": 1.0
+                            },
+                            "value": "Human"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "host_order_raw": {
+                            "value": "Human"
+                          },
+                          "node_name": {
+                            "value": "SAMEA104233049"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              -2396.0,
+                              -2148.0
+                            ],
+                            "value": -2196.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "0.PRE": 1.0
+                            },
+                            "value": "0.PRE"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 4924.0278193
+                          },
+                          "population_raw": {
+                            "value": "0.PRE"
+                          },
+                          "population_rtt_dist": {
+                            "value": 4.27583e-05
+                          },
+                          "province": {
+                            "confidence": {
+                              "Bavaria": 1.0
+                            },
+                            "value": "Bavaria"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Germany (-2396:-2148) 1343UnTal85"
+                          },
+                          "province_lat": {
+                            "value": 48.9467562
+                          },
+                          "province_lon": {
+                            "value": 11.4038717
+                          },
+                          "province_raw": {
+                            "value": "Bavaria"
+                          },
+                          "rate_sub": {
+                            "value": 1.1451787247120162e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.0486107984458951
+                          },
+                          "root_geo_dist": {
+                            "value": 6739.83024185
+                          },
+                          "root_rtt_dist": {
+                            "value": 4.6233900000000005e-05
+                          },
+                          "strain": {
+                            "value": "1343UnTal85"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "Biosample Accession": "NA",
+                            "Blank": " ",
+                            "Branch Length": 1.74001e-05,
+                            "Branch Length Sub": 74.0,
+                            "Branch Length Time": 122.0,
+                            "Branch Minor": "NA",
+                            "Branch Number": "NA",
+                            "Branch Support": 100.0,
+                            "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
+                            "Continent": "Europe",
+                            "Continent Conf Category": "HIGH",
+                            "Continent Confidence": 1.0,
+                            "Continent Raw": "NA",
+                            "Country": "Russia",
+                            "Country Conf Category": "LOW",
+                            "Country Confidence": 0.55,
+                            "Country Date Strain": "NA",
+                            "Country Lat": 64.6863136,
+                            "Country Lon": 97.7453061,
+                            "Country Raw": "NA",
+                            "Date Bp Mean": "NA",
+                            "Date Err": "NA",
+                            "Date Mean": "NA",
+                            "Host Human": "NA",
+                            "Host Order": "Human",
+                            "Host Order Conf Category": "HIGH",
+                            "Host Order Confidence": 1.0,
+                            "Host Order Raw": "NA",
+                            "Node Name": "NODE7",
+                            "Node Type": "internal",
+                            "Num Date": -2451.0,
+                            "Num Date Confidence": [
+                              -2630.0,
+                              -2277.0
+                            ],
+                            "Population": "0.PRE",
+                            "Population Conf Category": "HIGH",
+                            "Population Confidence": 1.0,
+                            "Population Geo Dist": 0.0,
+                            "Population Raw": "NA",
+                            "Population Rtt Dist": "NA",
+                            "Province": "Bavaria",
+                            "Province Conf Category": "HIGH",
+                            "Province Confidence": 0.99,
+                            "Province Date Strain": "NA",
+                            "Province Lat": 48.9467562,
+                            "Province Lon": 11.4038717,
+                            "Province Raw": "NA",
+                            "Rate Sub": 1.4223553742653249e-07,
+                            "Rate Sub Year": 0.6037645384499686,
+                            "Root Geo Dist": 3257.92765865,
+                            "Root Rtt Dist": "NA",
+                            "Strain": "NA"
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {},
+                            "name": "SAMEA104233048",
+                            "node_attrs": {
+                              "biosample_accession": {
+                                "value": "SAMEA104233048"
+                              },
+                              "branch_length_sub": {
+                                "value": 9.0
+                              },
+                              "branch_length_time": {
+                                "value": 445.0
+                              },
+                              "branch_minor": {
+                                "value": "0.PRE1"
+                              },
+                              "branch_number": {
+                                "value": "0.0"
+                              },
+                              "branch_support": {
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "continent": {
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "value": "Europe"
+                              },
+                              "continent_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "continent_raw": {
+                                "value": "Europe"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Germany": 1.0
+                                },
+                                "value": "Germany"
+                              },
+                              "country_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "country_date_strain": {
+                                "value": "Germany (-2007:-1882) Post6"
+                              },
+                              "country_lat": {
+                                "value": 51.0834196
+                              },
+                              "country_lon": {
+                                "value": 10.4234469
+                              },
+                              "country_raw": {
+                                "value": "Germany"
+                              },
+                              "date_bp_mean": {
+                                "value": 3965.5
+                              },
+                              "date_err": {
+                                "value": 62.5
+                              },
+                              "date_mean": {
+                                "value": -1944.5
+                              },
+                              "div": 5.79146e-05,
+                              "host_human": {
+                                "value": "Human"
+                              },
+                              "host_order": {
+                                "confidence": {
+                                  "Human": 1.0
+                                },
+                                "value": "Human"
+                              },
+                              "host_order_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "host_order_raw": {
+                                "value": "Human"
+                              },
+                              "node_name": {
+                                "value": "SAMEA104233048"
+                              },
+                              "node_type": {
+                                "value": "terminal"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  -2007.0,
+                                  -1882.0
+                                ],
+                                "value": -2007.0
+                              },
+                              "population": {
+                                "confidence": {
+                                  "0.PRE": 1.0
+                                },
+                                "value": "0.PRE"
+                              },
+                              "population_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "population_geo_dist": {
+                                "value": 4924.0278193
+                              },
+                              "population_raw": {
+                                "value": "0.PRE"
+                              },
+                              "population_rtt_dist": {
+                                "value": 5.79146e-05
+                              },
+                              "province": {
+                                "confidence": {
+                                  "Bavaria": 1.0
+                                },
+                                "value": "Bavaria"
+                              },
+                              "province_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "province_date_strain": {
+                                "value": "Germany (-2007:-1882) Post6"
+                              },
+                              "province_lat": {
+                                "value": 48.9467562
+                              },
+                              "province_lon": {
+                                "value": 11.4038717
+                              },
+                              "province_raw": {
+                                "value": "Bavaria"
+                              },
+                              "rate_sub": {
+                                "value": 4.671781871139999e-09
+                              },
+                              "rate_sub_year": {
+                                "value": 0.019830882465816234
+                              },
+                              "root_geo_dist": {
+                                "value": 6739.83024185
+                              },
+                              "root_rtt_dist": {
+                                "value": 6.139020000000001e-05
+                              },
+                              "strain": {
+                                "value": "Post6"
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {},
+                            "name": "SAMEA3541826",
+                            "node_attrs": {
+                              "biosample_accession": {
+                                "value": "SAMEA3541826"
+                              },
+                              "branch_length_sub": {
+                                "value": 164.0
+                              },
+                              "branch_length_time": {
+                                "value": 826.0
+                              },
+                              "branch_minor": {
+                                "value": "0.PRE1"
+                              },
+                              "branch_number": {
+                                "value": "0.0"
+                              },
+                              "branch_support": {
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "continent": {
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "value": "Europe"
+                              },
+                              "continent_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "continent_raw": {
+                                "value": "Europe"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Russia": 1.0
+                                },
+                                "value": "Russia"
+                              },
+                              "country_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "country_date_strain": {
+                                "value": "Russia (-1746:-1626) RISE505"
+                              },
+                              "country_lat": {
+                                "value": 64.6863136
+                              },
+                              "country_lon": {
+                                "value": 97.7453061
+                              },
+                              "country_raw": {
+                                "value": "Russia"
+                              },
+                              "date_bp_mean": {
+                                "value": 3707.0
+                              },
+                              "date_err": {
+                                "value": 60.0
+                              },
+                              "date_mean": {
+                                "value": -1686.0
+                              },
+                              "div": 9.43903e-05,
+                              "host_human": {
+                                "value": "Human"
+                              },
+                              "host_order": {
+                                "confidence": {
+                                  "Human": 1.0
+                                },
+                                "value": "Human"
+                              },
+                              "host_order_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "host_order_raw": {
+                                "value": "Human"
+                              },
+                              "node_name": {
+                                "value": "SAMEA3541826"
+                              },
+                              "node_type": {
+                                "value": "terminal"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  -1746.0,
+                                  -1626.0
+                                ],
+                                "value": -1626.0
+                              },
+                              "population": {
+                                "confidence": {
+                                  "0.PRE": 1.0
+                                },
+                                "value": "0.PRE"
+                              },
+                              "population_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "population_geo_dist": {
+                                "value": 0.0
+                              },
+                              "population_raw": {
+                                "value": "0.PRE"
+                              },
+                              "population_rtt_dist": {
+                                "value": 9.43903e-05
+                              },
+                              "province": {
+                                "confidence": {
+                                  "Altai Krai": 1.0
+                                },
+                                "value": "Altai Krai"
+                              },
+                              "province_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "province_date_strain": {
+                                "value": "Russia (-1746:-1626) RISE505"
+                              },
+                              "province_lat": {
+                                "value": 52.693224300000004
+                              },
+                              "province_lon": {
+                                "value": 82.69314240000001
+                              },
+                              "province_raw": {
+                                "value": "Altai Krai"
+                              },
+                              "rate_sub": {
+                                "value": 4.667896768319555e-08
+                              },
+                              "rate_sub_year": {
+                                "value": 0.1981439089589175
+                              },
+                              "root_geo_dist": {
+                                "value": 3257.92765865
+                              },
+                              "root_rtt_dist": {
+                                "value": 9.786590000000001e-05
+                              },
+                              "strain": {
+                                "value": "RISE505"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE7",
+                        "node_attrs": {
+                          "branch_length_sub": {
+                            "value": 74.0
+                          },
+                          "branch_length_time": {
+                            "value": 122.0
+                          },
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "branch_support_conf_char": {
+                            "value": "*"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "value": "Europe"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Russia": 0.55
+                            },
+                            "value": "Russia"
+                          },
+                          "country_conf_category": {
+                            "value": "LOW"
+                          },
+                          "country_lat": {
+                            "value": 64.6863136
+                          },
+                          "country_lon": {
+                            "value": 97.7453061
+                          },
+                          "div": 5.5835900000000005e-05,
+                          "host_order": {
+                            "confidence": {
+                              "Human": 1.0
+                            },
+                            "value": "Human"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "node_name": {
+                            "value": "NODE7"
+                          },
+                          "node_type": {
+                            "value": "internal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              -2630.0,
+                              -2277.0
+                            ],
+                            "value": -2451.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "0.PRE": 1.0
+                            },
+                            "value": "0.PRE"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 0.0
+                          },
+                          "province": {
+                            "confidence": {
+                              "Bavaria": 0.99
+                            },
+                            "value": "Bavaria"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_lat": {
+                            "value": 48.9467562
+                          },
+                          "province_lon": {
+                            "value": 11.4038717
+                          },
+                          "rate_sub": {
+                            "value": 1.4223553742653249e-07
+                          },
+                          "rate_sub_year": {
+                            "value": 0.6037645384499686
+                          },
+                          "root_geo_dist": {
+                            "value": 3257.92765865
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE6",
+                    "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 47.0
+                      },
+                      "branch_length_time": {
+                        "value": 77.0
+                      },
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_support_conf_char": {
+                        "value": "*"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "value": "Europe"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country": {
+                        "confidence": {
+                          "Russia": 0.55
+                        },
+                        "value": "Russia"
+                      },
+                      "country_conf_category": {
+                        "value": "LOW"
+                      },
+                      "country_lat": {
+                        "value": 64.6863136
+                      },
+                      "country_lon": {
+                        "value": 97.7453061
+                      },
+                      "div": 3.84358e-05,
+                      "host_order": {
+                        "confidence": {
+                          "Human": 1.0
+                        },
+                        "value": "Human"
+                      },
+                      "host_order_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "node_name": {
+                        "value": "NODE6"
+                      },
+                      "node_type": {
+                        "value": "internal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          -2709.0,
+                          -2449.0
+                        ],
+                        "value": -2574.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "0.PRE": 1.0
+                        },
+                        "value": "0.PRE"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 0.0
+                      },
+                      "province": {
+                        "confidence": {
+                          "Bavaria": 0.99
+                        },
+                        "value": "Bavaria"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_lat": {
+                        "value": 48.9467562
+                      },
+                      "province_lon": {
+                        "value": 11.4038717
+                      },
+                      "rate_sub": {
+                        "value": 1.422477561889733e-07
+                      },
+                      "rate_sub_year": {
+                        "value": 0.6038164049215899
+                      },
+                      "root_geo_dist": {
+                        "value": 3257.92765865
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE4",
+                "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 4.0
+                  },
+                  "branch_length_time": {
+                    "value": 0.0
+                  },
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "value": "Europe"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Russia": 0.98
+                    },
+                    "value": "Russia"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_lat": {
+                    "value": 64.6863136
+                  },
+                  "country_lon": {
+                    "value": 97.7453061
+                  },
+                  "div": 2.74747e-05,
+                  "host_order": {
+                    "confidence": {
+                      "Human": 1.0
+                    },
+                    "value": "Human"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "node_name": {
+                    "value": "NODE4"
+                  },
+                  "node_type": {
+                    "value": "internal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      -2752.0,
+                      -2585.0
+                    ],
+                    "value": -2651.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "0.PRE": 1.0
+                    },
+                    "value": "0.PRE"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 0.0
+                  },
+                  "province": {
+                    "confidence": {
+                      "Irkutsk Oblast": 0.38
+                    },
+                    "value": "Irkutsk Oblast"
+                  },
+                  "province_conf_category": {
+                    "value": "LOW"
+                  },
+                  "province_lat": {
+                    "value": 56.6370122
+                  },
+                  "province_lon": {
+                    "value": 104.71922099999999
+                  },
+                  "rate_sub": {
+                    "value": 0.0
+                  },
+                  "rate_sub_year": {
+                    "value": 0.0
+                  },
+                  "root_geo_dist": {
+                    "value": 3257.92765865
+                  }
+                }
+              }
+            ],
+            "name": "NODE3",
+            "node_attrs": {
+              "branch_length_sub": {
+                "value": 57.0
+              },
+              "branch_length_time": {
+                "value": 181.0
+              },
+              "branch_support": {
+                "value": 100.0
+              },
+              "branch_support_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_support_conf_char": {
+                "value": "*"
+              },
+              "continent": {
+                "confidence": {
+                  "Europe": 1.0
+                },
+                "value": "Europe"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "country": {
+                "confidence": {
+                  "Russia": 0.97
+                },
+                "value": "Russia"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_lat": {
+                "value": 64.6863136
+              },
+              "country_lon": {
+                "value": 97.7453061
+              },
+              "div": 2.65401e-05,
+              "host_order": {
+                "confidence": {
+                  "Human": 1.0
+                },
+                "value": "Human"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "node_name": {
+                "value": "NODE3"
+              },
+              "node_type": {
+                "value": "internal"
+              },
+              "num_date": {
+                "confidence": [
+                  -2752.0,
+                  -2585.0
+                ],
+                "value": -2651.0
+              },
+              "population": {
+                "confidence": {
+                  "0.PRE": 1.0
+                },
+                "value": "0.PRE"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 0.0
+              },
+              "province": {
+                "confidence": {
+                  "P\u00e4rnu maakond": 0.45
+                },
+                "value": "P\u00e4rnu maakond"
+              },
+              "province_conf_category": {
+                "value": "LOW"
+              },
+              "province_lat": {
+                "value": 58.31950685
+              },
+              "province_lon": {
+                "value": 24.30261214859043
+              },
+              "rate_sub": {
+                "value": 7.465765507508435e-08
+              },
+              "rate_sub_year": {
+                "value": 0.3169084567311297
+              },
+              "root_geo_dist": {
+                "value": 3257.92765865
+              }
+            }
+          }
+        ],
+        "name": "NODE2",
+        "node_attrs": {
+          "branch_length_sub": {
+            "value": 55.0
+          },
+          "branch_length_time": {
+            "value": 210.0
+          },
+          "branch_support": {
+            "value": 100.0
+          },
+          "branch_support_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
+          "continent": {
+            "confidence": {
+              "Europe": 1.0
+            },
+            "value": "Europe"
+          },
+          "continent_conf_category": {
+            "value": "HIGH"
+          },
+          "country": {
+            "confidence": {
+              "Russia": 0.98
+            },
+            "value": "Russia"
+          },
+          "country_conf_category": {
+            "value": "HIGH"
+          },
+          "country_lat": {
+            "value": 64.6863136
+          },
+          "country_lon": {
+            "value": 97.7453061
+          },
+          "div": 1.29975e-05,
+          "host_order": {
+            "confidence": {
+              "Human": 1.0
+            },
+            "value": "Human"
+          },
+          "host_order_conf_category": {
+            "value": "HIGH"
+          },
+          "node_name": {
+            "value": "NODE2"
+          },
+          "node_type": {
+            "value": "internal"
+          },
+          "num_date": {
+            "confidence": [
+              -2956.0,
+              -2737.0
+            ],
+            "value": -2832.0
+          },
+          "population": {
+            "confidence": {
+              "0.PRE": 1.0
+            },
+            "value": "0.PRE"
+          },
+          "population_conf_category": {
+            "value": "HIGH"
+          },
+          "population_geo_dist": {
+            "value": 0.0
+          },
+          "province": {
+            "confidence": {
+              "Panevezys County": 0.46
+            },
+            "value": "Panevezys County"
+          },
+          "province_conf_category": {
+            "value": "LOW"
+          },
+          "province_lat": {
+            "value": 55.9156048
+          },
+          "province_lon": {
+            "value": 25.03115989218585
+          },
+          "rate_sub": {
+            "value": 6.188431121416567e-08
+          },
+          "rate_sub_year": {
+            "value": 0.2626878856967371
+          },
+          "root_geo_dist": {
+            "value": 3257.92765865
+          }
+        }
+      }
+    ],
+    "name": "NODE1",
+    "node_attrs": {
+      "branch_length_sub": {
+        "value": 15.0
+      },
+      "branch_length_time": {
+        "value": 482.0
+      },
+      "branch_support": {
+        "value": 100.0
+      },
+      "branch_support_conf_category": {
+        "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
+      },
+      "continent": {
+        "confidence": {
+          "Europe": 0.99
+        },
+        "value": "Europe"
+      },
+      "continent_conf_category": {
+        "value": "HIGH"
+      },
+      "country": {
+        "confidence": {
+          "Russia": 0.99
+        },
+        "value": "Russia"
+      },
+      "country_conf_category": {
+        "value": "HIGH"
+      },
+      "country_lat": {
+        "value": 64.6863136
+      },
+      "country_lon": {
+        "value": 97.7453061
+      },
+      "div": 0,
+      "host_order": {
+        "confidence": {
+          "Human": 0.99
+        },
+        "value": "Human"
+      },
+      "host_order_conf_category": {
+        "value": "HIGH"
+      },
+      "node_name": {
+        "value": "NODE1"
+      },
+      "node_type": {
+        "value": "internal"
+      },
+      "num_date": {
+        "confidence": [
+          -3042.0,
+          -2955.0
+        ],
+        "value": -3042.0
+      },
+      "population": {
+        "confidence": {
+          "0.PRE": 1.0
+        },
+        "value": "0.PRE"
+      },
+      "population_conf_category": {
+        "value": "HIGH"
+      },
+      "population_geo_dist": {
+        "value": 0.0
+      },
+      "province": {
+        "confidence": {
+          "Krasnoyarsk Krai": 0.49
+        },
+        "value": "Krasnoyarsk Krai"
+      },
+      "province_conf_category": {
+        "value": "LOW"
+      },
+      "province_lat": {
+        "value": 63.3233807
+      },
+      "province_lon": {
+        "value": 97.09799740000001
+      },
+      "rate_sub": {
+        "value": 7.207050285121824e-09
+      },
+      "rate_sub_year": {
+        "value": 0.03059264560539139
+      },
+      "root_geo_dist": {
+        "value": 3257.92765865
+      }
+    }
+  },
+  "version": "v2"
+}

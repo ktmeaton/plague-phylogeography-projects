@@ -1,0 +1,4524 @@
+{
+  "meta": {
+    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main",
+    "colorings": [
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Germany",
+            "#4c4ffc"
+          ],
+          [
+            "Kyrgyzstan",
+            "#08bee9"
+          ],
+          [
+            "England",
+            "#2adddd"
+          ],
+          [
+            "Spain",
+            "#3be9d6"
+          ],
+          [
+            "France",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "Germany",
+            "#4c4ffc"
+          ],
+          [
+            "Kyrgyzstan",
+            "#08bee9"
+          ],
+          [
+            "England",
+            "#2adddd"
+          ],
+          [
+            "Spain",
+            "#3be9d6"
+          ],
+          [
+            "France",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "0.ANT4",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "Issyk-Kul Region",
+            "#0ec3e7"
+          ],
+          [
+            "East of England",
+            "#14c9e5"
+          ],
+          [
+            "Valencia Community",
+            "#19cee3"
+          ],
+          [
+            "Centre-Loire Valley",
+            "#1fd3e1"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "NA",
+            "#4757fb"
+          ],
+          [
+            "Issyk-Kul Region",
+            "#0ec3e7"
+          ],
+          [
+            "East of England",
+            "#14c9e5"
+          ],
+          [
+            "Valencia Community",
+            "#19cee3"
+          ],
+          [
+            "Centre-Loire Valley",
+            "#1fd3e1"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "NA",
+            "#4757fb"
+          ],
+          [
+            "Issyk-Kul Region",
+            "#0ec3e7"
+          ],
+          [
+            "East of England",
+            "#14c9e5"
+          ],
+          [
+            "Valencia Community",
+            "#19cee3"
+          ],
+          [
+            "Centre-Loire Valley",
+            "#1fd3e1"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province",
+        "scale": [
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "Issyk-Kul Region",
+            "#0ec3e7"
+          ],
+          [
+            "East of England",
+            "#14c9e5"
+          ],
+          [
+            "Valencia Community",
+            "#19cee3"
+          ],
+          [
+            "Centre-Loire Valley",
+            "#1fd3e1"
+          ]
+        ],
+        "title": "Province (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Germany",
+            "#4c4ffc"
+          ],
+          [
+            "Kyrgyzstan",
+            "#08bee9"
+          ],
+          [
+            "England",
+            "#2adddd"
+          ],
+          [
+            "Spain",
+            "#3be9d6"
+          ],
+          [
+            "France",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "0.ANT4",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "Germany",
+            "#4c4ffc"
+          ],
+          [
+            "Kyrgyzstan",
+            "#08bee9"
+          ],
+          [
+            "England",
+            "#2adddd"
+          ],
+          [
+            "Spain",
+            "#3be9d6"
+          ],
+          [
+            "France",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      }
+    ],
+    "display_defaults": {
+      "branch_label": "none",
+      "color_by": "population",
+      "distance_measure": "num_date",
+      "geo_resolution": "province",
+      "layout": "rect",
+      "map_triplicate": true,
+      "transmission_lines": true
+    },
+    "filters": [
+      "continent",
+      "country",
+      "province",
+      "population",
+      "host_order",
+      "branch_minor"
+    ],
+    "geo_resolutions": [
+      {
+        "demes": {
+          "England": {
+            "latitude": 52.5310214,
+            "longitude": -1.2649062
+          },
+          "France": {
+            "latitude": 46.603353999999996,
+            "longitude": 1.8883334999999999
+          },
+          "Germany": {
+            "latitude": 51.0834196,
+            "longitude": 10.4234469
+          },
+          "Kyrgyzstan": {
+            "latitude": 41.5089324,
+            "longitude": 74.724091
+          },
+          "Spain": {
+            "latitude": 39.3260685,
+            "longitude": -4.8379791
+          }
+        },
+        "key": "country"
+      },
+      {
+        "demes": {
+          "Bavaria": {
+            "latitude": 48.9467562,
+            "longitude": 11.4038717
+          },
+          "Centre-Loire Valley": {
+            "latitude": 47.5490251,
+            "longitude": 1.7324061999999998
+          },
+          "East of England": {
+            "latitude": 52.2199774,
+            "longitude": 0.4875777469166293
+          },
+          "Issyk-Kul Region": {
+            "latitude": 42.06103415,
+            "longitude": 78.17073232346421
+          },
+          "Valencia Community": {
+            "latitude": 39.6819591,
+            "longitude": -0.7654406
+          }
+        },
+        "key": "province"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "name"
+      },
+      {
+        "name": "url"
+      }
+    ],
+    "panels": [
+      "tree",
+      "map"
+    ],
+    "title": "Plague Phylogeography Main",
+    "updated": "2021-08-26"
+  },
+  "tree": {
+    "branch_attrs": {
+      "labels": {
+        "Biosample Accession": "NA",
+        "Blank": " ",
+        "Branch Length": 1.07134e-05,
+        "Branch Length Sub": 45.0,
+        "Branch Length Time": 451.0,
+        "Branch Minor": "NA",
+        "Branch Number": "NA",
+        "Branch Support": 100.0,
+        "Branch Support Conf Category": "HIGH",
+        "Branch Support Conf Char": "*",
+        "Continent": "Europe",
+        "Continent Conf Category": "HIGH",
+        "Continent Confidence": 0.98,
+        "Continent Raw": "NA",
+        "Country": "England",
+        "Country Conf Category": "LOW",
+        "Country Confidence": 0.45,
+        "Country Date Strain": "NA",
+        "Country Lat": 52.5310214,
+        "Country Lon": -1.2649062,
+        "Country Raw": "NA",
+        "Date Bp Mean": "NA",
+        "Date Err": "NA",
+        "Date Mean": "NA",
+        "Host Human": "NA",
+        "Host Order": "Human",
+        "Host Order Conf Category": "HIGH",
+        "Host Order Confidence": 1.0,
+        "Host Order Raw": "NA",
+        "Node Name": "NODE148",
+        "Node Type": "internal",
+        "Num Date": 402.0,
+        "Num Date Confidence": [
+          346.0,
+          437.0
+        ],
+        "Population": "0.ANT4",
+        "Population Conf Category": "HIGH",
+        "Population Confidence": 1.0,
+        "Population Geo Dist": 5613.55839991,
+        "Population Raw": "NA",
+        "Population Rtt Dist": "NA",
+        "Province": "East of England",
+        "Province Conf Category": "LOW",
+        "Province Confidence": 0.42,
+        "Province Date Strain": "NA",
+        "Province Lat": 52.2199774,
+        "Province Lon": 0.4875777469166293,
+        "Province Raw": "NA",
+        "Rate Sub": 2.3753766471035588e-08,
+        "Rate Sub Year": 0.10083051049911422,
+        "Root Geo Dist": 7402.75784548,
+        "Root Rtt Dist": "NA",
+        "Strain": "NA"
+      }
+    },
+    "children": [
+      {
+        "branch_attrs": {},
+        "name": "SAMEA1061800",
+        "node_attrs": {
+          "biosample_accession": {
+            "value": "SAMEA1061800"
+          },
+          "branch_length_sub": {
+            "value": 13.0
+          },
+          "branch_length_time": {
+            "value": 276.0
+          },
+          "branch_minor": {
+            "value": "0.ANT4"
+          },
+          "branch_number": {
+            "value": "0.0"
+          },
+          "branch_support": {
+            "value": 0.0
+          },
+          "branch_support_conf_category": {
+            "value": "LOW"
+          },
+          "continent": {
+            "confidence": {
+              "Asia": 1.0
+            },
+            "value": "Asia"
+          },
+          "continent_conf_category": {
+            "value": "HIGH"
+          },
+          "continent_raw": {
+            "value": "Asia"
+          },
+          "country": {
+            "confidence": {
+              "Kyrgyzstan": 1.0
+            },
+            "value": "Kyrgyzstan"
+          },
+          "country_conf_category": {
+            "value": "HIGH"
+          },
+          "country_date_strain": {
+            "value": "Kyrgyzstan (214:261) DA101"
+          },
+          "country_lat": {
+            "value": 41.5089324
+          },
+          "country_lon": {
+            "value": 74.724091
+          },
+          "country_raw": {
+            "value": "Kyrgyzstan"
+          },
+          "date_bp_mean": {
+            "value": 1783.5
+          },
+          "date_err": {
+            "value": 23.5
+          },
+          "date_mean": {
+            "value": 237.5
+          },
+          "div": 3.1588e-06,
+          "host_human": {
+            "value": "Human"
+          },
+          "host_order": {
+            "confidence": {
+              "Human": 1.0
+            },
+            "value": "Human"
+          },
+          "host_order_conf_category": {
+            "value": "HIGH"
+          },
+          "host_order_raw": {
+            "value": "Human"
+          },
+          "node_name": {
+            "value": "SAMEA1061800"
+          },
+          "node_type": {
+            "value": "terminal"
+          },
+          "num_date": {
+            "confidence": [
+              214.0,
+              261.0
+            ],
+            "value": 227.0
+          },
+          "population": {
+            "confidence": {
+              "0.ANT4": 1.0
+            },
+            "value": "0.ANT4"
+          },
+          "population_conf_category": {
+            "value": "HIGH"
+          },
+          "population_geo_dist": {
+            "value": 0.0
+          },
+          "population_raw": {
+            "value": "0.ANT4"
+          },
+          "population_rtt_dist": {
+            "value": 3.1588e-06
+          },
+          "province": {
+            "confidence": {
+              "Issyk-Kul Region": 1.0
+            },
+            "value": "Issyk-Kul Region"
+          },
+          "province_conf_category": {
+            "value": "HIGH"
+          },
+          "province_date_strain": {
+            "value": "Kyrgyzstan (214:261) DA101"
+          },
+          "province_lat": {
+            "value": 42.06103415
+          },
+          "province_lon": {
+            "value": 78.17073232346421
+          },
+          "province_raw": {
+            "value": "Issyk-Kul Region"
+          },
+          "rate_sub": {
+            "value": 1.1451815222198859e-08
+          },
+          "rate_sub_year": {
+            "value": 0.04861091719512461
+          },
+          "root_geo_dist": {
+            "value": 1962.73083716
+          },
+          "root_rtt_dist": {
+            "value": 4.857350000000001e-05
+          },
+          "strain": {
+            "value": "DA101"
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "Biosample Accession": "NA",
+            "Blank": " ",
+            "Branch Length": 1.07134e-05,
+            "Branch Length Sub": 45.0,
+            "Branch Length Time": 451.0,
+            "Branch Minor": "NA",
+            "Branch Number": "NA",
+            "Branch Support": 100.0,
+            "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
+            "Continent": "Europe",
+            "Continent Conf Category": "HIGH",
+            "Continent Confidence": 0.98,
+            "Continent Raw": "NA",
+            "Country": "England",
+            "Country Conf Category": "LOW",
+            "Country Confidence": 0.45,
+            "Country Date Strain": "NA",
+            "Country Lat": 52.5310214,
+            "Country Lon": -1.2649062,
+            "Country Raw": "NA",
+            "Date Bp Mean": "NA",
+            "Date Err": "NA",
+            "Date Mean": "NA",
+            "Host Human": "NA",
+            "Host Order": "Human",
+            "Host Order Conf Category": "HIGH",
+            "Host Order Confidence": 1.0,
+            "Host Order Raw": "NA",
+            "Node Name": "NODE148",
+            "Node Type": "internal",
+            "Num Date": 402.0,
+            "Num Date Confidence": [
+              346.0,
+              437.0
+            ],
+            "Population": "0.ANT4",
+            "Population Conf Category": "HIGH",
+            "Population Confidence": 1.0,
+            "Population Geo Dist": 5613.55839991,
+            "Population Raw": "NA",
+            "Population Rtt Dist": "NA",
+            "Province": "East of England",
+            "Province Conf Category": "LOW",
+            "Province Confidence": 0.42,
+            "Province Date Strain": "NA",
+            "Province Lat": 52.2199774,
+            "Province Lon": 0.4875777469166293,
+            "Province Raw": "NA",
+            "Rate Sub": 2.3753766471035588e-08,
+            "Rate Sub Year": 0.10083051049911422,
+            "Root Geo Dist": 7402.75784548,
+            "Root Rtt Dist": "NA",
+            "Strain": "NA"
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "Biosample Accession": "NA",
+                "Blank": " ",
+                "Branch Length": 2.35e-08,
+                "Branch Length Sub": 0.0,
+                "Branch Length Time": 19.0,
+                "Branch Minor": "NA",
+                "Branch Number": "NA",
+                "Branch Support": 77.0,
+                "Branch Support Conf Category": "LOW",
+                "Branch Support Conf Char": "",
+                "Continent": "Europe",
+                "Continent Conf Category": "HIGH",
+                "Continent Confidence": 1.0,
+                "Continent Raw": "NA",
+                "Country": "England",
+                "Country Conf Category": "HIGH",
+                "Country Confidence": 1.0,
+                "Country Date Strain": "NA",
+                "Country Lat": 52.5310214,
+                "Country Lon": -1.2649062,
+                "Country Raw": "NA",
+                "Date Bp Mean": "NA",
+                "Date Err": "NA",
+                "Date Mean": "NA",
+                "Host Human": "NA",
+                "Host Order": "Human",
+                "Host Order Conf Category": "HIGH",
+                "Host Order Confidence": 1.0,
+                "Host Order Raw": "NA",
+                "Node Name": "NODE149",
+                "Node Type": "internal",
+                "Num Date": 421.0,
+                "Num Date Confidence": [
+                  372.0,
+                  459.0
+                ],
+                "Population": "0.ANT4",
+                "Population Conf Category": "HIGH",
+                "Population Confidence": 1.0,
+                "Population Geo Dist": 5613.55839991,
+                "Population Raw": "NA",
+                "Population Rtt Dist": "NA",
+                "Province": "East of England",
+                "Province Conf Category": "HIGH",
+                "Province Confidence": 1.0,
+                "Province Date Strain": "NA",
+                "Province Lat": 52.2199774,
+                "Province Lon": 0.4875777469166293,
+                "Province Raw": "NA",
+                "Rate Sub": 1.2425775817853989e-09,
+                "Rate Sub Year": 0.005274520655869461,
+                "Root Geo Dist": 7402.75784548,
+                "Root Rtt Dist": "NA",
+                "Strain": "NA"
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {},
+                "name": "SAMEA5661365",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMEA5661365"
+                  },
+                  "branch_length_sub": {
+                    "value": 2.0
+                  },
+                  "branch_length_time": {
+                    "value": 80.0
+                  },
+                  "branch_minor": {
+                    "value": "0.ANT4"
+                  },
+                  "branch_number": {
+                    "value": "0.0"
+                  },
+                  "branch_support": {
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "value": "Europe"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "continent_raw": {
+                    "value": "Europe"
+                  },
+                  "country": {
+                    "confidence": {
+                      "England": 1.0
+                    },
+                    "value": "England"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_date_strain": {
+                    "value": "England (500:650) EDI004"
+                  },
+                  "country_lat": {
+                    "value": 52.5310214
+                  },
+                  "country_lon": {
+                    "value": -1.2649062
+                  },
+                  "country_raw": {
+                    "value": "England"
+                  },
+                  "date_bp_mean": {
+                    "value": 1446.0
+                  },
+                  "date_err": {
+                    "value": 75.0
+                  },
+                  "date_mean": {
+                    "value": 575.0
+                  },
+                  "div": 1.12063e-05,
+                  "host_human": {
+                    "value": "Human"
+                  },
+                  "host_order": {
+                    "confidence": {
+                      "Human": 1.0
+                    },
+                    "value": "Human"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "host_order_raw": {
+                    "value": "Human"
+                  },
+                  "node_name": {
+                    "value": "SAMEA5661365"
+                  },
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      500.0,
+                      563.0
+                    ],
+                    "value": 500.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "0.ANT4": 1.0
+                    },
+                    "value": "0.ANT4"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 5613.55839991
+                  },
+                  "population_raw": {
+                    "value": "0.ANT4"
+                  },
+                  "population_rtt_dist": {
+                    "value": 1.1206300000000001e-05
+                  },
+                  "province": {
+                    "confidence": {
+                      "East of England": 1.0
+                    },
+                    "value": "East of England"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "province_date_strain": {
+                    "value": "England (500:650) EDI004"
+                  },
+                  "province_lat": {
+                    "value": 52.2199774
+                  },
+                  "province_lon": {
+                    "value": 0.4875777469166293
+                  },
+                  "province_raw": {
+                    "value": "East of England"
+                  },
+                  "rate_sub": {
+                    "value": 5.885096438350669e-09
+                  },
+                  "rate_sub_year": {
+                    "value": 0.02498118683363256
+                  },
+                  "root_geo_dist": {
+                    "value": 7402.75784548
+                  },
+                  "root_rtt_dist": {
+                    "value": 5.6621000000000006e-05
+                  },
+                  "strain": {
+                    "value": "EDI004"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "Biosample Accession": "NA",
+                    "Blank": " ",
+                    "Branch Length": 7.228e-07,
+                    "Branch Length Sub": 3.0,
+                    "Branch Length Time": 48.0,
+                    "Branch Minor": "NA",
+                    "Branch Number": "NA",
+                    "Branch Support": 100.0,
+                    "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
+                    "Continent": "Europe",
+                    "Continent Conf Category": "HIGH",
+                    "Continent Confidence": 1.0,
+                    "Continent Raw": "NA",
+                    "Country": "England",
+                    "Country Conf Category": "HIGH",
+                    "Country Confidence": 1.0,
+                    "Country Date Strain": "NA",
+                    "Country Lat": 52.5310214,
+                    "Country Lon": -1.2649062,
+                    "Country Raw": "NA",
+                    "Date Bp Mean": "NA",
+                    "Date Err": "NA",
+                    "Date Mean": "NA",
+                    "Host Human": "NA",
+                    "Host Order": "Human",
+                    "Host Order Conf Category": "HIGH",
+                    "Host Order Confidence": 1.0,
+                    "Host Order Raw": "NA",
+                    "Node Name": "NODE150",
+                    "Node Type": "internal",
+                    "Num Date": 469.0,
+                    "Num Date Confidence": [
+                      390.0,
+                      522.0
+                    ],
+                    "Population": "0.ANT4",
+                    "Population Conf Category": "HIGH",
+                    "Population Confidence": 1.0,
+                    "Population Geo Dist": 5613.55839991,
+                    "Population Raw": "NA",
+                    "Population Rtt Dist": "NA",
+                    "Province": "East of England",
+                    "Province Conf Category": "HIGH",
+                    "Province Confidence": 1.0,
+                    "Province Date Strain": "NA",
+                    "Province Lat": 52.2199774,
+                    "Province Lon": 0.4875777469166293,
+                    "Province Raw": "NA",
+                    "Rate Sub": 1.5082780005926272e-08,
+                    "Rate Sub Year": 0.06402371639031598,
+                    "Root Geo Dist": 7402.75784548,
+                    "Root Rtt Dist": "NA",
+                    "Strain": "NA"
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {},
+                    "name": "SAMEA5661363",
+                    "node_attrs": {
+                      "biosample_accession": {
+                        "value": "SAMEA5661363"
+                      },
+                      "branch_length_sub": {
+                        "value": 0.0
+                      },
+                      "branch_length_time": {
+                        "value": 6.0
+                      },
+                      "branch_minor": {
+                        "value": "0.ANT4"
+                      },
+                      "branch_number": {
+                        "value": "0.0"
+                      },
+                      "branch_support": {
+                        "value": 0.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "LOW"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "value": "Europe"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "continent_raw": {
+                        "value": "Europe"
+                      },
+                      "country": {
+                        "confidence": {
+                          "England": 1.0
+                        },
+                        "value": "England"
+                      },
+                      "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_date_strain": {
+                        "value": "England (474:637) EDI001"
+                      },
+                      "country_lat": {
+                        "value": 52.5310214
+                      },
+                      "country_lon": {
+                        "value": -1.2649062
+                      },
+                      "country_raw": {
+                        "value": "England"
+                      },
+                      "date_bp_mean": {
+                        "value": 1465.5
+                      },
+                      "date_err": {
+                        "value": 81.5
+                      },
+                      "date_mean": {
+                        "value": 555.5
+                      },
+                      "div": 1.14832e-05,
+                      "host_human": {
+                        "value": "Human"
+                      },
+                      "host_order": {
+                        "confidence": {
+                          "Human": 1.0
+                        },
+                        "value": "Human"
+                      },
+                      "host_order_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "host_order_raw": {
+                        "value": "Human"
+                      },
+                      "node_name": {
+                        "value": "SAMEA5661363"
+                      },
+                      "node_type": {
+                        "value": "terminal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          474.0,
+                          539.0
+                        ],
+                        "value": 474.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "0.ANT4": 1.0
+                        },
+                        "value": "0.ANT4"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 5613.55839991
+                      },
+                      "population_raw": {
+                        "value": "0.ANT4"
+                      },
+                      "population_rtt_dist": {
+                        "value": 1.1483199999999999e-05
+                      },
+                      "province": {
+                        "confidence": {
+                          "East of England": 1.0
+                        },
+                        "value": "East of England"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_date_strain": {
+                        "value": "England (474:637) EDI001"
+                      },
+                      "province_lat": {
+                        "value": 52.2199774
+                      },
+                      "province_lon": {
+                        "value": 0.4875777469166293
+                      },
+                      "province_raw": {
+                        "value": "East of England"
+                      },
+                      "rate_sub": {
+                        "value": 4.024992635119859e-09
+                      },
+                      "rate_sub_year": {
+                        "value": 0.01708537728739475
+                      },
+                      "root_geo_dist": {
+                        "value": 7402.75784548
+                      },
+                      "root_rtt_dist": {
+                        "value": 5.68979e-05
+                      },
+                      "strain": {
+                        "value": "EDI001"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {},
+                    "name": "SAMEA5661364",
+                    "node_attrs": {
+                      "biosample_accession": {
+                        "value": "SAMEA5661364"
+                      },
+                      "branch_length_sub": {
+                        "value": 10.0
+                      },
+                      "branch_length_time": {
+                        "value": 182.0
+                      },
+                      "branch_minor": {
+                        "value": "0.ANT4"
+                      },
+                      "branch_number": {
+                        "value": "0.0"
+                      },
+                      "branch_support": {
+                        "value": 0.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "LOW"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "value": "Europe"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "continent_raw": {
+                        "value": "Europe"
+                      },
+                      "country": {
+                        "confidence": {
+                          "England": 1.0
+                        },
+                        "value": "England"
+                      },
+                      "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_date_strain": {
+                        "value": "England (500:650) EDI003"
+                      },
+                      "country_lat": {
+                        "value": 52.5310214
+                      },
+                      "country_lon": {
+                        "value": -1.2649062
+                      },
+                      "country_raw": {
+                        "value": "England"
+                      },
+                      "date_bp_mean": {
+                        "value": 1446.0
+                      },
+                      "date_err": {
+                        "value": 75.0
+                      },
+                      "date_mean": {
+                        "value": 575.0
+                      },
+                      "div": 1.38589e-05,
+                      "host_human": {
+                        "value": "Human"
+                      },
+                      "host_order": {
+                        "confidence": {
+                          "Human": 1.0
+                        },
+                        "value": "Human"
+                      },
+                      "host_order_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "host_order_raw": {
+                        "value": "Human"
+                      },
+                      "node_name": {
+                        "value": "SAMEA5661364"
+                      },
+                      "node_type": {
+                        "value": "terminal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          539.0,
+                          650.0
+                        ],
+                        "value": 650.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "0.ANT4": 1.0
+                        },
+                        "value": "0.ANT4"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 5613.55839991
+                      },
+                      "population_raw": {
+                        "value": "0.ANT4"
+                      },
+                      "population_rtt_dist": {
+                        "value": 1.38589e-05
+                      },
+                      "province": {
+                        "confidence": {
+                          "East of England": 1.0
+                        },
+                        "value": "East of England"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_date_strain": {
+                        "value": "England (500:650) EDI003"
+                      },
+                      "province_lat": {
+                        "value": 52.2199774
+                      },
+                      "province_lon": {
+                        "value": 0.4875777469166293
+                      },
+                      "province_raw": {
+                        "value": "East of England"
+                      },
+                      "rate_sub": {
+                        "value": 1.3194089276777808e-08
+                      },
+                      "rate_sub_year": {
+                        "value": 0.056006560432030526
+                      },
+                      "root_geo_dist": {
+                        "value": 7402.75784548
+                      },
+                      "root_rtt_dist": {
+                        "value": 5.9273599999999994e-05
+                      },
+                      "strain": {
+                        "value": "EDI003"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE150",
+                "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 3.0
+                  },
+                  "branch_length_time": {
+                    "value": 48.0
+                  },
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "value": "Europe"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country": {
+                    "confidence": {
+                      "England": 1.0
+                    },
+                    "value": "England"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_lat": {
+                    "value": 52.5310214
+                  },
+                  "country_lon": {
+                    "value": -1.2649062
+                  },
+                  "div": 1.14597e-05,
+                  "host_order": {
+                    "confidence": {
+                      "Human": 1.0
+                    },
+                    "value": "Human"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "node_name": {
+                    "value": "NODE150"
+                  },
+                  "node_type": {
+                    "value": "internal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      390.0,
+                      522.0
+                    ],
+                    "value": 469.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "0.ANT4": 1.0
+                    },
+                    "value": "0.ANT4"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 5613.55839991
+                  },
+                  "province": {
+                    "confidence": {
+                      "East of England": 1.0
+                    },
+                    "value": "East of England"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "province_lat": {
+                    "value": 52.2199774
+                  },
+                  "province_lon": {
+                    "value": 0.4875777469166293
+                  },
+                  "rate_sub": {
+                    "value": 1.5082780005926272e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.06402371639031598
+                  },
+                  "root_geo_dist": {
+                    "value": 7402.75784548
+                  }
+                }
+              }
+            ],
+            "name": "NODE149",
+            "node_attrs": {
+              "branch_length_sub": {
+                "value": 0.0
+              },
+              "branch_length_time": {
+                "value": 19.0
+              },
+              "branch_support": {
+                "value": 77.0
+              },
+              "branch_support_conf_category": {
+                "value": "LOW"
+              },
+              "continent": {
+                "confidence": {
+                  "Europe": 1.0
+                },
+                "value": "Europe"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "country": {
+                "confidence": {
+                  "England": 1.0
+                },
+                "value": "England"
+              },
+              "country_conf_category": {
+                "value": "HIGH"
+              },
+              "country_lat": {
+                "value": 52.5310214
+              },
+              "country_lon": {
+                "value": -1.2649062
+              },
+              "div": 1.07369e-05,
+              "host_order": {
+                "confidence": {
+                  "Human": 1.0
+                },
+                "value": "Human"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "node_name": {
+                "value": "NODE149"
+              },
+              "node_type": {
+                "value": "internal"
+              },
+              "num_date": {
+                "confidence": [
+                  372.0,
+                  459.0
+                ],
+                "value": 421.0
+              },
+              "population": {
+                "confidence": {
+                  "0.ANT4": 1.0
+                },
+                "value": "0.ANT4"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 5613.55839991
+              },
+              "province": {
+                "confidence": {
+                  "East of England": 1.0
+                },
+                "value": "East of England"
+              },
+              "province_conf_category": {
+                "value": "HIGH"
+              },
+              "province_lat": {
+                "value": 52.2199774
+              },
+              "province_lon": {
+                "value": 0.4875777469166293
+              },
+              "rate_sub": {
+                "value": 1.2425775817853989e-09
+              },
+              "rate_sub_year": {
+                "value": 0.005274520655869461
+              },
+              "root_geo_dist": {
+                "value": 7402.75784548
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "Biosample Accession": "NA",
+                "Blank": " ",
+                "Branch Length": 4.833e-07,
+                "Branch Length Sub": 2.0,
+                "Branch Length Time": 0.0,
+                "Branch Minor": "NA",
+                "Branch Number": "NA",
+                "Branch Support": 100.0,
+                "Branch Support Conf Category": "HIGH",
+                "Branch Support Conf Char": "*",
+                "Continent": "Europe",
+                "Continent Conf Category": "HIGH",
+                "Continent Confidence": 1.0,
+                "Continent Raw": "NA",
+                "Country": "Germany",
+                "Country Conf Category": "LOW",
+                "Country Confidence": 0.5,
+                "Country Date Strain": "NA",
+                "Country Lat": 51.0834196,
+                "Country Lon": 10.4234469,
+                "Country Raw": "NA",
+                "Date Bp Mean": "NA",
+                "Date Err": "NA",
+                "Date Mean": "NA",
+                "Host Human": "NA",
+                "Host Order": "Human",
+                "Host Order Conf Category": "HIGH",
+                "Host Order Confidence": 1.0,
+                "Host Order Raw": "NA",
+                "Node Name": "NODE151",
+                "Node Type": "internal",
+                "Num Date": 402.0,
+                "Num Date Confidence": [
+                  346.0,
+                  437.0
+                ],
+                "Population": "0.ANT4",
+                "Population Conf Category": "HIGH",
+                "Population Confidence": 1.0,
+                "Population Geo Dist": 4889.76390523,
+                "Population Raw": "NA",
+                "Population Rtt Dist": "NA",
+                "Province": "Bavaria",
+                "Province Conf Category": "LOW",
+                "Province Confidence": 0.41,
+                "Province Date Strain": "NA",
+                "Province Lat": 48.9467562,
+                "Province Lon": 11.4038717,
+                "Province Raw": "NA",
+                "Rate Sub": 0.0,
+                "Rate Sub Year": 0.0,
+                "Root Geo Dist": 6739.83024185,
+                "Root Rtt Dist": "NA",
+                "Strain": "NA"
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {},
+                "name": "SAMEA5661384",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMEA5661384"
+                  },
+                  "branch_length_sub": {
+                    "value": 6.0
+                  },
+                  "branch_length_time": {
+                    "value": 123.0
+                  },
+                  "branch_minor": {
+                    "value": "0.ANT4"
+                  },
+                  "branch_number": {
+                    "value": "0.0"
+                  },
+                  "branch_support": {
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "value": "Europe"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "continent_raw": {
+                    "value": "Europe"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Spain": 1.0
+                    },
+                    "value": "Spain"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_date_strain": {
+                    "value": "Spain (432:610) VAL001"
+                  },
+                  "country_lat": {
+                    "value": 39.3260685
+                  },
+                  "country_lon": {
+                    "value": -4.8379791
+                  },
+                  "country_raw": {
+                    "value": "Spain"
+                  },
+                  "date_bp_mean": {
+                    "value": 1500.0
+                  },
+                  "date_err": {
+                    "value": 89.0
+                  },
+                  "date_mean": {
+                    "value": 521.0
+                  },
+                  "div": 1.2604899999999999e-05,
+                  "host_human": {
+                    "value": "Human"
+                  },
+                  "host_order": {
+                    "confidence": {
+                      "Human": 1.0
+                    },
+                    "value": "Human"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "host_order_raw": {
+                    "value": "Human"
+                  },
+                  "node_name": {
+                    "value": "SAMEA5661384"
+                  },
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      432.0,
+                      610.0
+                    ],
+                    "value": 525.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "0.ANT4": 1.0
+                    },
+                    "value": "0.ANT4"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 6486.61088483
+                  },
+                  "population_raw": {
+                    "value": "0.ANT4"
+                  },
+                  "population_rtt_dist": {
+                    "value": 1.26049e-05
+                  },
+                  "province": {
+                    "confidence": {
+                      "Valencia Community": 1.0
+                    },
+                    "value": "Valencia Community"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "province_date_strain": {
+                    "value": "Spain (432:610) VAL001"
+                  },
+                  "province_lat": {
+                    "value": 39.6819591
+                  },
+                  "province_lon": {
+                    "value": -0.7654406
+                  },
+                  "province_raw": {
+                    "value": "Valencia Community"
+                  },
+                  "rate_sub": {
+                    "value": 1.1451759807429574e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.04861068196929282
+                  },
+                  "root_geo_dist": {
+                    "value": 8403.39497089
+                  },
+                  "root_rtt_dist": {
+                    "value": 5.80196e-05
+                  },
+                  "strain": {
+                    "value": "VAL001"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "Biosample Accession": "NA",
+                    "Blank": " ",
+                    "Branch Length": 4.701e-07,
+                    "Branch Length Sub": 2.0,
+                    "Branch Length Time": 0.0,
+                    "Branch Minor": "NA",
+                    "Branch Number": "NA",
+                    "Branch Support": 99.0,
+                    "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
+                    "Continent": "Europe",
+                    "Continent Conf Category": "HIGH",
+                    "Continent Confidence": 1.0,
+                    "Continent Raw": "NA",
+                    "Country": "Germany",
+                    "Country Conf Category": "HIGH",
+                    "Country Confidence": 0.99,
+                    "Country Date Strain": "NA",
+                    "Country Lat": 51.0834196,
+                    "Country Lon": 10.4234469,
+                    "Country Raw": "NA",
+                    "Date Bp Mean": "NA",
+                    "Date Err": "NA",
+                    "Date Mean": "NA",
+                    "Host Human": "NA",
+                    "Host Order": "Human",
+                    "Host Order Conf Category": "HIGH",
+                    "Host Order Confidence": 1.0,
+                    "Host Order Raw": "NA",
+                    "Node Name": "NODE152",
+                    "Node Type": "internal",
+                    "Num Date": 402.0,
+                    "Num Date Confidence": [
+                      346.0,
+                      437.0
+                    ],
+                    "Population": "0.ANT4",
+                    "Population Conf Category": "HIGH",
+                    "Population Confidence": 1.0,
+                    "Population Geo Dist": 4889.76390523,
+                    "Population Raw": "NA",
+                    "Population Rtt Dist": "NA",
+                    "Province": "Bavaria",
+                    "Province Conf Category": "HIGH",
+                    "Province Confidence": 0.99,
+                    "Province Date Strain": "NA",
+                    "Province Lat": 48.9467562,
+                    "Province Lon": 11.4038717,
+                    "Province Raw": "NA",
+                    "Rate Sub": 0.0,
+                    "Rate Sub Year": 0.0,
+                    "Root Geo Dist": 6739.83024185,
+                    "Root Rtt Dist": "NA",
+                    "Strain": "NA"
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "Biosample Accession": "NA",
+                        "Blank": " ",
+                        "Branch Length": 2.35e-08,
+                        "Branch Length Sub": 0.0,
+                        "Branch Length Time": 0.0,
+                        "Branch Minor": "NA",
+                        "Branch Number": "NA",
+                        "Branch Support": 81.0,
+                        "Branch Support Conf Category": "LOW",
+                        "Branch Support Conf Char": "",
+                        "Continent": "Europe",
+                        "Continent Conf Category": "HIGH",
+                        "Continent Confidence": 1.0,
+                        "Continent Raw": "NA",
+                        "Country": "Germany",
+                        "Country Conf Category": "HIGH",
+                        "Country Confidence": 0.99,
+                        "Country Date Strain": "NA",
+                        "Country Lat": 51.0834196,
+                        "Country Lon": 10.4234469,
+                        "Country Raw": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Err": "NA",
+                        "Date Mean": "NA",
+                        "Host Human": "NA",
+                        "Host Order": "Human",
+                        "Host Order Conf Category": "HIGH",
+                        "Host Order Confidence": 1.0,
+                        "Host Order Raw": "NA",
+                        "Node Name": "NODE153",
+                        "Node Type": "internal",
+                        "Num Date": 402.0,
+                        "Num Date Confidence": [
+                          346.0,
+                          437.0
+                        ],
+                        "Population": "0.ANT4",
+                        "Population Conf Category": "HIGH",
+                        "Population Confidence": 1.0,
+                        "Population Geo Dist": 4889.76390523,
+                        "Population Raw": "NA",
+                        "Population Rtt Dist": "NA",
+                        "Province": "Bavaria",
+                        "Province Conf Category": "HIGH",
+                        "Province Confidence": 0.99,
+                        "Province Date Strain": "NA",
+                        "Province Lat": 48.9467562,
+                        "Province Lon": 11.4038717,
+                        "Province Raw": "NA",
+                        "Rate Sub": 0.0,
+                        "Rate Sub Year": 0.0,
+                        "Root Geo Dist": 6739.83024185,
+                        "Root Rtt Dist": "NA",
+                        "Strain": "NA"
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMEA5661385",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMEA5661385"
+                          },
+                          "branch_length_sub": {
+                            "value": 18.0
+                          },
+                          "branch_length_time": {
+                            "value": 199.0
+                          },
+                          "branch_minor": {
+                            "value": "0.ANT4"
+                          },
+                          "branch_number": {
+                            "value": "0.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "value": "Europe"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "continent_raw": {
+                            "value": "Europe"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Germany": 1.0
+                            },
+                            "value": "Germany"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Germany (434:600) PET004"
+                          },
+                          "country_lat": {
+                            "value": 51.0834196
+                          },
+                          "country_lon": {
+                            "value": 10.4234469
+                          },
+                          "country_raw": {
+                            "value": "Germany"
+                          },
+                          "date_bp_mean": {
+                            "value": 1504.0
+                          },
+                          "date_err": {
+                            "value": 83.0
+                          },
+                          "date_mean": {
+                            "value": 517.0
+                          },
+                          "div": 1.5945500000000002e-05,
+                          "host_human": {
+                            "value": "Human"
+                          },
+                          "host_order": {
+                            "confidence": {
+                              "Human": 1.0
+                            },
+                            "value": "Human"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "host_order_raw": {
+                            "value": "Human"
+                          },
+                          "node_name": {
+                            "value": "SAMEA5661385"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              470.0,
+                              600.0
+                            ],
+                            "value": 600.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "0.ANT4": 1.0
+                            },
+                            "value": "0.ANT4"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 4889.76390523
+                          },
+                          "population_raw": {
+                            "value": "0.ANT4"
+                          },
+                          "population_rtt_dist": {
+                            "value": 1.5945500000000002e-05
+                          },
+                          "province": {
+                            "confidence": {
+                              "Bavaria": 1.0
+                            },
+                            "value": "Bavaria"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Germany (434:600) PET004"
+                          },
+                          "province_lat": {
+                            "value": 48.9467562
+                          },
+                          "province_lon": {
+                            "value": 11.4038717
+                          },
+                          "province_raw": {
+                            "value": "Bavaria"
+                          },
+                          "rate_sub": {
+                            "value": 2.1418109154238372e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.09091606093631244
+                          },
+                          "root_geo_dist": {
+                            "value": 6739.83024185
+                          },
+                          "root_rtt_dist": {
+                            "value": 6.136020000000001e-05
+                          },
+                          "strain": {
+                            "value": "PET004"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "Biosample Accession": "NA",
+                            "Blank": " ",
+                            "Branch Length": 4.1832e-06,
+                            "Branch Length Sub": 18.0,
+                            "Branch Length Time": 288.0,
+                            "Branch Minor": "NA",
+                            "Branch Number": "NA",
+                            "Branch Support": 100.0,
+                            "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
+                            "Continent": "Europe",
+                            "Continent Conf Category": "HIGH",
+                            "Continent Confidence": 1.0,
+                            "Continent Raw": "NA",
+                            "Country": "France",
+                            "Country Conf Category": "HIGH",
+                            "Country Confidence": 1.0,
+                            "Country Date Strain": "NA",
+                            "Country Lat": 46.603353999999996,
+                            "Country Lon": 1.8883334999999999,
+                            "Country Raw": "NA",
+                            "Date Bp Mean": "NA",
+                            "Date Err": "NA",
+                            "Date Mean": "NA",
+                            "Host Human": "NA",
+                            "Host Order": "Human",
+                            "Host Order Conf Category": "HIGH",
+                            "Host Order Confidence": 1.0,
+                            "Host Order Raw": "NA",
+                            "Node Name": "NODE154",
+                            "Node Type": "internal",
+                            "Num Date": 690.0,
+                            "Num Date Confidence": [
+                              529.0,
+                              758.0
+                            ],
+                            "Population": "0.ANT4",
+                            "Population Conf Category": "HIGH",
+                            "Population Confidence": 1.0,
+                            "Population Geo Dist": 5637.53150786,
+                            "Population Raw": "NA",
+                            "Population Rtt Dist": "NA",
+                            "Province": "Centre-Loire Valley",
+                            "Province Conf Category": "HIGH",
+                            "Province Confidence": 1.0,
+                            "Province Date Strain": "NA",
+                            "Province Lat": 47.5490251,
+                            "Province Lon": 1.7324061999999998,
+                            "Province Raw": "NA",
+                            "Rate Sub": 1.4512805212286898e-08,
+                            "Rate Sub Year": 0.061604274846830086,
+                            "Root Geo Dist": 7515.18048478,
+                            "Root Rtt Dist": "NA",
+                            "Strain": "NA"
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {},
+                            "name": "SAMEA5661367",
+                            "node_attrs": {
+                              "biosample_accession": {
+                                "value": "SAMEA5661367"
+                              },
+                              "branch_length_sub": {
+                                "value": 13.0
+                              },
+                              "branch_length_time": {
+                                "value": 190.0
+                              },
+                              "branch_minor": {
+                                "value": "0.ANT4"
+                              },
+                              "branch_number": {
+                                "value": "0.0"
+                              },
+                              "branch_support": {
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "continent": {
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "value": "Europe"
+                              },
+                              "continent_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "continent_raw": {
+                                "value": "Europe"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "France": 1.0
+                                },
+                                "value": "France"
+                              },
+                              "country_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "country_date_strain": {
+                                "value": "France (650:880) LSD001"
+                              },
+                              "country_lat": {
+                                "value": 46.603353999999996
+                              },
+                              "country_lon": {
+                                "value": 1.8883334999999999
+                              },
+                              "country_raw": {
+                                "value": "France"
+                              },
+                              "date_bp_mean": {
+                                "value": 1256.0
+                              },
+                              "date_err": {
+                                "value": 115.0
+                              },
+                              "date_mean": {
+                                "value": 765.0
+                              },
+                              "div": 1.88184e-05,
+                              "host_human": {
+                                "value": "Human"
+                              },
+                              "host_order": {
+                                "confidence": {
+                                  "Human": 1.0
+                                },
+                                "value": "Human"
+                              },
+                              "host_order_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "host_order_raw": {
+                                "value": "Human"
+                              },
+                              "node_name": {
+                                "value": "SAMEA5661367"
+                              },
+                              "node_type": {
+                                "value": "terminal"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  661.0,
+                                  880.0
+                                ],
+                                "value": 880.0
+                              },
+                              "population": {
+                                "confidence": {
+                                  "0.ANT4": 1.0
+                                },
+                                "value": "0.ANT4"
+                              },
+                              "population_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "population_geo_dist": {
+                                "value": 5637.53150786
+                              },
+                              "population_raw": {
+                                "value": "0.ANT4"
+                              },
+                              "population_rtt_dist": {
+                                "value": 1.88184e-05
+                              },
+                              "province": {
+                                "confidence": {
+                                  "Centre-Loire Valley": 1.0
+                                },
+                                "value": "Centre-Loire Valley"
+                              },
+                              "province_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "province_date_strain": {
+                                "value": "France (650:880) LSD001"
+                              },
+                              "province_lat": {
+                                "value": 47.5490251
+                              },
+                              "province_lon": {
+                                "value": 1.7324061999999998
+                              },
+                              "province_raw": {
+                                "value": "Centre-Loire Valley"
+                              },
+                              "rate_sub": {
+                                "value": 1.546439392745929e-08
+                              },
+                              "rate_sub_year": {
+                                "value": 0.06564359955994559
+                              },
+                              "root_geo_dist": {
+                                "value": 7515.18048478
+                              },
+                              "root_rtt_dist": {
+                                "value": 6.42331e-05
+                              },
+                              "strain": {
+                                "value": "LSD001"
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {},
+                            "name": "SAMEA5661372",
+                            "node_attrs": {
+                              "biosample_accession": {
+                                "value": "SAMEA5661372"
+                              },
+                              "branch_length_sub": {
+                                "value": 9.0
+                              },
+                              "branch_length_time": {
+                                "value": 184.0
+                              },
+                              "branch_minor": {
+                                "value": "0.ANT4"
+                              },
+                              "branch_number": {
+                                "value": "0.0"
+                              },
+                              "branch_support": {
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "continent": {
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "value": "Europe"
+                              },
+                              "continent_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "continent_raw": {
+                                "value": "Europe"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "France": 1.0
+                                },
+                                "value": "France"
+                              },
+                              "country_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "country_date_strain": {
+                                "value": "France (650:880) LSD020"
+                              },
+                              "country_lat": {
+                                "value": 46.603353999999996
+                              },
+                              "country_lon": {
+                                "value": 1.8883334999999999
+                              },
+                              "country_raw": {
+                                "value": "France"
+                              },
+                              "date_bp_mean": {
+                                "value": 1256.0
+                              },
+                              "date_err": {
+                                "value": 115.0
+                              },
+                              "date_mean": {
+                                "value": 765.0
+                              },
+                              "div": 1.79858e-05,
+                              "host_human": {
+                                "value": "Human"
+                              },
+                              "host_order": {
+                                "confidence": {
+                                  "Human": 1.0
+                                },
+                                "value": "Human"
+                              },
+                              "host_order_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "host_order_raw": {
+                                "value": "Human"
+                              },
+                              "node_name": {
+                                "value": "SAMEA5661372"
+                              },
+                              "node_type": {
+                                "value": "terminal"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  650.0,
+                                  880.0
+                                ],
+                                "value": 875.0
+                              },
+                              "population": {
+                                "confidence": {
+                                  "0.ANT4": 1.0
+                                },
+                                "value": "0.ANT4"
+                              },
+                              "population_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "population_geo_dist": {
+                                "value": 5637.53150786
+                              },
+                              "population_raw": {
+                                "value": "0.ANT4"
+                              },
+                              "population_rtt_dist": {
+                                "value": 1.79858e-05
+                              },
+                              "province": {
+                                "confidence": {
+                                  "Centre-Loire Valley": 1.0
+                                },
+                                "value": "Centre-Loire Valley"
+                              },
+                              "province_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "province_date_strain": {
+                                "value": "France (650:880) LSD020"
+                              },
+                              "province_lat": {
+                                "value": 47.5490251
+                              },
+                              "province_lon": {
+                                "value": 1.7324061999999998
+                              },
+                              "province_raw": {
+                                "value": "Centre-Loire Valley"
+                              },
+                              "rate_sub": {
+                                "value": 1.1451821893077296e-08
+                              },
+                              "rate_sub_year": {
+                                "value": 0.048610945511816155
+                              },
+                              "root_geo_dist": {
+                                "value": 7515.18048478
+                              },
+                              "root_rtt_dist": {
+                                "value": 6.34005e-05
+                              },
+                              "strain": {
+                                "value": "LSD020"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE154",
+                        "node_attrs": {
+                          "branch_length_sub": {
+                            "value": 18.0
+                          },
+                          "branch_length_time": {
+                            "value": 288.0
+                          },
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "branch_support_conf_char": {
+                            "value": "*"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "value": "Europe"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country": {
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "value": "France"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_lat": {
+                            "value": 46.603353999999996
+                          },
+                          "country_lon": {
+                            "value": 1.8883334999999999
+                          },
+                          "div": 1.58735e-05,
+                          "host_order": {
+                            "confidence": {
+                              "Human": 1.0
+                            },
+                            "value": "Human"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "node_name": {
+                            "value": "NODE154"
+                          },
+                          "node_type": {
+                            "value": "internal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              529.0,
+                              758.0
+                            ],
+                            "value": 690.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "0.ANT4": 1.0
+                            },
+                            "value": "0.ANT4"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 5637.53150786
+                          },
+                          "province": {
+                            "confidence": {
+                              "Centre-Loire Valley": 1.0
+                            },
+                            "value": "Centre-Loire Valley"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_lat": {
+                            "value": 47.5490251
+                          },
+                          "province_lon": {
+                            "value": 1.7324061999999998
+                          },
+                          "rate_sub": {
+                            "value": 1.4512805212286898e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.061604274846830086
+                          },
+                          "root_geo_dist": {
+                            "value": 7515.18048478
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE153",
+                    "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 0.0
+                      },
+                      "branch_length_time": {
+                        "value": 0.0
+                      },
+                      "branch_support": {
+                        "value": 81.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "LOW"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "value": "Europe"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country": {
+                        "confidence": {
+                          "Germany": 0.99
+                        },
+                        "value": "Germany"
+                      },
+                      "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_lat": {
+                        "value": 51.0834196
+                      },
+                      "country_lon": {
+                        "value": 10.4234469
+                      },
+                      "div": 1.16903e-05,
+                      "host_order": {
+                        "confidence": {
+                          "Human": 1.0
+                        },
+                        "value": "Human"
+                      },
+                      "host_order_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "node_name": {
+                        "value": "NODE153"
+                      },
+                      "node_type": {
+                        "value": "internal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          346.0,
+                          437.0
+                        ],
+                        "value": 402.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "0.ANT4": 1.0
+                        },
+                        "value": "0.ANT4"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 4889.76390523
+                      },
+                      "province": {
+                        "confidence": {
+                          "Bavaria": 0.99
+                        },
+                        "value": "Bavaria"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_lat": {
+                        "value": 48.9467562
+                      },
+                      "province_lon": {
+                        "value": 11.4038717
+                      },
+                      "rate_sub": {
+                        "value": 0.0
+                      },
+                      "rate_sub_year": {
+                        "value": 0.0
+                      },
+                      "root_geo_dist": {
+                        "value": 6739.83024185
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "Biosample Accession": "NA",
+                        "Blank": " ",
+                        "Branch Length": 2.347e-07,
+                        "Branch Length Sub": 1.0,
+                        "Branch Length Time": 0.0,
+                        "Branch Minor": "NA",
+                        "Branch Number": "NA",
+                        "Branch Support": 98.0,
+                        "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
+                        "Continent": "Europe",
+                        "Continent Conf Category": "HIGH",
+                        "Continent Confidence": 1.0,
+                        "Continent Raw": "NA",
+                        "Country": "Germany",
+                        "Country Conf Category": "HIGH",
+                        "Country Confidence": 1.0,
+                        "Country Date Strain": "NA",
+                        "Country Lat": 51.0834196,
+                        "Country Lon": 10.4234469,
+                        "Country Raw": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Err": "NA",
+                        "Date Mean": "NA",
+                        "Host Human": "NA",
+                        "Host Order": "Human",
+                        "Host Order Conf Category": "HIGH",
+                        "Host Order Confidence": 1.0,
+                        "Host Order Raw": "NA",
+                        "Node Name": "NODE155",
+                        "Node Type": "internal",
+                        "Num Date": 402.0,
+                        "Num Date Confidence": [
+                          346.0,
+                          437.0
+                        ],
+                        "Population": "0.ANT4",
+                        "Population Conf Category": "HIGH",
+                        "Population Confidence": 1.0,
+                        "Population Geo Dist": 4889.76390523,
+                        "Population Raw": "NA",
+                        "Population Rtt Dist": "NA",
+                        "Province": "Bavaria",
+                        "Province Conf Category": "HIGH",
+                        "Province Confidence": 1.0,
+                        "Province Date Strain": "NA",
+                        "Province Lat": 48.9467562,
+                        "Province Lon": 11.4038717,
+                        "Province Raw": "NA",
+                        "Rate Sub": 0.0,
+                        "Rate Sub Year": 0.0,
+                        "Root Geo Dist": 6739.83024185,
+                        "Root Rtt Dist": "NA",
+                        "Strain": "NA"
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMEA4354665",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMEA4354665"
+                          },
+                          "branch_length_sub": {
+                            "value": 0.0
+                          },
+                          "branch_length_time": {
+                            "value": 25.0
+                          },
+                          "branch_minor": {
+                            "value": "0.ANT4"
+                          },
+                          "branch_number": {
+                            "value": "0.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "value": "Europe"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "continent_raw": {
+                            "value": "Europe"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Germany": 1.0
+                            },
+                            "value": "Germany"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_date_strain": {
+                            "value": "Germany (426:571) AE1175"
+                          },
+                          "country_lat": {
+                            "value": 51.0834196
+                          },
+                          "country_lon": {
+                            "value": 10.4234469
+                          },
+                          "country_raw": {
+                            "value": "Germany"
+                          },
+                          "date_bp_mean": {
+                            "value": 1522.5
+                          },
+                          "date_err": {
+                            "value": 72.5
+                          },
+                          "date_mean": {
+                            "value": 498.5
+                          },
+                          "div": 1.1925e-05,
+                          "host_human": {
+                            "value": "Human"
+                          },
+                          "host_order": {
+                            "confidence": {
+                              "Human": 1.0
+                            },
+                            "value": "Human"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "host_order_raw": {
+                            "value": "Human"
+                          },
+                          "node_name": {
+                            "value": "SAMEA4354665"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              426.0,
+                              491.0
+                            ],
+                            "value": 426.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "0.ANT4": 1.0
+                            },
+                            "value": "0.ANT4"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 4889.76390523
+                          },
+                          "population_raw": {
+                            "value": "0.ANT4"
+                          },
+                          "population_rtt_dist": {
+                            "value": 1.1925e-05
+                          },
+                          "province": {
+                            "confidence": {
+                              "Bavaria": 1.0
+                            },
+                            "value": "Bavaria"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_date_strain": {
+                            "value": "Germany (426:571) AE1175"
+                          },
+                          "province_lat": {
+                            "value": 48.9467562
+                          },
+                          "province_lon": {
+                            "value": 11.4038717
+                          },
+                          "province_raw": {
+                            "value": "Bavaria"
+                          },
+                          "rate_sub": {
+                            "value": 9.524542923264606e-10
+                          },
+                          "rate_sub_year": {
+                            "value": 0.004042998934061791
+                          },
+                          "root_geo_dist": {
+                            "value": 6739.83024185
+                          },
+                          "root_rtt_dist": {
+                            "value": 5.73397e-05
+                          },
+                          "strain": {
+                            "value": "AE1175"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "Biosample Accession": "NA",
+                            "Blank": " ",
+                            "Branch Length": 2.35e-08,
+                            "Branch Length Sub": 0.0,
+                            "Branch Length Time": 0.0,
+                            "Branch Minor": "NA",
+                            "Branch Number": "NA",
+                            "Branch Support": 56.0,
+                            "Branch Support Conf Category": "LOW",
+                            "Branch Support Conf Char": "",
+                            "Continent": "Europe",
+                            "Continent Conf Category": "HIGH",
+                            "Continent Confidence": 1.0,
+                            "Continent Raw": "NA",
+                            "Country": "Germany",
+                            "Country Conf Category": "HIGH",
+                            "Country Confidence": 1.0,
+                            "Country Date Strain": "NA",
+                            "Country Lat": 51.0834196,
+                            "Country Lon": 10.4234469,
+                            "Country Raw": "NA",
+                            "Date Bp Mean": "NA",
+                            "Date Err": "NA",
+                            "Date Mean": "NA",
+                            "Host Human": "NA",
+                            "Host Order": "Human",
+                            "Host Order Conf Category": "HIGH",
+                            "Host Order Confidence": 1.0,
+                            "Host Order Raw": "NA",
+                            "Node Name": "NODE156",
+                            "Node Type": "internal",
+                            "Num Date": 402.0,
+                            "Num Date Confidence": [
+                              346.0,
+                              437.0
+                            ],
+                            "Population": "0.ANT4",
+                            "Population Conf Category": "HIGH",
+                            "Population Confidence": 1.0,
+                            "Population Geo Dist": 4889.76390523,
+                            "Population Raw": "NA",
+                            "Population Rtt Dist": "NA",
+                            "Province": "Bavaria",
+                            "Province Conf Category": "HIGH",
+                            "Province Confidence": 1.0,
+                            "Province Date Strain": "NA",
+                            "Province Lat": 48.9467562,
+                            "Province Lon": 11.4038717,
+                            "Province Raw": "NA",
+                            "Rate Sub": 0.0,
+                            "Rate Sub Year": 0.0,
+                            "Root Geo Dist": 6739.83024185,
+                            "Root Rtt Dist": "NA",
+                            "Strain": "NA"
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {},
+                            "name": "SAMEA5661389",
+                            "node_attrs": {
+                              "biosample_accession": {
+                                "value": "SAMEA5661389"
+                              },
+                              "branch_length_sub": {
+                                "value": 0.0
+                              },
+                              "branch_length_time": {
+                                "value": 32.0
+                              },
+                              "branch_minor": {
+                                "value": "0.ANT4"
+                              },
+                              "branch_number": {
+                                "value": "0.0"
+                              },
+                              "branch_support": {
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "continent": {
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "value": "Europe"
+                              },
+                              "continent_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "continent_raw": {
+                                "value": "Europe"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Germany": 1.0
+                                },
+                                "value": "Germany"
+                              },
+                              "country_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "country_date_strain": {
+                                "value": "Germany (433:599) UNT003"
+                              },
+                              "country_lat": {
+                                "value": 51.0834196
+                              },
+                              "country_lon": {
+                                "value": 10.4234469
+                              },
+                              "country_raw": {
+                                "value": "Germany"
+                              },
+                              "date_bp_mean": {
+                                "value": 1505.0
+                              },
+                              "date_err": {
+                                "value": 83.0
+                              },
+                              "date_mean": {
+                                "value": 516.0
+                              },
+                              "div": 1.1948500000000001e-05,
+                              "host_human": {
+                                "value": "Human"
+                              },
+                              "host_order": {
+                                "confidence": {
+                                  "Human": 1.0
+                                },
+                                "value": "Human"
+                              },
+                              "host_order_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "host_order_raw": {
+                                "value": "Human"
+                              },
+                              "node_name": {
+                                "value": "SAMEA5661389"
+                              },
+                              "node_type": {
+                                "value": "terminal"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  433.0,
+                                  484.0
+                                ],
+                                "value": 433.0
+                              },
+                              "population": {
+                                "confidence": {
+                                  "0.ANT4": 1.0
+                                },
+                                "value": "0.ANT4"
+                              },
+                              "population_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "population_geo_dist": {
+                                "value": 4889.76390523
+                              },
+                              "population_raw": {
+                                "value": "0.ANT4"
+                              },
+                              "population_rtt_dist": {
+                                "value": 1.19485e-05
+                              },
+                              "province": {
+                                "confidence": {
+                                  "Bavaria": 1.0
+                                },
+                                "value": "Bavaria"
+                              },
+                              "province_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "province_date_strain": {
+                                "value": "Germany (433:599) UNT003"
+                              },
+                              "province_lat": {
+                                "value": 48.9467562
+                              },
+                              "province_lon": {
+                                "value": 11.4038717
+                              },
+                              "province_raw": {
+                                "value": "Bavaria"
+                              },
+                              "rate_sub": {
+                                "value": 7.419545292377443e-10
+                              },
+                              "rate_sub_year": {
+                                "value": 0.00314946490870802
+                              },
+                              "root_geo_dist": {
+                                "value": 6739.83024185
+                              },
+                              "root_rtt_dist": {
+                                "value": 5.73632e-05
+                              },
+                              "strain": {
+                                "value": "UNT003"
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "Biosample Accession": "NA",
+                                "Blank": " ",
+                                "Branch Length": 5.21e-08,
+                                "Branch Length Sub": 0.0,
+                                "Branch Length Time": 0.0,
+                                "Branch Minor": "NA",
+                                "Branch Number": "NA",
+                                "Branch Support": 56.0,
+                                "Branch Support Conf Category": "LOW",
+                                "Branch Support Conf Char": "",
+                                "Continent": "Europe",
+                                "Continent Conf Category": "HIGH",
+                                "Continent Confidence": 1.0,
+                                "Continent Raw": "NA",
+                                "Country": "Germany",
+                                "Country Conf Category": "HIGH",
+                                "Country Confidence": 1.0,
+                                "Country Date Strain": "NA",
+                                "Country Lat": 51.0834196,
+                                "Country Lon": 10.4234469,
+                                "Country Raw": "NA",
+                                "Date Bp Mean": "NA",
+                                "Date Err": "NA",
+                                "Date Mean": "NA",
+                                "Host Human": "NA",
+                                "Host Order": "Human",
+                                "Host Order Conf Category": "HIGH",
+                                "Host Order Confidence": 1.0,
+                                "Host Order Raw": "NA",
+                                "Node Name": "NODE157",
+                                "Node Type": "internal",
+                                "Num Date": 402.0,
+                                "Num Date Confidence": [
+                                  346.0,
+                                  437.0
+                                ],
+                                "Population": "0.ANT4",
+                                "Population Conf Category": "HIGH",
+                                "Population Confidence": 1.0,
+                                "Population Geo Dist": 4889.76390523,
+                                "Population Raw": "NA",
+                                "Population Rtt Dist": "NA",
+                                "Province": "Bavaria",
+                                "Province Conf Category": "HIGH",
+                                "Province Confidence": 1.0,
+                                "Province Date Strain": "NA",
+                                "Province Lat": 48.9467562,
+                                "Province Lon": 11.4038717,
+                                "Province Raw": "NA",
+                                "Rate Sub": 0.0,
+                                "Rate Sub Year": 0.0,
+                                "Root Geo Dist": 6739.83024185,
+                                "Root Rtt Dist": "NA",
+                                "Strain": "NA"
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {},
+                                "name": "SAMEA5661360",
+                                "node_attrs": {
+                                  "biosample_accession": {
+                                    "value": "SAMEA5661360"
+                                  },
+                                  "branch_length_sub": {
+                                    "value": 3.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 61.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "0.ANT4"
+                                  },
+                                  "branch_number": {
+                                    "value": "0.0"
+                                  },
+                                  "branch_support": {
+                                    "value": 0.0
+                                  },
+                                  "branch_support_conf_category": {
+                                    "value": "LOW"
+                                  },
+                                  "continent": {
+                                    "confidence": {
+                                      "Europe": 1.0
+                                    },
+                                    "value": "Europe"
+                                  },
+                                  "continent_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "continent_raw": {
+                                    "value": "Europe"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Germany": 1.0
+                                    },
+                                    "value": "Germany"
+                                  },
+                                  "country_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "country_date_strain": {
+                                    "value": "Germany (428:595) DIT003"
+                                  },
+                                  "country_lat": {
+                                    "value": 51.0834196
+                                  },
+                                  "country_lon": {
+                                    "value": 10.4234469
+                                  },
+                                  "country_raw": {
+                                    "value": "Germany"
+                                  },
+                                  "date_bp_mean": {
+                                    "value": 1509.5
+                                  },
+                                  "date_err": {
+                                    "value": 83.5
+                                  },
+                                  "date_mean": {
+                                    "value": 511.5
+                                  },
+                                  "div": 1.2681200000000002e-05,
+                                  "host_human": {
+                                    "value": "Human"
+                                  },
+                                  "host_order": {
+                                    "confidence": {
+                                      "Human": 1.0
+                                    },
+                                    "value": "Human"
+                                  },
+                                  "host_order_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "host_order_raw": {
+                                    "value": "Human"
+                                  },
+                                  "node_name": {
+                                    "value": "SAMEA5661360"
+                                  },
+                                  "node_type": {
+                                    "value": "terminal"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      428.0,
+                                      563.0
+                                    ],
+                                    "value": 463.0
+                                  },
+                                  "population": {
+                                    "confidence": {
+                                      "0.ANT4": 1.0
+                                    },
+                                    "value": "0.ANT4"
+                                  },
+                                  "population_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "population_geo_dist": {
+                                    "value": 4889.76390523
+                                  },
+                                  "population_raw": {
+                                    "value": "0.ANT4"
+                                  },
+                                  "population_rtt_dist": {
+                                    "value": 1.2681200000000003e-05
+                                  },
+                                  "province": {
+                                    "confidence": {
+                                      "Bavaria": 1.0
+                                    },
+                                    "value": "Bavaria"
+                                  },
+                                  "province_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "province_date_strain": {
+                                    "value": "Germany (428:595) DIT003"
+                                  },
+                                  "province_lat": {
+                                    "value": 48.9467562
+                                  },
+                                  "province_lon": {
+                                    "value": 11.4038717
+                                  },
+                                  "province_raw": {
+                                    "value": "Bavaria"
+                                  },
+                                  "rate_sub": {
+                                    "value": 1.1451797058737422e-08
+                                  },
+                                  "rate_sub_year": {
+                                    "value": 0.048610840094463904
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 6739.83024185
+                                  },
+                                  "root_rtt_dist": {
+                                    "value": 5.80959e-05
+                                  },
+                                  "strain": {
+                                    "value": "DIT003"
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {},
+                                "name": "SAMEA5661390",
+                                "node_attrs": {
+                                  "biosample_accession": {
+                                    "value": "SAMEA5661390"
+                                  },
+                                  "branch_length_sub": {
+                                    "value": 16.0
+                                  },
+                                  "branch_length_time": {
+                                    "value": 136.0
+                                  },
+                                  "branch_minor": {
+                                    "value": "0.ANT4"
+                                  },
+                                  "branch_number": {
+                                    "value": "0.0"
+                                  },
+                                  "branch_support": {
+                                    "value": 0.0
+                                  },
+                                  "branch_support_conf_category": {
+                                    "value": "LOW"
+                                  },
+                                  "continent": {
+                                    "confidence": {
+                                      "Europe": 1.0
+                                    },
+                                    "value": "Europe"
+                                  },
+                                  "continent_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "continent_raw": {
+                                    "value": "Europe"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Germany": 1.0
+                                    },
+                                    "value": "Germany"
+                                  },
+                                  "country_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "country_date_strain": {
+                                    "value": "Germany (419:537) UNT004"
+                                  },
+                                  "country_lat": {
+                                    "value": 51.0834196
+                                  },
+                                  "country_lon": {
+                                    "value": 10.4234469
+                                  },
+                                  "country_raw": {
+                                    "value": "Germany"
+                                  },
+                                  "date_bp_mean": {
+                                    "value": 1543.0
+                                  },
+                                  "date_err": {
+                                    "value": 59.0
+                                  },
+                                  "date_mean": {
+                                    "value": 478.0
+                                  },
+                                  "div": 1.57747e-05,
+                                  "host_human": {
+                                    "value": "Human"
+                                  },
+                                  "host_order": {
+                                    "confidence": {
+                                      "Human": 1.0
+                                    },
+                                    "value": "Human"
+                                  },
+                                  "host_order_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "host_order_raw": {
+                                    "value": "Human"
+                                  },
+                                  "node_name": {
+                                    "value": "SAMEA5661390"
+                                  },
+                                  "node_type": {
+                                    "value": "terminal"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      430.0,
+                                      537.0
+                                    ],
+                                    "value": 537.0
+                                  },
+                                  "population": {
+                                    "confidence": {
+                                      "0.ANT4": 1.0
+                                    },
+                                    "value": "0.ANT4"
+                                  },
+                                  "population_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "population_geo_dist": {
+                                    "value": 4889.76390523
+                                  },
+                                  "population_raw": {
+                                    "value": "0.ANT4"
+                                  },
+                                  "population_rtt_dist": {
+                                    "value": 1.57747e-05
+                                  },
+                                  "province": {
+                                    "confidence": {
+                                      "Bavaria": 1.0
+                                    },
+                                    "value": "Bavaria"
+                                  },
+                                  "province_conf_category": {
+                                    "value": "HIGH"
+                                  },
+                                  "province_date_strain": {
+                                    "value": "Germany (419:537) UNT004"
+                                  },
+                                  "province_lat": {
+                                    "value": 48.9467562
+                                  },
+                                  "province_lon": {
+                                    "value": 11.4038717
+                                  },
+                                  "province_raw": {
+                                    "value": "Bavaria"
+                                  },
+                                  "rate_sub": {
+                                    "value": 2.7990830894872228e-08
+                                  },
+                                  "rate_sub_year": {
+                                    "value": 0.11881609478083333
+                                  },
+                                  "root_geo_dist": {
+                                    "value": 6739.83024185
+                                  },
+                                  "root_rtt_dist": {
+                                    "value": 6.11894e-05
+                                  },
+                                  "strain": {
+                                    "value": "UNT004"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE157",
+                            "node_attrs": {
+                              "branch_length_sub": {
+                                "value": 0.0
+                              },
+                              "branch_length_time": {
+                                "value": 0.0
+                              },
+                              "branch_support": {
+                                "value": 56.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "continent": {
+                                "confidence": {
+                                  "Europe": 1.0
+                                },
+                                "value": "Europe"
+                              },
+                              "continent_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Germany": 1.0
+                                },
+                                "value": "Germany"
+                              },
+                              "country_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "country_lat": {
+                                "value": 51.0834196
+                              },
+                              "country_lon": {
+                                "value": 10.4234469
+                              },
+                              "div": 1.1977100000000001e-05,
+                              "host_order": {
+                                "confidence": {
+                                  "Human": 1.0
+                                },
+                                "value": "Human"
+                              },
+                              "host_order_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "node_name": {
+                                "value": "NODE157"
+                              },
+                              "node_type": {
+                                "value": "internal"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  346.0,
+                                  437.0
+                                ],
+                                "value": 402.0
+                              },
+                              "population": {
+                                "confidence": {
+                                  "0.ANT4": 1.0
+                                },
+                                "value": "0.ANT4"
+                              },
+                              "population_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "population_geo_dist": {
+                                "value": 4889.76390523
+                              },
+                              "province": {
+                                "confidence": {
+                                  "Bavaria": 1.0
+                                },
+                                "value": "Bavaria"
+                              },
+                              "province_conf_category": {
+                                "value": "HIGH"
+                              },
+                              "province_lat": {
+                                "value": 48.9467562
+                              },
+                              "province_lon": {
+                                "value": 11.4038717
+                              },
+                              "rate_sub": {
+                                "value": 0.0
+                              },
+                              "rate_sub_year": {
+                                "value": 0.0
+                              },
+                              "root_geo_dist": {
+                                "value": 6739.83024185
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE156",
+                        "node_attrs": {
+                          "branch_length_sub": {
+                            "value": 0.0
+                          },
+                          "branch_length_time": {
+                            "value": 0.0
+                          },
+                          "branch_support": {
+                            "value": 56.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent": {
+                            "confidence": {
+                              "Europe": 1.0
+                            },
+                            "value": "Europe"
+                          },
+                          "continent_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Germany": 1.0
+                            },
+                            "value": "Germany"
+                          },
+                          "country_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "country_lat": {
+                            "value": 51.0834196
+                          },
+                          "country_lon": {
+                            "value": 10.4234469
+                          },
+                          "div": 1.1925e-05,
+                          "host_order": {
+                            "confidence": {
+                              "Human": 1.0
+                            },
+                            "value": "Human"
+                          },
+                          "host_order_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "node_name": {
+                            "value": "NODE156"
+                          },
+                          "node_type": {
+                            "value": "internal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              346.0,
+                              437.0
+                            ],
+                            "value": 402.0
+                          },
+                          "population": {
+                            "confidence": {
+                              "0.ANT4": 1.0
+                            },
+                            "value": "0.ANT4"
+                          },
+                          "population_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "population_geo_dist": {
+                            "value": 4889.76390523
+                          },
+                          "province": {
+                            "confidence": {
+                              "Bavaria": 1.0
+                            },
+                            "value": "Bavaria"
+                          },
+                          "province_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "province_lat": {
+                            "value": 48.9467562
+                          },
+                          "province_lon": {
+                            "value": 11.4038717
+                          },
+                          "rate_sub": {
+                            "value": 0.0
+                          },
+                          "rate_sub_year": {
+                            "value": 0.0
+                          },
+                          "root_geo_dist": {
+                            "value": 6739.83024185
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE155",
+                    "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 1.0
+                      },
+                      "branch_length_time": {
+                        "value": 0.0
+                      },
+                      "branch_support": {
+                        "value": 98.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_support_conf_char": {
+                        "value": "*"
+                      },
+                      "continent": {
+                        "confidence": {
+                          "Europe": 1.0
+                        },
+                        "value": "Europe"
+                      },
+                      "continent_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country": {
+                        "confidence": {
+                          "Germany": 1.0
+                        },
+                        "value": "Germany"
+                      },
+                      "country_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "country_lat": {
+                        "value": 51.0834196
+                      },
+                      "country_lon": {
+                        "value": 10.4234469
+                      },
+                      "div": 1.19015e-05,
+                      "host_order": {
+                        "confidence": {
+                          "Human": 1.0
+                        },
+                        "value": "Human"
+                      },
+                      "host_order_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "node_name": {
+                        "value": "NODE155"
+                      },
+                      "node_type": {
+                        "value": "internal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          346.0,
+                          437.0
+                        ],
+                        "value": 402.0
+                      },
+                      "population": {
+                        "confidence": {
+                          "0.ANT4": 1.0
+                        },
+                        "value": "0.ANT4"
+                      },
+                      "population_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "population_geo_dist": {
+                        "value": 4889.76390523
+                      },
+                      "province": {
+                        "confidence": {
+                          "Bavaria": 1.0
+                        },
+                        "value": "Bavaria"
+                      },
+                      "province_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "province_lat": {
+                        "value": 48.9467562
+                      },
+                      "province_lon": {
+                        "value": 11.4038717
+                      },
+                      "rate_sub": {
+                        "value": 0.0
+                      },
+                      "rate_sub_year": {
+                        "value": 0.0
+                      },
+                      "root_geo_dist": {
+                        "value": 6739.83024185
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE152",
+                "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 2.0
+                  },
+                  "branch_length_time": {
+                    "value": 0.0
+                  },
+                  "branch_support": {
+                    "value": 99.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
+                  },
+                  "continent": {
+                    "confidence": {
+                      "Europe": 1.0
+                    },
+                    "value": "Europe"
+                  },
+                  "continent_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Germany": 0.99
+                    },
+                    "value": "Germany"
+                  },
+                  "country_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "country_lat": {
+                    "value": 51.0834196
+                  },
+                  "country_lon": {
+                    "value": 10.4234469
+                  },
+                  "div": 1.16668e-05,
+                  "host_order": {
+                    "confidence": {
+                      "Human": 1.0
+                    },
+                    "value": "Human"
+                  },
+                  "host_order_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "node_name": {
+                    "value": "NODE152"
+                  },
+                  "node_type": {
+                    "value": "internal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      346.0,
+                      437.0
+                    ],
+                    "value": 402.0
+                  },
+                  "population": {
+                    "confidence": {
+                      "0.ANT4": 1.0
+                    },
+                    "value": "0.ANT4"
+                  },
+                  "population_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "population_geo_dist": {
+                    "value": 4889.76390523
+                  },
+                  "province": {
+                    "confidence": {
+                      "Bavaria": 0.99
+                    },
+                    "value": "Bavaria"
+                  },
+                  "province_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "province_lat": {
+                    "value": 48.9467562
+                  },
+                  "province_lon": {
+                    "value": 11.4038717
+                  },
+                  "rate_sub": {
+                    "value": 0.0
+                  },
+                  "rate_sub_year": {
+                    "value": 0.0
+                  },
+                  "root_geo_dist": {
+                    "value": 6739.83024185
+                  }
+                }
+              }
+            ],
+            "name": "NODE151",
+            "node_attrs": {
+              "branch_length_sub": {
+                "value": 2.0
+              },
+              "branch_length_time": {
+                "value": 0.0
+              },
+              "branch_support": {
+                "value": 100.0
+              },
+              "branch_support_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_support_conf_char": {
+                "value": "*"
+              },
+              "continent": {
+                "confidence": {
+                  "Europe": 1.0
+                },
+                "value": "Europe"
+              },
+              "continent_conf_category": {
+                "value": "HIGH"
+              },
+              "country": {
+                "confidence": {
+                  "Germany": 0.5
+                },
+                "value": "Germany"
+              },
+              "country_conf_category": {
+                "value": "LOW"
+              },
+              "country_lat": {
+                "value": 51.0834196
+              },
+              "country_lon": {
+                "value": 10.4234469
+              },
+              "div": 1.1196699999999999e-05,
+              "host_order": {
+                "confidence": {
+                  "Human": 1.0
+                },
+                "value": "Human"
+              },
+              "host_order_conf_category": {
+                "value": "HIGH"
+              },
+              "node_name": {
+                "value": "NODE151"
+              },
+              "node_type": {
+                "value": "internal"
+              },
+              "num_date": {
+                "confidence": [
+                  346.0,
+                  437.0
+                ],
+                "value": 402.0
+              },
+              "population": {
+                "confidence": {
+                  "0.ANT4": 1.0
+                },
+                "value": "0.ANT4"
+              },
+              "population_conf_category": {
+                "value": "HIGH"
+              },
+              "population_geo_dist": {
+                "value": 4889.76390523
+              },
+              "province": {
+                "confidence": {
+                  "Bavaria": 0.41
+                },
+                "value": "Bavaria"
+              },
+              "province_conf_category": {
+                "value": "LOW"
+              },
+              "province_lat": {
+                "value": 48.9467562
+              },
+              "province_lon": {
+                "value": 11.4038717
+              },
+              "rate_sub": {
+                "value": 0.0
+              },
+              "rate_sub_year": {
+                "value": 0.0
+              },
+              "root_geo_dist": {
+                "value": 6739.83024185
+              }
+            }
+          }
+        ],
+        "name": "NODE148",
+        "node_attrs": {
+          "branch_length_sub": {
+            "value": 45.0
+          },
+          "branch_length_time": {
+            "value": 451.0
+          },
+          "branch_support": {
+            "value": 100.0
+          },
+          "branch_support_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
+          "continent": {
+            "confidence": {
+              "Europe": 0.98
+            },
+            "value": "Europe"
+          },
+          "continent_conf_category": {
+            "value": "HIGH"
+          },
+          "country": {
+            "confidence": {
+              "England": 0.45
+            },
+            "value": "England"
+          },
+          "country_conf_category": {
+            "value": "LOW"
+          },
+          "country_lat": {
+            "value": 52.5310214
+          },
+          "country_lon": {
+            "value": -1.2649062
+          },
+          "div": 1.07134e-05,
+          "host_order": {
+            "confidence": {
+              "Human": 1.0
+            },
+            "value": "Human"
+          },
+          "host_order_conf_category": {
+            "value": "HIGH"
+          },
+          "node_name": {
+            "value": "NODE148"
+          },
+          "node_type": {
+            "value": "internal"
+          },
+          "num_date": {
+            "confidence": [
+              346.0,
+              437.0
+            ],
+            "value": 402.0
+          },
+          "population": {
+            "confidence": {
+              "0.ANT4": 1.0
+            },
+            "value": "0.ANT4"
+          },
+          "population_conf_category": {
+            "value": "HIGH"
+          },
+          "population_geo_dist": {
+            "value": 5613.55839991
+          },
+          "province": {
+            "confidence": {
+              "East of England": 0.42
+            },
+            "value": "East of England"
+          },
+          "province_conf_category": {
+            "value": "LOW"
+          },
+          "province_lat": {
+            "value": 52.2199774
+          },
+          "province_lon": {
+            "value": 0.4875777469166293
+          },
+          "rate_sub": {
+            "value": 2.3753766471035588e-08
+          },
+          "rate_sub_year": {
+            "value": 0.10083051049911422
+          },
+          "root_geo_dist": {
+            "value": 7402.75784548
+          }
+        }
+      }
+    ],
+    "name": "NODE147",
+    "node_attrs": {
+      "branch_length_sub": {
+        "value": 5.0
+      },
+      "branch_length_time": {
+        "value": 0.0
+      },
+      "branch_support": {
+        "value": 99.0
+      },
+      "branch_support_conf_category": {
+        "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
+      },
+      "continent": {
+        "confidence": {
+          "Asia": 0.98
+        },
+        "value": "Asia"
+      },
+      "continent_conf_category": {
+        "value": "HIGH"
+      },
+      "country": {
+        "confidence": {
+          "Kyrgyzstan": 0.73
+        },
+        "value": "Kyrgyzstan"
+      },
+      "country_conf_category": {
+        "value": "LOW"
+      },
+      "country_lat": {
+        "value": 41.5089324
+      },
+      "country_lon": {
+        "value": 74.724091
+      },
+      "div": 0,
+      "host_order": {
+        "confidence": {
+          "Human": 0.96
+        },
+        "value": "Human"
+      },
+      "host_order_conf_category": {
+        "value": "HIGH"
+      },
+      "node_name": {
+        "value": "NODE147"
+      },
+      "node_type": {
+        "value": "internal"
+      },
+      "num_date": {
+        "confidence": [
+          -210.0,
+          115.0
+        ],
+        "value": -49.0
+      },
+      "population": {
+        "confidence": {
+          "0.ANT4": 1.0
+        },
+        "value": "0.ANT4"
+      },
+      "population_conf_category": {
+        "value": "HIGH"
+      },
+      "population_geo_dist": {
+        "value": 0.0
+      },
+      "province": {
+        "confidence": {
+          "Issyk-Kul Region": 0.72
+        },
+        "value": "Issyk-Kul Region"
+      },
+      "province_conf_category": {
+        "value": "LOW"
+      },
+      "province_lat": {
+        "value": 42.06103415
+      },
+      "province_lon": {
+        "value": 78.17073232346421
+      },
+      "rate_sub": {
+        "value": 0.0
+      },
+      "rate_sub_year": {
+        "value": 0.0
+      },
+      "root_geo_dist": {
+        "value": 1962.73083716
+      }
+    }
+  },
+  "version": "v2"
+}
