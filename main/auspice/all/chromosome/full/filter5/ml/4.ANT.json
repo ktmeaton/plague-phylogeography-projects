@@ -280,12 +280,6 @@
       },
       {
         "key": "population_raw",
-        "scale": [
-          [
-            "4.ANT",
-            "#68fcc1"
-          ]
-        ],
         "title": "Population",
         "type": "categorical"
       },
@@ -402,77 +396,12 @@
         "type": "categorical"
       },
       {
-        "key": "branch_support_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#68fcc1"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
+        "key": "tstv",
+        "title": "TsTv",
+        "type": "continuous"
       },
       {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#68fcc1"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "country_date_strain",
-        "title": "Country Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "node_type",
-        "scale": [
-          [
-            "internal",
-            "#FFFFFF"
-          ],
-          [
-            "terminal",
-            "#68fcc1"
-          ]
-        ],
-        "title": "Node Type",
-        "type": "categorical"
-      },
-      {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
-        "key": "continent_raw",
-        "scale": [
-          [
-            "Europe",
-            "#8000ff"
-          ],
-          [
-            "Asia",
-            "#00b4ec"
-          ]
-        ],
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "country",
+        "key": "country_raw",
         "scale": [
           [
             "Russia",
@@ -483,17 +412,7 @@
             "#149df1"
           ]
         ],
-        "title": "Country (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "host_human",
+        "title": "Country",
         "type": "categorical"
       },
       {
@@ -516,8 +435,63 @@
         "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "tstv",
+        "title": "TsTv",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#68fcc1"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#68fcc1"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
         "type": "continuous"
       },
       {
@@ -526,9 +500,243 @@
         "type": "categorical"
       },
       {
+        "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#68fcc1"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "other_var_ratio",
+        "title": "other_var_ratio",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "Mongolia",
+            "#149df1"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "province_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#68fcc1"
+          ]
+        ],
+        "title": "Province Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#68fcc1"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
         "key": "date_bp_mean",
         "title": "Collection Date (Years BP)",
         "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "4.ANT",
+            "#68fcc1"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "NA",
+            "#3f62fa"
+          ],
+          [
+            "Altai Republic",
+            "#1f8ff4"
+          ],
+          [
+            "Bayan-\u00d6lgii",
+            "#0da6ef"
+          ],
+          [
+            "Tuva Republic",
+            "#2fe0db"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#68fcc1"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "ns_ss_ratio",
+        "title": "ns_ss_ratio",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
       },
       {
         "key": "host_order",
@@ -554,104 +762,8 @@
         "type": "categorical"
       },
       {
-        "key": "population_geo_dist",
-        "title": "population_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "population_raw",
-        "scale": [
-          [
-            "4.ANT",
-            "#68fcc1"
-          ]
-        ],
-        "title": "Population",
-        "type": "categorical"
-      },
-      {
-        "key": "country_raw",
-        "scale": [
-          [
-            "Russia",
-            "#8000ff"
-          ],
-          [
-            "Mongolia",
-            "#149df1"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
-        "type": "categorical"
-      },
-      {
-        "key": "host_order_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#68fcc1"
-          ]
-        ],
-        "title": "Host Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_minor",
-        "title": "Branch Minor",
-        "type": "categorical"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#68fcc1"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "continent_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#68fcc1"
-          ]
-        ],
-        "title": "Continent Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "population_rtt_dist",
-        "title": "Population Root Distance",
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
         "type": "continuous"
       },
       {
@@ -660,103 +772,9 @@
         "type": "continuous"
       },
       {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
         "type": "continuous"
-      },
-      {
-        "key": "continent",
-        "scale": [
-          [
-            "Europe",
-            "#8000ff"
-          ],
-          [
-            "Asia",
-            "#00b4ec"
-          ]
-        ],
-        "title": "Continent (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "province_raw",
-        "scale": [
-          [
-            "NA",
-            "#3f62fa"
-          ],
-          [
-            "Altai Republic",
-            "#1f8ff4"
-          ],
-          [
-            "Bayan-\u00d6lgii",
-            "#0da6ef"
-          ],
-          [
-            "Tuva Republic",
-            "#2fe0db"
-          ]
-        ],
-        "title": "Province",
-        "type": "categorical"
-      },
-      {
-        "key": "blank",
-        "title": "Blank",
-        "type": "categorical"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
-        "type": "continuous"
-      },
-      {
-        "key": "root_geo_dist",
-        "title": "root_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "population",
-        "scale": [
-          [
-            "4.ANT",
-            "#68fcc1"
-          ]
-        ],
-        "title": "Population (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
       },
       {
         "key": "population_conf_category",
@@ -772,11 +790,6 @@
         ],
         "title": "Population Confidence",
         "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
       },
       {
         "key": "host_order_raw",
@@ -804,11 +817,6 @@
         ],
         "title": "Host",
         "type": "categorical"
-      },
-      {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
       }
     ],
     "display_defaults": {
@@ -832,7 +840,7 @@
       {
         "demes": {
           "Mongolia": {
-            "latitude": 46.8250388,
+            "latitude": 46.825038799999994,
             "longitude": 103.8499736
           },
           "Russia": {
@@ -853,7 +861,7 @@
             "longitude": 89.8549358
           },
           "Tuva Republic": {
-            "latitude": 51.4017149,
+            "latitude": 51.401714899999995,
             "longitude": 93.8582593
           }
         },
@@ -873,7 +881,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-08-19"
+    "updated": "2021-08-27"
   },
   "tree": {
     "branch_attrs": {
@@ -909,11 +917,13 @@
         "Host Order Raw": "NA",
         "Node Name": "NODE223",
         "Node Type": "internal",
+        "Ns Ss Ratio": "NA",
         "Num Date": 1651.0,
         "Num Date Confidence": [
           1543.0,
           1759.0
         ],
+        "Other Var Ratio": "NA",
         "Population": "4.ANT",
         "Population Conf Category": "HIGH",
         "Population Confidence": 1.0,
@@ -931,7 +941,8 @@
         "Rate Sub Year": 0.05100641979048683,
         "Root Geo Dist": 3257.92765865,
         "Root Rtt Dist": "NA",
-        "Strain": "NA"
+        "Strain": "NA",
+        "Tstv": "NA"
       }
     },
     "children": [
@@ -969,11 +980,13 @@
             "Host Order Raw": "NA",
             "Node Name": "NODE222",
             "Node Type": "internal",
+            "Ns Ss Ratio": "NA",
             "Num Date": 1887.0,
             "Num Date Confidence": [
               1805.0,
               1943.0
             ],
+            "Other Var Ratio": "NA",
             "Population": "4.ANT",
             "Population Conf Category": "HIGH",
             "Population Confidence": 1.0,
@@ -984,14 +997,15 @@
             "Province Conf Category": "HIGH",
             "Province Confidence": 1.0,
             "Province Date Strain": "NA",
-            "Province Lat": 51.4017149,
+            "Province Lat": 51.401714899999995,
             "Province Lon": 93.8582593,
             "Province Raw": "NA",
             "Rate Sub": 6.73677989166053e-09,
             "Rate Sub Year": 0.028490502366261765,
             "Root Geo Dist": 3257.92765865,
             "Root Rtt Dist": "NA",
-            "Strain": "NA"
+            "Strain": "NA",
+            "Tstv": "NA"
           }
         },
         "children": [
@@ -1084,12 +1098,18 @@
               "node_type": {
                 "value": "terminal"
               },
+              "ns_ss_ratio": {
+                "value": 2.08108
+              },
               "num_date": {
                 "confidence": [
                   1987.0,
                   1987.0
                 ],
                 "value": 1987.0
+              },
+              "other_var_ratio": {
+                "value": 0.027027
               },
               "population": {
                 "confidence": {
@@ -1122,7 +1142,7 @@
                 "value": "Russia (1987.0) I-3223"
               },
               "province_lat": {
-                "value": 51.4017149
+                "value": 51.401714899999995
               },
               "province_lon": {
                 "value": 93.8582593
@@ -1144,6 +1164,9 @@
               },
               "strain": {
                 "value": "I-3223"
+              },
+              "tstv": {
+                "value": 1.719
               }
             }
           },
@@ -1236,12 +1259,18 @@
               "node_type": {
                 "value": "terminal"
               },
+              "ns_ss_ratio": {
+                "value": 2.16216
+              },
               "num_date": {
                 "confidence": [
                   1984.0,
                   1984.0
                 ],
                 "value": 1984.0
+              },
+              "other_var_ratio": {
+                "value": 0.324324
               },
               "population": {
                 "confidence": {
@@ -1274,7 +1303,7 @@
                 "value": "Russia (1984.0) I-3113"
               },
               "province_lat": {
-                "value": 51.4017149
+                "value": 51.401714899999995
               },
               "province_lon": {
                 "value": 93.8582593
@@ -1296,6 +1325,9 @@
               },
               "strain": {
                 "value": "I-3113"
+              },
+              "tstv": {
+                "value": 1.7180000000000002
               }
             }
           }
@@ -1386,7 +1418,7 @@
             "value": "HIGH"
           },
           "province_lat": {
-            "value": 51.4017149
+            "value": 51.401714899999995
           },
           "province_lon": {
             "value": 93.8582593
@@ -1436,11 +1468,13 @@
             "Host Order Raw": "NA",
             "Node Name": "NODE223",
             "Node Type": "internal",
+            "Ns Ss Ratio": "NA",
             "Num Date": 1651.0,
             "Num Date Confidence": [
               1543.0,
               1759.0
             ],
+            "Other Var Ratio": "NA",
             "Population": "4.ANT",
             "Population Conf Category": "HIGH",
             "Population Confidence": 1.0,
@@ -1458,7 +1492,8 @@
             "Rate Sub Year": 0.05100641979048683,
             "Root Geo Dist": 3257.92765865,
             "Root Rtt Dist": "NA",
-            "Strain": "NA"
+            "Strain": "NA",
+            "Tstv": "NA"
           }
         },
         "children": [
@@ -1512,7 +1547,7 @@
                 "value": "Mongolia (2002.0) MGJZ12"
               },
               "country_lat": {
-                "value": 46.8250388
+                "value": 46.825038799999994
               },
               "country_lon": {
                 "value": 103.8499736
@@ -1551,12 +1586,18 @@
               "node_type": {
                 "value": "terminal"
               },
+              "ns_ss_ratio": {
+                "value": 2.11429
+              },
               "num_date": {
                 "confidence": [
                   2002.0,
                   2002.0
                 ],
                 "value": 2002.0
+              },
+              "other_var_ratio": {
+                "value": 0.0
               },
               "population": {
                 "confidence": {
@@ -1611,6 +1652,9 @@
               },
               "strain": {
                 "value": "MGJZ12"
+              },
+              "tstv": {
+                "value": 1.618
               }
             }
           },
@@ -1648,11 +1692,13 @@
                 "Host Order Raw": "NA",
                 "Node Name": "NODE224",
                 "Node Type": "internal",
+                "Ns Ss Ratio": "NA",
                 "Num Date": 1743.0,
                 "Num Date Confidence": [
                   1657.0,
                   1825.0
                 ],
+                "Other Var Ratio": "NA",
                 "Population": "4.ANT",
                 "Population Conf Category": "HIGH",
                 "Population Confidence": 1.0,
@@ -1670,7 +1716,8 @@
                 "Rate Sub Year": 0.06499661406906332,
                 "Root Geo Dist": 3257.92765865,
                 "Root Rtt Dist": "NA",
-                "Strain": "NA"
+                "Strain": "NA",
+                "Tstv": "NA"
               }
             },
             "children": [
@@ -1708,11 +1755,13 @@
                     "Host Order Raw": "NA",
                     "Node Name": "NODE225",
                     "Node Type": "internal",
+                    "Ns Ss Ratio": "NA",
                     "Num Date": 1915.0,
                     "Num Date Confidence": [
                       1844.0,
                       1961.0
                     ],
+                    "Other Var Ratio": "NA",
                     "Population": "4.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
@@ -1723,14 +1772,15 @@
                     "Province Conf Category": "HIGH",
                     "Province Confidence": 1.0,
                     "Province Date Strain": "NA",
-                    "Province Lat": 51.4017149,
+                    "Province Lat": 51.401714899999995,
                     "Province Lon": 93.8582593,
                     "Province Raw": "NA",
                     "Rate Sub": 9.83350251438039e-09,
                     "Rate Sub Year": 0.04158684581656108,
                     "Root Geo Dist": 3257.92765865,
                     "Root Rtt Dist": "NA",
-                    "Strain": "NA"
+                    "Strain": "NA",
+                    "Tstv": "NA"
                   }
                 },
                 "children": [
@@ -1823,12 +1873,18 @@
                       "node_type": {
                         "value": "terminal"
                       },
+                      "ns_ss_ratio": {
+                        "value": 2.47059
+                      },
                       "num_date": {
                         "confidence": [
                           2012.0,
                           2012.0
                         ],
                         "value": 2012.0
+                      },
+                      "other_var_ratio": {
+                        "value": 0.0
                       },
                       "population": {
                         "confidence": {
@@ -1861,7 +1917,7 @@
                         "value": "Russia (2012.0) M-1944"
                       },
                       "province_lat": {
-                        "value": 51.4017149
+                        "value": 51.401714899999995
                       },
                       "province_lon": {
                         "value": 93.8582593
@@ -1883,6 +1939,9 @@
                       },
                       "strain": {
                         "value": "M-1944"
+                      },
+                      "tstv": {
+                        "value": 1.736
                       }
                     }
                   },
@@ -1975,12 +2034,18 @@
                       "node_type": {
                         "value": "terminal"
                       },
+                      "ns_ss_ratio": {
+                        "value": 2.175
+                      },
                       "num_date": {
                         "confidence": [
                           1977.0,
                           1977.0
                         ],
                         "value": 1977.0
+                      },
+                      "other_var_ratio": {
+                        "value": 0.275
                       },
                       "population": {
                         "confidence": {
@@ -2013,7 +2078,7 @@
                         "value": "Russia (1977.0) I-2638"
                       },
                       "province_lat": {
-                        "value": 51.4017149
+                        "value": 51.401714899999995
                       },
                       "province_lon": {
                         "value": 93.8582593
@@ -2035,6 +2100,9 @@
                       },
                       "strain": {
                         "value": "I-2638"
+                      },
+                      "tstv": {
+                        "value": 1.578
                       }
                     }
                   }
@@ -2125,7 +2193,7 @@
                     "value": "HIGH"
                   },
                   "province_lat": {
-                    "value": 51.4017149
+                    "value": 51.401714899999995
                   },
                   "province_lon": {
                     "value": 93.8582593
@@ -2175,11 +2243,13 @@
                     "Host Order Raw": "NA",
                     "Node Name": "NODE226",
                     "Node Type": "internal",
+                    "Ns Ss Ratio": "NA",
                     "Num Date": 1773.0,
                     "Num Date Confidence": [
                       1659.0,
                       1845.0
                     ],
+                    "Other Var Ratio": "NA",
                     "Population": "4.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
@@ -2197,7 +2267,8 @@
                     "Rate Sub Year": 0.15146031259548837,
                     "Root Geo Dist": 3257.92765865,
                     "Root Rtt Dist": "NA",
-                    "Strain": "NA"
+                    "Strain": "NA",
+                    "Tstv": "NA"
                   }
                 },
                 "children": [
@@ -2251,7 +2322,7 @@
                         "value": "Mongolia (1988.0) I-3244"
                       },
                       "country_lat": {
-                        "value": 46.8250388
+                        "value": 46.825038799999994
                       },
                       "country_lon": {
                         "value": 103.8499736
@@ -2290,12 +2361,18 @@
                       "node_type": {
                         "value": "terminal"
                       },
+                      "ns_ss_ratio": {
+                        "value": 1.975
+                      },
                       "num_date": {
                         "confidence": [
                           1988.0,
                           1988.0
                         ],
                         "value": 1988.0
+                      },
+                      "other_var_ratio": {
+                        "value": 0.0
                       },
                       "population": {
                         "confidence": {
@@ -2350,6 +2427,9 @@
                       },
                       "strain": {
                         "value": "I-3244"
+                      },
+                      "tstv": {
+                        "value": 1.413
                       }
                     }
                   },
@@ -2387,11 +2467,13 @@
                         "Host Order Raw": "NA",
                         "Node Name": "NODE227",
                         "Node Type": "internal",
+                        "Ns Ss Ratio": "NA",
                         "Num Date": 1941.0,
                         "Num Date Confidence": [
                           1894.0,
                           1994.0
                         ],
+                        "Other Var Ratio": "NA",
                         "Population": "4.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
@@ -2409,7 +2491,8 @@
                         "Rate Sub Year": 0.011862838084633842,
                         "Root Geo Dist": 3257.92765865,
                         "Root Rtt Dist": "NA",
-                        "Strain": "NA"
+                        "Strain": "NA",
+                        "Tstv": "NA"
                       }
                     },
                     "children": [
@@ -2502,12 +2585,18 @@
                           "node_type": {
                             "value": "terminal"
                           },
+                          "ns_ss_ratio": {
+                            "value": 1.95122
+                          },
                           "num_date": {
                             "confidence": [
                               2012.0,
                               2012.0
                             ],
                             "value": 2012.0
+                          },
+                          "other_var_ratio": {
+                            "value": 0.243902
                           },
                           "population": {
                             "confidence": {
@@ -2562,6 +2651,9 @@
                           },
                           "strain": {
                             "value": "1454"
+                          },
+                          "tstv": {
+                            "value": 2.333
                           }
                         }
                       },
@@ -2599,11 +2691,13 @@
                             "Host Order Raw": "NA",
                             "Node Name": "NODE228",
                             "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
                             "Num Date": 1974.0,
                             "Num Date Confidence": [
                               1941.0,
                               2003.0
                             ],
+                            "Other Var Ratio": "NA",
                             "Population": "4.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
@@ -2621,7 +2715,8 @@
                             "Rate Sub Year": 0.003050513870040956,
                             "Root Geo Dist": 3257.92765865,
                             "Root Rtt Dist": "NA",
-                            "Strain": "NA"
+                            "Strain": "NA",
+                            "Tstv": "NA"
                           }
                         },
                         "children": [
@@ -2714,12 +2809,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 2.05
+                              },
                               "num_date": {
                                 "confidence": [
                                   2014.0,
                                   2014.0
                                 ],
                                 "value": 2014.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.025
                               },
                               "population": {
                                 "confidence": {
@@ -2774,6 +2875,9 @@
                               },
                               "strain": {
                                 "value": "517"
+                              },
+                              "tstv": {
+                                "value": 2.015
                               }
                             }
                           },
@@ -2811,11 +2915,13 @@
                                 "Host Order Raw": "NA",
                                 "Node Name": "NODE229",
                                 "Node Type": "internal",
+                                "Ns Ss Ratio": "NA",
                                 "Num Date": 1999.0,
                                 "Num Date Confidence": [
                                   1971.0,
                                   2015.0
                                 ],
+                                "Other Var Ratio": "NA",
                                 "Population": "4.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
@@ -2833,7 +2939,8 @@
                                 "Rate Sub Year": 0.003873822514787847,
                                 "Root Geo Dist": 3257.92765865,
                                 "Root Rtt Dist": "NA",
-                                "Strain": "NA"
+                                "Strain": "NA",
+                                "Tstv": "NA"
                               }
                             },
                             "children": [
@@ -2920,12 +3027,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.0
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       2015.0,
                                       2015.0
                                     ],
                                     "value": 2015.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.0
                                   },
                                   "population": {
                                     "confidence": {
@@ -2980,6 +3093,9 @@
                                   },
                                   "strain": {
                                     "value": "337"
+                                  },
+                                  "tstv": {
+                                    "value": 1.761
                                   }
                                 }
                               },
@@ -3017,11 +3133,13 @@
                                     "Host Order Raw": "NA",
                                     "Node Name": "NODE230",
                                     "Node Type": "internal",
+                                    "Ns Ss Ratio": "NA",
                                     "Num Date": 2010.0,
                                     "Num Date Confidence": [
                                       1996.0,
                                       2015.0
                                     ],
+                                    "Other Var Ratio": "NA",
                                     "Population": "4.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
@@ -3039,7 +3157,8 @@
                                     "Rate Sub Year": 0.009735245735020142,
                                     "Root Geo Dist": 3257.92765865,
                                     "Root Rtt Dist": "NA",
-                                    "Strain": "NA"
+                                    "Strain": "NA",
+                                    "Tstv": "NA"
                                   }
                                 },
                                 "children": [
@@ -3132,12 +3251,18 @@
                                       "node_type": {
                                         "value": "terminal"
                                       },
+                                      "ns_ss_ratio": {
+                                        "value": 2.15789
+                                      },
                                       "num_date": {
                                         "confidence": [
                                           2015.0,
                                           2015.0
                                         ],
                                         "value": 2015.0
+                                      },
+                                      "other_var_ratio": {
+                                        "value": 0.0263158
                                       },
                                       "population": {
                                         "confidence": {
@@ -3192,6 +3317,9 @@
                                       },
                                       "strain": {
                                         "value": "338"
+                                      },
+                                      "tstv": {
+                                        "value": 1.831
                                       }
                                     }
                                   },
@@ -3284,12 +3412,18 @@
                                       "node_type": {
                                         "value": "terminal"
                                       },
+                                      "ns_ss_ratio": {
+                                        "value": 2.1
+                                      },
                                       "num_date": {
                                         "confidence": [
                                           2015.0,
                                           2015.0
                                         ],
                                         "value": 2015.0
+                                      },
+                                      "other_var_ratio": {
+                                        "value": 0.225
                                       },
                                       "population": {
                                         "confidence": {
@@ -3344,6 +3478,9 @@
                                       },
                                       "strain": {
                                         "value": "349"
+                                      },
+                                      "tstv": {
+                                        "value": 2.065
                                       }
                                     }
                                   }
@@ -4146,7 +4283,7 @@
         "value": "LOW"
       },
       "province_lat": {
-        "value": 51.4017149
+        "value": 51.401714899999995
       },
       "province_lon": {
         "value": 93.8582593
