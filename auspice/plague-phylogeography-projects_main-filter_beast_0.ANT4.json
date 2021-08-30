@@ -1,0 +1,2926 @@
+{
+  "meta": {
+    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main_filter",
+    "colorings": [
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "Germany",
+            "#4c4ffc"
+          ],
+          [
+            "Kyrgyzstan",
+            "#08bee9"
+          ],
+          [
+            "England",
+            "#2adddd"
+          ],
+          [
+            "Spain",
+            "#3be9d6"
+          ],
+          [
+            "France",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "scale": [
+          [
+            "0.ANT4",
+            "#0cc1e8"
+          ],
+          [
+            "NA",
+            "#c4c4c4"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "NA",
+            "#4757fb"
+          ],
+          [
+            "Issyk-Kul Region",
+            "#0ec3e7"
+          ],
+          [
+            "East of England",
+            "#14c9e5"
+          ],
+          [
+            "Valencia Community",
+            "#19cee3"
+          ],
+          [
+            "Centre-Loire Valley",
+            "#1fd3e1"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "tstv",
+        "title": "TsTv",
+        "type": "continuous"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub_year_category",
+        "scale": [
+          [
+            "LOW",
+            "#949494"
+          ],
+          [
+            "HIGH",
+            "#d62728"
+          ]
+        ],
+        "title": "rate_sub_year_category",
+        "type": "categorical"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "tstv",
+        "title": "TsTv",
+        "type": "continuous"
+      },
+      {
+        "key": "province_raw",
+        "scale": [
+          [
+            "Bavaria",
+            "#6923fe"
+          ],
+          [
+            "NA",
+            "#4757fb"
+          ],
+          [
+            "Issyk-Kul Region",
+            "#0ec3e7"
+          ],
+          [
+            "East of England",
+            "#14c9e5"
+          ],
+          [
+            "Valencia Community",
+            "#19cee3"
+          ],
+          [
+            "Centre-Loire Valley",
+            "#1fd3e1"
+          ]
+        ],
+        "title": "Province",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_date_strain",
+        "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "scale": [
+          [
+            "0.ANT4",
+            "#0cc1e8"
+          ],
+          [
+            "NA",
+            "#c4c4c4"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
+        "key": "continuous_geo",
+        "title": "continuous_geo",
+        "type": "categorical"
+      },
+      {
+        "key": "ns_ss_ratio",
+        "title": "ns_ss_ratio",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "Germany",
+            "#4c4ffc"
+          ],
+          [
+            "Kyrgyzstan",
+            "#08bee9"
+          ],
+          [
+            "England",
+            "#2adddd"
+          ],
+          [
+            "Spain",
+            "#3be9d6"
+          ],
+          [
+            "France",
+            "#4df3ce"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "node_type",
+        "scale": [
+          [
+            "internal",
+            "#FFFFFF"
+          ],
+          [
+            "terminal",
+            "#0cc1e8"
+          ]
+        ],
+        "title": "Node Type",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_raw",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ],
+          [
+            "NA",
+            "#FFFFFF"
+          ]
+        ],
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "other_var_ratio",
+        "title": "other_var_ratio",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      }
+    ],
+    "display_defaults": {
+      "branch_label": "none",
+      "color_by": "population",
+      "distance_measure": "num_date",
+      "geo_resolution": "province",
+      "layout": "rect",
+      "map_triplicate": true,
+      "transmission_lines": true
+    },
+    "filters": [
+      "continent",
+      "country",
+      "province",
+      "population",
+      "host_order",
+      "branch_minor"
+    ],
+    "maintainers": [
+      {
+        "name": "name"
+      },
+      {
+        "name": "url"
+      }
+    ],
+    "panels": [
+      "tree"
+    ],
+    "title": "Plague Phylogeography Main",
+    "updated": "2021-08-30"
+  },
+  "tree": {
+    "branch_attrs": {
+      "labels": {
+        "Biosample Accession": "NA",
+        "Blank": " ",
+        "Branch Length": 234.62064574222154,
+        "Branch Length Sub": 53.8466180050119,
+        "Branch Length Time": 234.62064574222154,
+        "Branch Minor": "NA",
+        "Branch Number": "NA",
+        "Branch Support": 100.0,
+        "Branch Support Conf Category": "HIGH",
+        "Branch Support Conf Char": "*",
+        "Continent Raw": "NA",
+        "Continuous Geo": "NA",
+        "Country Date Strain": "NA",
+        "Country Lat": "NA",
+        "Country Lon": "NA",
+        "Country Raw": "NA",
+        "Date Bp Mean": "NA",
+        "Date Err": "NA",
+        "Date Mean": "NA",
+        "Host Human": "NA",
+        "Host Order Raw": "NA",
+        "Node Name": "NODE148",
+        "Node Type": "internal",
+        "Ns Ss Ratio": "NA",
+        "Num Date": 335.0,
+        "Num Date Confidence": [
+          204,
+          445
+        ],
+        "Other Var Ratio": "NA",
+        "Population Raw": "NA",
+        "Population Rtt Dist": "NA",
+        "Province Date Strain": "NA",
+        "Province Lat": "NA",
+        "Province Lon": "NA",
+        "Province Raw": "NA",
+        "Rate Sub": 5.406705595041299e-08,
+        "Rate Sub Year": 0.229505028573544,
+        "Rate Sub Year Category": "LOW",
+        "Root Rtt Dist": "NA",
+        "Strain": "NA",
+        "Tstv": "NA"
+      }
+    },
+    "children": [
+      {
+        "branch_attrs": {},
+        "name": "SAMEA1061800",
+        "node_attrs": {
+          "biosample_accession": {
+            "value": "SAMEA1061800"
+          },
+          "branch_length_sub": {
+            "value": 22.622227567567663
+          },
+          "branch_length_time": {
+            "value": 136.94882159268332
+          },
+          "branch_minor": {
+            "value": "0.ANT4"
+          },
+          "branch_number": {
+            "value": "0.0"
+          },
+          "branch_support": {
+            "value": 0.0
+          },
+          "branch_support_conf_category": {
+            "value": "LOW"
+          },
+          "continent_raw": {
+            "value": "Asia"
+          },
+          "country_date_strain": {
+            "value": "Kyrgyzstan [214:261] DA101"
+          },
+          "country_lat": {
+            "value": 41.5089324
+          },
+          "country_lon": {
+            "value": 74.724091
+          },
+          "country_raw": {
+            "value": "Kyrgyzstan"
+          },
+          "date_bp_mean": {
+            "value": 1783.5
+          },
+          "date_err": {
+            "value": 23.5
+          },
+          "date_mean": {
+            "value": 237.5
+          },
+          "div": 136.94882159268332,
+          "host_human": {
+            "value": "Human"
+          },
+          "host_order_raw": {
+            "value": "Human"
+          },
+          "node_name": {
+            "value": "SAMEA1061800"
+          },
+          "node_type": {
+            "value": "terminal"
+          },
+          "ns_ss_ratio": {
+            "value": 2.17143
+          },
+          "num_date": {
+            "confidence": [
+              215,
+              261
+            ],
+            "value": 237.0
+          },
+          "other_var_ratio": {
+            "value": 0.0285714
+          },
+          "population_raw": {
+            "value": "0.ANT4"
+          },
+          "population_rtt_dist": {
+            "value": 3.1588e-06
+          },
+          "province_date_strain": {
+            "value": "Issyk-Kul Region [214:261] DA101"
+          },
+          "province_lat": {
+            "value": 42.06103415
+          },
+          "province_lon": {
+            "value": 78.17073232346421
+          },
+          "province_raw": {
+            "value": "Issyk-Kul Region"
+          },
+          "rate_sub": {
+            "value": 3.891504918781426e-08
+          },
+          "rate_sub_year": {
+            "value": 0.16518745692351608
+          },
+          "rate_sub_year_category": {
+            "value": "LOW"
+          },
+          "root_rtt_dist": {
+            "value": 4.857350000000001e-05
+          },
+          "strain": {
+            "value": "DA101"
+          },
+          "tstv": {
+            "value": 2.37
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "Biosample Accession": "NA",
+            "Blank": " ",
+            "Branch Length": 234.62064574222154,
+            "Branch Length Sub": 53.8466180050119,
+            "Branch Length Time": 234.62064574222154,
+            "Branch Minor": "NA",
+            "Branch Number": "NA",
+            "Branch Support": 100.0,
+            "Branch Support Conf Category": "HIGH",
+            "Branch Support Conf Char": "*",
+            "Continent Raw": "NA",
+            "Continuous Geo": "NA",
+            "Country Date Strain": "NA",
+            "Country Lat": "NA",
+            "Country Lon": "NA",
+            "Country Raw": "NA",
+            "Date Bp Mean": "NA",
+            "Date Err": "NA",
+            "Date Mean": "NA",
+            "Host Human": "NA",
+            "Host Order Raw": "NA",
+            "Node Name": "NODE148",
+            "Node Type": "internal",
+            "Ns Ss Ratio": "NA",
+            "Num Date": 335.0,
+            "Num Date Confidence": [
+              204,
+              445
+            ],
+            "Other Var Ratio": "NA",
+            "Population Raw": "NA",
+            "Population Rtt Dist": "NA",
+            "Province Date Strain": "NA",
+            "Province Lat": "NA",
+            "Province Lon": "NA",
+            "Province Raw": "NA",
+            "Rate Sub": 5.406705595041299e-08,
+            "Rate Sub Year": 0.229505028573544,
+            "Rate Sub Year Category": "LOW",
+            "Root Rtt Dist": "NA",
+            "Strain": "NA",
+            "Tstv": "NA"
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "Biosample Accession": "NA",
+                "Blank": " ",
+                "Branch Length": 116.64466578084853,
+                "Branch Length Sub": 4.467124091518725,
+                "Branch Length Time": 116.64466578084853,
+                "Branch Minor": "NA",
+                "Branch Number": "NA",
+                "Branch Support": 90.0,
+                "Branch Support Conf Category": "LOW",
+                "Branch Support Conf Char": "",
+                "Continent Raw": "NA",
+                "Continuous Geo": "NA",
+                "Country Date Strain": "NA",
+                "Country Lat": "NA",
+                "Country Lon": "NA",
+                "Country Raw": "NA",
+                "Date Bp Mean": "NA",
+                "Date Err": "NA",
+                "Date Mean": "NA",
+                "Host Human": "NA",
+                "Host Order Raw": "NA",
+                "Node Name": "NODE149",
+                "Node Type": "internal",
+                "Ns Ss Ratio": "NA",
+                "Num Date": 465.0,
+                "Num Date Confidence": [
+                  337,
+                  570
+                ],
+                "Other Var Ratio": "NA",
+                "Population Raw": "NA",
+                "Population Rtt Dist": "NA",
+                "Province Date Strain": "NA",
+                "Province Lat": "NA",
+                "Province Lon": "NA",
+                "Province Raw": "NA",
+                "Rate Sub": 9.022017190351574e-09,
+                "Rate Sub Year": 0.038296857053982544,
+                "Rate Sub Year Category": "LOW",
+                "Root Rtt Dist": "NA",
+                "Strain": "NA",
+                "Tstv": "NA"
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {},
+                "name": "SAMEA5661363",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMEA5661363"
+                  },
+                  "branch_length_sub": {
+                    "value": 6.1252374169642705
+                  },
+                  "branch_length_time": {
+                    "value": 91.50262204170303
+                  },
+                  "branch_minor": {
+                    "value": "0.ANT4"
+                  },
+                  "branch_number": {
+                    "value": "0.0"
+                  },
+                  "branch_support": {
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "continent_raw": {
+                    "value": "Europe"
+                  },
+                  "country_date_strain": {
+                    "value": "England [474:637] EDI001"
+                  },
+                  "country_lat": {
+                    "value": 52.5310214
+                  },
+                  "country_lon": {
+                    "value": -1.2649062
+                  },
+                  "country_raw": {
+                    "value": "England"
+                  },
+                  "date_bp_mean": {
+                    "value": 1465.5
+                  },
+                  "date_err": {
+                    "value": 81.5
+                  },
+                  "date_mean": {
+                    "value": 555.5
+                  },
+                  "div": 442.7679335647731,
+                  "host_human": {
+                    "value": "Human"
+                  },
+                  "host_order_raw": {
+                    "value": "Human"
+                  },
+                  "node_name": {
+                    "value": "SAMEA5661363"
+                  },
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "ns_ss_ratio": {
+                    "value": 2.27778
+                  },
+                  "num_date": {
+                    "confidence": [
+                      473,
+                      616
+                    ],
+                    "value": 543.0
+                  },
+                  "other_var_ratio": {
+                    "value": 0.166667
+                  },
+                  "population_raw": {
+                    "value": "0.ANT4"
+                  },
+                  "population_rtt_dist": {
+                    "value": 1.1483199999999999e-05
+                  },
+                  "province_date_strain": {
+                    "value": "East of England [474:637] EDI001"
+                  },
+                  "province_lat": {
+                    "value": 52.2199774
+                  },
+                  "province_lon": {
+                    "value": 0.4875777469166293
+                  },
+                  "province_raw": {
+                    "value": "East of England"
+                  },
+                  "rate_sub": {
+                    "value": 1.5769935033662026e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.06694056716945931
+                  },
+                  "rate_sub_year_category": {
+                    "value": "LOW"
+                  },
+                  "root_rtt_dist": {
+                    "value": 5.68979e-05
+                  },
+                  "strain": {
+                    "value": "EDI001"
+                  },
+                  "tstv": {
+                    "value": 1.86
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "Biosample Accession": "NA",
+                    "Blank": " ",
+                    "Branch Length": 7.0840539491157415,
+                    "Branch Length Sub": 0.5793345056369577,
+                    "Branch Length Time": 7.0840539491157415,
+                    "Branch Minor": "NA",
+                    "Branch Number": "NA",
+                    "Branch Support": 20.0,
+                    "Branch Support Conf Category": "LOW",
+                    "Branch Support Conf Char": "",
+                    "Continent Raw": "NA",
+                    "Continuous Geo": "NA",
+                    "Country Date Strain": "NA",
+                    "Country Lat": "NA",
+                    "Country Lon": "NA",
+                    "Country Raw": "NA",
+                    "Date Bp Mean": "NA",
+                    "Date Err": "NA",
+                    "Date Mean": "NA",
+                    "Host Human": "NA",
+                    "Host Order Raw": "NA",
+                    "Node Name": "NODE150",
+                    "Node Type": "internal",
+                    "Ns Ss Ratio": "NA",
+                    "Num Date": 518.0,
+                    "Num Date Confidence": [
+                      441,
+                      592
+                    ],
+                    "Other Var Ratio": "NA",
+                    "Population Raw": "NA",
+                    "Population Rtt Dist": "NA",
+                    "Province Date Strain": "NA",
+                    "Province Lat": "NA",
+                    "Province Lon": "NA",
+                    "Province Raw": "NA",
+                    "Rate Sub": 1.9265844594104335e-08,
+                    "Rate Sub Year": 0.08178008098163515,
+                    "Rate Sub Year Category": "LOW",
+                    "Root Rtt Dist": "NA",
+                    "Strain": "NA",
+                    "Tstv": "NA"
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {},
+                    "name": "SAMEA5661364",
+                    "node_attrs": {
+                      "biosample_accession": {
+                        "value": "SAMEA5661364"
+                      },
+                      "branch_length_sub": {
+                        "value": 25.200209472574947
+                      },
+                      "branch_length_time": {
+                        "value": 121.18896261692885
+                      },
+                      "branch_minor": {
+                        "value": "0.ANT4"
+                      },
+                      "branch_number": {
+                        "value": "0.0"
+                      },
+                      "branch_support": {
+                        "value": 0.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "LOW"
+                      },
+                      "continent_raw": {
+                        "value": "Europe"
+                      },
+                      "country_date_strain": {
+                        "value": "England [500:650] EDI003"
+                      },
+                      "country_lat": {
+                        "value": 52.5310214
+                      },
+                      "country_lon": {
+                        "value": -1.2649062
+                      },
+                      "country_raw": {
+                        "value": "England"
+                      },
+                      "date_bp_mean": {
+                        "value": 1446.0
+                      },
+                      "date_err": {
+                        "value": 75.0
+                      },
+                      "date_mean": {
+                        "value": 575.0
+                      },
+                      "div": 479.53832808911466,
+                      "host_human": {
+                        "value": "Human"
+                      },
+                      "host_order_raw": {
+                        "value": "Human"
+                      },
+                      "node_name": {
+                        "value": "SAMEA5661364"
+                      },
+                      "node_type": {
+                        "value": "terminal"
+                      },
+                      "ns_ss_ratio": {
+                        "value": 1.84211
+                      },
+                      "num_date": {
+                        "confidence": [
+                          512,
+                          647
+                        ],
+                        "value": 580.0
+                      },
+                      "other_var_ratio": {
+                        "value": 0.07894739999999999
+                      },
+                      "population_raw": {
+                        "value": "0.ANT4"
+                      },
+                      "population_rtt_dist": {
+                        "value": 1.38589e-05
+                      },
+                      "province_date_strain": {
+                        "value": "East of England [500:650] EDI003"
+                      },
+                      "province_lat": {
+                        "value": 52.2199774
+                      },
+                      "province_lon": {
+                        "value": 0.4875777469166293
+                      },
+                      "province_raw": {
+                        "value": "East of England"
+                      },
+                      "rate_sub": {
+                        "value": 4.898708523301625e-08
+                      },
+                      "rate_sub_year": {
+                        "value": 0.20794145711298248
+                      },
+                      "rate_sub_year_category": {
+                        "value": "LOW"
+                      },
+                      "root_rtt_dist": {
+                        "value": 5.9273599999999994e-05
+                      },
+                      "strain": {
+                        "value": "EDI003"
+                      },
+                      "tstv": {
+                        "value": 2.196
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {},
+                    "name": "SAMEA5661365",
+                    "node_attrs": {
+                      "biosample_accession": {
+                        "value": "SAMEA5661365"
+                      },
+                      "branch_length_sub": {
+                        "value": 6.511869370482842
+                      },
+                      "branch_length_time": {
+                        "value": 107.16765438536913
+                      },
+                      "branch_minor": {
+                        "value": "0.ANT4"
+                      },
+                      "branch_number": {
+                        "value": "0.0"
+                      },
+                      "branch_support": {
+                        "value": 0.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "LOW"
+                      },
+                      "continent_raw": {
+                        "value": "Europe"
+                      },
+                      "country_date_strain": {
+                        "value": "England [500:650] EDI004"
+                      },
+                      "country_lat": {
+                        "value": 52.5310214
+                      },
+                      "country_lon": {
+                        "value": -1.2649062
+                      },
+                      "country_raw": {
+                        "value": "England"
+                      },
+                      "date_bp_mean": {
+                        "value": 1446.0
+                      },
+                      "date_err": {
+                        "value": 75.0
+                      },
+                      "date_mean": {
+                        "value": 575.0
+                      },
+                      "div": 465.51701985755494,
+                      "host_human": {
+                        "value": "Human"
+                      },
+                      "host_order_raw": {
+                        "value": "Human"
+                      },
+                      "node_name": {
+                        "value": "SAMEA5661365"
+                      },
+                      "node_type": {
+                        "value": "terminal"
+                      },
+                      "ns_ss_ratio": {
+                        "value": 2.56757
+                      },
+                      "num_date": {
+                        "confidence": [
+                          499,
+                          639
+                        ],
+                        "value": 566.0
+                      },
+                      "other_var_ratio": {
+                        "value": 0.0540541
+                      },
+                      "population_raw": {
+                        "value": "0.ANT4"
+                      },
+                      "population_rtt_dist": {
+                        "value": 1.1206300000000001e-05
+                      },
+                      "province_date_strain": {
+                        "value": "East of England [500:650] EDI004"
+                      },
+                      "province_lat": {
+                        "value": 52.2199774
+                      },
+                      "province_lon": {
+                        "value": 0.4875777469166293
+                      },
+                      "province_raw": {
+                        "value": "East of England"
+                      },
+                      "rate_sub": {
+                        "value": 1.4314707265382446e-08
+                      },
+                      "rate_sub_year": {
+                        "value": 0.060763384323655245
+                      },
+                      "rate_sub_year_category": {
+                        "value": "LOW"
+                      },
+                      "root_rtt_dist": {
+                        "value": 5.6621000000000006e-05
+                      },
+                      "strain": {
+                        "value": "EDI004"
+                      },
+                      "tstv": {
+                        "value": 1.885
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE150",
+                "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 0.5793345056369577
+                  },
+                  "branch_length_time": {
+                    "value": 7.0840539491157415
+                  },
+                  "branch_support": {
+                    "value": 20.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "div": 358.3493654721858,
+                  "node_name": {
+                    "value": "NODE150"
+                  },
+                  "node_type": {
+                    "value": "internal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      441,
+                      592
+                    ],
+                    "value": 518.0
+                  },
+                  "rate_sub": {
+                    "value": 1.9265844594104335e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.08178008098163515
+                  },
+                  "rate_sub_year_category": {
+                    "value": "LOW"
+                  }
+                }
+              }
+            ],
+            "name": "NODE149",
+            "node_attrs": {
+              "branch_length_sub": {
+                "value": 4.467124091518725
+              },
+              "branch_length_time": {
+                "value": 116.64466578084853
+              },
+              "branch_support": {
+                "value": 90.0
+              },
+              "branch_support_conf_category": {
+                "value": "LOW"
+              },
+              "div": 351.26531152307007,
+              "node_name": {
+                "value": "NODE149"
+              },
+              "node_type": {
+                "value": "internal"
+              },
+              "num_date": {
+                "confidence": [
+                  337,
+                  570
+                ],
+                "value": 465.0
+              },
+              "rate_sub": {
+                "value": 9.022017190351574e-09
+              },
+              "rate_sub_year": {
+                "value": 0.038296857053982544
+              },
+              "rate_sub_year_category": {
+                "value": "LOW"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "Biosample Accession": "NA",
+                "Blank": " ",
+                "Branch Length": 45.18206918958572,
+                "Branch Length Sub": 5.492094583210694,
+                "Branch Length Time": 45.18206918958572,
+                "Branch Minor": "NA",
+                "Branch Number": "NA",
+                "Branch Support": 100.0,
+                "Branch Support Conf Category": "HIGH",
+                "Branch Support Conf Char": "*",
+                "Continent Raw": "NA",
+                "Continuous Geo": "NA",
+                "Country Date Strain": "NA",
+                "Country Lat": "NA",
+                "Country Lon": "NA",
+                "Country Raw": "NA",
+                "Date Bp Mean": "NA",
+                "Date Err": "NA",
+                "Date Mean": "NA",
+                "Host Human": "NA",
+                "Host Order Raw": "NA",
+                "Node Name": "NODE151",
+                "Node Type": "internal",
+                "Ns Ss Ratio": "NA",
+                "Num Date": 380.0,
+                "Num Date Confidence": [
+                  286,
+                  465
+                ],
+                "Other Var Ratio": "NA",
+                "Population Raw": "NA",
+                "Population Rtt Dist": "NA",
+                "Province Date Strain": "NA",
+                "Province Lat": "NA",
+                "Province Lon": "NA",
+                "Province Raw": "NA",
+                "Rate Sub": 2.8636003585704192e-08,
+                "Rate Sub Year": 0.12155473801267604,
+                "Rate Sub Year Category": "LOW",
+                "Root Rtt Dist": "NA",
+                "Strain": "NA",
+                "Tstv": "NA"
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {},
+                "name": "SAMEA5661384",
+                "node_attrs": {
+                  "biosample_accession": {
+                    "value": "SAMEA5661384"
+                  },
+                  "branch_length_sub": {
+                    "value": 8.839737865960455
+                  },
+                  "branch_length_time": {
+                    "value": 125.15987179692661
+                  },
+                  "branch_minor": {
+                    "value": "0.ANT4"
+                  },
+                  "branch_number": {
+                    "value": "0.0"
+                  },
+                  "branch_support": {
+                    "value": 0.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "LOW"
+                  },
+                  "continent_raw": {
+                    "value": "Europe"
+                  },
+                  "country_date_strain": {
+                    "value": "Spain [432:610] VAL001"
+                  },
+                  "country_lat": {
+                    "value": 39.3260685
+                  },
+                  "country_lon": {
+                    "value": -4.8379791
+                  },
+                  "country_raw": {
+                    "value": "Spain"
+                  },
+                  "date_bp_mean": {
+                    "value": 1500.0
+                  },
+                  "date_err": {
+                    "value": 89.0
+                  },
+                  "date_mean": {
+                    "value": 521.0
+                  },
+                  "div": 404.96258672873387,
+                  "host_human": {
+                    "value": "Human"
+                  },
+                  "host_order_raw": {
+                    "value": "Human"
+                  },
+                  "node_name": {
+                    "value": "SAMEA5661384"
+                  },
+                  "node_type": {
+                    "value": "terminal"
+                  },
+                  "ns_ss_ratio": {
+                    "value": 2.2888900000000003
+                  },
+                  "num_date": {
+                    "confidence": [
+                      419,
+                      588
+                    ],
+                    "value": 505.0
+                  },
+                  "other_var_ratio": {
+                    "value": 0.111111
+                  },
+                  "population_raw": {
+                    "value": "0.ANT4"
+                  },
+                  "population_rtt_dist": {
+                    "value": 1.26049e-05
+                  },
+                  "province_date_strain": {
+                    "value": "Valencia Community [432:610] VAL001"
+                  },
+                  "province_lat": {
+                    "value": 39.6819591
+                  },
+                  "province_lon": {
+                    "value": -0.7654406
+                  },
+                  "province_raw": {
+                    "value": "Valencia Community"
+                  },
+                  "rate_sub": {
+                    "value": 1.6638523846890376e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.0706275720728049
+                  },
+                  "rate_sub_year_category": {
+                    "value": "LOW"
+                  },
+                  "root_rtt_dist": {
+                    "value": 5.80196e-05
+                  },
+                  "strain": {
+                    "value": "VAL001"
+                  },
+                  "tstv": {
+                    "value": 1.908
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "Biosample Accession": "NA",
+                    "Blank": " ",
+                    "Branch Length": 34.02689492851027,
+                    "Branch Length Sub": 4.295829066176713,
+                    "Branch Length Time": 34.02689492851027,
+                    "Branch Minor": "NA",
+                    "Branch Number": "NA",
+                    "Branch Support": 100.0,
+                    "Branch Support Conf Category": "HIGH",
+                    "Branch Support Conf Char": "*",
+                    "Continent Raw": "NA",
+                    "Continuous Geo": "NA",
+                    "Country Date Strain": "NA",
+                    "Country Lat": "NA",
+                    "Country Lon": "NA",
+                    "Country Raw": "NA",
+                    "Date Bp Mean": "NA",
+                    "Date Err": "NA",
+                    "Date Mean": "NA",
+                    "Host Human": "NA",
+                    "Host Order Raw": "NA",
+                    "Node Name": "NODE152",
+                    "Node Type": "internal",
+                    "Ns Ss Ratio": "NA",
+                    "Num Date": 414.0,
+                    "Num Date Confidence": [
+                      342,
+                      482
+                    ],
+                    "Other Var Ratio": "NA",
+                    "Population Raw": "NA",
+                    "Population Rtt Dist": "NA",
+                    "Province Date Strain": "NA",
+                    "Province Lat": "NA",
+                    "Province Lon": "NA",
+                    "Province Raw": "NA",
+                    "Rate Sub": 2.9741658909924286e-08,
+                    "Rate Sub Year": 0.12624804805734263,
+                    "Rate Sub Year Category": "LOW",
+                    "Root Rtt Dist": "NA",
+                    "Strain": "NA",
+                    "Tstv": "NA"
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "Biosample Accession": "NA",
+                        "Blank": " ",
+                        "Branch Length": 211.74072572449518,
+                        "Branch Length Sub": 23.989872385763725,
+                        "Branch Length Time": 211.74072572449518,
+                        "Branch Minor": "NA",
+                        "Branch Number": "NA",
+                        "Branch Support": 100.0,
+                        "Branch Support Conf Category": "HIGH",
+                        "Branch Support Conf Char": "*",
+                        "Continent Raw": "NA",
+                        "Continuous Geo": "NA",
+                        "Country Date Strain": "NA",
+                        "Country Lat": "NA",
+                        "Country Lon": "NA",
+                        "Country Raw": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Err": "NA",
+                        "Date Mean": "NA",
+                        "Host Human": "NA",
+                        "Host Order Raw": "NA",
+                        "Node Name": "NODE153",
+                        "Node Type": "internal",
+                        "Ns Ss Ratio": "NA",
+                        "Num Date": 626.0,
+                        "Num Date Confidence": [
+                          481,
+                          751
+                        ],
+                        "Other Var Ratio": "NA",
+                        "Population Raw": "NA",
+                        "Population Rtt Dist": "NA",
+                        "Province Date Strain": "NA",
+                        "Province Lat": "NA",
+                        "Province Lon": "NA",
+                        "Province Raw": "NA",
+                        "Rate Sub": 2.669095155244049e-08,
+                        "Rate Sub Year": 0.11329833835073355,
+                        "Rate Sub Year Category": "LOW",
+                        "Root Rtt Dist": "NA",
+                        "Strain": "NA",
+                        "Tstv": "NA"
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMEA5661367",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMEA5661367"
+                          },
+                          "branch_length_sub": {
+                            "value": 18.560608379047252
+                          },
+                          "branch_length_time": {
+                            "value": 140.130597451227
+                          },
+                          "branch_minor": {
+                            "value": "0.ANT4"
+                          },
+                          "branch_number": {
+                            "value": "0.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent_raw": {
+                            "value": "Europe"
+                          },
+                          "country_date_strain": {
+                            "value": "France [650:880] LSD001"
+                          },
+                          "country_lat": {
+                            "value": 46.603353999999996
+                          },
+                          "country_lon": {
+                            "value": 1.8883334999999999
+                          },
+                          "country_raw": {
+                            "value": "France"
+                          },
+                          "date_bp_mean": {
+                            "value": 1256.0
+                          },
+                          "date_err": {
+                            "value": 115.0
+                          },
+                          "date_mean": {
+                            "value": 765.0
+                          },
+                          "div": 665.7009330360397,
+                          "host_human": {
+                            "value": "Human"
+                          },
+                          "host_order_raw": {
+                            "value": "Human"
+                          },
+                          "node_name": {
+                            "value": "SAMEA5661367"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "ns_ss_ratio": {
+                            "value": 2.37931
+                          },
+                          "num_date": {
+                            "confidence": [
+                              664,
+                              870
+                            ],
+                            "value": 766.0
+                          },
+                          "other_var_ratio": {
+                            "value": 0.0689655
+                          },
+                          "population_raw": {
+                            "value": "0.ANT4"
+                          },
+                          "population_rtt_dist": {
+                            "value": 1.88184e-05
+                          },
+                          "province_date_strain": {
+                            "value": "Centre-Loire Valley [650:880] LSD001"
+                          },
+                          "province_lat": {
+                            "value": 47.5490251
+                          },
+                          "province_lon": {
+                            "value": 1.7324061999999998
+                          },
+                          "province_raw": {
+                            "value": "Centre-Loire Valley"
+                          },
+                          "rate_sub": {
+                            "value": 3.120324422324058e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.13245221755018452
+                          },
+                          "rate_sub_year_category": {
+                            "value": "LOW"
+                          },
+                          "root_rtt_dist": {
+                            "value": 6.42331e-05
+                          },
+                          "strain": {
+                            "value": "LSD001"
+                          },
+                          "tstv": {
+                            "value": 1.767
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMEA5661372",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMEA5661372"
+                          },
+                          "branch_length_sub": {
+                            "value": 15.326112231593253
+                          },
+                          "branch_length_time": {
+                            "value": 136.0918499873958
+                          },
+                          "branch_minor": {
+                            "value": "0.ANT4"
+                          },
+                          "branch_number": {
+                            "value": "0.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent_raw": {
+                            "value": "Europe"
+                          },
+                          "country_date_strain": {
+                            "value": "France [650:880] LSD020"
+                          },
+                          "country_lat": {
+                            "value": 46.603353999999996
+                          },
+                          "country_lon": {
+                            "value": 1.8883334999999999
+                          },
+                          "country_raw": {
+                            "value": "France"
+                          },
+                          "date_bp_mean": {
+                            "value": 1256.0
+                          },
+                          "date_err": {
+                            "value": 115.0
+                          },
+                          "date_mean": {
+                            "value": 765.0
+                          },
+                          "div": 661.6621855722085,
+                          "host_human": {
+                            "value": "Human"
+                          },
+                          "host_order_raw": {
+                            "value": "Human"
+                          },
+                          "node_name": {
+                            "value": "SAMEA5661372"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "ns_ss_ratio": {
+                            "value": 2.10714
+                          },
+                          "num_date": {
+                            "confidence": [
+                              661,
+                              868
+                            ],
+                            "value": 762.0
+                          },
+                          "other_var_ratio": {
+                            "value": 0.0178571
+                          },
+                          "population_raw": {
+                            "value": "0.ANT4"
+                          },
+                          "population_rtt_dist": {
+                            "value": 1.79858e-05
+                          },
+                          "province_date_strain": {
+                            "value": "Centre-Loire Valley [650:880] LSD020"
+                          },
+                          "province_lat": {
+                            "value": 47.5490251
+                          },
+                          "province_lon": {
+                            "value": 1.7324061999999998
+                          },
+                          "province_raw": {
+                            "value": "Centre-Loire Valley"
+                          },
+                          "rate_sub": {
+                            "value": 2.6530192443367003e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.112615944547838
+                          },
+                          "rate_sub_year_category": {
+                            "value": "LOW"
+                          },
+                          "root_rtt_dist": {
+                            "value": 6.34005e-05
+                          },
+                          "strain": {
+                            "value": "LSD020"
+                          },
+                          "tstv": {
+                            "value": 1.7380000000000002
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE153",
+                    "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 23.989872385763725
+                      },
+                      "branch_length_time": {
+                        "value": 211.74072572449518
+                      },
+                      "branch_support": {
+                        "value": 100.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "HIGH"
+                      },
+                      "branch_support_conf_char": {
+                        "value": "*"
+                      },
+                      "div": 525.5703355848127,
+                      "node_name": {
+                        "value": "NODE153"
+                      },
+                      "node_type": {
+                        "value": "internal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          481,
+                          751
+                        ],
+                        "value": 626.0
+                      },
+                      "rate_sub": {
+                        "value": 2.669095155244049e-08
+                      },
+                      "rate_sub_year": {
+                        "value": 0.11329833835073355
+                      },
+                      "rate_sub_year_category": {
+                        "value": "LOW"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "Biosample Accession": "NA",
+                        "Blank": " ",
+                        "Branch Length": 4.220084161018576,
+                        "Branch Length Sub": 0.38039131120571307,
+                        "Branch Length Time": 4.220084161018576,
+                        "Branch Minor": "NA",
+                        "Branch Number": "NA",
+                        "Branch Support": 29.0,
+                        "Branch Support Conf Category": "LOW",
+                        "Branch Support Conf Char": "",
+                        "Continent Raw": "NA",
+                        "Continuous Geo": "NA",
+                        "Country Date Strain": "NA",
+                        "Country Lat": "NA",
+                        "Country Lon": "NA",
+                        "Country Raw": "NA",
+                        "Date Bp Mean": "NA",
+                        "Date Err": "NA",
+                        "Date Mean": "NA",
+                        "Host Human": "NA",
+                        "Host Order Raw": "NA",
+                        "Node Name": "NODE154",
+                        "Node Type": "internal",
+                        "Ns Ss Ratio": "NA",
+                        "Num Date": 425.0,
+                        "Num Date Confidence": [
+                          362,
+                          489
+                        ],
+                        "Other Var Ratio": "NA",
+                        "Population Raw": "NA",
+                        "Population Rtt Dist": "NA",
+                        "Province Date Strain": "NA",
+                        "Province Lat": "NA",
+                        "Province Lon": "NA",
+                        "Province Raw": "NA",
+                        "Rate Sub": 2.1234888878006807e-08,
+                        "Rate Sub Year": 0.09013832347691861,
+                        "Rate Sub Year Category": "LOW",
+                        "Root Rtt Dist": "NA",
+                        "Strain": "NA",
+                        "Tstv": "NA"
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {},
+                        "name": "SAMEA5661385",
+                        "node_attrs": {
+                          "biosample_accession": {
+                            "value": "SAMEA5661385"
+                          },
+                          "branch_length_sub": {
+                            "value": 24.538973323166562
+                          },
+                          "branch_length_time": {
+                            "value": 104.04237163488801
+                          },
+                          "branch_minor": {
+                            "value": "0.ANT4"
+                          },
+                          "branch_number": {
+                            "value": "0.0"
+                          },
+                          "branch_support": {
+                            "value": 0.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "LOW"
+                          },
+                          "continent_raw": {
+                            "value": "Europe"
+                          },
+                          "country_date_strain": {
+                            "value": "Germany [434:600] PET004"
+                          },
+                          "country_lat": {
+                            "value": 51.0834196
+                          },
+                          "country_lon": {
+                            "value": 10.4234469
+                          },
+                          "country_raw": {
+                            "value": "Germany"
+                          },
+                          "date_bp_mean": {
+                            "value": 1504.0
+                          },
+                          "date_err": {
+                            "value": 83.0
+                          },
+                          "date_mean": {
+                            "value": 517.0
+                          },
+                          "div": 422.0920656562241,
+                          "host_human": {
+                            "value": "Human"
+                          },
+                          "host_order_raw": {
+                            "value": "Human"
+                          },
+                          "node_name": {
+                            "value": "SAMEA5661385"
+                          },
+                          "node_type": {
+                            "value": "terminal"
+                          },
+                          "ns_ss_ratio": {
+                            "value": 1.85417
+                          },
+                          "num_date": {
+                            "confidence": [
+                              455,
+                              597
+                            ],
+                            "value": 523.0
+                          },
+                          "other_var_ratio": {
+                            "value": 0.104167
+                          },
+                          "population_raw": {
+                            "value": "0.ANT4"
+                          },
+                          "population_rtt_dist": {
+                            "value": 1.5945500000000002e-05
+                          },
+                          "province_date_strain": {
+                            "value": "Bavaria [434:600] PET004"
+                          },
+                          "province_lat": {
+                            "value": 48.9467562
+                          },
+                          "province_lon": {
+                            "value": 11.4038717
+                          },
+                          "province_raw": {
+                            "value": "Bavaria"
+                          },
+                          "rate_sub": {
+                            "value": 5.55631247654429e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.23585557439309687
+                          },
+                          "rate_sub_year_category": {
+                            "value": "LOW"
+                          },
+                          "root_rtt_dist": {
+                            "value": 6.136020000000001e-05
+                          },
+                          "strain": {
+                            "value": "PET004"
+                          },
+                          "tstv": {
+                            "value": 1.984
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "Biosample Accession": "NA",
+                            "Blank": " ",
+                            "Branch Length": 30.447781249338504,
+                            "Branch Length Sub": 3.4488386379193283,
+                            "Branch Length Time": 30.447781249338504,
+                            "Branch Minor": "NA",
+                            "Branch Number": "NA",
+                            "Branch Support": 100.0,
+                            "Branch Support Conf Category": "HIGH",
+                            "Branch Support Conf Char": "*",
+                            "Continent Raw": "NA",
+                            "Continuous Geo": "NA",
+                            "Country Date Strain": "NA",
+                            "Country Lat": "NA",
+                            "Country Lon": "NA",
+                            "Country Raw": "NA",
+                            "Date Bp Mean": "NA",
+                            "Date Err": "NA",
+                            "Date Mean": "NA",
+                            "Host Human": "NA",
+                            "Host Order Raw": "NA",
+                            "Node Name": "NODE155",
+                            "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
+                            "Num Date": 449.0,
+                            "Num Date Confidence": [
+                              395,
+                              503
+                            ],
+                            "Other Var Ratio": "NA",
+                            "Population Raw": "NA",
+                            "Population Rtt Dist": "NA",
+                            "Province Date Strain": "NA",
+                            "Province Lat": "NA",
+                            "Province Lon": "NA",
+                            "Province Raw": "NA",
+                            "Rate Sub": 2.6684418368118894e-08,
+                            "Rate Sub Year": 0.11327060614619518,
+                            "Rate Sub Year Category": "LOW",
+                            "Root Rtt Dist": "NA",
+                            "Strain": "NA",
+                            "Tstv": "NA"
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {},
+                            "name": "SAMEA5661390",
+                            "node_attrs": {
+                              "biosample_accession": {
+                                "value": "SAMEA5661390"
+                              },
+                              "branch_length_sub": {
+                                "value": 37.064662697199495
+                              },
+                              "branch_length_time": {
+                                "value": 52.280058653692095
+                              },
+                              "branch_minor": {
+                                "value": "0.ANT4"
+                              },
+                              "branch_number": {
+                                "value": "0.0"
+                              },
+                              "branch_support": {
+                                "value": 0.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "continent_raw": {
+                                "value": "Europe"
+                              },
+                              "country_date_strain": {
+                                "value": "Germany [419:537] UNT004"
+                              },
+                              "country_lat": {
+                                "value": 51.0834196
+                              },
+                              "country_lon": {
+                                "value": 10.4234469
+                              },
+                              "country_raw": {
+                                "value": "Germany"
+                              },
+                              "date_bp_mean": {
+                                "value": 1543.0
+                              },
+                              "date_err": {
+                                "value": 59.0
+                              },
+                              "date_mean": {
+                                "value": 478.0
+                              },
+                              "div": 400.7775339243667,
+                              "host_human": {
+                                "value": "Human"
+                              },
+                              "host_order_raw": {
+                                "value": "Human"
+                              },
+                              "node_name": {
+                                "value": "SAMEA5661390"
+                              },
+                              "node_type": {
+                                "value": "terminal"
+                              },
+                              "ns_ss_ratio": {
+                                "value": 1.2941200000000002
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  452,
+                                  550
+                                ],
+                                "value": 501.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.0588235
+                              },
+                              "population_raw": {
+                                "value": "0.ANT4"
+                              },
+                              "population_rtt_dist": {
+                                "value": 1.57747e-05
+                              },
+                              "province_date_strain": {
+                                "value": "Bavaria [419:537] UNT004"
+                              },
+                              "province_lat": {
+                                "value": 48.9467562
+                              },
+                              "province_lon": {
+                                "value": 11.4038717
+                              },
+                              "province_raw": {
+                                "value": "Bavaria"
+                              },
+                              "rate_sub": {
+                                "value": 1.6701847062986435e-07
+                              },
+                              "rate_sub_year": {
+                                "value": 0.7089636785360021
+                              },
+                              "rate_sub_year_category": {
+                                "value": "HIGH"
+                              },
+                              "root_rtt_dist": {
+                                "value": 6.11894e-05
+                              },
+                              "strain": {
+                                "value": "UNT004"
+                              },
+                              "tstv": {
+                                "value": 2.06
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "Biosample Accession": "NA",
+                                "Blank": " ",
+                                "Branch Length": 6.551934751685167,
+                                "Branch Length Sub": 0.4651687785646322,
+                                "Branch Length Time": 6.551934751685167,
+                                "Branch Minor": "NA",
+                                "Branch Number": "NA",
+                                "Branch Support": 30.0,
+                                "Branch Support Conf Category": "LOW",
+                                "Branch Support Conf Char": "",
+                                "Continent Raw": "NA",
+                                "Continuous Geo": "NA",
+                                "Country Date Strain": "NA",
+                                "Country Lat": "NA",
+                                "Country Lon": "NA",
+                                "Country Raw": "NA",
+                                "Date Bp Mean": "NA",
+                                "Date Err": "NA",
+                                "Date Mean": "NA",
+                                "Host Human": "NA",
+                                "Host Order Raw": "NA",
+                                "Node Name": "NODE156",
+                                "Node Type": "internal",
+                                "Ns Ss Ratio": "NA",
+                                "Num Date": 466.0,
+                                "Num Date Confidence": [
+                                  419,
+                                  517
+                                ],
+                                "Other Var Ratio": "NA",
+                                "Population Raw": "NA",
+                                "Population Rtt Dist": "NA",
+                                "Province Date Strain": "NA",
+                                "Province Lat": "NA",
+                                "Province Lon": "NA",
+                                "Province Raw": "NA",
+                                "Rate Sub": 1.6725592463604762e-08,
+                                "Rate Sub Year": 0.07099716285254369,
+                                "Rate Sub Year Category": "LOW",
+                                "Root Rtt Dist": "NA",
+                                "Strain": "NA",
+                                "Tstv": "NA"
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {},
+                                "name": "SAMEA5661389",
+                                "node_attrs": {
+                                  "biosample_accession": {
+                                    "value": "SAMEA5661389"
+                                  },
+                                  "branch_length_sub": {
+                                    "value": 2.9153780528082036
+                                  },
+                                  "branch_length_time": {
+                                    "value": 42.81207305683711
+                                  },
+                                  "branch_minor": {
+                                    "value": "0.ANT4"
+                                  },
+                                  "branch_number": {
+                                    "value": "0.0"
+                                  },
+                                  "branch_support": {
+                                    "value": 0.0
+                                  },
+                                  "branch_support_conf_category": {
+                                    "value": "LOW"
+                                  },
+                                  "continent_raw": {
+                                    "value": "Europe"
+                                  },
+                                  "country_date_strain": {
+                                    "value": "Germany [433:599] UNT003"
+                                  },
+                                  "country_lat": {
+                                    "value": 51.0834196
+                                  },
+                                  "country_lon": {
+                                    "value": 10.4234469
+                                  },
+                                  "country_raw": {
+                                    "value": "Germany"
+                                  },
+                                  "date_bp_mean": {
+                                    "value": 1505.0
+                                  },
+                                  "date_err": {
+                                    "value": 83.0
+                                  },
+                                  "date_mean": {
+                                    "value": 516.0
+                                  },
+                                  "div": 397.8614830791969,
+                                  "host_human": {
+                                    "value": "Human"
+                                  },
+                                  "host_order_raw": {
+                                    "value": "Human"
+                                  },
+                                  "node_name": {
+                                    "value": "SAMEA5661389"
+                                  },
+                                  "node_type": {
+                                    "value": "terminal"
+                                  },
+                                  "ns_ss_ratio": {
+                                    "value": 2.5581400000000003
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      438,
+                                      560
+                                    ],
+                                    "value": 498.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.0465116
+                                  },
+                                  "population_raw": {
+                                    "value": "0.ANT4"
+                                  },
+                                  "population_rtt_dist": {
+                                    "value": 1.19485e-05
+                                  },
+                                  "province_date_strain": {
+                                    "value": "Bavaria [433:599] UNT003"
+                                  },
+                                  "province_lat": {
+                                    "value": 48.9467562
+                                  },
+                                  "province_lon": {
+                                    "value": 11.4038717
+                                  },
+                                  "province_raw": {
+                                    "value": "Bavaria"
+                                  },
+                                  "rate_sub": {
+                                    "value": 1.6042392534391963e-08
+                                  },
+                                  "rate_sub_year": {
+                                    "value": 0.06809710076262276
+                                  },
+                                  "rate_sub_year_category": {
+                                    "value": "LOW"
+                                  },
+                                  "root_rtt_dist": {
+                                    "value": 5.73632e-05
+                                  },
+                                  "strain": {
+                                    "value": "UNT003"
+                                  },
+                                  "tstv": {
+                                    "value": 1.94
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "Biosample Accession": "NA",
+                                    "Blank": " ",
+                                    "Branch Length": 5.406648271017048,
+                                    "Branch Length Sub": 0.43292477636826787,
+                                    "Branch Length Time": 5.406648271017048,
+                                    "Branch Minor": "NA",
+                                    "Branch Number": "NA",
+                                    "Branch Support": 22.0,
+                                    "Branch Support Conf Category": "LOW",
+                                    "Branch Support Conf Char": "",
+                                    "Continent Raw": "NA",
+                                    "Continuous Geo": "NA",
+                                    "Country Date Strain": "NA",
+                                    "Country Lat": "NA",
+                                    "Country Lon": "NA",
+                                    "Country Raw": "NA",
+                                    "Date Bp Mean": "NA",
+                                    "Date Err": "NA",
+                                    "Date Mean": "NA",
+                                    "Host Human": "NA",
+                                    "Host Order Raw": "NA",
+                                    "Node Name": "NODE157",
+                                    "Node Type": "internal",
+                                    "Ns Ss Ratio": "NA",
+                                    "Num Date": 478.0,
+                                    "Num Date Confidence": [
+                                      433,
+                                      529
+                                    ],
+                                    "Other Var Ratio": "NA",
+                                    "Population Raw": "NA",
+                                    "Population Rtt Dist": "NA",
+                                    "Province Date Strain": "NA",
+                                    "Province Lat": "NA",
+                                    "Province Lon": "NA",
+                                    "Province Raw": "NA",
+                                    "Rate Sub": 1.8863611361672545e-08,
+                                    "Rate Sub Year": 0.08007267250747757,
+                                    "Rate Sub Year Category": "LOW",
+                                    "Root Rtt Dist": "NA",
+                                    "Strain": "NA",
+                                    "Tstv": "NA"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {},
+                                    "name": "SAMEA4354665",
+                                    "node_attrs": {
+                                      "biosample_accession": {
+                                        "value": "SAMEA4354665"
+                                      },
+                                      "branch_length_sub": {
+                                        "value": 2.3520259286426657
+                                      },
+                                      "branch_length_time": {
+                                        "value": 30.97783356713012
+                                      },
+                                      "branch_minor": {
+                                        "value": "0.ANT4"
+                                      },
+                                      "branch_number": {
+                                        "value": "0.0"
+                                      },
+                                      "branch_support": {
+                                        "value": 0.0
+                                      },
+                                      "branch_support_conf_category": {
+                                        "value": "LOW"
+                                      },
+                                      "continent_raw": {
+                                        "value": "Europe"
+                                      },
+                                      "country_date_strain": {
+                                        "value": "Germany [426:571] AE1175"
+                                      },
+                                      "country_lat": {
+                                        "value": 51.0834196
+                                      },
+                                      "country_lon": {
+                                        "value": 10.4234469
+                                      },
+                                      "country_raw": {
+                                        "value": "Germany"
+                                      },
+                                      "date_bp_mean": {
+                                        "value": 1522.5
+                                      },
+                                      "date_err": {
+                                        "value": 72.5
+                                      },
+                                      "date_mean": {
+                                        "value": 498.5
+                                      },
+                                      "div": 391.43389186050695,
+                                      "host_human": {
+                                        "value": "Human"
+                                      },
+                                      "host_order_raw": {
+                                        "value": "Human"
+                                      },
+                                      "node_name": {
+                                        "value": "SAMEA4354665"
+                                      },
+                                      "node_type": {
+                                        "value": "terminal"
+                                      },
+                                      "ns_ss_ratio": {
+                                        "value": 2.22642
+                                      },
+                                      "num_date": {
+                                        "confidence": [
+                                          436,
+                                          544
+                                        ],
+                                        "value": 492.0
+                                      },
+                                      "other_var_ratio": {
+                                        "value": 0.132075
+                                      },
+                                      "population_raw": {
+                                        "value": "0.ANT4"
+                                      },
+                                      "population_rtt_dist": {
+                                        "value": 1.1925e-05
+                                      },
+                                      "province_date_strain": {
+                                        "value": "Bavaria [426:571] AE1175"
+                                      },
+                                      "province_lat": {
+                                        "value": 48.9467562
+                                      },
+                                      "province_lon": {
+                                        "value": 11.4038717
+                                      },
+                                      "province_raw": {
+                                        "value": "Bavaria"
+                                      },
+                                      "rate_sub": {
+                                        "value": 1.7886755867968982e-08
+                                      },
+                                      "rate_sub_year": {
+                                        "value": 0.07592609481698383
+                                      },
+                                      "rate_sub_year_category": {
+                                        "value": "LOW"
+                                      },
+                                      "root_rtt_dist": {
+                                        "value": 5.73397e-05
+                                      },
+                                      "strain": {
+                                        "value": "AE1175"
+                                      },
+                                      "tstv": {
+                                        "value": 1.9
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "branch_attrs": {},
+                                    "name": "SAMEA5661360",
+                                    "node_attrs": {
+                                      "biosample_accession": {
+                                        "value": "SAMEA5661360"
+                                      },
+                                      "branch_length_sub": {
+                                        "value": 6.404673592582429
+                                      },
+                                      "branch_length_time": {
+                                        "value": 54.35600790474223
+                                      },
+                                      "branch_minor": {
+                                        "value": "0.ANT4"
+                                      },
+                                      "branch_number": {
+                                        "value": "0.0"
+                                      },
+                                      "branch_support": {
+                                        "value": 0.0
+                                      },
+                                      "branch_support_conf_category": {
+                                        "value": "LOW"
+                                      },
+                                      "continent_raw": {
+                                        "value": "Europe"
+                                      },
+                                      "country_date_strain": {
+                                        "value": "Germany [428:595] DIT003"
+                                      },
+                                      "country_lat": {
+                                        "value": 51.0834196
+                                      },
+                                      "country_lon": {
+                                        "value": 10.4234469
+                                      },
+                                      "country_raw": {
+                                        "value": "Germany"
+                                      },
+                                      "date_bp_mean": {
+                                        "value": 1509.5
+                                      },
+                                      "date_err": {
+                                        "value": 83.5
+                                      },
+                                      "date_mean": {
+                                        "value": 511.5
+                                      },
+                                      "div": 414.81206619811906,
+                                      "host_human": {
+                                        "value": "Human"
+                                      },
+                                      "host_order_raw": {
+                                        "value": "Human"
+                                      },
+                                      "node_name": {
+                                        "value": "SAMEA5661360"
+                                      },
+                                      "node_type": {
+                                        "value": "terminal"
+                                      },
+                                      "ns_ss_ratio": {
+                                        "value": 2.0444400000000003
+                                      },
+                                      "num_date": {
+                                        "confidence": [
+                                          453,
+                                          582
+                                        ],
+                                        "value": 515.0
+                                      },
+                                      "other_var_ratio": {
+                                        "value": 0.0444444
+                                      },
+                                      "population_raw": {
+                                        "value": "0.ANT4"
+                                      },
+                                      "population_rtt_dist": {
+                                        "value": 1.2681200000000003e-05
+                                      },
+                                      "province_date_strain": {
+                                        "value": "Bavaria [428:595] DIT003"
+                                      },
+                                      "province_lat": {
+                                        "value": 48.9467562
+                                      },
+                                      "province_lon": {
+                                        "value": 11.4038717
+                                      },
+                                      "province_raw": {
+                                        "value": "Bavaria"
+                                      },
+                                      "rate_sub": {
+                                        "value": 2.775811461495405e-08
+                                      },
+                                      "rate_sub_year": {
+                                        "value": 0.11782825559607847
+                                      },
+                                      "rate_sub_year_category": {
+                                        "value": "LOW"
+                                      },
+                                      "root_rtt_dist": {
+                                        "value": 5.80959e-05
+                                      },
+                                      "strain": {
+                                        "value": "DIT003"
+                                      },
+                                      "tstv": {
+                                        "value": 1.79
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE157",
+                                "node_attrs": {
+                                  "branch_length_sub": {
+                                    "value": 0.43292477636826787
+                                  },
+                                  "branch_length_time": {
+                                    "value": 5.406648271017048
+                                  },
+                                  "branch_support": {
+                                    "value": 22.0
+                                  },
+                                  "branch_support_conf_category": {
+                                    "value": "LOW"
+                                  },
+                                  "div": 360.4560582933768,
+                                  "node_name": {
+                                    "value": "NODE157"
+                                  },
+                                  "node_type": {
+                                    "value": "internal"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      433,
+                                      529
+                                    ],
+                                    "value": 478.0
+                                  },
+                                  "rate_sub": {
+                                    "value": 1.8863611361672545e-08
+                                  },
+                                  "rate_sub_year": {
+                                    "value": 0.08007267250747757
+                                  },
+                                  "rate_sub_year_category": {
+                                    "value": "LOW"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE156",
+                            "node_attrs": {
+                              "branch_length_sub": {
+                                "value": 0.4651687785646322
+                              },
+                              "branch_length_time": {
+                                "value": 6.551934751685167
+                              },
+                              "branch_support": {
+                                "value": 30.0
+                              },
+                              "branch_support_conf_category": {
+                                "value": "LOW"
+                              },
+                              "div": 355.0494100223598,
+                              "node_name": {
+                                "value": "NODE156"
+                              },
+                              "node_type": {
+                                "value": "internal"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  419,
+                                  517
+                                ],
+                                "value": 466.0
+                              },
+                              "rate_sub": {
+                                "value": 1.6725592463604762e-08
+                              },
+                              "rate_sub_year": {
+                                "value": 0.07099716285254369
+                              },
+                              "rate_sub_year_category": {
+                                "value": "LOW"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE155",
+                        "node_attrs": {
+                          "branch_length_sub": {
+                            "value": 3.4488386379193283
+                          },
+                          "branch_length_time": {
+                            "value": 30.447781249338504
+                          },
+                          "branch_support": {
+                            "value": 100.0
+                          },
+                          "branch_support_conf_category": {
+                            "value": "HIGH"
+                          },
+                          "branch_support_conf_char": {
+                            "value": "*"
+                          },
+                          "div": 348.4974752706746,
+                          "node_name": {
+                            "value": "NODE155"
+                          },
+                          "node_type": {
+                            "value": "internal"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              395,
+                              503
+                            ],
+                            "value": 449.0
+                          },
+                          "rate_sub": {
+                            "value": 2.6684418368118894e-08
+                          },
+                          "rate_sub_year": {
+                            "value": 0.11327060614619518
+                          },
+                          "rate_sub_year_category": {
+                            "value": "LOW"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE154",
+                    "node_attrs": {
+                      "branch_length_sub": {
+                        "value": 0.38039131120571307
+                      },
+                      "branch_length_time": {
+                        "value": 4.220084161018576
+                      },
+                      "branch_support": {
+                        "value": 29.0
+                      },
+                      "branch_support_conf_category": {
+                        "value": "LOW"
+                      },
+                      "div": 318.0496940213361,
+                      "node_name": {
+                        "value": "NODE154"
+                      },
+                      "node_type": {
+                        "value": "internal"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          362,
+                          489
+                        ],
+                        "value": 425.0
+                      },
+                      "rate_sub": {
+                        "value": 2.1234888878006807e-08
+                      },
+                      "rate_sub_year": {
+                        "value": 0.09013832347691861
+                      },
+                      "rate_sub_year_category": {
+                        "value": "LOW"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE152",
+                "node_attrs": {
+                  "branch_length_sub": {
+                    "value": 4.295829066176713
+                  },
+                  "branch_length_time": {
+                    "value": 34.02689492851027
+                  },
+                  "branch_support": {
+                    "value": 100.0
+                  },
+                  "branch_support_conf_category": {
+                    "value": "HIGH"
+                  },
+                  "branch_support_conf_char": {
+                    "value": "*"
+                  },
+                  "div": 313.82960986031753,
+                  "node_name": {
+                    "value": "NODE152"
+                  },
+                  "node_type": {
+                    "value": "internal"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      342,
+                      482
+                    ],
+                    "value": 414.0
+                  },
+                  "rate_sub": {
+                    "value": 2.9741658909924286e-08
+                  },
+                  "rate_sub_year": {
+                    "value": 0.12624804805734263
+                  },
+                  "rate_sub_year_category": {
+                    "value": "LOW"
+                  }
+                }
+              }
+            ],
+            "name": "NODE151",
+            "node_attrs": {
+              "branch_length_sub": {
+                "value": 5.492094583210694
+              },
+              "branch_length_time": {
+                "value": 45.18206918958572
+              },
+              "branch_support": {
+                "value": 100.0
+              },
+              "branch_support_conf_category": {
+                "value": "HIGH"
+              },
+              "branch_support_conf_char": {
+                "value": "*"
+              },
+              "div": 279.80271493180726,
+              "node_name": {
+                "value": "NODE151"
+              },
+              "node_type": {
+                "value": "internal"
+              },
+              "num_date": {
+                "confidence": [
+                  286,
+                  465
+                ],
+                "value": 380.0
+              },
+              "rate_sub": {
+                "value": 2.8636003585704192e-08
+              },
+              "rate_sub_year": {
+                "value": 0.12155473801267604
+              },
+              "rate_sub_year_category": {
+                "value": "LOW"
+              }
+            }
+          }
+        ],
+        "name": "NODE148",
+        "node_attrs": {
+          "branch_length_sub": {
+            "value": 53.8466180050119
+          },
+          "branch_length_time": {
+            "value": 234.62064574222154
+          },
+          "branch_support": {
+            "value": 100.0
+          },
+          "branch_support_conf_category": {
+            "value": "HIGH"
+          },
+          "branch_support_conf_char": {
+            "value": "*"
+          },
+          "div": 234.62064574222154,
+          "node_name": {
+            "value": "NODE148"
+          },
+          "node_type": {
+            "value": "internal"
+          },
+          "num_date": {
+            "confidence": [
+              204,
+              445
+            ],
+            "value": 335.0
+          },
+          "rate_sub": {
+            "value": 5.406705595041299e-08
+          },
+          "rate_sub_year": {
+            "value": 0.229505028573544
+          },
+          "rate_sub_year_category": {
+            "value": "LOW"
+          }
+        }
+      }
+    ],
+    "name": "NODE147",
+    "node_attrs": {
+      "branch_length_sub": {
+        "value": 13.340898408788926
+      },
+      "branch_length_time": {
+        "value": 126.85938025746464
+      },
+      "branch_support": {
+        "value": 100.0
+      },
+      "branch_support_conf_category": {
+        "value": "HIGH"
+      },
+      "branch_support_conf_char": {
+        "value": "*"
+      },
+      "div": 0,
+      "node_name": {
+        "value": "NODE147"
+      },
+      "node_type": {
+        "value": "internal"
+      },
+      "num_date": {
+        "confidence": [
+          -81,
+          231
+        ],
+        "value": 100.0
+      },
+      "rate_sub": {
+        "value": 2.4774392173287817e-08
+      },
+      "rate_sub_year": {
+        "value": 0.10516288493379994
+      },
+      "rate_sub_year_category": {
+        "value": "LOW"
+      }
+    }
+  },
+  "version": "v2"
+}

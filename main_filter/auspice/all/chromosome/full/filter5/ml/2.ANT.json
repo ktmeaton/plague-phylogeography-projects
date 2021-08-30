@@ -1,6 +1,6 @@
 {
   "meta": {
-    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main",
+    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main_filter",
     "colorings": [
       {
         "key": "num_date",
@@ -304,6 +304,16 @@
       },
       {
         "key": "population_raw",
+        "scale": [
+          [
+            "2.ANT",
+            "#97fca7"
+          ],
+          [
+            "NA",
+            "#c4c4c4"
+          ]
+        ],
         "title": "Population",
         "type": "categorical"
       },
@@ -452,83 +462,43 @@
         "type": "categorical"
       },
       {
-        "key": "branch_minor",
-        "title": "Branch Minor",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "host_human",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "tstv",
+        "title": "TsTv",
         "type": "continuous"
       },
       {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_support_conf_category",
+        "key": "province",
         "scale": [
           [
-            "LOW",
-            "#FFFFFF"
+            "Qinghai",
+            "#5e35fe"
           ],
           [
-            "HIGH",
-            "#97fca7"
-          ]
-        ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "continent",
-        "scale": [
-          [
-            "Europe",
-            "#8000ff"
+            "Inner Mongolia",
+            "#1996f3"
           ],
           [
-            "Asia",
-            "#00b4ec"
-          ]
-        ],
-        "title": "Continent (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "host_order_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
+            "Tibet",
+            "#a7f79d"
           ],
           [
-            "HIGH",
-            "#97fca7"
+            "Jilin",
+            "#f1c36c"
+          ],
+          [
+            "Zabaykalsky Krai",
+            "#f7be68"
+          ],
+          [
+            "St. Petersberg",
+            "#fcb764"
+          ],
+          [
+            "Gandaki Pradesh",
+            "#ffb160"
           ]
         ],
-        "title": "Host Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
+        "title": "Province (Inferred)",
         "type": "categorical"
       },
       {
@@ -571,7 +541,7 @@
         "type": "categorical"
       },
       {
-        "key": "population_conf_category",
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -582,57 +552,57 @@
             "#97fca7"
           ]
         ],
-        "title": "Population Confidence",
+        "title": "Province Confidence",
         "type": "categorical"
       },
       {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province",
-        "scale": [
-          [
-            "Qinghai",
-            "#5e35fe"
-          ],
-          [
-            "Inner Mongolia",
-            "#1996f3"
-          ],
-          [
-            "Tibet",
-            "#a7f79d"
-          ],
-          [
-            "Jilin",
-            "#f1c36c"
-          ],
-          [
-            "Zabaykalsky Krai",
-            "#f7be68"
-          ],
-          [
-            "St. Petersberg",
-            "#fcb764"
-          ],
-          [
-            "Gandaki Pradesh",
-            "#ffb160"
-          ]
-        ],
-        "title": "Province (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
+        "key": "rate_sub_year",
+        "title": "Substitution Rate (subs/year)",
         "type": "continuous"
       },
       {
-        "key": "country_lon",
-        "title": "Country Longitude",
+        "key": "tstv",
+        "title": "TsTv",
+        "type": "continuous"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "biosample_accession",
+        "title": "BioSample Accession",
+        "type": "categorical"
+      },
+      {
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
+        "type": "continuous"
+      },
+      {
+        "key": "node_name",
+        "title": "Node Name",
+        "type": "categorical"
+      },
+      {
+        "key": "continent_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#97fca7"
+          ]
+        ],
+        "title": "Continent Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
         "type": "continuous"
       },
       {
@@ -655,14 +625,28 @@
         "type": "categorical"
       },
       {
-        "key": "population_raw",
-        "title": "Population",
-        "type": "categorical"
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
       },
       {
-        "key": "population_geo_dist",
-        "title": "population_geo_dist",
-        "type": "continuous"
+        "key": "country_raw",
+        "scale": [
+          [
+            "Russia",
+            "#8000ff"
+          ],
+          [
+            "China",
+            "#3c68f9"
+          ],
+          [
+            "Nepal",
+            "#ff4f28"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
       },
       {
         "key": "host_order",
@@ -696,103 +680,48 @@
         "type": "categorical"
       },
       {
-        "key": "population",
+        "key": "population_conf_category",
         "scale": [
           [
-            "2.ANT",
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
             "#97fca7"
           ]
         ],
-        "title": "Population (Inferred)",
+        "title": "Population Confidence",
         "type": "categorical"
       },
       {
-        "key": "rate_sub_year",
-        "title": "Substitution Rate (subs/year)",
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
         "type": "continuous"
       },
       {
-        "key": "root_geo_dist",
-        "title": "root_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "biosample_accession",
-        "title": "BioSample Accession",
+        "key": "ns_ss_ratio",
+        "title": "ns_ss_ratio",
         "type": "categorical"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
-        "type": "continuous"
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "continent_raw",
+        "key": "host_order_conf_category",
         "scale": [
           [
-            "Europe",
-            "#8000ff"
+            "LOW",
+            "#FFFFFF"
           ],
           [
-            "Asia",
-            "#00b4ec"
+            "HIGH",
+            "#97fca7"
           ]
         ],
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "country_raw",
-        "scale": [
-          [
-            "Russia",
-            "#8000ff"
-          ],
-          [
-            "China",
-            "#3c68f9"
-          ],
-          [
-            "Nepal",
-            "#ff4f28"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support_conf_char",
-        "title": "Branch Support Confidence Character",
-        "type": "categorical"
-      },
-      {
-        "key": "population_rtt_dist",
-        "title": "Population Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
+        "title": "Host Confidence",
         "type": "categorical"
       },
       {
@@ -811,43 +740,33 @@
         "type": "categorical"
       },
       {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#97fca7"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
+        "key": "country_lat",
+        "title": "Country Latitude",
         "type": "continuous"
       },
       {
-        "key": "blank",
-        "title": "Blank",
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
         "type": "categorical"
       },
       {
-        "key": "continent_conf_category",
+        "key": "population_raw",
         "scale": [
           [
-            "LOW",
-            "#FFFFFF"
+            "2.ANT",
+            "#97fca7"
           ],
           [
-            "HIGH",
-            "#97fca7"
+            "NA",
+            "#c4c4c4"
           ]
         ],
-        "title": "Continent Confidence",
+        "title": "Population",
         "type": "categorical"
       },
       {
@@ -866,8 +785,119 @@
         "type": "categorical"
       },
       {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "2.ANT",
+            "#97fca7"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#97fca7"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
         "key": "country_date_strain",
         "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "other_var_ratio",
+        "title": "other_var_ratio",
         "type": "categorical"
       },
       {
@@ -906,9 +936,19 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Europe",
+            "#8000ff"
+          ],
+          [
+            "Asia",
+            "#00b4ec"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
       }
     ],
     "display_defaults": {
@@ -993,7 +1033,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-08-26"
+    "updated": "2021-08-30"
   },
   "tree": {
     "branch_attrs": {
@@ -1029,11 +1069,13 @@
         "Host Order Raw": "NA",
         "Node Name": "NODE345",
         "Node Type": "internal",
+        "Ns Ss Ratio": "NA",
         "Num Date": 1769.0,
         "Num Date Confidence": [
           1719.0,
           1814.0
         ],
+        "Other Var Ratio": "NA",
         "Population": "2.ANT",
         "Population Conf Category": "HIGH",
         "Population Confidence": 1.0,
@@ -1051,7 +1093,8 @@
         "Rate Sub Year": 0.03872751237713384,
         "Root Geo Dist": 823.02714885,
         "Root Rtt Dist": "NA",
-        "Strain": "NA"
+        "Strain": "NA",
+        "Tstv": "NA"
       }
     },
     "children": [
@@ -1089,11 +1132,13 @@
             "Host Order Raw": "NA",
             "Node Name": "NODE333",
             "Node Type": "internal",
+            "Ns Ss Ratio": "NA",
             "Num Date": 1635.0,
             "Num Date Confidence": [
               1529.0,
               1705.0
             ],
+            "Other Var Ratio": "NA",
             "Population": "2.ANT",
             "Population Conf Category": "HIGH",
             "Population Confidence": 1.0,
@@ -1111,7 +1156,8 @@
             "Rate Sub Year": 0.12829993969586073,
             "Root Geo Dist": 823.02714885,
             "Root Rtt Dist": "NA",
-            "Strain": "NA"
+            "Strain": "NA",
+            "Tstv": "NA"
           }
         },
         "children": [
@@ -1149,11 +1195,13 @@
                 "Host Order Raw": "NA",
                 "Node Name": "NODE334",
                 "Node Type": "internal",
+                "Ns Ss Ratio": "NA",
                 "Num Date": 1731.0,
                 "Num Date Confidence": [
                   1625.0,
                   1807.0
                 ],
+                "Other Var Ratio": "NA",
                 "Population": "2.ANT",
                 "Population Conf Category": "HIGH",
                 "Population Confidence": 1.0,
@@ -1171,7 +1219,8 @@
                 "Rate Sub Year": 0.05208808975428778,
                 "Root Geo Dist": 823.02714885,
                 "Root Rtt Dist": "NA",
-                "Strain": "NA"
+                "Strain": "NA",
+                "Tstv": "NA"
               }
             },
             "children": [
@@ -1209,11 +1258,13 @@
                     "Host Order Raw": "NA",
                     "Node Name": "NODE335",
                     "Node Type": "internal",
+                    "Ns Ss Ratio": "NA",
                     "Num Date": 1926.0,
                     "Num Date Confidence": [
                       1870.0,
                       1970.0
                     ],
+                    "Other Var Ratio": "NA",
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
@@ -1231,7 +1282,8 @@
                     "Rate Sub Year": 0.055051058720581525,
                     "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
-                    "Strain": "NA"
+                    "Strain": "NA",
+                    "Tstv": "NA"
                   }
                 },
                 "children": [
@@ -1324,12 +1376,18 @@
                       "node_type": {
                         "value": "terminal"
                       },
+                      "ns_ss_ratio": {
+                        "value": 2.25
+                      },
                       "num_date": {
                         "confidence": [
                           1971.0,
                           1971.0
                         ],
                         "value": 1971.0
+                      },
+                      "other_var_ratio": {
+                        "value": 0.0
                       },
                       "population": {
                         "confidence": {
@@ -1384,6 +1442,9 @@
                       },
                       "strain": {
                         "value": "CMCC92010"
+                      },
+                      "tstv": {
+                        "value": 1.672
                       }
                     }
                   },
@@ -1476,12 +1537,18 @@
                       "node_type": {
                         "value": "terminal"
                       },
+                      "ns_ss_ratio": {
+                        "value": 2.225
+                      },
                       "num_date": {
                         "confidence": [
                           1970.0,
                           1970.0
                         ],
                         "value": 1970.0
+                      },
+                      "other_var_ratio": {
+                        "value": 0.0
                       },
                       "population": {
                         "confidence": {
@@ -1536,6 +1603,9 @@
                       },
                       "strain": {
                         "value": "CMCC95001"
+                      },
+                      "tstv": {
+                        "value": 1.774
                       }
                     }
                   }
@@ -1676,11 +1746,13 @@
                     "Host Order Raw": "NA",
                     "Node Name": "NODE336",
                     "Node Type": "internal",
+                    "Ns Ss Ratio": "NA",
                     "Num Date": 1881.0,
                     "Num Date Confidence": [
                       1795.0,
                       1929.0
                     ],
+                    "Other Var Ratio": "NA",
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
@@ -1698,7 +1770,8 @@
                     "Rate Sub Year": 0.043824486457535325,
                     "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
-                    "Strain": "NA"
+                    "Strain": "NA",
+                    "Tstv": "NA"
                   }
                 },
                 "children": [
@@ -1791,12 +1864,18 @@
                       "node_type": {
                         "value": "terminal"
                       },
+                      "ns_ss_ratio": {
+                        "value": 2.21951
+                      },
                       "num_date": {
                         "confidence": [
                           1957.0,
                           1957.0
                         ],
                         "value": 1957.0
+                      },
+                      "other_var_ratio": {
+                        "value": 0.0
                       },
                       "population": {
                         "confidence": {
@@ -1851,6 +1930,9 @@
                       },
                       "strain": {
                         "value": "CMCC96001"
+                      },
+                      "tstv": {
+                        "value": 1.903
                       }
                     }
                   },
@@ -1943,12 +2025,18 @@
                       "node_type": {
                         "value": "terminal"
                       },
+                      "ns_ss_ratio": {
+                        "value": 2.15385
+                      },
                       "num_date": {
                         "confidence": [
                           1989.0,
                           1989.0
                         ],
                         "value": 1989.0
+                      },
+                      "other_var_ratio": {
+                        "value": 0.0
                       },
                       "population": {
                         "confidence": {
@@ -2003,6 +2091,9 @@
                       },
                       "strain": {
                         "value": "CMCC96007"
+                      },
+                      "tstv": {
+                        "value": 1.912
                       }
                     }
                   }
@@ -2246,11 +2337,13 @@
                 "Host Order Raw": "NA",
                 "Node Name": "NODE337",
                 "Node Type": "internal",
+                "Ns Ss Ratio": "NA",
                 "Num Date": 1667.0,
                 "Num Date Confidence": [
                   1575.0,
                   1735.0
                 ],
+                "Other Var Ratio": "NA",
                 "Population": "2.ANT",
                 "Population Conf Category": "HIGH",
                 "Population Confidence": 1.0,
@@ -2268,7 +2361,8 @@
                 "Rate Sub Year": 0.15590528615871904,
                 "Root Geo Dist": 823.02714885,
                 "Root Rtt Dist": "NA",
-                "Strain": "NA"
+                "Strain": "NA",
+                "Tstv": "NA"
               }
             },
             "children": [
@@ -2361,12 +2455,18 @@
                   "node_type": {
                     "value": "terminal"
                   },
+                  "ns_ss_ratio": {
+                    "value": 2.17073
+                  },
                   "num_date": {
                     "confidence": [
                       1959.0,
                       1959.0
                     ],
                     "value": 1959.0
+                  },
+                  "other_var_ratio": {
+                    "value": 0.0
                   },
                   "population": {
                     "confidence": {
@@ -2421,6 +2521,9 @@
                   },
                   "strain": {
                     "value": "CMCC67001"
+                  },
+                  "tstv": {
+                    "value": 1.839
                   }
                 }
               },
@@ -2458,11 +2561,13 @@
                     "Host Order Raw": "NA",
                     "Node Name": "NODE338",
                     "Node Type": "internal",
+                    "Ns Ss Ratio": "NA",
                     "Num Date": 1717.0,
                     "Num Date Confidence": [
                       1640.0,
                       1785.0
                     ],
+                    "Other Var Ratio": "NA",
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
@@ -2480,7 +2585,8 @@
                     "Rate Sub Year": 0.03986099195986133,
                     "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
-                    "Strain": "NA"
+                    "Strain": "NA",
+                    "Tstv": "NA"
                   }
                 },
                 "children": [
@@ -2518,11 +2624,13 @@
                         "Host Order Raw": "NA",
                         "Node Name": "NODE339",
                         "Node Type": "internal",
+                        "Ns Ss Ratio": "NA",
                         "Num Date": 1753.0,
                         "Num Date Confidence": [
                           1677.0,
                           1816.0
                         ],
+                        "Other Var Ratio": "NA",
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
@@ -2540,7 +2648,8 @@
                         "Rate Sub Year": 0.027454776833768287,
                         "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
-                        "Strain": "NA"
+                        "Strain": "NA",
+                        "Tstv": "NA"
                       }
                     },
                     "children": [
@@ -2633,12 +2742,18 @@
                           "node_type": {
                             "value": "terminal"
                           },
+                          "ns_ss_ratio": {
+                            "value": 2.34211
+                          },
                           "num_date": {
                             "confidence": [
                               1959.0,
                               1959.0
                             ],
                             "value": 1959.0
+                          },
+                          "other_var_ratio": {
+                            "value": 0.0
                           },
                           "population": {
                             "confidence": {
@@ -2693,6 +2808,9 @@
                           },
                           "strain": {
                             "value": "H1959004"
+                          },
+                          "tstv": {
+                            "value": 1.855
                           }
                         }
                       },
@@ -2730,11 +2848,13 @@
                             "Host Order Raw": "NA",
                             "Node Name": "NODE340",
                             "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
                             "Num Date": 1753.0,
                             "Num Date Confidence": [
                               1677.0,
                               1816.0
                             ],
+                            "Other Var Ratio": "NA",
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
@@ -2752,7 +2872,8 @@
                             "Rate Sub Year": 0.0,
                             "Root Geo Dist": 3257.92765865,
                             "Root Rtt Dist": "NA",
-                            "Strain": "NA"
+                            "Strain": "NA",
+                            "Tstv": "NA"
                           }
                         },
                         "children": [
@@ -2845,12 +2966,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 1.97872
+                              },
                               "num_date": {
                                 "confidence": [
                                   1970.0,
                                   1970.0
                                 ],
                                 "value": 1970.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.0212766
                               },
                               "population": {
                                 "confidence": {
@@ -2905,6 +3032,9 @@
                               },
                               "strain": {
                                 "value": "I-1996"
+                              },
+                              "tstv": {
+                                "value": 1.985
                               }
                             }
                           },
@@ -2942,11 +3072,13 @@
                                 "Host Order Raw": "NA",
                                 "Node Name": "NODE341",
                                 "Node Type": "internal",
+                                "Ns Ss Ratio": "NA",
                                 "Num Date": 1852.0,
                                 "Num Date Confidence": [
                                   1797.0,
                                   1918.0
                                 ],
+                                "Other Var Ratio": "NA",
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
@@ -2964,7 +3096,8 @@
                                 "Rate Sub Year": 0.0805181172805145,
                                 "Root Geo Dist": 3257.92765865,
                                 "Root Rtt Dist": "NA",
-                                "Strain": "NA"
+                                "Strain": "NA",
+                                "Tstv": "NA"
                               }
                             },
                             "children": [
@@ -3057,12 +3190,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.4864900000000003
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       1956.0,
                                       1956.0
                                     ],
                                     "value": 1956.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.0
                                   },
                                   "population": {
                                     "confidence": {
@@ -3117,6 +3256,9 @@
                                   },
                                   "strain": {
                                     "value": "5761"
+                                  },
+                                  "tstv": {
+                                    "value": 1.6669999999999998
                                   }
                                 }
                               },
@@ -3209,12 +3351,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.48718
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       1965.0,
                                       1965.0
                                     ],
                                     "value": 1965.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.0
                                   },
                                   "population": {
                                     "confidence": {
@@ -3269,6 +3417,9 @@
                                   },
                                   "strain": {
                                     "value": "735"
+                                  },
+                                  "tstv": {
+                                    "value": 1.676
                                   }
                                 }
                               }
@@ -3612,11 +3763,13 @@
                         "Host Order Raw": "NA",
                         "Node Name": "NODE342",
                         "Node Type": "internal",
+                        "Ns Ss Ratio": "NA",
                         "Num Date": 1849.0,
                         "Num Date Confidence": [
                           1783.0,
                           1897.0
                         ],
+                        "Other Var Ratio": "NA",
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
@@ -3634,7 +3787,8 @@
                         "Rate Sub Year": 0.05269303702209326,
                         "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
-                        "Strain": "NA"
+                        "Strain": "NA",
+                        "Tstv": "NA"
                       }
                     },
                     "children": [
@@ -3727,12 +3881,18 @@
                           "node_type": {
                             "value": "terminal"
                           },
+                          "ns_ss_ratio": {
+                            "value": 2.39474
+                          },
                           "num_date": {
                             "confidence": [
                               1989.0,
                               1989.0
                             ],
                             "value": 1989.0
+                          },
+                          "other_var_ratio": {
+                            "value": 0.0
                           },
                           "population": {
                             "confidence": {
@@ -3787,6 +3947,9 @@
                           },
                           "strain": {
                             "value": "CMCC104003"
+                          },
+                          "tstv": {
+                            "value": 1.933
                           }
                         }
                       },
@@ -3824,11 +3987,13 @@
                             "Host Order Raw": "NA",
                             "Node Name": "NODE343",
                             "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
                             "Num Date": 1849.0,
                             "Num Date Confidence": [
                               1783.0,
                               1897.0
                             ],
+                            "Other Var Ratio": "NA",
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
@@ -3846,7 +4011,8 @@
                             "Rate Sub Year": 0.0,
                             "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
-                            "Strain": "NA"
+                            "Strain": "NA",
+                            "Tstv": "NA"
                           }
                         },
                         "children": [
@@ -3939,12 +4105,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 2.30769
+                              },
                               "num_date": {
                                 "confidence": [
                                   1996.0,
                                   1996.0
                                 ],
                                 "value": 1996.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.0
                               },
                               "population": {
                                 "confidence": {
@@ -3999,6 +4171,9 @@
                               },
                               "strain": {
                                 "value": "CMCC106002"
+                              },
+                              "tstv": {
+                                "value": 2.036
                               }
                             }
                           },
@@ -4036,11 +4211,13 @@
                                 "Host Order Raw": "NA",
                                 "Node Name": "NODE344",
                                 "Node Type": "internal",
+                                "Ns Ss Ratio": "NA",
                                 "Num Date": 1849.0,
                                 "Num Date Confidence": [
                                   1783.0,
                                   1897.0
                                 ],
+                                "Other Var Ratio": "NA",
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
@@ -4058,7 +4235,8 @@
                                 "Rate Sub Year": 0.0,
                                 "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
-                                "Strain": "NA"
+                                "Strain": "NA",
+                                "Tstv": "NA"
                               }
                             },
                             "children": [
@@ -4151,12 +4329,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.40541
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       1954.0,
                                       1954.0
                                     ],
                                     "value": 1954.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.0
                                   },
                                   "population": {
                                     "confidence": {
@@ -4211,6 +4395,9 @@
                                   },
                                   "strain": {
                                     "value": "CMCC51020"
+                                  },
+                                  "tstv": {
+                                    "value": 1.915
                                   }
                                 }
                               },
@@ -4303,12 +4490,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.325
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       1957.0,
                                       1957.0
                                     ],
                                     "value": 1957.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.0
                                   },
                                   "population": {
                                     "confidence": {
@@ -4363,6 +4556,9 @@
                                   },
                                   "strain": {
                                     "value": "CMCC64001"
+                                  },
+                                  "tstv": {
+                                    "value": 1.889
                                   }
                                 }
                               }
@@ -5012,11 +5208,13 @@
             "Host Order Raw": "NA",
             "Node Name": "NODE345",
             "Node Type": "internal",
+            "Ns Ss Ratio": "NA",
             "Num Date": 1769.0,
             "Num Date Confidence": [
               1719.0,
               1814.0
             ],
+            "Other Var Ratio": "NA",
             "Population": "2.ANT",
             "Population Conf Category": "HIGH",
             "Population Confidence": 1.0,
@@ -5034,7 +5232,8 @@
             "Rate Sub Year": 0.03872751237713384,
             "Root Geo Dist": 823.02714885,
             "Root Rtt Dist": "NA",
-            "Strain": "NA"
+            "Strain": "NA",
+            "Tstv": "NA"
           }
         },
         "children": [
@@ -5127,12 +5326,18 @@
               "node_type": {
                 "value": "terminal"
               },
+              "ns_ss_ratio": {
+                "value": 2.5142900000000004
+              },
               "num_date": {
                 "confidence": [
                   2004.0,
                   2004.0
                 ],
                 "value": 2004.0
+              },
+              "other_var_ratio": {
+                "value": 0.0
               },
               "population": {
                 "confidence": {
@@ -5187,6 +5392,9 @@
               },
               "strain": {
                 "value": "2"
+              },
+              "tstv": {
+                "value": 1.817
               }
             }
           },
@@ -5224,11 +5432,13 @@
                 "Host Order Raw": "NA",
                 "Node Name": "NODE346",
                 "Node Type": "internal",
+                "Ns Ss Ratio": "NA",
                 "Num Date": 1769.0,
                 "Num Date Confidence": [
                   1719.0,
                   1814.0
                 ],
+                "Other Var Ratio": "NA",
                 "Population": "2.ANT",
                 "Population Conf Category": "HIGH",
                 "Population Confidence": 1.0,
@@ -5246,7 +5456,8 @@
                 "Rate Sub Year": 0.0,
                 "Root Geo Dist": 823.02714885,
                 "Root Rtt Dist": "NA",
-                "Strain": "NA"
+                "Strain": "NA",
+                "Tstv": "NA"
               }
             },
             "children": [
@@ -5284,11 +5495,13 @@
                     "Host Order Raw": "NA",
                     "Node Name": "NODE347",
                     "Node Type": "internal",
+                    "Ns Ss Ratio": "NA",
                     "Num Date": 1814.0,
                     "Num Date Confidence": [
                       1751.0,
                       1883.0
                     ],
+                    "Other Var Ratio": "NA",
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
@@ -5306,7 +5519,8 @@
                     "Rate Sub Year": 0.0021824325382760776,
                     "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
-                    "Strain": "NA"
+                    "Strain": "NA",
+                    "Tstv": "NA"
                   }
                 },
                 "children": [
@@ -5344,11 +5558,13 @@
                         "Host Order Raw": "NA",
                         "Node Name": "NODE348",
                         "Node Type": "internal",
+                        "Ns Ss Ratio": "NA",
                         "Num Date": 1956.0,
                         "Num Date Confidence": [
                           1902.0,
                           1998.0
                         ],
+                        "Other Var Ratio": "NA",
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
@@ -5366,7 +5582,8 @@
                         "Rate Sub Year": 0.03513226612453892,
                         "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
-                        "Strain": "NA"
+                        "Strain": "NA",
+                        "Tstv": "NA"
                       }
                     },
                     "children": [
@@ -5459,12 +5676,18 @@
                           "node_type": {
                             "value": "terminal"
                           },
+                          "ns_ss_ratio": {
+                            "value": 2.17073
+                          },
                           "num_date": {
                             "confidence": [
                               2004.0,
                               2004.0
                             ],
                             "value": 2004.0
+                          },
+                          "other_var_ratio": {
+                            "value": 0.0243902
                           },
                           "population": {
                             "confidence": {
@@ -5519,6 +5742,9 @@
                           },
                           "strain": {
                             "value": "S20040188"
+                          },
+                          "tstv": {
+                            "value": 2.0
                           }
                         }
                       },
@@ -5556,11 +5782,13 @@
                             "Host Order Raw": "NA",
                             "Node Name": "NODE349",
                             "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
                             "Num Date": 1978.0,
                             "Num Date Confidence": [
                               1937.0,
                               2008.0
                             ],
+                            "Other Var Ratio": "NA",
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
@@ -5578,7 +5806,8 @@
                             "Rate Sub Year": 0.004601210204891189,
                             "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
-                            "Strain": "NA"
+                            "Strain": "NA",
+                            "Tstv": "NA"
                           }
                         },
                         "children": [
@@ -5671,12 +5900,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 2.17073
+                              },
                               "num_date": {
                                 "confidence": [
                                   2008.0,
                                   2008.0
                                 ],
                                 "value": 2008.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.195122
                               },
                               "population": {
                                 "confidence": {
@@ -5731,6 +5966,9 @@
                               },
                               "strain": {
                                 "value": "S20080154"
+                              },
+                              "tstv": {
+                                "value": 2.125
                               }
                             }
                           },
@@ -5823,12 +6061,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 2.19512
+                              },
                               "num_date": {
                                 "confidence": [
                                   2008.0,
                                   2008.0
                                 ],
                                 "value": 2008.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.170732
                               },
                               "population": {
                                 "confidence": {
@@ -5883,6 +6127,9 @@
                               },
                               "strain": {
                                 "value": "S20080149"
+                              },
+                              "tstv": {
+                                "value": 2.095
                               }
                             }
                           }
@@ -6123,11 +6370,13 @@
                         "Host Order Raw": "NA",
                         "Node Name": "NODE350",
                         "Node Type": "internal",
+                        "Ns Ss Ratio": "NA",
                         "Num Date": 1961.0,
                         "Num Date Confidence": [
                           1923.0,
                           1988.0
                         ],
+                        "Other Var Ratio": "NA",
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
@@ -6145,7 +6394,8 @@
                         "Rate Sub Year": 0.04066393880502588,
                         "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
-                        "Strain": "NA"
+                        "Strain": "NA",
+                        "Tstv": "NA"
                       }
                     },
                     "children": [
@@ -6238,12 +6488,18 @@
                           "node_type": {
                             "value": "terminal"
                           },
+                          "ns_ss_ratio": {
+                            "value": 2.4571400000000003
+                          },
                           "num_date": {
                             "confidence": [
                               1996.0,
                               1996.0
                             ],
                             "value": 1996.0
+                          },
+                          "other_var_ratio": {
+                            "value": 0.0
                           },
                           "population": {
                             "confidence": {
@@ -6298,6 +6554,9 @@
                           },
                           "strain": {
                             "value": "351001"
+                          },
+                          "tstv": {
+                            "value": 1.912
                           }
                         }
                       },
@@ -6335,11 +6594,13 @@
                             "Host Order Raw": "NA",
                             "Node Name": "NODE351",
                             "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
                             "Num Date": 1965.0,
                             "Num Date Confidence": [
                               1938.0,
                               1992.0
                             ],
+                            "Other Var Ratio": "NA",
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
@@ -6357,7 +6618,8 @@
                             "Rate Sub Year": 0.02730678308048595,
                             "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
-                            "Strain": "NA"
+                            "Strain": "NA",
+                            "Tstv": "NA"
                           }
                         },
                         "children": [
@@ -6395,11 +6657,13 @@
                                 "Host Order Raw": "NA",
                                 "Node Name": "NODE352",
                                 "Node Type": "internal",
+                                "Ns Ss Ratio": "NA",
                                 "Num Date": 1980.0,
                                 "Num Date Confidence": [
                                   1954.0,
                                   2003.0
                                 ],
+                                "Other Var Ratio": "NA",
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
@@ -6417,7 +6681,8 @@
                                 "Rate Sub Year": 0.00644288896639475,
                                 "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
-                                "Strain": "NA"
+                                "Strain": "NA",
+                                "Tstv": "NA"
                               }
                             },
                             "children": [
@@ -6510,12 +6775,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.30769
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       2008.0,
                                       2008.0
                                     ],
                                     "value": 2008.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.025641000000000004
                                   },
                                   "population": {
                                     "confidence": {
@@ -6570,6 +6841,9 @@
                                   },
                                   "strain": {
                                     "value": "S20080158"
+                                  },
+                                  "tstv": {
+                                    "value": 1.984
                                   }
                                 }
                               },
@@ -6662,12 +6936,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.29268
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       2007.0,
                                       2007.0
                                     ],
                                     "value": 2007.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.219512
                                   },
                                   "population": {
                                     "confidence": {
@@ -6722,6 +7002,9 @@
                                   },
                                   "strain": {
                                     "value": "S20070088"
+                                  },
+                                  "tstv": {
+                                    "value": 1.803
                                   }
                                 }
                               }
@@ -6859,11 +7142,13 @@
                                 "Host Order Raw": "NA",
                                 "Node Name": "NODE353",
                                 "Node Type": "internal",
+                                "Ns Ss Ratio": "NA",
                                 "Num Date": 1965.0,
                                 "Num Date Confidence": [
                                   1938.0,
                                   1992.0
                                 ],
+                                "Other Var Ratio": "NA",
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
@@ -6881,7 +7166,8 @@
                                 "Rate Sub Year": 0.0,
                                 "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
-                                "Strain": "NA"
+                                "Strain": "NA",
+                                "Tstv": "NA"
                               }
                             },
                             "children": [
@@ -6974,12 +7260,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.2439
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       2008.0,
                                       2008.0
                                     ],
                                     "value": 2008.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.0487805
                                   },
                                   "population": {
                                     "confidence": {
@@ -7034,6 +7326,9 @@
                                   },
                                   "strain": {
                                     "value": "S20080150"
+                                  },
+                                  "tstv": {
+                                    "value": 1.985
                                   }
                                 }
                               },
@@ -7071,11 +7366,13 @@
                                     "Host Order Raw": "NA",
                                     "Node Name": "NODE354",
                                     "Node Type": "internal",
+                                    "Ns Ss Ratio": "NA",
                                     "Num Date": 1965.0,
                                     "Num Date Confidence": [
                                       1938.0,
                                       1992.0
                                     ],
+                                    "Other Var Ratio": "NA",
                                     "Population": "2.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
@@ -7093,7 +7390,8 @@
                                     "Rate Sub Year": 0.0,
                                     "Root Geo Dist": 823.02714885,
                                     "Root Rtt Dist": "NA",
-                                    "Strain": "NA"
+                                    "Strain": "NA",
+                                    "Tstv": "NA"
                                   }
                                 },
                                 "children": [
@@ -7186,12 +7484,18 @@
                                       "node_type": {
                                         "value": "terminal"
                                       },
+                                      "ns_ss_ratio": {
+                                        "value": 2.45946
+                                      },
                                       "num_date": {
                                         "confidence": [
                                           1996.0,
                                           1996.0
                                         ],
                                         "value": 1996.0
+                                      },
+                                      "other_var_ratio": {
+                                        "value": 0.0
                                       },
                                       "population": {
                                         "confidence": {
@@ -7246,6 +7550,9 @@
                                       },
                                       "strain": {
                                         "value": "CMCC347001"
+                                      },
+                                      "tstv": {
+                                        "value": 1.612
                                       }
                                     }
                                   },
@@ -7283,11 +7590,13 @@
                                         "Host Order Raw": "NA",
                                         "Node Name": "NODE355",
                                         "Node Type": "internal",
+                                        "Ns Ss Ratio": "NA",
                                         "Num Date": 1983.0,
                                         "Num Date Confidence": [
                                           1950.0,
                                           2001.0
                                         ],
+                                        "Other Var Ratio": "NA",
                                         "Population": "2.ANT",
                                         "Population Conf Category": "HIGH",
                                         "Population Confidence": 1.0,
@@ -7305,7 +7614,8 @@
                                         "Rate Sub Year": 0.054536083698728366,
                                         "Root Geo Dist": 823.02714885,
                                         "Root Rtt Dist": "NA",
-                                        "Strain": "NA"
+                                        "Strain": "NA",
+                                        "Tstv": "NA"
                                       }
                                     },
                                     "children": [
@@ -7398,12 +7708,18 @@
                                           "node_type": {
                                             "value": "terminal"
                                           },
+                                          "ns_ss_ratio": {
+                                            "value": 2.21951
+                                          },
                                           "num_date": {
                                             "confidence": [
                                               2001.0,
                                               2001.0
                                             ],
                                             "value": 2001.0
+                                          },
+                                          "other_var_ratio": {
+                                            "value": 0.0731707
                                           },
                                           "population": {
                                             "confidence": {
@@ -7458,6 +7774,9 @@
                                           },
                                           "strain": {
                                             "value": "S20010083"
+                                          },
+                                          "tstv": {
+                                            "value": 1.938
                                           }
                                         }
                                       },
@@ -7550,12 +7869,18 @@
                                           "node_type": {
                                             "value": "terminal"
                                           },
+                                          "ns_ss_ratio": {
+                                            "value": 2.2439
+                                          },
                                           "num_date": {
                                             "confidence": [
                                               2003.0,
                                               2003.0
                                             ],
                                             "value": 2003.0
+                                          },
+                                          "other_var_ratio": {
+                                            "value": 0.0731707
                                           },
                                           "population": {
                                             "confidence": {
@@ -7610,6 +7935,9 @@
                                           },
                                           "strain": {
                                             "value": "S20030070"
+                                          },
+                                          "tstv": {
+                                            "value": 1.882
                                           }
                                         }
                                       }
@@ -8253,11 +8581,13 @@
                     "Host Order Raw": "NA",
                     "Node Name": "NODE356",
                     "Node Type": "internal",
+                    "Ns Ss Ratio": "NA",
                     "Num Date": 1769.0,
                     "Num Date Confidence": [
                       1719.0,
                       1814.0
                     ],
+                    "Other Var Ratio": "NA",
                     "Population": "2.ANT",
                     "Population Conf Category": "HIGH",
                     "Population Confidence": 1.0,
@@ -8275,7 +8605,8 @@
                     "Rate Sub Year": 0.0,
                     "Root Geo Dist": 823.02714885,
                     "Root Rtt Dist": "NA",
-                    "Strain": "NA"
+                    "Strain": "NA",
+                    "Tstv": "NA"
                   }
                 },
                 "children": [
@@ -8313,11 +8644,13 @@
                         "Host Order Raw": "NA",
                         "Node Name": "NODE357",
                         "Node Type": "internal",
+                        "Ns Ss Ratio": "NA",
                         "Num Date": 1769.0,
                         "Num Date Confidence": [
                           1719.0,
                           1814.0
                         ],
+                        "Other Var Ratio": "NA",
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
@@ -8335,7 +8668,8 @@
                         "Rate Sub Year": 0.0,
                         "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
-                        "Strain": "NA"
+                        "Strain": "NA",
+                        "Tstv": "NA"
                       }
                     },
                     "children": [
@@ -8373,11 +8707,13 @@
                             "Host Order Raw": "NA",
                             "Node Name": "NODE358",
                             "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
                             "Num Date": 1769.0,
                             "Num Date Confidence": [
                               1719.0,
                               1814.0
                             ],
+                            "Other Var Ratio": "NA",
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
@@ -8395,7 +8731,8 @@
                             "Rate Sub Year": 0.0,
                             "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
-                            "Strain": "NA"
+                            "Strain": "NA",
+                            "Tstv": "NA"
                           }
                         },
                         "children": [
@@ -8488,12 +8825,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 2.21622
+                              },
                               "num_date": {
                                 "confidence": [
                                   1968.0,
                                   1968.0
                                 ],
                                 "value": 1968.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.0
                               },
                               "population": {
                                 "confidence": {
@@ -8548,6 +8891,9 @@
                               },
                               "strain": {
                                 "value": "34008"
+                              },
+                              "tstv": {
+                                "value": 1.825
                               }
                             }
                           },
@@ -8585,11 +8931,13 @@
                                 "Host Order Raw": "NA",
                                 "Node Name": "NODE359",
                                 "Node Type": "internal",
+                                "Ns Ss Ratio": "NA",
                                 "Num Date": 1769.0,
                                 "Num Date Confidence": [
                                   1719.0,
                                   1814.0
                                 ],
+                                "Other Var Ratio": "NA",
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
@@ -8607,7 +8955,8 @@
                                 "Rate Sub Year": 0.0,
                                 "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
-                                "Strain": "NA"
+                                "Strain": "NA",
+                                "Tstv": "NA"
                               }
                             },
                             "children": [
@@ -8700,12 +9049,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.26667
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       1967.0,
                                       1967.0
                                     ],
                                     "value": 1967.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.222222
                                   },
                                   "population": {
                                     "confidence": {
@@ -8760,6 +9115,9 @@
                                   },
                                   "strain": {
                                     "value": "Nepal516"
+                                  },
+                                  "tstv": {
+                                    "value": 1.602
                                   }
                                 }
                               },
@@ -8852,12 +9210,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 2.21277
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       2005.0,
                                       2005.0
                                     ],
                                     "value": 2005.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.234043
                                   },
                                   "population": {
                                     "confidence": {
@@ -8912,6 +9276,9 @@
                                   },
                                   "strain": {
                                     "value": "S20050087"
+                                  },
+                                  "tstv": {
+                                    "value": 1.6740000000000002
                                   }
                                 }
                               }
@@ -9152,11 +9519,13 @@
                             "Host Order Raw": "NA",
                             "Node Name": "NODE360",
                             "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
                             "Num Date": 1909.0,
                             "Num Date Confidence": [
                               1843.0,
                               1955.0
                             ],
+                            "Other Var Ratio": "NA",
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
@@ -9174,7 +9543,8 @@
                             "Rate Sub Year": 0.03557663850559936,
                             "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
-                            "Strain": "NA"
+                            "Strain": "NA",
+                            "Tstv": "NA"
                           }
                         },
                         "children": [
@@ -9267,12 +9637,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 2.23077
+                              },
                               "num_date": {
                                 "confidence": [
                                   1990.0,
                                   1990.0
                                 ],
                                 "value": 1990.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.0
                               },
                               "population": {
                                 "confidence": {
@@ -9327,6 +9703,9 @@
                               },
                               "strain": {
                                 "value": "34202"
+                              },
+                              "tstv": {
+                                "value": 1.7380000000000002
                               }
                             }
                           },
@@ -9364,11 +9743,13 @@
                                 "Host Order Raw": "NA",
                                 "Node Name": "NODE361",
                                 "Node Type": "internal",
+                                "Ns Ss Ratio": "NA",
                                 "Num Date": 1982.0,
                                 "Num Date Confidence": [
                                   1950.0,
                                   2007.0
                                 ],
+                                "Other Var Ratio": "NA",
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
@@ -9386,7 +9767,8 @@
                                 "Rate Sub Year": 0.040887290626282526,
                                 "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
-                                "Strain": "NA"
+                                "Strain": "NA",
+                                "Tstv": "NA"
                               }
                             },
                             "children": [
@@ -9479,12 +9861,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 1.95745
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       2007.0,
                                       2007.0
                                     ],
                                     "value": 2007.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.0
                                   },
                                   "population": {
                                     "confidence": {
@@ -9539,6 +9927,9 @@
                                   },
                                   "strain": {
                                     "value": "S20070189"
+                                  },
+                                  "tstv": {
+                                    "value": 1.868
                                   }
                                 }
                               },
@@ -9631,12 +10022,18 @@
                                   "node_type": {
                                     "value": "terminal"
                                   },
+                                  "ns_ss_ratio": {
+                                    "value": 1.97872
+                                  },
                                   "num_date": {
                                     "confidence": [
                                       2008.0,
                                       2008.0
                                     ],
                                     "value": 2008.0
+                                  },
+                                  "other_var_ratio": {
+                                    "value": 0.0
                                   },
                                   "population": {
                                     "confidence": {
@@ -9691,6 +10088,9 @@
                                   },
                                   "strain": {
                                     "value": "S20080157"
+                                  },
+                                  "tstv": {
+                                    "value": 1.855
                                   }
                                 }
                               }
@@ -10037,11 +10437,13 @@
                         "Host Order Raw": "NA",
                         "Node Name": "NODE362",
                         "Node Type": "internal",
+                        "Ns Ss Ratio": "NA",
                         "Num Date": 1857.0,
                         "Num Date Confidence": [
                           1793.0,
                           1926.0
                         ],
+                        "Other Var Ratio": "NA",
                         "Population": "2.ANT",
                         "Population Conf Category": "HIGH",
                         "Population Confidence": 1.0,
@@ -10059,7 +10461,8 @@
                         "Rate Sub Year": 0.022490024310434932,
                         "Root Geo Dist": 823.02714885,
                         "Root Rtt Dist": "NA",
-                        "Strain": "NA"
+                        "Strain": "NA",
+                        "Tstv": "NA"
                       }
                     },
                     "children": [
@@ -10097,11 +10500,13 @@
                             "Host Order Raw": "NA",
                             "Node Name": "NODE363",
                             "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
                             "Num Date": 1977.0,
                             "Num Date Confidence": [
                               1941.0,
                               2008.0
                             ],
+                            "Other Var Ratio": "NA",
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
@@ -10119,7 +10524,8 @@
                             "Rate Sub Year": 0.016677850246503336,
                             "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
-                            "Strain": "NA"
+                            "Strain": "NA",
+                            "Tstv": "NA"
                           }
                         },
                         "children": [
@@ -10212,12 +10618,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 2.43243
+                              },
                               "num_date": {
                                 "confidence": [
                                   2008.0,
                                   2008.0
                                 ],
                                 "value": 2008.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.027027
                               },
                               "population": {
                                 "confidence": {
@@ -10272,6 +10684,9 @@
                               },
                               "strain": {
                                 "value": "S20080165"
+                              },
+                              "tstv": {
+                                "value": 1.924
                               }
                             }
                           },
@@ -10364,12 +10779,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 2.30769
+                              },
                               "num_date": {
                                 "confidence": [
                                   2008.0,
                                   2008.0
                                 ],
                                 "value": 2008.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.0512821
                               },
                               "population": {
                                 "confidence": {
@@ -10424,6 +10845,9 @@
                               },
                               "strain": {
                                 "value": "S20080164"
+                              },
+                              "tstv": {
+                                "value": 1.833
                               }
                             }
                           }
@@ -10564,11 +10988,13 @@
                             "Host Order Raw": "NA",
                             "Node Name": "NODE364",
                             "Node Type": "internal",
+                            "Ns Ss Ratio": "NA",
                             "Num Date": 1956.0,
                             "Num Date Confidence": [
                               1905.0,
                               1985.0
                             ],
+                            "Other Var Ratio": "NA",
                             "Population": "2.ANT",
                             "Population Conf Category": "HIGH",
                             "Population Confidence": 1.0,
@@ -10586,7 +11012,8 @@
                             "Rate Sub Year": 0.060663392148087254,
                             "Root Geo Dist": 823.02714885,
                             "Root Rtt Dist": "NA",
-                            "Strain": "NA"
+                            "Strain": "NA",
+                            "Tstv": "NA"
                           }
                         },
                         "children": [
@@ -10679,12 +11106,18 @@
                               "node_type": {
                                 "value": "terminal"
                               },
+                              "ns_ss_ratio": {
+                                "value": 2.30233
+                              },
                               "num_date": {
                                 "confidence": [
                                   2008.0,
                                   2008.0
                                 ],
                                 "value": 2008.0
+                              },
+                              "other_var_ratio": {
+                                "value": 0.0465116
                               },
                               "population": {
                                 "confidence": {
@@ -10739,6 +11172,9 @@
                               },
                               "strain": {
                                 "value": "S20080163"
+                              },
+                              "tstv": {
+                                "value": 1.784
                               }
                             }
                           },
@@ -10776,11 +11212,13 @@
                                 "Host Order Raw": "NA",
                                 "Node Name": "NODE365",
                                 "Node Type": "internal",
+                                "Ns Ss Ratio": "NA",
                                 "Num Date": 1965.0,
                                 "Num Date Confidence": [
                                   1935.0,
                                   1985.0
                                 ],
+                                "Other Var Ratio": "NA",
                                 "Population": "2.ANT",
                                 "Population Conf Category": "HIGH",
                                 "Population Confidence": 1.0,
@@ -10798,7 +11236,8 @@
                                 "Rate Sub Year": 0.011138018291423395,
                                 "Root Geo Dist": 823.02714885,
                                 "Root Rtt Dist": "NA",
-                                "Strain": "NA"
+                                "Strain": "NA",
+                                "Tstv": "NA"
                               }
                             },
                             "children": [
@@ -10836,11 +11275,13 @@
                                     "Host Order Raw": "NA",
                                     "Node Name": "NODE366",
                                     "Node Type": "internal",
+                                    "Ns Ss Ratio": "NA",
                                     "Num Date": 1967.0,
                                     "Num Date Confidence": [
                                       1942.0,
                                       1992.0
                                     ],
+                                    "Other Var Ratio": "NA",
                                     "Population": "2.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
@@ -10858,7 +11299,8 @@
                                     "Rate Sub Year": 0.0465258656554915,
                                     "Root Geo Dist": 823.02714885,
                                     "Root Rtt Dist": "NA",
-                                    "Strain": "NA"
+                                    "Strain": "NA",
+                                    "Tstv": "NA"
                                   }
                                 },
                                 "children": [
@@ -10951,12 +11393,18 @@
                                       "node_type": {
                                         "value": "terminal"
                                       },
+                                      "ns_ss_ratio": {
+                                        "value": 2.5365900000000003
+                                      },
                                       "num_date": {
                                         "confidence": [
                                           1998.0,
                                           1998.0
                                         ],
                                         "value": 1998.0
+                                      },
+                                      "other_var_ratio": {
+                                        "value": 0.0243902
                                       },
                                       "population": {
                                         "confidence": {
@@ -11011,6 +11459,9 @@
                                       },
                                       "strain": {
                                         "value": "S19960038"
+                                      },
+                                      "tstv": {
+                                        "value": 1.872
                                       }
                                     }
                                   },
@@ -11103,12 +11554,18 @@
                                       "node_type": {
                                         "value": "terminal"
                                       },
+                                      "ns_ss_ratio": {
+                                        "value": 2.4615400000000003
+                                      },
                                       "num_date": {
                                         "confidence": [
                                           1996.0,
                                           1996.0
                                         ],
                                         "value": 1996.0
+                                      },
+                                      "other_var_ratio": {
+                                        "value": 0.025641000000000004
                                       },
                                       "population": {
                                         "confidence": {
@@ -11163,6 +11620,9 @@
                                       },
                                       "strain": {
                                         "value": "S19960127"
+                                      },
+                                      "tstv": {
+                                        "value": 1.731
                                       }
                                     }
                                   }
@@ -11300,11 +11760,13 @@
                                     "Host Order Raw": "NA",
                                     "Node Name": "NODE367",
                                     "Node Type": "internal",
+                                    "Ns Ss Ratio": "NA",
                                     "Num Date": 1974.0,
                                     "Num Date Confidence": [
                                       1949.0,
                                       1987.0
                                     ],
+                                    "Other Var Ratio": "NA",
                                     "Population": "2.ANT",
                                     "Population Conf Category": "HIGH",
                                     "Population Confidence": 1.0,
@@ -11322,7 +11784,8 @@
                                     "Rate Sub Year": 0.011169446002702971,
                                     "Root Geo Dist": 823.02714885,
                                     "Root Rtt Dist": "NA",
-                                    "Strain": "NA"
+                                    "Strain": "NA",
+                                    "Tstv": "NA"
                                   }
                                 },
                                 "children": [
@@ -11415,12 +11878,18 @@
                                       "node_type": {
                                         "value": "terminal"
                                       },
+                                      "ns_ss_ratio": {
+                                        "value": 2.29268
+                                      },
                                       "num_date": {
                                         "confidence": [
                                           2008.0,
                                           2008.0
                                         ],
                                         "value": 2008.0
+                                      },
+                                      "other_var_ratio": {
+                                        "value": 0.0243902
                                       },
                                       "population": {
                                         "confidence": {
@@ -11475,6 +11944,9 @@
                                       },
                                       "strain": {
                                         "value": "S20080151"
+                                      },
+                                      "tstv": {
+                                        "value": 2.031
                                       }
                                     }
                                   },
@@ -11512,11 +11984,13 @@
                                         "Host Order Raw": "NA",
                                         "Node Name": "NODE368",
                                         "Node Type": "internal",
+                                        "Ns Ss Ratio": "NA",
                                         "Num Date": 1974.0,
                                         "Num Date Confidence": [
                                           1949.0,
                                           1987.0
                                         ],
+                                        "Other Var Ratio": "NA",
                                         "Population": "2.ANT",
                                         "Population Conf Category": "HIGH",
                                         "Population Confidence": 1.0,
@@ -11534,7 +12008,8 @@
                                         "Rate Sub Year": 0.0,
                                         "Root Geo Dist": 823.02714885,
                                         "Root Rtt Dist": "NA",
-                                        "Strain": "NA"
+                                        "Strain": "NA",
+                                        "Tstv": "NA"
                                       }
                                     },
                                     "children": [
@@ -11572,11 +12047,13 @@
                                             "Host Order Raw": "NA",
                                             "Node Name": "NODE369",
                                             "Node Type": "internal",
+                                            "Ns Ss Ratio": "NA",
                                             "Num Date": 1989.0,
                                             "Num Date Confidence": [
                                               1971.0,
                                               2001.0
                                             ],
+                                            "Other Var Ratio": "NA",
                                             "Population": "2.ANT",
                                             "Population Conf Category": "HIGH",
                                             "Population Confidence": 1.0,
@@ -11594,7 +12071,8 @@
                                             "Rate Sub Year": 0.13177602902020435,
                                             "Root Geo Dist": 823.02714885,
                                             "Root Rtt Dist": "NA",
-                                            "Strain": "NA"
+                                            "Strain": "NA",
+                                            "Tstv": "NA"
                                           }
                                         },
                                         "children": [
@@ -11687,12 +12165,18 @@
                                               "node_type": {
                                                 "value": "terminal"
                                               },
+                                              "ns_ss_ratio": {
+                                                "value": 2.38095
+                                              },
                                               "num_date": {
                                                 "confidence": [
                                                   2001.0,
                                                   2001.0
                                                 ],
                                                 "value": 2001.0
+                                              },
+                                              "other_var_ratio": {
+                                                "value": 0.238095
                                               },
                                               "population": {
                                                 "confidence": {
@@ -11747,6 +12231,9 @@
                                               },
                                               "strain": {
                                                 "value": "S20010125"
+                                              },
+                                              "tstv": {
+                                                "value": 1.849
                                               }
                                             }
                                           },
@@ -11784,11 +12271,13 @@
                                                 "Host Order Raw": "NA",
                                                 "Node Name": "NODE370",
                                                 "Node Type": "internal",
+                                                "Ns Ss Ratio": "NA",
                                                 "Num Date": 1993.0,
                                                 "Num Date Confidence": [
                                                   1977.0,
                                                   2005.0
                                                 ],
+                                                "Other Var Ratio": "NA",
                                                 "Population": "2.ANT",
                                                 "Population Conf Category": "HIGH",
                                                 "Population Confidence": 1.0,
@@ -11806,7 +12295,8 @@
                                                 "Rate Sub Year": 0.02279575613122606,
                                                 "Root Geo Dist": 823.02714885,
                                                 "Root Rtt Dist": "NA",
-                                                "Strain": "NA"
+                                                "Strain": "NA",
+                                                "Tstv": "NA"
                                               }
                                             },
                                             "children": [
@@ -11899,12 +12389,18 @@
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
+                                                  "ns_ss_ratio": {
+                                                    "value": 2.575
+                                                  },
                                                   "num_date": {
                                                     "confidence": [
                                                       2005.0,
                                                       2005.0
                                                     ],
                                                     "value": 2005.0
+                                                  },
+                                                  "other_var_ratio": {
+                                                    "value": 0.025
                                                   },
                                                   "population": {
                                                     "confidence": {
@@ -11959,6 +12455,9 @@
                                                   },
                                                   "strain": {
                                                     "value": "S20050130"
+                                                  },
+                                                  "tstv": {
+                                                    "value": 1.651
                                                   }
                                                 }
                                               },
@@ -12051,12 +12550,18 @@
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
+                                                  "ns_ss_ratio": {
+                                                    "value": 2.325
+                                                  },
                                                   "num_date": {
                                                     "confidence": [
                                                       2005.0,
                                                       2005.0
                                                     ],
                                                     "value": 2005.0
+                                                  },
+                                                  "other_var_ratio": {
+                                                    "value": 0.05
                                                   },
                                                   "population": {
                                                     "confidence": {
@@ -12111,6 +12616,9 @@
                                                   },
                                                   "strain": {
                                                     "value": "S20050120"
+                                                  },
+                                                  "tstv": {
+                                                    "value": 1.954
                                                   }
                                                 }
                                               }
@@ -12351,11 +12859,13 @@
                                             "Host Order Raw": "NA",
                                             "Node Name": "NODE371",
                                             "Node Type": "internal",
+                                            "Ns Ss Ratio": "NA",
                                             "Num Date": 1978.0,
                                             "Num Date Confidence": [
                                               1958.0,
                                               1991.0
                                             ],
+                                            "Other Var Ratio": "NA",
                                             "Population": "2.ANT",
                                             "Population Conf Category": "HIGH",
                                             "Population Confidence": 1.0,
@@ -12373,7 +12883,8 @@
                                             "Rate Sub Year": 0.02319903927774896,
                                             "Root Geo Dist": 823.02714885,
                                             "Root Rtt Dist": "NA",
-                                            "Strain": "NA"
+                                            "Strain": "NA",
+                                            "Tstv": "NA"
                                           }
                                         },
                                         "children": [
@@ -12411,11 +12922,13 @@
                                                 "Host Order Raw": "NA",
                                                 "Node Name": "NODE372",
                                                 "Node Type": "internal",
+                                                "Ns Ss Ratio": "NA",
                                                 "Num Date": 1995.0,
                                                 "Num Date Confidence": [
                                                   1979.0,
                                                   1996.0
                                                 ],
+                                                "Other Var Ratio": "NA",
                                                 "Population": "2.ANT",
                                                 "Population Conf Category": "HIGH",
                                                 "Population Confidence": 1.0,
@@ -12433,7 +12946,8 @@
                                                 "Rate Sub Year": 0.005893705141385137,
                                                 "Root Geo Dist": 823.02714885,
                                                 "Root Rtt Dist": "NA",
-                                                "Strain": "NA"
+                                                "Strain": "NA",
+                                                "Tstv": "NA"
                                               }
                                             },
                                             "children": [
@@ -12526,12 +13040,18 @@
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
+                                                  "ns_ss_ratio": {
+                                                    "value": 2.31707
+                                                  },
                                                   "num_date": {
                                                     "confidence": [
                                                       2007.0,
                                                       2007.0
                                                     ],
                                                     "value": 2007.0
+                                                  },
+                                                  "other_var_ratio": {
+                                                    "value": 0.243902
                                                   },
                                                   "population": {
                                                     "confidence": {
@@ -12586,6 +13106,9 @@
                                                   },
                                                   "strain": {
                                                     "value": "S20070126"
+                                                  },
+                                                  "tstv": {
+                                                    "value": 2.172
                                                   }
                                                 }
                                               },
@@ -12623,11 +13146,13 @@
                                                     "Host Order Raw": "NA",
                                                     "Node Name": "NODE373",
                                                     "Node Type": "internal",
+                                                    "Ns Ss Ratio": "NA",
                                                     "Num Date": 1996.0,
                                                     "Num Date Confidence": [
                                                       1988.0,
                                                       1996.0
                                                     ],
+                                                    "Other Var Ratio": "NA",
                                                     "Population": "2.ANT",
                                                     "Population Conf Category": "HIGH",
                                                     "Population Confidence": 1.0,
@@ -12645,7 +13170,8 @@
                                                     "Rate Sub Year": 0.0,
                                                     "Root Geo Dist": 823.02714885,
                                                     "Root Rtt Dist": "NA",
-                                                    "Strain": "NA"
+                                                    "Strain": "NA",
+                                                    "Tstv": "NA"
                                                   }
                                                 },
                                                 "children": [
@@ -12738,12 +13264,18 @@
                                                       "node_type": {
                                                         "value": "terminal"
                                                       },
+                                                      "ns_ss_ratio": {
+                                                        "value": 2.31707
+                                                      },
                                                       "num_date": {
                                                         "confidence": [
                                                           2005.0,
                                                           2005.0
                                                         ],
                                                         "value": 2005.0
+                                                      },
+                                                      "other_var_ratio": {
+                                                        "value": 0.0243902
                                                       },
                                                       "population": {
                                                         "confidence": {
@@ -12798,6 +13330,9 @@
                                                       },
                                                       "strain": {
                                                         "value": "S20050084"
+                                                      },
+                                                      "tstv": {
+                                                        "value": 1.941
                                                       }
                                                     }
                                                   },
@@ -12835,11 +13370,13 @@
                                                         "Host Order Raw": "NA",
                                                         "Node Name": "NODE374",
                                                         "Node Type": "internal",
+                                                        "Ns Ss Ratio": "NA",
                                                         "Num Date": 1996.0,
                                                         "Num Date Confidence": [
                                                           1988.0,
                                                           1996.0
                                                         ],
+                                                        "Other Var Ratio": "NA",
                                                         "Population": "2.ANT",
                                                         "Population Conf Category": "HIGH",
                                                         "Population Confidence": 1.0,
@@ -12857,7 +13394,8 @@
                                                         "Rate Sub Year": 0.0,
                                                         "Root Geo Dist": 823.02714885,
                                                         "Root Rtt Dist": "NA",
-                                                        "Strain": "NA"
+                                                        "Strain": "NA",
+                                                        "Tstv": "NA"
                                                       }
                                                     },
                                                     "children": [
@@ -12950,12 +13488,18 @@
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
+                                                          "ns_ss_ratio": {
+                                                            "value": 2.35
+                                                          },
                                                           "num_date": {
                                                             "confidence": [
                                                               1996.0,
                                                               1996.0
                                                             ],
                                                             "value": 1996.0
+                                                          },
+                                                          "other_var_ratio": {
+                                                            "value": 0.05
                                                           },
                                                           "population": {
                                                             "confidence": {
@@ -13010,6 +13554,9 @@
                                                           },
                                                           "strain": {
                                                             "value": "S19960156"
+                                                          },
+                                                          "tstv": {
+                                                            "value": 2.015
                                                           }
                                                         }
                                                       },
@@ -13102,12 +13649,18 @@
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
+                                                          "ns_ss_ratio": {
+                                                            "value": 2.2682900000000004
+                                                          },
                                                           "num_date": {
                                                             "confidence": [
                                                               2002.0,
                                                               2002.0
                                                             ],
                                                             "value": 2002.0
+                                                          },
+                                                          "other_var_ratio": {
+                                                            "value": 0.243902
                                                           },
                                                           "population": {
                                                             "confidence": {
@@ -13162,6 +13715,9 @@
                                                           },
                                                           "strain": {
                                                             "value": "S20020079"
+                                                          },
+                                                          "tstv": {
+                                                            "value": 2.045
                                                           }
                                                         }
                                                       }
@@ -13499,11 +14055,13 @@
                                                 "Host Order Raw": "NA",
                                                 "Node Name": "NODE375",
                                                 "Node Type": "internal",
+                                                "Ns Ss Ratio": "NA",
                                                 "Num Date": 1978.0,
                                                 "Num Date Confidence": [
                                                   1958.0,
                                                   1991.0
                                                 ],
+                                                "Other Var Ratio": "NA",
                                                 "Population": "2.ANT",
                                                 "Population Conf Category": "HIGH",
                                                 "Population Confidence": 1.0,
@@ -13521,7 +14079,8 @@
                                                 "Rate Sub Year": 0.0,
                                                 "Root Geo Dist": 823.02714885,
                                                 "Root Rtt Dist": "NA",
-                                                "Strain": "NA"
+                                                "Strain": "NA",
+                                                "Tstv": "NA"
                                               }
                                             },
                                             "children": [
@@ -13614,12 +14173,18 @@
                                                   "node_type": {
                                                     "value": "terminal"
                                                   },
+                                                  "ns_ss_ratio": {
+                                                    "value": 2.65714
+                                                  },
                                                   "num_date": {
                                                     "confidence": [
                                                       1996.0,
                                                       1996.0
                                                     ],
                                                     "value": 1996.0
+                                                  },
+                                                  "other_var_ratio": {
+                                                    "value": 0.0
                                                   },
                                                   "population": {
                                                     "confidence": {
@@ -13674,6 +14239,9 @@
                                                   },
                                                   "strain": {
                                                     "value": "G1996006"
+                                                  },
+                                                  "tstv": {
+                                                    "value": 1.881
                                                   }
                                                 }
                                               },
@@ -13711,11 +14279,13 @@
                                                     "Host Order Raw": "NA",
                                                     "Node Name": "NODE376",
                                                     "Node Type": "internal",
+                                                    "Ns Ss Ratio": "NA",
                                                     "Num Date": 1978.0,
                                                     "Num Date Confidence": [
                                                       1958.0,
                                                       1991.0
                                                     ],
+                                                    "Other Var Ratio": "NA",
                                                     "Population": "2.ANT",
                                                     "Population Conf Category": "HIGH",
                                                     "Population Confidence": 1.0,
@@ -13733,7 +14303,8 @@
                                                     "Rate Sub Year": 0.0,
                                                     "Root Geo Dist": 823.02714885,
                                                     "Root Rtt Dist": "NA",
-                                                    "Strain": "NA"
+                                                    "Strain": "NA",
+                                                    "Tstv": "NA"
                                                   }
                                                 },
                                                 "children": [
@@ -13771,11 +14342,13 @@
                                                         "Host Order Raw": "NA",
                                                         "Node Name": "NODE377",
                                                         "Node Type": "internal",
+                                                        "Ns Ss Ratio": "NA",
                                                         "Num Date": 1991.0,
                                                         "Num Date Confidence": [
                                                           1981.0,
                                                           1991.0
                                                         ],
+                                                        "Other Var Ratio": "NA",
                                                         "Population": "2.ANT",
                                                         "Population Conf Category": "HIGH",
                                                         "Population Confidence": 1.0,
@@ -13793,7 +14366,8 @@
                                                         "Rate Sub Year": 0.07283665180581957,
                                                         "Root Geo Dist": 823.02714885,
                                                         "Root Rtt Dist": "NA",
-                                                        "Strain": "NA"
+                                                        "Strain": "NA",
+                                                        "Tstv": "NA"
                                                       }
                                                     },
                                                     "children": [
@@ -13886,12 +14460,18 @@
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
+                                                          "ns_ss_ratio": {
+                                                            "value": 2.2619
+                                                          },
                                                           "num_date": {
                                                             "confidence": [
                                                               1991.0,
                                                               1991.0
                                                             ],
                                                             "value": 1991.0
+                                                          },
+                                                          "other_var_ratio": {
+                                                            "value": 0.047619
                                                           },
                                                           "population": {
                                                             "confidence": {
@@ -13946,6 +14526,9 @@
                                                           },
                                                           "strain": {
                                                             "value": "S19910050"
+                                                          },
+                                                          "tstv": {
+                                                            "value": 1.985
                                                           }
                                                         }
                                                       },
@@ -14038,12 +14621,18 @@
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
+                                                          "ns_ss_ratio": {
+                                                            "value": 2.2619
+                                                          },
                                                           "num_date": {
                                                             "confidence": [
                                                               1991.0,
                                                               1991.0
                                                             ],
                                                             "value": 1991.0
+                                                          },
+                                                          "other_var_ratio": {
+                                                            "value": 0.238095
                                                           },
                                                           "population": {
                                                             "confidence": {
@@ -14098,6 +14687,9 @@
                                                           },
                                                           "strain": {
                                                             "value": "S19910056"
+                                                          },
+                                                          "tstv": {
+                                                            "value": 2.09
                                                           }
                                                         }
                                                       }
@@ -14238,11 +14830,13 @@
                                                         "Host Order Raw": "NA",
                                                         "Node Name": "NODE378",
                                                         "Node Type": "internal",
+                                                        "Ns Ss Ratio": "NA",
                                                         "Num Date": 1996.0,
                                                         "Num Date Confidence": [
                                                           1986.0,
                                                           1996.0
                                                         ],
+                                                        "Other Var Ratio": "NA",
                                                         "Population": "2.ANT",
                                                         "Population Conf Category": "HIGH",
                                                         "Population Confidence": 1.0,
@@ -14260,7 +14854,8 @@
                                                         "Rate Sub Year": 0.10667734483349395,
                                                         "Root Geo Dist": 823.02714885,
                                                         "Root Rtt Dist": "NA",
-                                                        "Strain": "NA"
+                                                        "Strain": "NA",
+                                                        "Tstv": "NA"
                                                       }
                                                     },
                                                     "children": [
@@ -14353,12 +14948,18 @@
                                                           "node_type": {
                                                             "value": "terminal"
                                                           },
+                                                          "ns_ss_ratio": {
+                                                            "value": 2.3902400000000004
+                                                          },
                                                           "num_date": {
                                                             "confidence": [
                                                               1998.0,
                                                               1998.0
                                                             ],
                                                             "value": 1998.0
+                                                          },
+                                                          "other_var_ratio": {
+                                                            "value": 0.0487805
                                                           },
                                                           "population": {
                                                             "confidence": {
@@ -14413,6 +15014,9 @@
                                                           },
                                                           "strain": {
                                                             "value": "S19980039"
+                                                          },
+                                                          "tstv": {
+                                                            "value": 1.971
                                                           }
                                                         }
                                                       },
@@ -14450,11 +15054,13 @@
                                                             "Host Order Raw": "NA",
                                                             "Node Name": "NODE379",
                                                             "Node Type": "internal",
+                                                            "Ns Ss Ratio": "NA",
                                                             "Num Date": 1996.0,
                                                             "Num Date Confidence": [
                                                               1986.0,
                                                               1996.0
                                                             ],
+                                                            "Other Var Ratio": "NA",
                                                             "Population": "2.ANT",
                                                             "Population Conf Category": "HIGH",
                                                             "Population Confidence": 1.0,
@@ -14472,7 +15078,8 @@
                                                             "Rate Sub Year": 0.0,
                                                             "Root Geo Dist": 823.02714885,
                                                             "Root Rtt Dist": "NA",
-                                                            "Strain": "NA"
+                                                            "Strain": "NA",
+                                                            "Tstv": "NA"
                                                           }
                                                         },
                                                         "children": [
@@ -14565,12 +15172,18 @@
                                                               "node_type": {
                                                                 "value": "terminal"
                                                               },
+                                                              "ns_ss_ratio": {
+                                                                "value": 2.45
+                                                              },
                                                               "num_date": {
                                                                 "confidence": [
                                                                   1998.0,
                                                                   1998.0
                                                                 ],
                                                                 "value": 1998.0
+                                                              },
+                                                              "other_var_ratio": {
+                                                                "value": 0.0
                                                               },
                                                               "population": {
                                                                 "confidence": {
@@ -14625,6 +15238,9 @@
                                                               },
                                                               "strain": {
                                                                 "value": "S19980124"
+                                                              },
+                                                              "tstv": {
+                                                                "value": 2.015
                                                               }
                                                             }
                                                           },
@@ -14662,11 +15278,13 @@
                                                                 "Host Order Raw": "NA",
                                                                 "Node Name": "NODE380",
                                                                 "Node Type": "internal",
+                                                                "Ns Ss Ratio": "NA",
                                                                 "Num Date": 1996.0,
                                                                 "Num Date Confidence": [
                                                                   1986.0,
                                                                   1996.0
                                                                 ],
+                                                                "Other Var Ratio": "NA",
                                                                 "Population": "2.ANT",
                                                                 "Population Conf Category": "HIGH",
                                                                 "Population Confidence": 1.0,
@@ -14684,7 +15302,8 @@
                                                                 "Rate Sub Year": 0.0,
                                                                 "Root Geo Dist": 823.02714885,
                                                                 "Root Rtt Dist": "NA",
-                                                                "Strain": "NA"
+                                                                "Strain": "NA",
+                                                                "Tstv": "NA"
                                                               }
                                                             },
                                                             "children": [
@@ -14777,12 +15396,18 @@
                                                                   "node_type": {
                                                                     "value": "terminal"
                                                                   },
+                                                                  "ns_ss_ratio": {
+                                                                    "value": 2.61111
+                                                                  },
                                                                   "num_date": {
                                                                     "confidence": [
                                                                       1998.0,
                                                                       1998.0
                                                                     ],
                                                                     "value": 1998.0
+                                                                  },
+                                                                  "other_var_ratio": {
+                                                                    "value": 0.0
                                                                   },
                                                                   "population": {
                                                                     "confidence": {
@@ -14837,6 +15462,9 @@
                                                                   },
                                                                   "strain": {
                                                                     "value": "CMCC348002"
+                                                                  },
+                                                                  "tstv": {
+                                                                    "value": 1.823
                                                                   }
                                                                 }
                                                               },
@@ -14929,12 +15557,18 @@
                                                                   "node_type": {
                                                                     "value": "terminal"
                                                                   },
+                                                                  "ns_ss_ratio": {
+                                                                    "value": 2.61111
+                                                                  },
                                                                   "num_date": {
                                                                     "confidence": [
                                                                       1996.0,
                                                                       1996.0
                                                                     ],
                                                                     "value": 1996.0
+                                                                  },
+                                                                  "other_var_ratio": {
+                                                                    "value": 0.0
                                                                   },
                                                                   "population": {
                                                                     "confidence": {
@@ -14989,6 +15623,9 @@
                                                                   },
                                                                   "strain": {
                                                                     "value": "G1996010"
+                                                                  },
+                                                                  "tstv": {
+                                                                    "value": 1.917
                                                                   }
                                                                 }
                                                               }

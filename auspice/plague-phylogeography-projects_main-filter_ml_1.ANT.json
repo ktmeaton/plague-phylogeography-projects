@@ -1,6 +1,6 @@
 {
   "meta": {
-    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main",
+    "build_url": "https://github.com/ktmeaton/plague-phylogeography-projects/tree/main_filter",
     "colorings": [
       {
         "key": "num_date",
@@ -248,6 +248,16 @@
       },
       {
         "key": "population_raw",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff8a48"
+          ],
+          [
+            "NA",
+            "#c4c4c4"
+          ]
+        ],
         "title": "Population",
         "type": "categorical"
       },
@@ -344,79 +354,19 @@
         "type": "categorical"
       },
       {
-        "key": "branch_minor",
-        "title": "Branch Minor",
-        "type": "categorical"
-      },
-      {
-        "key": "host_human",
-        "title": "host_human",
-        "type": "categorical"
-      },
-      {
-        "key": "date_err",
-        "title": "Collection Date Uncertainty",
+        "key": "tstv",
+        "title": "TsTv",
         "type": "continuous"
       },
       {
-        "key": "node_name",
-        "title": "Node Name",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_support_conf_category",
+        "key": "province",
         "scale": [
           [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff8a48"
+            "North Brabant",
+            "#a2f9a0"
           ]
         ],
-        "title": "Branch Support Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "continent",
-        "scale": [
-          [
-            "Africa",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Continent (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "country_lat",
-        "title": "Country Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "host_order_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff8a48"
-          ]
-        ],
-        "title": "Host Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "date_mean",
-        "title": "Collection Date (Calendar Year)",
-        "type": "continuous"
-      },
-      {
-        "key": "province_date_strain",
-        "title": "Province Date Strain",
+        "title": "Province (Inferred)",
         "type": "categorical"
       },
       {
@@ -431,7 +381,7 @@
         "type": "categorical"
       },
       {
-        "key": "population_conf_category",
+        "key": "province_conf_category",
         "scale": [
           [
             "LOW",
@@ -442,80 +392,7 @@
             "#ff8a48"
           ]
         ],
-        "title": "Population Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "strain",
-        "title": "Strain",
-        "type": "categorical"
-      },
-      {
-        "key": "province",
-        "scale": [
-          [
-            "North Brabant",
-            "#a2f9a0"
-          ]
-        ],
-        "title": "Province (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_support",
-        "title": "Branch Support",
-        "type": "continuous"
-      },
-      {
-        "key": "country_lon",
-        "title": "Country Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "country",
-        "scale": [
-          [
-            "Uganda",
-            "#b2f396"
-          ],
-          [
-            "Democratic Republic of the Congo",
-            "#c3e98b"
-          ]
-        ],
-        "title": "Country (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "population_raw",
-        "title": "Population",
-        "type": "categorical"
-      },
-      {
-        "key": "population_geo_dist",
-        "title": "population_geo_dist",
-        "type": "continuous"
-      },
-      {
-        "key": "host_order",
-        "scale": [
-          [
-            "Human",
-            "#d62728"
-          ]
-        ],
-        "title": "Host (Inferred)",
-        "type": "categorical"
-      },
-      {
-        "key": "population",
-        "scale": [
-          [
-            "1.ANT",
-            "#ff8a48"
-          ]
-        ],
-        "title": "Population (Inferred)",
+        "title": "Province Confidence",
         "type": "categorical"
       },
       {
@@ -524,8 +401,13 @@
         "type": "continuous"
       },
       {
-        "key": "root_geo_dist",
-        "title": "root_geo_dist",
+        "key": "tstv",
+        "title": "TsTv",
+        "type": "continuous"
+      },
+      {
+        "key": "population_rtt_dist",
+        "title": "Population Root Distance",
         "type": "continuous"
       },
       {
@@ -534,109 +416,13 @@
         "type": "categorical"
       },
       {
-        "key": "branch_length_sub",
-        "title": "Branch Length Subs",
+        "key": "date_bp_mean",
+        "title": "Collection Date (Years BP)",
         "type": "continuous"
       },
       {
-        "key": "province_lon",
-        "title": "Province Longitude",
-        "type": "continuous"
-      },
-      {
-        "key": "continent_raw",
-        "scale": [
-          [
-            "Africa",
-            "#80ffb4"
-          ]
-        ],
-        "title": "Continent",
-        "type": "categorical"
-      },
-      {
-        "key": "rate_sub",
-        "title": "Substitution Rate (subs/site/year)",
-        "type": "continuous"
-      },
-      {
-        "key": "province_lat",
-        "title": "Province Latitude",
-        "type": "continuous"
-      },
-      {
-        "key": "country_raw",
-        "scale": [
-          [
-            "Uganda",
-            "#b2f396"
-          ],
-          [
-            "Democratic Republic of the Congo",
-            "#c3e98b"
-          ]
-        ],
-        "title": "Country",
-        "type": "categorical"
-      },
-      {
-        "key": "root_rtt_dist",
-        "title": "Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_support_conf_char",
-        "title": "Branch Support Confidence Character",
-        "type": "categorical"
-      },
-      {
-        "key": "population_rtt_dist",
-        "title": "Population Root Distance",
-        "type": "continuous"
-      },
-      {
-        "key": "branch_number",
-        "title": "Branch Number",
-        "type": "categorical"
-      },
-      {
-        "key": "country_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff8a48"
-          ]
-        ],
-        "title": "Country Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "province_conf_category",
-        "scale": [
-          [
-            "LOW",
-            "#FFFFFF"
-          ],
-          [
-            "HIGH",
-            "#ff8a48"
-          ]
-        ],
-        "title": "Province Confidence",
-        "type": "categorical"
-      },
-      {
-        "key": "branch_length_time",
-        "title": "Branch Length Time",
-        "type": "continuous"
-      },
-      {
-        "key": "blank",
-        "title": "Blank",
+        "key": "node_name",
+        "title": "Node Name",
         "type": "categorical"
       },
       {
@@ -655,6 +441,147 @@
         "type": "categorical"
       },
       {
+        "key": "branch_length_sub",
+        "title": "Branch Length Subs",
+        "type": "continuous"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Uganda",
+            "#b2f396"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#c3e98b"
+          ]
+        ],
+        "title": "Country (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lon",
+        "title": "Country Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "country_raw",
+        "scale": [
+          [
+            "Uganda",
+            "#b2f396"
+          ],
+          [
+            "Democratic Republic of the Congo",
+            "#c3e98b"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order",
+        "scale": [
+          [
+            "Human",
+            "#d62728"
+          ]
+        ],
+        "title": "Host (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "population_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Population Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_length_time",
+        "title": "Branch Length Time",
+        "type": "continuous"
+      },
+      {
+        "key": "ns_ss_ratio",
+        "title": "ns_ss_ratio",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_minor",
+        "title": "Branch Minor",
+        "type": "categorical"
+      },
+      {
+        "key": "host_order_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Host Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Country Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "country_lat",
+        "title": "Country Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "population_geo_dist",
+        "title": "population_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "host_human",
+        "title": "host_human",
+        "type": "categorical"
+      },
+      {
+        "key": "population_raw",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff8a48"
+          ],
+          [
+            "NA",
+            "#c4c4c4"
+          ]
+        ],
+        "title": "Population",
+        "type": "categorical"
+      },
+      {
         "key": "node_type",
         "scale": [
           [
@@ -670,8 +597,115 @@
         "type": "categorical"
       },
       {
+        "key": "date_err",
+        "title": "Collection Date Uncertainty",
+        "type": "continuous"
+      },
+      {
+        "key": "population",
+        "scale": [
+          [
+            "1.ANT",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Population (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "root_geo_dist",
+        "title": "root_geo_dist",
+        "type": "continuous"
+      },
+      {
+        "key": "province_lat",
+        "title": "Province Latitude",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_char",
+        "title": "Branch Support Confidence Character",
+        "type": "categorical"
+      },
+      {
+        "key": "rate_sub",
+        "title": "Substitution Rate (subs/site/year)",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_support_conf_category",
+        "scale": [
+          [
+            "LOW",
+            "#FFFFFF"
+          ],
+          [
+            "HIGH",
+            "#ff8a48"
+          ]
+        ],
+        "title": "Branch Support Confidence",
+        "type": "categorical"
+      },
+      {
+        "key": "province_date_strain",
+        "title": "Province Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "branch_support",
+        "title": "Branch Support",
+        "type": "continuous"
+      },
+      {
+        "key": "branch_number",
+        "title": "Branch Number",
+        "type": "categorical"
+      },
+      {
         "key": "country_date_strain",
         "title": "Country Date Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "continent",
+        "scale": [
+          [
+            "Africa",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Continent (Inferred)",
+        "type": "categorical"
+      },
+      {
+        "key": "date_mean",
+        "title": "Collection Date (Calendar Year)",
+        "type": "continuous"
+      },
+      {
+        "key": "strain",
+        "title": "Strain",
+        "type": "categorical"
+      },
+      {
+        "key": "province_lon",
+        "title": "Province Longitude",
+        "type": "continuous"
+      },
+      {
+        "key": "blank",
+        "title": "Blank",
+        "type": "categorical"
+      },
+      {
+        "key": "root_rtt_dist",
+        "title": "Root Distance",
+        "type": "continuous"
+      },
+      {
+        "key": "other_var_ratio",
+        "title": "other_var_ratio",
         "type": "categorical"
       },
       {
@@ -690,9 +724,15 @@
         "type": "categorical"
       },
       {
-        "key": "date_bp_mean",
-        "title": "Collection Date (Years BP)",
-        "type": "continuous"
+        "key": "continent_raw",
+        "scale": [
+          [
+            "Africa",
+            "#80ffb4"
+          ]
+        ],
+        "title": "Continent",
+        "type": "categorical"
       }
     ],
     "display_defaults": {
@@ -757,7 +797,7 @@
       "map"
     ],
     "title": "Plague Phylogeography Main",
-    "updated": "2021-08-26"
+    "updated": "2021-08-30"
   },
   "tree": {
     "branch_attrs": {
@@ -793,11 +833,13 @@
         "Host Order Raw": "NA",
         "Node Name": "NODE238",
         "Node Type": "internal",
+        "Ns Ss Ratio": "NA",
         "Num Date": 1954.0,
         "Num Date Confidence": [
           1919.0,
           1954.0
         ],
+        "Other Var Ratio": "NA",
         "Population": "1.ANT",
         "Population Conf Category": "HIGH",
         "Population Confidence": 1.0,
@@ -815,7 +857,8 @@
         "Rate Sub Year": 0.0,
         "Root Geo Dist": 8788.07243253,
         "Root Rtt Dist": "NA",
-        "Strain": "NA"
+        "Strain": "NA",
+        "Tstv": "NA"
       }
     },
     "children": [
@@ -908,12 +951,18 @@
           "node_type": {
             "value": "terminal"
           },
+          "ns_ss_ratio": {
+            "value": 2.2115400000000003
+          },
           "num_date": {
             "confidence": [
               2004.0,
               2004.0
             ],
             "value": 2004.0
+          },
+          "other_var_ratio": {
+            "value": 0.192308
           },
           "population": {
             "confidence": {
@@ -965,6 +1014,9 @@
           },
           "strain": {
             "value": "UG05-0454"
+          },
+          "tstv": {
+            "value": 3.102
           }
         }
       },
@@ -1002,11 +1054,13 @@
             "Host Order Raw": "NA",
             "Node Name": "NODE238",
             "Node Type": "internal",
+            "Ns Ss Ratio": "NA",
             "Num Date": 1954.0,
             "Num Date Confidence": [
               1919.0,
               1954.0
             ],
+            "Other Var Ratio": "NA",
             "Population": "1.ANT",
             "Population Conf Category": "HIGH",
             "Population Confidence": 1.0,
@@ -1024,7 +1078,8 @@
             "Rate Sub Year": 0.0,
             "Root Geo Dist": 8788.07243253,
             "Root Rtt Dist": "NA",
-            "Strain": "NA"
+            "Strain": "NA",
+            "Tstv": "NA"
           }
         },
         "children": [
@@ -1117,12 +1172,18 @@
               "node_type": {
                 "value": "terminal"
               },
+              "ns_ss_ratio": {
+                "value": 2.3125
+              },
               "num_date": {
                 "confidence": [
                   1965.0,
                   1965.0
                 ],
                 "value": 1965.0
+              },
+              "other_var_ratio": {
+                "value": 0.208333
               },
               "population": {
                 "confidence": {
@@ -1174,6 +1235,9 @@
               },
               "strain": {
                 "value": "Antiqua"
+              },
+              "tstv": {
+                "value": 2.883
               }
             }
           },
@@ -1260,12 +1324,18 @@
               "node_type": {
                 "value": "terminal"
               },
+              "ns_ss_ratio": {
+                "value": 2.34043
+              },
               "num_date": {
                 "confidence": [
                   1954.0,
                   1954.0
                 ],
                 "value": 1954.0
+              },
+              "other_var_ratio": {
+                "value": 0.191489
               },
               "population": {
                 "confidence": {
@@ -1317,6 +1387,9 @@
               },
               "strain": {
                 "value": "FDAARGOS_601"
+              },
+              "tstv": {
+                "value": 2.948
               }
             }
           }
